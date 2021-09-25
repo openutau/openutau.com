@@ -8,5 +8,10 @@
 - OpenUtau relies on character.txt to detect voicebanks.
 - Create a character.txt in the voicebank folder and put a line "name=<name>" in it.
 
+## Why extra step for voicebank install?
+- Utau has a long history, carrying debts. Encoding is one of them. Remember all the gibberish?
+- OpenUtau need to convert encoding of voicebank file, install is the easiest way.
+- It also creates a opportunity for you to config the voicebank, so that OpenUtau can understand better and automate things.
+
 ## Red pitch line goes everywhere.
 - The ust or midi file may have a bad tempo set, like 50000.
