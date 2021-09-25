@@ -3,11 +3,16 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 
 - doppeltler32.exe
 - doppeltler64.exe
+- f2resamp32.exe
 - f2resamp64.exe
+- fresamp11.exe
+- fresamp12.exe
 - fresamp14.exe
 - resampler.exe
 - TIPS.exe
 - tn_fnds.exe
+- w4u.exe
+- young3.exe
 
 # Compatible with adjustments
 
