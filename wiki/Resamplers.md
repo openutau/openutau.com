@@ -10,4 +10,8 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 - tn_fnds.exe
 
 # Compatible with adjustments
+
+- moresampler.exe
+Need to edit moreconfing line "resampler-compatibility" to on.
+
 # Incompatible
