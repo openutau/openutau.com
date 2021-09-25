@@ -8,6 +8,7 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 - fresamp11.exe
 - fresamp12.exe
 - fresamp14.exe
+- macres.exe
 - resampler.exe
 - TIPS.exe
 - tn_fnds.exe
