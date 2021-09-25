@@ -1,0 +1,1 @@
+This is a list of all UTAU resamplers confirmed to be compatible with OpenUtau, and any additional information necessary to ensure compatibility.
