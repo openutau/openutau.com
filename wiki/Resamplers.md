@@ -12,6 +12,6 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 # Compatible with adjustments
 
 - moresampler.exe
-- Need to edit moreconfig.txt line "resampler-compatibility" to on.
+  - Need to edit moreconfig.txt line "resampler-compatibility" to on.
 
 # Incompatible
