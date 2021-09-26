@@ -1,8 +1,8 @@
 ## Why no sound?
 - Open Preferences and test the audio device.
-- Make sure resampler selected in Preferences is compatible.
+- Make sure resampler selected in Preferences is compatible. If your resamplers were patched, try unpatched ones.
 - Make sure a singer is installed and selected.
-- Open up midi window. If notes are semi transparent and phonemes and expressions below don't show up, the lyrics does not work with the selected phonemizer and the voicebank.
+- Open up midi window. If notes are semi transparent, and phonemes pitches, and expressions below don't show up, the lyrics does not work with the selected phonemizer and the voicebank.
 
 ## Why the voicebank doesn't show up?
 - OpenUtau relies on character.txt to detect voicebanks.
