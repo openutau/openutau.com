@@ -21,7 +21,8 @@ If the syllables are misaligned, add numbers after "..." to force alignment to t
 ![multisyllable](https://i.imgur.com/VLksjSR.png)
 
 ## ZH CVV (Chinese CVV)
-Lyrics should be input as pinyin. The phonemizer will insert endings for syllables that need them.
+Lyrics should be written in pinyin. The phonemizer will insert endings for syllables that need them.  
+![zh cvv](https://i.imgur.com/TJfiNit.png)
 
 ## JA CVVC (Japanese CVVC)
 Lyrics should be written in hiragana. If your lyrics are written in romaji, you can convert it to hiragana using the Romaji to Hiragana transformer.  
