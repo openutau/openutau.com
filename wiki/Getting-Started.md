@@ -5,4 +5,3 @@
 3. Install a voicebank
 4. Creating and editing tracks
 5. Creating and editing notes
-6. Using phonemizers
