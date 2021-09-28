@@ -14,6 +14,10 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 - tn_fnds.exe
 - w4u.exe
 - young3.exe
+- vs4u.exe
+- WARP.exe
+- EFB-GT.exe
+- EFB-PB.exe
 
 # Compatible with adjustments
 
