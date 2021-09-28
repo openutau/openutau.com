@@ -37,3 +37,9 @@ Lyrics should be written in hiragana. If your lyrics are written in romaji, you 
 
 The phonemizer will automatically convert CV to VCV. If a VCV sample isn't available in the voicebank, it will fall back on CV. presamp.ini settings from the voicebank are not supported yet.  
 ![ja vcv](https://i.imgur.com/QYp3J3J.png)
+
+## KR CVC (Korean CVC)
+(to do)
+
+## KR CVVC (Korean CVVC)
+(to do)
