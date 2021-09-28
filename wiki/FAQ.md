@@ -4,10 +4,6 @@
 - Make sure a singer is installed and selected.
 - Open up the midi window. If notes are semi-transparent, and phonemes, pitches, and expressions below don't show up, the lyrics do not work with the selected phonemizer and the voicebank.
 
-## Why don't voicebank(s) show up?
-- OpenUtau relies on character.txt to detect voicebanks.
-- Create a character.txt in the voicebank folder and put a line "name=<name>" in it.
-
 ## Why is there an extra step for voicebank installation?
 - Utau has a long history, carrying debts. Encoding is one of them. Remember all the gibberish?
 - OpenUtau needs to convert encoding of voicebank file, installing within the software is the easiest way.
@@ -21,3 +17,6 @@
 
 ## Red pitch line goes everywhere.
 - The ust or midi file may have a bad tempo set, like 50000.
+
+## Is there a default voicebank/mascot? Can I provide a default voicebank/mascot?
+- There is no default character, and no intention of creating a default character. Please do not offer one.
