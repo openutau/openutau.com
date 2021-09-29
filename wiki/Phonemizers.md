@@ -67,3 +67,9 @@ Even if CV comes after final consonant, VC is not generated.
 
 When entering Vowel and Vowel, it is converted like VCV.
 ![kr cvvc vowel](https://i.imgur.com/ubiRAgb.png)
+
+## KR CVVC (Korean CVVC standard pronuciation)
+Followed the standard pronunciation method for Hangul.
+This support all Korean final consonants, consonant assimilation(자음동화), 된소리되기, abbreviate consonants(자음 축약), 탈락, sandhi(연음).
+
+![Korean CVVC standard pronuciation](https://imgur.com/IEnOq1c)
