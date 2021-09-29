@@ -39,7 +39,13 @@ The phonemizer will automatically convert CV to VCV. If a VCV sample isn't avail
 ![ja vcv](https://i.imgur.com/QYp3J3J.png)
 
 ## KR CVC (Korean CVC)
-(to do)
+You should write lyrics in Romaji. Hangeul will update soon.  
+automatically insert VC between the CV and CV.  
+![kr cvc](https://i.imgur.com/6w87k41.png)  
+you can write final consonant(n, m, ng, l, k, p, t),  
+but you should write the vowel of preNote in front of final consonant without spaces (ex. an(안), im(임), ung(웅), el(엘), ok(옥), eup(읍), eot(엇)).  
+final consonant is classified as CV, but VC isn't inserted next note.  
+![kr cvc final consonant](https://i.imgur.com/yB012mW.png)  
 
 ## KR CVVC (Korean CVVC)
 (to do)
