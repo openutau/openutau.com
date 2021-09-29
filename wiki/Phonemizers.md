@@ -72,4 +72,4 @@ When entering Vowel and Vowel, it is converted like VCV.
 Followed the standard pronunciation method for Hangul.
 This support all Korean final consonants, consonant assimilation(자음동화), 된소리되기, abbreviate consonants(자음 축약), 탈락, sandhi(연음).
 
-![Korean CVVC standard pronuciation](https://imgur.com/IEnOq1c)
+![Korean CVVC standard pronuciation](https://i.imgur.com/IEnOq1c.png)
