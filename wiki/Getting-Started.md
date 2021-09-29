@@ -37,7 +37,7 @@ You can also start a new project from File > New.
 #### Tempo and Time Signature
 Click on the tempo or time signature in the top left corner to edit it.
 
-![tempo timesig](https://i.imgur.com/rh0RnTr.png)
+![tempo timesig](https://i.imgur.com/5ML7X13.gif)
 
 Time signatures can have any positive whole number on top, and any power of 2 on the bottom.  
 Tempos can be any number, including decimals.  
@@ -46,7 +46,7 @@ Changing the tempo or time signature mid-project is not supported yet.
 #### Expressions
 Expressions allow you to change parameters note-by-note, similar to flags in UTAU. Expressions are saved per-project. To edit expression settings, go to Tools > Expressions.
 
-![expressions](https://i.imgur.com/ZGmMeur.png)
+![expressions](https://i.imgur.com/XxXvpLj.gif)
 
 ##### Default expressions
 | Name     | Abbreviation | Purpose                                           | Range      | Default |
@@ -63,7 +63,7 @@ Expressions allow you to change parameters note-by-note, similar to flags in UTA
 Use the + and - buttons in the lower left corner to add and remove expressions. Some expressions cannot be removed.  
 Fill out the name, abbreviation, resampler flag, minimum, maximum, and default value. The resampler flag must be a single flag by itself without any numbers. If you want the whole project to have a certain value (eg. Mt+20) please put the number in the Default box.
 
-![add expression](https://i.imgur.com/PC8vW8n.png)
+![add expression](https://i.imgur.com/vUMtfK6.gif)
 
 ### Opening projects
 Open projects using File > Open, or Ctrl+O.  
