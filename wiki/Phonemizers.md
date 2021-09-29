@@ -56,4 +56,12 @@ There's no insert VC behind vowel and `w`, `y`, `l` note (ex. `a`, `ya`, `weo`, 
 ![kr cvc vowel](https://i.imgur.com/WsTELSm.png)  
 
 ## KR CVVC (Korean CVVC)
-(to do)
+You should write the lyrics in Hangeul. Romaji will be updated soon.  
+Automatically insert VC between CV and CV.
+![kr cvvc](https://imgur.com/a/YOqmTu2)
+you can write final consonant(`ㄴ`, `ㅁ`, `ㅇ`, `ㄹ`, `ㄱ`, `ㄲ`, `ㅂ`, `ㅍ`, `ㅅ`, `ㄷ`, `ㅌ`)
+You can fill it out right after the note like CV.
+Even if CV comes after final consonant, VC is not generated.
+![kr cvvc final consonant](https://imgur.com/a/AR5CdC2)
+When entering Vowel and Vowel, it is converted like VCV.
+![kr cvvc vowel](https://imgur.com/ubiRAgb)
