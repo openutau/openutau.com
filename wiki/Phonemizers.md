@@ -46,7 +46,7 @@ you can write final consonant(n, m, ng, l, k, p, t),
 but you should write the vowel of preNote in front of final consonant without spaces (ex. an(안), im(임), ung(웅), el(엘), ok(옥), eup(읍), eot(엇)).  
 final consonant is classified as CV, but VC isn't inserted next note.  
 ![kr cvc final consonant](https://i.imgur.com/yB012mW.png)  
-There's no insert VC behind vowel and w, y note (ex. a, ya, weo)  
+There's no insert VC behind vowel and w, y, l note (ex. a, ya, weo, li)  
 ![kr cvc vowel](https://i.imgur.com/WsTELSm.png)  
 
 ## KR CVVC (Korean CVVC)
