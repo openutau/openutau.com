@@ -146,11 +146,112 @@ Toggle tips using the question mark button or pressing `T` on the keyboard.
 ![tips](https://i.imgur.com/rmQuiB6.gif)
 
 ### Navigation
-Vertical/horizontal scroll and vertical/horizontal zoom function the same way as the track editor.
+Scroll, zoom, and playback function the same way as the track editor.
 
 ### Basic note editing
+Click to create notes, and right click to delete notes.
+
+![create](https://i.imgur.com/bIXQVcd.gif)
+
+Drag notes to move them around. Drag the end to change the length. Hold Alt while adjusting length to resize the following note.
+
+![resize](https://i.imgur.com/oIMv2n4.gif)
+
+Hold Ctrl and click and drag to select multiple notes.
+
+![select](https://i.imgur.com/arCrjjJ.gif)
+
+Use the arrow keys to move selected notes up/down by 1 semitone, and Ctrl + arrow keys to move notes up/down by 1 octave.
+
+![move up down](https://i.imgur.com/y5PFub7.gif)
+
+By default, notes and lengths will snap to the nearest 16th note. To toggle snap, click on the snap icon in the top left, or press `P` on your keyboard.
+
+![snap](https://i.imgur.com/kCgzM8m.gif)
+
 ### Transformers and Legacy Plugins
+Use the gear in the upper left corner to access Transformers and Legacy Plugins.
+
+![transformer](https://i.imgur.com/uemtrXd.gif)
+
+These are used for simple 1-to-1 lyric conversions, and are applied to the whole track part at once.
+
+Legacy Plugins provide limited support for UTAU plugins. To add a plugin, copy the folder into the Plugins folder of OpenUtau. Not all plugins will function normally or completely. Some popular plugins (eg. VCV conversion, CVVC conversion) are handled by track phonemizers.
+
 ### Edit expressions
+Use the arrow by the expressions to select which one you want to edit. 
+
+![select expression](https://i.imgur.com/5gzG0ch.gif)
+
+The gear icon will allow you to view the expression settings for the whole project.
+
+![project expressions](https://i.imgur.com/ACjYqcS.gif)
+
+Click to set a value, and right click to reset it to the project default.
+
+![edit expression](https://i.imgur.com/2PKCb2p.gif)
+#### VEL (velocity)
+This corresponds to UTAU's Consonant Velocity. This affects the length of the fixed region of the OTO, which is the beginning of the note/phoneme.
+
+![vel](https://i.imgur.com/ls2ECcq.gif)
+#### VOL (volume)
+This raises or lowers the overall volume of the note/phoneme.
+
+![vol](https://i.imgur.com/11QKExP.gif)
+#### ACC (accent)
+This raises or lowers the volume of the beginning of the note/phoneme.
+
+![acc](https://i.imgur.com/c1XSCGj.gif)
+#### DEC (decay)
+This lowers the volume of the rest of the note/phoneme.
+
+![dec](https://i.imgur.com/MNU1Bws.gif)
+#### MOD (modulation)
+This determines how much the pitch is flattened from the original recording. By default this is 0, or completely flat.
+#### Other expressions
+All other expressions are like flags in UTAU.
 ### Edit pitchbends
+You can show/hide pitchbends using the pitchbend icon in the top left, or by pressing `I` on your keyboard. Hidden pitchbends will still be applied to the notes.
+
+![show hide pitchbends](https://i.imgur.com/atuJhyF.gif)
+
+Click on the pitchbend to create new points. Drag the point to move it around.
+
+![create pitchbend](https://i.imgur.com/pBvL2sD.gif)
+
+Right click on the pitchbend to pick a shape.
+
+![pitchbend shape](https://i.imgur.com/EuoimMj.gif)
+
+Right click on a point for the option to delete it.
+
+![delete pitchbend](https://i.imgur.com/d2gpswg.gif)
 ### Edit vibrato
+You can show/hide vibrato using the vibrato icon in the top left, or by pressing `U` on your keyboard. Hidden vibrato will still be applied to notes.
+
+![show hide vibrato](https://i.imgur.com/sf86vTG.gif)
+
+Click on the vibrato icon below a note to toggle it on or off.
+
+![toggle vibrato](https://i.imgur.com/hxwS8Wy.gif)
+
+You can adjust the vibrato starting point, fade-in length, depth, fade-out length, frequency, and phase.
+
+![edit vibrato](https://i.imgur.com/U1hsNem.gif)
+
 ### Edit phoneme envelopes
+You can show/hide envelopes using the envelope icon in the top left, or by pressing `O` on your keyboard. Phonemization and envelope edits are applied even when hidden.
+
+![show hide envelopes](https://i.imgur.com/4ugAXeW.gif)
+
+Drag the pink lines to adjust the timing of phonemes within notes. Right click to reset the timing. You can right click and drag to reset multiple phonemes at once.
+
+![envelope timing](https://i.imgur.com/0PDVaNx.gif)
+
+Drag the bottom left corner to adjust the starting point of the envelope. This corresponds to STP in UTAU. Right click on the circle to reset.
+
+![starting point](https://i.imgur.com/icQ8PUQ.gif)
+
+Drag the top left corner to adjust the overlap amount. Right click on the circle to reset.
+
+![overlap](https://i.imgur.com/reLOTps.gif)
