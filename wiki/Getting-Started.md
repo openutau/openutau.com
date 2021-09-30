@@ -10,7 +10,7 @@ By default, OpenUtau will use the same language as your computer, or English if 
 ![language](https://i.imgur.com/qW51SZ0.gif)
 
 ## Install a resampler
-Put a resampler exe or dll into the Resamplers folder. If you already use UTAU, you can copy + paste resamplers that you already have. Check [Resamplers](../Resamplers) for a list of compatible resamplers.
+Put a resampler exe or dll into the Resamplers folder. If you already use UTAU, you can copy + paste resamplers that you already have. Check [Resamplers](Resamplers) for a list of compatible resamplers.
 
 In OpenUtau, go to Tools > Preferences to select a resampler for preview and export. You can also adjust the number of pre-render threads to improve resampler performance.
 
@@ -99,7 +99,7 @@ Select a singer from the menu in the track header.
 
 ![select singer](https://i.imgur.com/G0ySUuN.gif)
 
-You can optionally select a phonemizer, which will automatically convert note lyrics into a form the voicebank can play. For more details, please check [Phonemizers](../Phonemizers).
+You can optionally select a phonemizer, which will automatically convert note lyrics into a form the voicebank can play. For more details, please check [Phonemizers](Phonemizers).
 
 ![phonemizer](https://i.imgur.com/kKH7XDw.gif)
 
