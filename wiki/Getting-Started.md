@@ -116,6 +116,10 @@ Double click on a part to open the note editor.
 ![open part](https://i.imgur.com/8HBxHVP.gif)
 
 ### Navigation
+Click on the bar/measure labels to move the playback cursor, and press space to start/stop playing.
+
+![playback](https://i.imgur.com/jalr2JP.gif)
+
 To scroll vertically, scroll normally.
 
 ![verti scroll](https://i.imgur.com/QegYsJX.gif)
