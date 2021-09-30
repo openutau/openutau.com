@@ -54,6 +54,8 @@ final consonant is classified as CV, but VC isn't inserted next note.
 ![kr cvc final consonant](https://i.imgur.com/yB012mW.png)  
 There's no insert VC behind vowel and `w`, `y`, `l` note (ex. `a`, `ya`, `weo`, `li`)  
 ![kr cvc vowel](https://i.imgur.com/WsTELSm.png)  
+write Hangeul, you can use combine final consonants  
+![kr cvc](https://i.imgur.com/Ffn0mNK.jpg)  
 
 ## KR CVVC (Korean CVVC)
 You should write the lyrics in Hangeul. Romaji will be updated soon.  
