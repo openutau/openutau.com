@@ -110,5 +110,38 @@ Double click on a part to open the note editor.
 
 ![open part](https://i.imgur.com/8HBxHVP.gif)
 
-## Create and edit notes
-(to do)
+### Navigation
+To scroll vertically, scroll normally.
+
+![verti scroll](https://i.imgur.com/QegYsJX.gif)
+
+To scroll horizontally, you can hold shift and scroll, or hover your cursor over the horizontal scroll bar and scroll.
+
+![hori scroll](https://i.imgur.com/3UH3Kt6.gif)
+
+To zoom horizontally, hover your cursor over the bar/measure labels and scroll.
+
+![hori zoom](https://i.imgur.com/yOTVNEi.gif)
+
+To zoom vertically, hover your cursor over the vertical zoom icon and scroll.
+
+![verti zoom](https://i.imgur.com/a8IE9W2.gif)
+
+Click and drag on the panning icon to scroll horizontally and vertically.
+
+![2d scroll](https://i.imgur.com/5LyyMZT.gif)
+
+## Notes
+Toggle tips using the question mark button or pressing `T` on the keyboard.
+
+![tips](https://i.imgur.com/rmQuiB6.gif)
+
+### Navigation
+Vertical/horizontal scroll and vertical/horizontal zoom function the same way as the track editor.
+
+### Basic note editing
+### Transformers and Legacy Plugins
+### Edit expressions
+### Edit pitchbends
+### Edit vibrato
+### Edit phoneme envelopes
