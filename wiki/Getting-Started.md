@@ -4,6 +4,11 @@
 Download the latest release from here. OpenUtau is currently Windows-only.  
 After unzipping to a new folder, you can start the application by double clicking `OpenUtau.exe`. Every time you start OU, it will check for any updates.
 
+## Select UI language
+By default, OpenUtau will use the same language as your computer, or English if a translation is unavailable. To manually change the language, go to Tools > Preferences.
+
+![language](https://i.imgur.com/qW51SZ0.gif)
+
 ## Install a resampler
 Put a resampler exe or dll into the Resamplers folder. If you already use UTAU, you can copy + paste resamplers that you already have. Check [Resamplers](../Resamplers) for a list of compatible resamplers.
 
