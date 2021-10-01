@@ -56,7 +56,7 @@ There's no insert VC behind vowel and `w`, `y`, `l` note (ex. `a`, `ya`, `weo`, 
 ![kr cvc vowel](https://i.imgur.com/WsTELSm.png)  
 write Hangeul, you can use combine final consonants  
 ![kr cvc](https://i.imgur.com/Ffn0mNK.jpg)  
-write lyrics in Hangeul, apply phonological rules(연음화 / 유기음화 / 음절끝소리규칙 / 경음화 / 구개음화 / 비음화 / 유음화)  
+write lyrics in Hangeul, apply phonological rules(연음화 / 유기음화 / 경음화 / 구개음화 / 비음화 / 유음화 / 탈락 / 음절끝소리규칙)  
 
 ## KR CVVC (Korean CVVC)
 You should write the lyrics in Hangeul. Romaji will be updated soon.  
