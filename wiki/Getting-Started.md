@@ -153,6 +153,10 @@ Click to create notes, and right click to delete notes.
 
 ![create](https://i.imgur.com/bIXQVcd.gif)
 
+Double click to start inputing lyric, tab to finish and switch to next note.
+
+![lyric](https://i.imgur.com/pNeA8Ls.gif)
+
 Drag notes to move them around. Drag the end to change the length. Hold Alt while adjusting length to resize the following note.
 
 ![resize](https://i.imgur.com/oIMv2n4.gif)
