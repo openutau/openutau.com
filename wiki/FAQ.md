@@ -8,6 +8,7 @@
 - Utau has a long history, carrying debts. Encoding is one of them. Remember all the gibberish?
 - OpenUtau needs to convert encoding of voicebank files, and also the file paths, installing within the software is the easiest way.
 - It also creates a opportunity for you to configure the voicebank, so that OpenUtau can understand it better and automate things.
+- Because file and file path encodings are converted to unicode, sharing voicebank folder with UTAU is impossible.
 
 ## Why doesn't VCV/CVVC/VCCV/etc. work?
 - In the Utau world, the default way to use continuous sound voicebanks, like VCV or CVVC, is type the aliases as lyrics. Basically hand picking samples. That always works in OpenUtau by using the default CV phonemizer.
