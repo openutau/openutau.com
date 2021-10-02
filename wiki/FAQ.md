@@ -4,7 +4,7 @@
 - Make sure a singer is installed and selected.
 - Open up the midi window. If notes are semi-transparent, and phonemes, pitches, and expressions below don't show up, the lyrics do not work with the selected phonemizer and the voicebank.
 
-## Why is there an extra step for voicebank installation?
+## Why extra voicebank installation step?
 - Utau has a long history, carrying debts. Encoding is one of them. Remember all the gibberish?
 - OpenUtau needs to convert encoding of voicebank file, installing within the software is the easiest way.
 - It also creates a opportunity for you to configure the voicebank, so that OpenUtau can understand it better and automate things.
