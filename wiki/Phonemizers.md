@@ -45,7 +45,8 @@ The phonemizer will automatically convert CV to VCV. If a VCV sample isn't avail
 ![ja vcv](https://i.imgur.com/QYp3J3J.png)
 
 ## KR CVC (Korean CVC)
-
+This is a program to modify existing oto.ini file for use in OpenUtau (made by myself)  
+└> https://app.box.com/s/t973p0rznirqg0naa04436p8re0ktfyy  
 You write lyrics in Romaji and Hangeul  
 automatically insert VC between the CV and CV.  
 ![kr cvc](https://i.imgur.com/6w87k41.png)  
