@@ -6,7 +6,7 @@
 
 ## Why extra voicebank installation step?
 - Utau has a long history, carrying debts. Encoding is one of them. Remember all the gibberish?
-- OpenUtau needs to convert encoding of voicebank file, installing within the software is the easiest way.
+- OpenUtau needs to convert encoding of voicebank files, and also the file paths, installing within the software is the easiest way.
 - It also creates a opportunity for you to configure the voicebank, so that OpenUtau can understand it better and automate things.
 
 ## Why doesn't VCV/CVVC/VCCV/etc. work?
