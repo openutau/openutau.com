@@ -12,7 +12,7 @@ By default, OpenUtau will use the same language as your computer, or English if 
 ## Install a resampler
 Put a resampler exe or dll into the Resamplers folder. If you already use UTAU, you can copy + paste resamplers that you already have. Check [Resamplers](Resamplers) for a list of compatible resamplers.
 
-In OpenUtau, go to Tools > Preferences to select a resampler for preview and export. You can also adjust the number of pre-render threads to improve resampler performance.
+In OpenUtau, go to Tools > Preferences to select a resampler for preview and export. You can also adjust the number of pre-render threads to improve resampler performance. Using Moresampler is still not fully optimized, so a warning will appear advising you to only use 1 thread.
 
 ![select resampler](https://imgur.com/eMcoHxp.gif)
 
@@ -58,17 +58,22 @@ Expressions allow you to change parameters note-by-note, similar to flags in UTA
 | -------- | ------------ | ------------------------------------------------- | ---------- | ------- |
 | Velocity | VEL          | Consonant velocity (stretch/shorten preutterance) | 0 - 200    | 100     |
 | Volume   | VOL          | Note volume                                       | 0 - 200    | 100     |
-| Accent   | ACC          | Envelope starting volume                          | 0 - 200    | 100     |
+| Attack   | ATK          | Envelope starting volume                          | 0 - 200    | 100     |
 | Decay    | DEC          | Envelope ending volume                            | 0 - 100    | 0       |
 | Gender   | GEN          | g flag (formant shift)                            | -100 - 100 | 0       |
 | Breath   | BRE          | B flag (breathiness)                              | 0 - 100    | 0       |
 | Lowpass  | LPF          | H flag (low pass filter)                          | 0 - 100    | 0       |
 
 ##### Adding expressions
-Use the + and - buttons in the lower left corner to add and remove expressions. Some expressions cannot be removed.  
-Fill out the name, abbreviation, resampler flag, minimum, maximum, and default value. The resampler flag must be a single flag by itself without any numbers. If you want the whole project to have a certain value (eg. Mt+20) please put the number in the Default box.
+Use the + and - buttons in the lower left corner to add and remove expressions. Some expressions cannot be removed. There are two types of expressions, numerical expressions and fixed options.
 
-![add expression](https://i.imgur.com/vUMtfK6.gif)
+For numerical expressions fill out the name, abbreviation, resampler flag, minimum, maximum, and default value. The resampler flag must be a single flag by itself without any numbers. If you want the whole project to have a certain value (eg. Mt+20) please put the number in the Default box.
+
+![add expression](https://i.imgur.com/kzKnSgf.gif)
+
+For options, fill out the name, abbreviation, checkbox, and option values. This is for flags that don't take any numbers, like for toggling between stretching and looping.
+
+![add options](https://i.imgur.com/FyQ6XMd.gif)
 
 ### Opening projects
 Open projects using File > Open, or Ctrl+O.  
@@ -80,6 +85,9 @@ Save the current project using File > Save, or Ctrl+S.
 Save the project as a new file using File > Save As.
 
 After saving the project, you can also export all tracks as separate `.ust` files using File > Save As Ust Files. The files will be saved in the same folder as the original `.ustx` file.
+
+### Exporting audio
+After saving the project, use File > Export All to render all tracks as separate `.wav` files. The files will be saved in an Export folder next to the original `.ustx` file. 
 
 ## Tracks
 ### Creating tracks
@@ -97,19 +105,23 @@ You can import tracks MIDI using File > Import MIDI.
 ### Editing tracks
 Select a singer from the menu in the track header.
 
-![select singer](https://i.imgur.com/G0ySUuN.gif)
+![select singer](https://i.imgur.com/W8Z1jto.gif)
 
 You can optionally select a phonemizer, which will automatically convert note lyrics into a form the voicebank can play. For more details, please check [Phonemizers](Phonemizers).
 
-![phonemizer](https://i.imgur.com/kKH7XDw.gif)
+![phonemizer](https://i.imgur.com/h0B15qz.gif)
 
 Click and drag the volume slider to adjust the volume of the track. Right click to reset the volume. The mute/solo buttons are not supported yet.
 
-![track volume](https://i.imgur.com/4Lfqdry.gif)
+![track volume](https://i.imgur.com/EvXpW9A.gif)
 
 Click in the track area to create a new part. You can drag the part to move it around, drag the end to change the length, and right click to delete parts.
 
 ![edit part](https://i.imgur.com/AXqH8yA.gif)
+
+Click on the part's name to rename it.
+
+![rename part](https://i.imgur.com/tMChLVo.gif)
 
 Double click on a part to open the note editor.
 
