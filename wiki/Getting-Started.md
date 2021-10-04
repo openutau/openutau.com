@@ -222,8 +222,23 @@ This raises or lowers the volume of the beginning of the note/phoneme.
 This lowers the volume of the rest of the note/phoneme.
 
 ![dec](https://i.imgur.com/MNU1Bws.gif)
+
+#### ENG (Resampler Engine)
+Selects resampler engine used to render this phoneme. If value is "", the engine selected in Preferences is used.
+
+![eng-setting](https://i.imgur.com/Fm2fZZ2.png)
+![eng](https://i.imgur.com/BtgIg3u.gif)
+
 #### MOD (modulation)
 This determines how much the pitch is flattened from the original recording. By default this is 0, or completely flat.
+
+#### Options Flags (Non-Numerical Flags)
+Add a flag. Change its type to "Options" and set "Option Values" to ",e".
+You will be able to use an expression to add nothing or "e" to resampler flags.
+
+![flage-setting](https://i.imgur.com/7DEflzM.png)
+![flage](https://i.imgur.com/Q6NUw93.gif)
+
 #### Other expressions
 All other expressions are like flags in UTAU.
 ### Edit pitchbends
