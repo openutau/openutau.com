@@ -1,8 +1,9 @@
 ## Install OpenUtau
 [![Download](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=latest&labelColor=FF347C&color=4ea6ea)](https://github.com/stakira/OpenUtau/releases/download/OpenUtau-Latest/OpenUtau.zip)
 
-Download the latest release from here. OpenUtau is currently Windows-only.  
-After unzipping to a new folder, you can start the application by double clicking `OpenUtau.exe`. Every time you start OU, it will check for any updates.
+- **Make sure "[.NET Core 3.1 Runtime](https://dotnet.microsoft.com/download/dotnet/3.1/runtime)" is installed. It's different from ".NET Frameworks".**
+- Download the latest release from here. OpenUtau is currently Windows-only.  
+- After unzipping to a new folder, you can start the application by double clicking `OpenUtau.exe`. Every time you start OU, it will check for any updates.
 
 ## Select UI language
 By default, OpenUtau will use the same language as your computer, or English if a translation is unavailable. To manually change the language, go to Tools > Preferences.
