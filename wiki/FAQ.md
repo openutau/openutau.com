@@ -1,15 +1,27 @@
 ## Why is there no sound when I hit Play?
-- Open Preferences and test the audio device.
-- Make sure the resampler selected in Preferences is compatible. If your resamplers were patched, try unpatched ones.
-- Make sure a singer is installed and selected.
-- Open up the midi window. If notes are semi-transparent, and phonemes, pitches, and expressions below don't show up, the lyrics do not work with the selected phonemizer and the voicebank.
+1. Open Preferences and test the audio device.
+2. Make sure the resampler selected in Preferences is compatible.
+    1. Make sure your resamplers are not patched.
+3. Make sure a singer is installed and selected.
+4. Open up the midi window. If notes are semi-transparent, and phonemes, pitches, and expressions below don't show up, the lyrics do not work with the selected phonemizer and the voicebank.
 
-## Why extra voicebank installation step?
-- Utau has a long history, carrying debts. Encoding is one of them. Remember all the gibberish?
-- OpenUtau needs to convert encoding of voicebank files, and also the file paths, installing within the software is the easiest way.
-- Because of this conversion step, OpenUtau does not require changing system locale to Japanese.
-- It also creates a opportunity for you to configure the voicebank, so that OpenUtau can understand it better and automate things.
-- Because file and file path encodings are converted to unicode, sharing voicebank folder with UTAU is impossible.
+## It's so laggy!
+This typically happens when you set render thread high with already multithreaded resamplers, like moresampler. In that case 8 moresamplers easily overloads your computer and push CPU usage to 100%. Please lower the thread count setting in OpenUtau.
+
+## Singer installation / Share voicebanks with UTAU
+OpenUtau aims to work on systems of all languages. Traditionally this is very difficult. Everything becomes mojibake on non-Japanese systems. The problem is two-fold:
+1. Filename encoding in zip files.
+2. Encoding of text files (oto.ini, etc).
+
+Japanese voicebanks use shift_jis for both, but some languages like Chinese or Korean cannot be encoded in shift_jis.
+
+The installer helps by:
+1. allowing you to preview and select encoding to extract filenames correctly.
+2. allowing you to preview and select encoding of text files.
+
+If your Windows is set to Japanese, using the installer is not required. You can unzip yourself and share files with UTAU. You may need to change text encoding in Singers dialog.
+
+If your Windows is not set to Japanese, please use the installer to make sure filenames are decoded correctly.
 
 ## Why doesn't VCV/CVVC/VCCV/etc. work?
 - In the Utau world, the default way to use continuous sound voicebanks, like VCV or CVVC, is type the aliases as lyrics. Basically hand picking samples. That always works in OpenUtau by using the default CV phonemizer.
