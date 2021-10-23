@@ -1,5 +1,7 @@
 This is a sample of the current version of `character.yaml` format. Note that it is still a work in progress and may change.
 
+The example is based on `闇音レンリ・連続音Ver1.5`.
+
 ### About character.yaml
 - `character.yaml` is the file used to store extra info that OpenUtau needs that cannot be captured by the traditional UTAU voicebank file set.
 - Note that this is a [YAML](https://en.wikipedia.org/wiki/YAML) file. If you manually edit it, make sure you create a valid YAML file. Especially note that you need exactly one space after ":". You may try to use a web YAML editor like [this one](https://codebeautify.org/yaml-editor-online).
@@ -25,7 +27,7 @@ portrait_opacity: 0.67
 - If you edit the file when OpenUtau is open, go to singers dialog and click "..." -> "Refresh" to reload it.
 
 ### Sub-banks
-- The example is based on `闇音レンリ・連続音Ver1.5`. It is a multi-pitch, multi-flavor bank.
+- `闇音レンリ・連続音Ver1.5` is a multi-pitch, multi-flavor bank.
 - This voicebank has 3 flavors: Normal, `Whisper` and `Clear`
 - This voicebank has 4 pitches: `A3`, `D4`, `G4`, `C5`.
 - The 3 flavors and 4 pitches form 12 different subbanks in total, each has a different suffix.
