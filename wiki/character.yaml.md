@@ -35,12 +35,13 @@ portrait_opacity: 0.67
 - Therefore in total 13 subbanks are specified in `character.yaml`
 
 ### Full Example
-```
-name: 闇音レンリ・連続音Ver1.5
-
+```name: 闇音レンリ・連続音Ver1.5
 text_file_encoding: shift_jis
+image: renri.bmp
 portrait: portrait.webp
-portrait_opacity: 0.67
+portrait_opacity: 0.67000001668930054
+author: ゆずり
+web: https://renrivoice.wixsite.com/renri-voice/utau
 subbanks:
 - prefix: ''
   suffix: CC5
