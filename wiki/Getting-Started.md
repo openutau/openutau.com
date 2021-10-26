@@ -2,6 +2,10 @@
 [![Download](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=latest&labelColor=FF347C&color=4ea6ea)](https://github.com/stakira/OpenUtau/releases/download/OpenUtau-Latest/OpenUtau.zip)
 
 - **Make sure "[.NET Core 3.1 Runtime](https://dotnet.microsoft.com/download/dotnet/3.1/runtime)" is installed. It's different from ".NET Frameworks".**
+  - Check your Windows is 32 bit or 64 bit by: right click "Start" button -> System -> System Type
+
+    ![system type](https://i.imgur.com/c7hWh3O.png)
+
 - Download the latest release from here. OpenUtau is currently Windows-only.  
 - After unzipping to a new folder, you can start the application by double clicking `OpenUtau.exe`. Every time you start OU, it will check for any updates.
 
