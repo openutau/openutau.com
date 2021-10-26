@@ -20,7 +20,7 @@ For multisyllabic words, type the whole word in the first note, then use `...` t
 If the syllables are misaligned, add numbers after `...` to force alignment to the nth phoneme in the word.  
 ![multisyllable](https://i.imgur.com/VLksjSR.png)
 
-Auxiliary dictionary files:
+### Auxiliary dictionary files:
 
 - You can find an example `arpasing.yaml` file in Plugins folder. You can add new entries to it.
 - A copy of `arpasing.yaml` file can be added to singer folder for a specific singer. You can even distribute an `arpasing.yaml` file with your voicebank.
