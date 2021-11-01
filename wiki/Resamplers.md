@@ -1,5 +1,9 @@
+
+# Windows
+
 This is a list of all UTAU resamplers tested with OpenUtau.
-# Fully compatible
+
+## Fully compatible
 
 - doppeltler32.exe
 - doppeltler64.exe
@@ -19,12 +23,18 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 - EFB-GT.exe
 - EFB-PB.exe
 
-# Compatible with adjustments
+## Compatible with adjustments
 
 - moresampler.exe
-  - Though it technically works, but it is actually barely usable. Not recommend to use at the moment.
   - Need to edit the following lines in moreconfig.txt:
     - Line 6 "resampler-compatibility" to on.
     - Line 16 "auto-update-llsm-mrq" to off.
+  - The wavetool mode is not supported. But using it as a pure resampler works.
+  - Generating llsm files with multiple processes can easily overload your computer. Please turn down threads to 1 or 2.
 
-# Incompatible
+## Incompatible
+
+# macOS
+
+As of macOS 11.6, the below method works.
+
