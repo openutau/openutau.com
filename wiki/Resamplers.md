@@ -32,8 +32,6 @@ This is a list of all UTAU resamplers tested with OpenUtau.
   - The wavetool mode is not supported. But using it as a pure resampler works.
   - Generating llsm files with multiple processes can easily overload your computer. Please turn down threads to 1 or 2.
 
-## Incompatible
-
 # macOS
 
 As of macOS 11.6, the below method works.
