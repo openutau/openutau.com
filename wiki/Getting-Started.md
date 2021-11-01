@@ -1,5 +1,6 @@
 ## Install OpenUtau
-[![Download](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=latest&labelColor=FF347C&color=4ea6ea)](https://github.com/stakira/OpenUtau/releases/download/OpenUtau-Latest/OpenUtau.zip)
+[![Download](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=windows&labelColor=FF347C&color=4ea6ea)](https://github.com/stakira/OpenUtau/releases/download/OpenUtau-Latest/OpenUtau.zip)
+[![Download](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=macos&labelColor=FF347C&color=4ea6ea)](https://github.com/stakira/OpenUtau/releases/download/OpenUtau-Latest/OpenUtau.dmg)
 
 - **Make sure "[.NET Core 3.1 Runtime](https://dotnet.microsoft.com/download/dotnet/3.1/runtime)" is installed. It's different from ".NET Frameworks".**
   - Check your Windows is 32 bit or 64 bit by: right click "Start" button -> System -> System Type
