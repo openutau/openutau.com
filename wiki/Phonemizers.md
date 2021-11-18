@@ -5,6 +5,7 @@ When phonemizers break notes into multiple phonemes, you can adjust the envelope
 ## CV (Default)
 No phonemization is applied.
 You can input `...` to extend the previous lyric over multiple notes.  
+Obs. After the update 11/12/21, `...` was changed to `+`.  
 ![... extension](https://i.imgur.com/2pR43nx.png)
 
 ## EN ARPA (English ARPAsing)
@@ -18,6 +19,7 @@ You may input lyrics in three different ways.
 
 For multisyllabic words, type the whole word in the first note, then use `...` to extend it across the following notes.  
 If the syllables are misaligned, add numbers after `...` to force alignment to the nth phoneme in the word.  
+Obs. After the update 11/12/21, `...` was changed to `+`.  
 ![multisyllable](https://i.imgur.com/VLksjSR.png)
 
 ### Auxiliary dictionary files:
@@ -62,19 +64,45 @@ write lyrics in Hangeul, apply phonological rules(연음화 / 유기음화 / 경
 
 ## KR CVVC (Korean CVVC)
 You should write the lyrics in Hangeul. Romaji will be updated soon.  
-Automatically insert VC between CV and CV.
+Automatically insert VC between CV and CV.  
 ![kr cvvc](https://i.imgur.com/vrftrEJ.png)
 
 you can write final consonant(`ㄴ`, `ㅁ`, `ㅇ`, `ㄹ`, `ㄱ`, `ㄲ`, `ㅂ`, `ㅍ`, `ㅅ`, `ㄷ`, `ㅌ`)
 You can fill it out right after the note like CV.
-Even if CV comes after final consonant, VC is not generated.
+Even if CV comes after final consonant, VC is not generated.  
 ![kr cvvc final consonant](https://i.imgur.com/2RQfG4F.png)
 
-When entering Vowel and Vowel, it is converted like VCV.
+When entering Vowel and Vowel, it is converted like VCV.  
 ![kr cvvc vowel](https://i.imgur.com/ubiRAgb.png)
 
 ## KR CVVC (Korean CVVC standard pronuciation)
 Followed the standard pronunciation method for Hangul.
-This support all Korean final consonants, consonant assimilation(자음동화), 된소리되기, abbreviate consonants(자음 축약), 탈락, sandhi(연음).
+This support all Korean final consonants, consonant assimilation(자음동화), 된소리되기, abbreviate consonants(자음 축약), 탈락, sandhi(연음).  
 
 ![Korean CVVC standard pronuciation](https://i.imgur.com/unXXxVq.png)
+
+## PT-BR CVC (Brazilian Portuguese CVC)
+Made with Xiao's PT-BR CVC reclist conotation, this phonemizer can be used with or without a dictionary
+
+### Without a Dictionary
+1. You can input the phonemes in plain text, separated by spaces (eg. `p e h f e y s @ w`)  
+![ptbr cvc typing without dictionary (perfeição)](https://i.imgur.com/BNGhl9A.png)  
+
+### With a Dictionary
+1. Portuguese Words (eg. `leite`)  
+![ptbr cvc with dictionary - ptbr words](https://i.imgur.com/E1eTaV5.png)  
+2. Portuguese Words + phonetic hint (eg. `leite[l e y t e]`)  
+![ptbr cvc with dictionary - ptbr words + phonetic hint](https://i.imgur.com/1bhmZFl.png)  
+3. Phonetic hint only (eg. `[l e y t e]`)  
+![ptbr cvc with dictionary - only phonetic hint](https://i.imgur.com/Fb8n69J.png)  
+
+### Common Feature
+With or without a dictionary, you can use the features listed below:
+
+1. Separate words or phonemes by syllable using `+`.  
+![ptbr cvc - separating syllables](https://i.imgur.com/ofHlD9O.png)  
+2. Extend a syllable or phonemes using `+*` or `+~`.  
+![ptbr cvc - extending syllables](https://i.imgur.com/OkqTZHd.png)  
+3. Using a single phoneme with `?`.  
+Obs. If exists a linked note behind that finishes with `V-`, `VC-` or `VC` + `C-`, this function removes those samples in order to cross fade with previous `V` or `CV`.  
+![ptbr cvc - ? function](https://i.imgur.com/MfeBe62.png)  
