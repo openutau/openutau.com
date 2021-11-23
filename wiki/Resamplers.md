@@ -29,8 +29,9 @@ This is a list of all UTAU resamplers tested with OpenUtau.
   - Need to edit the following lines in moreconfig.txt:
     - Line 6 "resampler-compatibility" to on.
     - Line 16 "auto-update-llsm-mrq" to off.
-  - The wavetool mode is not supported. But using it as a pure resampler works.
+  - The wavtool mode is not supported, but using it as a pure resampler works.
   - Generating llsm files with multiple processes can easily overload your computer. Please turn down threads to 1 or 2.
+    - You can also set Line 15 "multithread-synthesis" to off in moreconfig.txt to avoid this problem.
 
 # macOS
 
@@ -42,4 +43,4 @@ As of macOS 11.6, the below method works.
 brew tap gcenx/wine
 brew install --cask --no-quarantine wine-crossover
 ```
-3. Download "mac_additional.zip" from OpenUtau release page. Use the .sh script to wrap your exe. You will need to edit the .sh script for your usage.
+3. Download "mac_additional.zip" from OpenUtau release page. Use the .sh script to wrap your exe. You will need to edit the .sh script to work with each resampler.
