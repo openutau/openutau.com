@@ -5,22 +5,22 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 
 ## Fully compatible
 
-- doppeltler32.exe
-- doppeltler64.exe
-- f2resamp32.exe
-- f2resamp64.exe
-- fresamp11.exe
+- [[doppeltler32.exe|http://utau2008.xrea.jp/2020/engine/]]
+- [[doppeltler64.exe|http://utau2008.xrea.jp/2020/engine/]]
+- [[f2resamp32.exe|http://utau2008.xrea.jp/2020/engine/f2resamp004.zip]]
+- [[f2resamp64.exe|http://utau2008.xrea.jp/2020/engine/f2resamp004.zip]]
+- [[fresamp11.exe|http://utau2008.xrea.jp/downloads/fresamp011.zip]]
 - fresamp12.exe
-- fresamp14.exe
+- [[fresamp14.exe|http://utau2008.xrea.jp/downloads/fresamp014.zip]]
 - macres.exe
 - resampler.exe
-- TIPS.exe
-- tn_fnds.exe
+- [[TIPS.exe|http://scientistb.web.fc2.com/program/]]
+- [[tn_fnds.exe|http://z-server.game.coocan.jp/utau/utautop.html#tn_fnds]]
 - w4u.exe
-- young3.exe
+- [[young3.exe|https://bowlroll.net/file/203018]]
 - vs4u.exe
-- WARP.exe
-- EFB-GT.exe
+- [[WARP.exe|http://custom-made.seesaa.net/article/312530509.html]]
+- [[EFB-GT.exe|http://custom-made.seesaa.net/article/312529786.html]]
 - EFB-PB.exe
 
 ## Compatible with adjustments
