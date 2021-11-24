@@ -22,7 +22,7 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 - [[WARP.exe|http://custom-made.seesaa.net/article/312530509.html]]
 - [[EFB-GT.exe|http://custom-made.seesaa.net/article/312529786.html]]
 - EFB-PB.exe
-- [[SpaceWorld-win64.exe|https://github.com/LovelyA72/SpaceWorld]]
+- [[SpaceWorld_win64.exe|https://github.com/LovelyA72/SpaceWorld/releases]]
 
 ## Compatible with adjustments
 
