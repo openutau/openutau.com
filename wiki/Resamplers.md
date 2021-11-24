@@ -12,16 +12,17 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 - [[fresamp11.exe|http://utau2008.xrea.jp/downloads/fresamp011.zip]]
 - fresamp12.exe
 - [[fresamp14.exe|http://utau2008.xrea.jp/downloads/fresamp014.zip]]
-- macres.exe
+- [[macres.exe|https://github.com/titinko/macres/releases]]
 - resampler.exe
 - [[TIPS.exe|http://scientistb.web.fc2.com/program/]]
 - [[tn_fnds.exe|http://z-server.game.coocan.jp/utau/utautop.html#tn_fnds]]
 - w4u.exe
 - [[young3.exe|https://bowlroll.net/file/203018]]
-- vs4u.exe
+- [[vs4u.exe|http://ackiesound.ifdef.jp/download.html#vs4u]]
 - [[WARP.exe|http://custom-made.seesaa.net/article/312530509.html]]
 - [[EFB-GT.exe|http://custom-made.seesaa.net/article/312529786.html]]
 - EFB-PB.exe
+- [[SpaceWorld-win64.exe|https://github.com/LovelyA72/SpaceWorld]]
 
 ## Compatible with adjustments
 
