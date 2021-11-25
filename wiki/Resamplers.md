@@ -4,7 +4,7 @@
 This is a list of all UTAU resamplers tested with OpenUtau.
 
 ## Fully compatible
-- worldline serial (OpenUtau builtin)
+- worldline (OpenUtau builtin on all platforms)
 - [[doppeltler32.exe|http://utau2008.xrea.jp/2020/engine/]]
 - [[doppeltler64.exe|http://utau2008.xrea.jp/2020/engine/]]
 - [[f2resamp32.exe|http://utau2008.xrea.jp/2020/engine/f2resamp004.zip]]
