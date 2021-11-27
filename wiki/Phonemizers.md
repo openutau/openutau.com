@@ -46,7 +46,7 @@ Lyrics should be written in hiragana. If your lyrics are written in romaji, you 
 The phonemizer will automatically convert CV to VCV. If a VCV sample isn't available in the voicebank, it will fall back on CV. `presamp.ini` settings from the voicebank are not supported yet.  
 ![ja vcv](https://i.imgur.com/QYp3J3J.png)
 
-## KR CVC (Korean CVC)
+## KO CVC (Korean CVC)
 This is a program to modify existing oto.ini file for use in OpenUtau (made by myself)  
 └> https://app.box.com/s/t973p0rznirqg0naa04436p8re0ktfyy  
 You write lyrics in Romaji and Hangeul  
@@ -62,7 +62,7 @@ write Hangeul, you can use combine final consonants
 ![kr cvc](https://i.imgur.com/Ffn0mNK.jpg)  
 write lyrics in Hangeul, apply phonological rules(연음화 / 유기음화 / 경음화 / 구개음화 / 비음화 / 유음화 / 탈락 / 음절끝소리규칙)  
 
-## KR CVVC (Korean CVVC)
+## KO CVVC (Korean CVVC)
 You should write the lyrics in Hangeul. Romaji will be updated soon.  
 Automatically insert VC between CV and CV.  
 ![kr cvvc](https://i.imgur.com/vrftrEJ.png)
@@ -75,11 +75,36 @@ Even if CV comes after final consonant, VC is not generated.
 When entering Vowel and Vowel, it is converted like VCV.  
 ![kr cvvc vowel](https://i.imgur.com/ubiRAgb.png)
 
-## KR CVVC (Korean CVVC standard pronuciation)
+## KO CVVC (Korean CVVC standard pronuciation)
 Followed the standard pronunciation method for Hangul.
 This support all Korean final consonants, consonant assimilation(자음동화), 된소리되기, abbreviate consonants(자음 축약), 탈락, sandhi(연음).  
 
 ![Korean CVVC standard pronuciation](https://i.imgur.com/unXXxVq.png)
+
+## KO VCV (Korean VCV)
+Lyrics can be input in Hangul (ex. `한 글`) or as an Arpasing-style phonetic hint (ex. `[h a n] [g eu l]`). When a note has both a lyric and a phonetic hint, the phonetic hint takes precedence.
+
+![Hangul and phonetic hint support](https://i.imgur.com/1CKRtFl.png)
+
+The phonemizer supports both lowercase and uppercase batchim aliases. No need to worry about modifying the oto.ini files.
+
+![Lowercase batchim alias support](https://i.imgur.com/uw72Arh.png)
+![Uppercase batchim alias support](https://i.imgur.com/eA5yfCo.png)
+
+When inputting phonetic hints, take note of the following:
+* Each syllable must be in its own note (`[h a n] [g eu l]` O / `[h a n g eu l]` X).
+* ㅐ, ㅒ, and ㅙ can be written as `ae`, `yae`, and `wae`, respectively. You do not need to convert them to an `e` vowel.
+* ㄲ, ㄸ, and ㅃ can be written as `gg / kk`, `dd / tt`, and `bb / pp`, respectively.
+* ㅢ can be written as `eui` or `ui`.
+* ㅚ can be written as `oi` or `oe`.
+* Each sound *must* be separated with spaces (`[h a n]` O / `[han]` X).
+* Glides (`w` and `y`) are part of the vowel and should *not* be treated as an initial consonant (`[wae]` O / `[w ae]` X).
+
+Phonetic hints and Hangul can be used together, which may be useful for voicebanks that offer English sounds like /f/ and /v/.
+
+![Hangul and phonetic hint mixing](https://i.imgur.com/k0lux1a.png)
+
+Although the phonemizer supports all Hangul jamo, it is strongly recommended to rewrite the lyrics in phonetic Hangul (such as the pronunciation guides on the Naver Korean Dictionary or Wiktionary) for best results, especially with words that go through consonant sound changes (ex. 입력 → 임녁, 꽃잎 → 꼰닙, 있어 → 이써, etc.).
 
 ## PT-BR CVC (Brazilian Portuguese CVC)
 Made with Xiao's PT-BR CVC reclist conotation, this phonemizer can be used with or without a dictionary
