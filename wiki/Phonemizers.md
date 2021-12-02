@@ -28,6 +28,12 @@ Obs. After the update 11/12/21, `...` was changed to `+`.
 - A copy of `arpasing.yaml` file can be added to singer folder for a specific singer. You can even distribute an `arpasing.yaml` file with your voicebank.
 - The lookup order is `plugin dictionary` -> `singer dictionary` -> `default dictionary`.
 
+## EN DELTA (English Delta CVVC)
+This phonemizer is not complete. Voicebanks that follow Kasane Teto's English voicebank's aliasing should work.  
+Currently, only input for plain English words and direct input is allowed.
+- Plain English words (eg. `live`)
+- Manual input (eg. `?- lI` `?I v-`)
+
 ## ZH CVV (Chinese CVV)
 Lyrics should be written in pinyin. The phonemizer will insert endings for syllables that need them.  
 ![zh cvv](https://i.imgur.com/TJfiNit.png)
