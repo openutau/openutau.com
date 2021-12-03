@@ -31,7 +31,7 @@ If the syllables are misaligned, add numbers after `+` to force alignment to the
 - The lookup order is `plugin dictionary` -> `singer dictionary` -> `default dictionary`.
 
 ## EN DELTA (English Delta CVVC)
-This phonemizer is not complete. Voicebanks that follow Kasane Teto's English voicebank's aliasing should work. Newer Delta reclists will be supported in the future. 
+This phonemizer is not complete. Voicebanks that follow Kasane Teto's English voicebank's aliasing should work.
 Currently, only input for plain English words and direct input is allowed.
 - Plain English words (eg. `live`)
 
