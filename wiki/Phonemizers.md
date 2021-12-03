@@ -40,8 +40,6 @@ Currently, only input for plain English words and direct input is allowed.
 
 ![delta manual](https://i.imgur.com/dFIzRiO.png)
 
-To get the phonemizer's dictionary working for plain words, you need to make a folder next to OpenUtau.exe named `Dictionaries`, and put [cmudict-0_7b.txt](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/Api/cmudict-0_7b.txt) in it.
-
 More information on Delta English can be found [here](https://tl.tubs.wtf/2020/11/09/delta-eng) if needed.
 
 ## ZH CVV (Chinese CVV)
