@@ -6,6 +6,7 @@ When phonemizers break notes into multiple phonemes, you can adjust the envelope
 No phonemization is applied.
 You can input `+` to extend the previous lyric over multiple notes.  
 (Older versions of OpenUtau may use `...` instead of `+`.)
+
 ![+ extension](https://i.imgur.com/JlHc6bq.png)
 
 ## EN ARPA (English ARPAsing)
@@ -20,6 +21,7 @@ You may input lyrics in three different ways.
 For multisyllabic words, type the whole word in the first note, then use `+` to extend it across the following notes.  
 If the syllables are misaligned, add numbers after `+` to force alignment to the nth phoneme in the word.  
 (Older versions of OpenUtau may use `...` instead of `+`.)
+
 ![multisyllable](https://i.imgur.com/zjoVXxP.png)
 
 ### Auxiliary dictionary files:
@@ -32,9 +34,12 @@ If the syllables are misaligned, add numbers after `+` to force alignment to the
 This phonemizer is not complete. Voicebanks that follow Kasane Teto's English voicebank's aliasing should work. Newer Delta reclists will be supported in the future. 
 Currently, only input for plain English words and direct input is allowed.
 - Plain English words (eg. `live`)
+
 ![delta eng](https://i.imgur.com/biB7yoF.png)
 - Manual input (eg. `?- lI` `?I v-`)
+
 ![delta manual](https://i.imgur.com/dFIzRiO.png)
+
 To get the phonemizer's dictionary working for plain words, you need to make a folder next to OpenUtau.exe named `Dictionaries`, and put [cmudict-0_7b.txt](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/Api/cmudict-0_7b.txt) in it.
 
 More information on Delta English can be found [here](https://tl.tubs.wtf/2020/11/09/delta-eng) if needed.
