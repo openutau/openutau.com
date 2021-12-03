@@ -4,23 +4,23 @@ When phonemizers break notes into multiple phonemes, you can adjust the envelope
 
 ## CV (Default)
 No phonemization is applied.
-You can input `...` to extend the previous lyric over multiple notes.  
-Obs. After the update 11/12/21, `...` was changed to `+`.  
-![... extension](https://i.imgur.com/2pR43nx.png)
+You can input `+` to extend the previous lyric over multiple notes.  
+(Older versions of OpenUtau may use `...` instead of `+`.)
+![+ extension](https://i.imgur.com/JlHc6bq.png)
 
 ## EN ARPA (English ARPAsing)
 You may input lyrics in three different ways.
-1. Plain English words (eg. `live`)  
+- Plain English words (eg. `live`)  
 ![plain english words](https://i.imgur.com/PZJe73G.png)
-2. Plain English words + phonetic hint (eg. `live[l ih v]`)  
+- Plain English words + phonetic hint (eg. `live[l ih v]`)  
 ![english word + hint](https://i.imgur.com/YmvhUaL.png)
-3. Phonetic hint only (eg. `[l ih v]`)  
+- Phonetic hint only (eg. `[l ih v]`)  
 ![hint only](https://i.imgur.com/6hKOYsn.png)
 
-For multisyllabic words, type the whole word in the first note, then use `...` to extend it across the following notes.  
-If the syllables are misaligned, add numbers after `...` to force alignment to the nth phoneme in the word.  
-Obs. After the update 11/12/21, `...` was changed to `+`.  
-![multisyllable](https://i.imgur.com/VLksjSR.png)
+For multisyllabic words, type the whole word in the first note, then use `+` to extend it across the following notes.  
+If the syllables are misaligned, add numbers after `+` to force alignment to the nth phoneme in the word.  
+(Older versions of OpenUtau may use `...` instead of `+`.)
+![multisyllable](https://i.imgur.com/zjoVXxP.png)
 
 ### Auxiliary dictionary files:
 
@@ -29,11 +29,15 @@ Obs. After the update 11/12/21, `...` was changed to `+`.
 - The lookup order is `plugin dictionary` -> `singer dictionary` -> `default dictionary`.
 
 ## EN DELTA (English Delta CVVC)
-This phonemizer is not complete. Voicebanks that follow Kasane Teto's English voicebank's aliasing should work.  
+This phonemizer is not complete. Voicebanks that follow Kasane Teto's English voicebank's aliasing should work. Newer Delta reclists will be supported in the future. 
 Currently, only input for plain English words and direct input is allowed.
 - Plain English words (eg. `live`)
+![delta eng](https://i.imgur.com/biB7yoF.png)
 - Manual input (eg. `?- lI` `?I v-`)
-To get the phonemizer's dictionary working, you need to make a folder in the OpenUtau folder named `Dictionaries`, then put [cmudict-0_7b.txt](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/Api/cmudict-0_7b.txt) in it.
+![delta manual](https://i.imgur.com/dFIzRiO.png)
+To get the phonemizer's dictionary working for plain words, you need to make a folder next to OpenUtau.exe named `Dictionaries`, and put [cmudict-0_7b.txt](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/Api/cmudict-0_7b.txt) in it.
+
+More information on Delta English can be found [here](https://tl.tubs.wtf/2020/11/09/delta-eng) if needed.
 
 ## ZH CVV (Chinese CVV)
 Lyrics should be written in pinyin. The phonemizer will insert endings for syllables that need them.  
@@ -56,8 +60,7 @@ The phonemizer will automatically convert CV to VCV. If a VCV sample isn't avail
 ## KO CVC (Korean CVC)
 This is a program to modify existing oto.ini file for use in OpenUtau (made by myself)  
 └> https://app.box.com/s/t973p0rznirqg0naa04436p8re0ktfyy  
-You write lyrics in Romaji and Hangeul  
-automatically insert VC between the CV and CV.  
+You can write lyrics in Romaji and Hangul, and the phonemizer will automatically insert VCs between each CV.  
 ![kr cvc](https://i.imgur.com/6w87k41.png)  
 you can write final consonant(`n`, `m`, `ng`, `l`, `k`, `p`, `t`),  
 but you should write the vowel of preNote in front of final consonant without spaces (ex. `an(안)`, `im(임)`, `ung(웅)`, `el(엘)`, `ok(옥)`, `eup(읍)`, `eot(엇)`).  
