@@ -33,6 +33,7 @@ This phonemizer is not complete. Voicebanks that follow Kasane Teto's English vo
 Currently, only input for plain English words and direct input is allowed.
 - Plain English words (eg. `live`)
 - Manual input (eg. `?- lI` `?I v-`)
+To get the phonemizer's dictionary working, you need to make a folder in the OpenUtau folder named `Dictionaries`, then put [cmudict-0_7b.txt](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/Api/cmudict-0_7b.txt) in it.
 
 ## ZH CVV (Chinese CVV)
 Lyrics should be written in pinyin. The phonemizer will insert endings for syllables that need them.  
