@@ -32,10 +32,16 @@ If the syllables are misaligned, add numbers after `+` to force alignment to the
 
 ## EN DELTA (English Delta CVVC)
 This phonemizer is not complete. Voicebanks that follow Kasane Teto's English voicebank's aliasing should work.
-Currently, only input for plain English words and direct input is allowed.
+You can input lyrics the following ways:
 - Plain English words (eg. `live`)
 
 ![delta eng](https://i.imgur.com/biB7yoF.png)
+- Word + phonetic hint (eg. `live[l I v]`)
+
+![delta wp](https://i.imgur.com/T5cJR38.png)
+- Phonetic hint (eg. `[l I v]`)
+
+![delta p](https://i.imgur.com/GHzWJyc.png)
 - Manual input (eg. `?- lI` `?I v-`)
 
 ![delta manual](https://i.imgur.com/dFIzRiO.png)
