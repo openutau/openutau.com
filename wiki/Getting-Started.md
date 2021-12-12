@@ -65,7 +65,7 @@ Expressions allow you to change parameters note-by-note, similar to flags in UTA
 | Attack   | ATK          | Envelope starting volume                          | 0 - 200    | 100     |
 | Decay    | DEC          | Envelope ending volume                            | 0 - 100    | 0       |
 | Voice color    | CLR          | Utilizes voicebank appends/colors           | No range, options    | Blank       |
-| Resampler engine    | CLR          | Change resamplers on the fly           | No range, options    | , worldline64.exe |
+| Resampler engine    | ENG          | Change resamplers on the fly           | No range, options    | , worldline64.exe |
 | Gender   | GEN          | g flag (formant shift)                            | -100 - 100 | 0       |
 | Breath   | BRE          | B flag (breathiness)                              | 0 - 100    | 0       |
 | Lowpass  | LPF          | H flag (low pass filter)                          | 0 - 100    | 0       |
