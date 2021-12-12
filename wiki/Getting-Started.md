@@ -4,7 +4,7 @@
 [![Download](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=macos-64bit&labelColor=FF347C&color=4ea6ea)](https://github.com/stakira/OpenUtau/releases/download/OpenUtau-Latest/OpenUtau-osx-x64.dmg)
 
 ### Windows
-- After unzipping to a new folder, you can start the application by double clicking `OpenUtau.exe`. Every time you start OU, it will check for any updates.
+- After unzipping to a new folder, you can start the application by double clicking `OpenUtau.exe`. Every time you start OU, it will check for updates first.
 ### macOS
 - Double click the dmg file downloaded. Drag the app icon to folder icon.
 
@@ -14,9 +14,9 @@ By default, OpenUtau will use the same language as your computer, or English if 
 ![language](https://i.imgur.com/qW51SZ0.gif)
 
 ## Install a resampler
-Put a resampler exe or dll into the Resamplers folder. If you already use UTAU, you can copy + paste resamplers that you already have. Check [Resamplers](Resamplers) for a list of compatible resamplers.
+Put a resampler .exe or .dll into the Resamplers folder. If you already use UTAU, you can copy + paste resamplers that you already have. Check [Resamplers](Resamplers) for a list of compatible resamplers.
 
-In OpenUtau, go to Tools > Preferences to select a resampler for preview and export. You can also adjust the number of pre-render threads to improve resampler performance. Using Moresampler is still not fully optimized, so a warning will appear advising you to only use 1 thread.
+In OpenUtau, go to Tools > Preferences to select a resampler for preview and export. You can also adjust the number of pre-render threads to improve resampler performance. Using Moresampler is still not fully optimized, so a warning will appear advising you to only use 1 or 2 threads.
 
 ![select resampler](https://imgur.com/eMcoHxp.gif)
 
@@ -27,7 +27,7 @@ Voicebanks can be installed through Tools > Install Singer, or through Tools > I
 
 ![install voicebank](https://i.imgur.com/hLBaWWl.png)
 
-Voicebanks must be compressed into a ZIP, RAR, 7z, or UAR file. When voicebanks are installed, the text will be converted to Unicode. If you have already unzipped voicebanks for use in UTAU, you cannot copy + paste them, because the files will still be encoded in Shift-JIS. You will need to compress the voicebank again and reinstall it for use in OpenUtau.
+Voicebanks must be compressed into a ZIP, RAR, 7z, or UAR file. When voicebanks are installed, the text will be converted to Unicode. If you have already unzipped voicebanks for use in UTAU, unless your system local is set to Japanese, you cannot copy + paste them, because the files will still be encoded in Shift-JIS. You will need to compress the voicebank again and reinstall it for use in OpenUtau.
 
 "Install Singer" assumes that the voicebank is originally in ASCII or Shift-JIS. For most voicebanks, this option will be enough.
 
@@ -38,7 +38,7 @@ Voicebanks must be compressed into a ZIP, RAR, 7z, or UAR file. When voicebanks 
 
 ## Projects
 ### Creating projects
-When you start OpenUtau you have a new, blank project.  
+When you start OpenUtau, you have a new, blank project.  
 You can also start a new project from File > New.
 
 ![new project](https://i.imgur.com/td8Imgw.png)
@@ -64,9 +64,14 @@ Expressions allow you to change parameters note-by-note, similar to flags in UTA
 | Volume   | VOL          | Note volume                                       | 0 - 200    | 100     |
 | Attack   | ATK          | Envelope starting volume                          | 0 - 200    | 100     |
 | Decay    | DEC          | Envelope ending volume                            | 0 - 100    | 0       |
+| Voice color    | CLR          | Utilizes voicebank appends/colors           | No range, options    | Blank       |
+| Resampler engine    | CLR          | Change resamplers on the fly           | No range, options    | , worldline64.exe |
 | Gender   | GEN          | g flag (formant shift)                            | -100 - 100 | 0       |
 | Breath   | BRE          | B flag (breathiness)                              | 0 - 100    | 0       |
 | Lowpass  | LPF          | H flag (low pass filter)                          | 0 - 100    | 0       |
+| Modulation | MOD        | Note modulation from original pitch               | 0 - 100    | 0       |
+| Alternate | ALT         | Alternate aliasing for duplicates in oto.ini      | 0 - 16     | 0       |
+| Tone shift | SHFT       | Allows for selecting pitch alias                  | -36 - 36   | 0       |
 
 ##### Adding expressions
 Use the + and - buttons in the lower left corner to add and remove expressions. Some expressions cannot be removed. There are two types of expressions, numerical expressions and fixed options.
