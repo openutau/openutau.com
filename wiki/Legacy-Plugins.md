@@ -11,7 +11,7 @@ This is a list of all plugins for UTAU that have been tested in OpenUtau. Many p
 * [RandomVibrato](https://ameblo.jp/maiko3utau/entry-12095627508.html)
 * [UTAU Plugin Launcher](https://ameblo.jp/maiko3utau/entry-12648640444.html)
 * [VibratoStocker](https://ameblo.jp/maiko3utau/entry-12544042092.html)
-* [Extended Pitch Editor/拡張ピッチエディタ](http://z-server.game.coocan.jp/utau/utautop.html#pitedit) (Works, but is a bit glitchy) 
+* [Extended Pitch Editor/拡張ピッチエディタ](http://z-server.game.coocan.jp/utau/utautop.html#pitedit) (Works but is a bit glitchy,except for mode 1 editing) 
 # Compatible with adjustments
 # Incompatible
 * [envedit/拡張エンベロープエディタ](http://z-server.game.coocan.jp/utau/utautop.html) - Works, but OU can't keep complex envelope changes intact (anything beyond what attack/decay can emulate), so basically useless
