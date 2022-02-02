@@ -5,6 +5,7 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 
 ## Fully compatible
 - worldline (OpenUtau builtin on all platforms)
+- [[bkh01.exe|http://z-server.game.coocan.jp/utau/utautop.html#bkh01]]
 - [[doppeltler32.exe|http://utau2008.xrea.jp/2020/engine/]]
 - [[doppeltler64.exe|http://utau2008.xrea.jp/2020/engine/]]
 - [[f2resamp32.exe|http://utau2008.xrea.jp/2020/engine/f2resamp004.zip]]
@@ -12,11 +13,14 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 - [[fresamp11.exe|http://utau2008.xrea.jp/downloads/fresamp011.zip]]
 - fresamp12.exe
 - [[fresamp14.exe|http://utau2008.xrea.jp/downloads/fresamp014.zip]]
+- [[phavoco|http://utau2008.xrea.jp/downloads/phavoco010.zip]]
+- [[phaavoco|http://utau2008.xrea.jp/2020/engine/]]
 - [[macres.exe|https://github.com/titinko/macres/releases]]
+- model4.exe
 - resampler.exe
 - [[TIPS.exe|http://scientistb.web.fc2.com/program/]]
 - [[tn_fnds.exe|http://z-server.game.coocan.jp/utau/utautop.html#tn_fnds]]
-- w4u.exe
+- [[w4u.exe|http://utau2008.xrea.jp/downloads/w4u001.zip]]
 - [[young3.exe|https://bowlroll.net/file/203018]]
 - [[vs4u.exe|http://ackiesound.ifdef.jp/download.html#vs4u]]
 - [[WARP.exe|http://custom-made.seesaa.net/article/312530509.html]]
