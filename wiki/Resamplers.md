@@ -13,8 +13,8 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 - [[fresamp11.exe|http://utau2008.xrea.jp/downloads/fresamp011.zip]]
 - fresamp12.exe
 - [[fresamp14.exe|http://utau2008.xrea.jp/downloads/fresamp014.zip]]
-- [[phavoco|http://utau2008.xrea.jp/downloads/phavoco010.zip]]
-- [[phaavoco|http://utau2008.xrea.jp/2020/engine/]]
+- [[phavoco.exe|http://utau2008.xrea.jp/downloads/phavoco010.zip]]
+- [[phaavoco.exe|http://utau2008.xrea.jp/2020/engine/]]
 - [[macres.exe|https://github.com/titinko/macres/releases]]
 - model4.exe
 - resampler.exe
