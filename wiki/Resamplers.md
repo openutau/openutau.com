@@ -52,6 +52,8 @@ brew install --cask --no-quarantine wine-crossover
 
 # Linux
 
+For wrapping Windows resamplers into Linux, use this method:
+
 1. Install [Wine](https://www.winehq.org/)
 2. Open Resamplers folder (should be on /home/your_username/OpenUtau/Resamplers/)
 3. Create a new text file with the name of your resampler (don't need to have a file extension). Open, add and edit this script:
