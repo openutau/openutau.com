@@ -49,3 +49,14 @@ brew tap gcenx/wine
 brew install --cask --no-quarantine wine-crossover
 ```
 3. Download "mac_additional.zip" from OpenUtau release page. Use the .sh script to wrap your exe. You will need to edit the .sh script to work with each resampler.
+
+# Linux
+
+1. Install [Wine](https://www.winehq.org/)
+2. Open Resamplers folder (should be on /home/your_username/OpenUtau/Resamplers/)
+3. Create a new text file with the name of your resampler (don't need to have a file extension). Open, add and edit this script:
+```
+#!/bin/bash
+LANG="ja_JP.UTF8" wine "/absolute/path/to/your/resampler.exe" "${@,-1}"
+```
+4. Restart or execute OpenUtau.
