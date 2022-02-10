@@ -163,6 +163,10 @@ Phonetic input
 Consonants: `b by ch d dh f g gy h hy j k ky l ly m my n ny ng p py r ry s sh t th v w y z zh`  
 Vowels: `a i u e o ay ey oy ow aw`
 
+Forced input  
+Prefix the lyric with `?` to use a specific alias from the voicebank.  
+![en to ja forced](https://i.imgur.com/676moY0.png)
+
 Use `+` to extend multisyllable words across multiple notes.  
 ![en to ja extend](https://i.imgur.com/hFkEWut.png)
 
