@@ -2,7 +2,7 @@ This page is written for end users. Developers interested in working on new phon
 
 When phonemizers break notes into multiple phonemes, you can adjust the envelopes and parameters for each of these independently.
 
-## CV (Default)
+## DEFAULT
 No phonemization is applied.
 You can input `+` to extend the previous lyric over multiple notes.  
 (Older versions of OpenUtau may use `...` instead of `+`.)
@@ -150,3 +150,34 @@ With or without a dictionary, you can use the features listed below:
 3. Using a single phoneme with `?`.  
 Obs. If exists a linked note behind that finishes with `V-`, `VC-` or `VC` + `C-`, this function removes those samples in order to cross fade with previous `V` or `CV`.  
 ![ptbr cvc - ? function](https://i.imgur.com/MfeBe62.png)  
+
+## EN to JA (English to Japanese)
+This phonemizer converts English lyrics to phonemes for Japanese voicebanks. It will automatically adapt to CV, VCV, and CVVC voicebanks.
+
+Standard input  
+![en to ja standard](https://i.imgur.com/EqCxHM5.png)
+
+Phonetic input  
+![en to ja phonetic](https://i.imgur.com/5jAAJ9N.png)
+
+Consonants: `b by ch d dh f g gy h hy j k ky l ly m my n ny ng p py r ry s sh t th v w y z zh`  
+Vowels: `a i u e o ay ey oy ow aw`
+
+Use `+` to extend multisyllable words across multiple notes.  
+![en to ja extend](https://i.imgur.com/hFkEWut.png)
+
+Use `+*` or `+~` to extend the previous syllable instead of going to the next syllable  
+![en to ja extend special](https://i.imgur.com/jzbSJQJ.png)
+
+Example with VCV voicebank  
+![en to ja vcv](https://i.imgur.com/k1hqCdR.png)
+
+Example with CVVC voicebank  
+![en to ja cvvc](https://i.imgur.com/SfLHlle.png)
+
+Example with VCV+CVVC voicebank  
+![en to ja vcv cvvc](https://i.imgur.com/rVorLTO.png)  
+When both VCV and CVVC phonemes are available, CVVC is prioritized.
+
+If the voicebank has no VC phonemes, it is recommended to edit the timing of the final consonant to remove the vowel sound.  
+![en to ja final consonant](https://i.imgur.com/qSAMRht.png)
