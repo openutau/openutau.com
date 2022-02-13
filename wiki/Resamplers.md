@@ -26,7 +26,6 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 - [[WARP.exe|http://custom-made.seesaa.net/article/312530509.html]]
 - [[EFB-GT.exe|http://custom-made.seesaa.net/article/312529786.html]]
 - EFB-PB.exe
-- [[SpaceWorld_win64.exe|https://github.com/LovelyA72/SpaceWorld/releases]]
 
 ## Compatible with adjustments
 
@@ -37,6 +36,9 @@ This is a list of all UTAU resamplers tested with OpenUtau.
   - The wavtool mode is not supported, but using it as a pure resampler works.
   - Generating llsm files with multiple processes can easily overload your computer. Please turn down threads to 1 or 2.
     - You can also set Line 15 "multithread-synthesis" to off in moreconfig.txt to avoid this problem.
+- [[SpaceWorld_win64.exe|https://github.com/LovelyA72/SpaceWorld/releases]]
+    - May crash if the voicebank doesn't have frq files generated
+
 
 # macOS
 
