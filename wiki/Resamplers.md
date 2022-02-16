@@ -44,7 +44,7 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 
 As of macOS 11.6, the below method works.
 
-1. Install [homebrew](https://docs.brew.sh/Installation)
+1. Install [homebrew](https://brew.sh/)
 2. Install [wine32on64](https://github.com/Gcenx/homebrew-wine) using following commands:
 ```
 brew tap gcenx/wine
