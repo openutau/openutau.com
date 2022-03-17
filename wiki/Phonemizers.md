@@ -206,6 +206,9 @@ As you can see, `je(2)` and others `X(2)` forms are used when you want to use wo
 Since French has a lot of silent sounds, you will sometimes have a second or third form of the word depending on the context (silent "e", liaison...)
 ![fr cvvc alternative forms](https://i.imgur.com/UQbMRuK.png)
 
+The phonemizer can also read hiragana (with approximate French sounds).
+![hiragana support](https://i.imgur.com/52cjlcf.png)
+
 ### Ressources
 These rules are showcased in more detail in the PhonemizerInputHelp.ustx, available in the [sample package](https://drive.google.com/file/d/1FpZTf2FOjWz-BjpWcGZEha-ZBhanEyDj/view?usp=sharing). For more information on compatible UTAUs, tutorials and help with French UTAUs you can go [here](https://frenchutauhelp.carrd.co/).
 
