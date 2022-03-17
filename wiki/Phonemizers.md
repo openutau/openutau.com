@@ -185,3 +185,30 @@ When both VCV and CVVC phonemes are available, CVVC is prioritized.
 
 If the voicebank has no VC phonemes, it is recommended to edit the timing of the final consonant to remove the vowel sound.  
 ![en to ja final consonant](https://i.imgur.com/qSAMRht.png)
+
+## FR CVVC (French CVVC)
+### Set up
+This phonemizer uses the [Petit Mot](https://simelomad.wixsite.com/crabkids/copie-de-pronunciation-guide) reclist by Melomad, it works with a dictionary available [here](https://drive.google.com/file/d/1m-wnt5reJ0d9rGC2e1jMlZUMeioA5Lnw/view?usp=sharing). For the phonemizer to work, you need to download the .txt and put it in your Dictionaries folder.
+
+![dictionary goes in the dictionaries folder at the root](https://i.imgur.com/szewSA7.png)
+
+There is also a [sample package](https://drive.google.com/file/d/1FpZTf2FOjWz-BjpWcGZEha-ZBhanEyDj/view?usp=sharing) available with a ustx that showcases the basic rules of the dictionary as well as ustx with French lyrics.
+
+### Lyric input
+You can input lyrics, phonetic hints `[]` or force input with `?`. (Be careful as forcing a phoneme will break the phonemizer transitions) 
+Use `+` to break words into syllables and `+~` to extend a syllable.
+![fr cvvc lyric input vs phonetic input vs force input](https://i.imgur.com/qaPUUNH.png)
+
+Sentences with apostrophes (eg. "je t'aime", "l'amour", "qu'il l'aime") need to be input `je(2) + te aime`, `le amour`, `que il + le aime`. 
+![fr cvvc handling of apostrophes](https://i.imgur.com/YS0QQx4.png)
+
+As you can see, `je(2)` and others `X(2)` forms are used when you want to use words with an `ee` sound.
+Since French has a lot of silent sounds, you will sometimes have a second or third form of the word depending on the context (silent "e", liaison...)
+![fr cvvc alternative forms](https://i.imgur.com/UQbMRuK.png)
+
+### Ressources
+These rules are showcased in more detail in the PhonemizerInputHelp.ustx, available in the [sample package](https://drive.google.com/file/d/1FpZTf2FOjWz-BjpWcGZEha-ZBhanEyDj/view?usp=sharing). For more information on compatible UTAUs, tutorials and help with French UTAUs you can go [here](https://frenchutauhelp.carrd.co/).
+
+
+
+
