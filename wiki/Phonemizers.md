@@ -188,7 +188,7 @@ If the voicebank has no VC phonemes, it is recommended to edit the timing of the
 
 ## FR CVVC (French CVVC)
 ### Set up
-This phonemizer uses the [Petit Mot](https://simelomad.wixsite.com/crabkids/copie-de-pronunciation-guide) reclist by Melomad, it works with a dictionary available [here](https://drive.google.com/file/d/1m-wnt5reJ0d9rGC2e1jMlZUMeioA5Lnw/view?usp=sharing). For the phonemizer to work, you need to download the .txt and put it in your Dictionaries folder.
+This phonemizer uses a slightly modified version of the [Petit Mot](https://simelomad.wixsite.com/crabkids/copie-de-pronunciation-guide) reclist by Melomad, it works with a dictionary available [here](https://drive.google.com/file/d/1m-wnt5reJ0d9rGC2e1jMlZUMeioA5Lnw/view?usp=sharing). For the phonemizer to work, you need to download the .txt and put it in your Dictionaries folder.
 
 ![dictionary goes in the dictionaries folder at the root](https://i.imgur.com/szewSA7.png)
 
