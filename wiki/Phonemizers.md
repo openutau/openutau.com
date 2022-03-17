@@ -188,14 +188,14 @@ If the voicebank has no VC phonemes, it is recommended to edit the timing of the
 
 ## FR CVVC (French CVVC)
 ### Set up
-This phonemizer uses a slightly modified version of the [Petit Mot](https://simelomad.wixsite.com/crabkids/copie-de-pronunciation-guide) reclist by Melomad, it works with a dictionary available [here](https://drive.google.com/file/d/1m-wnt5reJ0d9rGC2e1jMlZUMeioA5Lnw/view?usp=sharing). For the phonemizer to work, you need to download the .txt and put it in your Dictionaries folder.
+This phonemizer uses a slightly modified version of the [Petit Mot](https://simelomad.wixsite.com/crabkids/copie-de-pronunciation-guide) reclist by Melomad, it works with a dictionary available [here](https://drive.google.com/file/d/1m-wnt5reJ0d9rGC2e1jMlZUMeioA5Lnw/view?usp=sharing). For the phonemizer to work, you need to download the .txt and put it in your Dictionaries folder. If there's no Dictionaries folder, create one at the root of your OpenUtau folder.
 
 ![dictionary goes in the dictionaries folder at the root](https://i.imgur.com/szewSA7.png)
 
 There is also a [sample package](https://drive.google.com/file/d/1FpZTf2FOjWz-BjpWcGZEha-ZBhanEyDj/view?usp=sharing) available with a ustx that showcases the basic rules of the dictionary as well as ustx with French lyrics.
 
 ### Lyric input
-You can input lyrics, phonetic hints `[]` or force input with `?`. (Be careful as forcing a phoneme will break the phonemizer transitions) 
+You can input lyrics, phonetic hints `[]` or force input with `?` (note that force input will break the phonemizer transitions).
 Use `+` to break words into syllables and `+~` to extend a syllable.
 ![fr cvvc lyric input vs phonetic input vs force input](https://i.imgur.com/qaPUUNH.png)
 
