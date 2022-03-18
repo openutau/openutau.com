@@ -1,12 +1,14 @@
+## On macOS OpenUtau does not open with error "This app is damaged ..."
+Truth is the OpenUtau mac build is not codesigned by Apple, which is a paid service. As a result macOS treats the app as unsafe.
+
+One way to solve it is open a terminal and run `xattr -rc /Applications/OpenUtau.app`.
+
 ## Why is there no sound when I hit Play?
 1. Open Preferences and test the audio device.
 2. Make sure the resampler selected in Preferences is compatible.
     1. Make sure your resamplers are not patched.
 3. Make sure a singer is installed and selected.
 4. Open up the Piano Roll window. If notes are semi-transparent, and phonemes, pitches, and expressions below don't show up, that means the lyrics do not work with the selected phonemizer and the voicebank.
-
-## It's so laggy!
-This typically happens when you set the render thread count very high with already multithreaded resamplers, like Moresampler. In that case, 8 Moresamplers running at the same time can easily overload your computer and push CPU usage to 100%. Please lower the thread count setting in OpenUtau.
 
 ## Singer installation / Share voicebanks with UTAU
 OpenUtau aims to work on systems of all languages. Traditionally, this is very difficult - everything becomes mojibake (gibberish unicode text) on non-Japanese systems. The problem is two-fold:
