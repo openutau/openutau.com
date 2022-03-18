@@ -1,4 +1,4 @@
-## On macOS OpenUtau does not open with error "This app is damaged ..."
+## macOS error "This app is damaged ..."
 Truth is the OpenUtau mac build is not codesigned by Apple, which is a paid service. As a result macOS treats the app as unsafe.
 
 One way to solve it is open a terminal and run `xattr -rc /Applications/OpenUtau.app`.
