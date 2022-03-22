@@ -187,8 +187,8 @@ If the voicebank has no VC phonemes, it is recommended to edit the timing of the
 ![en to ja final consonant](https://i.imgur.com/qSAMRht.png)
 
 ## FR CVVC (French CVVC)
-### Set up
-This phonemizer uses a slightly modified version of the [Petit Mot](https://simelomad.wixsite.com/crabkids/copie-de-pronunciation-guide) reclist by Melomad, it works with a dictionary available [here](https://drive.google.com/file/d/1m-wnt5reJ0d9rGC2e1jMlZUMeioA5Lnw/view?usp=sharing). For the phonemizer to work, you need to download the .txt and put it in your Dictionaries folder. If there's no Dictionaries folder, create one at the root of your OpenUtau folder.
+### Setup
+This phonemizer uses a slightly modified version of the [Petit Mot](https://simelomad.wixsite.com/crabkids/copie-de-pronunciation-guide) reclist by Melomad, it works with a dictionary (version 1.2 and higher) available [here](https://drive.google.com/file/d/1m-wnt5reJ0d9rGC2e1jMlZUMeioA5Lnw/view?usp=sharing). For the phonemizer to work, you need to download the .txt and put it in your Dictionaries folder. If there's no Dictionaries folder, create one at the root of your OpenUtau folder.
 
 ![dictionary goes in the dictionaries folder at the root](https://i.imgur.com/szewSA7.png)
 
@@ -197,17 +197,28 @@ There is also a [sample package](https://drive.google.com/file/d/1FpZTf2FOjWz-Bj
 ### Lyric input
 You can input lyrics, phonetic hints `[]` or force input with `?` (note that force input will break the phonemizer transitions).
 Use `+` to break words into syllables and `+~` to extend a syllable.
+
 ![fr cvvc lyric input vs phonetic input vs force input](https://i.imgur.com/qaPUUNH.png)
 
-Sentences with apostrophes (eg. "je t'aime", "l'amour", "qu'il l'aime") need to be input `je(2) + te aime`, `le amour`, `que il + le aime`. 
-![fr cvvc handling of apostrophes](https://i.imgur.com/YS0QQx4.png)
+Sentences with apostrophes like "j'aime" or "j't'aime" need to be input `j' aime` and `j' t' aime`. You can also input "est-ce" as `est -ce`. Please note the **space** between the two words. 
 
-As you can see, `je(2)` and others `X(2)` forms are used when you want to use words with an `ee` sound.
-Since French has a lot of silent sounds, you will sometimes have a second or third form of the word depending on the context (silent "e", liaison...)
-![fr cvvc alternative forms](https://i.imgur.com/UQbMRuK.png)
+Some common word combinations such as `j'ai` or `qu'elle` have been added for easier input, though you should always default to `C' + word`.
+
+![fr cvvc handling of apostrophes](https://i.imgur.com/y1ovzSm.png)
+
+
+Since French has a lot of silent sounds, you will sometimes need a second or third form of the word depending on the context (silent "e", liaison...). Usually, `word` is the basic form, `word(2)` adds the silent "e", `word(3)` adds the liaison **&** silent "e" and `word(4)` adds the liaison but no silent "e". 
+
+However, there may be exceptions to this rule. 
+
+![fr cvvc alternative forms](https://i.imgur.com/9dqeGbs.jpg)
+
+
+If this doesn't work as intended, please ensure that your dictionary is **version 1.2 or higher**. Version number should be written at the start of the .txt.
 
 ### Additional support
 The phonemizer can also read hiragana (with approximate French sounds).
+
 ![hiragana support](https://i.imgur.com/52cjlcf.png)
 
 With the phonetic hint, you can input additional sounds that are voicebank-specific. In this example you can see glottal stops `.` & long end breaths `R`.
