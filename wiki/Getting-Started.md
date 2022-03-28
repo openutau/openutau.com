@@ -5,9 +5,13 @@
 [![Download](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=linux-x64&labelColor=FF347C&color=4ea6ea)](https://github.com/stakira/OpenUtau/releases/download/OpenUtau-Latest/OpenUtau-linux-x64.tar.gz)
 
 ### Windows
-- After unzipping to a new folder, you can start the application by double clicking `OpenUtau.exe`. Every time you start OU, it will check for updates first.
+- After unzipping to a new folder, you can start the application by double-clicking `OpenUtau.exe`. Every time you start OU, it will check for updates first.
 ### macOS
-- Double click the dmg file downloaded. Drag the app icon to folder icon.
+- Double click the dmg file downloaded. Drag the app icon to the folder icon.
+- See [FAQ](https://github.com/stakira/OpenUtau/wiki/FAQ#macos-error-this-app-is-damaged-) if macOS reports "app is damaged".
+### Linux
+- Extract the tar.gz file yourself, and run `OpenUtau` from a terminal.
+- Or check this community-created [installer scripts](https://hitcoder.tubs.wtf/Posts/openutau/).
 
 ## Select UI language
 By default, OpenUtau will use the same language as your computer, or English if a translation is unavailable. To manually change the language, go to Tools > Preferences.
