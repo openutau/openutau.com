@@ -20,3 +20,6 @@ A: it's an NNSVS issue (https://github.com/r9y9/nnsvs/issues/94), sometimes it g
 
 ### Q: It's very slow.
 A: Yes it is very slow when notes and lyrics are modified. The way it works now is that python.exe is started for every phrase (a group of consecutive notes). Python is not great at startup speed. Every time python.exe is started, there are a few seconds wasted loading python packages. There are ways to improve, but that's the status quo.
+
+## Roadmap
+![Roadmap](https://i.imgur.com/V6Fof9A.png)
