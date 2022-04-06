@@ -9,7 +9,7 @@
 - After pytorch is installed, it functions as a normal renderer. I.e., no need to run it as a legacy plugin.
 - Supported expressions: PITD, DYN, TENC, BREC, VOIC, GENC.
 - Use "DEFAULT" phonemizer.
-- No "extensions" support.
+- No "extensions" support. For OpenUtau calling an external exe is generally considered an anti-pattern. If anything, it needs to be cross-platform.
 
 ## FAQ
 ### Q: All lyrics are invalid.
