@@ -9,11 +9,11 @@
 - Supported expressions: PITD, DYN, TENC, BREC, VOIC, GENC.
 
 ## FAQ
-#### Q: All lyrics are invalid.
+### Q: All lyrics are invalid.
 A: It is assumed the ENUNU voicebank contains a CV voicebank like Ritsu, and use the oto to validate lyrics. If your ENUNU voicebank doesn't have CV samples, an oto file without samples will work too.
 
-#### Q: FileNotFoundException: Could not find file '...\acoustic-f0.npy'.
+### Q: FileNotFoundException: Could not find file '...\acoustic-f0.npy'.
 A: it's an NNSVS issue (https://github.com/r9y9/nnsvs/issues/94), sometimes it generates invalid data and fails by itself. Tweaking timing (the vertical red line in phoneme view) by just a little usually solves it.
 
-#### Q: It's very slow.
-A: Yes it is very slow for modified notes and lyrics. The way it works now is that python.exe is started for every phrase (a group of consecutive notes). Python is not great at startup speed. Every time python.exe is started, there are a few seconds wasted loading python packages. There are ways to improve, but that's the status quo.
+### Q: It's very slow.
+A: Yes it is very slow when notes and lyrics are modified. The way it works now is that python.exe is started for every phrase (a group of consecutive notes). Python is not great at startup speed. Every time python.exe is started, there are a few seconds wasted loading python packages. There are ways to improve, but that's the status quo.
