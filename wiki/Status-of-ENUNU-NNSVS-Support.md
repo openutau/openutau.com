@@ -8,6 +8,7 @@
 - Start ENUNU as a legacy plugin just once so that it will download and install pytorch. It takes a while.
 - After pytorch is installed, it functions as a normal renderer. I.e., no need to run it as a legacy plugin.
 - Supported expressions: PITD, DYN, TENC, BREC, VOIC, GENC.
+- Use "DEFAULT" phonemizer.
 
 ## FAQ
 ### Q: All lyrics are invalid.
