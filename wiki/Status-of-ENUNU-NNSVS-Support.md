@@ -12,9 +12,6 @@
 - No "extensions" support. For OpenUtau calling an external exe is generally considered an anti-pattern. If anything, it needs to be cross-platform.
 
 ## FAQ
-### Q: All lyrics are invalid.
-A: It is assumed the ENUNU voicebank contains a CV voicebank like Ritsu, and use the oto to validate lyrics. If your ENUNU voicebank doesn't have CV samples, an oto file without samples will work too.
-
 ### Q: FileNotFoundException: Could not find file '...\acoustic-f0.npy'.
 A: it's an NNSVS issue (https://github.com/r9y9/nnsvs/issues/94), sometimes it generates invalid data and fails by itself. Tweaking timing (the vertical red line in phoneme view) by just a little usually solves it.
 
