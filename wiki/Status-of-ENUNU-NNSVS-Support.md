@@ -2,6 +2,7 @@
 - Note: **This page will change regularly**.
 
 ## How to use (0.0.703)
+- Currently Windows only.
 - Delete old ENUNU plugins.
 - Add ENUNU 0.3.1 plugin to Plugins folder.
 - Start ENUNU as a legacy plugin just once so that it will download and install pytorch. It takes a while.
