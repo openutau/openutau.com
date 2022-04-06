@@ -1,7 +1,7 @@
 Note: ENUNU/NNSVS support is experimental. There will be quirks. Be patient. Be ready to troubleshoot. Report issues.
 Note: This page will keep changing.
 
-How to use (0.0.702):
+How to use (0.0.703):
 - Delete old ENUNU plugins.
 - Add ENUNU 0.3.1 plugin to Plugins folder.
 - Start ENUNU as a legacy plugin just once so that it will download and install pytorch. It takes a while.
