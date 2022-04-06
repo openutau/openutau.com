@@ -10,6 +10,7 @@
 - Supported expressions: PITD, DYN, TENC, BREC, VOIC, GENC.
 - Use "DEFAULT" phonemizer.
 - No "extensions" support. For OpenUtau calling an external exe is generally considered an anti-pattern. If anything, it needs to be cross-platform.
+- You can put words or phonemes as lyrics, separated by whitespaces, e.g. "か k a", as long as they exist in the table file or hed file.
 
 ## FAQ
 ### Q: FileNotFoundException: Could not find file '...\acoustic-f0.npy'.
