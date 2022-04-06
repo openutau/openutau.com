@@ -9,6 +9,7 @@
 - After pytorch is installed, it functions as a normal renderer. I.e., no need to run it as a legacy plugin.
 - Supported expressions: PITD, DYN, TENC, BREC, VOIC, GENC.
 - Use "DEFAULT" phonemizer.
+- No "extensions" support.
 
 ## FAQ
 ### Q: All lyrics are invalid.
