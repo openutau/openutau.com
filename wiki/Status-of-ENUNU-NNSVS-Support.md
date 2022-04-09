@@ -11,10 +11,13 @@
 - Use "DEFAULT" phonemizer.
 - No "extensions" support. For OpenUtau calling an external exe is generally considered an anti-pattern. If anything, it needs to be cross-platform.
 - You can put words or phonemes as lyrics, separated by whitespaces, e.g. "か k a", as long as they exist in the table file or hed file.
+- To use NNSVS generated pitch, finish rendering first, then execute "Notes -> Load Rendered Pitch" from the piano roll menu. You can select some phrases to load or load the entire part. Only the pitch of phrases finished rendering will be loaded.
 
 ## FAQ
 ### Q: FileNotFoundException: Could not find file '...\acoustic-f0.npy'.
 A: it's an NNSVS issue (https://github.com/r9y9/nnsvs/issues/94), sometimes it generates invalid data and fails by itself. Tweaking timing (the vertical red line in phoneme view) by just a little usually solves it.
+
+**Update**: a retry mechanism has been implemented to "fix" (actually workaround) this issue. It pads the start of input with a very short silence, then trims this silence from the output. This tiny difference in input is usually enough to make the issue disappear. Let me know if you still see it.
 
 ### Q: It's very slow.
 A: Yes it is very slow when notes and lyrics are modified (editing curves should be very fast). The way it works now is that python.exe is started for every phrase (a group of consecutive notes). Python is not great at startup speed. Every time python.exe is started, there are a few seconds wasted loading python packages. There are ways to improve, but that's the status quo.
