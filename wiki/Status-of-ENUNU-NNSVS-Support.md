@@ -1,7 +1,7 @@
 - Note: ENUNU/NNSVS support is **experimental**. There will be quirks. Be **patient**. Be **ready to troubleshoot**.
 - Note: **This page will change regularly**.
 
-## How to use (0.0.703)
+## How to use (0.0.709)
 - Currently Windows only.
 - Delete old ENUNU plugins.
 - Add ENUNU 0.3.1 plugin to Plugins folder.
