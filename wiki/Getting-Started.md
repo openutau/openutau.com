@@ -16,14 +16,14 @@
 ## Select UI language
 By default, OpenUtau will use the same language as your computer, or English if a translation is unavailable. To manually change the language, go to Tools > Preferences.
 
-![language](https://i.imgur.com/qW51SZ0.gif)
+![language](https://i.imgur.com/WDgg4Z6.gif)
 
 ## Install a resampler
 Put a resampler .exe or .dll into the Resamplers folder. If you already use UTAU, you can copy + paste resamplers that you already have. Check [Resamplers](Resamplers) for a list of compatible resamplers.
 
 In OpenUtau, go to Tools > Preferences to select a resampler and toggle phase compensation. Using Moresampler is not fully optimized, so a warning will appear advising you to adjust the moreconfig file if you persist.
 
-![select resampler](https://i.imgur.com/m9yvcam.gif)
+![select resampler](https://i.imgur.com/Fy0NGJj.gif)
 
 There is no need to provide a wavtool, as OpenUtau uses its own internal wavtool.
 
