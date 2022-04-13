@@ -23,7 +23,7 @@ Put a resampler .exe or .dll into the Resamplers folder. If you already use UTAU
 
 In OpenUtau, go to Tools > Preferences to select a resampler and toggle phase compensation. Using Moresampler is not fully optimized, so a warning will appear advising you to adjust the moreconfig file if you persist.
 
-![select resampler](https://i.imgur.com/m9yvcam.gifv)
+![select resampler](https://i.imgur.com/m9yvcam.gif)
 
 There is no need to provide a wavtool, as OpenUtau uses its own internal wavtool.
 
