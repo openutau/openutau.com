@@ -21,9 +21,9 @@ By default, OpenUtau will use the same language as your computer, or English if 
 ## Install a resampler
 Put a resampler .exe or .dll into the Resamplers folder. If you already use UTAU, you can copy + paste resamplers that you already have. Check [Resamplers](Resamplers) for a list of compatible resamplers.
 
-In OpenUtau, go to Tools > Preferences to select a resampler for preview and export. You can also adjust the number of pre-render threads to improve resampler performance. Using Moresampler is still not fully optimized, so a warning will appear advising you to only use 1 or 2 threads.
+In OpenUtau, go to Tools > Preferences to select a resampler and toggle phase compensation. Using Moresampler is not fully optimized, so a warning will appear advising you to adjust the moreconfig file if you persist.
 
-![select resampler](https://imgur.com/eMcoHxp.gif)
+![select resampler](https://i.imgur.com/m9yvcam.gifv)
 
 There is no need to provide a wavtool, as OpenUtau uses its own internal wavtool.
 
