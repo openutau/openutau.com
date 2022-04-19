@@ -32,7 +32,7 @@ Voicebanks can be installed through **Tools > Install Singer...**
 
 ![install voicebank](https://i.imgur.com/FpIZ21J.png)
 
-On non-Japanese systems, unzipping a zip file created on a Japanese system often leads to mojibake file names. The "Install Singer" tool helps convert file names correctly. You could also unzip yourself if the file names can be correctly unzipped.
+On non-Japanese systems, unzipping a zip file created on a Japanese system often leads to mojibake file names. The **Install Singer** tool helps convert file names correctly. You could also **unzip yourself** if the file names can be correctly unzipped.
 
 When installing a voicebank, a window will pop up with a file encoding option. Use this option if you're not sure about how the voicebank is encoded (for example, a Japanese voicebank created by a Chinese user). You will know when the encoding is right.
 
