@@ -38,7 +38,7 @@ When installing a voicebank, a window will pop up with a file encoding option. U
 
 ![select file encoding](https://i.imgur.com/sSpDhPc.png)  
 
-Another way to install singers is to set the "Additional Singers Path" to an existing folder, such as the UTAU voice folder.
+Another way to install singers is to set the **Additional Singer Path** to an existing folder with singers, such as the UTAU voice folder.
 
 You can then see your installed voicebanks in the **Tools > Singers...** menu.
 
