@@ -32,7 +32,7 @@ Voicebanks can be installed through **Tools > Install Singer...**
 
 ![install voicebank](https://i.imgur.com/FpIZ21J.png)
 
-Voicebanks must be compressed into a **ZIP, RAR, 7z, or UAR file**. When voicebanks are installed, the text will be converted to Unicode. If you have already unzipped voicebanks for use in UTAU, you **cannot copy + paste them**, you will need to compress the voicebank again and **reinstall it for use in OpenUtau**.
+Voicebanks must be compressed into a **ZIP, RAR, or UAR file**. When voicebanks are installed, the text will be converted to Unicode. If you have already unzipped voicebanks for use in UTAU, you **cannot copy + paste them**, you will need to compress the voicebank again and **reinstall it for use in OpenUtau**.
 
 When installing a voicebank, a window will pop up with a file encoding option. Use this option if you're not sure about how the voicebank is encoded (for example, a Japanese voicebank created by a Chinese user). You will know when the encoding is right.
 
