@@ -1,14 +1,14 @@
 - Note: ENUNU/NNSVS support is **experimental**. There will be quirks. Be **patient**. Be **ready to troubleshoot**.
 - Note: **This page will change regularly**.
 
-## How to use (0.0.709)
+## How to use (0.0.732)
 - Currently Windows only.
 - Delete old ENUNU plugins.
 - Add ENUNU 0.3.1 plugin to Plugins folder.
 - Start ENUNU as a legacy plugin just once so that it will download and install pytorch. It takes a while.
 - After pytorch is installed, it functions as a normal renderer. I.e., no need to run it as a legacy plugin.
 - Supported expressions: PITD, DYN, TENC, BREC, VOIC, GENC.
-- Use "DEFAULT" phonemizer.
+- Use "ENUNU" phonemizer.
 - No "extensions" support. For OpenUtau calling an external exe is generally considered an anti-pattern. If anything, it needs to be cross-platform.
 - You can put words or phonemes as lyrics, separated by whitespaces, e.g. "か k a", as long as they exist in the table file or hed file.
 - To use NNSVS generated pitch, finish rendering first, then execute "Notes -> Load Rendered Pitch" from the piano roll menu. You can select some phrases to load or load the entire part. Only the pitch of phrases finished rendering will be loaded.
