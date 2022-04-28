@@ -1,5 +1,9 @@
 This is a list of all plugins for UTAU that have been tested in OpenUtau. Many popular plugins haven't been tested yet, so please update the list if you try plugins that aren't shown.
+
 As well, please note that OU's compatibility with specific plugins may change over time, so this list may not be completely accurate.
+
+Note that some plugins themselves may have problem running on non-Japanese systems or other situations. OpenUtau being compatible does not guarantee your setup is compatible.
+
 # Fully compatible
 * [AutoPitchWriter](https://www.youtube.com/watch?v=pdxMg2ViASU)
 * [AutoVibrato](https://ameblo.jp/maiko3utau/entry-12617377622.html)
