@@ -225,6 +225,79 @@ With the phonetic hint, you can input additional sounds that are voicebank-speci
 
 ![additionalsounds](https://i.imgur.com/OuZ8t5c.png)
 
+## ES SYL (Spanish Syllable-Based Phonemizer)
+### Setup
+While this phonemizer uses Teren000's Spanish CVVC list as a base, it's intended to support many different methods, including VCV (with some caveats; more on that below).
+
+It's recommended that you use this phonemizer with a dictionary, which doesn't come with OpenUtau by default. Instead, you can download it [here](https://github.com/lottev1991/OpenUTAU-Spanish-Dictionary). This dictionary should go into OpenUtau's ``Dictionaries`` folder; if it doesn't exist, make it. (If a word is missing in the dictionary, or a transcription is incorrect, feel free to push merge requests on the dictionary repo. I am more than willing to expand the word list and correct errors.)
+
+### Lyric input
+With the help of the dictionary linked above, you can write Spanish words directly on the first note:
+
+![Dictionary input with extender notes](https://i.ibb.co/4JZZ9ZR/Dictionary-input.png)
+As seen in the above image, you can extend the word over multiple notes by typing a ``+`` on the next notes (otherwise, all syllables will be on the same note).
+
+If you want to extend only a specific syllable in a word, you can do that by typing either ``+*`` or ``+~*`` on the next note(s):
+
+![Syllable extender note example](https://i.ibb.co/rFkZYnX/Syllable-extender-note.png)
+
+### Phonetic input
+You can also input lyrics phonetically, this can be done on separate notes as well. Note to write the phonemes in brackets (``[]``), separated with spaces, otherwise they won't be recognized:
+
+![Phonetic input in brackets, on separate notes, with spaces in-between](https://i.ibb.co/FXkkKvx/Phonetic-input.png)
+
+There's also the option to input phonetic suggestions after the lyrical input, in brackets after the lyric (this has to be done on the first syllable):
+
+![Lyric input with phonetic suggestion in brackets](https://i.ibb.co/3rMjBMt/Phonetic-suggestion.png)
+
+#### Phoneme list
+Consonants: b, ch, d, **dz**, f, g, h, **hh**, j, k, l, ll, m, n, nh, p, r, rr, s, **sh**, t, **ts**, w, y, z, **zz**, **zh**
+
+Vowels: a, e, i, o, u
+
+The bolded letters are sounds that don't natively occur in Spanish and only work through phonetic input. Please also note that the phonemizer by default uses ``j`` for ``ll`` (and ``h`` for ``j/gi/ge``).
+
+Sounds not listed above, but that are present in the voicebank, can still be used through phonetic input, eg. ``x`` or ``ah``.
+
+### Alternate aliases
+Does your voicebank use ``bia`` instead of ``bya`` and/or ``bua`` instead of ``bwa`` etc.? (Replace ``b`` with any consonant.) No problem, the phonemizer applies the correct spelling automatically:
+
+![Using "W" (default behavior)](https://i.ibb.co/ZmpRRdY/Buena-with-W-default.png)
+![Using "U" (alternative method)](https://i.ibb.co/gZ82Px8/Buena-with-U-alternate.png)
+
+Alternatively, if your voicebank doesn't have ``z``, it will use ``s`` instead (known as "seseo" in Spanish). This is useful for voicebanks with Latin-American-based pronunciation:
+
+!["Seseo" for when no "z" is present](https://i.ibb.co/4mm8Swk/Seseo.png)
+
+Similarly, many (if not most) Spanish voicebanks use ``ny`` for ``ñ``, so this will be applied automatically as well if the voicebank doesn't have ``nh`` (which is the default):
+
+![Default usage: "nh"](https://i.ibb.co/sjRpcZ4/Default-nh-usage.png)
+![Alternate usage: "nh"](https://i.ibb.co/4JZZ9ZR/Dictionary-input.png)
+
+**(NOTE: This is currently in the [dev build](https://github.com/lottev1991/OpenUtau/) only.)** If you need to insert a consonant in an ending cluster that doesn't exist in the voicebank (usually an ``s``), it will automatically add a vowel after it (it will still sound decent in the program, trust me). If such a loose consonant exists in the voicebank, it will insert it by itself instead, and if it has a CC transition, it will use that:
+
+![Loose consonant insertion (no CC)](https://i.ibb.co/hKZBQNd/Consonant-insertion-1.png)
+![Loose consonant insertion (with CC)](https://i.ibb.co/9WpWpqW/Consonant-insertion-2.png)
+![Loose consonant with vowel fallback](https://i.ibb.co/q9cgMcF/Vowel-insertion-fallback.png)
+
+### Important notes on VCV
+Currently, the phonemizer does not support automatic "syllable splitting" with semivowels. This is common with Spanish VCV banks, but also occurs sometimes with other methods. This function is planned however, so please stay tuned!
+
+For now though, you can alleviate it with a phonetic suggestion (in this case, you need to treat the semivowel as a separate "full" vowel, so make sure to insert a ``+`` (_not_ ``+~/+*``! ) to split the notes):
+
+![Phonetic suggestion alternative for semivowels](https://i.ibb.co/RzJzTzF/Glide-alternative.png)
+
+### Consonant length adjustment
+This likely won't be a problem with full VCV banks due to the oto, but it can be a problem with CVVC (even when it has some VCV support). In this case, sometimes a syllable ending VC can come off as a little short (this is somewhat accounted for in the phonemizer, but there's a limit to that without ruining other functions). It's recommended to lengthen the VC in that case, which you can do by stretching the phoneme in question (the exact part is highlighted in the image):
+
+![Short VC before stretching](https://i.ibb.co/Bc1HqxJ/VC-stretch-before.png)
+
+Afterward, it should look something like this:
+
+![Longer VC after stretching](https://i.ibb.co/ZxsbkWg/VC-stretch-after.png)
+
+The exact length is difficult to predict, so you're suggested to do it by ear until the point you think it sounds good.
+
 ### Ressources
 These rules are showcased in more detail in the PhonemizerInputHelp.ustx, available in the [sample package](https://drive.google.com/file/d/1FpZTf2FOjWz-BjpWcGZEha-ZBhanEyDj/view?usp=sharing). 
 
