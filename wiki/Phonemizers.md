@@ -237,7 +237,7 @@ With the help of the dictionary linked above, you can write Spanish words direct
 ![Dictionary input with extender notes](https://i.ibb.co/4JZZ9ZR/Dictionary-input.png)
 As seen in the above image, you can extend the word over multiple notes by typing a ``+`` on the next notes (otherwise, all syllables will be on the same note).
 
-If you want to extend only a specific syllable in a word, you can do that by typing either ``+*`` or ``+~*`` on the next note(s):
+If you want to extend only a specific syllable in a word, you can do that by typing either ``+*`` or ``+~`` on the next note(s):
 
 ![Syllable extender note example](https://i.ibb.co/rFkZYnX/Syllable-extender-note.png)
 
