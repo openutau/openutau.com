@@ -225,6 +225,11 @@ With the phonetic hint, you can input additional sounds that are voicebank-speci
 
 ![additionalsounds](https://i.imgur.com/OuZ8t5c.png)
 
+### Ressources
+These rules are showcased in more detail in the PhonemizerInputHelp.ustx, available in the [sample package](https://drive.google.com/file/d/1FpZTf2FOjWz-BjpWcGZEha-ZBhanEyDj/view?usp=sharing). 
+
+For more information on compatible UTAUs, tutorials and help with French UTAUs you can go [here](https://frenchutauhelp.carrd.co/).
+
 ## ES SYL (Spanish Syllable-Based Phonemizer)
 ### Setup
 While this phonemizer uses Teren000's Spanish CVVC list as a base, it's intended to support many different methods, including VCV (with some caveats; more on that below).
@@ -297,12 +302,4 @@ Afterward, it should look something like this:
 ![Longer VC after stretching](https://i.ibb.co/ZxsbkWg/VC-stretch-after.png)
 
 The exact length is difficult to predict, so you're suggested to do it by ear until the point you think it sounds good.
-
-### Ressources
-These rules are showcased in more detail in the PhonemizerInputHelp.ustx, available in the [sample package](https://drive.google.com/file/d/1FpZTf2FOjWz-BjpWcGZEha-ZBhanEyDj/view?usp=sharing). 
-
-For more information on compatible UTAUs, tutorials and help with French UTAUs you can go [here](https://frenchutauhelp.carrd.co/).
-
-
-
 
