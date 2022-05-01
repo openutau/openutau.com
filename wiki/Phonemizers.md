@@ -274,7 +274,7 @@ Similarly, many (if not most) Spanish voicebanks use ``ny`` for ``ñ``, so this 
 ![Default usage: "nh"](https://i.ibb.co/sjRpcZ4/Default-nh-usage.png)
 ![Alternate usage: "nh"](https://i.ibb.co/4JZZ9ZR/Dictionary-input.png)
 
-**(NOTE: This is currently in the [dev build](https://github.com/lottev1991/OpenUtau/) only.)** If you need to insert a consonant in an ending cluster that doesn't exist in the voicebank (usually an ``s``), it will automatically add a vowel after it (it will still sound decent in the program, trust me). If such a loose consonant exists in the voicebank, it will insert it by itself instead, and if it has a CC transition, it will use that:
+If you need to insert a consonant in an ending cluster that doesn't exist in the voicebank (usually an ``s``), it will automatically add a vowel after it (it will still sound decent in the program, trust me). If such a loose consonant exists in the voicebank, it will insert it by itself instead, and if it has a CC transition, it will use that:
 
 ![Loose consonant insertion (no CC)](https://i.ibb.co/hKZBQNd/Consonant-insertion-1.png)
 ![Loose consonant insertion (with CC)](https://i.ibb.co/9WpWpqW/Consonant-insertion-2.png)
