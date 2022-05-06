@@ -303,3 +303,19 @@ Afterward, it should look something like this:
 
 The exact length is difficult to predict, so you're suggested to do it by ear until the point you think it sounds good.
 
+##Multi (Time Saver)
+To get or build the config.ini go [here](https://mrcookiesexe.github.io/ConfigIniBuilder/).
+
+The lyric input can have more then 1 word (eg. `'m=m`)
+![Two words in the same lyric](https://user-images.githubusercontent.com/91439949/167221185-26841918-416d-455b-b856-ffdae63546a2.png)
+
+To extend a syllable can be use `+~` `+*` `+-` and the ending is placed if don't have a note after or a note with `-`
+![Extended syllable and ending](https://user-images.githubusercontent.com/91439949/167221782-5dd4e716-8782-4af2-917a-f8122c1e9d73.png)
+
+A manual input can be done by a note that's starts with a `?` or `+?` (if between syllable)
+![Manual input](https://user-images.githubusercontent.com/91439949/167222681-dc4fc62c-6433-4aa9-91b4-0665a1942041.png)
+
+The `+?` will always remove the **`V C` `V CC` `VC`** and will be before the **`CC`**
+![Manual input warning](https://user-images.githubusercontent.com/91439949/167223036-47aa9a7a-d897-41f8-80e3-2aaeaed08c46.png)
+
+**If you'll do a config file, place it at the vb folder or the phonemizer don't will work properly.**
