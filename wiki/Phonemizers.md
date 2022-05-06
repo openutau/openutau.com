@@ -306,7 +306,7 @@ The exact length is difficult to predict, so you're suggested to do it by ear un
 ## Multi (Time Saver)
 To get or build the config.ini go [here](https://mrcookiesexe.github.io/ConfigIniBuilder/).
 
-The lyric input can have more then 1 word (eg. `'m=m`):
+The lyric input can have more then 1 word (eg. `'m=m`):<br/>
 ![Two words in the same lyric](https://user-images.githubusercontent.com/91439949/167221185-26841918-416d-455b-b856-ffdae63546a2.png)
 
 To extend a syllable can be use `+~` `+*` `+-` and the ending is placed if don't have a note after or a note with `-`:
