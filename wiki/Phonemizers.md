@@ -319,3 +319,26 @@ The `+?` will always remove the **`V C` `V CC` `VC`** and will be before the **`
 ![Manual input warning](https://user-images.githubusercontent.com/91439949/167223036-47aa9a7a-d897-41f8-80e3-2aaeaed08c46.png)
 
 **If you'll do a config file, place it at the vb folder or the phonemizer don't will work properly.**
+
+## EN VCCV _BETA_ (Cz's English VCCV phonemizer) 
+
+This is a first implementation of a phonemizer for [Cz's VCCV method](http://utaulanguageresources.weebly.com/czs-vccv.html), it is right now not a plug and play solution. If you wish for one, please use [Lyric Parser 2.1](https://snowphones.weebly.com/lyric-parser-20.html) which is fully compatible with Open Utau.
+
+### Lyric input
+You can input lyrics in plain English `love`, plain English + phonetic hint `love [l u v]` or phonetic hint only `[l u v]`. 
+
+![vccv_phonemeinput](https://user-images.githubusercontent.com/35538523/168469343-1519dbe9-b85f-4807-9d08-daf7d2aadb17.png)
+
+You can then use `+` to break words into syllables. 
+
+Use the pink line to stretch or shorten a sound so that the pronunciation is good. You can also switch sounds by double clicking on the box below to change the alias, so that you can switch between `V C`, `VC` or `VC-` as you please.
+
+![vccv_phonemetweak](https://user-images.githubusercontent.com/35538523/168469015-823cf9fc-bd5a-4c0a-ac43-d9736caa4d40.png)
+
+### "ao" conflict & phoneme exceptions (known issue to be fixed)
+Since the phonemizer uses an arpabet dictionary there are conflicts regarding the `ao` sound. You may need to switch from `0` to `9` depending on the context. If there are missing sounds, you can double click on the box below to change the sound used. **This will be fixed in a future update.** 
+
+There may also be phoneme exceptions conflicts. If there are any other issue, don't hesitate to share them on the Discord.
+
+![vccv_phonemefix](https://user-images.githubusercontent.com/35538523/168468585-cf427d9e-176d-4cd0-95dc-24bc0f7cadcf.png)
+
