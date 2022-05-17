@@ -303,7 +303,7 @@ Afterward, it should look something like this:
 
 The exact length is difficult to predict, so you're suggested to do it by ear until the point you think it sounds good.
 
-## Multi (Customise Phonemizer)
+## Custom (Customise Phonemizer)
 To get or build the config.ini go [here](https://mrcookiesexe.github.io/ConfigIniBuilder/).
 
 The lyric input can have more then 1 word (eg. `'m=m`):<br/>
