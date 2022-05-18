@@ -1,3 +1,6 @@
+## Voicebank doesn't show up in OpenUtau even if it's in the Singer folder
+Make sure the voicebank includes a `character.txt` file with the line "name=(voicebank's name)".
+
 ## macOS error "This app is damaged ..."
 Truth is the OpenUtau mac build is not codesigned by Apple, which is a paid service. As a result macOS treats the app as unsafe.
 
