@@ -186,17 +186,20 @@ When both VCV and CVVC phonemes are available, CVVC is prioritized.
 If the voicebank has no VC phonemes, it is recommended to edit the timing of the final consonant to remove the vowel sound.  
 ![en to ja final consonant](https://i.imgur.com/qSAMRht.png)
 
-## FR CVVC (French CVVC)
+## FR CVVC (French CVVC+)
+
+This phonemizer is compatible with [Fraloids](https://fraloids.wixsite.com/collection) UTAUs, [Petit Mot](https://simelomad.wixsite.com/crabkids/copie-de-gros-mot) & [Gros Mot](https://simelomad.wixsite.com/crabkids/about-new), it can support basic CVVC, CVVC+ and VCV-VC. For more information on compatible UTAUs, tutorials and help with French UTAUs you can go [here](https://frenchutauhelp.carrd.co/).
+
 ### Setup
-This phonemizer uses a slightly modified version of the [Petit Mot](https://simelomad.wixsite.com/crabkids/copie-de-pronunciation-guide) reclist by Melomad, it works with a dictionary (version 1.2 and higher) available [here](https://drive.google.com/file/d/1m-wnt5reJ0d9rGC2e1jMlZUMeioA5Lnw/view?usp=sharing). For the phonemizer to work, you need to download the .txt and put it in your Dictionaries folder. If there's no Dictionaries folder, create one at the root of your OpenUtau folder.
+It works with a dictionary (version 1.2 and higher) available [here](https://drive.google.com/file/d/1m-wnt5reJ0d9rGC2e1jMlZUMeioA5Lnw/view?usp=sharing). For the phonemizer to work, you need to download the .txt and put it in your Dictionaries folder. If there's no Dictionaries folder, create one at the root of your OpenUtau folder.
 
 ![dictionary goes in the dictionaries folder at the root](https://i.imgur.com/szewSA7.png)
 
 There is also a [sample package](https://drive.google.com/file/d/1FpZTf2FOjWz-BjpWcGZEha-ZBhanEyDj/view?usp=sharing) available with a ustx that showcases the basic rules of the dictionary as well as ustx with French lyrics.
 
 ### Lyric input
-You can input lyrics, phonetic hints `[]` or force input with `?` (note that force input will break the phonemizer transitions).
-Use `+` to break words into syllables and `+~` to extend a syllable.
+You can input lyrics, phonetic hints `[]` or force input with `?` (note that force input will break the phonemizer transitions). Phonetic hints will need to be input in Mot or Fraloid aliasing depending on the aliasing the voicebank is using.
+Use `+` to break words into syllables and `+~` or `+*` to extend a syllable.
 
 ![fr cvvc lyric input vs phonetic input vs force input](https://i.imgur.com/qaPUUNH.png)
 
@@ -221,11 +224,11 @@ The phonemizer can also read hiragana (with approximate French sounds).
 
 ![hiragana support](https://i.imgur.com/52cjlcf.png)
 
-With the phonetic hint, you can input additional sounds that are voicebank-specific. In this example you can see glottal stops `.` & long end breaths `R`.
+With the phonetic hint, you can input additional sounds that are voicebank-specific. In this example you can see glottal stops `.` & long end breaths `R`, but you could also use additional consonants or vowels (like English `h` or Japanese `4`...)
 
 ![additionalsounds](https://i.imgur.com/OuZ8t5c.png)
 
-### Ressources
+### Resources
 These rules are showcased in more detail in the PhonemizerInputHelp.ustx, available in the [sample package](https://drive.google.com/file/d/1FpZTf2FOjWz-BjpWcGZEha-ZBhanEyDj/view?usp=sharing). 
 
 For more information on compatible UTAUs, tutorials and help with French UTAUs you can go [here](https://frenchutauhelp.carrd.co/).
@@ -320,25 +323,21 @@ The `+?` will always remove the **`V C` `V CC` `VC`** and will be before the **`
 
 **If you'll do a config file, place it at the vb folder or the phonemizer don't will work properly.**
 
-## EN VCCV _BETA_ (Cz's English VCCV phonemizer) 
+## EN VCCV (Cz's English VCCV phonemizer) 
 
-This is a first implementation of a phonemizer for [Cz's VCCV method](http://utaulanguageresources.weebly.com/czs-vccv.html), it is right now not a plug and play solution. If you wish for one, please use [Lyric Parser 2.1](https://snowphones.weebly.com/lyric-parser-20.html) which is fully compatible with Open Utau.
+This is a temporary solution of a phonemizer for [Cz's VCCV method](http://utaulanguageresources.weebly.com/czs-vccv.html), it is right now not a plug and play solution. If you wish for one, please use [Lyric Parser 2.1](https://snowphones.weebly.com/lyric-parser-20.html) which is fully compatible with Open Utau.
 
 ### Lyric input
 You can input lyrics in plain English `love`, plain English + phonetic hint `love [l u v]` or phonetic hint only `[l u v]`. 
 
 ![vccv_phonemeinput](https://user-images.githubusercontent.com/35538523/168469343-1519dbe9-b85f-4807-9d08-daf7d2aadb17.png)
 
-You can then use `+` to break words into syllables. 
+You can then use `+` to break words into syllables, and `+*`or `+~` to extend a sound.
 
 Use the pink line to stretch or shorten a sound so that the pronunciation is good. You can also switch sounds by double clicking on the box below to change the alias, so that you can switch between `V C`, `VC` or `VC-` as you please.
 
 ![vccv_phonemetweak](https://user-images.githubusercontent.com/35538523/168469015-823cf9fc-bd5a-4c0a-ac43-d9736caa4d40.png)
 
-### "ao" conflict & phoneme exceptions (known issue to be fixed)
-Since the phonemizer uses an arpabet dictionary there are conflicts regarding the `ao` sound. You may need to switch from `0` to `9` depending on the context. If there are missing sounds, you can double click on the box below to change the sound used. **This will be fixed in a future update.** 
-
-There may also be phoneme exceptions conflicts. If there are any other issue, don't hesitate to share them on the Discord.
-
-![vccv_phonemefix](https://user-images.githubusercontent.com/35538523/168468585-cf427d9e-176d-4cd0-95dc-24bc0f7cadcf.png)
+Since the phonemizer uses an arpabet dictionary there may be conflicts with some sounds. If there are missing sounds, you can double click on the box below to change the sound used. 
+If there are any other issue, don't hesitate to share them on the Discord.
 
