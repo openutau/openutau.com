@@ -30,8 +30,8 @@ If the syllables are misaligned, add numbers after `+` to force alignment to the
 - A copy of `arpasing.yaml` file can be added to singer folder for a specific singer. You can even distribute an `arpasing.yaml` file with your voicebank.
 - The lookup order is `plugin dictionary` -> `singer dictionary` -> `default dictionary`.
 
-## EN DELTA (English Delta CVVC)
-This phonemizer is not complete. Voicebanks that follow Kasane Teto's English voicebank's aliasing should work.
+## Teto English (English Delta CVVC)
+This phonemizer is not complete. Voicebanks that follow Kasane Teto's English voicebank's aliasing should work without issues (including banks recorded with Delta list #3.) Other Delta English lists will need extra phoneme editing to work. A phonemizer that properly supports every Delta list is planned.
 You can input lyrics the following ways:
 - Plain English words (eg. `live`)
 
