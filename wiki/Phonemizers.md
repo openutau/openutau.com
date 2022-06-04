@@ -341,3 +341,68 @@ Use the pink line to stretch or shorten a sound so that the pronunciation is goo
 Since the phonemizer uses an arpabet dictionary there may be conflicts with some sounds. If there are missing sounds, you can double click on the box below to change the sound used. 
 If there are any other issue, don't hesitate to share them on the Discord.
 
+## ES to JA (Spanish to Japanese Phonemizer)
+### Setup
+This phonemizer lets you make Japanese voicebanks sing in Spanish. It works similarly to the EN to JA Phonemizer, sharing many of its functions.
+
+This phonemizer uses the same dictionary as the Spanish Syllable-Based Phonemizer, which you can download [here](https://github.com/lottev1991/OpenUTAU-Spanish-Dictionary). This dictionary should go into OpenUtau's ``Dictionaries`` folder; if it doesn't exist, make it. (If a word is missing in the dictionary, or a transcription is incorrect, feel free to push merge requests on the dictionary repo. I am more than willing to expand the word list and correct errors.)
+
+### Lyric input
+Just like in the ES SYL phonemizer, you type in a Spanish word on the first note of the word. This phonemizer will then use Japanese sounds to create the closest match to Spanish sounds. It will use CV, VCV and/or CVVC combinations, depending on what's in the voicebank:
+
+#### CV:
+![CV example](https://i.ibb.co/Vt9kpjJ/Espa-ol-CV.png)
+
+#### CVVC:
+![CVVC example](https://i.ibb.co/59Frh5p/Espa-ol-CVVC.png)
+
+#### VCV:
+![VCV example](https://i.ibb.co/4ZmHLYh/Espa-ol-VCV.png)
+
+### Phonetic input
+You can also input lyrics phonetically, this can be done on separate notes as well. Note to write the phonemes in brackets (``[]``), separated with spaces, otherwise they won't be recognized:
+
+![Phonetic input in brackets, on separate notes, with spaces in-between](https://i.ibb.co/rG5q3vX/Espa-ol-Phonetic.png)
+
+There's also the option to input phonetic suggestions after the lyrical input, in brackets after the lyric (this has to be done on the first syllable):
+
+![Lyric input with phonetic suggestion in brackets](https://i.ibb.co/TKj3DH7/Espa-ol-Phonetic-After-Lyric.png)
+
+#### Phoneme list
+Consonants: b, ch, d, f, g, h, **hh**, j, k, l, m, n, ny, p, r, rr, s, t, w, y, z
+
+Vowels: a, e, i, o, u
+The "hh"-sound here is used for end breaths and gets mapped to "息". It only works through phonetic input.
+
+This phonemizer also doesn't use "nh" for "ñ", instead it always uses "ny".
+
+Please also note that this phonemizer **always uses seseo**, even when you do type a phonetic "z". This is because the Japanese "z" is very different from the Spanish "z":
+
+![Example of consistent seseo usage](https://i.ibb.co/dpRv97s/Always-Seseo.png)
+
+If you _really_ wish to use the Japanese "z" for your Spanish (which is usually **not recommended** unless the voicebank in question already has an Iberian Spanish accent), you can double-click on the note in question in the bottom bar to override the alias:
+
+![Override Alias text box, before applying](https://i.ibb.co/KNdC6Wj/Override-Alias-Before.png)
+![After applying Override Alias](https://i.ibb.co/hD1qWw7/Override-Alias-After.png)
+
+You can also do this for other sounds, for instance when you want to use an "l" in the voicebank (the phonemizer defaults to "r" for "l", even with phonetic input).
+
+### Rolled "r"
+As we all know, Spanish has a rolled "r"-sound, also known as the "double r". This sound does not appear by default in most Japanese voicebanks (although it does sometimes appear in Japanese speech and occasionally singing). This phonemizer substitutes it with several consecutive "r" notes containing the same initial (semi-)vowel as the main note:
+
+![Rolled "r" with "full" vowel](https://i.ibb.co/7SFxVbG/RolledR1.png)
+
+![Rolled "r" with semivowel](https://i.ibb.co/ww0mDsw/RolledR2.png)
+
+Keep in mind that depending on the accent of the voicebank, the rolled "r" could possibly sound a bit odd. This sadly isn't something that the phonemizer can fix.
+
+### Consonant length adjustment
+Sometimes, it just so happens that an ending consonant is too long or too short. In that case, you can adjust the length manually by dragging the note at the bottom bar (the exact part is highlighted in the images):
+
+#### Lengthening:
+![Lengthening a consonant](https://i.ibb.co/j5YD4jL/Consonant-Lengthening.png)
+
+#### Shortening:
+![Shortening a consonant](https://i.ibb.co/4VzxgfX/Consonant-Shortening.png)
+
+The exact length is difficult to predict, so you're suggested to do it by ear until the point you think it sounds good.
