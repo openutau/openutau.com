@@ -368,6 +368,12 @@ There's also the option to input phonetic suggestions after the lyrical input, i
 
 ![Lyric input with phonetic suggestion in brackets](https://i.ibb.co/TKj3DH7/Espa-ol-Phonetic-After-Lyric.png)
 
+As you can see above, you can type "+" on the successive notes in order to spread the syllables over several notes, instead of just the first one.
+
+If you want to extend only a specific syllable in a word, you can do that by typing either ``+*`` or ``+~`` on the next note(s):
+
+![Syllable extender note example](https://i.ibb.co/bsy0dc1/Vowel-Extension.png)
+
 #### Phoneme list
 Consonants: b, ch, d, f, g, h, **hh**, j, k, l, m, n, ny, p, r, rr, s, t, w, y, z
 
