@@ -1,10 +1,10 @@
-## Voicebank doesn't show up in OpenUtau even if it's in the Singer folder
-Make sure the voicebank includes a `character.txt` file with the line "name=(voicebank's name)".
-
 ## macOS error "This app is damaged ..."
 Truth is the OpenUtau mac build is not codesigned by Apple, which is a paid service. As a result macOS treats the app as unsafe.
 
 One way to solve it is open a terminal and run `xattr -rc /Applications/OpenUtau.app`.
+
+## Voicebank doesn't show up in OpenUtau even if it's in the Singer folder
+Make sure the voicebank includes a `character.txt` file with the line "name=(voicebank's name)".
 
 ## Why is there no sound when I hit Play?
 1. Open Preferences and test the audio device.
@@ -27,6 +27,11 @@ The installer helps solve this problem by:
 If your OS's system locale is set to Japanese, using the installer is not required. You can unzip yourself and share files with UTAU. You may need to change text encoding in Singers dialog.
 
 If your OS's system locale set to Japanese, please use the installer to make sure the filenames are decoded correctly.
+
+## My CV Japanese voicebank doesn't work?
+- Make sure that the OTO has aliases for every file.
+- Make sure you write lyrics into notes that match the aliases. Use the built-in Hiragana to Romaji or Romaji to Hiragana converters if necessary.
+- OpenUtau will ignore filenames, because in most voicebanks each filename has multiple OTOs.
 
 ## Why doesn't VCV/CVVC/VCCV/etc. work?
 - In the Utau world, the default way to use continuous sound voicebanks, like VCV or CVVC, is type the aliases as lyrics - basically hand picking samples from your voicebank and stringing them together as one note. That always works in OpenUtau by using the default CV phonemizer.
