@@ -1,5 +1,5 @@
 - Set up IDE (Recommended: [Visual Studio](https://visualstudio.microsoft.com/) or [VS Code](https://code.visualstudio.com/))
-- [Compile from source](./Compiling from source)
+- [Compile OpenUtau from source](./Compiling-from-source)
 - Begin learning C# from [official Microsoft tutorials](https://dotnet.microsoft.com/en-us/learn/csharp)
 - Read [Phonemizer API](https://github.com/stakira/OpenUtau/tree/master/OpenUtau.Core/Api)
 - For languages with multi-syllable words, read [SyllableBasedPhonemizer API](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Plugin.Builtin/SyllableBasedPhonemizer.cs)
