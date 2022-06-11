@@ -1,13 +1,10 @@
 This is a list of all plugins for UTAU that have been tested in OpenUtau. Many popular plugins haven't been tested yet, so please update the list if you try plugins that aren't shown.
 
-As well, please note that OU's compatibility with specific plugins may change over time, so this list may not be completely accurate.
-
-Note that some plugins themselves may have problem running on non-Japanese systems or other situations. OpenUtau being compatible does not guarantee your setup is compatible.
+Note that some plugins themselves may have problem running on non-Japanese systems or other situations. OpenUtau being compatible does not guarantee your setup is compatible. Also note that OU's compatibility with specific plugins may change over time as it updates, so this list may be out of date.
 
 # Fully compatible
 * [AutoPitchWriter](https://www.youtube.com/watch?v=pdxMg2ViASU)
 * [AutoVibrato](https://ameblo.jp/maiko3utau/entry-12617377622.html)
-* [EasyOtoing](http://hibinobino.main.jp/utau/plugins/) (Might need more testing. Will need to reload OU to reflect oto changes, probably doesn't work on non-shift_jis banks?)
 * [frqeditor](https://www.mediafire.com/file/f92l5gnk3512aaf/frqeditor20160417.zip/file) (May need to manually specify a resampler in the options beforehand)
 * [Humanizer](https://bowlroll.net/file/54423)
 * [iroiro2](https://ux.getuploader.com/bizz_v/) (Doesn't open for some people?)
