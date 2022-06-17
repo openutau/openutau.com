@@ -1,7 +1,7 @@
 * Support marking in Vietnamese
-* Extensions include:
-> R : exhale at the end of the note
-> breath : take a breath
+* Extensions include: <br>
+R : exhale at the end of the note <br>
+breath : take a breath
 1. **Vietnamese CVVC Phonemizer**
 ![](https://drive.google.com/u/0/uc?id=17PiS964StogOMIXV_8YFCMuUdGJWKPIj&export=download)
 2. **Vietnamese VCV Phonemizer**
