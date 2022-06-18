@@ -378,6 +378,7 @@ If you want to extend only a specific syllable in a word, you can do that by typ
 Consonants: b, ch, d, f, g, h, **hh**, j, k, l, m, n, ny, p, r, rr, s, t, w, y, z
 
 Vowels: a, e, i, o, u
+
 The "hh"-sound here is used for end breaths and gets mapped to "息". It only works through phonetic input.
 
 This phonemizer also doesn't use "nh" for "ñ", instead it always uses "ny".
