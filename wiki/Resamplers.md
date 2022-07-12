@@ -38,7 +38,7 @@ This is a list of all UTAU resamplers tested with OpenUtau.
     - You can also set Line 15 "multithread-synthesis" to off in moreconfig.txt to avoid this problem.
 - [[SpaceWorld_win64.exe|https://github.com/LovelyA72/SpaceWorld/releases]] and [[wn4u.exe|https://utaforum.net/threads/world4utau-update.20035/]]
     - May experience issues if the voicebank doesn't have frq files generated beforehand
-- [[lessampler|https://github.com/YuzukiTsuru/lessampler]]
+- [[lessampler|https://github.com/YuzukiTsuru/lessampler/releases/]]
     - In development, lack of flag support
     - Oversized Audio Model Attention
 
