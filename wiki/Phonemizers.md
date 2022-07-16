@@ -422,3 +422,89 @@ breath : take a breath
 ![](https://drive.google.com/u/0/uc?id=17PiS964StogOMIXV_8YFCMuUdGJWKPIj&export=download)
 2. **Vietnamese VCV Phonemizer**
 ![](https://drive.google.com/u/0/uc?id=1JT4aPsaaeIPKnXP2P2dVKRdj3Xps38YN&export=download)
+
+## EN Delta (Ver1) (Delta English Phonemizer (Version 1))
+### Setup
+This phonemizer is pretty similar to the Teto English phonemizer, as both are based on the classic Delta English list. However, there are a few important differences:
+- As the name implies, the Teto English phonemizer was made specifically for Kasane Teto's English bank. While it does use the classic Delta method, it contains some Teto-specific functions that might not work well with other voicebanks.
+- The way this phonemizer handles consonants is slightly different. I've attempted to streamline it a bit more in both general Delta phonemizers.
+- This phonemizer accepts VCV for all consonants (including clusters), if the voicebank contains it.
+- This phonemizer contains some extra sounds that were inspired by Cz's English VCCV method, except they're written in X-SAMPA instead. These sounds are not in any of the Delta lists but were added more for personal use (more on that below).
+
+Differences with the 2nd version of this phonemizer (more info on that below):
+- The main difference is that diphthongs are handled differently. This version of the phonemizer counts them as one phoneme (e.g. "light" is written as ``[l aI t]``.
+- This phonemizer also contains more "non-Delta" sounds than Version 2.
+
+Which version you should use depends on the voicebank. It's a good idea to check the .wav files and oto.ini to be sure.
+
+### Lyric input
+You write the word on the first note, then spread the syllables by writing a ``+`` on the next notes:
+
+![Lyrics showcase example with syllable extender notes](https://i.ibb.co/K28FqLC/Example.png)
+
+If you only want to extend one syllable in the word, you can use either ``+*`` or ``+~``:
+
+![Showcasing syllable extender notes](https://i.ibb.co/LPxnnGK/Example2.png)
+
+### Phonetic input
+You can also use phonetic hints after lyrics, you put those in between brackets (``[]``) with spaces in-between. This is handy when certain phonemes aren't quite right, or for pure stylistic reasons. You write the hint on the first note of the word:
+
+![Showcasing phonetic hints](https://i.ibb.co/6P5wvFD/Example3.png)
+
+You can also opt for pure phonetic input instead, it works the same as above except not right after a lyric:
+
+![Showcasing pure phonetic input](https://i.ibb.co/mGPL9g2/Example4.png)
+
+#### Phoneme list
+Consonants: b, d, f, g, h, j, k, l, m, n, p, r, s, t, v, w, z, **4**, D, N, S, T, Z, dZ, tS, **・**
+
+Vowels: A, E, I, O, U, i, u, {, V, 3, @, aI, eI, OI, aU, oU, _a_, _e_, _o_, **Q**, **I~**, **Ol**, **{~**, **eI~**, **aU~**, **l＝**, **m＝**, **n＝**, **N＝**
+
+The bolded letters and symbols do not occur by default in any of the standard Delta lists. They were mostly based on North-American dialects of English and aren't used by default by the phonemizer, only working through manual phonetic input. They were based on X-SAMPA, you can find more information on it [here](https://en.wikipedia.org/wiki/X-SAMPA). The exception is ``・`` which is a glottal stop (in classic UTAU, ``?`` is used to ignore prefix.maps).
+
+The cursive symbols were taken from other version of the Delta lists. Just like the bolded sounds, they are not used by default and only work through phonetic input. 
+
+Also note that the ``＝``-symbol (for syllabic consonants, which are treated like vowels in this phonemizer) is double-width, meaning **it has to be typed with a Japanese keyboard**. This is because oto.ini files react poorly to the standard Western ``=``-symbol, specifically.
+
+## EN Delta (Ver2) (Delta English Phonemizer (Version 2))
+### Setup
+This phonemizer works similarly to Version 1, but with a few differences:
+- The main difference is that diphthongs are handled differently. This version of the phonemizer still treats them as the same phoneme, but splits them on the notes (e.g. "light" is written as ``[l a I t]``, though writing ``[l aI t]`` should still work).
+- This phonemizer also contains less "non-Delta" sounds than Version 1.
+
+For the rest, they work pretty similar. Which version you should use depends on the voicebank. It's a good idea to check the .wav files and oto.ini to be sure.
+
+### Lyric input
+You write the word on the first note, then spread the syllables by writing a ``+`` on the next notes:
+
+![Lyric usage example](https://i.ibb.co/kcK2861/Lightning.png)
+
+As you can see, since this phonemizer splits diphthongs, the second half of the diphthong should essentially be treated as if it's a separate syllable. If you don't do that, this happens:
+
+![How not to treat diphthongs in this phonemizer](https://i.ibb.co/3rtWv0T/Lightning-WRONG.png)
+
+As you can see, the second half lands on the wrong syllable. This can be prevented by using the correct method shown above.
+
+If you only want to extend one syllable in the word, you can use either ``+*`` or ``+~``:
+
+![Syllable extender notes](https://i.ibb.co/bd4w5NV/Lightning2.png)
+
+### Phonetic input
+You can also use phonetic hints after lyrics, you put those in between brackets (``[]``) with spaces in-between. This is handy when certain phonemes aren't quite right, or for pure stylistic reasons. You write the hint on the first note of the word:
+
+![Showcasing phonetic hints](https://i.ibb.co/6P5wvFD/Example3.png)
+
+You can also opt for pure phonetic input instead, it works the same as above except not right after a lyric:
+
+![Showcasing pure phonetic input](https://i.ibb.co/mGPL9g2/Example4.png)
+
+#### Phoneme list
+Consonants: b, d, f, g, h, j, k, l, m, n, p, r, s, t, v, w, z, **4**, D, N, S, T, Z, dZ, tS, **・**
+
+Vowels: A, E, I, O, U, a, e, i, o, u, {, V, 3, @, aI, eI, OI, aU, oU, **Q**, **I~**, **{~**, **l＝**, **m＝**, **n＝**, **N＝**
+
+The bolded letters and symbols do not occur by default in any of the standard Delta lists. They were mostly based on North-American dialects of English and aren't used by default by the phonemizer, only working through manual phonetic input. They were based on X-SAMPA, you can find more information on it [here](https://en.wikipedia.org/wiki/X-SAMPA). The exception is ``・`` which is a glottal stop (in classic UTAU, ``?`` is used to ignore prefix.maps).
+
+The extra sounds that are present in Version 1 of the phonemizer, but are absent in Version 2, have been omitted because they were either diphthongs or followed by a specific consonant. Most importantly, no known Delta-based voicebank uses any of the omitted sound combinations, as they'd be tricky to record and implement with the split diphthong method.
+
+Also note that the ``＝``-symbol (for syllabic consonants, which are treated like vowels in this phonemizer) is double-width, meaning **it has to be typed with a Japanese keyboard**. This is because oto.ini files react poorly to the standard Western ``=``-symbol, specifically.
