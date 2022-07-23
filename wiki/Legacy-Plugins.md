@@ -15,7 +15,7 @@ Note that some plugins themselves may have problem running on non-Japanese syste
 * [VibratoStocker](https://ameblo.jp/maiko3utau/entry-12544042092.html)
 * [Extended Pitch Editor/拡張ピッチエディタ](http://z-server.game.coocan.jp/utau/utautop.html#pitedit) (Works but is a bit glitchy,except for mode 1 editing) 
 # Compatible with adjustments
-* [Freq Tracer](http://z-server.game.coocan.jp/utau/utautop.html) (Need to adjust pitches some and only works in "Mode 2" mode.)
+* [Freq Tracer](http://z-server.game.coocan.jp/utau/utautop.html) (A note placed on the piano roll is needed to get FreqTracer to run. You also need to adjust pitches some after the plugin has run, and only works in "Mode 2" mode.)
 # Incompatible
 * [envedit/拡張エンベロープエディタ](http://z-server.game.coocan.jp/utau/utautop.html) - Works, but OU can't keep complex envelope changes intact (anything beyond what attack/decay can emulate), so basically useless
 * [flagedit/拡張フラグエディタ](http://z-server.game.coocan.jp/utau/utautop.html) - Opens, but changes don't go through
