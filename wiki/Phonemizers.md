@@ -2,6 +2,10 @@ This page is written for end users. Developers interested in working on new phon
 
 When phonemizers break notes into multiple phonemes, you can adjust the envelopes and parameters for each of these independently.
 
+In order to change the phonemizer, click DEFAULT on the vocal track and choose the phonemizer from there.
+
+![phonemizer](https://i.imgur.com/mBf2VOY.png)
+
 ## DEFAULT
 No phonemization is applied.
 You can input `+` to extend the previous lyric over multiple notes.  
