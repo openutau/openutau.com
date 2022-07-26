@@ -443,7 +443,7 @@ You can also opt for pure phonetic input instead, it works the same as above exc
 ![Showcasing pure phonetic input](https://i.ibb.co/mGPL9g2/Example4.png)
 
 #### Phoneme list
-Consonants: b, d, f, g, h, j, k, l, m, n, p, r, s, t, v, w, z, **4**, D, N, S, T, Z, dZ, tS, **・**, _**_**_
+Consonants: b, d, f, g, h, j, k, l, m, n, p, r, s, t, v, w, z, **4**, D, N, S, T, Z, dZ, tS, **・**, _**(underscore)**_
 
 Vowels: A, E, I, O, U, i, u, {, V, 3, @, aI, eI, OI, aU, oU, _a_, _e_, _o_, **Q**, **I~**, **Ol**, **{~**, **eI~**, **aU~**, _**Ar**_, _**Er**_, _**Ir**_, _**Or**_, _**Ur**_, _**@l**_, _**@m**_, _**@n**_, _**@N**_, _**1**_, _**e@m**_, _**e@n**_, **l＝**, **m＝**, **n＝**, **N＝**
 
@@ -488,7 +488,7 @@ You can also opt for pure phonetic input instead, it works the same as above exc
 ![Showcasing pure phonetic input](https://i.ibb.co/mGPL9g2/Example4.png)
 
 #### Phoneme list
-Consonants: b, d, f, g, h, j, k, l, m, n, p, r, s, t, v, w, z, **4**, D, N, S, T, Z, dZ, tS, **・**, _**_**_
+Consonants: b, d, f, g, h, j, k, l, m, n, p, r, s, t, v, w, z, **4**, D, N, S, T, Z, dZ, tS, **・**, _**(underscore)**_
 
 Vowels: A, E, I, O, U, a, e, i, o, u, {, V, 3, @, aI, eI, OI, aU, oU, _**1**_, **Q**, **I~**, **{~**, **l＝**, **m＝**, **n＝**, **N＝**
 
