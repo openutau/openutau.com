@@ -445,7 +445,7 @@ You can also opt for pure phonetic input instead, it works the same as above exc
 #### Phoneme list
 Consonants: b, d, f, g, h, j, k, l, m, n, p, r, s, t, v, w, z, **4**, D, N, S, T, Z, dZ, tS, **・**, _**(underscore)**_
 
-Vowels: A, E, I, O, U, i, u, {, V, 3, @, aI, eI, OI, aU, oU, _a_, _e_, _o_, **Q**, **Ol**, **aUn**, _**Ar**_, _**Er**_, _**Ir**_, _**Or**_, _**Ur**_, _**@l**_, _**@m**_, _**@n**_, _**@N**_, _**eN**_ _**IN**_, _**1**_, **e@**, _**e@m**_, _**e@n**_
+Vowels: A, E, I, O, U, i, u, {, V, 3, @, aI, eI, OI, aU, oU, _a_, _e_, _o_, **Q**, **Ol**, **aUn**, _**Ar**_, _**Er**_, _**Ir**_, _**Or**_, _**Ur**_, _**@l**_, _**@m**_, _**@n**_, _**@N**_, **eN**, _**IN**_, _**1**_, **e@**, _**e@m**_, _**e@n**_
 
 The bolded letters and symbols do not occur by default in any of the standard Delta lists. They were mostly based on North-American dialects of English and aren't used by default by the phonemizer, only working through manual phonetic input. They were based on X-SAMPA, you can find more information on it [here](https://en.wikipedia.org/wiki/X-SAMPA). The exception is ``・`` which is a glottal stop (in classic UTAU, ``?`` is used to ignore prefix.maps).
 
