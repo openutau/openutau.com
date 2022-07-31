@@ -445,15 +445,13 @@ You can also opt for pure phonetic input instead, it works the same as above exc
 #### Phoneme list
 Consonants: b, d, f, g, h, j, k, l, m, n, p, r, s, t, v, w, z, **4**, D, N, S, T, Z, dZ, tS, **・**, _**(underscore)**_
 
-Vowels: A, E, I, O, U, i, u, {, V, 3, @, aI, eI, OI, aU, oU, _a_, _e_, _o_, **Q**, **I~**, **Ol**, **{~**, **eI~**, **aU~**, _**Ar**_, _**Er**_, _**Ir**_, _**Or**_, _**Ur**_, _**@l**_, _**@m**_, _**@n**_, _**@N**_, _**1**_, _**e@m**_, _**e@n**_, **l＝**, **m＝**, **n＝**, **N＝**
+Vowels: A, E, I, O, U, i, u, {, V, 3, @, aI, eI, OI, aU, oU, _a_, _e_, _o_, **Q**, **Ol**, **aUn**, _**Ar**_, _**Er**_, _**Ir**_, _**Or**_, _**Ur**_, _**@l**_, _**@m**_, _**@n**_, _**@N**_, _**eN**_ _**IN**_, _**1**_, **e@**, _**e@m**_, _**e@n**_
 
 The bolded letters and symbols do not occur by default in any of the standard Delta lists. They were mostly based on North-American dialects of English and aren't used by default by the phonemizer, only working through manual phonetic input. They were based on X-SAMPA, you can find more information on it [here](https://en.wikipedia.org/wiki/X-SAMPA). The exception is ``・`` which is a glottal stop (in classic UTAU, ``?`` is used to ignore prefix.maps).
 
 The cursive symbols were taken from other version of the Delta lists. Just like the bolded sounds, they are not used by default and only work through phonetic input. 
 
 The symbols that are both bolded and cursive are exclusive to [Peiton](https://www.supergoodboi.com/peiton.html/)'s English voicebank, as well any other voicebanks that might use that list. They only work through phonetic input.
-
-Also note that the ``＝``-symbol (for syllabic consonants, which are treated like vowels in this phonemizer) is double-width, meaning **it has to be typed with a Japanese keyboard**. This is because oto.ini files react poorly to the standard Western ``=``-symbol, specifically.
 
 ## EN Delta (Ver2) (Delta English Phonemizer (Version 2))
 ### Setup
@@ -490,12 +488,10 @@ You can also opt for pure phonetic input instead, it works the same as above exc
 #### Phoneme list
 Consonants: b, d, f, g, h, j, k, l, m, n, p, r, s, t, v, w, z, **4**, D, N, S, T, Z, dZ, tS, **・**, _**(underscore)**_
 
-Vowels: A, E, I, O, U, a, e, i, o, u, {, V, 3, @, aI, eI, OI, aU, oU, _**1**_, **Q**, **I~**, **{~**, **l＝**, **m＝**, **n＝**, **N＝**
+Vowels: A, E, I, O, U, a, e, i, o, u, {, V, 3, @, aI, eI, OI, aU, oU, _**1**_, **Q**
 
 The bolded letters and symbols do not occur by default in any of the standard Delta lists. They were mostly based on North-American dialects of English and aren't used by default by the phonemizer, only working through manual phonetic input. They were based on X-SAMPA, you can find more information on it [here](https://en.wikipedia.org/wiki/X-SAMPA). The exception is ``・`` which is a glottal stop (in classic UTAU, ``?`` is used to ignore prefix.maps).
 
 The symbols that are both bolded and cursive were taken from [Peiton](https://www.supergoodboi.com/peiton.html/)'s English voicebank and only work through phonetic input. Note though that this phonemizer does not contain proper support for Peiton, instead Version 1 is recommended.
 
 The extra sounds that are present in Version 1 of the phonemizer, but are absent in Version 2, have been omitted because they were either diphthongs or followed by a specific consonant. Most importantly, no known Delta-based voicebank uses any of the omitted sound combinations, as they'd be tricky to record and implement with the split diphthong method.
-
-Also note that the ``＝``-symbol (for syllabic consonants, which are treated like vowels in this phonemizer) is double-width, meaning **it has to be typed with a Japanese keyboard**. This is because oto.ini files react poorly to the standard Western ``=``-symbol, specifically.
