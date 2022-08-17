@@ -195,7 +195,7 @@ If the voicebank has no VC phonemes, it is recommended to edit the timing of the
 This phonemizer is compatible with [Fraloids](https://fraloids.wixsite.com/collection) UTAUs, [Petit Mot](https://simelomad.wixsite.com/crabkids/copie-de-gros-mot) & [Gros Mot](https://simelomad.wixsite.com/crabkids/about-new), it can support basic CVVC, CVVC+ and VCV-VC. For more information on compatible UTAUs, tutorials and help with French UTAUs you can go [here](https://frenchutauhelp.carrd.co/).
 
 ### Setup
-It works with a dictionary (version 1.2 and higher) available [here](https://drive.google.com/file/d/1m-wnt5reJ0d9rGC2e1jMlZUMeioA5Lnw/view?usp=sharing). For the phonemizer to work, you need to download the .txt and put it in your Dictionaries folder. If there's no Dictionaries folder, create one at the root of your OpenUtau folder.
+It works with a [dictionary](https://github.com/mmemim/OpenUTAU-French-Dictionary) (version 1.2 and higher) available [here](https://github.com/mmemim/OpenUTAU-French-Dictionary). For the phonemizer to work, you need to download `cmudict-fr.txt` and put it in your `Dictionaries` folder. If there's no Dictionaries folder, create one at the root of your OpenUtau install folder.
 
 ![dictionary goes in the dictionaries folder at the root](https://i.imgur.com/szewSA7.png)
 
