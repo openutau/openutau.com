@@ -1,6 +1,9 @@
 - Note: ENUNU/NNSVS support is **experimental**. There will be quirks. Be **patient**. Be **ready to troubleshoot**.
 - Note: **This page will change regularly**.
 
+## About ENUNU v0.5.0
+It is reported that replacing files in ENUNU-server with ENUNU v0.5.0 files makes ENUNU-server work with v0.5.0 voicebanks. Feel free to try ar your own risk.
+
 ## How to use (0.0.743)
 See [ENUNU v0.4.0 for OpenUtau](https://github.com/stakira/ENUNU/releases/tag/v0.4.0-openutau)
 
