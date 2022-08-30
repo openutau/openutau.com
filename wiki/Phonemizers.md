@@ -130,7 +130,7 @@ Phonetic hints and Hangul can be used together, which may be useful for voiceban
 Although the phonemizer supports all Hangul jamo, it is strongly recommended to rewrite the lyrics in phonetic Hangul (such as the pronunciation guides on the Naver Korean Dictionary or Wiktionary) for best results, especially with words that go through consonant sound changes (ex. 입력 → 임녁, 꽃잎 → 꼰닙, 있어 → 이써, etc.).
 
 ## PT-BR CVC (Brazilian Portuguese CVC)
-Made with [BRAPA](https://github.com/Team-BRAPA/BRAPA) conotation, this phonemizer uses a built-in G2P Dictionary
+Made with [BRAPA](https://github.com/Team-BRAPA/BRAPA) conotation, this phonemizer uses a built-in G2P Dictionary. The main accent is the `Neutral`
 
 ### Uses
 1. Portuguese Words (eg. `leite`)  
