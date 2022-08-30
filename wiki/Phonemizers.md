@@ -130,30 +130,34 @@ Phonetic hints and Hangul can be used together, which may be useful for voiceban
 Although the phonemizer supports all Hangul jamo, it is strongly recommended to rewrite the lyrics in phonetic Hangul (such as the pronunciation guides on the Naver Korean Dictionary or Wiktionary) for best results, especially with words that go through consonant sound changes (ex. 입력 → 임녁, 꽃잎 → 꼰닙, 있어 → 이써, etc.).
 
 ## PT-BR CVC (Brazilian Portuguese CVC)
-Made with Xiao's PT-BR CVC reclist conotation, this phonemizer can be used with or without a dictionary
+Made with [BRAPA](https://github.com/Team-BRAPA/BRAPA) conotation, this phonemizer uses a built-in G2P Dictionary
 
-### Without a Dictionary
-1. You can input the phonemes in plain text, separated by spaces (eg. `p e h f e y s @ w`)  
-![ptbr cvc typing without dictionary (perfeição)](https://i.imgur.com/BNGhl9A.png)  
-
-### With a Dictionary
+### Uses
 1. Portuguese Words (eg. `leite`)  
-![ptbr cvc with dictionary - ptbr words](https://i.imgur.com/E1eTaV5.png)  
+![ptbr cvc with dictionary - ptbr words](https://i.imgur.com/nMqi6Ai.png)  
 2. Portuguese Words + phonetic hint (eg. `leite[l e y t e]`)  
-![ptbr cvc with dictionary - ptbr words + phonetic hint](https://i.imgur.com/1bhmZFl.png)  
+![ptbr cvc with dictionary - ptbr words + phonetic hint](https://i.imgur.com/dHOMSPf.png)  
 3. Phonetic hint only (eg. `[l e y t e]`)  
-![ptbr cvc with dictionary - only phonetic hint](https://i.imgur.com/Fb8n69J.png)  
+![ptbr cvc with dictionary - only phonetic hint](https://i.imgur.com/d4K5kaY.png)  
 
 ### Common Feature
 With or without a dictionary, you can use the features listed below:
 
 1. Separate words or phonemes by syllable using `+`.  
-![ptbr cvc - separating syllables](https://i.imgur.com/ofHlD9O.png)  
+![ptbr cvc - separating syllables](https://i.imgur.com/Jr3CwY5.png)  
 2. Extend a syllable or phonemes using `+*` or `+~`.  
-![ptbr cvc - extending syllables](https://i.imgur.com/OkqTZHd.png)  
+![ptbr cvc - extending syllables](https://i.imgur.com/WS6aCM5.png)  
 3. Using a single phoneme with `?`.  
 Obs. If exists a linked note behind that finishes with `V-`, `VC-` or `VC` + `C-`, this function removes those samples in order to cross fade with previous `V` or `CV`.  
-![ptbr cvc - ? function](https://i.imgur.com/MfeBe62.png)  
+![ptbr cvc - ? function](https://i.imgur.com/iYtHmlz.png)  
+
+### Special Feature
+1. Support to VV and _V  
+Even tho CVC don't have vowel connections by default, the phonemizer supports it for extras. The priority is `VV` -> `_V` -> `V`  
+![ptbr cvc - vv connections](https://i.imgur.com/4sehINo.png)  
+2. rh CV connection  
+`rh` is a rhotic vowel only found in front of a vowel or in between a vowel and a consonant. If somehow, during the usage, they are found in between vowels, the phoneme `r` will show up to make a connection, since it's their natural approximant. Like the example: `par a par`  
+![ptbr cvc - rh connection](https://i.imgur.com/vSmKcs1.png)  
 
 ## EN to JA (English to Japanese)
 This phonemizer converts English lyrics to phonemes for Japanese voicebanks. It will automatically adapt to CV, VCV, and CVVC voicebanks.
