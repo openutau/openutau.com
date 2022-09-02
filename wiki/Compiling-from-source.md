@@ -2,17 +2,17 @@
 Compiling OpenUtau can be done easily.
 
 ## Prerequisites
-You will need the DotNet 3.1 SDK.
+You will need the .NET 6.0 SDK.
 
-For Windows and Mac you can get it [here](https://dotnet.microsoft.com/en-us/download/dotnet/3.1)
+For Windows and Mac you can get it [here](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 
-On Ubuntu, Debian, or any deriviatives (eg Linux Mint):
+On Ubuntu, Debian, or any derivatives (e.g. Linux Mint):
 ```
-sudo apt install dotnet-sdk-3.1
+sudo apt install dotnet-sdk-6.0
 ```
-On Manjaro, Endeavour, or other arch-based distro:
+On an Arch-based distro:
 ```
-sudo pacman -S dotnet-sdk-3.1
+sudo pacman -S dotnet-sdk
 ```
 For other instructions see the link above.
 
@@ -40,4 +40,4 @@ dotnet restore OpenUtau
 dotnet build OpenUtau
 ```
 
-The executable files will be in the directory `OpenUtau/OpenUtau/bin/Debug/netcoreapp3.1`
+The executable files will be in the directory `OpenUtau/OpenUtau/bin/Debug/net6.0`
