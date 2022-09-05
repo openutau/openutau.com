@@ -19,13 +19,11 @@ By default, OpenUtau will use the same language as your computer, or English if 
 ![language](https://i.imgur.com/WDgg4Z6.gif)
 
 ## Install a resampler
-Put a resampler .exe or .dll into the Resamplers folder. If you already use UTAU, you can copy + paste resamplers that you already have. Check [Resamplers](Resamplers) for a list of compatible resamplers.
+OpenUtau provides an internal wavtool along with a resampler, **Worldline**. 
 
-In OpenUtau, go to Tools > Preferences to select a resampler and toggle phase compensation. Using Moresampler is not fully optimized, so a warning will appear advising you to adjust the moreconfig file if you persist.
+To install an external resampler, place a resampler .exe or .dll into the "Resamplers" folder where OpenUtau is installed. If you already use UTAU, you can copy + paste resamplers that you already have. Check [Resamplers](Resamplers) for a list of compatible resamplers.
 
-![select resampler](https://i.imgur.com/Fy0NGJj.gif)
-
-There is no need to provide a wavtool, as OpenUtau uses its own internal wavtool.
+After adding a track, you can select the resampler and wavtool by pressing the settings cog on the lower right of the track header.
 
 ## Install a voicebank
 Voicebanks can be installed through **Tools > Install Singer...**
@@ -106,9 +104,9 @@ After saving the project, use File > Export All to render all tracks as separate
 
 ## Tracks
 ### Creating tracks
-Double click in the left panel to create a new track.
+Click the **+** icon in the left panel to create a new track.
 
-![create track](https://i.imgur.com/pXIy6AD.gif)
+![create track](https://i.imgur.com/Fk69Epl.gif)
 
 ### Importing tracks
 Imported tracks will be added to the current project under all of your existing tracks.
@@ -120,27 +118,29 @@ You can import tracks MIDI using File > Import MIDI.
 ### Editing tracks
 Select a singer from the menu in the track header.
 
-![select singer](https://i.imgur.com/W8Z1jto.gif)
+![select singer](https://i.imgur.com/PIzAx6s.gif)
 
 You can optionally select a phonemizer, which will automatically convert note lyrics into a form the voicebank can play. For more details, please check [Phonemizers](Phonemizers).
 
-![phonemizer](https://i.imgur.com/h0B15qz.gif)
+![phonemizer](https://i.imgur.com/wcMNzKy.gif)
 
-Click and drag the volume slider to adjust the volume of the track. Right click to reset the volume. The mute/solo buttons are not supported yet.
+The `M` in the right corner of the track header mutes the track, while the `S` solos the track. The settings cog in the lower right allows you to select a Resampler and Wavtool.
 
-![track volume](https://i.imgur.com/EvXpW9A.gif)
+You are also able to click and drag the volume slider to adjust the volume of the track. Right click to reset this slider to +00.0.
+
+![track volume and settings](https://i.imgur.com/MJY5vtJ.gif)
 
 Click in the track area to create a new part. You can drag the part to move it around, drag the end to change the length, and right click to delete parts.
 
-![edit part](https://i.imgur.com/AXqH8yA.gif)
+![edit part](https://i.imgur.com/aAFe6XU.gif)
 
-Click on the part's name to rename it.
+The right click dialog also allows you to rename a part.
 
-![rename part](https://i.imgur.com/tMChLVo.gif)
+![rename part](https://i.imgur.com/NmStbDA.gif)
 
 Double click on a part to open the note editor.
 
-![open part](https://i.imgur.com/8HBxHVP.gif)
+![open part](https://i.imgur.com/ZWOQ2Ss.gif)
 
 ### Navigation
 Click on the bar/measure labels to move the playback cursor, and press space to start/stop playing.
@@ -170,17 +170,23 @@ Click and drag on the panning icon to scroll horizontally and vertically.
 ## Notes
 Toggle tips using the question mark button or pressing `T` on the keyboard.
 
-![tips](https://i.imgur.com/rmQuiB6.gif)
+![tips](https://i.imgur.com/6qI2FBD.gif)
 
 ### Navigation
 Scroll, zoom, and playback function the same way as the track editor.
 
 ### Basic note editing
-Click to create notes, and right click to delete notes.
+There are two note creation modes:
 
-![create](https://i.imgur.com/bIXQVcd.gif)
+`Pen Tool`
+> Click to create notes, Right click to bring up an options menu. This is a good mode for tuning and intensive lyric editing due to the ease of access to batch editing tools.
 
-Double click to start inputing lyric, tab to finish and switch to next note.
+`Pen Tool +`
+> Click to create notes, and right click to delete notes. This is a good mode for composition and UST creation, due to its speed.
+
+![create](https://i.imgur.com/BKKtoFA.gif)
+
+Double click to start inputting lyric, tab to finish and switch to next note.
 
 ![lyric](https://i.imgur.com/pNeA8Ls.gif)
 
@@ -198,16 +204,18 @@ Use the arrow keys to move selected notes up/down by 1 semitone, and Ctrl + arro
 
 By default, notes and lengths will snap to the nearest 16th note. To toggle snap, click on the snap icon in the top left, or press `P` on your keyboard.
 
-![snap](https://i.imgur.com/kCgzM8m.gif)
+![snap](https://i.imgur.com/1nIYvrt.gif)
 
 ### Transformers and Legacy Plugins
-Use the gear in the upper left corner to access Transformers and Legacy Plugins.
+Transformers and Legacy Plugins can be accessed via the text options along the top of the Piano Roll view.
 
-![transformer](https://i.imgur.com/uemtrXd.gif)
+![transformer](https://i.imgur.com/6XI0w5z.gif)
 
 These are used for simple 1-to-1 lyric conversions, and are applied to the whole track part at once.
 
 Legacy Plugins provide limited support for UTAU plugins. To add a plugin, copy the folder into the Plugins folder of OpenUtau. Not all plugins will function normally or completely. Some popular plugins (eg. VCV conversion, CVVC conversion) are handled by track phonemizers.
+
+![legacy](https://i.imgur.com/70eNNC9.gif)
 
 ### Edit expressions
 Use the arrow by the expressions to select which one you want to edit. 
