@@ -502,7 +502,7 @@ The extra sounds that are present in Version 1 of the phonemizer, but are absent
 
 ## Italian Syllable-Based Phonemizer (IT SYL)
 ### Setup
-**!!IMPORTANT NOTE!!** This phonemizer is **NOT** to be confused with the Italian CVVC Phonemizer mentioned above. The biggest difference is that the Italian Syllable-Based Phonemizer uses a dictionary (see below), whereas the older Italian CVVC Phonemizer is a simple port of the Japanese CVVC Phonemizer. However, both are based upon [Makkusan's Italian reclist](https://drive.google.com/file/d/1KHLocNVjC87pW74xFE1NuzW2Mvp1IJrF/view).
+**!!IMPORTANT NOTE!!** This phonemizer is **NOT** to be confused with the older Italian CVVC Phonemizer. The biggest difference is that the Italian Syllable-Based Phonemizer uses a dictionary (see below), whereas the older Italian CVVC Phonemizer is a simple port of the Japanese CVVC Phonemizer. However, both are based upon [Makkusan's Italian reclist](https://drive.google.com/file/d/1KHLocNVjC87pW74xFE1NuzW2Mvp1IJrF/view).
 
 The dictionary for this phonemizer can be downloaded [here](https://github.com/lottev1991/OpenUtau-Italian-Dictionary). Please put the ``cmudict_it.txt`` file in the ``Dictionaries`` folder of your OpenUtau install; if it doesn't exist, make it.
 
