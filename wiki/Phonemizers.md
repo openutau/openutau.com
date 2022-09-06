@@ -499,3 +499,46 @@ The bolded letters and symbols do not occur by default in any of the standard De
 The symbols that are both bolded and cursive were taken from [Peiton](https://www.supergoodboi.com/peiton.html/)'s English voicebank and only work through phonetic input. Note though that this phonemizer does not contain proper support for Peiton, instead Version 1 is recommended.
 
 The extra sounds that are present in Version 1 of the phonemizer, but are absent in Version 2, have been omitted because they were either diphthongs or followed by a specific consonant. Most importantly, no known Delta-based voicebank uses any of the omitted sound combinations, as they'd be tricky to record and implement with the split diphthong method.
+
+## Italian Syllable-Based Phonemizer (IT-SYL)
+### Setup
+**!!IMPORTANT NOTE!!** This phonemizer is **NOT** to be confused with the Italian CVVC Phonemizer mentioned above. The biggest difference is that the Italian Syllable-Based Phonemizer uses a dictionary (see below), whereas the older Italian CVVC Phonemizer is a simple port of the Japanese CVVC Phonemizer. However, both are based upon [Makkusan's Italian reclist](https://drive.google.com/file/d/1KHLocNVjC87pW74xFE1NuzW2Mvp1IJrF/view).
+
+The dictionary for this phonemizer can be downloaded [here](https://github.com/lottev1991/OpenUtau-Italian-Dictionary). Please put the ``cmudict_it.txt`` file in the ``Dictionaries`` folder of your OpenUtau install; if it doesn't exist, make it.
+
+Please note that at this time, this phonemizer only supports the above-mentioned Makkusan method. However, I might add support for other methods if there's demand for it.
+
+### Lyric input
+You write the word on the first note, then spread the syllables by writing a ``+`` on the next note(s):
+
+![Lyrics showcase example with syllable spreading notes](https://i.ibb.co/bJPdfLJ/giorno.png)
+
+![Showcasing syllable extender notes](https://i.ibb.co/v4G5z5S/giorno2.png)
+
+Note that falling diphthongs (aka semivowels at the end of a note) should essentially be treated as a separate syllable, since they are treated as regular vowels in both the dictionary and the phonemizer:
+
+![Showcasing correct treatment of falling diphthongs](https://i.ibb.co/8Pbhvq7/Falling-Diphthongs-Correct.png)
+
+Whereas if you don't do that, the latter half of the diphthongs will accidentally spread over to the next note:
+
+![How NOT to do falling diphthongs](https://i.ibb.co/qx3mCNx/Falling-Diphthongs-Wrong.png)
+
+Note that when followed by a vowel within the same word, the phonemes ``y`` (for short ``i``) and ``w`` (for short ``u``) are used instead, so this does not apply in those cases.
+
+Also note that as of writing, the phonemizer sadly does not yet support ``[V]i R`` and ``[V]u R`` semivowel endings notes (where ``[V]`` represents a vowel). This is on the roadmap, but is predicted to be difficult to implement.
+
+### Phonetic input
+You can also use phonetic hints after lyrics, you put those in between brackets (``[]``) with spaces in-between. This is handy when certain phonemes aren't quite right, or for pure stylistic reasons. You write the hint on the first note of the word:
+
+![Showcasing phonetic hints](https://i.ibb.co/RQnndyq/Phonetic-Hint1.png)
+
+You can also opt for pure phonetic input instead, it works the same as above except not right after a lyric:
+
+![Showcasing pure phonetic input](https://i.ibb.co/R63rCc3/Phonetic-Hint2.png)
+
+#### Phoneme list
+Vowels: a, e, i, o, u, 3, 0
+
+Consonants: b, d, dz, dZ, f, g, gn, j, k, l, m, M, n, N, p, r, rr, s, S, t, ts, tS, v, w, y, z, **B**, **D**, **G**, **h**, **T**, **x**, **Y**, '
+
+The bolded phonemes are extra sounds for Spanish. They're not in the dictionary and only work through phonetic input (the latter also counts for ``'``, which represents vocal fry).
