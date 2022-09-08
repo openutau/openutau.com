@@ -27,12 +27,12 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 - [[EFB-GT.exe|http://custom-made.seesaa.net/article/312529786.html]]
 - EFB-PB.exe
 
-## Moresampler
-- Add `moresampler.exe` without `moreconfig.txt` to `Resamplers` folder
-- Add `moresampler.exe` with unmodified `moreconfig.txt` to `Wavtools` folder
-- Now you should able to use it either as resampler only, or both as wavtool and resampler.
+## Compatible with adjustments
 
-## Compatible with attention
+- moresampler.exe
+  - Add `moresampler.exe` without `moreconfig.txt` in `Resamplers` folder
+  - Add `moresampler.exe` with unmodified `moreconfig.txt` in `Wavtools` folder
+  - Now you should able to use it either as resampler only, or as both wavtool and resampler.
 - [[SpaceWorld_win64.exe|https://github.com/LovelyA72/SpaceWorld/releases]] and [[wn4u.exe|https://utaforum.net/threads/world4utau-update.20035/]]
     - May experience issues if the voicebank doesn't have frq files generated beforehand. SpaceWorld version 1.0.1 prevents the software from crashing in case of a missing frq file.
 - [[lessampler|https://github.com/YuzukiTsuru/lessampler/releases/]]
