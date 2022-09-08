@@ -27,7 +27,7 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 - [[EFB-GT.exe|http://custom-made.seesaa.net/article/312529786.html]]
 - EFB-PB.exe
 
-## moresampler
+## Moresampler
 - moresampler.exe
   - Add `moresampler.exe` without `moreconfig.txt` in `Resamplers` folder
   - Add `moresampler.exe` with unmodified `moreconfig.txt` in `Wavtools` folder
