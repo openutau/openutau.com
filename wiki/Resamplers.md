@@ -29,7 +29,7 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 
 ## Compatible with adjustments
 
-- [[moresampler.exe]](https://bowlroll.net/file/139123)
+- [moresampler.exe](https://bowlroll.net/file/139123)
   - Add `moresampler.exe` without `moreconfig.txt` in `Resamplers` folder
   - Add `moresampler.exe` with unmodified `moreconfig.txt` in `Wavtools` folder
   - Now you should able to use it either as resampler only, or as both wavtool and resampler.
