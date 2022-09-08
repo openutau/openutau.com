@@ -30,12 +30,9 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 ## Compatible with adjustments
 
 - moresampler.exe
-  - Need to edit the following lines in moreconfig.txt:
-    - Line 6 "resampler-compatibility" to on.
-    - Line 16 "auto-update-llsm-mrq" to off.
-  - The wavtool mode is not supported, but using it as a pure resampler works.
-  - Generating llsm files with multiple processes can easily overload your computer. Please turn down threads to 1 or 2.
-    - You can also set Line 15 "multithread-synthesis" to off in moreconfig.txt to avoid this problem.
+  - Add `moresampler.exe` without `moreconfig.txt` in `Resamplers` folder
+  - Add `moresampler.exe` with unmodified `moreconfig.txt` in `Wavtools` folder
+  - Now you should able to use it either as resampler only, or as both wavtool and resampler.
 - [[SpaceWorld_win64.exe|https://github.com/LovelyA72/SpaceWorld/releases]] and [[wn4u.exe|https://utaforum.net/threads/world4utau-update.20035/]]
     - May experience issues if the voicebank doesn't have frq files generated beforehand. SpaceWorld version 1.0.1 prevents the software from crashing in case of a missing frq file.
 - [[lessampler|https://github.com/YuzukiTsuru/lessampler/releases/]]
