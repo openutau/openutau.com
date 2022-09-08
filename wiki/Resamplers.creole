@@ -28,10 +28,9 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 - EFB-PB.exe
 
 ## Moresampler
-- moresampler.exe
-  - Add `moresampler.exe` without `moreconfig.txt` in `Resamplers` folder
-  - Add `moresampler.exe` with unmodified `moreconfig.txt` in `Wavtools` folder
-  - Now you should able to use it either as resampler only, or both as wavtool and resampler.
+- Add `moresampler.exe` without `moreconfig.txt` to `Resamplers` folder
+- Add `moresampler.exe` with unmodified `moreconfig.txt` to `Wavtools` folder
+- Now you should able to use it either as resampler only, or both as wavtool and resampler.
 
 ## Compatible with attention
 - [[SpaceWorld_win64.exe|https://github.com/LovelyA72/SpaceWorld/releases]] and [[wn4u.exe|https://utaforum.net/threads/world4utau-update.20035/]]
