@@ -46,5 +46,5 @@ If your OS's system locale is **not** set to Japanese, please use the installer 
 ## Is there a default voicebank/mascot? Can I provide a default voicebank/mascot?
 - There is no default character, and no intention of creating a default character. Please do not offer one.
 
-## Does OpenUtau require a separate wavtool?
-- OpenUtau uses its own internal wavtool. This helps it with handling resampler pre-rendering and multiple resampler threads.
+## Does OpenUtau require a separate wavtool or resampler?
+OpenUtau comes with its own resampler and wavtools, but if you want to use ones meant for original UTAU they will work.
