@@ -38,7 +38,7 @@ The installer helps solve this problem by:
 
 If your OS's system locale is set to Japanese, using the installer is not required. You can unzip yourself and share files with UTAU. You may need to change text encoding in Singers dialog.
 
-If your OS's system locale set to Japanese, please use the installer to make sure the filenames are decoded correctly.
+If your OS's system locale is **not** set to Japanese, please use the installer to make sure the filenames are decoded correctly.
 
 ## Red pitch line goes everywhere.
 - The UST or MIDI file may have a bad tempo set, like 50000.
