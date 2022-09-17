@@ -13,6 +13,9 @@ Make sure the voicebank includes a `character.txt` file with the line "name=(voi
 3. Make sure a singer is installed and selected.
 4. Open up the Piano Roll window. If notes are semi-transparent, and phonemes, pitches, and expressions below don't show up, that means the lyrics do not work with the selected phonemizer and the voicebank.
 
+## "Unable to load DLL 'worldline' or one of its dependencies" or "Dll was not found"
+Install the [latest Visual C++ Redistributable](https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170)
+
 ## My CV Japanese voicebank doesn't work?
 - Make sure that the OTO has aliases for every file.
 - Make sure you write lyrics into notes that match the aliases. Use the built-in Hiragana/Romaji converters if necessary.
