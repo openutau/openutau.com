@@ -11,7 +11,7 @@
 - See [FAQ](https://github.com/stakira/OpenUtau/wiki/FAQ#macos-error-this-app-is-damaged-) if macOS reports "app is damaged".
 ### Linux
 #### Arch or similar (Eg. Manjaro)
-- install from AUR (Eg. using [yay](https://github.com/Jguer/yay) `yay -S openutau-installer`)
+- install [openutau-installer](https://aur.archlinux.org/packages/openutau-installer) from AUR (Eg. using [yay](https://github.com/Jguer/yay) `yay -S openutau-installer`)
 #### Other
 - Extract the tar.gz file yourself, and run `OpenUtau` from a terminal.
 - Or check the community-created [installer scripts](https://hitcoder.tubs.wtf/Posts/openutau/).
