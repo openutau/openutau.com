@@ -10,8 +10,11 @@
 - Double click the dmg file downloaded. Drag the app icon to the folder icon.
 - See [FAQ](https://github.com/stakira/OpenUtau/wiki/FAQ#macos-error-this-app-is-damaged-) if macOS reports "app is damaged".
 ### Linux
+#### Arch or similar (Eg. Manjaro)
+- install using [yay](https://github.com/Jguer/yay) `yay -S openutau-installer`
+#### Other
 - Extract the tar.gz file yourself, and run `OpenUtau` from a terminal.
-- Or check this community-created [installer scripts](https://hitcoder.tubs.wtf/Posts/openutau/).
+- Or check the community-created [installer scripts](https://hitcoder.tubs.wtf/Posts/openutau/).
 
 ## Select UI language
 By default, OpenUtau will use the same language as your computer, or English if a translation is unavailable. To manually change the language, go to Tools > Preferences.
