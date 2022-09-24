@@ -166,10 +166,6 @@ To zoom vertically, hover your cursor over the vertical zoom icon and scroll.
 
 ![verti zoom](https://i.imgur.com/a8IE9W2.gif)
 
-Click and drag on the panning icon to scroll horizontally and vertically.
-
-![2d scroll](https://i.imgur.com/5LyyMZT.gif)
-
 ## Notes
 Toggle tips using the question mark button or pressing `T` on the keyboard.
 
