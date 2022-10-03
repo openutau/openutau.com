@@ -91,7 +91,7 @@ This is a list of all UTAU wavtools tested with OpenUtau.
 | Wavtool | Author | Additonal Notes |
 | --------- | -------- | ------------------ |
 | simple | StAkira | OpenUtau built-in on all platforms. |
-| convergence | StAkira | OpenUtau built-in on all platforms. Phase correction implemented.|
+| convergence | StAkira | OpenUtau built-in on all platforms. Phase compensation implemented.|
 | [moresampler.exe](https://bowlroll.net/file/139123) | Kanru Hua | [See adjustments for compatibility.](https://github.com/stakira/OpenUtau/wiki/Resamplers#compatible-with-adjustments) |
 | [wavtool64](http://utau2008.xrea.jp/2020/engine/wavtool64.zip) | Ameya | |
 | [wavtool4vcv](https://www.mediafire.com/file/1iwrak88c6xzb87/wavtool4vcv20141202.zip/file) | nmasao | |
