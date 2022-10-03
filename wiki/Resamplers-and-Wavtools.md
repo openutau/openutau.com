@@ -47,21 +47,21 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 |  fresamp12.exe | Ameya |   |
 |  [fresamp14.exe](http://utau2008.xrea.jp/downloads/fresamp014.zip) | Ameya   |   |
 | [fresamp14omp.exe](http://utau2008.xrea.jp/downloads/fresamp014omp.zip)  | Ameya | Ported to OpenMP with faster rendering speed than fresamp14.exe. |
-| [lessampler.exe](https://github.com/YuzukiTsuru/lessampler/releases/) | YuzukiTsuru | [See additonal notes.](https://github.com/stakira/OpenUtau/wiki/Resamplers#compatible-with-adjustments) |
+| [lessampler.exe](https://github.com/YuzukiTsuru/lessampler/releases/) | YuzukiTsuru | [See additonal notes.](https://github.com/stakira/OpenUtau/wiki/Resamplers-and-Wavtools#compatible-with-adjustments) |
 | [macres.exe](https://github.com/titinko/macres/releases)   | titinko   |   |
 | model4.exe  | Ameya  |   |
-| [moresampler.exe](https://bowlroll.net/file/139123) |  Kanru Hua |  [See adjustments for compatibility.](https://github.com/stakira/OpenUtau/wiki/Resamplers#compatible-with-adjustments) |
+| [moresampler.exe](https://bowlroll.net/file/139123) |  Kanru Hua |  [See adjustments for compatibility.](https://github.com/stakira/OpenUtau/wiki/Resamplers-and-Wavtools#compatible-with-adjustments) |
 | [phavoco.exe](http://utau2008.xrea.jp/downloads/phavoco010.zip) | Ameya   |   |
 | [phaavoco.exe](http://utau2008.xrea.jp/2020/engine/phaavoco001.zip) | Ameya |   |
 | resampler.exe  | Ameya  | UTAU built-in resampler.  |
-| [SpaceWorld_win64.exe](https://github.com/LovelyA72/SpaceWorld/releases) | LovelyA72 | [See adjustments for compatibility.](https://github.com/stakira/OpenUtau/wiki/Resamplers#compatible-with-adjustments) |
+| [SpaceWorld_win64.exe](https://github.com/LovelyA72/SpaceWorld/releases) | LovelyA72 | [See adjustments for compatibility.](https://github.com/stakira/OpenUtau/wiki/Resamplers-and-Wavtools#compatible-with-adjustments) |
 | [TIPS.exe](http://scientistb.web.fc2.com/program/)  | ScientistB |   |
 | [tn_fnds.exe](http://z-server.game.coocan.jp/utau/utautop.html#tn_fnds) | Zteer |  |
 | [UDB](https://github.com/YuzukiTsuru/UDB/releases/tag/0.0.3.1) | YuzukiTsuru | UDB means UTAU Debug Engine.|
 | [vs4u.exe](http://ackiesound.ifdef.jp/download.html#vs4u) | Akky |  |
 | [w4u.exe](http://utau2008.xrea.jp/downloads/w4u001.zip) | Zany |   |
 | [WARP.exe](http://custom-made.seesaa.net/article/312530509.html) | Custom.Maid | |
-| [wn4u.exe](https://utaforum.net/threads/world4utau-update.20035/) | Zany | [See adjustments for compatibility.](https://github.com/stakira/OpenUtau/wiki/Resamplers#compatible-with-adjustments) |
+| [wn4u.exe](https://utaforum.net/threads/world4utau-update.20035/) | Zany | [See adjustments for compatibility.](https://github.com/stakira/OpenUtau/wiki/Resamplers-and-Wavtools#compatible-with-adjustments) |
 | [young3.exe](https://bowlroll.net/file/203018) | Zany |   |
 
 ## Compatible with adjustments
