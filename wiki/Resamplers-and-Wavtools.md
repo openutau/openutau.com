@@ -81,7 +81,7 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 1. On your unzipped OpenUtau folder, locate the wavtool folder named `Wavtools`.
 2. Open the wavtool folder and place the downloaded wavtool on the folder.
 
-##macOS
+## macOS
 
 ## Linux
 
