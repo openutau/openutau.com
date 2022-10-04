@@ -1,7 +1,7 @@
 # Installing Resamplers
 ##  Windows
 
-File must be in `.exe` and be can placed in subfolders.
+File must be in `.exe` and can be placed in subfolders.
 1. On your unzipped OpenUtau folder, locate the resampler folder named `Resamplers`.
 2. Open the resampler folder and place the resampler on the folder.
 
