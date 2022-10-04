@@ -1,7 +1,7 @@
 # Installing Resamplers
 ##  Windows
 
-File must be in `.exe` and can placed in subfolders.
+File must be in `.exe` and be can placed in subfolders.
 1. On your unzipped OpenUtau folder, locate the resampler folder named `Resamplers`.
 2. Open the resampler folder and place the resampler on the folder.
 
@@ -92,6 +92,6 @@ This is a list of all UTAU wavtools tested with OpenUtau.
 | --------- | -------- | ------------------ |
 | simple | StAkira | OpenUtau built-in on all platforms. |
 | convergence | StAkira | OpenUtau built-in on all platforms. Phase compensation implemented.|
-| [moresampler.exe](https://bowlroll.net/file/139123) | Kanru Hua | [See adjustments for compatibility.](https://github.com/stakira/OpenUtau/wiki/Resamplers#compatible-with-adjustments) |
+| [moresampler.exe](https://bowlroll.net/file/139123) | Kanru Hua | [See adjustments for compatibility.](https://github.com/stakira/OpenUtau/wiki/Resamplers-and-Wavtools#compatible-with-adjustments) |
 | [wavtool64](http://utau2008.xrea.jp/2020/engine/wavtool64.zip) | Ameya | |
 | [wavtool4vcv](https://www.mediafire.com/file/1iwrak88c6xzb87/wavtool4vcv20141202.zip/file) | nmasao | |
