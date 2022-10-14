@@ -205,7 +205,7 @@ It works with a [dictionary](https://github.com/mmemim/OpenUTAU-French-Dictionar
 
 There is also a [sample package](https://drive.google.com/file/d/1FpZTf2FOjWz-BjpWcGZEha-ZBhanEyDj/view?usp=sharing) available with a ustx that showcases the basic rules of the dictionary as well as ustx with French lyrics.
 
-### Lyric input
+### Lyric input & lyrics helper input
 You can input lyrics, phonetic hints `[]` or force input with `?` (note that force input will break the phonemizer transitions). Phonetic hints will need to be input in Mot or Fraloid aliasing depending on the aliasing the voicebank is using.
 Use `+` to break words into syllables and `+~` or `+*` to extend a syllable.
 
@@ -224,8 +224,11 @@ However, there may be exceptions to this rule.
 
 ![fr cvvc alternative forms](https://i.imgur.com/9dqeGbs.jpg)
 
+_If this doesn't work as intended, please ensure that your dictionary is **version 1.2 or higher**. Version number should be written at the start of the .txt._
 
-If this doesn't work as intended, please ensure that your dictionary is **version 1.2 or higher**. Version number should be written at the start of the .txt.
+If you encounter a **"word not found"** error, you can use the French G2p Lyrics Helper. To use it, go to **Tools > Preferences > Advanced **and choose **FrenchG2pLyricsHelper**. You can now use it to input unknown words in the dictionary.
+
+![french lyrics helper](https://i.imgur.com/alQCc4N.png)
 
 ### Additional support
 The phonemizer can also read hiragana (with approximate French sounds).
