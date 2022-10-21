@@ -332,7 +332,9 @@ Use the pink line to stretch or shorten a sound so that the pronunciation is goo
 
 ![vccv_phonemetweak](https://user-images.githubusercontent.com/35538523/168469015-823cf9fc-bd5a-4c0a-ac43-d9736caa4d40.png)
 
-Since the phonemizer uses an arpabet dictionary there may be conflicts with some sounds. If there are missing sounds, you can double click on the box below to change the sound used. 
+### Custom dictionary
+Since the phonemizer uses an arpabet dictionary there may be conflicts with some sounds. If there are missing sounds, you can double click on the box below to change the sound used. However, you can now download a converted version of snowphones' Lyric Parser dictionary [here](https://github.com/mmemim/OU-EN-VCCV-Custom-Dictionary) and put it in `OpenUtau/Plugins`.
+
 If there are any other issue, don't hesitate to share them on the Discord.
 
 ## ES to JA (Spanish to Japanese Phonemizer)
