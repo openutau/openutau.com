@@ -15,7 +15,7 @@ As of macOS 11.6, the below method works.
 brew tap gcenx/wine
 brew install --cask --no-quarantine wine-crossover
 ```
-3. Download "mac_additional.zip" from [OpenUtau release page](https://github.com/stakira/OpenUtau/releases). Use the .sh script to wrap your exe. You will need to edit the .sh script to work with each resampler.
+3. Download "mac_additional.zip" from [release page](https://github.com/stakira/OpenUtau/releases/tag/OpenUtau-Latest). Use the .sh script to wrap your exe. You will need to edit the .sh script to work with each resampler.
 
 ## Linux
 
