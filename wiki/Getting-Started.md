@@ -57,7 +57,10 @@ Click on the tempo or time signature in the top left corner to edit it.
 
 Time signatures can have any positive whole number on top, and any power of 2 on the bottom.  
 Tempos can be any number, including decimals.  
-Changing the tempo or time signature mid-project is not supported yet.
+
+You can also change the tempo and time signature by right-clicking the bar/measure labels.
+
+![tempo and timesig change](https://i.imgur.com/jxjnW1O.gif)
 
 #### Expressions
 Expressions allow you to change parameters note-by-note, similar to flags in UTAU. Expressions are saved per-project. To edit expression settings, go to Tools > Expressions.
