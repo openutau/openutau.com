@@ -13,7 +13,7 @@ Note that some plugins themselves may have problem running on non-Japanese syste
 * [RandomVibrato](https://ameblo.jp/maiko3utau/entry-12095627508.html)
 * [UTAU Plugin Launcher](https://ameblo.jp/maiko3utau/entry-12648640444.html)
 * [VibratoStocker](https://ameblo.jp/maiko3utau/entry-12544042092.html)
-* [Extended Pitch Editor/拡張ピッチエディタ](http://z-server.game.coocan.jp/utau/utautop.html#pitedit) (Works but is a bit glitchy,except for mode 1 editing) 
+* [Extended Pitch Editor/拡張ピッチエディタ](http://z-server.game.coocan.jp/utau/utautop.html#pitedit) (Works with a few bugs, except for mode 1 editing) 
 # Compatible with adjustments
 * [Freq Tracer](http://z-server.game.coocan.jp/utau/utautop.html) (A note placed on the piano roll is needed to get FreqTracer to run. You also need to adjust pitches some after the plugin has run, and only works in "Mode 2" mode.)
 # Incompatible
