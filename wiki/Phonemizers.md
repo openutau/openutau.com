@@ -426,10 +426,11 @@ This phonemizer is pretty similar to the Teto English phonemizer, as both are ba
 - The way this phonemizer handles consonants is slightly different. I've attempted to streamline it a bit more in both general Delta phonemizers.
 - This phonemizer accepts VCV for all consonants (including clusters), if the voicebank contains it.
 - This phonemizer contains some extra sounds that were inspired by Cz's English VCCV method, except they're written in X-SAMPA instead. These sounds are not in any of the Delta lists but were added more for personal use (more on that below).
+- This phonemizer now has custom dictionary support.
 
-Differences with the 2nd version of this phonemizer (more info on that below):
+#### Differences with the 2nd version of this phonemizer (more info on that below)
 - The main difference is that diphthongs are handled differently. This version of the phonemizer counts them as one phoneme (e.g. "light" is written as ``[l aI t]``.
-- This phonemizer also contains more "non-Delta" sounds than Version 2.
+- This phonemizer also contains more "non-Delta" sounds than Version 2, though even more can be added if needed in a custom dictionary file (more information below).
 
 Which version you should use depends on the voicebank. It's a good idea to check the .wav files and oto.ini to be sure.
 
@@ -456,17 +457,29 @@ Consonants: b, d, f, g, h, j, k, l, m, n, p, r, s, t, v, w, z, **4**, D, N, S, T
 
 Vowels: A, E, I, O, U, i, u, {, V, 3, @, aI, eI, OI, aU, oU, _a_, _e_, _o_, **Q**, **Ol**, **aUn**, _**Ar**_, _**Er**_, _**Ir**_, _**Or**_, _**Ur**_, _**@l**_, _**@m**_, _**@n**_, _**@N**_, **eN**, _**IN**_, _**1**_, **e@**, _**e@m**_, _**e@n**_
 
-The bolded letters and symbols do not occur by default in any of the standard Delta lists. They were mostly based on North-American dialects of English and aren't used by default by the phonemizer, only working through manual phonetic input. They were based on X-SAMPA, you can find more information on it [here](https://en.wikipedia.org/wiki/X-SAMPA). The exception is ``・`` which is a glottal stop (in classic UTAU, ``?`` is used to ignore prefix.maps).
+The bolded letters and symbols do not occur by default in any of the standard Delta lists. They were mostly based on North-American dialects of English and aren't used by default by the phonemizer, only working through manual phonetic input (unless a custom dictionary file is created). They were based on X-SAMPA, you can find more information on it [here](https://en.wikipedia.org/wiki/X-SAMPA). The exception is ``・`` which is a glottal stop (in classic UTAU, ``?`` is used to ignore ``prefix.map``s).
 
 The cursive symbols were taken from other version of the Delta lists. Just like the bolded sounds, they are not used by default and only work through phonetic input. 
 
-The symbols that are both bolded and cursive are exclusive to [Peiton](https://www.supergoodboi.com/peiton.html/)'s English voicebank, as well any other voicebanks that might use that list. They only work through phonetic input.
+The symbols that are both bolded and cursive are exclusive to [Peiton](https://www.supergoodboi.com/peiton.html/)'s English voicebank, as well any other voicebanks that might use that list. By default, they only work through phonetic input, unless a custom dictionary is created.
+
+#### Custom dictionary
+This phonemizer now has support for custom dictionaries. The dictionary should be named `xsampa.yaml` and be put in the main/top folder of a specific voicebank. For an idea on what a custom dictionary should look like, you can look at the `arpasing.yaml` file that comes with OpenUtau by default.
+
+**!!IMPORTANT NOTE!!:** Certain X-SAMPA symbols should be contained within single quotes ('') when included in the custom dictionary file, otherwise your dictionary will not load. Some of the affected phonemes are:
+
+* `{` and any phoneme that contains it;
+* `}` and any phoneme that contains it;
+* `@` and any phoneme starting with it (but not when at the end/center), ex. `@l` (but not `e@`);
+* Some other, non-English/non-default X-SAMPA symbols might also be affected. It is highly recommended to test which specific ones beforehand.
+
+Note that the Arpabet symbols included by default in the CMU Pronouncing Dictionary can also be used to note down custom words, though for any symbols that aren't included, X-SAMPA notation is required.
 
 ## EN Delta (Ver2) (Delta English Phonemizer (Version 2))
 ### Setup
 This phonemizer works similarly to Version 1, but with a few differences:
 - The main difference is that diphthongs are handled differently. This version of the phonemizer still treats them as the same phoneme, but splits them on the notes (e.g. "light" is written as ``[l a I t]``, though writing ``[l aI t]`` should still work).
-- This phonemizer also contains less "non-Delta" sounds than Version 1.
+- This phonemizer also contains less "non-Delta" sounds than Version 1, though more can be added if needed in a custom dictionary file (more information below).
 
 For the rest, they work pretty similar. Which version you should use depends on the voicebank. It's a good idea to check the .wav files and oto.ini to be sure.
 
@@ -499,11 +512,24 @@ Consonants: b, d, f, g, h, j, k, l, m, n, p, r, s, t, v, w, z, **4**, D, N, S, T
 
 Vowels: A, E, I, O, U, a, e, i, o, u, {, V, 3, @, aI, eI, OI, aU, oU, _**1**_, **Q**
 
-The bolded letters and symbols do not occur by default in any of the standard Delta lists. They were mostly based on North-American dialects of English and aren't used by default by the phonemizer, only working through manual phonetic input. They were based on X-SAMPA, you can find more information on it [here](https://en.wikipedia.org/wiki/X-SAMPA). The exception is ``・`` which is a glottal stop (in classic UTAU, ``?`` is used to ignore prefix.maps).
+The bolded letters and symbols do not occur by default in any of the standard Delta lists. They were mostly based on North-American dialects of English and aren't used by default by the phonemizer, only working through manual phonetic input (unless a custom dictionary is created). They were based on X-SAMPA, you can find more information on it [here](https://en.wikipedia.org/wiki/X-SAMPA). The exception is ``・`` which is a glottal stop (in classic UTAU, ``?`` is used to ignore ``prefix.map``s).
 
 The symbols that are both bolded and cursive were taken from [Peiton](https://www.supergoodboi.com/peiton.html/)'s English voicebank and only work through phonetic input. Note though that this phonemizer does not contain proper support for Peiton, instead Version 1 is recommended.
 
 The extra sounds that are present in Version 1 of the phonemizer, but are absent in Version 2, have been omitted because they were either diphthongs or followed by a specific consonant. Most importantly, no known Delta-based voicebank uses any of the omitted sound combinations, as they'd be tricky to record and implement with the split diphthong method.
+
+#### Custom dictionary
+
+This phonemizer now has support for custom dictionaries. The dictionary should be named `xsampa.yaml` and be put in the main/top folder of a specific voicebank. For an idea on what a custom dictionary should look like, you can look at the `arpasing.yaml` file that comes with OpenUtau by default.
+
+**!!IMPORTANT NOTE!!:** Certain X-SAMPA symbols should be contained within single quotes ('') when included in the custom dictionary file, otherwise your dictionary will not load. Some of the affected phonemes are:
+
+* `{` and any phoneme that contains it;
+* `}` and any phoneme that contains it;
+* `@` and any phoneme starting with it (but not when at the end/center), ex. `@l` (but not `e@`) (Please note that custom diphthongs and colored vowels are not recommended for use in this version of the phonemizer, instead Version 1 is recommended for this usecase);
+* Some other, non-English/non-default X-SAMPA symbols might also be affected. It is highly recommended to test which specific ones beforehand.
+
+Note that the Arpabet symbols included by default in the CMU Pronouncing Dictionary can also be used to note down custom words, though for any symbols that aren't included, X-SAMPA notation is required.
 
 ## Italian Syllable-Based Phonemizer (IT SYL)
 ### Setup
@@ -530,7 +556,7 @@ Whereas if you don't do that, the latter half of the diphthongs will accidentall
 
 Note that when followed by a vowel within the same word, the phonemes ``y`` (for short ``i``) and ``w`` (for short ``u``) are used instead, so this does not apply in those cases.
 
-Also note that as of writing, the phonemizer sadly does not yet support ``[V]i R`` and ``[V]u R`` semivowel endings notes (where ``[V]`` represents a vowel). This is on the roadmap, but is predicted to be difficult to implement.
+Also note that as of writing, the phonemizer sadly does not yet support ``[V]i R`` and ``[V]u R`` etc. semivowel endings notes (where ``[V]`` represents a "full" vowel). This is on the roadmap, but is predicted to be difficult to implement.
 
 ### Phonetic input
 You can also use phonetic hints after lyrics, you put those in between brackets (``[]``) with spaces in-between. This is handy when certain phonemes aren't quite right, or for pure stylistic reasons. You write the hint on the first note of the word:
