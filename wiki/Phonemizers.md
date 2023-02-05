@@ -129,6 +129,20 @@ Phonetic hints and Hangul can be used together, which may be useful for voiceban
 
 Although the phonemizer supports all Hangul jamo, it is strongly recommended to rewrite the lyrics in phonetic Hangul (such as the pronunciation guides on the Naver Korean Dictionary or Wiktionary) for best results, especially with words that go through consonant sound changes (ex. 입력 → 임녁, 꽃잎 → 꼰닙, 있어 → 이써, etc.).
 
+## KO CBNN (Korean Combination/CBNN)
+This phonemizer is for [Korean Combination reclist(조합식 한국어 리스트)](https://github.com/EX3exp/UTAU-Korean-CBNN). (Reclist & Phonemizer made by same person)<br>
+And this phonemizer bases on `KO CVC Phonemizer(by NANA)`.<br>
+<br>
+<img src="https://user-images.githubusercontent.com/100339835/216803418-7098136f-08cb-4b9e-b437-831625956fd8.png" height="350"/><br>
+<img src="https://user-images.githubusercontent.com/100339835/216803425-1634e6b9-92c3-40cc-978c-333db853881e.png" height="350"/>
+<img src="https://user-images.githubusercontent.com/100339835/216803424-9eccb60c-9ebf-4824-ba2b-ac7540a3991d.png" height="350"/><br>
+<br>
+- Supports Hangeul input.<br>
+- Uses `-` as end breath symbols. <br>
+- This phonemizer might apply some Phonological rules correctly, but sometimes it might misapply rules. <br>
+So it's recommended to insert lyric *as which it sounds.* (For example: insert `종로에서 국화꽃을 샀다` as `종노에서 구콰꼬츨 사따`)<br>
+- Others are just like `Default Phonemizer`.<br>
+
 ## PT-BR CVC (Brazilian Portuguese CVC)
 Made with [BRAPA](https://github.com/Team-BRAPA/BRAPA) conotation, this phonemizer uses a built-in G2P Dictionary. The main accent is the `Neutral`
 
