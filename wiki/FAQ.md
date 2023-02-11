@@ -51,3 +51,6 @@ If your OS's system locale is **not** set to Japanese, please use the installer 
 
 ## Does OpenUtau require a separate wavtool or resampler?
 OpenUtau comes with its own resampler and wavtools, but if you want to use ones meant for original UTAU they will work.
+
+## How do I select an external resampler? (Moresampler, etc. is not in the renderer list)
+Select the CLASSIC renderer, then click on the gear icon to select resamplers and wavtools.
