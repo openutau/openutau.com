@@ -475,7 +475,7 @@ If you want to extend only a specific syllable in a word, you can do that by typ
 ![Syllable extender note example](https://i.ibb.co/bsy0dc1/Vowel-Extension.png)
 
 #### Phoneme list
-Consonants: b, ch, d, f, g, h, **hh**, j, k, l, m, n, ny, p, r, rr, s, t, w, y, z
+Consonants: b, B, ch, d, D, f, g, G, h, **hh**, j, k, l, m, n, ny, p, r, rr, s, t, w, y, z
 
 Vowels: a, e, i, o, u
 
