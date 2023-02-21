@@ -307,11 +307,12 @@ Similarly, many (if not most) Spanish voicebanks use ``ny`` for ``ñ``, so this 
 ![Default usage: "nh"](https://i.ibb.co/sjRpcZ4/Default-nh-usage.png)
 ![Alternate usage: "nh"](https://i.ibb.co/4JZZ9ZR/Dictionary-input.png)
 
-If you need to insert a consonant in an ending cluster that doesn't exist in the voicebank (usually an ``s``), it will automatically add a vowel after it (it will still sound decent in the program, trust me). If such a loose consonant exists in the voicebank, it will insert it by itself instead, and if it has a CC transition, it will use that:
+If you need to insert a consonant in a cluster that doesn't exist in the voicebank as a CC transition (usually an ``s``), it will insert it by itself as a standalone consonant:
 
-![Loose consonant insertion (no CC)](https://i.ibb.co/hKZBQNd/Consonant-insertion-1.png)
 ![Loose consonant insertion (with CC)](https://i.ibb.co/9WpWpqW/Consonant-insertion-2.png)
-![Loose consonant with vowel fallback](https://i.ibb.co/q9cgMcF/Vowel-insertion-fallback.png)
+![Loose consonant insertion (no CC)](https://i.ibb.co/hKZBQNd/Consonant-insertion-1.png)
+
+**IMPORTANT:** Please note that the vowel fallback function has been removed, as it was causing issues. As a result, _please_ make sure to amend the oto to include a loose consonant if a CC transition does not exist. Apologies for the inconvenience!
 
 ### Important notes on VCV
 Currently, the phonemizer does not support automatic "syllable splitting" with semivowels. This is common with Spanish VCV banks, but also occurs sometimes with other methods. This function is planned however, so please stay tuned!
@@ -330,6 +331,95 @@ Afterward, it should look something like this:
 ![Longer VC after stretching](https://i.ibb.co/ZxsbkWg/VC-stretch-after.png)
 
 The exact length is difficult to predict, so you're suggested to do it by ear until the point you think it sounds good.
+
+## ES VCCV (Spanish VCCV Phonemizer)
+### Setup
+This phonemizer was based on the nJokis VCCV method.
+
+It's recommended that you use this phonemizer with a dictionary, which doesn't come with OpenUtau by default. Instead, you can download it [here](https://github.com/lottev1991/OpenUTAU-Spanish-Dictionary). This dictionary should go into OpenUtau's ``Dictionaries`` folder; if it doesn't exist, make it. (If a word is missing in the dictionary, or a transcription is incorrect, feel free to push merge requests on the dictionary repo. I am more than willing to expand the word list and correct errors.)
+
+### Lyric input
+With the help of the dictionary linked above, you can write Spanish words directly on the first note:
+
+![Dictionary input with extender notes](https://i.ibb.co/MsXBZSh/Example1.png)
+
+As seen in the above image, you can extend the word over multiple notes by typing a ``+`` on the next notes (otherwise, all syllables will be on the same note).
+
+If you want to extend only a specific syllable in a word, you can do that by typing either ``+*`` or ``+~`` on the next note(s):
+
+![Syllable extender note example](https://i.ibb.co/s3zBHJK/Example2.png)
+
+### Phonetic input
+You can also input lyrics phonetically, this can be done on separate notes as well. Note to write the phonemes in brackets (``[]``), separated with spaces, otherwise they won't be recognized:
+
+![Phonetic input in brackets, on separate notes, with spaces in-between](https://i.ibb.co/712NKKG/Example3.png)
+
+There's also the option to input phonetic suggestions after the lyrical input, in brackets after the lyric (this has to be done on the first syllable):
+
+![Lyric input with phonetic suggestion in brackets](https://i.ibb.co/Tk34tx6/Example4.png)
+
+#### Phoneme list
+Consonants: b, B, ch, d, D, E, f, g, G, h, I, jj, k, l, L, m, n, nJ, p, r, rr, s, sh, t, U, w, x, y, z
+
+Vowels: a, e, i, o, u, **BB** ,**DD** ,**ff** ,**GG** ,**ll** ,**mm** ,**nn** ,**rrr** ,**ss** ,**xx**
+
+The bolded vowels aren't actual vowels (rather syllabic consonants), but are treated as such by the phonemizer. They only work through phonetic input.
+
+Note that you can add any type of extra consonants (but not vowels) to your bank that aren't listed, since the phonemizer will automatically recognize it. Though, like above, they will only work through phonetic input.
+
+### Alternate aliases
+This phonemizer uses phonetic substitutes for when a consonant sound isn't present, this is achived through ``ValidateAlias()``.
+
+For example, if your voicebank doesn't have ``z``, it will use ``s`` instead (known as "seseo" in Spanish). This is useful for voicebanks with Latin-American-based pronunciation:
+
+!["Seseo" for when no "z" is present](https://i.ibb.co/89V9nRS/Example5.png)
+
+Similarly, ``h`` is a substitute for ``x``, while ``sh`` and ``L`` are substitutes for "jj".
+
+Note that Latin-American-style aspirated endings (where ``h`` is used in place of ``s`` at the end of syllables) can only be achieved through phonetic input, since it's technically an informal style of pronunciation.
+
+## ES MAKKU (Spanish Makkusan-style Phonemizer)
+### Setup
+This phonemizer was created to be used with Italian voicebanks using Makkusan's reclist, as long as it contains extra sounds for Spanish. It works similarly to the Italian Syllable-Based phonemizer.
+
+It's recommended that you use this phonemizer with a dictionary, which doesn't come with OpenUtau by default. Instead, you can download it [here](https://github.com/lottev1991/OpenUTAU-Spanish-Dictionary). This dictionary should go into OpenUtau's ``Dictionaries`` folder; if it doesn't exist, make it. (If a word is missing in the dictionary, or a transcription is incorrect, feel free to push merge requests on the dictionary repo. I am more than willing to expand the word list and correct errors.)
+
+### Lyric input
+With the help of the dictionary linked above, you can write Spanish words directly on the first note:
+
+![Dictionary input with extender notes](https://i.ibb.co/P5pgbnh/Example1.png)
+
+As seen in the above image, you can extend the word over multiple notes by typing a ``+`` on the next notes (otherwise, all syllables will be on the same note).
+
+If you want to extend only a specific syllable in a word, you can do that by typing either ``+*`` or ``+~`` on the next note(s):
+
+![Syllable extender note example](https://i.ibb.co/KmGBK4S/Example2.png)
+
+### Phonetic input
+You can also input lyrics phonetically, this can be done on separate notes as well. Note to write the phonemes in brackets (``[]``), separated with spaces, otherwise they won't be recognized:
+
+![Phonetic input in brackets, on separate notes, with spaces in-between](https://i.ibb.co/b3mZPf8/Example3.png)
+
+There's also the option to input phonetic suggestions after the lyrical input, in brackets after the lyric (this has to be done on the first syllable):
+
+![Lyric input with phonetic suggestion in brackets](https://i.ibb.co/5nqNGBk/Example4.png)
+
+#### Phoneme list
+Consonants: b, d, **dz**, **dZ**, f, g, gn, **j**, k, l, m, **M**, n, **N**, p, r, rr, s, **S**, t, **ts**, tS, **v**, w, y, **z**, B, D, G, h, T, x, Y, ' (apostrophe for vocal fry)
+
+Vowels: a, e, i, o, u, **3**, **0**
+
+The bolded sounds are sounds that occur in Italian and only work through phonetic input in this phonemizer. Some of these can possibly occur in specific Spanish dialects.
+
+### Alternate aliases
+
+This phonemizer uses phonetic substitutes for when a consonant sound isn't present, this is achived through ``ValidateAlias()``.
+
+For example, if your voicebank doesn't have ``T``, it will use ``s`` instead (known as "seseo" in Spanish). This is useful for voicebanks oriented towards a more Latin-American-based pronunciation.
+
+Similarly, ``h`` is a substitute for ``x``, while ``y`` is a substitute for ``Y``.
+
+Another example occurs between voiced stops and their intervocalic fricative counterparts: ``b`` for ``B``, ``d`` for ``D``, and ``g`` for ``G``.
 
 ## EN VCCV (Cz's English VCCV phonemizer) 
 
