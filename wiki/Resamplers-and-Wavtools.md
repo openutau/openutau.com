@@ -76,6 +76,165 @@ This is a list of all UTAU resamplers tested with OpenUtau.
     - In development, lack of flag support
     - Oversized Audio Model Attention
 
+# Resampler Manifest
+Resampler manifest is the yaml file used to store the expressions supporrted by a resampler. With resampler manifests, users can add all the flags in `Expressions -> Add all expressions suggested by renderers`.
+
+<img width="453" alt="image" src="https://user-images.githubusercontent.com/54425948/227085816-4cced732-98dd-4c76-bc40-9a94f971a066.png">
+
+Resampler manifests should have the same name and path with the resampler executable but with `.yaml` file extension. For example, the resampler manifest for `moresampler.exe` should be `moresampler.yaml` located in the same folder with moresampler.exe.
+
+Here is a full example of moresampler.yaml. To make a resampler manifest, you can also set up the flags in an .ustx file, open it with a text editor and copy the "expressions" part.
+```yaml
+expressions:
+  gen:
+    name: Gender Factor
+    abbr: gen
+    type: Numerical
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: g
+  bre:
+    name: Breathiness
+    abbr: bre
+    type: Numerical
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: Mb
+  tens:
+    name: Tension
+    abbr: tens
+    type: Numerical
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: Mt
+  pit:
+    name: Pitch deviation (flag)
+    abbr: pit
+    type: Numerical
+    min: -1200
+    max: 1200
+    default_value: 0
+    is_flag: true
+    flag: t
+  pkcp:
+    name: Peak Compressor
+    abbr: pkcp
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 86
+    is_flag: true
+    flag: P
+  amp:
+    name: Amplitude Modulation
+    abbr: amp
+    type: Numerical
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: A
+  cons:
+    name: Unvoiced Consonant Gain
+    abbr: cons
+    type: Numerical
+    min: -20
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: b
+  fstr:
+    name: Force Stretch
+    abbr: fstr
+    type: Options
+    min: 0
+    max: 1
+    default_value: 0
+    is_flag: true
+    options:
+    - ''
+    - e
+    - Me
+  opn:
+    name: Openness
+    abbr: opn
+    type: Numerical
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: Mo
+  res:
+    name: Resonance
+    abbr: res
+    type: Numerical
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: Mr
+  dry:
+    name: Dryness
+    abbr: dry
+    type: Numerical
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: Md
+  cors:
+    name: Coarseness
+    abbr: cors
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: MC
+  grwl:
+    name: Growl
+    abbr: grwl
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: MG
+  dist:
+    name: Distortion
+    abbr: dist
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: MD
+  stbl:
+    name: Stabilization
+    abbr: stbl
+    type: Numerical
+    min: 0
+    max: 10
+    default_value: 0
+    is_flag: true
+    flag: Ms
+  mint:
+    name: Model Interpolation
+    abbr: mint
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 100
+    is_flag: true
+    flag: Mm
+```
+
 # Installing Wavtools
 ## Windows
 1. On your unzipped OpenUtau folder, locate the wavtool folder named `Wavtools`.
