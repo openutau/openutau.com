@@ -11,6 +11,7 @@ Note that some plugins themselves may have problem running on non-Japanese syste
 * [Lyric Parser 2.1](https://snowphones.weebly.com/lyric-parser-20.html)
 * [omakase2020](https://ameblo.jp/maiko3utau/entry-12615869960.html)
 * [RandomVibrato](https://ameblo.jp/maiko3utau/entry-12095627508.html)
+* [UNotePad](https://github.com/oxygen-dioxide/UNotePad)
 * [UTAU Plugin Launcher](https://ameblo.jp/maiko3utau/entry-12648640444.html)
 * [VibratoStocker](https://ameblo.jp/maiko3utau/entry-12544042092.html)
 * [Extended Pitch Editor/拡張ピッチエディタ](http://z-server.game.coocan.jp/utau/utautop.html#pitedit) (Works with a few bugs, except for mode 1 editing) 
