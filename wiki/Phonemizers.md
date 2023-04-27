@@ -677,3 +677,10 @@ Vowels: a, e, i, o, u, 3, 0
 Consonants: b, d, dz, dZ, f, g, gn, j, k, l, m, M, n, N, p, r, rr, s, S, t, ts, tS, v, w, y, z, **B**, **D**, **G**, **h**, **T**, **x**, **Y**, '
 
 The bolded phonemes are extra sounds for Spanish. They're not in the dictionary and only work through phonetic input (the latter also counts for ``'``, which represents vocal fry).
+
+## Other phonemizers
+Here is a list of separately distributed phonemizers for OpenUtau. To install, place the `.dll` file in the Plugins folder of your OpenUtau installation.
+
+* [Cyrillic Japanese Phonemizer](https://github.com/adlez27/OpenUtau/releases/tag/Cyrilji-0.1.0) by adlez27
+* [SHO Phonemizer](https://github.com/adlez27/OpenUtau/releases/tag/SHO-0.1.1) by adlez27
+* [Teto English Phonemizer](https://github.com/adlez27/OpenUtau/releases/tag/Teto-0.1.0)  by adlez27
