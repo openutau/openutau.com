@@ -56,6 +56,13 @@ More information on Delta English can be found [here](https://tl.tubs.wtf/2020/1
 Lyrics should be written in pinyin. The phonemizer will insert endings for syllables that need them.  
 ![zh cvv](https://i.imgur.com/TJfiNit.png)
 
+## JA VCV & CVVC (Japanese VCV & CVVC)
+You can use all of CV, VCV and CVVC voicevank.  
+Use `presamp.ini` settings from the voicebank.  
+The phonemizer converts romaji to hiragana if there is no `presamp.ini` or there are descriptions in [REPLACE] of `presamp.ini` to convert romaji to hiragana.
+
+This phonemizer is still under development and this description is incomplete.
+
 ## JA CVVC (Japanese CVVC)
 Lyrics should be written in hiragana. If your lyrics are written in romaji, you can convert it to hiragana using the Romaji to Hiragana transformer.  
 ![roma to hira](https://i.imgur.com/XmfItiZ.png)
