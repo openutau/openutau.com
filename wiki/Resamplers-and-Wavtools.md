@@ -95,9 +95,9 @@ expressions:
     default_value: 0
     is_flag: true
     flag: g
-  bre:
-    name: Breathiness
-    abbr: bre
+  mbre:
+    name: Breathiness (Moresampler)
+    abbr: mbre
     type: Numerical
     min: -100
     max: 100
