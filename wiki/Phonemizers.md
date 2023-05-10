@@ -56,12 +56,21 @@ More information on Delta English can be found [here](https://tl.tubs.wtf/2020/1
 Lyrics should be written in pinyin. The phonemizer will insert endings for syllables that need them.  
 ![zh cvv](https://i.imgur.com/TJfiNit.png)
 
-## JA VCV & CVVC (Japanese VCV & CVVC)
-You can use all of CV, VCV and CVVC voicevank.  
-Use `presamp.ini` settings from the voicebank.  
-The phonemizer converts romaji to hiragana if there is no `presamp.ini` or there are descriptions in [REPLACE] of `presamp.ini` to convert romaji to hiragana.
+## JA Presamp (Japanese VCV & CVVC)
+You can use all of CV, VCV and CVVC voicebank.  
+The phonemizer first tries VCV, and if it isn't available in the voice bank, it will falls back to CVVC, then CV.  
+Preference is given to CVVC with matching color over VCV with default color.  
+![presamp](https://imgur.com/SKzYtIb.png)  
 
-This phonemizer is still under development and this description is incomplete.
+The phonemizer converts romaji to hiragana (see below for details).  
+![presamp romaji](https://imgur.com/bNSFg6g.png)  
+
+This phonemizer follows the behavior of presamp. If voicebank has `presamp.ini`, use it.  
+Supporting `presamp.ini` features:  
+[VOWEL][CONSONANT][PRIORITY][REPLACE][ALIAS(VCPAD,VCVPAD)]  
+
+The default [REPLACE] includes romaji to hiragana conversion, so the phonemizer converts romaji to hiragana if there is no `presamp.ini` or there are descriptions in [REPLACE] of `presamp.ini` to convert romaji to hiragana.  
+The default VC length is the preutterance of the following CV.  
 
 ## JA CVVC (Japanese CVVC)
 Lyrics should be written in hiragana. If your lyrics are written in romaji, you can convert it to hiragana using the Romaji to Hiragana transformer.  
