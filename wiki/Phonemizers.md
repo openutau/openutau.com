@@ -278,7 +278,7 @@ For more information on compatible UTAUs, tutorials and help with French UTAUs y
 ### Setup
 While this phonemizer uses Teren000's Spanish CVVC list as a base, it's intended to support many different methods, including VCV (with some caveats; more on that below).
 
-It's recommended that you use this phonemizer with a dictionary, which doesn't come with OpenUtau by default. Instead, you can download it [here](https://github.com/lottev1991/OpenUTAU-Spanish-Dictionary). This dictionary should go into OpenUtau's ``Dictionaries`` folder; if it doesn't exist, make it. (If a word is missing in the dictionary, or a transcription is incorrect, feel free to push merge requests on the dictionary repo. I am more than willing to expand the word list and correct errors.)
+Downloading a separate dictionary is no longer necessary. Instead, it now uses the in-built Spanish G2P. As a result, it can now read words that are not in the dictionary.
 
 ### Lyric input
 With the help of the dictionary linked above, you can write Spanish words directly on the first note:
@@ -352,7 +352,7 @@ The exact length is difficult to predict, so you're suggested to do it by ear un
 ### Setup
 This phonemizer was based on the nJokis VCCV method.
 
-It's recommended that you use this phonemizer with a dictionary, which doesn't come with OpenUtau by default. Instead, you can download it [here](https://github.com/lottev1991/OpenUTAU-Spanish-Dictionary). This dictionary should go into OpenUtau's ``Dictionaries`` folder; if it doesn't exist, make it. (If a word is missing in the dictionary, or a transcription is incorrect, feel free to push merge requests on the dictionary repo. I am more than willing to expand the word list and correct errors.)
+Downloading a separate dictionary is no longer necessary. Instead, it now uses the in-built Spanish G2P. As a result, it can now read words that are not in the dictionary.
 
 ### Lyric input
 With the help of the dictionary linked above, you can write Spanish words directly on the first note:
@@ -398,7 +398,7 @@ Note that Latin-American-style aspirated endings (where ``h`` is used in place o
 ### Setup
 This phonemizer was created to be used with Italian voicebanks using Makkusan's reclist, as long as it contains extra sounds for Spanish. It works similarly to the Italian Syllable-Based phonemizer.
 
-It's recommended that you use this phonemizer with a dictionary, which doesn't come with OpenUtau by default. Instead, you can download it [here](https://github.com/lottev1991/OpenUTAU-Spanish-Dictionary). This dictionary should go into OpenUtau's ``Dictionaries`` folder; if it doesn't exist, make it. (If a word is missing in the dictionary, or a transcription is incorrect, feel free to push merge requests on the dictionary repo. I am more than willing to expand the word list and correct errors.)
+Downloading a separate dictionary is no longer necessary. Instead, it now uses the in-built Spanish G2P. As a result, it can now read words that are not in the dictionary.
 
 ### Lyric input
 With the help of the dictionary linked above, you can write Spanish words directly on the first note:
@@ -539,7 +539,8 @@ breath : take a breath
 2. **Vietnamese VCV Phonemizer**
 ![](https://drive.google.com/u/0/uc?id=1JT4aPsaaeIPKnXP2P2dVKRdj3Xps38YN&export=download)
 
-## EN Delta (Ver1) (Delta English Phonemizer (Version 1))
+## EN Delta (Delta English Phonemizer)
+**NOTE:** The two Delta phonemizers have now been merged into one phonemizer. If you've used "Version 2" before, you can use this one now instead.
 ### Setup
 This phonemizer is pretty similar to the Teto English phonemizer, as both are based on the classic Delta English list. However, there are a few important differences:
 - As the name implies, the Teto English phonemizer was made specifically for Kasane Teto's English bank. While it does use the classic Delta method, it contains some Teto-specific functions that might not work well with other voicebanks.
@@ -547,12 +548,8 @@ This phonemizer is pretty similar to the Teto English phonemizer, as both are ba
 - This phonemizer accepts VCV for all consonants (including clusters), if the voicebank contains it.
 - This phonemizer contains some extra sounds that were inspired by Cz's English VCCV method, except they're written in X-SAMPA instead. These sounds are not in any of the Delta lists but were added more for personal use (more on that below).
 - This phonemizer now has custom dictionary support.
-
-#### Differences with the 2nd version of this phonemizer (more info on that below)
-- The main difference is that diphthongs are handled differently. This version of the phonemizer counts them as one phoneme (e.g. "light" is written as ``[l aI t]``.
-- This phonemizer also contains more "non-Delta" sounds than Version 2, though even more can be added if needed in a custom dictionary file (more information below).
-
-Which version you should use depends on the voicebank. It's a good idea to check the .wav files and oto.ini to be sure.
+- **NEW:** Depending on the voicebank type, it now automatically splits diphthongs and/or affricates.
+- **NEW:** This phonemizer now supports all possible X-SAMPA vowels (including some nasalized vowels).
 
 ### Lyric input
 You write the word on the first note, then spread the syllables by writing a ``+`` on the next notes:
@@ -564,7 +561,7 @@ If you only want to extend one syllable in the word, you can use either ``+*`` o
 ![Showcasing syllable extender notes](https://i.ibb.co/LPxnnGK/Example2.png)
 
 ### Phonetic input
-You can also use phonetic hints after lyrics, you put those in between brackets (``[]``) with spaces in-between. This is handy when certain phonemes aren't quite right, or for pure stylistic reasons. You write the hint on the first note of the word:
+You can also use phonetic hints after lyr**ics, you put those in between brackets (``[]``) with spaces in-between. This is handy when certain phonemes aren't quite right, or for pure stylisti**c reasons. You write the hint on the first note of the word:
 
 ![Showcasing phonetic hints](https://i.ibb.co/6P5wvFD/Example3.png)
 
@@ -572,16 +569,37 @@ You can also opt for pure phonetic input instead, it works the same as above exc
 
 ![Showcasing pure phonetic input](https://i.ibb.co/mGPL9g2/Example4.png)
 
+### Split diphthongs and affricates
+
+This phonemizer now supports automatic splitting of Diphthongs and affricates, depending on the voicebank.
+
+![Automatic affricate splitting](https://i.ibb.co/QJ5CnHF/Affricate-Splitting.png)
+
+In the case of split diphthongs, the second half of the diphthong should essentially be treated as if it's a separate syllable, since the phonemizer will treat it as a separate vowel. If you don't do that, this happens:
+
+![How not to treat split diphthongs in this phonemizer](https://i.ibb.co/3rtWv0T/Lightning-WRONG.png)
+
+As you can see, the second half lands on the wrong syllable. This can be prevented by using the correct method shown above.
+
+If you only want to extend one syllable in the word, you can use either ``+*`` or ``+~``:
+
+![Syllable extender notes](https://i.ibb.co/bd4w5NV/Lightning2.png)
+
+Since affricates are consonants, syllable extention should give no noticeable problems in the case of split affricates.
+
 #### Phoneme list
 Consonants: b, d, f, g, h, j, k, l, m, n, p, r, s, t, v, w, z, **4**, D, N, S, T, Z, dZ, tS, **・**, _**(underscore)**_
 
-Vowels: A, E, I, O, U, i, u, {, V, 3, @, aI, eI, OI, aU, oU, _a_, _e_, _o_, **Q**, **Ol**, **aUn**, _**Ar**_, _**Er**_, _**Ir**_, _**Or**_, _**Ur**_, _**@l**_, _**@m**_, _**@n**_, _**@N**_, **eN**, _**IN**_, _**1**_, **e@**, _**e@m**_, _**e@n**_
+Vowels: a, A, @, {, V, O, aU, aI, E, 3, eI, I, i, oU, OI, U, u, **Q**, **Ol**, **Ql**, **aUn**, **e@**, **eN**, **IN**, e, o, **Ar**, **Qr**, **Er**, **Ir**, **Or**, **Ur**, **ir**, **ur**, **aIr**, **aUr**, **A@**, **Q@**, **E@**, **I@**, **O@**, **U@**, **i@**, **u@**, **aI@**, **aU@**, **@r**, **@l**, **@m**, **@n**, **@N**, **1**, **e@m**, **e@n**, **y**, **I\**, **M**, **U\**, **Y**, **@\**, **@`**, **3`**, **A`**, **Q`**, **E`**, **I`**, **O`**, **U`**, **i`**, **u`**, **aI`**, **aU`**, **}**, **2**, **3\**, **6**, **7**, **8**, **9**, **&**, **{~**, **I~**, **aU~**, **VI**, **VU**, **@U**, **i:**, **u:**, **O:**, **e@0**
 
-The bolded letters and symbols do not occur by default in any of the standard Delta lists. They were mostly based on North-American dialects of English and aren't used by default by the phonemizer, only working through manual phonetic input (unless a custom dictionary file is created). They were based on X-SAMPA, you can find more information on it [here](https://en.wikipedia.org/wiki/X-SAMPA). The exception is ``・`` which is a glottal stop (in classic UTAU, ``?`` is used to ignore ``prefix.map``s).
+Among the bolded vowels are:
+- General X-SAMPA vowels. You can find more information about X-SAMPA [here](https://en.wikipedia.org/wiki/X-SAMPA);
+- Sounds used by the UTAU [Peiton](https://www.supergoodboi.com/peiton.html/)'s English voicebank, as well any other voicebanks that might use that list. By default, they only work through phonetic input, unless a custom dictionary is created;
+- English Vocaloid-style vowels (including Vocaloid 4+ vowels);
+- Canadian raising;
+- Alternate ways for rhoticization and nasalization.
 
-The cursive symbols were taken from other version of the Delta lists. Just like the bolded sounds, they are not used by default and only work through phonetic input. 
-
-The symbols that are both bolded and cursive are exclusive to [Peiton](https://www.supergoodboi.com/peiton.html/)'s English voicebank, as well any other voicebanks that might use that list. By default, they only work through phonetic input, unless a custom dictionary is created.
+These extra sounds mostly only work either through phonetic input, or a custom dictionary. However, some automatically work through ``ValidateAlias()``.
 
 #### Custom dictionary
 This phonemizer now has support for custom dictionaries. The dictionary should be named `xsampa.yaml` and be put in the main/top folder of a specific voicebank. For an idea on what a custom dictionary should look like, you can look at the `arpasing.yaml` file that comes with OpenUtau by default.
@@ -591,62 +609,8 @@ This phonemizer now has support for custom dictionaries. The dictionary should b
 * `{` and any phoneme that contains it;
 * `}` and any phoneme that contains it;
 * `@` and any phoneme starting with it (but not when at the end/center), ex. `@l` (but not `e@`);
-* Some other, non-English/non-default X-SAMPA symbols might also be affected. It is highly recommended to test which specific ones beforehand.
-
-Note that the Arpabet symbols included by default in the CMU Pronouncing Dictionary can also be used to note down custom words, though for any symbols that aren't included, X-SAMPA notation is required.
-
-## EN Delta (Ver2) (Delta English Phonemizer (Version 2))
-### Setup
-This phonemizer works similarly to Version 1, but with a few differences:
-- The main difference is that diphthongs are handled differently. This version of the phonemizer still treats them as the same phoneme, but splits them on the notes (e.g. "light" is written as ``[l a I t]``, though writing ``[l aI t]`` should still work).
-- This phonemizer also contains less "non-Delta" sounds than Version 1, though more can be added if needed in a custom dictionary file (more information below).
-
-For the rest, they work pretty similar. Which version you should use depends on the voicebank. It's a good idea to check the .wav files and oto.ini to be sure.
-
-### Lyric input
-You write the word on the first note, then spread the syllables by writing a ``+`` on the next notes:
-
-![Lyric usage example](https://i.ibb.co/kcK2861/Lightning.png)
-
-As you can see, since this phonemizer splits diphthongs, the second half of the diphthong should essentially be treated as if it's a separate syllable. If you don't do that, this happens:
-
-![How not to treat diphthongs in this phonemizer](https://i.ibb.co/3rtWv0T/Lightning-WRONG.png)
-
-As you can see, the second half lands on the wrong syllable. This can be prevented by using the correct method shown above.
-
-If you only want to extend one syllable in the word, you can use either ``+*`` or ``+~``:
-
-![Syllable extender notes](https://i.ibb.co/bd4w5NV/Lightning2.png)
-
-### Phonetic input
-You can also use phonetic hints after lyrics, you put those in between brackets (``[]``) with spaces in-between. This is handy when certain phonemes aren't quite right, or for pure stylistic reasons. You write the hint on the first note of the word:
-
-![Showcasing phonetic hints](https://i.ibb.co/6P5wvFD/Example3.png)
-
-You can also opt for pure phonetic input instead, it works the same as above except not right after a lyric:
-
-![Showcasing pure phonetic input](https://i.ibb.co/mGPL9g2/Example4.png)
-
-#### Phoneme list
-Consonants: b, d, f, g, h, j, k, l, m, n, p, r, s, t, v, w, z, **4**, D, N, S, T, Z, dZ, tS, **・**, _**(underscore)**_
-
-Vowels: A, E, I, O, U, a, e, i, o, u, {, V, 3, @, aI, eI, OI, aU, oU, _**1**_, **Q**
-
-The bolded letters and symbols do not occur by default in any of the standard Delta lists. They were mostly based on North-American dialects of English and aren't used by default by the phonemizer, only working through manual phonetic input (unless a custom dictionary is created). They were based on X-SAMPA, you can find more information on it [here](https://en.wikipedia.org/wiki/X-SAMPA). The exception is ``・`` which is a glottal stop (in classic UTAU, ``?`` is used to ignore ``prefix.map``s).
-
-The symbols that are both bolded and cursive were taken from [Peiton](https://www.supergoodboi.com/peiton.html/)'s English voicebank and only work through phonetic input. Note though that this phonemizer does not contain proper support for Peiton, instead Version 1 is recommended.
-
-The extra sounds that are present in Version 1 of the phonemizer, but are absent in Version 2, have been omitted because they were either diphthongs or followed by a specific consonant. Most importantly, no known Delta-based voicebank uses any of the omitted sound combinations, as they'd be tricky to record and implement with the split diphthong method.
-
-#### Custom dictionary
-
-This phonemizer now has support for custom dictionaries. The dictionary should be named `xsampa.yaml` and be put in the main/top folder of a specific voicebank. For an idea on what a custom dictionary should look like, you can look at the `arpasing.yaml` file that comes with OpenUtau by default.
-
-**!!IMPORTANT NOTE!!:** Certain X-SAMPA symbols should be contained within single quotes ('') when included in the custom dictionary file, otherwise your dictionary will not load. Some of the affected phonemes are:
-
-* `{` and any phoneme that contains it;
-* `}` and any phoneme that contains it;
-* `@` and any phoneme starting with it (but not when at the end/center), ex. `@l` (but not `e@`) (Please note that custom diphthongs and colored vowels are not recommended for use in this version of the phonemizer, instead Version 1 is recommended for this usecase);
+* `&` and any phoneme that contains it;
+* Any phoneme containing a colon (`:`);
 * Some other, non-English/non-default X-SAMPA symbols might also be affected. It is highly recommended to test which specific ones beforehand.
 
 Note that the Arpabet symbols included by default in the CMU Pronouncing Dictionary can also be used to note down custom words, though for any symbols that aren't included, X-SAMPA notation is required.
@@ -655,7 +619,7 @@ Note that the Arpabet symbols included by default in the CMU Pronouncing Diction
 ### Setup
 **!!IMPORTANT NOTE!!** This phonemizer is **NOT** to be confused with the older Italian CVVC Phonemizer. The biggest difference is that the Italian Syllable-Based Phonemizer uses a dictionary (see below), whereas the older Italian CVVC Phonemizer is a simple port of the Japanese CVVC Phonemizer. However, both are based upon [Makkusan's Italian reclist](https://drive.google.com/file/d/1KHLocNVjC87pW74xFE1NuzW2Mvp1IJrF/view).
 
-The dictionary for this phonemizer can be downloaded [here](https://github.com/lottev1991/OpenUtau-Italian-Dictionary). Please put the ``cmudict_it.txt`` file in the ``Dictionaries`` folder of your OpenUtau install; if it doesn't exist, make it.
+Downloading a separate dictionary is no longer necessary. Instead, it now uses the in-built Italian G2P. As a result, it can now read words that are not in the dictionary.
 
 Please note that at this time, this phonemizer only supports the above-mentioned Makkusan method. However, I might add support for other methods if there's demand for it.
 
