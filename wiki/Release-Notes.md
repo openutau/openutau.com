@@ -46,10 +46,6 @@
 
 ***
 
->_OpenUtau's version numbers increase per accepted PR request. As such, these changelogs are grouped with the date of acceptance treated as a "release"._
-
-***
-
 # 0.1.57~0.1.73 (04-23-2023)
 
 **Past release notes:** This is the first! If you need to know about previous releases, please see the github commit history. Efforts will be made to make sure that features up until this point are documented on the wiki. See [Getting Started](https://github.com/stakira/OpenUtau/wiki/Getting-Started).
