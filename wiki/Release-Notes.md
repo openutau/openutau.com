@@ -1,3 +1,11 @@
+# ~0.1.91 (05-15-2023)
+
+## Bug Fixes
+- [#689](https://github.com/stakira/OpenUtau/pull/689) - fix en-US language saving and loading ([@lennyservant](https://github.com/lennyservant))
+    - This should resolve the critical errors (preferences crash, singers not loading) from 0.1.90. Sorry for the inconvenience!
+
+***
+
 # ~0.1.90 (05-15-2023)
 **`Caution`** This build has known bugs.
 - Selecting `preferences` currently causes OpenUtau to crash. Fix incoming at [#689](https://github.com/stakira/OpenUtau/pull/689). 
