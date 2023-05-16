@@ -11,11 +11,14 @@
 ## Bug Fixes
 - [#689](https://github.com/stakira/OpenUtau/pull/689) - fix en-US language saving and loading ([@lennyservant](https://github.com/lennyservant))
     - This should resolve the critical errors (preferences crash, singers not loading) from 0.1.90. Sorry for the inconvenience!
+    - If still encountering issues, navigate to the `prefs.json` file in your OpenUtau folder structure, and remove the line `"language": "axaml",` and save.
 
 ***
-
 # ~0.1.90 (05-15-2023)
-**`Caution`** This build has known bugs.
+```Diff
+! Caution !
+This build has known bugs !
+```
 - Selecting `preferences` currently causes OpenUtau to crash. Fix incoming at [#689](https://github.com/stakira/OpenUtau/pull/689). 
 
 If this is an urgent issue for you, you can roll back your install via the [release page](https://github.com/stakira/OpenUtau/releases), or [try compiling from source](https://github.com/stakira/OpenUtau/wiki/Compiling-from-source). Otherwise, please hold tight and the fix will be merged soon.
