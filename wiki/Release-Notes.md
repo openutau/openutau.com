@@ -1,3 +1,11 @@
+# ~0.1.92 (05-16-2023)
+
+## Misc
+- [#af16021](https://github.com/stakira/OpenUtau/commit/af16021) - Refactor locale initialization ([@stakira](https://github.com/stakira))
+    - Preventative measures for situations similar to the 0.1.90 bug, general refactoring.
+    - This commit also changes the `mid` on the `stereo panning slider` to **`C`** (for Center).
+***
+
 # ~0.1.91 (05-15-2023)
 
 ## Bug Fixes
