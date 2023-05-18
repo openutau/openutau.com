@@ -64,12 +64,13 @@ Preference is given to CVVC with matching color over VCV with default color.
 
 The phonemizer converts romaji to hiragana (see below for details).  
 ![presamp romaji](https://imgur.com/bNSFg6g.png)  
+Glottal stops should be written as [あ・].  
 
 This phonemizer follows the behavior of presamp. If voicebank has `presamp.ini`, use it.  
 Supporting `presamp.ini` features:  
 [VOWEL][CONSONANT][PRIORITY][REPLACE][ALIAS(VCPAD,VCVPAD)]  
 
-The default [REPLACE] includes romaji to hiragana conversion, so the phonemizer converts romaji to hiragana if there is no `presamp.ini` or there are descriptions in [REPLACE] of `presamp.ini` to convert romaji to hiragana.  
+The default [REPLACE] includes romaji to hiragana conversion, so the phonemizer converts romaji to hiragana if there is no `presamp.ini` or there are descriptions in [REPLACE] of `presamp.ini` to convert romaji to hiragana.(Only for exact matches)  
 The default VC length is the preutterance of the following CV.  
 
 ## JA CVVC (Japanese CVVC)
