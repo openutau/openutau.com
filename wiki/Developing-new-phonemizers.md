@@ -3,3 +3,106 @@
 - Begin learning C# from [official Microsoft tutorials](https://dotnet.microsoft.com/en-us/learn/csharp)
 - Read [Phonemizer API](https://github.com/stakira/OpenUtau/tree/master/OpenUtau.Core/Api)
 - For languages with multi-syllable words, read [SyllableBasedPhonemizer API](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Plugin.Builtin/SyllableBasedPhonemizer.cs)
+
+## Phonemizer API
+
+The main method to implement is:
+```
+public abstract Phoneme[] Process(Note[] notes, Note? prevNeighbour, Note? nextNeighbour);
+```
+* `notes`: A group of notes. The first note contains the lyric. The rest are extender notes whose lyric starts with `+`.
+* `prevNeighbour` and `nextNeighbour`: Useful info for creating diphones, if applicable. E.g., creating proper leading diphone in VCV.
+* `returns`: An array of phonemes, positioned relative to the first note.
+
+Tips:
+- To load singer specific resouce, Implement resouce loading in SetSinger() and use singer.Location to look for files.
+- If uses expensive resource, load it lazily when the phonemizer is created the first time. Use your best adjudgement to decide its lifetime.
+
+## Phonemizer Development Guidelines
+### required features
+A complete Phonemizer should:
+* Produce phonemes from the lyric, and previous / next notes if exist.
+* Distribute phonemes to positions relative to the first note of each group of notes.
+* (For Classic phonemizers) support multi-pitch and multi-color voicebanks.
+
+### Optional features
+Considering the characteristics of different languages, the phonemizer doesn't necessarily have to implement all the following features. However, implementing these features can maintain a consistent user experience across various phonemizers. 
+
+These features can be quickly implemented by inheriting a phonemizer template, such as [SyllableBasedPhonemizer](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Plugin.Builtin/SyllableBasedPhonemizer.cs).
+
+**polysyllabic word support**
+
+For polysyllabic languages ​​such as English, it should be supported to input lyrics on the first syllable, use `+~` or `+*` in the following notes to extend the current syllable, and use `+` to distribute the next syllable.
+
+![image](https://github.com/stakira/OpenUtau/assets/54425948/507016e4-0c97-4468-9370-7700ef18f2bb)
+
+**Phonetic hint**
+
+Users can manually enter space-separated phoneme sequences (aka. Phonetic hint) in square brackets, such as `read` , `read[r iy d]` and `[r iy d]`. When both phonetic hint and word exist, the phonetic hint takes precedence.
+
+![image](https://github.com/stakira/OpenUtau/assets/54425948/5da4e790-bab9-447c-88f0-24c82a3ff687)
+
+**G2p**
+
+G2p (Grapheme to phoneme) can convert lyrics in natural languages to phoneme sequences. OpenUTAU has built-in G2ps for multiple languages, implemented using a machine learning model, which can cover most of the words in the language, and can predict the pronunciation of new words that have not been seen before. Using a unified G2p can make the pronunciation of the same lyrics consistent on different phonemizers.
+
+For languages ​​with a large number of words, and words cannot be converted into phoneme sequences through simple logic, such as English, French, and Russian, please use OpenUTAU's built-in G2p.
+
+The following G2ps are included in OpenUTAU:
+* English: [ArpabetG2P](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/G2p/ArpabetG2p.cs)
+* French: [FrenchG2p](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/G2p/FrenchG2p.cs)
+* Portuguese: [PortugueseG2p](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/G2p/PortugueseG2p.cs)
+* Russian: [RussianG2p](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/G2p/RussianG2p.cs)
+
+**Custom pronunciation dictionary**
+
+On the basis of G2p, considering that some voicebanks have custom phonemes, a phonemizer should support custom dictionaries. Custom dictionaries can be loaded using [G2pDictionary](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/Api/G2pDictionary.cs).
+
+Here is an example of custom dictionary:
+```yaml
+%YAML 1.2
+---
+symbols:
+  - {symbol: aa, type: vowel}
+  - {symbol: ae, type: vowel}
+  - {symbol: ah, type: vowel}
+  - {symbol: ao, type: vowel}
+  - {symbol: aw, type: vowel}
+  - {symbol: ay, type: vowel}
+  - {symbol: b, type: stop}
+  - {symbol: ch, type: affricate}
+  - {symbol: d, type: stop}
+  - {symbol: dh, type: fricative}
+  - {symbol: eh, type: vowel}
+  - {symbol: er, type: vowel}
+  - {symbol: ey, type: vowel}
+  - {symbol: f, type: fricative}
+  - {symbol: g, type: stop}
+  - {symbol: hh, type: aspirate}
+  - {symbol: ih, type: vowel}
+  - {symbol: iy, type: vowel}
+  - {symbol: jh, type: affricate}
+  - {symbol: k, type: stop}
+  - {symbol: l, type: liquid}
+  - {symbol: m, type: nasal}
+  - {symbol: n, type: nasal}
+  - {symbol: ng, type: nasal}
+  - {symbol: ow, type: vowel}
+  - {symbol: oy, type: vowel}
+  - {symbol: p, type: stop}
+  - {symbol: r, type: liquid}
+  - {symbol: s, type: fricative}
+  - {symbol: sh, type: fricative}
+  - {symbol: t, type: stop}
+  - {symbol: th, type: fricative}
+  - {symbol: uh, type: vowel}
+  - {symbol: uw, type: vowel}
+  - {symbol: v, type: fricative}
+  - {symbol: w, type: semivowel}
+  - {symbol: y, type: semivowel}
+  - {symbol: z, type: fricative}
+  - {symbol: zh, type: fricative}
+entries:
+  - grapheme: openutau
+    phonemes: [ow, p, eh, n, w, uw, t, ah, w, uw]
+```
