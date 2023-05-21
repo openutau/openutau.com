@@ -1,3 +1,18 @@
+# ~0.1.96 (05-21-2023)
+
+## Misc
+- [dd2d0f2](https://github.com/stakira/OpenUtau/commit/dd2d0f2) - adds stale workflow and increases releases kept ([@stakira](https://github.com/stakira))
+
+***
+
+# ~0.1.94 (05-21-2023)
+
+## Misc
+- [bd5641c](https://github.com/stakira/OpenUtau/commit/bd5641c) - Setup beta and stable release channels ([@stakira](https://github.com/stakira))
+    - [225b97d](https://github.com/stakira/OpenUtau/commit/225b97d) corrects beta releases link, title and description.
+
+***
+
 # ~0.1.92 (05-16-2023)
 
 ## Misc
