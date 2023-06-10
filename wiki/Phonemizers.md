@@ -73,6 +73,9 @@ Supporting `presamp.ini` features:
 The default [REPLACE] includes romaji to hiragana conversion, so the phonemizer converts romaji to hiragana if there is no `presamp.ini` or there are descriptions in [REPLACE] of `presamp.ini` to convert romaji to hiragana.(Only for exact matches)  
 The default VC length is the preutterance of the following CV.  
 
+If phonetic hint is entered, use it and do not convert to VCV or CVVC.  
+![JaPhoneticHint](https://i.imgur.com/vgVHiJ2.png)
+
 ## JA CVVC (Japanese CVVC)
 Lyrics should be written in hiragana. If your lyrics are written in romaji, you can convert it to hiragana using the Romaji to Hiragana transformer.  
 ![roma to hira](https://i.imgur.com/XmfItiZ.png)
@@ -80,12 +83,19 @@ Lyrics should be written in hiragana. If your lyrics are written in romaji, you 
 The phonemizer will insert VCs and convert vowels to VV. The default VC length is the preutterance of the following CV. `presamp.ini` settings from the voicebank are not supported yet.  
 ![ja cvvc](https://i.imgur.com/GDaGjLu.png)
 
+If phonetic hint is entered, use it and do not convert to CVVC.  
+![JaPhoneticHint](https://i.imgur.com/WRp2vub.png)
+
 ## JA VCV (Japanese VCV)
 Lyrics should be written in hiragana. If your lyrics are written in romaji, you can convert it to hiragana using the Romaji to Hiragana transformer.  
 ![roma to hira](https://i.imgur.com/XmfItiZ.png)
 
 The phonemizer will automatically convert CV to VCV. If a VCV sample isn't available in the voicebank, it will fall back on CV. `presamp.ini` settings from the voicebank are not supported yet.  
 ![ja vcv](https://i.imgur.com/QYp3J3J.png)
+
+If phonetic hint is entered, use it and do not convert to VCV.  
+![JaPhoneticHint](https://i.imgur.com/vgVHiJ2.png)
+
 
 ## KO CVC (Korean CVC)
 This is a program to modify existing oto.ini file for use in OpenUtau (made by myself)  
