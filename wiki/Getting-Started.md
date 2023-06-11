@@ -239,10 +239,10 @@ This corresponds to UTAU's Consonant Velocity. This affects the length of the fi
 This raises or lowers the overall volume of the note/phoneme.
 
 ![vol](https://i.imgur.com/11QKExP.gif)
-#### ACC (accent)
+#### ATK (attack)
 This raises or lowers the volume of the beginning of the note/phoneme.
 
-![acc](https://i.imgur.com/c1XSCGj.gif)
+![atk](https://i.imgur.com/lw5wg26.gif)
 #### DEC (decay)
 This lowers the volume of the rest of the note/phoneme.
 
