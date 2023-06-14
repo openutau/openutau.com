@@ -673,5 +673,7 @@ The bolded phonemes are extra sounds for Spanish. They're not in the dictionary 
 Here is a list of separately distributed phonemizers for OpenUtau. To install, place the `.dll` file in the Plugins folder of your OpenUtau installation.
 
 * [Cyrillic Japanese Phonemizer](https://github.com/adlez27/OpenUtau/releases/tag/Cyrilji-0.1.0) by adlez27
+* [Korean CVVC+ Phonemizer](https://github.com/lottev1991/Korean-CVVC-Plus-Phonemizer/releases) by Lotte V
 * [SHO Phonemizer](https://github.com/adlez27/OpenUtau/releases/tag/SHO-0.1.1) by adlez27
 * [Teto English Phonemizer](https://github.com/adlez27/OpenUtau/releases/tag/Teto-0.1.0)  by adlez27
+* [Korean CVVC+ Phonemizer](https://github.com/lottev1991/Korean-CVVC-Plus-Phonemizer/releases) by Lotte V
