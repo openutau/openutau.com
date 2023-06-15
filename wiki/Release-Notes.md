@@ -70,7 +70,7 @@ This build has known bugs !
 ```
 - Selecting `preferences` currently causes OpenUtau to crash. Fix incoming at [#689](https://github.com/stakira/OpenUtau/pull/689). 
 
-If this is an urgent issue for you, you can roll back your install via the [release page](https://github.com/stakira/OpenUtau/releases), or [try compiling from source](https://github.com/stakira/OpenUtau/wiki/Compiling-from-source). Otherwise, please hold tight and the fix will be merged soon.
+Fix note: If you at any point updated to this version and ran it, and have been experiencing persistent issues even after updating to new versions -- you may need to remove the "languages" line from your prefs.JSON, or simply delete the prefs.JSON wholly (warning: this will reset any customization OpenUtau stores in preferences to the default).
 
 ## Features
 - [#668](https://github.com/stakira/OpenUtau/pull/668) - Stereo Panning Slider ([@nfrid](https://github.com/nfrid))
