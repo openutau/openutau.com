@@ -3,6 +3,7 @@
 ## Features
 - [#691](https://github.com/stakira/OpenUtau/pull/691) - Singer Window Improvements, etc ([@maiko3tattun](https://github.com/maiko3tattun))
     - General improvements to the singer window have been made! Primary additions are alias search, as well as pre-selecting the singer based on active part.
+
      ![example of alias search function](https://imgur.com/1rTdCKL.gif)
 - [#711](https://github.com/stakira/OpenUtau/pull/711) - General Lyrics Replacement tool ([@maiko3tattun](https://github.com/maiko3tattun))
     - This new macro uses regular expressions to convert lyrics. It is highly scalable and simplifies replacement of any language. Adding and sharing new presets is encouraged!
