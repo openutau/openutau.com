@@ -1,23 +1,52 @@
-# ~0.1.96 (05-21-2023)
+# ~[0.1.119](https://github.com/stakira/OpenUtau/releases/tag/build%2F0.1.119) (05-28-2023)
+
+## Features
+- [#691](https://github.com/stakira/OpenUtau/pull/691) - Singer Window Improvements, etc ([@maiko3tattun](https://github.com/maiko3tattun))
+    - General improvements to the singer window have been made! Primary additions are alias search, as well as pre-selecting the singer based on active part.
+    ![example of alias search function](https://imgur.com/1rTdCKL.gif)
+- [#711](https://github.com/stakira/OpenUtau/pull/711) - General Lyrics Replacement tool ([@maiko3tattun](https://github.com/maiko3tattun))
+    - This new macro uses regular expressions to convert lyrics. It is highly scalable and simplifies replacement of any language. Adding and sharing new presets is encouraged!
+     ![example animation of 'General lyrics replacement' in action](https://imgur.com/BFib5mt.gif)
+- [#712](https://github.com/stakira/OpenUtau/pull/712) - Drag and drop to install .dll phonemizers, .exe resamplers and wavtools ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+    - Externally provided phonemizers, resamplers and wavtools should no longer require manual folder management. Just drag and drop to install! 
+    ```Diff
+    OS-specific feedback required: Mac and Linux
+    ```
+    ![example of .exe install via drag and drop](https://user-images.githubusercontent.com/54425948/239664701-1fffee4f-3626-43ab-b4db-d7c7b3b32f47.png)
+- [#713](https://github.com/stakira/OpenUtau/pull/713) - Add support for Classic Ust Flags ([@arkfinn](https://github.com/arkfinn))
+    - [94b00a5](https://github.com/stakira/OpenUtau/commit/94b00a5) fixes some issues with the original implementation.
+
+## Bug Fixes
+
+- [#708](https://github.com/stakira/OpenUtau/pull/708) - `Pitch Baking` Fix PITD erasing region misplaced, process the whole part by default ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+
+## Phonemizer Changes
+- [#693](https://github.com/stakira/OpenUtau/pull/693) - `ES VCCV` VCC/CC fix + ValidateAlias for "E" semivowel ([@lottev1991](https://github.com/lottev1991))
+- [#707](https://github.com/stakira/OpenUtau/pull/707) - `ZH CVV` Use new mapping style + voice color support + "yan" vowel fix + "_un" ending alternative
+- [#709](https://github.com/stakira/OpenUtau/pull/709) - `KO CVC` "ch" VC fix (romaja/mixed VC) ([@lottev1991](https://github.com/lottev1991))
+- [#710](https://github.com/stakira/OpenUtau/pull/710) - `Various JA phoemizers` PhoneticHint support and Unicode countermeasures ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#716](https://github.com/stakira/OpenUtau/pull/716) - `EN VCCV` phonemizer refactor ([@mmemmim](https://github.com/mmemim) & [@cubialpha](https://github.com/cubialpha))
+- [#720](https://github.com/stakira/OpenUtau/pull/720) - `ES VCCV` Add different consonant lengths support ([@lottev1991](https://github.com/lottev1991))
 
 ## Misc
-- [dd2d0f2](https://github.com/stakira/OpenUtau/commit/dd2d0f2) - adds stale workflow and increases releases kept ([@stakira](https://github.com/stakira))
+- [11fa8cc](https://github.com/stakira/OpenUtau/commit/11fa8cc) - nicer version compare  ([@stakira](https://github.com/stakira))
 
 ***
 
-# ~0.1.94 (05-21-2023)
+# ~[0.1.96](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.96) (05-21-2023)
 ```Diff
 @@ Major Change @@
 ```
 From this point on, OpenUtau has a [Stable](https://github.com/stakira/OpenUtau/tree/stable) and [Beta](https://github.com/stakira/OpenUtau/tree/master) branch. You may opt into the Beta in-program by going to `Tools`>`Preferences`>`Advanced`, and toggling `Beta` to On. Doing so may open you up to experiencing bugs, so exercise caution!
 
 ## Misc
+- [dd2d0f2](https://github.com/stakira/OpenUtau/commit/dd2d0f2) - adds stale workflow and increases releases kept ([@stakira](https://github.com/stakira))
 - [bd5641c](https://github.com/stakira/OpenUtau/commit/bd5641c) - Setup beta and stable release channels ([@stakira](https://github.com/stakira))
     - [225b97d](https://github.com/stakira/OpenUtau/commit/225b97d) corrects beta releases link, title and description.
 
 ***
 
-# ~0.1.92 (05-16-2023)
+# ~[0.1.92](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.92) (05-16-2023)
 
 ## Misc
 - [#af16021](https://github.com/stakira/OpenUtau/commit/af16021) - Refactor locale initialization ([@stakira](https://github.com/stakira))
@@ -25,7 +54,7 @@ From this point on, OpenUtau has a [Stable](https://github.com/stakira/OpenUtau/
     - This commit also changes the `mid` on the `stereo panning slider` to **`C`** (for Center).
 ***
 
-# ~0.1.91 (05-15-2023)
+# ~[0.1.91](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.91) (05-15-2023)
 
 ## Bug Fixes
 - [#689](https://github.com/stakira/OpenUtau/pull/689) - fix en-US language saving and loading ([@lennyservant](https://github.com/lennyservant))
@@ -33,7 +62,7 @@ From this point on, OpenUtau has a [Stable](https://github.com/stakira/OpenUtau/
     - If still encountering issues, navigate to the `prefs.json` file in your OpenUtau folder structure, and remove the line `"language": "axaml",` and save.
 
 ***
-# ~0.1.90 (05-15-2023)
+# ~[0.1.90](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.90) (05-15-2023)
 ```Diff
 ! Caution !
 This build has known bugs !
@@ -88,7 +117,7 @@ If this is an urgent issue for you, you can roll back your install via the [rele
 
 ***
 
-# 0.1.57~0.1.73 (04-23-2023)
+# [0.1.57](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.57)~[0.1.73](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.73) (04-23-2023)
 
 **Past release notes:** This is the first! If you need to know about previous releases, please see the github commit history. Efforts will be made to make sure that features up until this point are documented on the wiki. See [Getting Started](https://github.com/stakira/OpenUtau/wiki/Getting-Started).
 
