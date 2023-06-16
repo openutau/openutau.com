@@ -1,13 +1,40 @@
+# ~[0.1.129](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.129) (06-03-2023)
+
+## Features
+- [#718](https://github.com/stakira/OpenUtau/pull/718) - SimpleENUNU Support ([@rokujyushi](https://github.com/rokujyushi))
+    - You can now load SimpleENUNU models in OpenUtau! Note: currently, there is no support for SingingStyle.
+    - To use SimpleENUNU within OpenUtau, please download SimpleENUNUServer: https://github.com/rokujyushi/SimpleEnunu/releases/tag/SimpleEnunu-OpenUtau-0.1.0 <br>
+        ![image showing Ritsu CrissCross and other SimpleENUNU models in the singer selection window](https://user-images.githubusercontent.com/93469977/241399775-a0af7ef2-acb9-4a83-abf2-f26bc7a967da.png)
+- [#723](https://github.com/stakira/OpenUtau/pull/723) - Add Track Name ([@maiko3tattun](https://github.com/maiko3tattun))
+    - Allows users to name tracks as a whole!
+    - In addition, a track is now set at start up, track names are now referenced by default in wav exports, and part names are referenced in legacy UST exports.
+    ![image showing new track names feature](https://i.imgur.com/g4q6i3W.png)
+
+## Bug Fixes
+- [bda13a6](https://github.com/stakira/OpenUtau/commit/bda13a6) - Fix updater dialog crash  ([@stakira](https://github.com/stakira))
+
+## Translations
+- [#725](https://github.com/stakira/OpenUtau/pull/725) - Fix Japanese translations (improved) ([@maiko3tattun](https://github.com/maiko3tattun))
+
+## Misc
+- [7b53731](https://github.com/stakira/OpenUtau/commit/7b53731) - Fix PluginRunnerTest  ([@stakira](https://github.com/stakira))
+- [#727](https://github.com/stakira/OpenUtau/pull/727) - Fix expression selection changes when reloading part ([@maiko3tattun](https://github.com/maiko3tattun))
+- [07ec981](https://github.com/stakira/OpenUtau/commit/07ec981) - Save piano roll toggles in prefs ([@stakira](https://github.com/stakira))
+    - The "show waveform/pitch/phoneme/vibrato/etc" toggles on the piano roll should be persistent now.
+- [1c6e760](https://github.com/stakira/OpenUtau/commit/1c6e760) - Tweak track header ([@stakira](https://github.com/stakira))
+- [e21b836](https://github.com/stakira/OpenUtau/commit/e21b836) - Silence pan logging ([@stakira](https://github.com/stakira))
+
+***
+
 # ~[0.1.119](https://github.com/stakira/OpenUtau/releases/tag/build%2F0.1.119) (05-28-2023)
 
 ## Features
 - [#691](https://github.com/stakira/OpenUtau/pull/691) - Singer Window Improvements, etc ([@maiko3tattun](https://github.com/maiko3tattun))
-    - General improvements to the singer window have been made! Primary additions are alias search, as well as pre-selecting the singer based on active part.
-
-     ![example of alias search function](https://imgur.com/1rTdCKL.gif)
+    - General improvements to the singer window have been made! Primary additions are alias search, as well as pre-selecting the singer based on active part. <br>
+    ![example of alias search function](https://imgur.com/1rTdCKL.gif)
 - [#711](https://github.com/stakira/OpenUtau/pull/711) - General Lyrics Replacement tool ([@maiko3tattun](https://github.com/maiko3tattun))
     - This new macro uses regular expressions to convert lyrics. It is highly scalable and simplifies replacement of any language. Adding and sharing new presets is encouraged!
-     ![example animation of 'General lyrics replacement' in action](https://imgur.com/BFib5mt.gif)
+    <br>![example animation of 'General lyrics replacement' in action](https://imgur.com/BFib5mt.gif)
 - [#712](https://github.com/stakira/OpenUtau/pull/712) - Drag and drop to install .dll phonemizers, .exe resamplers and wavtools ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
     - Externally provided phonemizers, resamplers and wavtools should no longer require manual folder management. Just drag and drop to install! 
     ```Diff
