@@ -1,3 +1,35 @@
+# ~[0.1.158](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.158) (06-11-2023)
+
+## Major Changes
+- [d60f403](https://github.com/stakira/OpenUtau/commit/d60f403) - Upgrade to avalonia 11 ([@stakira](https://github.com/stakira))
+    - Version upgrade + series of fixes to breaking changes. See `Misc` for further relevant commits.
+    - Keep an eye out for bugs!
+- [08d7693](https://github.com/stakira/OpenUtau/commit/08d7693) - Installer version available (nsis installer) ([@stakira](https://github.com/stakira))
+
+## Phonemizer Changes
+- [#736](https://github.com/stakira/OpenUtau/pull/736) - `VOGEN` Fix consonant timing ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#731](https://github.com/stakira/OpenUtau/pull/731) - `ES SYL` Starting CCV + VV transition fix ([@lottev1991](https://github.com/lottev1991))
+- [#732](https://github.com/stakira/OpenUtau/pull/732) - `ES VCCV` Code and function optimization ([@lottev1991](https://github.com/lottev1991))
+- [#734](https://github.com/stakira/OpenUtau/pull/734) - `JA CVVC` Read CV append voice color ([@lottev1991](https://github.com/lottev1991))
+- [#737](https://github.com/stakira/OpenUtau/pull/737) - `VIE VCV` Phonemizer Update ([@lottev1991](https://github.com/lottev1991))
+
+## Misc
+- [704b54c](https://github.com/stakira/OpenUtau/commit/704b54c) - Clean up views ([@stakira](https://github.com/stakira))
+- [723109f](https://github.com/stakira/OpenUtau/commit/723109f) - Fix pianoroll interactions ([@stakira](https://github.com/stakira))
+- [395a182](https://github.com/stakira/OpenUtau/commit/395a182) - Fix locales and themes ([@stakira](https://github.com/stakira))
+- [1e1a052](https://github.com/stakira/OpenUtau/commit/1e1a052) - Rewrite oto view ([@stakira](https://github.com/stakira))
+- [d33a440](https://github.com/stakira/OpenUtau/commit/d33a440) - Better waveform drawing  ([@stakira](https://github.com/stakira))
+- [5a47b79](https://github.com/stakira/OpenUtau/commit/5a47b79) + [bf0c8be](https://github.com/stakira/OpenUtau/commit/bf0c8be) + [22a674f](https://github.com/stakira/OpenUtau/commit/22a674f)- UI fixes ([@stakira](https://github.com/stakira))
+- [839ac40](https://github.com/stakira/OpenUtau/commit/839ac40) - Fix dropping file  ([@stakira](https://github.com/stakira))
+- [8227dee](https://github.com/stakira/OpenUtau/commit/8227dee) - Update packages, refactor file picker and nullness ([@stakira](https://github.com/stakira))
+- [ee91432](https://github.com/stakira/OpenUtau/commit/ee91432) - Fix nullness in release configuration ([@stakira](https://github.com/stakira))
+- [78fc333](https://github.com/stakira/OpenUtau/commit/78fc333) - Fix tab key for lyric box ([@stakira](https://github.com/stakira))
+- [91bc579](https://github.com/stakira/OpenUtau/commit/91bc579) - Fix Mac build ([@stakira](https://github.com/stakira))
+- [a52c64d](https://github.com/stakira/OpenUtau/commit/a52c64d) - Add select singer type step to install ([@stakira](https://github.com/stakira))
+- [a227d56](https://github.com/stakira/OpenUtau/commit/a227d56) - tweak singer setup view ([@stakira](https://github.com/stakira))
+
+***
+
 # ~[0.1.129](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.129) (06-03-2023)
 
 ## Features
