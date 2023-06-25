@@ -54,3 +54,8 @@ OpenUtau comes with its own resampler and wavtools, but if you want to use ones 
 
 ## How do I select an external resampler? (Moresampler, etc. is not in the renderer list)
 Select the CLASSIC renderer, then click on the gear icon to select resamplers and wavtools.
+
+## OpenUtau crashes when opening preferences dialog
+Navigate to the `prefs.json` file in your OpenUtau folder structure, and remove the line `"language": "axaml"`, and save.
+
+This is a bug when upgrading from version 0.1.90. See [Release Notes](https://github.com/stakira/OpenUtau/wiki/Release-Notes#0191-05-15-2023) for more details.
