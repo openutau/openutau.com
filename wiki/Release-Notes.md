@@ -39,8 +39,8 @@
         ![image showing Ritsu CrissCross and other SimpleENUNU models in the singer selection window](https://user-images.githubusercontent.com/93469977/241399775-a0af7ef2-acb9-4a83-abf2-f26bc7a967da.png)
 - [#723](https://github.com/stakira/OpenUtau/pull/723) - Add Track Name ([@maiko3tattun](https://github.com/maiko3tattun))
     - Allows users to name tracks as a whole!
-    - In addition, a track is now set at start up, track names are now referenced by default in wav exports, and part names are referenced in legacy UST exports.
-    ![image showing new track names feature](https://i.imgur.com/g4q6i3W.png)
+    - In addition, a track is now set at start up, track names are now referenced by default in wav exports, and part names are referenced in legacy UST exports.  
+![image showing new track names feature](https://i.imgur.com/g4q6i3W.png)
 
 ## Bug Fixes
 - [bda13a6](https://github.com/stakira/OpenUtau/commit/bda13a6) - Fix updater dialog crash  ([@stakira](https://github.com/stakira))
