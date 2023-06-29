@@ -1,6 +1,16 @@
 - Note: ENUNU/NNSVS support is **experimental**. There will be quirks. Be **patient**. Be **ready to troubleshoot**.
 - Note: **This page will change regularly**.
 
+## About SimpleENUNU
+Download SimpleENUNUServer [here](https://github.com/rokujyushi/SimpleEnunu/releases/tag/SimpleEnunu-OpenUtau-0.1.0).  
+
+## How to use (0.1.129)
+For SimpleENUNU compatible models, please add the following to character.yaml.
+
+```
+singer_type: Enunu
+```
+
 ## About ENUNU v0.5.0
 It is reported that replacing files in ENUNU-server with ENUNU v0.5.0 files makes ENUNU-server work with v0.5.0 voicebanks. Feel free to try at your own risk.
 
