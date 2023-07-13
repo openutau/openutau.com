@@ -5,6 +5,8 @@ File must be in `.exe` and can be placed in subfolders.
 1. On your unzipped OpenUtau folder, locate the resampler folder named `Resamplers`.
 2. Open the resampler folder and place the resampler on the folder.
 
+You can also install Resamplers by dragging and dropping the `.exe` file onto the main OpenUtau window and selecting "install as a Resampler" (On version 0.1.119 and higher) 
+
 ## macOS
 
 As of macOS 11.6, the below method works.
@@ -239,6 +241,8 @@ expressions:
 ## Windows
 1. On your unzipped OpenUtau folder, locate the wavtool folder named `Wavtools`.
 2. Open the wavtool folder and place the downloaded wavtool on the folder.
+
+You can also install Wavtools by dragging and dropping the `.exe` file onto the main OpenUtau window and selecting "install as a Wavtool" (On version 0.1.119 and higher) 
 
 ## macOS
 
