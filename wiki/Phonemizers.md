@@ -662,12 +662,99 @@ You can also opt for pure phonetic input instead, it works the same as above exc
 
 ![Showcasing pure phonetic input](https://i.ibb.co/R63rCc3/Phonetic-Hint2.png)
 
-#### Phoneme list
+### Phoneme list
 Vowels: a, e, i, o, u, 3, 0
 
 Consonants: b, d, dz, dZ, f, g, gn, j, k, l, m, M, n, N, p, r, rr, s, S, t, ts, tS, v, w, y, z, **B**, **D**, **G**, **h**, **T**, **x**, **Y**, '
 
 The bolded phonemes are extra sounds for Spanish. They're not in the dictionary and only work through phonetic input (the latter also counts for ``'``, which represents vocal fry).
+
+## German Diphone Phonemizer
+### Setup
+This phonemizer works similarly to the Arpasing phonemizer, as it uses the same API. Custom dictionaries are supported. (For an example of what a custom dictionary should look like, take a look at the `arpasing.yaml` file in the `Plugins` folder of OpenUtau.)
+
+This phonemizer uses the in-built German G2P, so downloading an external dictionary is not necessary. However, since the G2P isn't error-free, users are encouraged to override incorrect transcriptions in a custom dictionary, if they encounter any errors.
+
+### Lyric input
+You write the word on the first note, then spread the syllables by writing a ``+`` on the next note(s):
+
+![Lyrics showcase example with syllable spreading notes](https://i.ibb.co/Wx0XDZL/Example1.png)
+
+### Phonetic input
+You can also use phonetic hints after lyrics, you put those in between brackets (``[]``) with spaces in-between. This is handy when certain phonemes aren't quite right, or for pure stylistic reasons. You write the hint on the first note of the word:
+
+![Showcasing phonetic hints](https://i.ibb.co/zb0LLw3/Phonetic-Hint.png)
+
+You can also opt for pure phonetic input instead, it works the same as above except not right after a lyric:
+
+![Showcasing pure phonetic input](https://i.ibb.co/VLPBLFQ/Phonetic-Hint-Pure.png)
+
+### Phoneme list (default)
+Vowels: aa, ae, **ah**, ao, aw, ax, ay, ee, eh, **er**, ex, ih, iy, oe, ohh, ooh, oy, ue, uh, uw, yy
+
+Consonants: b, cc, ch, d, **dh**, f, g, hh, **jh**, k, l, m, n, ng, p, pf, q, **r**, rr, s, sh, t, **th**, ts, v, **w**, x, y, z, **zh**
+
+The **bolded** letters represent foreign sounds, most of which come from English. They represent the same sounds as their Arpasing counterparts (more on that below). They do get used in the German G2P for loanwords, however fallbacks do exist in the phonemizer.
+
+### Combined English-German diphonic (Arpasing) banks
+Due to the easy compatibility between English Arpasing and the German diphonic system, you could make a combined English-German diphonic bank (aka, a German addon for Arpasing, or an English arpasing addon for a German bank). Here is a list of required extra phonemes you will need for this combined bank style:
+
+#### German addon for English bank
+##### Extra vowels:
+- `ax` - Schwa (often already present in Arpasing banks);
+- `ee` - Long german "e" (e.g. "g**eh**e");
+- `ex` - German rhotic vowel (e.g. "bess**ex**"); also used for "r" at the end of syllables/words;
+- `oe` - Short German "ö" (e.g. "l**ö**schen");
+- `ohh` - Long German "ö" (e.g. "b**ö**se");
+- `ooh` - Long German "o" (e.g. "Br**o**t");
+- `ue` - Long German "ü" (e.g. "f**ü**r");
+- `yy` - Short German "ü" (e.g. "m**ü**ssen").
+
+##### Extra consonants:
+- `cc` - Ich-Laut (e.g. "di**ch**");
+- `pf` - Bilabial affricate (e.g. "**Pf**effer");
+- `q` - Glottal stop (often already present in Arpasing banks);
+- `rr` - German "r" at the beginning of words/syllables (e.g. "**R**eise");
+- `ts` - Dental affricate (e.g. "**z**u");
+- `x` - Acht-Laut (e.g. "ma**ch**en").
+
+#### English addon for German bank
+##### Extra vowels:
+- `ey`;
+- `ow`.
+
+All the other necessary vowels, as well as the required extra consonants, are already listed above. However, any other sound can still be added, e.g. "dx" (dental flap/tap), "el"/"em"/"en" (syllabic consonants; can also be used in German), etc.
+
+## German VCCV Phonemizer
+### Setup
+This phonemizer was based on the system used for [Felix German VCCV](https://utau.fandom.com/wiki/Felix), which is essentially X-SAMPA. Custom dictionaries are supported. (For an example of what a custom dictionary should look like, take a look at the `arpasing.yaml` file in the `Plugins` folder of OpenUtau.)
+
+This phonemizer uses the in-built German G2P, so downloading an external dictionary is not necessary. However, since the G2P isn't error-free, users are encouraged to override incorrect transcriptions in a custom dictionary, if they encounter any errors.
+
+### Lyric input
+You write the word on the first note, then spread the syllables by writing a ``+`` on the next note(s):
+
+![Lyrics showcase example with syllable spreading notes](https://i.ibb.co/Wx0XDZL/Example1.png)
+
+As you can see above, diphthongs are split, which means that the two halves essentially have to be treated as separate syllables. Keep this in mind when spreading syllables, otherwise this happens:
+
+![How NOT to spread syllables with diphthongs](https://i.ibb.co/6nXZTKF/Wrong-Splits.png)
+
+### Phonetic input
+You can also use phonetic hints after lyrics, you put those in between brackets (``[]``) with spaces in-between. This is handy when certain phonemes aren't quite right, or for pure stylistic reasons. You write the hint on the first note of the word:
+
+![Showcasing phonetic hints](https://i.ibb.co/sRDF1YC/Phonetic-Hint1.png)
+
+You can also opt for pure phonetic input instead, it works the same as above except not right after a lyric:
+
+![Showcasing pure phonetic input](https://i.ibb.co/tQPZ93W/Phonetic-Hint2.png)
+
+### Phoneme list
+Vowels: a, 6, e, E, 2, i, I, y, Y, u, U, o, O, @, aU, OY, aI
+
+Consonants: -, b, C, d, f, g, h, j, k, kh, l, m, n, N, p, ph, R;, s, S, t, th, v, x, z, Z, dZ, ks, pf, st, St, tS, w
+
+Please note that at this time, custom vowels are not supported in user dictionaries, though custom consonants are.
 
 ## Other phonemizers
 Here is a list of separately distributed phonemizers for OpenUtau. To install, place the `.dll` file in the Plugins folder of your OpenUtau installation.
