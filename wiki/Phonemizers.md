@@ -588,7 +588,7 @@ This phonemizer now supports automatic splitting of Diphthongs and affricates, d
 
 **Note:** This phonemizer used to have an issue where the second half of a split diphthong had to be treated as if it were a different syllable. However, this problem has since been resolved and this method is no longer necessary, splitting them within the same syllable instead:
 
-![The phonemizer now splits diphthongs within the same syllable](https://i.ibb.co/d7MFNRp/Correct-Diphthong-Splitting.png)
+![The phonemizer now splits diphthongs within the same syllable](https://i.ibb.co/DMcGKvx/Correct-Diphthong-Splitting.png)
 
 If you only want to extend one syllable in the word, you can use either ``+*`` or ``+~``:
 
