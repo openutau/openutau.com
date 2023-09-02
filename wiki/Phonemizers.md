@@ -550,17 +550,17 @@ breath : take a breath
 2. **Vietnamese VCV Phonemizer**
 ![](https://drive.google.com/u/0/uc?id=1JT4aPsaaeIPKnXP2P2dVKRdj3Xps38YN&export=download)
 
-## EN Delta (Delta English Phonemizer)
-**NOTE:** The two Delta phonemizers have now been merged into one phonemizer. If you've used "Version 2" before, you can use this one now instead.
+## EN X-SAMPA (English X-SAMPA phonemizer)
+**NOTE:** This phonemizer used to be called the "English Delta Phonemizer", but as the scope of the phonemizer has increased, it has been renamed to the more general "English X-SAMPA phonemizer".
 ### Setup
-This phonemizer is pretty similar to the Teto English phonemizer, as both are based on the classic Delta English list. However, there are a few important differences:
-- As the name implies, the Teto English phonemizer was made specifically for Kasane Teto's English bank. While it does use the classic Delta method, it contains some Teto-specific functions that might not work well with other voicebanks.
-- The way this phonemizer handles consonants is slightly different. I've attempted to streamline it a bit more in both general Delta phonemizers.
-- This phonemizer accepts VCV for all consonants (including clusters), if the voicebank contains it.
-- This phonemizer contains some extra sounds that were inspired by Cz's English VCCV method, except they're written in X-SAMPA instead. These sounds are not in any of the Delta lists but were added more for personal use (more on that below).
-- This phonemizer now has custom dictionary support.
-- **NEW:** Depending on the voicebank type, it now automatically splits diphthongs and/or affricates.
-- **NEW:** This phonemizer now supports all possible X-SAMPA vowels (including some nasalized vowels).
+This phonemizer is pretty similar to the Teto English phonemizer. However, there are a few important differences:
+- This phonemizer was made to support X-SAMPA-encoded English banks in general, not just Delta banks (and not only Kasane Teto, although her English bank is supported). Some examples are:
+ - Split diphthongs, when applicable (this is a known feature of some Delta reclists);
+ - Some alternate aliasing methods, outside of the Delta scope (e.g. English Vocaloid-style X-SAMPA);
+ - Aliasing fallbacks, in case a voicebank merges some vowels;
+ - Support for spaced CV's (similar to Arpasing/diphonic voicebanks), as in ``[C V]``;
+- This phonemizer accepts VCV for all consonants (including clusters), if the voicebank contains them;
+- This phonemizer has support for some extra sounds that aren't in the dictionary by default, but should be supported through custom dictionaries and/or phonetic hints.
 
 ### Lyric input
 You write the word on the first note, then spread the syllables by writing a ``+`` on the next notes:
@@ -572,7 +572,7 @@ If you only want to extend one syllable in the word, you can use either ``+*`` o
 ![Showcasing syllable extender notes](https://i.ibb.co/LPxnnGK/Example2.png)
 
 ### Phonetic input
-You can also use phonetic hints after lyr**ics, you put those in between brackets (``[]``) with spaces in-between. This is handy when certain phonemes aren't quite right, or for pure stylisti**c reasons. You write the hint on the first note of the word:
+You can also use phonetic hints after lyrics, you put those in between brackets (``[]``) with spaces in-between. This is handy when certain phonemes aren't quite right, or for pure stylistic reasons. You write the hint on the first note of the word:
 
 ![Showcasing phonetic hints](https://i.ibb.co/6P5wvFD/Example3.png)
 
@@ -582,38 +582,35 @@ You can also opt for pure phonetic input instead, it works the same as above exc
 
 ### Split diphthongs and affricates
 
-This phonemizer now supports automatic splitting of Diphthongs and affricates, depending on the voicebank.
+This phonemizer now supports automatic splitting of Diphthongs and affricates, depending on the voicebank:
 
 ![Automatic affricate splitting](https://i.ibb.co/QJ5CnHF/Affricate-Splitting.png)
 
-In the case of split diphthongs, the second half of the diphthong should essentially be treated as if it's a separate syllable, since the phonemizer will treat it as a separate vowel. If you don't do that, this happens:
+**Note:** This phonemizer used to have an issue where the second half of a split diphthong had to be treated as if it were a different syllable. However, this problem has since been resolved and this method is no longer necessary, splitting them within the same syllable instead:
 
-![How not to treat split diphthongs in this phonemizer](https://i.ibb.co/3rtWv0T/Lightning-WRONG.png)
-
-As you can see, the second half lands on the wrong syllable. This can be prevented by using the correct method shown above.
+![The phonemizer now splits diphthongs within the same syllable](https://i.ibb.co/d7MFNRp/Correct-Diphthong-Splitting.png)
 
 If you only want to extend one syllable in the word, you can use either ``+*`` or ``+~``:
 
 ![Syllable extender notes](https://i.ibb.co/bd4w5NV/Lightning2.png)
 
-Since affricates are consonants, syllable extention should give no noticeable problems in the case of split affricates.
-
 #### Phoneme list
 Consonants: b, d, f, g, h, j, k, l, m, n, p, r, s, t, v, w, z, **4**, D, N, S, T, Z, dZ, tS, **・**, _**(underscore)**_
 
-Vowels: a, A, @, {, V, O, aU, aI, E, 3, eI, I, i, oU, OI, U, u, **Q**, **Ol**, **Ql**, **aUn**, **e@**, **eN**, **IN**, e, o, **Ar**, **Qr**, **Er**, **Ir**, **Or**, **Ur**, **ir**, **ur**, **aIr**, **aUr**, **A@**, **Q@**, **E@**, **I@**, **O@**, **U@**, **i@**, **u@**, **aI@**, **aU@**, **@r**, **@l**, **@m**, **@n**, **@N**, **1**, **e@m**, **e@n**, **y**, **I\**, **M**, **U\**, **Y**, **@\**, **@`**, **3`**, **A`**, **Q`**, **E`**, **I`**, **O`**, **U`**, **i`**, **u`**, **aI`**, **aU`**, **}**, **2**, **3\**, **6**, **7**, **8**, **9**, **&**, **{~**, **I~**, **aU~**, **VI**, **VU**, **@U**, **i:**, **u:**, **O:**, **e@0**
+Vowels: a, A, @, {, V, O, aU, aI, E, 3, eI, I, i, oU, OI, U, u, **Q**, **Ol**, **Ql**, **aUn**, **e@**, **eN**, **IN**, e, o, **Ar**, **Qr**, **Er**, **Ir**, **Or**, **Ur**, **ir**, **ur**, **aIr**, **aUr**, **A@**, **Q@**, **E@**, **I@**, **O@**, **U@**, **i@**, **u@**, **aI@**, **aU@**, **@r**, **@l**, **@m**, **@n**, **@N**, **1**, **e@m**, **e@n**, **y**, **I\**, **M**, **U\**, **Y**, **@\**, **@`**, **3`**, **A`**, **Q`**, **E`**, **I`**, **O`**, **U`**, **i`**, **u`**, **aI`**, **aU`**, **}**, **2**, **3\**, **6**, **7**, **8**, **9**, **&**, **{~**, **I~**, **aU~**, **VI**, **VU**, **@U**, **i:**, **u:**, **O:**, **e@0**, **E~**, **e~**, **3r**, **ar**, **or**, **{l**, **Al**, **al**, **El**, **Il**, **il**, **ul**, **Ul**, **mm**, **nn**, **ll**, **NN**
 
 Among the bolded vowels are:
 - General X-SAMPA vowels. You can find more information about X-SAMPA [here](https://en.wikipedia.org/wiki/X-SAMPA);
 - Sounds used by the UTAU [Peiton](https://www.supergoodboi.com/peiton.html/)'s English voicebank, as well any other voicebanks that might use that list. By default, they only work through phonetic input, unless a custom dictionary is created;
-- English Vocaloid-style vowels (including Vocaloid 4+ vowels);
+- Sounds used in Salem's S-CVVC English reclist;
+- English Vocaloid-style vowels (including Vocaloid 4+ extra vowels);
 - Canadian raising;
 - Alternate ways for rhoticization and nasalization.
 
-These extra sounds mostly only work either through phonetic input, or a custom dictionary. However, some automatically work through ``ValidateAlias()``.
+These extra sounds mostly only work either through phonetic input, or a custom dictionary. However, some automatically work through ``ValidateAlias()`` and associated booleans.
 
 #### Custom dictionary
-This phonemizer now has support for custom dictionaries. The dictionary should be named `xsampa.yaml` and be put in the main/top folder of a specific voicebank. For an idea on what a custom dictionary should look like, you can look at the `arpasing.yaml` file that comes with OpenUtau by default.
+This phonemizer now has support for custom dictionaries. The dictionary should be named either `en-xsampa.yaml` or `xsampa.yaml` (the latter for legacy support/backwards compatibility with existing voicebanks) and be put in the main/top folder of a specific voicebank. For an idea on what a custom dictionary should look like, you can look at the `arpasing.yaml` file that comes with OpenUtau by default.
 
 **!!IMPORTANT NOTE!!:** Certain X-SAMPA symbols should be contained within single quotes ('') when included in the custom dictionary file, otherwise your dictionary will not load. Some of the affected phonemes are:
 
@@ -622,6 +619,7 @@ This phonemizer now has support for custom dictionaries. The dictionary should b
 * `@` and any phoneme starting with it (but not when at the end/center), ex. `@l` (but not `e@`);
 * `&` and any phoneme that contains it;
 * Any phoneme containing a colon (`:`);
+* Any phoneme containing a slash (`\` or `/`);
 * Some other, non-English/non-default X-SAMPA symbols might also be affected. It is highly recommended to test which specific ones beforehand.
 
 Note that the Arpabet symbols included by default in the CMU Pronouncing Dictionary can also be used to note down custom words, though for any symbols that aren't included, X-SAMPA notation is required.
@@ -689,6 +687,8 @@ You can also opt for pure phonetic input instead, it works the same as above exc
 
 ![Showcasing pure phonetic input](https://i.ibb.co/VLPBLFQ/Phonetic-Hint-Pure.png)
 
+Note that the rhotic sound `ex` ("bess**er**", "He**r**z") should always be treated as a separate vowel; this is because of the in-built dictionary used by OpenUtau.
+
 ### Phoneme list (default)
 Vowels: aa, ae, **ah**, ao, aw, ax, ay, ee, eh, **er**, ex, ih, iy, oe, ohh, ooh, oy, ue, uh, uw, yy
 
@@ -736,9 +736,11 @@ You write the word on the first note, then spread the syllables by writing a ``+
 
 ![Lyrics showcase example with syllable spreading notes](https://i.ibb.co/Wx0XDZL/Example1.png)
 
-As you can see above, diphthongs are split, which means that the two halves essentially have to be treated as separate syllables. Keep this in mind when spreading syllables, otherwise this happens:
+**Note:** This phonemizer used to have an issue where the second half of a split diphthong had to be treated as if it were a different syllable. However, this problem has since been resolved and this method is no longer necessary, splitting them within the same syllable instead:
 
-![How NOT to spread syllables with diphthongs](https://i.ibb.co/6nXZTKF/Wrong-Splits.png)
+![Split diphthongs working correctly](https://i.ibb.co/bHqp9QG/Correct-Splits.png)
+
+Note that the rhotic sound `6` ("bess**er**", "He**r**z") should still always be treated as a vowel; this is because of the in-built dictionary used by OpenUtau.
 
 ### Phonetic input
 You can also use phonetic hints after lyrics, you put those in between brackets (``[]``) with spaces in-between. This is handy when certain phonemes aren't quite right, or for pure stylistic reasons. You write the hint on the first note of the word:
