@@ -51,6 +51,7 @@ For languages ​​with a large number of words, and words cannot be converted 
 The following G2ps are included in OpenUTAU:
 * English: [ArpabetG2P](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/G2p/ArpabetG2p.cs)
 * French: [FrenchG2p](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/G2p/FrenchG2p.cs)
+* German: [GermanG2p](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/G2p/GermanG2p.cs)
 * Italian: [ItalianG2p](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/G2p/ItalianG2p.cs)
 * Portuguese: [PortugueseG2p](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/G2p/PortugueseG2p.cs)
 * Russian: [RussianG2p](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/G2p/RussianG2p.cs)
@@ -108,3 +109,28 @@ entries:
   - grapheme: openutau
     phonemes: [ow, p, eh, n, w, uw, t, ah, w, uw]
 ```
+
+## Appendix: Phoneme set of builtin G2Ps
+### ArpabetG2p (English)
+- vowels: `aa, ae, ah, ao, aw, ay, eh, er, ey, ih, iy, ow, oy, uh, uw`
+- consonants: `b, ch, d, dh, f, g, hh, jh, k, l, m, n, ng, p, r, s, sh, t, th, v, w, y, z, zh`
+
+### GermanG2p
+- vowels: `aa, ae, ah, ao, aw, ax, ay, ee, eh, er, ex, ih, iy, oe, ohh, ooh, oy, ue, uh, uw, yy`
+- consonants: `b, cc, ch, d, dh, f, g, hh, jh, k, l, m, n, ng, p, pf, q, r, rr, s, sh, t, th, ts, v, w, x, y, z, zh`
+
+### ItalianG2p
+- vowels: `a, a1, e, e1, EE, i, i1, o, o1, OO, u, u1`
+- consonants: `b, d, dz, dZZ, f, g, JJ, k, l, LL, m, n, nf, ng, p, r, rr, s, SS, t, ts, tSS, v, w, y, z`
+
+### PortugueseG2p
+- vowels: `a, a~, e, e~, E, i, i~, o, o~, O, u, u~`
+- consonants: `b, d, dZ, f, g, j, j~, J, k, l, L, m, n, p, r, R, s, S, t, tS, v, w, w~, X, z, Z`
+
+### RussianG2p
+- vowels: `a, aa, ay, ee, i, ii, ja, je, jo, ju, oo, u, uj, uu, y, yy`
+- consonants: `b, bb, c, ch, d, dd, f, ff, g, gg, h, hh, j, k, kk, l, ll, m, mm, n, nn, p, pp, r, rr, s, sch, sh, ss, t, tt, v, vv, z, zh, zz`
+
+### SpanishG2p
+- vowels: `a, e, i, o, u`
+- consonants: `b, B, ch, d, D, f, g, G, gn, I, k, l, ll, m, n, p, r, rr, s, t, U, w, x, y, Y, z`
