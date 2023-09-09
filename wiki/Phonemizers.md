@@ -597,7 +597,7 @@ If you only want to extend one syllable in the word, you can use either ``+*`` o
 #### Phoneme list
 Consonants: b, d, f, g, h, j, k, l, m, n, p, r, s, t, v, w, z, 4, D, N, S, T, Z, dZ, tS, ・, _
 
-Vowels: a, A, @, {, V, O, aU, aI, E, 3, eI, I, i, oU, OI, U, u, Q, Ol, Ql, aUn, e@, eN, IN, e, o, Ar, Qr, Er, Ir, Or, Ur, ir, ur, aIr, aUr, A@, Q@, E@, I@, O@, U@, i@, u@, aI@, aU@, @r, @l, @m, @n, @N, 1, e@m, e@n, y, I\, M, U\, Y, @\, @\`\, 3\`\, A\`\, Q\`\, E\`\, I\`\, O\`\, U\`\, i\`\, u\`\, aI\`\, aU\`\, }, 2, 3\, 6, 7, 8, 9, &, {\~\, I\~\, aU\~\, VI, VU, @U, i:, u:, O:, e@0, E\~\, e\~\, 3r, ar, or, {l, Al, al, El, Il, il, ul, Ul, mm, nn, ll, NN
+Vowels: a, A, @, {, V, O, aU, aI, E, 3, eI, I, i, oU, OI, U, u, Q, Ol, Ql, aUn, e@, eN, IN, e, o, Ar, Qr, Er, Ir, Or, Ur, ir, ur, aIr, aUr, A@, Q@, E@, I@, O@, U@, i@, u@, aI@, aU@, @r, @l, @m, @n, @N, 1, e@m, e@n, y, I\\, M, U\\, Y, @\\, @\`\, 3\`\, A\`\, Q\`\, E\`\, I\`\, O\`\, U\`\, i\`\, u\`\, aI\`\, aU\`\, }, 2, 3\, 6, 7, 8, 9, &, {\~\, I\~\, aU\~\, VI, VU, @U, i:, u:, O:, e@0, E\~\, e\~\, 3r, ar, or, {l, Al, al, El, Il, il, ul, Ul, mm, nn, ll, NN
 
 Among the phonemes are:
 - General X-SAMPA vowels. You can find more information about X-SAMPA [here](https://en.wikipedia.org/wiki/X-SAMPA);
