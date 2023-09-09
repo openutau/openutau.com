@@ -1,4 +1,4 @@
-This page is written for end users. Developers interested in working on new phonemizers should refer to the [API Doc](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/Api/README.md).
+This page is written for end users. Developers interested in working on new phonemizers should refer to the [API Doc](https://github.com/stakira/OpenUtau/wiki/Developing-new-phonemizers).
 
 When phonemizers break notes into multiple phonemes, you can adjust the envelopes and parameters for each of these independently.
 
