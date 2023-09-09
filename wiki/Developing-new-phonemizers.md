@@ -4,6 +4,11 @@
 - Read [Phonemizer API](https://github.com/stakira/OpenUtau/tree/master/OpenUtau.Core/Api)
 - For languages with multi-syllable words, read [SyllableBasedPhonemizer API](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Plugin.Builtin/SyllableBasedPhonemizer.cs)
 
+Heavily commented example implementations, from simplest to most complex:
+- [DefaultPhonemizer.cs](../DefaultPhonemizer.cs)
+- [JapaneseVCVPhonemizer.cs](../../OpenUtau.Plugin.Builtin/JapaneseVCVPhonemizer.cs)
+- [ArpasingPhonemizer.cs](../../OpenUtau.Plugin.Builtin/ArpasingPhonemizer.cs)
+
 ## Phonemizer API
 
 The main method to implement is:
@@ -17,6 +22,8 @@ public abstract Phoneme[] Process(Note[] notes, Note? prevNeighbour, Note? nextN
 Tips:
 - To load singer specific resouce, Implement resouce loading in SetSinger() and use singer.Location to look for files.
 - If uses expensive resource, load it lazily when the phonemizer is created the first time. Use your best adjudgement to decide its lifetime.
+
+The API is implemented in [OpenUtau.Core/Api/Phonemizer.cs](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/Api/Phonemizer.cs)
 
 ## Phonemizer Development Guidelines
 ### required features
@@ -60,6 +67,8 @@ The following G2ps are included in OpenUTAU:
 **Custom pronunciation dictionary**
 
 On the basis of G2p, considering that some voicebanks have custom phonemes, a phonemizer should support custom dictionaries. Custom dictionaries can be loaded using [G2pDictionary](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/Api/G2pDictionary.cs).
+
+No matter which encoding the voicebank uses, yaml dictionaries should always use UTF-8 encoding.
 
 Here is an example of custom dictionary:
 ```yaml
