@@ -595,15 +595,15 @@ If you only want to extend one syllable in the word, you can use either ``+*`` o
 ![Syllable extender notes](https://i.ibb.co/bd4w5NV/Lightning2.png)
 
 #### Phoneme list
-Consonants: b, d, f, g, h, j, k, l, m, n, p, r, s, t, v, w, z, **4**, D, N, S, T, Z, dZ, tS, **・**, _**(underscore)**_
+Consonants: b, d, f, g, h, j, k, l, m, n, p, r, s, t, v, w, z, 4, D, N, S, T, Z, dZ, tS, ・, _(underscore)_
 
-Vowels: a, A, @, {, V, O, aU, aI, E, 3, eI, I, i, oU, OI, U, u, **Q**, **Ol**, **Ql**, **aUn**, **e@**, **eN**, **IN**, e, o, **Ar**, **Qr**, **Er**, **Ir**, **Or**, **Ur**, **ir**, **ur**, **aIr**, **aUr**, **A@**, **Q@**, **E@**, **I@**, **O@**, **U@**, **i@**, **u@**, **aI@**, **aU@**, **@r**, **@l**, **@m**, **@n**, **@N**, **1**, **e@m**, **e@n**, **y**, **I\\**, **M**, **U\\**, **Y**, **@\\**, **@\`**, **3\`**, **A\`**, **Q\`**, **E\`**, **I\`**, **O\`**, **U\`**, **i\`**, **u\`**, **aI\`**, **aU\`**, **}**, **2**, **3\**, **6**, **7**, **8**, **9**, **&**, **{~**, **I~**, **aU~**, **VI**, **VU**, **@U**, **i:**, **u:**, **O:**, **e@0**, **E~**, **e~**, **3r**, **ar**, **or**, **{l**, **Al**, **al**, **El**, **Il**, **il**, **ul**, **Ul**, **mm**, **nn**, **ll**, **NN**
+Vowels: a, A, @, {, V, O, aU, aI, E, 3, eI, I, i, oU, OI, U, u, Q, Ol, Ql, aUn, e@, eN, IN, e, o, Ar, Qr, Er, Ir, Or, Ur, ir, ur, aIr, aUr, A@, Q@, E@, I@, O@, U@, i@, u@, aI@, aU@, @r, @l, @m, @n, @N, 1, e@m, e@n, y, I\, M, U\, Y, @\, @\`, 3\`, A\`, Q\`, E\`, I\`, O\`, U\`, i\`, u\`, aI\`, aU\`, }, 2, 3\, 6, 7, 8, 9, &, {\~, I\~, aU\~, VI, VU, @U, i:, u:, O:, e@0, E\~, e\~, 3r, ar, or, {l, Al, al, El, Il, il, ul, Ul, mm, nn, ll, NN
 
-Among the bolded vowels are:
+Among the phonemes are:
 - General X-SAMPA vowels. You can find more information about X-SAMPA [here](https://en.wikipedia.org/wiki/X-SAMPA);
 - Sounds used by the UTAU [Peiton](https://www.supergoodboi.com/peiton.html/)'s English voicebank, as well any other voicebanks that might use that list. By default, they only work through phonetic input, unless a custom dictionary is created;
 - Sounds used in Salem's S-CVVC English reclist;
-- English Vocaloid-style vowels (including Vocaloid 4+ extra vowels);
+- English Vocaloid-style sounds (including extra sounds found in Vocaloid 4 onward);
 - Canadian raising;
 - Alternate ways for rhoticization and nasalization.
 
