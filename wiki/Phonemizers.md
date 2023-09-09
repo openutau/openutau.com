@@ -555,10 +555,10 @@ breath : take a breath
 ### Setup
 This phonemizer is pretty similar to the Teto English phonemizer. However, there are a few important differences:
 - This phonemizer was made to support X-SAMPA-encoded English banks in general, not just Delta banks (and not only Kasane Teto, although her English bank is supported). Some examples are:
- - Split diphthongs, when applicable (this is a known feature of some Delta reclists);
- - Some alternate aliasing methods, outside of the Delta scope (e.g. English Vocaloid-style X-SAMPA);
- - Aliasing fallbacks, in case a voicebank merges some vowels;
- - Support for spaced CV's (similar to Arpasing/diphonic voicebanks), as in ``[C V]``;
+  - Split diphthongs, when applicable (this is a known feature of some Delta reclists);
+  - Some alternate aliasing methods, outside of the Delta scope (e.g. English Vocaloid-style X-SAMPA);
+  - Aliasing fallbacks, in case a voicebank merges some vowels;
+  - Support for spaced CV's (similar to Arpasing/diphonic voicebanks), as in ``[C V]``;
 - This phonemizer accepts VCV for all consonants (including clusters), if the voicebank contains them;
 - This phonemizer has support for some extra sounds that aren't in the dictionary by default, but should be supported through custom dictionaries and/or phonetic hints.
 
