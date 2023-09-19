@@ -1,0 +1,1 @@
+VOCALOID6 Shared Editor.app
