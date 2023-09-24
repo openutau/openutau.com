@@ -238,15 +238,13 @@ expressions:
 ```
 
 # Installing Wavtools
+External wavtools aren't supported on MacOS or Linux.
+
 ## Windows
 1. On your unzipped OpenUtau folder, locate the wavtool folder named `Wavtools`.
 2. Open the wavtool folder and place the downloaded wavtool on the folder.
 
 You can also install Wavtools by dragging and dropping the `.exe` file onto the main OpenUtau window and selecting "install as a Wavtool" (On version 0.1.119 and higher) 
-
-## macOS
-
-## Linux
 
 # Tested Wavtools and Directories
 This is a list of all UTAU wavtools tested with OpenUtau.
