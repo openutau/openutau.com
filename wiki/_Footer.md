@@ -1,1 +1,1 @@
-OpenUtau: a free, open-source editor made for the UTAU community.
+_OpenUtau: a free, open-source editor made for the UTAU community._
