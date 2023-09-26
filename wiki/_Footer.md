@@ -1,1 +1,1 @@
-VOCALOID6 Shared Editor.app
+OpenUtau: a free, open-source editor made for the UTAU community
