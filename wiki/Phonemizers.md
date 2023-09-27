@@ -34,24 +34,6 @@ If the syllables are misaligned, add numbers after `+` to force alignment to the
 - A copy of `arpasing.yaml` file can be added to singer folder for a specific singer. You can even distribute an `arpasing.yaml` file with your voicebank.
 - The lookup order is `plugin dictionary` -> `singer dictionary` -> `default dictionary`.
 
-## Teto English (English Delta CVVC)
-This phonemizer is not complete. Voicebanks that follow Kasane Teto's English voicebank's aliasing should work without issues (including banks recorded with Delta list #3.) Other Delta English lists will need extra phoneme editing to work. A phonemizer that properly supports every Delta list is planned.
-You can input lyrics the following ways:
-- Plain English words (eg. `live`)
-
-![delta eng](https://i.imgur.com/biB7yoF.png)
-- Word + phonetic hint (eg. `live[l I v]`)
-
-![delta wp](https://i.imgur.com/T5cJR38.png)
-- Phonetic hint (eg. `[l I v]`)
-
-![delta p](https://i.imgur.com/GHzWJyc.png)
-- Manual input (eg. `?- lI` `?I v-`)
-
-![delta manual](https://i.imgur.com/dFIzRiO.png)
-
-More information on Delta English can be found [here](https://tl.tubs.wtf/2020/11/09/delta-eng) if needed.
-
 ## ZH CVV (Chinese CVV)
 Lyrics should be written in pinyin. The phonemizer will insert endings for syllables that need them.  
 ![zh cvv](https://i.imgur.com/TJfiNit.png)
