@@ -54,6 +54,29 @@ Open `.vscode/launch.json`, change the "OpenUtau.dll" to the executable file nam
 
 Click "Run → Start Debugging"
 
+## Building in GitHub Codespaces
+GitHub Codespaces is an online linux environment provided by GitHub with a vscode webui. Users can access to GitHub Codespaces from any device with a browser.
+
+On OpenUtau's repo page, click "Code → Codespaces → +"
+
+![image](https://github.com/stakira/OpenUtau/assets/54425948/6063718d-a77b-47a7-b2d2-4cd0a043eef2)
+
+Open any .cs file under the `OpenUtau` folder, and click the Debug button
+
+![image](https://github.com/stakira/OpenUtau/assets/54425948/330c8926-a425-40e8-bd14-5354ed1c1766)
+
+Ports → Add Port → input `6080` → Open In Browser
+
+![image](https://github.com/stakira/OpenUtau/assets/54425948/136aad0a-affe-45aa-bde8-cf37325e3696)
+
+In the noVNC page poped up, connect → input `vscode`
+
+![image](https://github.com/stakira/OpenUtau/assets/54425948/b6510a2f-7e4b-4742-b6bc-d3629283dcc7)
+
+Successfully connected to the remote desktop of GitHub Codespaces.
+
+![image](https://github.com/stakira/OpenUtau/assets/54425948/3a0569da-bf01-4203-9af7-b7a7220ec7e8)
+
 ## Building from command line
 
 Navigate to the directory via command line
