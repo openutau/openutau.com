@@ -26,13 +26,22 @@ Tips:
 The API is implemented in [OpenUtau.Core/Api/Phonemizer.cs](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/Api/Phonemizer.cs)
 
 ## Phonemizer Development Guidelines
-### required features
+### Naming rule
+Usually a phonemizer's name is `<language> <type>` for classic phonemizers, and `<renderer> <language>` for machine-learning phonemizers.
+- Renderer is "vogen" or "nnsvs".
+- Language is the spoken language that the phonemizer sings in, such as "English", "Japanese". 
+- Type is the vb type supported by the phonemizer, such as "CVVC", "VCV".
+
+A phonemizer's tag is the abbreviation of the phonemizer's name. For example, the tag of "English Arpasing Phonemizer" is "EN ARPA"
+- The language should be abbreviated in programmer's style, such as `EN` and `JA` (as in `EN-US` and `JA-JP`). See [microsoft official documentation](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c) for the language code of each language.
+
+### Required Features
 A complete Phonemizer should:
 * Produce phonemes from the lyric, and previous / next notes if exist.
 * Distribute phonemes to positions relative to the first note of each group of notes.
 * (For Classic phonemizers) support multi-pitch and multi-color voicebanks.
 
-### Optional features
+### Optional Features
 Considering the characteristics of different languages, the phonemizer doesn't necessarily have to implement all the following features. However, implementing these features can maintain a consistent user experience across various phonemizers. 
 
 These features can be quickly implemented by inheriting a phonemizer template, such as [SyllableBasedPhonemizer](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Plugin.Builtin/SyllableBasedPhonemizer.cs).
