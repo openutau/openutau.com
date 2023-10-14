@@ -176,7 +176,8 @@ Phonemizer for Korean CV, [Korean CBNN](https://github.com/EX3exp/UTAU-Korean-CB
 ![image](https://github.com/stakira/OpenUtau/assets/100339835/8e94a40f-1287-4736-83f0-b1c435944e65)
 
 #### Ko-CV.ini
-```[CV]
+```
+[CV]
 Use rentan=False 
 Use 'shi' for '시'(otherwise 'si')=False
 Use 'i' for '의'(otherwise 'eui')=False
