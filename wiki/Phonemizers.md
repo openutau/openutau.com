@@ -138,19 +138,83 @@ Phonetic hints and Hangul can be used together, which may be useful for voiceban
 
 Although the phonemizer supports all Hangul jamo, it is strongly recommended to rewrite the lyrics in phonetic Hangul (such as the pronunciation guides on the Naver Korean Dictionary or Wiktionary) for best results, especially with words that go through consonant sound changes (ex. 입력 → 임녁, 꽃잎 → 꼰닙, 있어 → 이써, etc.).
 
-## KO CBNN (Korean Combination/CBNN)
-This phonemizer is for [Korean Combination reclist(조합식 한국어 리스트)](https://github.com/EX3exp/UTAU-Korean-CBNN). (Reclist & Phonemizer made by same person)<br>
-And this phonemizer bases on `KO CVC Phonemizer(by NANA)`.<br>
-<br>
-<img src="https://user-images.githubusercontent.com/100339835/216803418-7098136f-08cb-4b9e-b437-831625956fd8.png" height="350"/><br>
-<img src="https://user-images.githubusercontent.com/100339835/216803425-1634e6b9-92c3-40cc-978c-333db853881e.png" height="350"/>
-<img src="https://user-images.githubusercontent.com/100339835/216803424-9eccb60c-9ebf-4824-ba2b-ac7540a3991d.png" height="350"/><br>
-<br>
-- Supports Hangeul input.<br>
-- Uses `-` as end breath symbols. <br>
-- This phonemizer might apply some Phonological rules correctly, but sometimes it might misapply rules. <br>
-So it's recommended to insert lyric *as which it sounds.* (For example: insert `종로에서 국화꽃을 샀다` as `종노에서 구콰꼬츨 사따`)<br>
-- Others are just like `Default Phonemizer`.<br>
+## KO CV (Korean CV) & KO CBNN (Korean Combination/CBNN) 
+Phonemizer for Korean CV, [Korean CBNN](https://github.com/EX3exp/UTAU-Korean-CBNN). <br>
+한국어 단독음, [한국어 CBNN](https://github.com/EX3exp/UTAU-Korean-CBNN) 포네마이저의 설명입니다. <br>
+
+###  Common Features (공통 가이드)
+1. Supports almost all Korean phoneme variations, except `palatalization` and `ㄴ addition`. <br>
+`구개음화`와 `ㄴ첨가` 이외의 거의 모든 음운변동을 반영합니다. 
+![image](https://github.com/stakira/OpenUtau/assets/100339835/c13dfb89-6f5b-4cd9-bcd6-55559fa4ecdf) <br>
+
+2. Can extend phonemes by `+`. <br>
+`+`로 음소를 연장합니다. 
+![image](https://github.com/stakira/OpenUtau/assets/100339835/1c4d4c9a-2f8c-49e8-9861-07749f8cec85) <br>
+
+3. Can insert phonemes by `[` `]`. 
+- Supports flexible VV phoneme input.
+- (If phonemes include `a i`, but if current singer doesn't have `a i` (but has `i`) : Phonemizer automatically puts `i` instead of `a i` and vice versa.) <br> <br>
+`[`와 `]`를 사용해 발음 기호를 넣습니다.
+- 유연한 VV 음소 입력을 지원합니다.
+- (발음 기호에 `a i`가 포함되어 있지만 노래중인 음원에겐 `a i`가 없을 때, 음소화기가 자동으로 `a i`대신 `i`를 붙여줍니다. 반대도 성립합니다.)
+![image](https://github.com/stakira/OpenUtau/assets/100339835/8fae60c4-f677-4d36-b0b0-729cfa2b510d) <br>
+
+4. Supports two special phoneme symbols about phoneme variation, `!` and `.`. <br>
+음운변동을 조정하는 고유 발음기호 `!`와 `.`를 지원합니다. <br>
+
+- `!`(Ex: !가) : Ignores all phoneme variation regarding current note. Previour and next note will be not affected by current note which starts with `!`.
+- `!`(Ex: !가) : 현 노트와 연관된 모든 음운변동을 무시합니다. 현 노트는 이웃 노트들의 음운변동에서도 배제됩니다.
+
+![image](https://github.com/stakira/OpenUtau/assets/100339835/ed42c984-5a9d-40fc-a951-304d11d75b73) <br>
+
+- `.`(Ex: 가.) : Regard current note as *end of word*, and applies different phoneme variation rule.
+- `.`(Ex: 가.) : 현 노트에서 *단어가 끝난 것*으로 간주하고, 음운 변동을 알맞게 바꾸어 적용합니다.
+
+![image](https://github.com/stakira/OpenUtau/assets/100339835/2cce0c35-ff0e-4f86-8a16-4453ccd73514) <br>
+
+### KO CV (Korean CV)
+![image](https://github.com/stakira/OpenUtau/assets/100339835/8e94a40f-1287-4736-83f0-b1c435944e65)
+
+#### Ko-CV.ini
+```[CV]
+Use rentan=False 
+Use 'shi' for '시'(otherwise 'si')=False
+Use 'i' for '의'(otherwise 'eui')=False
+
+[BATCHIM]
+Use 'aX' instead of 'a X'=False
+```
+- Config file, to handle *various form of Korean CV voicebanks*.
+- If singer doesn't have `Ko-CV.ini`, it automatically generates file with default one. 
+- *형태가 다양한 한국어 단독음 음원*을 모두 다루기 위한 설정 파일입니다. 
+- 음원이 `Ko-CV.ini`를 보유하고 있지 않을 경우, 자동으로 파일이 생성됩니다. <br> <br>
+
+##### How to Use (가이드)
+- **Use rentan**: handles singer which is RENTAN. <br> 
+> Uses `- <CV>`(example: - ka) when *True*, otherwise not(example: ka). <br>
+> If `- <CV>` not exists when *True*, uses `<CV>` instead. 
+- **Use 'shi' for '시'(otherwise 'si')** : handles phoneme of `시`
+> Uses `shi` for input character `시` when *True*, otherwise not.(uses `si` for input character `시`). 
+- **Use 'i' for '의'(otherwise 'eui')** : handles phoneme of `의`
+> Uses `i` instead of  for vowel `ㅢ` when *True*, otherwise not.(uses `eui` for vowel `ㅢ`). <br>
+> If `eui` not exists when *False*, uses `i` instead.
+- **Use 'aX' instead of 'a X'** : handles Batchim phoneme's format.
+> Uses `<vowel><batchim>`(example: ang) when *True*, otherwise not.(uses `<vowel> <batchim>`(example: a ng)
+<br>  
+
+- **Use rentan** : 연단음 음원 여부. 
+> *True*이면`- <CV>`(예: - ka)사용, *False*이면 `<CV>`(예: ka)사용. <br>
+> 설정값이 *True*더라도, 음원이 `- <CV>`를 미보유했다면 상응하는 `<CV>`를 사용합니다.
+- **Use 'shi' for '시'(otherwise 'si')** : `시`의 발음기호 결정.
+> *True*이면 `시`에 `shi`를 사용, *False*이면 `시`에 `si`를 사용. <br> 
+- **Use 'i' for '의'(otherwise 'eui')** : `ㅢ`의 발음기호 결정.
+>  *True*이면 `ㅢ`에 `i` 사용, *False*이면 `ㅢ`에 `eui` 사용. <br>
+> 설정값이 *False*더라도, 음원이 `eui`를 미보유했다면 상응하는 `i`를 사용합니다.
+- **Use 'aX' instead of 'a X'** : 
+> *True*이면 받침 음소에 `<모음><받침>`(예: ang) 사용, *False*면 받침 음소에 `<vowel> <batchim>`(example: a ng)사용
+### KO CBNN (Korean CBNN)
+![image](https://github.com/stakira/OpenUtau/assets/100339835/86a9b181-7e59-4be4-8da7-45f9bc7c0238)
+
 
 ## PT-BR CVC (Brazilian Portuguese CVC)
 Made with [BRAPA](https://github.com/Team-BRAPA/BRAPA) conotation, this phonemizer uses a built-in G2P Dictionary. The main accent is the `Neutral`
