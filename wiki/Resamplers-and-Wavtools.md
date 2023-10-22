@@ -60,7 +60,7 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 | [TIPS.exe](http://scientistb.web.fc2.com/program/)  | ScientistB |   |
 | [tn_fnds.exe](http://z-server.game.coocan.jp/utau/utautop.html#tn_fnds) | Zteer |  |
 | [UDB](https://github.com/YuzukiTsuru/UDB/releases/tag/0.0.3.1) | YuzukiTsuru | UDB means UTAU Debug Engine.|
-| [vs4u.exe](http://ackiesound.ifdef.jp/download.html#vs4u) | Akky |  |
+| [vs4u.exe](http://ackiesound.ifdef.jp/download.html#vs4u) | AckieSound |  |
 | [w4u.exe](http://utau2008.xrea.jp/downloads/w4u001.zip) | Zany |   |
 | [WARP.exe](http://custom-made.seesaa.net/article/312530509.html) | Custom.Maid | |
 | [wn4u.exe](https://utaforum.net/threads/world4utau-update.20035/) | Zany | [See adjustments for compatibility.](https://github.com/stakira/OpenUtau/wiki/Resamplers-and-Wavtools#compatible-with-adjustments) |
@@ -79,7 +79,7 @@ This is a list of all UTAU resamplers tested with OpenUtau.
     - Oversized Audio Model Attention
 
 # Resampler Manifest
-Resampler manifest is the yaml file used to store the expressions supporrted by a resampler. With resampler manifests, users can add all the flags in `Expressions -> Add all expressions suggested by renderers`.
+Resampler manifest is the yaml file used to store the expressions supported by a resampler. With resampler manifests, users can add all the flags in `Expressions -> Add all expressions suggested by renderers`.
 
 <img width="453" alt="image" src="https://user-images.githubusercontent.com/54425948/227085816-4cced732-98dd-4c76-bc40-9a94f971a066.png">
 
