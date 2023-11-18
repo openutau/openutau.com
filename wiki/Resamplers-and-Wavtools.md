@@ -1,11 +1,14 @@
 # Installing Resamplers
 ##  Windows
 
-File must be in `.exe` and can be placed in subfolders.
-1. On your unzipped OpenUtau folder, locate the resampler folder named `Resamplers`.
-2. Open the resampler folder and place the resampler on the folder.
+Resampler must be an executable (`.exe`). Resamplers can be placed in subfolders inside the `Resamplers` folder.
+1. In the OpenUtau folder, locate the resampler folder named `Resamplers`.
+2. Open the resampler folder and place the resampler in the folder.
 
-You can also install Resamplers by dragging and dropping the `.exe` file onto the main OpenUtau window and selecting "install as a Resampler" (On version 0.1.119 and higher) 
+In OpenUtau version 0.1.119 or higher, resamplers can be installed by dragging and dropping the `.exe` file onto the main OpenUtau window and selecting "Install as resampler".
+
+<img src="https://github.com/stakira/OpenUtau/assets/18076904/1a13d37d-b472-451d-b24a-e984b095bd4a" height="250">
+
 
 ## macOS
 
@@ -17,27 +20,32 @@ As of macOS 11.6, the below method works.
 brew tap gcenx/wine
 brew install --cask --no-quarantine wine-crossover
 ```
-3. Download "mac_additional.zip" from [release page](https://github.com/stakira/OpenUtau/releases/tag/OpenUtau-Latest). Use the .sh script to wrap your exe. You will need to edit the .sh script to work with each resampler.
+3. Download "mac_additional.zip" from the [release page](https://github.com/stakira/OpenUtau/releases/tag/OpenUtau-Latest).
+4. Use the `moresampler.sh` script inside the `mac_additional.zip` to wrap the resampler: Replace `moresampler-0.8.4/moresampler.exe` with the filename of the resampler.
+
+This script will need to be added to the `Resamplers` folder and edited for every `.exe` resampler that is added.
 
 ## Linux
 
 For wrapping Windows resamplers into Linux, use this method:
 
 1. Install [Wine](https://www.winehq.org/)
-2. Open Resamplers folder (should be on /home/your_username/OpenUtau/Resamplers/)
-3. Create a new text file with the name of your resampler (don't need to have a file extension). Open, add and edit this script:
+2. Open the `Resamplers` folder (should be on /home/your_username/OpenUtau/Resamplers/)
+3. Create a new text file with the name of your resampler (no file extension required). 
+4. Open the text file and add this script.
 ```
 #!/bin/bash
 LANG="ja_JP.UTF8" wine "/absolute/path/to/your/resampler.exe" "${@,-1}"
 ```
-4. Restart or execute OpenUtau.
+5. Change `"/absolute/path/to/your/resampler.exe"` to the filename of the resampler.
+6. Restart OpenUtau.
 
 # Tested Resamplers and Directories
 This is a list of all UTAU resamplers tested with OpenUtau.
 
 |  Resampler |  Author  |  Additional Notes |
 | ------------ | ------------ | ------------ |
-|  worldline  | StAkira  |   OpenUtau built-in on all platforms. |
+|  worldline  | StAkira  |   Built into OpenUtau. Works on all platforms. |
 |  [bkh01.exe](http://z-server.game.coocan.jp/utau/utautop.html#bkh01) |  Zteer |   |
 |  [doppeltler32.exe](http://utau2008.xrea.jp/2020/engine/) | Ameya  |   |
 |  [doppeltler64.exe](http://utau2008.xrea.jp/2020/engine/) | Ameya |   |
@@ -69,23 +77,23 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 ## Compatible with adjustments
 
 - [moresampler.exe](https://bowlroll.net/file/139123)
-  - Add `moresampler.exe` without `moreconfig.txt` in `Resamplers` folder
-  - Add `moresampler.exe` with unmodified `moreconfig.txt` in `Wavtools` folder
-  - Now you should able to use it either as resampler only, or as both wavtool and resampler.
+  - Add `moresampler.exe` to the `Resamplers` folder. Do not put a `moreconfig.txt` in the `Resamplers` folder.
+  - Add `moresampler.exe` and the default `moreconfig.txt` to the `Wavtools` folder.
+  - Moresampler should now function as either resampler only, or as both wavtool and resampler.
 - [[SpaceWorld_win64.exe|https://github.com/LovelyA72/SpaceWorld/releases]] and [[wn4u.exe|https://utaforum.net/threads/world4utau-update.20035/]]
-    - May experience issues if the voicebank doesn't have frq files generated beforehand. SpaceWorld version 1.0.1 prevents the software from crashing in case of a missing frq file.
+    - May experience issues if the voicebank is missing any frq files. SpaceWorld version 1.0.1 will not crash in the event of a missing frq file.
 - [[lessampler|https://github.com/YuzukiTsuru/lessampler/releases/]]
     - In development, lack of flag support
     - Oversized Audio Model Attention
 
 # Resampler Manifest
-Resampler manifest is the yaml file used to store the expressions supported by a resampler. With resampler manifests, users can add all the flags in `Expressions -> Add all expressions suggested by renderers`.
+A resampler manifest is a YAML file used to store the expressions supported by a resampler. With resampler manifests, users can add all of a resampler's supported flags at once using the `Add all expressions suggested by renderers` button in the `Expressions` editor.
 
 <img width="453" alt="image" src="https://user-images.githubusercontent.com/54425948/227085816-4cced732-98dd-4c76-bc40-9a94f971a066.png">
 
-Resampler manifests should have the same name and path with the resampler executable but with `.yaml` file extension. For example, the resampler manifest for `moresampler.exe` should be `moresampler.yaml` located in the same folder with moresampler.exe.
+Resampler manifests should have the same name as the resampler executable, stored in the same folder. The manifest must have a `.yaml` file extension. For example, the resampler manifest for `moresampler.exe` should be `moresampler.yaml` located in the same folder with `moresampler.exe`.
 
-Here is a full example of moresampler.yaml. To make a resampler manifest, you can also set up the flags in an .ustx file, open it with a text editor and copy the "expressions" part.
+Below is a full example of a resampler manifest for Moresampler. To create a resampler manifest with OpenUtau, add the resampler's expressions to any `.ustx` project file. Open the project file in a text editor and copy the `expressions:` section into a blank manifest file.
 ```yaml
 expressions:
   gen:
@@ -238,21 +246,26 @@ expressions:
 ```
 
 # Installing Wavtools
-External wavtools aren't supported on MacOS or Linux.
 
 ## Windows
 1. On your unzipped OpenUtau folder, locate the wavtool folder named `Wavtools`.
 2. Open the wavtool folder and place the downloaded wavtool on the folder.
 
-You can also install Wavtools by dragging and dropping the `.exe` file onto the main OpenUtau window and selecting "install as a Wavtool" (On version 0.1.119 and higher) 
+In OpenUtau version 0.1.119 or higher, wavtools can be installed by dragging and dropping the `.exe` file onto the main OpenUtau window and selecting "Install as wavtool".
+
+<img src="https://github.com/stakira/OpenUtau/assets/18076904/1a13d37d-b472-451d-b24a-e984b095bd4a" height="250">
+
+## macOS / Linux
+
+External wavtools are not supported on macOS or Linux at this time.  
 
 # Tested Wavtools and Directories
-This is a list of all UTAU wavtools tested with OpenUtau.
+Below is a list of all UTAU wavtools tested with OpenUtau.
 
 | Wavtool | Author | Additonal Notes |
 | --------- | -------- | ------------------ |
-| simple | StAkira | OpenUtau built-in on all platforms. |
-| convergence | StAkira | OpenUtau built-in on all platforms. Phase compensation implemented.|
+| simple | StAkira | Built into OpenUtau. Works on all platforms. |
+| convergence | StAkira | Also built into OpenUtau. Uses phase compensation.|
 | [moresampler.exe](https://bowlroll.net/file/139123) | Kanru Hua | [See adjustments for compatibility.](https://github.com/stakira/OpenUtau/wiki/Resamplers-and-Wavtools#compatible-with-adjustments) |
 | [wavtool64](http://utau2008.xrea.jp/2020/engine/wavtool64.zip) | Ameya | |
 | [wavtool4vcv](https://www.mediafire.com/file/1iwrak88c6xzb87/wavtool4vcv20141202.zip/file) | nmasao | |
