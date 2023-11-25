@@ -850,9 +850,7 @@ Usually, the phonemizer prioritizes VCV over anything else, however there are a 
 
 ### Other functions
 #### Consonant velocity
-Similarly to the Japanese CVVC Phonemizer, Japanese Presamp Phonemizer and Chinese CVVC phonemizer, the length of VC (and CC) samples can be changed by changing the consonant velocity of the base CV note:
-
-![Showcasing velocity change](https://i.ibb.co/CVTgk6k/Velocity.gif)
+Similarly to the Japanese CVVC Phonemizer, Japanese Presamp Phonemizer and Chinese CVVC phonemizer, the length of VC (and CC) samples can be changed by changing the consonant velocity of the base CV note.
 
 #### Extra sounds
 The phonemizer supports the following extra sounds: f, v, z, ts, sh
