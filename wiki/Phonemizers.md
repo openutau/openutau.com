@@ -816,7 +816,7 @@ This phonemizer is for making Japanese banks sing Korean, like so:
 
 **CVVC:**
 
-![Testing Hangul input with Japanese CVVC voicebank](https://i.ibb.co/DYZ7zz7/Hangul-Test-Cvvc.png)
+![Testing Hangul input with Japanese CVVC voicebank](https://i.ibb.co/rdRQk0t/Hangul-Test-Cvvc.png)
 
 **VCV+CVVC:**
 
