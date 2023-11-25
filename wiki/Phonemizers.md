@@ -828,7 +828,7 @@ This phonemizer is for making Japanese banks sing Korean, like so:
 
 As you can see, crossfade aliases are supported, this includes final consonants.
 
-The best result is given with either a CVVC voicebank or a VCV+CVVC mixed voicebank.
+The best result is given with either a CVVC voicebank or a VCV+CVVC mixed voicebank. For CV and VCV, it's advices to adjust the length of the final consonant manually until it sounds good.
 
 Note that Korean [sandhi](https://en.wikipedia.org/wiki/Sandhi) (liaison) rules are not implemented, due to being complicated to code. Because of this, it's advised to use use pronunciation-based spelling for Hangul input. (This is similar to the Korean VCV Phonemizer, on which a lot of the code was based.)
 
