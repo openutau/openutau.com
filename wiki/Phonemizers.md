@@ -799,11 +799,63 @@ You can also opt for pure phonetic input instead, it works the same as above exc
 ![Showcasing pure phonetic input](https://i.ibb.co/tQPZ93W/Phonetic-Hint2.png)
 
 ### Phoneme list
-Vowels: a, 6, e, E, 2, i, I, y, Y, u, U, o, O, @, aU, OY, aI
+Vowels: a, 6, e, E, 2, 9, i, I, y, Y, u, U, o, O, @, aU, OY, aI
 
 Consonants: -, b, C, d, f, g, h, j, k, kh, l, m, n, N, p, ph, R;, s, S, t, th, v, x, z, Z, dZ, ks, pf, st, St, tS, w
 
 Please note that at this time, custom vowels are not supported in user dictionaries, though custom consonants are.
+
+## Korean-to-Japanese Phonemizer
+### Description
+#### Input
+This phonemizer is for making Japanese banks sing Korean, like so:
+
+**CV (with crossfade):**
+
+![Testing Hangul input with Japanese CV voicebank](https://i.ibb.co/DYZ7zz7/Hangul-Test-Cv.png)
+
+**CVVC:**
+
+![Testing Hangul input with Japanese CVVC voicebank](https://i.ibb.co/DYZ7zz7/Hangul-Test-Cvvc.png)
+
+**VCV+CVVC:**
+
+![Testing Hangul input with Japanese VCV+CVVC voicebank](https://i.ibb.co/MGDP5YY/Hangul-Test-Mix.png)
+
+**VCV:**
+
+![Testing Hangul input with Japanese VCV voicebank](https://i.ibb.co/HFTF4rb/Hangul-Test-Vcv.png)
+
+As you can see, crossfade aliases are supported, this includes final consonants.
+
+Note that Korean [sandhi](https://en.wikipedia.org/wiki/Sandhi) (liaison) rules are not implemented, due to being complicated to code. Because of this, it's advised to use use pronunciation-based spelling for Hangul input. (This is similar to the Korean VCV Phonemizer, on which a lot of the code was based.)
+
+Instead of Hangul input, phonetic hint is also possible (note that this is based on Japanese phonemes, since those are the ones being used):
+
+![Testing phonetic hint input](https://i.ibb.co/fCTQfWT/Phonetic-Hint.png)
+
+Note that diphthongs are treated as a separate vowel:
+
+![Testing phonetic hint diphthongs](https://i.ibb.co/WfN0H6p/Phonetic-Hint2.png)
+
+As you can also see, it will use ``しゃ`` for this particular instance; this has to do with Korean pronunciation, which has similar [palatalization](https://en.wikipedia.org/wiki/Palatalization_(phonetics)) rules as Japanese.
+
+##### Romaja-based Hangul QWERTY keyboard for Windows
+For non-Korean users on Windows who'd like to use Hangul, I can recommend the [Nalgaeset Input System](http://moogi.new21.org/en/ngs/index.htm). This way, you can easily type Hangul with a QWERTY keyboard layout, based on Revised Romanization. (You can also create your own layout, e.g. QWERTZ- or AZERTY-based.) This is also convenient for the other Korean phonemizers.
+
+### Mechanism
+Usually, the phonemizer prioritizes VCV over anything else, however there are a few exceptions:
+- Syllables featuring _batchim_ (final consonants, so essentially closed syllables). It will use a VC alias if present, else it will look for VCV, then a crossfade alias, and finally CV.
+- Fallbacks. Let's just say ``くぁ`` is present in the oto, but only as a CV alias. VCV only has e.g. ``a か``. In this case, it will use the CV ``くぁ`` over the VCV, due to having more accurate pronunciation. It will also insert a VC if present.
+
+### Other functions
+#### Consonant velocity
+Similarly to the Japanese CVVC Phonemizer, Japanese Presamp Phonemizer and Chinese CVVC phonemizer, the length of VC (and CC) samples can be changed by changing the consonant velocity of the base CV note:
+
+![Showcasing velocity change](https://i.ibb.co/CVTgk6k/Velocity.gif)
+
+#### Extra sounds
+The phonemizer supports the following extra sounds: f, v, z, ts, sh
 
 ## Other phonemizers
 Here is a list of separately distributed phonemizers for OpenUtau. To install, place the `.dll` file in the Plugins folder of your OpenUtau installation.
