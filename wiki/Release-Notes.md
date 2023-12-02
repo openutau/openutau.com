@@ -1,10 +1,22 @@
-# ~[0.1.158](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.158) (06-11-2023)
+# [0.1.158](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.158)~[0.1.157b](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.157) (06-19-2023)
 
 ## Major Changes
 - [d60f403](https://github.com/stakira/OpenUtau/commit/d60f403) - Upgrade to avalonia 11 ([@stakira](https://github.com/stakira))
     - Version upgrade + series of fixes to breaking changes. See `Misc` for further relevant commits.
     - Keep an eye out for bugs!
 - [08d7693](https://github.com/stakira/OpenUtau/commit/08d7693) - Installer version available (nsis installer) ([@stakira](https://github.com/stakira))
+- [#738](https://github.com/stakira/OpenUtau/pull/738) - Solo and Mute Improvements - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#746](https://github.com/stakira/OpenUtau/pull/746) - Add a dialog when installing .dll phonemizers ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+    - Added a dialog when installing .dll phonemizers because hackers can disguise .dll as .ustx
+![Screenshot of dialogue reading "Installing phonemizer"](https://i.imgur.com/KDNq1jd.png)
+
+## Bug Fixes
+- [b020209](https://github.com/stakira/OpenUtau/commit/b020209) - fix UST tempo parsing ([@stakira](https://github.com/stakira))
+- [ee91432](https://github.com/stakira/OpenUtau/commit/ee91432) - Fix nullness in release configuration ([@stakira](https://github.com/stakira))
+- [78fc333](https://github.com/stakira/OpenUtau/commit/78fc333) - Fix tab key for lyric box ([@stakira](https://github.com/stakira))
+- [91bc579](https://github.com/stakira/OpenUtau/commit/91bc579) - Fix Mac build ([@stakira](https://github.com/stakira))
+- [5a47b79](https://github.com/stakira/OpenUtau/commit/5a47b79) + [bf0c8be](https://github.com/stakira/OpenUtau/commit/bf0c8be) + [22a674f](https://github.com/stakira/OpenUtau/commit/22a674f) - UI fixes 
+- [8c92eb3](https://github.com/stakira/OpenUtau/commit/8c92eb3) - fix crash scrolling slightly beyond bottom note ([@stakira](https://github.com/stakira))
 
 ## Phonemizer Changes
 - [#736](https://github.com/stakira/OpenUtau/pull/736) - `VOGEN` Fix consonant timing ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
@@ -12,49 +24,26 @@
 - [#732](https://github.com/stakira/OpenUtau/pull/732) - `ES VCCV` Code and function optimization ([@lottev1991](https://github.com/lottev1991))
 - [#734](https://github.com/stakira/OpenUtau/pull/734) - `JA CVVC` Read CV append voice color ([@lottev1991](https://github.com/lottev1991))
 - [#737](https://github.com/stakira/OpenUtau/pull/737) - `VIE VCV` Phonemizer Update ([@lottev1991](https://github.com/lottev1991))
+- [#743](https://github.com/stakira/OpenUtau/pull/743) - `KO CVC` Fix tense consonant VC + add batchim end breath support ([@lottev1991](https://github.com/lottev1991))
+- [#745](https://github.com/stakira/OpenUtau/pull/745) - `FR VCCV` Starting - CC and ending CC - behaviour fix ([@mmemim](https://github.com/mmemim))
+
+## Translations
+- [#747](https://github.com/stakira/OpenUtau/pull/747) - fix translations ([@maiko3tattun](https://github.com/maiko3tattun))
 
 ## Misc
 - [704b54c](https://github.com/stakira/OpenUtau/commit/704b54c) - Clean up views ([@stakira](https://github.com/stakira))
 - [723109f](https://github.com/stakira/OpenUtau/commit/723109f) - Fix pianoroll interactions ([@stakira](https://github.com/stakira))
-- [395a182](https://github.com/stakira/OpenUtau/commit/395a182) - Fix locales and themes ([@stakira](https://github.com/stakira))
 - [1e1a052](https://github.com/stakira/OpenUtau/commit/1e1a052) - Rewrite oto view ([@stakira](https://github.com/stakira))
 - [d33a440](https://github.com/stakira/OpenUtau/commit/d33a440) - Better waveform drawing  ([@stakira](https://github.com/stakira))
-- [5a47b79](https://github.com/stakira/OpenUtau/commit/5a47b79) + [bf0c8be](https://github.com/stakira/OpenUtau/commit/bf0c8be) + [22a674f](https://github.com/stakira/OpenUtau/commit/22a674f)- UI fixes ([@stakira](https://github.com/stakira))
+([@stakira](https://github.com/stakira))
 - [839ac40](https://github.com/stakira/OpenUtau/commit/839ac40) - Fix dropping file  ([@stakira](https://github.com/stakira))
 - [8227dee](https://github.com/stakira/OpenUtau/commit/8227dee) - Update packages, refactor file picker and nullness ([@stakira](https://github.com/stakira))
-- [ee91432](https://github.com/stakira/OpenUtau/commit/ee91432) - Fix nullness in release configuration ([@stakira](https://github.com/stakira))
-- [78fc333](https://github.com/stakira/OpenUtau/commit/78fc333) - Fix tab key for lyric box ([@stakira](https://github.com/stakira))
-- [91bc579](https://github.com/stakira/OpenUtau/commit/91bc579) - Fix Mac build ([@stakira](https://github.com/stakira))
 - [a52c64d](https://github.com/stakira/OpenUtau/commit/a52c64d) - Add select singer type step to install ([@stakira](https://github.com/stakira))
 - [a227d56](https://github.com/stakira/OpenUtau/commit/a227d56) - tweak singer setup view ([@stakira](https://github.com/stakira))
-
-***
-
-# ~[0.1.129](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.129) (06-03-2023)
-
-## Features
-- [#718](https://github.com/stakira/OpenUtau/pull/718) - SimpleENUNU Support ([@rokujyushi](https://github.com/rokujyushi))
-    - You can now load SimpleENUNU models in OpenUtau! Note: currently, there is no support for SingingStyle.
-    - To use SimpleENUNU within OpenUtau, please download SimpleENUNUServer: https://github.com/rokujyushi/SimpleEnunu/releases/tag/SimpleEnunu-OpenUtau-0.1.0 <br>
-        ![image showing Ritsu CrissCross and other SimpleENUNU models in the singer selection window](https://user-images.githubusercontent.com/93469977/241399775-a0af7ef2-acb9-4a83-abf2-f26bc7a967da.png)
-- [#723](https://github.com/stakira/OpenUtau/pull/723) - Add Track Name ([@maiko3tattun](https://github.com/maiko3tattun))
-    - Allows users to name tracks as a whole!
-    - In addition, a track is now set at start up, track names are now referenced by default in wav exports, and part names are referenced in legacy UST exports.  
-![image showing new track names feature](https://i.imgur.com/g4q6i3W.png)
-
-## Bug Fixes
-- [bda13a6](https://github.com/stakira/OpenUtau/commit/bda13a6) - Fix updater dialog crash  ([@stakira](https://github.com/stakira))
-
-## Translations
-- [#725](https://github.com/stakira/OpenUtau/pull/725) - Fix Japanese translations (improved) ([@maiko3tattun](https://github.com/maiko3tattun))
-
-## Misc
-- [7b53731](https://github.com/stakira/OpenUtau/commit/7b53731) - Fix PluginRunnerTest  ([@stakira](https://github.com/stakira))
-- [#727](https://github.com/stakira/OpenUtau/pull/727) - Fix expression selection changes when reloading part ([@maiko3tattun](https://github.com/maiko3tattun))
-- [07ec981](https://github.com/stakira/OpenUtau/commit/07ec981) - Save piano roll toggles in prefs ([@stakira](https://github.com/stakira))
-    - The "show waveform/pitch/phoneme/vibrato/etc" toggles on the piano roll should be persistent now.
-- [1c6e760](https://github.com/stakira/OpenUtau/commit/1c6e760) - Tweak track header ([@stakira](https://github.com/stakira))
-- [e21b836](https://github.com/stakira/OpenUtau/commit/e21b836) - Silence pan logging ([@stakira](https://github.com/stakira))
+- [#748](https://github.com/stakira/OpenUtau/pull/748) + [#747](https://github.com/stakira/OpenUtau/pull/747) - Changed the behavior of DrawPitchTool (RE) ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#742](https://github.com/stakira/OpenUtau/pull/742) - Display ENUNU phonemes in the SingersList ([@rokujyushi](https://github.com/rokujyushi))
+    - Allows ENUNU phoneme information (from .hed files) to be seen in the singer window. This works even without a dummy voicebank (wav + oto.ini) packaged with the model.
+- [#633](https://github.com/stakira/OpenUtau/pull/633) - Update README ([@CarpetBook](https://github.com/CarpetBook))
 
 ***
 
