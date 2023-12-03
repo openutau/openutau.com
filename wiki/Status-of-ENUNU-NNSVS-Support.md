@@ -1,8 +1,13 @@
 - Note: ENUNU/NNSVS support is **experimental**. There will be quirks. Be **patient**. Be **ready to troubleshoot**.
 - Note: **This page will change regularly**.
 
-## About SimpleENUNU
-Download SimpleENUNUServer [here](https://github.com/rokujyushi/SimpleEnunu/releases/tag/SimpleEnunu-OpenUtau-0.1.0).  
+- Version list of ENUNU for OpenUtau (Click here to download)
+  - Official [ENUNU for OpenUtau](https://github.com/stakira/ENUNU/releases) (ENUNU-0.4.0)
+  - Unofficial [ENUNUServer](https://github.com/rokujyushi/ENUNU/releases) (ENUNU-0.6.0)
+  - Unofficial [SimpleENUNUServer](https://github.com/rokujyushi/SimpleEnunu/releases) (SimpleEnunu-0.1.0+0.local.9.1)
+
+## How to use (0.1.327)
+Download [SimpleENUNUServer](https://github.com/rokujyushi/SimpleEnunu/releases).
 
 ## How to use (0.1.129)
 For SimpleENUNU compatible models, please add the following to character.yaml.
