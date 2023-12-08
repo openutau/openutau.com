@@ -27,7 +27,7 @@ git clone https://github.com/stakira/OpenUtau.git
 ```
 
 ## Building in Visual Studio
-Visual Studio is an IDE for .NET that supports Windows and MacOS.
+Visual Studio is an IDE for .NET that supports Windows.
 
 Download and install Visual Studio Community 2022 from [Visual Studio Official Website](http://visualstudio.microsoft.com/). Choose ".NET Desktop Development" workload when installing.
 
