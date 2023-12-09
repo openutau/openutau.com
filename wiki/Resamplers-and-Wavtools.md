@@ -65,6 +65,7 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 | [phaavoco.exe](http://utau2008.xrea.jp/2020/engine/phaavoco001.zip) | Ameya |   |
 | resampler.exe  | Ameya  | UTAU built-in resampler.  |
 | [SpaceWorld_win64.exe](https://github.com/LovelyA72/SpaceWorld/releases) | LovelyA72 | [See adjustments for compatibility.](https://github.com/stakira/OpenUtau/wiki/Resamplers-and-Wavtools#compatible-with-adjustments) |
+|[StrayCat.exe](https://github.com/Astel123457/straycat) | Astel123457 |   |
 | [TIPS.exe](http://scientistb.web.fc2.com/program/)  | ScientistB |   |
 | [tn_fnds.exe](http://z-server.game.coocan.jp/utau/utautop.html#tn_fnds) | Zteer |  |
 | [UDB](https://github.com/YuzukiTsuru/UDB/releases/tag/0.0.3.1) | YuzukiTsuru | UDB means UTAU Debug Engine.|
