@@ -42,7 +42,7 @@ This is a known bug when updating OpenUtau from version 0.1.90. See the [Release
 ### On Windows, it says "Unable to load DLL 'worldline' or one of its dependencies" or "DLL was not found".
 Install the [latest Visual C++ Redistributable](https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170).
 
-### I get the wordline.dll error "There is no application set to open the document [...]" when trying to switch to the worldline resampler mid-project.
+### I get the worldline.dll error "There is no application set to open the document [...]" when trying to switch to the worldline resampler mid-project.
 The worldline resampler only works when either "convergence or "simple" are selected as the wavtool. This is also the case when switching resamplers mid-project. Change the wavtool to either of these options and the error should go away.
 
 ### On macOS, when I try to run OpenUtau, it says "This app is damaged".
