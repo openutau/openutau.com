@@ -864,3 +864,4 @@ Here is a list of separately distributed phonemizers for OpenUtau. To install, p
 * [Korean CVVC+ Phonemizer](https://github.com/lottev1991/Korean-CVVC-Plus-Phonemizer/releases) by Lotte V
 * [SHO Phonemizer](https://github.com/adlez27/OpenUtau/releases/tag/SHO-0.1.1) by adlez27
 * [Teto English Phonemizer](https://github.com/adlez27/OpenUtau/releases/tag/Teto-0.1.0)  by adlez27
+* [Syllable-based ARPAsing Phonemizer (ARPA+)](https://github.com/Cadlaxa/Syllable-Based-ARPAsing-Phonemizer) by Cadlaxa
