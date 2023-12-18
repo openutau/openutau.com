@@ -172,6 +172,15 @@ To zoom vertically, hover your cursor over the vertical zoom icon and scroll.
 
 ![verti zoom](https://i.imgur.com/a8IE9W2.gif)
 
+### Transcribe audio to notes
+OpenUtau can autometically transcribe wave parts to note parts.
+
+Before using, please download the model from [here](https://github.com/xunmengshe/OpenUtau/releases/download/0.0.0.0/some-0.0.1.oudep) and install it using "Tools → Install Dependency (.oudep)"
+
+Right click on a wave part and click "Transcribe audio to create a note part". The transcription process takes about 1 minute.
+
+The model is trained on clean solo vocal, so it works best on this kind of audio. It may not work well on music with instrumental or with heavy reverberation.
+
 ## Notes
 Toggle tips using the question mark button or pressing `T` on the keyboard.
 
