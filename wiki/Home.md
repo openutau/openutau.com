@@ -16,7 +16,7 @@ Welcome to the OpenUtau wiki!
 * [Legacy Plugins](https://github.com/stakira/OpenUtau/wiki/Legacy-Plugins)
 
 ### Advanced
-* [tech note: character.yaml](https://github.com/stakira/OpenUtau/wiki/tech-note:-character.yaml)
+* [[tech note ‐ character.yaml]]
 * [Status of ENUNU NNSVS Support](https://github.com/stakira/OpenUtau/wiki/Status-of-ENUNU-NNSVS-Support)
 * [DiffSinger support](https://github.com/stakira/OpenUtau/wiki/DiffSinger-support)
 * [Release Notes](https://github.com/stakira/OpenUtau/wiki/Release-Notes)
@@ -24,5 +24,5 @@ Welcome to the OpenUtau wiki!
 ### For developers
 * [Compiling from source](https://github.com/stakira/OpenUtau/wiki/Compiling-from-source)
 * [Developing new phonemizers](https://github.com/stakira/OpenUtau/wiki/Developing-new-phonemizers)
-* [[PROPOSAL] svs.json: singing voice synthesis backend API](https://github.com/stakira/OpenUtau/wiki/%5BPROPOSAL%5D-svs.json:-singing-voice-synthesis-backend-API)
-* [tech note: music is music, phonetics is phonetics (also why you don't need legacy plugins)](https://github.com/stakira/OpenUtau/wiki/tech-note:-music-is-music,-phonetics-is-phonetics-(also-why-you-don't-need-legacy-plugins))
+* [[ [PROPOSAL] svs.json ‐ singing voice synthesis backend API]]
+* [[tech note ‐ music is music, phonetics is phonetics (also why you don't need legacy plugins)]]
