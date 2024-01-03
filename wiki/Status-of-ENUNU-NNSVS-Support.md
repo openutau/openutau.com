@@ -3,11 +3,25 @@
 
 - Version list of ENUNU for OpenUtau (Click here to download)
   - Official [ENUNU for OpenUtau](https://github.com/stakira/ENUNU/releases) (ENUNU-0.4.0)
-  - Unofficial [ENUNUServer](https://github.com/rokujyushi/ENUNU/releases) (ENUNU-0.6.0)
-  - Unofficial [SimpleENUNUServer](https://github.com/rokujyushi/SimpleEnunu/releases) (SimpleEnunu-0.1.0+0.local.9.1)
+  - Unofficial [ENUNUServer](https://github.com/rokujyushi/ENUNU/releases) (ENUNU-0.6.0 ...)
+  - Unofficial [SimpleENUNUServer](https://github.com/rokujyushi/SimpleEnunu/releases) (SimpleEnunuServer-0.2.0+0.local.9.1 ...)
 
-## How to use (0.1.327)
+## How to use (0.1.327~)
 Download [SimpleENUNUServer](https://github.com/rokujyushi/SimpleEnunu/releases).
+
+If there is a problem with the operation, please put the following in **config.yaml**.  
+If you do not want to perform timing correction, delete the timing_editor line.  
+If you turn off the wav_synthesizer setting, you can edit the Pitch, but the quality is very low.  
+```
+extensions:
+    timing_editor: "%v/timing_auto_correct/enunu_timing_auto_correct.py"
+    wav_synthesizer: synthe
+    acoustic_calculator: nnsvs
+    timing_calculator: nnsvs
+    ust_converter: built-in
+
+```
+
 
 ## How to use (0.1.129)
 For SimpleENUNU compatible models, please add the following to character.yaml.
