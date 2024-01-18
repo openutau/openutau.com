@@ -78,8 +78,8 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 ## Compatible with adjustments
 
 - [moresampler.exe](https://bowlroll.net/file/139123)
-  - Add `moresampler.exe` to the `Resamplers` folder. Do not put a `moreconfig.txt` in the `Resamplers` folder.
-  - Add `moresampler.exe` and the default `moreconfig.txt` to the `Wavtools` folder.
+  - Add `moresampler.exe` and the default `moreconfig.txt` to the `Resamplers` folder.
+  - Add `moresampler.exe` to `Wavtools` folder without `moreconfig.txt`.
   - Moresampler should now function as either resampler only, or as both wavtool and resampler.
 - [[SpaceWorld_win64.exe|https://github.com/LovelyA72/SpaceWorld/releases]] and [[wn4u.exe|https://utaforum.net/threads/world4utau-update.20035/]]
     - May experience issues if the voicebank is missing any frq files. SpaceWorld version 1.0.1 will not crash in the event of a missing frq file.
