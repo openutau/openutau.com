@@ -8,6 +8,7 @@ Please see [Tutorials](Tutorials) for an overview of OpenUtau and how it differs
 [![Download](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=linux-x64&labelColor=FF347C&color=4ea6ea)](https://github.com/stakira/OpenUtau/releases/latest/download/OpenUtau-linux-x64.tar.gz)
 
 ### Windows
+- OpenUtau only supports Windows 10 and above.
 - After unzipping to a new folder, you can start the application by double-clicking `OpenUtau.exe`. Every time you start OU, it will check for updates first.
 ### macOS
 - Double click the dmg file downloaded. Drag the app icon to the folder icon.
