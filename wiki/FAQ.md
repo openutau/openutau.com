@@ -1,4 +1,6 @@
 ## Troubleshooting
+You can search within this webpage with hotkey `Ctrl + F` on Windows or `⌘ + F` on Mac.
+
 ### My voicebank doesn't show up in OpenUtau, even though it's in the Singers folder!
 Make sure the voicebank folder includes a `character.txt` file. Inside the file, write `name=(voicebank's name)`.
 
@@ -28,6 +30,9 @@ OpenUtau will fall back to reading filenames if an alias is missing, but by defa
 ### How do I select an external resampler? [Moresampler, macres, TIPS, etc.] is not in the renderer list.
 Resamplers are selected in the Engine menu of the track. WORLDLINE-R is a special renderer, and it cannot use external resamplers.  
 Select the "Classic" renderer for the track, then click on the gray gear icon to select the resampler and the wavtool for that track.
+
+### "Unsupported audio file format" when rendering with moresampler
+Turn on `resampler-compatibility` in your moreconfig.txt file in your Resamplers folder.
 
 ### The pitch line is acting strange in my project!
 If the project was imported from a UST or MIDI file, the tempo of the imported file may be set incorrectly. Commonly, files will be erroneously set to high BPM values, such as 50000.  
