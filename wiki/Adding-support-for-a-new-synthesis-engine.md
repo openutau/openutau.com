@@ -35,7 +35,11 @@ Tips for designing your packaging format:
 - Use a special prefix for file names and folder names. For example, in DiffSinger voicebanks, `dsdur`, `dspitch`, `dsvariance`, `dsconfig` and `dsvocoder` starts with "ds". This perfix clearly states that these files are used by diffsinger renderer.
 
 ## Define singer type
-To define a singer type, you'll need to create a singer class like [DiffSingerSinger](https://github.com/stakira/OpenUtau/pull/882/files#diff-8470a4e77ba9319b279088bf8dfd1c34fa3b7dcd95612da4b16f6c152a941b0c). In this class, 
+To define a singer type, you'll need to create a singer class that inherits [USinger](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/Ustx/USinger.cs#L205). Here are some important features you need to implement in this class:
+- object initializer: Load avatar, subbanks (voice colors), phonemes list in object initializer
+- `FreeMemory`: If your voicebank stores large resources in memory, use this function to free them when the singer is no longer used. Note that the voicebank may be used again even after this method is called, and this method may be called even when the singer has not been used.
+
+An example is [DiffSingerSinger](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/DiffSinger/DiffSingerSinger.cs)
 
 You also have to regist your singer type to everywhere else in OpenUtau's codebase that works differently according to singer type, including:
 - [OpenUtau.Core/Ustx/USinger.cs](https://github.com/stakira/OpenUtau/blob/d4b3cc2bd180d7fdcb7c459ec6aa99bde4273cf7/OpenUtau.Core/Ustx/USinger.cs#L188-L203)
