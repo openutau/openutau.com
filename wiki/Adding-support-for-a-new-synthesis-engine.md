@@ -32,7 +32,7 @@ singer_type: diffsinger
 
 Tips for designing your packaging format:
 - Use only lower-cased ascii characters for filenames if possible, because ascii characters don't get garbled on a PC in different locales.
-- Use a special prefix for file names and folder names. For example, in DiffSinger voicebanks, `dsdur`, `dspitch`, `dsvariance`, `dsconfig` and `dsvocoder` starts with "ds". This perfix clearly states that these files are used by diffsinger renderer.
+- Use a special prefix for file names and folder names. For example, in DiffSinger voicebanks, `dsdur`, `dspitch`, `dsvariance`, `dsconfig` and `dsvocoder` start with "ds". This perfix clearly states that these files are used by diffsinger renderer.
 
 ## Define singer type
 To define a singer type, you'll need to create a singer class that inherits [USinger](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/Ustx/USinger.cs#L205). Here are some important features you need to implement in this class:
