@@ -128,6 +128,8 @@ entries:
     phonemes: [ow, p, eh, n, w, uw, t, ah, w, uw]
 ```
 
+When reading and writing yaml files, OpenUtau always uses yaml 1.2 syntax. If you're developing third-party tools to parse or generate these yaml files, please use `ruamel.yaml` instead of `pyyaml` library.
+
 ## Appendix: Phoneme set of builtin G2Ps
 ### ArpabetG2p (English)
 - vowels: `aa, ae, ah, ao, aw, ay, eh, er, ey, ih, iy, ow, oy, uh, uw`
