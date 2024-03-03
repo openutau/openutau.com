@@ -44,6 +44,9 @@ Open the file in a text editor. Find and remove the line `"language": "axaml"`. 
 
 This is a known bug when updating OpenUtau from version 0.1.90. See the [Release Notes](https://github.com/stakira/OpenUtau/wiki/Release-Notes#0191-05-15-2023) page for more details.
 
+### Blank window when launching OpenUtau or opening piano roll
+Resize the window and it will display normally.
+
 ### On Windows, it says "Unable to load DLL 'worldline' or one of its dependencies" or "DLL was not found".
 Install the [latest Visual C++ Redistributable](https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170).
 
