@@ -12,6 +12,7 @@ OpenUtau wikiへようこそ！
 
 ### 基本編
 * [Phonemizers](https://github.com/stakira/OpenUtau/wiki/Phonemizers)　Phonemizerの詳細と一覧
+  * [Phonemizers（日本語）](Phonemizers（日本語）)　
 * [Resamplers and Wavtools](https://github.com/stakira/OpenUtau/wiki/Resamplers-and-Wavtools)　ResamplerとWavtoolの対応状況
 * [Legacy Plugins](https://github.com/stakira/OpenUtau/wiki/Legacy-Plugins)　レガシープラグイン（従来のUTAU用のプラグイン）の互換性
 
