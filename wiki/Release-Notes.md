@@ -2,7 +2,7 @@ The latest stable version is [0.1.327](#01327-12-02-2023).
 >Recent history is not organized. Contributions by editing are welcome!
 
 <!-- To get a list of pull requests, use the following git command
-git log --merges --after="2023-12-03" --before="2023-12-12" --first-parent --reverse --pretty=format:"%s pr %b"
+git log --merges --after="2023-12-03" --before="2023-12-12" --first-parent --pretty=format:"%s pr %b"
 
 Next, replace with a regular expression.
 before: Merge pull request #([0-9]+) from (.*)\/.* pr (.*)
