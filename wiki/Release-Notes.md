@@ -1,84 +1,116 @@
 The latest stable version is [0.1.327](#01327-12-02-2023).
->Recent history is not organized. Contributions by editing are welcome!
 
 <!-- To get a list of pull requests, use the following git command
 git log --merges --after="2023-12-03" --before="2023-12-12" --first-parent --pretty=format:"%s pr %b"
 
 Next, replace with a regular expression.
-before: Merge pull request #([0-9]+) from (.*)\/.* pr (.*)
+before: Merge pull request #([0-9]+) from (.*?)\/.* pr (.*)
 after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https://github.com/$2))
+
+## Features
+## Bug Fixes
+## Phonemizer Changes
+## Translation
+## Misc
 -->
 
 # ~[0.1.397 Beta](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.397) (02-25-2024)
-- [#1050](https://github.com/stakira/OpenUtau/pull/1050) - Small bug fix for last VCCV merge - ([@AnAndroNerd](https://github.com/AnAndroNerd))
-- [#1049](https://github.com/stakira/OpenUtau/pull/1049) - Update Japanese translations - ([@maiko3tattun](https://github.com/maiko3tattun))
-- [#1029](https://github.com/stakira/OpenUtau/pull/1029) - Eng VCCV Updates and Fixes - ([@AnAndroNerd](https://github.com/AnAndroNerd))
-- [#1048](https://github.com/stakira/OpenUtau/pull/1048) - Add "no value" to expression - ([@maiko3tattun](https://github.com/maiko3tattun))
+## Features
 - [#1047](https://github.com/stakira/OpenUtau/pull/1047) - Add a singer publish tool to pack a singer into a zip file - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
-- [#1046](https://github.com/stakira/OpenUtau/pull/1046) - Fix NoteProperiesPanel bug - ([@maiko3tattun](https://github.com/maiko3tattun))
-- [#1045](https://github.com/stakira/OpenUtau/pull/1045) - [DiffSinger] Add support for tension and voicing - ([@yqzhishen](https://github.com/yqzhishen))
-- [#1044](https://github.com/stakira/OpenUtau/pull/1044) - Clear solo flag on copied tracks - ([@liuycsd](https://github.com/liuycsd))
-- [#1042](https://github.com/stakira/OpenUtau/pull/1042) - Fix keyboard input: fix focus onMenuClose and fix some key bindings - ([@liuycsd](https://github.com/liuycsd))
-- [#1041](https://github.com/stakira/OpenUtau/pull/1041) - Open voicebank icon file read-only - ([@liuycsd](https://github.com/liuycsd))
 - [#1037](https://github.com/stakira/OpenUtau/pull/1037) - Add toggle for defaulting to pen plus too - ([@Astel123457](https://github.com/Astel123457))
-- [#1035](https://github.com/stakira/OpenUtau/pull/1035) - DiffSinger phonemizers: Return error if lyric isn't found in the dictionary - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1045](https://github.com/stakira/OpenUtau/pull/1045) - [DiffSinger] Add support for tension and voicing - ([@yqzhishen](https://github.com/yqzhishen))
+## Bug Fixes
+- [#1042](https://github.com/stakira/OpenUtau/pull/1042) - Fix keyboard input: fix focus onMenuClose and fix some key bindings - ([@liuycsd](https://github.com/liuycsd))
+- [#1046](https://github.com/stakira/OpenUtau/pull/1046) - Fix NoteProperiesPanel bug - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1041](https://github.com/stakira/OpenUtau/pull/1041) - Open voicebank icon file read-only - ([@liuycsd](https://github.com/liuycsd))
+- [#1050](https://github.com/stakira/OpenUtau/pull/1050) - Small bug fix for last VCCV merge - ([@AnAndroNerd](https://github.com/AnAndroNerd))
+## Phonemizer Changes
 - [#1034](https://github.com/stakira/OpenUtau/pull/1034) - Support "- C" in JA VCV&CVVC Phonemizer - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1035](https://github.com/stakira/OpenUtau/pull/1035) - DiffSinger phonemizers: Return error if lyric isn't found in the dictionary - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1029](https://github.com/stakira/OpenUtau/pull/1029) - Eng VCCV Updates and Fixes - ([@AnAndroNerd](https://github.com/AnAndroNerd))
+## Translation
+- [#1049](https://github.com/stakira/OpenUtau/pull/1049) - Update Japanese translations - ([@maiko3tattun](https://github.com/maiko3tattun))
+## Misc
+- [#1048](https://github.com/stakira/OpenUtau/pull/1048) - Add "no value" to expression - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1044](https://github.com/stakira/OpenUtau/pull/1044) - Clear solo flag on copied tracks - ([@liuycsd](https://github.com/liuycsd))
+
 
 # ~[0.1.384 Beta](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.384) (02-06-2024)
-- [#1033](https://github.com/stakira/OpenUtau/pull/1033) - Fix the string duplicate issue - ([@Astel123457](https://github.com/Astel123457))
-- [#1027](https://github.com/stakira/OpenUtau/pull/1027) - Create DiffSingerGermanPhonemizer.cs - ([@nobodyP](https://github.com/nobodyP))
+## Features
 - [#1025](https://github.com/stakira/OpenUtau/pull/1025) - Add batch edit "Add breath" - ([@maiko3tattun](https://github.com/maiko3tattun))
 - [#1018](https://github.com/stakira/OpenUtau/pull/1018) - Add a button to change the tempo of the project without changing the positions of each note (in seconds) - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
-- [#1017](https://github.com/stakira/OpenUtau/pull/1017) - Add track expression logic - ([@maiko3tattun](https://github.com/maiko3tattun))
-- [#1008](https://github.com/stakira/OpenUtau/pull/1008) - Add case check on case-insensitive systems in voicebank check - ([@sdercolin](https://github.com/sdercolin))
 - [#1030](https://github.com/stakira/OpenUtau/pull/1030) - diffsinger renderer: stricter vocoder-acoustic compatibility check - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
-- [#1031](https://github.com/stakira/OpenUtau/pull/1031) - ZH CVVC: v_R shouldn't be too long for long notes, refactor ZH-YUE CVVC to be derived from ZH CVVC to reduce repeat code - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+## Bug Fixes
+- [#1033](https://github.com/stakira/OpenUtau/pull/1033) - Fix the string duplicate issue - ([@Astel123457](https://github.com/Astel123457))
 - [#1032](https://github.com/stakira/OpenUtau/pull/1032) - fix not loading vogen voicebanks if "load all depth folders" is turned off - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1008](https://github.com/stakira/OpenUtau/pull/1008) - Add case check on case-insensitive systems in voicebank check - ([@sdercolin](https://github.com/sdercolin))
+## Phonemizer Changes
+- [#1027](https://github.com/stakira/OpenUtau/pull/1027) - Create DiffSingerGermanPhonemizer.cs - ([@nobodyP](https://github.com/nobodyP))
+- [#1031](https://github.com/stakira/OpenUtau/pull/1031) - ZH CVVC: v_R shouldn't be too long for long notes, refactor ZH-YUE CVVC to be derived from ZH CVVC to reduce repeat code - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+## Misc
+- [#1017](https://github.com/stakira/OpenUtau/pull/1017) - Add track expression logic - ([@maiko3tattun](https://github.com/maiko3tattun))
+
 
 # ~[0.1.374 Beta](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.374) (02-02-2024)
-- [#1026](https://github.com/stakira/OpenUtau/pull/1026) - Fix ReleaseSingersNotInUse bug - ([@maiko3tattun](https://github.com/maiko3tattun))
-- [#1024](https://github.com/stakira/OpenUtau/pull/1024) - Save recent open singer/project directory - ([@maiko3tattun](https://github.com/maiko3tattun))
-- [#1022](https://github.com/stakira/OpenUtau/pull/1022) - diffsinger phonemizers: support glide phonemes - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
-- [#1021](https://github.com/stakira/OpenUtau/pull/1021) - Show the current selection when setting encoding, singer type and default phonemizer - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
-- [#1006](https://github.com/stakira/OpenUtau/pull/1006) - DiffSinger: support different dictionaries for Chinese, Japanese and Cantonese - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
-- [#1007](https://github.com/stakira/OpenUtau/pull/1007) - language name localization - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+## Features
 - [#1011](https://github.com/stakira/OpenUtau/pull/1011) - Add singer favorite function - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1021](https://github.com/stakira/OpenUtau/pull/1021) - Show the current selection when setting encoding, singer type and default phonemizer - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+## Bug Fixes
+- [#1026](https://github.com/stakira/OpenUtau/pull/1026) - Fix ReleaseSingersNotInUse bug - ([@maiko3tattun](https://github.com/maiko3tattun))
+## Phonemizer Changes
+- [#1006](https://github.com/stakira/OpenUtau/pull/1006) - DiffSinger: support different dictionaries for Chinese, Japanese and Cantonese - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1022](https://github.com/stakira/OpenUtau/pull/1022) - diffsinger phonemizers: support glide phonemes - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+## Misc
+- [#1007](https://github.com/stakira/OpenUtau/pull/1007) - language name localization - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1024](https://github.com/stakira/OpenUtau/pull/1024) - Save recent open singer/project directory - ([@maiko3tattun](https://github.com/maiko3tattun))
+
 
 # ~[0.1.367 Beta](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.367) (01-25-2024)
-- [#1009](https://github.com/stakira/OpenUtau/pull/1009) - Fix file system path handling by adding surrounding "" - ([@sdercolin](https://github.com/sdercolin))
-- [#1014](https://github.com/stakira/OpenUtau/pull/1014) - Add Spanish and Italian Phonemizers for DiffSinger - ([@spicytigermeat](https://github.com/spicytigermeat))
+## Features
 - [#1012](https://github.com/stakira/OpenUtau/pull/1012) - Add option to load only top directories of singers - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#996](https://github.com/stakira/OpenUtau/pull/996) - Add an option to import tempo when importing tracks - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+## Bug Fixes
+- [#1009](https://github.com/stakira/OpenUtau/pull/1009) - Fix file system path handling by adding surrounding "" - ([@sdercolin](https://github.com/sdercolin))
 - [#1002](https://github.com/stakira/OpenUtau/pull/1002) - Diffsinger: fix unable to load sample and portrait height from character.yaml - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
-- [#1019](https://github.com/stakira/OpenUtau/pull/1019) - Diffsinger Rhythmizer phonemizer: Support hanzi input - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
 - [#1003](https://github.com/stakira/OpenUtau/pull/1003) - Enable IME input on X11 platforms such as Linux - ([@porime42](https://github.com/porime42))
+- [#976](https://github.com/stakira/OpenUtau/pull/976) - Fix singer window goes behind the main window - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#985](https://github.com/stakira/OpenUtau/pull/985) - Fix openutau crash when opening a ustx project whose first time signature isn't at 0 - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#966](https://github.com/stakira/OpenUtau/pull/966) - Fix #Charaset - ([@maiko3tattun](https://github.com/maiko3tattun))
+## Phonemizer Changes
+- [#1014](https://github.com/stakira/OpenUtau/pull/1014) - Add Spanish and Italian Phonemizers for DiffSinger - ([@spicytigermeat](https://github.com/spicytigermeat))
+- [#1019](https://github.com/stakira/OpenUtau/pull/1019) - Diffsinger Rhythmizer phonemizer: Support hanzi input - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
 - [#1001](https://github.com/stakira/OpenUtau/pull/1001) - [ES SYL] Phonemizer refactor + custom dictionary support - ([@lottev1991](https://github.com/lottev1991))
 - [#1000](https://github.com/stakira/OpenUtau/pull/1000) - G2p: add IsGlide method; EN ARPA: support glide phonemes. - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
 - [#995](https://github.com/stakira/OpenUtau/pull/995) - [EN X-SAMPA] Distinguish between current word CC and previous word CC - ([@lottev1991](https://github.com/lottev1991))
-- [#996](https://github.com/stakira/OpenUtau/pull/996) - Add an option to import tempo when importing tracks - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
 - [#994](https://github.com/stakira/OpenUtau/pull/994) - Add ENUNUKoreanPhonemizer - ([@EX3exp](https://github.com/EX3exp))
 - [#993](https://github.com/stakira/OpenUtau/pull/993) - Add DiffSingerKoreanPhonemizer - ([@EX3exp](https://github.com/EX3exp))
 - [#992](https://github.com/stakira/OpenUtau/pull/992) - Add KoreanCVPhonemizer - ([@EX3exp](https://github.com/EX3exp))
 - [#991](https://github.com/stakira/OpenUtau/pull/991) - Improve KoreanCBNNPhonemizer - ([@EX3exp](https://github.com/EX3exp))
 - [#990](https://github.com/stakira/OpenUtau/pull/990) - Add BaseKoreanPhonemizer - ([@EX3exp](https://github.com/EX3exp))
-- [#982](https://github.com/stakira/OpenUtau/pull/982) - Improve Korean Translation, Add missing translation - ([@ppapman1](https://github.com/ppapman1))
 - [#989](https://github.com/stakira/OpenUtau/pull/989) - Add KoreanPhonemizerUtil - ([@EX3exp](https://github.com/EX3exp))
-- [#976](https://github.com/stakira/OpenUtau/pull/976) - Fix singer window goes behind the main window - ([@maiko3tattun](https://github.com/maiko3tattun))
-- [#985](https://github.com/stakira/OpenUtau/pull/985) - Fix openutau crash when opening a ustx project whose first time signature isn't at 0 - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
 - [#984](https://github.com/stakira/OpenUtau/pull/984) - Move DIFFS ZH-YUE and VOGEN ZH-YUE to ZH-YUE category - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+## Translation
+- [#982](https://github.com/stakira/OpenUtau/pull/982) - Improve Korean Translation, Add missing translation - ([@ppapman1](https://github.com/ppapman1))
+## Misc
 - [#983](https://github.com/stakira/OpenUtau/pull/983) - DiffSinger: Free memory for singers no longer in use - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
-- [#966](https://github.com/stakira/OpenUtau/pull/966) - Fix #Charaset - ([@maiko3tattun](https://github.com/maiko3tattun))
 - [#986](https://github.com/stakira/OpenUtau/pull/986) - Add a github action to run unit tests for each PR - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
 
+
 # ~[0.1.338 Beta](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.338) (12-16-2023)
+## Features
 - [#981](https://github.com/stakira/OpenUtau/pull/981) - Support using worldline resampler together with external wavtool - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#980](https://github.com/stakira/OpenUtau/pull/980) - Add an option to disable showing singer icons on piano roll - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#979](https://github.com/stakira/OpenUtau/pull/979) - When opening phonetic assistant, use the g2p used last time - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+## Bug Fixes
+- [#977](https://github.com/stakira/OpenUtau/pull/977) - fix error when opening singer view if the singer used in the ustx doesn't exist - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+## Phonemizer Changes
 - [#961](https://github.com/stakira/OpenUtau/pull/961) - Add Cantonese CVVC Phonemizer - ([@lottev1991](https://github.com/lottev1991))
 - [#959](https://github.com/stakira/OpenUtau/pull/959) - Add Cantonese "Syo-style" Phonemizer - ([@lottev1991](https://github.com/lottev1991))
 - [#973](https://github.com/stakira/OpenUtau/pull/973) - [ZH CVVC] Automatically add syllable ending if present (if next neighbor is null) - ([@lottev1991](https://github.com/lottev1991))
 - [#975](https://github.com/stakira/OpenUtau/pull/975) - [Japanese Presamp Phonemizer] Add option for MUSTVC - ([@lottev1991](https://github.com/lottev1991))
-- [#977](https://github.com/stakira/OpenUtau/pull/977) - fix error when opening singer view if the singer used in the ustx doesn't exist - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
-- [#980](https://github.com/stakira/OpenUtau/pull/980) - Add an option to disable showing singer icons on piano roll - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+## Misc
 - [#978](https://github.com/stakira/OpenUtau/pull/978) - Refactor affix assignment as protected virtual method - ([@The-UTAU-Black-Supermarket](https://github.com/The-UTAU-Black-Supermarket))
-- [#979](https://github.com/stakira/OpenUtau/pull/979) - When opening phonetic assistant, use the g2p used last time - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+
 
 # ~[0.1.327](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.327) (12-02-2023)
 There are too many changes to keep track of!
