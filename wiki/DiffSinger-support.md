@@ -3,7 +3,7 @@ OpenUtau supports [DiffSinger (maintained by OpenVPI)](https://github.com/openvp
 ## Setup
 Before using DiffSinger on OpenUtau, please download [nsf_hifigan vocoder](https://github.com/xunmengshe/OpenUtau/releases/download/0.0.0.0/nsf_hifigan.oudep) . Drag and drop to import it into OpenUtau.
 
-Turn on "beta version" in perferences and upgrade your OpenUtau, because some new voicebanks use features not yet supported by the current stable build.
+Turn on "beta" in perferences and upgrade your OpenUtau, because some new voicebanks use features not yet supported by the current stable build.
 
 ## Preferences
 - Diffsinger Rendering speedup is 50 times by default. A smaller speedup may improve the quality of audio, but slow down the rendering.
