@@ -45,6 +45,12 @@ To be supported in the future (This is just a plan)
 * VOICEVOX JA
 * VOICEVOX EN to JA
 
+## Phonemes
+Available phonemes are currently only in hiragana.  
+
+![image](https://github.com/stakira/OpenUtau/assets/93469977/230dbd33-e7c8-4494-95f6-418d644f3257)
+
+
 ## Expressions
 The following are currently supported.
 * DYN (Dynamics)
