@@ -7,14 +7,16 @@ Click here for [Github](https://github.com/VOICEVOX/voicevox/tree/main)
 ## VOICEVOX Software Terms of Use  
 Taken from the terms of use on the [VOICEVOX website.](https://voicevox.hiroshiba.jp/term/)  
 ### LICENSE AGREEMENT  
-You may use the software for commercial and non-commercial purposes.  
-Use of the created audio is subject to the terms and conditions of the respective audio library.  
-When you grant a license to others to use the audio you have created, you must require them to comply with the provisions of 2 and 3 of this license agreement.  
+1. You may use the software for commercial and non-commercial purposes.  
+2. Use of the created audio is subject to the terms and conditions of the respective audio library.  
+3. When you grant a license to others to use the audio you have created, you must require them to comply with the provisions of 2 and 3 of this license agreement.  
+
 ### Prohibitions  
-Redistribution of this software, in whole or in part, without permission  
-Decompiling, reverse engineering, or disclosing these methods to the public.  
-Causing disadvantage to the creator or any third party.  
-Acts that offend public order and morals.  
+* Redistribution of this software, in whole or in part, without permission  
+* Decompiling, reverse engineering, or disclosing these methods to the public.  
+* Causing disadvantage to the creator or any third party.  
+* Acts that offend public order and morals.  
+
 ### Disclaimer  
 The producer is not responsible for any damage or disadvantage caused by this software.  
 
