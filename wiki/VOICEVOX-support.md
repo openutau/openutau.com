@@ -36,6 +36,15 @@ Start OpemUtau while running VOICEVOX.
 
 An engine-only dependency package will be created in the future. (This is just a plan)
 
+## Phonomizers
+The following are currently supported.  
+* S-VOICEVOX JA(Simple Voicevox Japanese Phonemizer)  
+
+To be supported in the future (This is just a plan)
+* S-VOICEVOX EN to JA
+* VOICEVOX JA
+* VOICEVOX EN to JA
+
 ## Expressions
 The following are currently supported.
 * DYN (Dynamics)
