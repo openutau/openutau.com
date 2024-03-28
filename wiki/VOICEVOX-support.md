@@ -1,7 +1,7 @@
 OpenUtau supports VOICEVOX (humming function).
 
 ## What is VOICEVOX?
-[VOICEVOX](https://voicevox.hiroshiba.jp/) is a free, medium-quality text-to-speech and singing voice synthesis software!  
+[VOICEVOX](https://voicevox.hiroshiba.jp/) is a free, medium-quality text-to-speech and singing voice synthesis software.  
 Click here for [Github](https://github.com/VOICEVOX/voicevox/tree/main)
 
 ## VOICEVOX Software Terms of Use  
@@ -36,7 +36,7 @@ Start OpemUtau while running VOICEVOX.
 
 An engine-only dependency package will be created in the future. (This is just a plan)
 
-## Phonomizers
+## Phonemizers
 The following are currently supported.  
 * S-VOICEVOX JA(Simple Voicevox Japanese Phonemizer)  
 
