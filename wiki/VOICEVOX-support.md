@@ -5,7 +5,6 @@ OpenUtau supports VOICEVOX (humming function).
 Click here for [Github](https://github.com/VOICEVOX/voicevox/tree/main)
 
 ## VOICEVOX Software Terms of Use  
-Taken from the terms of use on the [VOICEVOX website.](https://voicevox.hiroshiba.jp/term/)  
 ### LICENSE AGREEMENT  
 1. You may use the software for commercial and non-commercial purposes.  
 2. Use of the created audio is subject to the terms and conditions of the respective audio library.  
@@ -24,6 +23,7 @@ The producer is not responsible for any damage or disadvantage caused by this so
 Credit must be given to VOICEVOX when using this software.  
 
 
+Taken from the terms of use on the [VOICEVOX website.](https://voicevox.hiroshiba.jp/term/)  
 Please enjoy using VOICEVOX and abide by the Terms of Use!  
 Please refer to the README.txt file for each character for credit information!
 
