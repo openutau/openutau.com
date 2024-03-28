@@ -1,7 +1,7 @@
 The latest stable version is [0.1.327](#01327-12-02-2023).
 
 <!-- To get a list of pull requests, use the following git command
-git log --merges --after="2023-12-03" --before="2023-12-12" --first-parent --pretty=format:"%s pr %b"
+git log --merges --since="2024-02-26" --first-parent --pretty=format:"%s pr %b"
 
 Next, replace with a regular expression.
 before: Merge pull request #([0-9]+) from (.*?)\/.* pr (.*)
@@ -13,6 +13,47 @@ after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https:
 ## Translation
 ## Misc
 -->
+
+# ~[0.1.421 Beta](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.421) (03-28-2024)
+## Features
+- [#1043](https://github.com/stakira/OpenUtau/pull/1043) - Add a feature to only render and play selected region - ([@liuycsd](https://github.com/liuycsd))
+  - `Alt + Space` plays only the selected note and its surroundings
+- [#1068](https://github.com/stakira/OpenUtau/pull/1068) - Modulation plus - ([@maiko3tattun](https://github.com/maiko3tattun))
+  - Affects modulation to the pitch curve  
+![image](https://github.com/stakira/OpenUtau/assets/130257355/062bc644-5f9a-45eb-9acc-8e2d92c82a62)
+- [#1073](https://github.com/stakira/OpenUtau/pull/1073) - Part duration enhancement - ([@maiko3tattun](https://github.com/maiko3tattun))
+  - Added storing the length of the part in ustx.
+  - When entering and resizing notes, the part is automatically extended by one measure when the length of the part is less than one measure remaining.
+- [#1075](https://github.com/stakira/OpenUtau/pull/1075) - VOICEVOX support - ([@rokujyushi](https://github.com/rokujyushi))
+  - Partial support for the song function of the [VOICEVOX](https://voicevox.hiroshiba.jp/), popular with fans of text-to-speech!
+- [#1053](https://github.com/stakira/OpenUtau/pull/1053) - [DiffSinger] Add more mel checks between vocoder and acoustic model - ([@yqzhishen](https://github.com/yqzhishen))
+- [#1058](https://github.com/stakira/OpenUtau/pull/1058) - Add "Edit" menu to menu bar of main window and piano roll window (Undo, Redo, etc.) - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1059](https://github.com/stakira/OpenUtau/pull/1059) - Add Normalize (P flag) to expressions - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1074](https://github.com/stakira/OpenUtau/pull/1074) - Reset preset combo box in the note properties panel - ([@maiko3tattun](https://github.com/maiko3tattun))
+
+## Bug Fixes
+- [#1051](https://github.com/stakira/OpenUtau/pull/1051) - fix bugged piano roll when first opened while the project is playing - ([@lennyservant](https://github.com/lennyservant))
+- [#1055](https://github.com/stakira/OpenUtau/pull/1055) - fix strings startswith "\t- " in yaml - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1060](https://github.com/stakira/OpenUtau/pull/1060) - Fix plugin failing to run when OU path contains space - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1061](https://github.com/stakira/OpenUtau/pull/1061) - Diffsinger: fix openutau unable to load the other voicebanks if one diffsinger has mistake. - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1071](https://github.com/stakira/OpenUtau/pull/1071) - Fix singer name translation - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1072](https://github.com/stakira/OpenUtau/pull/1072) - Fix UPhonemeOverride.phoneme - ([@maiko3tattun](https://github.com/maiko3tattun))
+
+## Phonemizer Changes
+- [#1038](https://github.com/stakira/OpenUtau/pull/1038) - `New!` Add ARPAsing Plus Phonemizer - ([@Cadlaxa](https://github.com/Cadlaxa))
+- [#1077](https://github.com/stakira/OpenUtau/pull/1077) - `EN X-SAMPA` Add Support for VV Split Fallback for Xsampa vb's especially to Delta 5 vbs - ([@Cadlaxa](https://github.com/Cadlaxa))
+- [#1052](https://github.com/stakira/OpenUtau/pull/1052) - `JA VCV & CVVC` The color of VC will be that of CV unless otherwise specified, and bug fixes - ([@maiko3tattun](https://github.com/maiko3tattun))
+
+## Translation
+- [#1067](https://github.com/stakira/OpenUtau/pull/1067) - Update Korean translation - ([@EX3exp](https://github.com/EX3exp))
+- [#1080](https://github.com/stakira/OpenUtau/pull/1080) - update simplified Chinese localization - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+
+## Misc
+- [#1057](https://github.com/stakira/OpenUtau/pull/1057) - Move hanzi to pinyin converter to 'lyrics' category - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1076](https://github.com/stakira/OpenUtau/pull/1076) - Update README.md (add g2p compiling wiki) - ([@Cadlaxa](https://github.com/Cadlaxa))
+- [#1078](https://github.com/stakira/OpenUtau/pull/1078) - Improved view position when pasting note - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1079](https://github.com/stakira/OpenUtau/pull/1079) - Move save status(*) to the top of window title - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1052](https://github.com/stakira/OpenUtau/pull/1052) - Add phonemizer expression - ([@maiko3tattun](https://github.com/maiko3tattun))
 
 # ~[0.1.397 Beta](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.397) (02-25-2024)
 ## Features
