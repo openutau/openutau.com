@@ -20,6 +20,7 @@ Welcome to the OpenUtau wiki!
 * [[tech note ‐ character.yaml]]
 * [Status of ENUNU NNSVS Support](https://github.com/stakira/OpenUtau/wiki/Status-of-ENUNU-NNSVS-Support)
 * [DiffSinger support](https://github.com/stakira/OpenUtau/wiki/DiffSinger-support)
+* [Status of VOICEVOX support](https://github.com/stakira/OpenUtau/wiki/VOICEVOX-support)
 * [Release Notes](https://github.com/stakira/OpenUtau/wiki/Release-Notes)
 
 ### For developers
