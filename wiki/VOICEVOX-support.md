@@ -1,4 +1,5 @@
-OpenUtau supports VOICEVOX (humming function).
+OpenUtau supports VOICEVOX (humming function).  
+It is provided by the following [License](https://github.com/VOICEVOX/voicevox_engine/blob/master/LGPL_LICENSE)
 
 ## What is VOICEVOX?
 [VOICEVOX](https://voicevox.hiroshiba.jp/) is a free, medium-quality text-to-speech and singing voice synthesis software.  
