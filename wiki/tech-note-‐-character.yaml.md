@@ -7,6 +7,7 @@ The example is based on `闇音レンリ・連続音Ver1.5`.
 - The best way to edit `character.yaml` is from OpenUtau "Singers" dialog.
 - If you manually edit it, note that this is a [YAML](https://en.wikipedia.org/wiki/YAML) file. Make sure you create a valid YAML file, especially you need exactly one space after ":". You may try to use a web YAML editor like [this one](https://codebeautify.org/yaml-editor-online).
 - Every field is optional at the moment.
+- The reason portrait size is scaled by its height (`portrait_height`) is because portrait images are usually longer than they are wide. Width scaling will be relative to height. Portrait images taller than 800px will be scaled down regardless of value.
 
 ### Encoding
 ```yml
@@ -38,9 +39,10 @@ available language codes: `en-US`, `de-DE`, `es-ES`, `es-MX`, `fi-FI`, `fr-FR`, 
 ```yml
 portrait: portrait.png
 portrait_opacity: 0.67
+portrait_height: 0
 ```
 - A image file located in the voicebank folder can be used to display a portrait on Piano Roll. A relative path like "images\portrait.png" works too.
-- The image is currently displayed in its original size unless the image is more than 800 **tall**, in which case will be resized to 800 tall.
+- Unless `portrait_height` is defined, the image is currently displayed in its original size unless the image is more than 800 **tall**, in which case will be resized to 800 tall. `0` means it will use the default values (this is so that smaller images don't scale up to a height of 800px by default, unless manually defined).
 - If you edit the file when OpenUtau is open, go to singers dialog and click "..." -> "Refresh" to reload it.
 
 ### Sub-banks (Voice Color)
@@ -73,6 +75,7 @@ text_file_encoding: shift_jis
 image: renri.bmp
 portrait: portrait.webp
 portrait_opacity: 0.67
+portrait_height: 0
 author: ゆずり
 voice: ゆずり
 version: 1.5
