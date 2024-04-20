@@ -14,6 +14,24 @@ after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https:
 ## Misc
 -->
 
+# ~[0.1.440 Beta](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.440) (04-20-2024)
+## Features
+- [#1104](https://github.com/stakira/OpenUtau/pull/1104) - [DiffSinger] Migrate to continuous acceleration profiles - ([@yqzhishen](https://github.com/yqzhishen))
+- [#1090](https://github.com/stakira/OpenUtau/pull/1090) - Cache frq for MOD+ - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1092](https://github.com/stakira/OpenUtau/pull/1092) - Modification of Voicevox around licenses - ([@rokujyushi](https://github.com/rokujyushi))
+## Bug Fixes
+- [#1085](https://github.com/stakira/OpenUtau/pull/1085) - Fix font query result with multiple comma-separated values - ([@SoulMelody](https://github.com/SoulMelody))
+## Phonemizer Changes
+- [#1095](https://github.com/stakira/OpenUtau/pull/1095) - Update EnglishVCCVPhonemizer.cs - ([@GeneralNuisance0](https://github.com/GeneralNuisance0))
+- [#1088](https://github.com/stakira/OpenUtau/pull/1088) - Fix **`[V V]`** diphthong sustain and Change ending **`t`** or **`d`** with **'dx'** via **`'`** suffix - ([@Cadlaxa](https://github.com/Cadlaxa))
+- [#1101](https://github.com/stakira/OpenUtau/pull/1101) - [EN X-SAMPA] Vowel fallback bug fixes - ([@lottev1991](https://github.com/lottev1991))
+## Translation
+- [#1081](https://github.com/stakira/OpenUtau/pull/1081) - Update Japanese translations - ([@maiko3tattun](https://github.com/maiko3tattun))
+## Misc
+- [#1086](https://github.com/stakira/OpenUtau/pull/1086) - Translate error messages and put them in the expander - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1102](https://github.com/stakira/OpenUtau/pull/1102) - Fixed icons - ([@rokujyushi](https://github.com/rokujyushi))
+
+
 # ~[0.1.421 Beta](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.421) (03-28-2024)
 ## Features
 - [#1043](https://github.com/stakira/OpenUtau/pull/1043) - Add a feature to only render and play selected region - ([@liuycsd](https://github.com/liuycsd))
