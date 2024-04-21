@@ -24,7 +24,7 @@ after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https:
 - [#1085](https://github.com/stakira/OpenUtau/pull/1085) - Fix font query result with multiple comma-separated values - ([@SoulMelody](https://github.com/SoulMelody))
 ## Phonemizer Changes
 - [#1095](https://github.com/stakira/OpenUtau/pull/1095) - Update EnglishVCCVPhonemizer.cs - ([@GeneralNuisance0](https://github.com/GeneralNuisance0))
-  * Adds support for the Canadian raising vowel [Y] and [W]
+  * Adds support for the Canadian raising vowels of [Y] and [W]
 - [#1088](https://github.com/stakira/OpenUtau/pull/1088) - Fix **`[V V]`** diphthong sustain and Change ending **`t`** or **`d`** with **'dx'** via **`'`** suffix - ([@Cadlaxa](https://github.com/Cadlaxa))
 - [#1101](https://github.com/stakira/OpenUtau/pull/1101) - [EN X-SAMPA] Vowel fallback bug fixes - ([@lottev1991](https://github.com/lottev1991))
 ## Translation
