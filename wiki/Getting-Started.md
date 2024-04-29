@@ -19,7 +19,7 @@ Please see [Tutorials](Tutorials) for an overview of OpenUtau and how it differs
 #### Gentoo
 - Install `app-eselect/eselect-repository` in order to enable the guru overlay.
 - Run `eselect repository enable guru` and `emaint sync -r guru` to enable and sync the overlay (`dev-vcs/git` may be needed to be installed).
-- Run `emerge openutau` to install openutau.
+- Run `emerge openutau` to install OpenUtau.
 #### Other
 - Extract the tar.gz file yourself, and run `OpenUtau` from a terminal.
 - Or check the community-created [installer scripts](https://hitcoder.tubs.wtf/Posts/openutau/).
