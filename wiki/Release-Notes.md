@@ -14,7 +14,7 @@ after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https:
 ## Misc
 -->
 
-# ~[0.1.440 Beta](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.440) (04-20-2024)
+# ~[0.1.444 Beta](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.444) (04-20-2024)
 ## Features
 - [#1104](https://github.com/stakira/OpenUtau/pull/1104) - [DiffSinger] Migrate to continuous acceleration profiles - ([@yqzhishen](https://github.com/yqzhishen))
 - [#1090](https://github.com/stakira/OpenUtau/pull/1090) - Cache frq for MOD+ - ([@maiko3tattun](https://github.com/maiko3tattun))
@@ -31,6 +31,7 @@ after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https:
 - [#1081](https://github.com/stakira/OpenUtau/pull/1081) - Update Japanese translations - ([@maiko3tattun](https://github.com/maiko3tattun))
 ## Misc
 - [#1086](https://github.com/stakira/OpenUtau/pull/1086) - Translate error messages and put them in the expander - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1107](https://github.com/stakira/OpenUtau/pull/1107) - Improved translation of error messages for more flexibility - ([@maiko3tattun](https://github.com/maiko3tattun))
 - [#1102](https://github.com/stakira/OpenUtau/pull/1102) - Fixed icons - ([@rokujyushi](https://github.com/rokujyushi))
 
 
