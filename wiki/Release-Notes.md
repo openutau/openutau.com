@@ -13,22 +13,52 @@ after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https:
 ## Translation
 ## Misc
 -->
+# ~[0.1.463 Beta](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.463) (05-10-2024)
+## Features
+- [#1126](https://github.com/stakira/OpenUtau/pull/1126) - Add option to move only the cursor and not scroll back when pausing playback - ([@maiko3tattun](https://github.com/maiko3tattun))
 
-# ~[0.1.444 Beta](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.444) (04-20-2024)
+## Bug Fixes
+- [#1100](https://github.com/stakira/OpenUtau/pull/1100) - Fix deleting expressions - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1118](https://github.com/stakira/OpenUtau/pull/1118) - Add flag marge function - ([@maiko3tattun](https://github.com/maiko3tattun))
+  - Automatically merge expression flags to avoid duplication when opening old projects in a new OU.
+- [#1112](https://github.com/stakira/OpenUtau/pull/1112) - fix tool selection bug when default pen is pen plus - ([@lennyservant](https://github.com/lennyservant))
+- [#1113](https://github.com/stakira/OpenUtau/pull/1113) - Fix openutau crash when dragging an invalid zip file into openutau window - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1116](https://github.com/stakira/OpenUtau/pull/1116) - Fix loading and error dialog - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1129](https://github.com/stakira/OpenUtau/pull/1129) - Fix openutau unable to play if the first note starts at 0 tick - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+
+## Phonemizer Changes
+- [#1110](https://github.com/stakira/OpenUtau/pull/1110) - `EN VCCV` Small Fixes for EN VCCV before stable release - ([@AnAndroNerd](https://github.com/AnAndroNerd))
+- [#1115](https://github.com/stakira/OpenUtau/pull/1115) - `EN X-SAMPA` Fallbacks for Canadian Raising in English X-Sampa Phonemizer - ([@AnAndroNerd](https://github.com/AnAndroNerd))
+- [#1117](https://github.com/stakira/OpenUtau/pull/1117) - `New!` Add KoreanG2P and DiffsingerKoreanG2PPhonemizer - ([@Cardroid](https://github.com/Cardroid))
+- [#1120](https://github.com/stakira/OpenUtau/pull/1120) - `DIFFS KO` `ENUNU KO` Improved KO DIFFS&KO ENUNU Phonemizer - ([@EX3exp](https://github.com/EX3exp))
+- [#1123](https://github.com/stakira/OpenUtau/pull/1123) - `EN ARPA+` Fix `[ng g]` instances turning into `[ng]` when `CCV` is present - ([@Cadlaxa](https://github.com/Cadlaxa))
+
+## Misc
+- [#1108](https://github.com/stakira/OpenUtau/pull/1108) - Error log minor fix - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1111](https://github.com/stakira/OpenUtau/pull/1111) - [DiffSinger] Fix error message on `mel_scale` - ([@yqzhishen](https://github.com/yqzhishen))
+- [#1127](https://github.com/stakira/OpenUtau/pull/1127) - Fix github action tests failing on MacOS - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+
+
+# ~[0.1.443 Beta](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.443) (04-20-2024)
 ## Features
 - [#1104](https://github.com/stakira/OpenUtau/pull/1104) - [DiffSinger] Migrate to continuous acceleration profiles - ([@yqzhishen](https://github.com/yqzhishen))
+- [#1093](https://github.com/stakira/OpenUtau/pull/1093) - [DiffSinger] Add tensor caching system - ([@yqzhishen](https://github.com/yqzhishen))
 - [#1090](https://github.com/stakira/OpenUtau/pull/1090) - Cache frq for MOD+ - ([@maiko3tattun](https://github.com/maiko3tattun))
   * Speeds up MOD+ significantly
 - [#1092](https://github.com/stakira/OpenUtau/pull/1092) - Modification of Voicevox around licenses - ([@rokujyushi](https://github.com/rokujyushi))
+
 ## Bug Fixes
 - [#1085](https://github.com/stakira/OpenUtau/pull/1085) - Fix font query result with multiple comma-separated values - ([@SoulMelody](https://github.com/SoulMelody))
+
 ## Phonemizer Changes
-- [#1095](https://github.com/stakira/OpenUtau/pull/1095) - Update EnglishVCCVPhonemizer.cs - ([@GeneralNuisance0](https://github.com/GeneralNuisance0))
+- [#1095](https://github.com/stakira/OpenUtau/pull/1095) - `EN VCCV` Update EnglishVCCVPhonemizer.cs - ([@GeneralNuisance0](https://github.com/GeneralNuisance0))
   * Adds support for the Canadian raising vowels of [Y] and [W]
-- [#1088](https://github.com/stakira/OpenUtau/pull/1088) - Fix **`[V V]`** diphthong sustain and Change ending **`t`** or **`d`** with **'dx'** via **`'`** suffix - ([@Cadlaxa](https://github.com/Cadlaxa))
-- [#1101](https://github.com/stakira/OpenUtau/pull/1101) - [EN X-SAMPA] Vowel fallback bug fixes - ([@lottev1991](https://github.com/lottev1991))
+- [#1088](https://github.com/stakira/OpenUtau/pull/1088) - `EN ARPA+` Fix **`[V V]`** diphthong sustain and Change ending **`t`** or **`d`** with **'dx'** via **`'`** suffix - ([@Cadlaxa](https://github.com/Cadlaxa))
+- [#1101](https://github.com/stakira/OpenUtau/pull/1101) - `EN X-SAMPA` Vowel fallback bug fixes - ([@lottev1991](https://github.com/lottev1991))
+
 ## Translation
 - [#1081](https://github.com/stakira/OpenUtau/pull/1081) - Update Japanese translations - ([@maiko3tattun](https://github.com/maiko3tattun))
+
 ## Misc
 - [#1086](https://github.com/stakira/OpenUtau/pull/1086) - Translate error messages and put them in the expander - ([@maiko3tattun](https://github.com/maiko3tattun))
 - [#1107](https://github.com/stakira/OpenUtau/pull/1107) - Improved translation of error messages for more flexibility - ([@maiko3tattun](https://github.com/maiko3tattun))
@@ -75,6 +105,7 @@ after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https:
 - [#1078](https://github.com/stakira/OpenUtau/pull/1078) - Improved view position when pasting note - ([@maiko3tattun](https://github.com/maiko3tattun))
 - [#1079](https://github.com/stakira/OpenUtau/pull/1079) - Move save status(*) to the top of window title - ([@maiko3tattun](https://github.com/maiko3tattun))
 - [#1052](https://github.com/stakira/OpenUtau/pull/1052) - Add phonemizer expression - ([@maiko3tattun](https://github.com/maiko3tattun))
+
 
 # ~[0.1.397 Beta](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.397) (02-25-2024)
 ## Features
