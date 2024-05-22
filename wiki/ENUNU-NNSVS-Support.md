@@ -6,8 +6,12 @@
   - Unofficial [ENUNUServer](https://github.com/rokujyushi/ENUNU/releases) (ENUNU-0.6.0 ...)
   - Unofficial [SimpleENUNUServer](https://github.com/rokujyushi/SimpleEnunu/releases) (SimpleEnunuServer-0.2.0+0.local.9.1 ...)
 
-## How to use (0.1.327~)
-Download [SimpleENUNUServer](https://github.com/rokujyushi/SimpleEnunu/releases).
+## How to use
+Download the suitable ENUNU server version according to the voicebank you want to use. Unzip it.
+
+Before opening OpenUtau, double click enunu_server.bat to launch the server and leave it open.
+
+To use NNSVS generated pitch, finish rendering first, then execute "Notes -> Load Rendered Pitch" from the piano roll menu. You can select some phrases to load or load the entire part. Only the pitch of phrases finished rendering will be loaded.
 
 If there is a problem with the operation, please put the following in **config.yaml**.  
 If you do not want to perform timing correction, delete the timing_editor line.  
@@ -22,31 +26,12 @@ extensions:
 
 ```
 
-
-## How to use (0.1.129)
+## Notes for voicebank developers
 For SimpleENUNU compatible models, please add the following to character.yaml.
 
 ```
 singer_type: Enunu
 ```
-
-## About ENUNU v0.5.0
-It is reported that replacing files in ENUNU-server with ENUNU v0.5.0 files makes ENUNU-server work with v0.5.0 voicebanks. Feel free to try at your own risk.
-
-## How to use (0.0.743)
-See [ENUNU v0.4.0 for OpenUtau](https://github.com/stakira/ENUNU/releases/tag/v0.4.0-openutau)
-
-## How to use (0.0.732)
-- Currently Windows only.
-- Delete old ENUNU plugins.
-- Add ENUNU 0.3.1 plugin to Plugins folder.
-- Start ENUNU as a legacy plugin just once so that it will download and install pytorch. It takes a while.
-- After pytorch is installed, it functions as a normal renderer. I.e., no need to run it as a legacy plugin.
-- Supported expressions: PITD, DYN, TENC, BREC, VOIC, GENC.
-- Use "ENUNU" phonemizer.
-- No "extensions" support. For OpenUtau calling an external exe is generally considered an anti-pattern. If anything, it needs to be cross-platform.
-- You can put words or phonemes as lyrics, separated by whitespaces, e.g. "か k a", as long as they exist in the table file or hed file.
-- To use NNSVS generated pitch, finish rendering first, then execute "Notes -> Load Rendered Pitch" from the piano roll menu. You can select some phrases to load or load the entire part. Only the pitch of phrases finished rendering will be loaded.
 
 ## FAQ
 ### Q: FileNotFoundException: Could not find file '...\acoustic-f0.npy'.
