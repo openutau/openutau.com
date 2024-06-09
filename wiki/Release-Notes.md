@@ -49,13 +49,13 @@ after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https:
 - [#1171](https://github.com/stakira/OpenUtau/pull/1171) - Fix wavtool not working when full path contains 2 byte characters - ([@maiko3tattun](https://github.com/maiko3tattun))
 
 ## Phonemizer Changes
-- [#1132](https://github.com/stakira/OpenUtau/pull/1132) - Update Korean Phonemizers (#1121 + #1122) - ([@EX3exp](https://github.com/EX3exp))
-- [#1143](https://github.com/stakira/OpenUtau/pull/1143) - [JA VCV&CVVC] Fix start glottalstop - ([@maiko3tattun](https://github.com/maiko3tattun))
-- [#1150](https://github.com/stakira/OpenUtau/pull/1150) - [JA Presamp Phonemizer] Some starting consonant fixes/adjustments - ([@lottev1991](https://github.com/lottev1991))
-- [#1149](https://github.com/stakira/OpenUtau/pull/1149) - [JA VCV] Support * あ - ([@maiko3tattun](https://github.com/maiko3tattun))
-- [#1147](https://github.com/stakira/OpenUtau/pull/1147) - Add Japanese monophone G2P (tailored to AI voicebanks/phonemizers) + add support to Diffsinger Japanese Phonemizer - ([@lottev1991](https://github.com/lottev1991))
-- [#1161](https://github.com/stakira/OpenUtau/pull/1161) - ZH CVVC: Fix note timing after tempo change - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
-- [#1165](https://github.com/stakira/OpenUtau/pull/1165) - [EN X-SAMPA Phonemizer] Multiple fixes - ([@lottev1991](https://github.com/lottev1991))
+- [#1132](https://github.com/stakira/OpenUtau/pull/1132) - `Various Korean` Update Korean Phonemizers (#1121 + #1122) - ([@EX3exp](https://github.com/EX3exp))
+- [#1143](https://github.com/stakira/OpenUtau/pull/1143) - `JA VCV&CVVC` Fix start glottalstop - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1150](https://github.com/stakira/OpenUtau/pull/1150) - `JA VCV&CVVC` Some starting consonant fixes/adjustments - ([@lottev1991](https://github.com/lottev1991))
+- [#1149](https://github.com/stakira/OpenUtau/pull/1149) - `JA VCV` Support * あ - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1147](https://github.com/stakira/OpenUtau/pull/1147) - `DISSF JA` Add Japanese monophone G2P (tailored to AI voicebanks/phonemizers) + add support to Diffsinger Japanese Phonemizer - ([@lottev1991](https://github.com/lottev1991))
+- [#1161](https://github.com/stakira/OpenUtau/pull/1161) - `ZH CVVC` Fix note timing after tempo change - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1165](https://github.com/stakira/OpenUtau/pull/1165) - `EN X-SAMPA` Multiple fixes - ([@lottev1991](https://github.com/lottev1991))
 
 ## Misc
 - [#1125](https://github.com/stakira/OpenUtau/pull/1125) - Fixed force activation of the main window when an error dialog is shown - ([@maiko3tattun](https://github.com/maiko3tattun))
