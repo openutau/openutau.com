@@ -1,4 +1,4 @@
-The latest stable version is [0.1.327](#01327-12-02-2023).
+> The latest stable version is [0.1.327](#01327-12-02-2023).
 
 <!-- To get a list of pull requests, use the following git command
 git log --merges --since="2024-02-26" --first-parent --pretty=format:"%s pr %b"
@@ -13,6 +13,57 @@ after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https:
 ## Translation
 ## Misc
 -->
+
+# ~[0.1.497 Beta](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.497) (06-9-2024)
+## Features
+- [#1134](https://github.com/stakira/OpenUtau/pull/1134) - Organising the reset menu , add reset all parameter menu - ([@LitMus9](https://github.com/LitMus9))
+![image](https://github.com/stakira/OpenUtau/assets/130257355/cf71f900-768f-428b-88b3-40eba3a6fe96)
+- [#1141](https://github.com/stakira/OpenUtau/pull/1141) - Read track names from midi, write track names into midi - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1142](https://github.com/stakira/OpenUtau/pull/1142) - Add Overwrite Pitch Tool - ([@maiko3tattun](https://github.com/maiko3tattun))  
+  There are no good icons available yet ( ˘ω˘ )
+
+  https://github.com/stakira/OpenUtau/assets/130257355/9d7db5ce-37bf-44b5-92d6-3ce3a7bec8b8
+- [#1146](https://github.com/stakira/OpenUtau/pull/1146) - First linkage with setparam - ([@maiko3tattun](https://github.com/maiko3tattun))  
+![image](https://github.com/stakira/OpenUtau/assets/130257355/37badc70-cfe1-449f-a8e1-5e5930ebf595)
+
+- [#1153](https://github.com/stakira/OpenUtau/pull/1153) - Ignore slur lyrics when merging notes with Ctrl+U - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1156](https://github.com/stakira/OpenUtau/pull/1156) - Auto save even when ustx is not saved - ([@tansansuisui](https://github.com/tansansuisui))
+- [#1158](https://github.com/stakira/OpenUtau/pull/1158) - Changed font size to be calculated in order of height - ([@rokujyushi](https://github.com/rokujyushi))  
+![image](https://github.com/stakira/OpenUtau/assets/130257355/b806b0db-b143-4066-8da8-069f84082278)
+- [#1168](https://github.com/stakira/OpenUtau/pull/1168) - Add "Open singers location" menu - ([@maiko3tattun](https://github.com/maiko3tattun))  
+![image](https://github.com/stakira/OpenUtau/assets/130257355/cefd0f24-f81a-4d70-afa6-ab7f3974a7f8)
+
+## Bug Fixes
+- [#1124](https://github.com/stakira/OpenUtau/pull/1124) - Fix LyricsReplaceDialog bug - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1130](https://github.com/stakira/OpenUtau/pull/1130) - Fix importing project into an unsaved project - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1131](https://github.com/stakira/OpenUtau/pull/1131) - Enhance diffsinger error messages; diffsinger phonemizer fix - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1135](https://github.com/stakira/OpenUtau/pull/1135) - Fixed error in voice color remapping - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1136](https://github.com/stakira/OpenUtau/pull/1136) - Fix unable to open old projects that contains P flag - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1137](https://github.com/stakira/OpenUtau/pull/1137) - Fix OU not launching if project fails to open - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1140](https://github.com/stakira/OpenUtau/pull/1140) - Fix spaces being ignored in presamp.ini VCPAD - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1144](https://github.com/stakira/OpenUtau/pull/1144) - Fix openutau crash when trying to install singer from an encrypted archive file - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1154](https://github.com/stakira/OpenUtau/pull/1154) - Fix openutau crash when opening a project with a diffsinger voicebank that isn't installed on this PC - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1155](https://github.com/stakira/OpenUtau/pull/1155) - Fix OpenUtau failed to search singers when the user runs OpenUtau for the first time - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1163](https://github.com/stakira/OpenUtau/pull/1163) - Fixed crash when unzipping singer fails - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1169](https://github.com/stakira/OpenUtau/pull/1169) - Fix openutau crash when g2p lyrics helper failed to provide a suggestion - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1171](https://github.com/stakira/OpenUtau/pull/1171) - Fix wavtool not working when full path contains 2 byte characters - ([@maiko3tattun](https://github.com/maiko3tattun))
+
+## Phonemizer Changes
+- [#1132](https://github.com/stakira/OpenUtau/pull/1132) - Update Korean Phonemizers (#1121 + #1122) - ([@EX3exp](https://github.com/EX3exp))
+- [#1143](https://github.com/stakira/OpenUtau/pull/1143) - [JA VCV&CVVC] Fix start glottalstop - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1150](https://github.com/stakira/OpenUtau/pull/1150) - [JA Presamp Phonemizer] Some starting consonant fixes/adjustments - ([@lottev1991](https://github.com/lottev1991))
+- [#1149](https://github.com/stakira/OpenUtau/pull/1149) - [JA VCV] Support * あ - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1147](https://github.com/stakira/OpenUtau/pull/1147) - Add Japanese monophone G2P (tailored to AI voicebanks/phonemizers) + add support to Diffsinger Japanese Phonemizer - ([@lottev1991](https://github.com/lottev1991))
+- [#1161](https://github.com/stakira/OpenUtau/pull/1161) - ZH CVVC: Fix note timing after tempo change - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1165](https://github.com/stakira/OpenUtau/pull/1165) - [EN X-SAMPA Phonemizer] Multiple fixes - ([@lottev1991](https://github.com/lottev1991))
+
+## Misc
+- [#1125](https://github.com/stakira/OpenUtau/pull/1125) - Fixed force activation of the main window when an error dialog is shown - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1138](https://github.com/stakira/OpenUtau/pull/1138) - Showing positions that failed to render - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1160](https://github.com/stakira/OpenUtau/pull/1160) - Add support for straycat's cache files - ([@Astel123457](https://github.com/Astel123457))
+- [#1170](https://github.com/stakira/OpenUtau/pull/1170) - Show InputGesture on notes context menu - ([@maiko3tattun](https://github.com/maiko3tattun))
+
+
 # ~[0.1.463 Beta](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.463) (05-10-2024)
 ## Features
 - [#1126](https://github.com/stakira/OpenUtau/pull/1126) - Add option to move only the cursor and not scroll back when pausing playback - ([@maiko3tattun](https://github.com/maiko3tattun))
