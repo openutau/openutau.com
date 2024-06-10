@@ -14,7 +14,11 @@ after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https:
 ## Misc
 -->
 
-# ~[0.1.497 Beta](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.497) (06-9-2024)
+# ~[0.1.501 Beta](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.501) (06-09-2024)
+```Diff
+! Caution !
+0.1.497Beta has known bugs! Please use 0.1.501Beta.
+```
 ## Features
 - [#1134](https://github.com/stakira/OpenUtau/pull/1134) - Organising the reset menu , add reset all parameter menu - ([@LitMus9](https://github.com/LitMus9))
 ![image](https://github.com/stakira/OpenUtau/assets/130257355/cf71f900-768f-428b-88b3-40eba3a6fe96)
@@ -47,6 +51,7 @@ after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https:
 - [#1163](https://github.com/stakira/OpenUtau/pull/1163) - Fixed crash when unzipping singer fails - ([@maiko3tattun](https://github.com/maiko3tattun))
 - [#1169](https://github.com/stakira/OpenUtau/pull/1169) - Fix openutau crash when g2p lyrics helper failed to provide a suggestion - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
 - [#1171](https://github.com/stakira/OpenUtau/pull/1171) - Fix wavtool not working when full path contains 2 byte characters - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1172](https://github.com/stakira/OpenUtau/pull/1172) - Fix unable to save - ([@maiko3tattun](https://github.com/maiko3tattun))
 
 ## Phonemizer Changes
 - [#1132](https://github.com/stakira/OpenUtau/pull/1132) - `Various Korean` Update Korean Phonemizers (#1121 + #1122) - ([@EX3exp](https://github.com/EX3exp))
