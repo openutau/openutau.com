@@ -8,6 +8,8 @@ Welcome to the OpenUtau wiki!
 * [Getting Started](Getting-Started)　From installation to basic usage
   * [スターターガイド (日本語)](https://github.com/stakira/OpenUtau/wiki/%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BF%E3%83%BC%E3%82%AC%E3%82%A4%E3%83%89-(%E6%97%A5%E6%9C%AC%E8%AA%9E))
 * [FAQ](https://github.com/stakira/OpenUtau/wiki/FAQ)
+  * [FAQ（日本語）](https://github.com/stakira/OpenUtau/wiki/FAQ%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%EF%BC%89)
+
 * [Keyboard Shortcuts](https://github.com/stakira/OpenUtau/wiki/Keyboard-Shortcuts)
 
 ### Basics
