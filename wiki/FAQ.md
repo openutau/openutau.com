@@ -27,6 +27,22 @@ If the "M" button is highlighted on a track, it is muted. Press the "M" button t
 4. If an alias exists for a sound file in the voicebank, OpenUtau will only use the alias.
 OpenUtau will fall back to reading filenames if an alias is missing, but by default, it will only select the aliases in the `oto.ini`.  
 
+### My Singer still doesn't play or sounds strange, but no troubleshooting steps so far have helped.
+In cases like this, it's good to run a Singer Error Report check to rule out the voicebank configuration or formatting being the source of the problem. To do this:
+1. Select `Tools` on the main window navigation bar, and choose `Singers...` from the drop-down.
+2. Be sure the problematic Singer is selected, then navigate to the "cog" icon and select "Generate Singer Error Report".
+
+![Image: Visual example of cog location](https://i.imgur.com/zEXGR53.png)
+
+After it's complete (this may take a moment), the singer folder should open up in a file explorer window, with an errors.txt file present. You can share this file with people who are helping you troubleshoot, or analyze it on your own to figure out if the cause of your problems might be contained in the singer. 
+
+Common critical errors include, but are not limited to: 
+* Incorrect WAV export settings
+* `oto.ini` entries referring to non-existent files
+* Incorrect `oto.ini` configuration.
+
+> You can safely ignore warnings about duplicates, as well as warnings about incorrect `oto.ini` entries regarding "sample.wav" files and/or other extra samples intended for external use in DAWs or as demos.
+
 ### How do I select an external resampler? [Moresampler, macres, TIPS, etc.] is not in the renderer list.
 Resamplers are selected in the Engine menu of the track. WORLDLINE-R is a special renderer, and it cannot use external resamplers.  
 Select the "Classic" renderer for the track, then click on the gray gear icon to select the resampler and the wavtool for that track.
