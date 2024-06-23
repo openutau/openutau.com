@@ -22,6 +22,8 @@ Firstly, find a reclist suitable for your language. A reclist is a text file tha
 |JA VCV & CVVC|[Japanese reclists](https://wastelandutau.neocities.org/jp/overview)|
 |ZH CVVC|[Hr.J Chinese CVVC](https://utaujc.jimdofree.com/hr-j-cvvc/) by haru|
 
+* English recorded with any of these methods have various pros and cons. You may want to try recording a language with a smaller set of vowels first, or recording and training an AI voicebank for DiffSinger.
+
 Theoretically you can record a voicebank with any software you like. However, a delicated reclist recorder application can autometically prompt you to record line by line and save them using the text of the line as file names. The recommended software is [recstar](https://github.com/sdercolin/recstar) 
 
 #### Multi-pitch voicebanks
