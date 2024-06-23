@@ -22,9 +22,11 @@ Firstly, find a reclist suitable for your language. A reclist is a text file tha
 |JA VCV & CVVC|[Japanese reclists](https://wastelandutau.neocities.org/jp/overview)|
 |ZH CVVC|[Hr.J Chinese CVVC](https://utaujc.jimdofree.com/hr-j-cvvc/) by haru|
 
-* English recorded with any of these methods have various pros and cons. You may want to try recording a language with a smaller set of vowels first, or recording and training an AI voicebank for DiffSinger.
+* English recorded with any of these methods have various pros and cons. You may want to try recording a language with a smaller set of vowels first, or recording and training [an AI voicebank](#machine-learning-voicebank-development) for DiffSinger.
 
 Theoretically you can record a voicebank with any software you like. However, a delicated reclist recorder application can autometically prompt you to record line by line and save them using the text of the line as file names. The recommended software is [recstar](https://github.com/sdercolin/recstar) 
+
+Many people record with a "guide BGM" so that their samples are at a consistent BPM and pitch. You can find some guideBGMs to start with [here](https://wastelandutau.neocities.org/ref/guidebgm#dl) and [here](https://w.atwiki.jp/vbmaker/pages/26.html) (日本語 website). ("#-Mora" is the number of syllables in each string)
 
 #### Multi-pitch voicebanks
 You can record multiple subbanks in one voicebank. For example, you can record in multiple pitches to make its range wider, or record in multiple vocal modes to let the user choose between different singing styles. Each subbank is a full voicebank and should contain all the voice lines in your reclist. 
