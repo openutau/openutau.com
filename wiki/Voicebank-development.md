@@ -17,13 +17,15 @@ Firstly, find a reclist suitable for your language. A reclist is a text file tha
 |Phonemizer|Reclist|
 |-|-|
 |EN VCCV|[Core American English VCCV](https://www.mediafire.com/download/wef9lg11dmccxqx/CORE_American_English_VCCV.zip) by PaintedCz|
+|EN ARPA|[ARPAsing resource website](https://arpasing.neocities.org/)
+|EN XSAMPA|[Delta-style English reclists](https://tl.tubs.wtf/2020/11/09/delta-eng)
 |JA VCV & CVVC|[Japanese reclists](https://wastelandutau.neocities.org/jp/overview)|
 |ZH CVVC|[Hr.J Chinese CVVC](https://utaujc.jimdofree.com/hr-j-cvvc/) by haru|
 
 Theoretically you can record a voicebank with any software you like. However, a delicated reclist recorder application can autometically prompt you to record line by line and save them using the text of the line as file names. The recommended software is [recstar](https://github.com/sdercolin/recstar) 
 
 #### Multi-pitch voicebanks
-You can record multiple subbanks in one voicebank. For example, you can record in multiple pitches to make its range wider, or record in multiple vocal modes to let the user choose. Each subbank is a full voicebank and should contain all the voice lines in your reclist. 
+You can record multiple subbanks in one voicebank. For example, you can record in multiple pitches to make its range wider, or record in multiple vocal modes to let the user choose between different singing styles. Each subbank is a full voicebank and should contain all the voice lines in your reclist. 
 
 You can start developing your voicebank with only one subbank, and add more subbanks in the future. 
 
@@ -33,6 +35,8 @@ After recoding, you need to make oto.ini files.
 oto.ini is a mark-up language that tells OpenUtau where each phoneme is in the voicebank. 
 
 The recommended way to make oto.ini for an voicebank is using [Vlabeler](https://github.com/sdercolin/vlabeler). 
+
+If you want a tutorial that covers how to oto most voicebanks, [Yin's tutorial](https://yinsototutorial.weebly.com/) is commonly recommended by the community. It uses older tools than Vlabeler, but the basic logic is the same.
 
 ### Other files
 Create a subfolder inside your OpenUtau's `Singers` folder, and put your voice folders (wav and oto.ini) into it. You still need these files and informations in your voicebank:
@@ -62,7 +66,7 @@ Record any song in this language with any recording software you like. Just ensu
 ### Labelling
 After recording, make phoneme-level labels for your voicebank. You can use [vlabeler](https://github.com/sdercolin/vlabeler) to make labels.
 
-[SVS Singing voice database - tutorial](https://docs.google.com/document/d/1uMsepxbdUW65PfIWL1pt2OM6ZKa5ybTTJOpZ733Ht6s/view) by PixPurcer
+[SVS Singing voice database - tutorial](https://docs.google.com/document/d/1uMsepxbdUW65PfIWL1pt2OM6ZKa5ybTTJOpZ733Ht6s/view) by PixPrucer
 
 There are also automated tools that make labels for you:
 - [SOFA](https://github.com/qiuqiao/SOFA)
@@ -73,6 +77,7 @@ After labelling your dataset, you can either train a DiffSinger voicebank or an 
 
 [DiffSinger](https://github.com/openvpi/diffsinger)
 - [DiffSinger Colab Notebook MLo7](https://github.com/MLo7Ghinsan/DiffSinger_colab_notebook_MLo7)
+- [DiffTrainer local training kit](https://github.com/agentasteriski/DiffTrainer)
 
 [ENUNU](https://github.com/oatsu-gh/Enunu)
 - [ENUNU training kit](https://github.com/oatsu-gh/enunu_training_kit)
