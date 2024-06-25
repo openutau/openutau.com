@@ -21,7 +21,7 @@ In OpenUtau version 0.1.119 or higher, resamplers can be installed by dragging a
 As of macOS 11.6, the below method works.
 
 1. Install [homebrew](https://brew.sh/)
-2. Install [wine32on64](https://github.com/Gcenx/homebrew-wine) using following commands:
+2. Install [wine](https://github.com/Gcenx/homebrew-wine) using following commands:
 ```
 brew tap gcenx/wine
 brew install --cask --no-quarantine wine-crossover
