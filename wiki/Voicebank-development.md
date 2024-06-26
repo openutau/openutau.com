@@ -1,4 +1,4 @@
-**This page is work in progress**
+**This page is a work in progress. Contributions are welcomed**
 
 Anyone can make a voicebank with their voice and use it in OpenUtau. There are basically two types of voicebanks: UTAU concatenative voicebanks and Machine learning voicebanks. 
 
@@ -24,23 +24,37 @@ Firstly, find a reclist suitable for your language. A reclist is a text file tha
 
 * English recorded with any of these methods have various pros and cons. You may want to try recording a language with a smaller set of vowels first, or recording and training [an AI voicebank](#machine-learning-voicebank-development) for DiffSinger.
 
-Theoretically you can record a voicebank with any software you like. However, a delicated reclist recorder application can autometically prompt you to record line by line and save them using the text of the line as file names. The recommended software is [recstar](https://github.com/sdercolin/recstar) 
+Theoretically you can record a voicebank with any software you like. However, a dedicated reclist recorder application can automatically prompt you to record line by line and save them using the text of the line as file names. The recommended software is [recstar](https://github.com/sdercolin/recstar) 
 
-Many people record with a "guide BGM" so that their samples are at a consistent BPM and pitch. You can find some guideBGMs to start with [here](https://wastelandutau.neocities.org/ref/guidebgm#dl) and [here](https://w.atwiki.jp/vbmaker/pages/26.html) (日本語 website). ("#-Mora" is the number of syllables in each string)
+Many people record with a "guide BGM" so that their samples are at a consistent BPM and pitch. You can find some guideBGMs to start with [here](https://wastelandutau.neocities.org/ref/guidebgm#dl) and [here](https://w.atwiki.jp/vbmaker/pages/26.html) (Japanese site). ("#-Mora" is the number of syllables in each string)
 
 #### Multi-pitch voicebanks
-You can record multiple subbanks in one voicebank. For example, you can record in multiple pitches to make its range wider, or record in multiple vocal modes to let the user choose between different singing styles. Each subbank is a full voicebank and should contain all the voice lines in your reclist. 
+You can record multiple subbanks for one voicebank. For example, you can record in multiple pitches to make its range wider, or record in multiple vocal modes to let the user choose between different singing styles. Each subbank is equivalent to a full single-pitch voicebank and should contain all the voice lines in your reclist.
 
 You can start developing your voicebank with only one subbank, and add more subbanks in the future. 
 
 ### otoing
-After recoding, you need to make oto.ini files. 
+After recording, you will need to make oto.ini files. 
 
-oto.ini is a mark-up language that tells OpenUtau where each phoneme is in the voicebank. 
+oto.ini is a mark-up language that tells OpenUtau where each phoneme is in the voicebank and how to manipulate them. 
 
-The recommended way to make oto.ini for an voicebank is using [Vlabeler](https://github.com/sdercolin/vlabeler). 
+The recommended way to make oto.ini for a voicebank is using [vLabeler](https://github.com/sdercolin/vlabeler). 
 
-If you want a tutorial that covers how to oto most voicebanks, [Yin's tutorial](https://yinsototutorial.weebly.com/) is commonly recommended by the community. It uses older tools than Vlabeler, but the basic logic is the same.
+If you want a tutorial that covers how to oto most styles of voicebank, [Yin's tutorial](https://yinsototutorial.weebly.com/) is commonly recommended by the community. It uses older tools than vLabeler, but the basic logic is the same.
+
+#### How oto.ini works
+
+Let's look at an example oto.ini line from [Kasane Teto](https://kasaneteto.jp/utau/) in vLabeler and dissect it.
+
+![image](https://github.com/stakira/OpenUtau/assets/37761120/5c85409d-6edc-43af-9ebf-42a46aa28ef3)
+
+1. **Yellow:** Left blank. The start of the phoneme.
+2. **Green line:** Overlap. Everything between the left blank and overlap will be blended together.
+3. **Red line:** Preutterance. The start of the note.
+4. **Blue line:** Consonant. Everything before this line will not be looped.
+5. **White:** Right blank. The end of the phoneme. Everything between the consonant and right blank will be looped.
+
+See also: [Anatomy of the OTO](https://utaforum.net/resources/anatomy-of-the-oto.321/) on UtaForum.
 
 ### Other files
 Create a subfolder inside your OpenUtau's `Singers` folder, and put your voice folders (wav and oto.ini) into it. You still need these files and informations in your voicebank:
