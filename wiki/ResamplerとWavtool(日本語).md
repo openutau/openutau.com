@@ -1,6 +1,6 @@
 resamplerは主要な音声合成の作業を行うコアエンジンで、音声サンプルのピッチと長さを変更しフラグを適用します。resamplerを変更して音声を出力すると、音質が変わります。また、resamplerによって使えるフラグも異なります。OpenUtauには`worldline`というresamplerが同梱されています。また、外部のresamplerも多数存在します。
 
-wavtoolは、resamplerから渡された音声を組み合わせて一つの音声にするプログラムです。OpenUtauには`simple`と`convergence`という2つのwavtoolsが同梱されています。また、外部のwavtoolも多数存在します。
+wavtoolは、resamplerから渡された音声を組み合わせて一つの音声にするプログラムです。OpenUtauには`simple`と`convergence`という2つのwavtoolが同梱されています。また、外部のwavtoolも多数存在します。
 
 # resamplerのインストール
 resamplerをインストールしたら、resamplerが使えるようにするために"CLASSIC"レンダラーに切り替えてください。
@@ -51,7 +51,7 @@ OpenUtauでテストしたすべてのresamplerのリストです。
 
 |  Resampler |  作者  |  備考 |
 | ------------ | ------------ | ------------ |
-|  worldline  | StAkira  |   OpenUtauに同梱すべてのプラットフォームで動作します。|
+|  worldline  | StAkira  |   OpenUtauに同梱。すべてのプラットフォームで動作します。|
 |  [bkh01.exe](http://z-server.game.coocan.jp/utau/utautop.html#bkh01) |  Zteer |   |
 |  [doppeltler32.exe](http://utau2008.xrea.jp/2020/engine/) | 飴屋/菖蒲  |   |
 |  [doppeltler64.exe](http://utau2008.xrea.jp/2020/engine/) | 飴屋/菖蒲 |   |
@@ -75,7 +75,7 @@ OpenUtauでテストしたすべてのresamplerのリストです。
 |[StrayCat.py](https://github.com/UtaUtaUtau/straycat) | UtaUtaUtau |   |
 | [TIPS.exe](http://scientistb.web.fc2.com/program/)  | ScientistB |   |
 | [tn_fnds.exe](http://z-server.game.coocan.jp/utau/utautop.html#tn_fnds) | Zteer |  |
-| [UDB](https://github.com/YuzukiTsuru/UDB/releases/tag/0.0.3.1) | YuzukiTsuru | UDBはUTAU Debug Engineという意味|
+| [UDB](https://github.com/YuzukiTsuru/UDB/releases/tag/0.0.3.1) | YuzukiTsuru | UDBはUTAU Debug Engineという意味。|
 | [vs4u.exe](http://ackiesound.ifdef.jp/download.html#vs4u) | あっきー |  |
 | [w4u.exe](http://utau2008.xrea.jp/downloads/w4u001.zip) | Zany |   |
 | [WARP.exe](http://custom-made.seesaa.net/article/312530509.html) | Custom.Maid | |
@@ -253,7 +253,7 @@ expressions:
     flag: Mm
 ```
 
-# Wavtoolのインストール
+# wavtoolのインストール
 
 ## Windows
 1. 展開したOpenUtauフォルダーで、`Wavtools`というフォルダーを探します。
@@ -270,10 +270,10 @@ OpenUtau バージョン 0.1.119以降でwavtoolをインストールするに�
 # テストされたwavtoolとその情報
 以下はOpenUtauでテストしたすべてのwavtoolのリストです。
 
-| Wavtool | Author | Additonal Notes |
+| Wavtool | 作者 | 備考 |
 | --------- | -------- | ------------------ |
-| simple | StAkira | OpenUtauに同梱すべてのプラットフォームで動作します。|
-| convergence | StAkira | OpenUtauに同梱位相補正を使用|
+| simple | StAkira | OpenUtauに同梱。すべてのプラットフォームで動作します。|
+| convergence | StAkira | OpenUtauに同梱。位相補正を使用。|
 | [moresampler.exe](https://bowlroll.net/file/139123) | Kanru Hua | [互換性のための調整を参照](ResamplerとWavtool(日本語)#互換性のための調整) |
 | [wavtool64](http://utau2008.xrea.jp/2020/engine/wavtool64.zip) | 飴屋/菖蒲 | |
 | [wavtool4vcv](https://www.mediafire.com/file/1iwrak88c6xzb87/wavtool4vcv20141202.zip/file) | nmasao | |
