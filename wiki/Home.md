@@ -33,3 +33,4 @@ Welcome to the OpenUtau wiki!
 * [[Adding support for a new synthesis engine]]
 * [[ [PROPOSAL] svs.json ‐ singing voice synthesis backend API]]
 * [[tech note ‐ music is music, phonetics is phonetics (also why you don't need legacy plugins)]]
+* [[Known Bugs]]
