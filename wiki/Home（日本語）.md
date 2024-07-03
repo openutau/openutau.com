@@ -1,3 +1,5 @@
+[English](https://github.com/stakira/OpenUtau/wiki) | **日本語**
+
 OpenUtau wikiへようこそ！
 
 ## 目次
