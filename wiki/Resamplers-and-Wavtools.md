@@ -17,8 +17,9 @@ In OpenUtau version 0.1.119 or higher, resamplers can be installed by dragging a
 
 
 ## macOS
+[Macres](https://github.com/titinko/macres/releases) provides a native macOS version. Put it into the resamplers folder of OpenUtau.
 
-As of macOS 11.6, the below method works.
+You can also use Windows resamplers with Wine: (tested on macOS 11.6)
 
 1. Install [homebrew](https://brew.sh/)
 2. Install [wine](https://github.com/Gcenx/homebrew-wine) using following commands:
@@ -32,6 +33,7 @@ brew install --cask --no-quarantine wine-crossover
 This script will need to be added to the `Resamplers` folder and edited for every `.exe` resampler that is added.
 
 ## Linux
+[Macres](https://github.com/titinko/macres/releases) provides a native Linux version. Put it into the resamplers folder of OpenUtau.
 
 For wrapping Windows resamplers into Linux, use this method:
 
@@ -48,6 +50,8 @@ LANG="ja_JP.UTF8" wine "/absolute/path/to/your/resampler.exe" "${@,-1}"
 
 # Tested Resamplers and Directories
 This is a list of all UTAU resamplers tested with OpenUtau.
+
+## Windows
 
 |  Resampler |  Author  |  Additional Notes |
 | ------------ | ------------ | ------------ |
@@ -82,7 +86,7 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 | [wn4u.exe](https://utaforum.net/threads/world4utau-update.20035/) | Zany | [See adjustments for compatibility.](https://github.com/stakira/OpenUtau/wiki/Resamplers-and-Wavtools#compatible-with-adjustments) |
 | [young3.exe](https://bowlroll.net/file/203018) | Zany |   |
 
-## Compatible with adjustments
+### Compatible with adjustments
 
 - [moresampler.exe](https://bowlroll.net/file/139123)
   - Add `moresampler.exe` and the default `moreconfig.txt` to the `Resamplers` folder.
@@ -93,6 +97,18 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 - [[lessampler|https://github.com/YuzukiTsuru/lessampler/releases/]]
     - In development, lack of flag support
     - Oversized Audio Model Attention
+
+## MacOS
+|  Resampler |  Author  |  Additional Notes |
+| ------------ | ------------ | ------------ |
+|  worldline  | StAkira  |   Built into OpenUtau. Works on all platforms. |
+| [macres](https://github.com/titinko/macres/releases)   | titinko   |   |
+
+## Linux
+|  Resampler |  Author  |  Additional Notes |
+| ------------ | ------------ | ------------ |
+|  worldline  | StAkira  |   Built into OpenUtau. Works on all platforms. |
+| [macres](https://github.com/titinko/macres/releases)   | titinko   |   |
 
 # Resampler Manifest
 A resampler manifest is a YAML file used to store the expressions supported by a resampler. With resampler manifests, users can add all of a resampler's supported flags at once using the `Add all expressions suggested by renderers` button in the `Expressions` editor.
