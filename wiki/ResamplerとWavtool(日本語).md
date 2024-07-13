@@ -1,13 +1,17 @@
-resamplerは主要な音声合成の作業を行うコアエンジンで、音声サンプルのピッチと長さを変更しフラグを適用します。resamplerを変更して音声を出力すると、音質が変わります。また、resamplerによって使えるフラグも異なります。OpenUtauには`worldline`というresamplerが同梱されています。また、外部のresamplerも多数存在します。
+resamplerは音声合成の主要な作業を行う合成エンジンで、音声サンプルのピッチと長さを変更しフラグの音質の変更を適用します。
+OpenUtauには`worldline`というresamplerが同梱されています。また、外部のresamplerも多数存在します。
+resamplerを変更すると、合成された音声の音質が変わります。また、resamplerによって使えるフラグも異なります。
 
-wavtoolは、resamplerから渡された音声を組み合わせて一つの音声にするプログラムです。OpenUtauには`simple`と`convergence`という2つのwavtoolが同梱されています。また、外部のwavtoolも多数存在します。
+wavtoolは、resamplerから渡された音声を繋ぎ合わせて一つの音声にするプログラムです。OpenUtauには`simple`と`convergence`という2つのwavtoolが同梱されています。また、外部のwavtoolも多数存在します。
+wavtoolを変更すると、音声の繋ぎ合わせかたが変わります。
 
 # resamplerのインストール
-resamplerをインストールしたら、resamplerが使えるようにするために"CLASSIC"レンダラーに切り替えてください。
+resamplerをインストールして、使えるようにするために"CLASSIC"レンダラーに切り替えてください。
 
 ##  Windows
 
-resamplerは実行ファイル(`.exe`)である必要があります。resamplerは`Resamplers`フォルダーの子フォルダー内に置くこともできます。
+resamplerは実行ファイル(`.exe`)である必要があります。resamplerは`Resamplers`フォルダー内または子フォルダー内に置くこともできます。
+
 1. OpenUtauがインストールされているフォルダーの中で`Resamplers`というフォルダーを探します。
 2. `Resamplers`フォルダーを開き、その中にresamplerを入れます。
 
