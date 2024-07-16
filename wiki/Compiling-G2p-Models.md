@@ -152,6 +152,8 @@ entries:
 
 When reading and writing yaml files, OpenUtau always uses yaml 1.2 syntax. If you're developing third-party tools to parse or generate these yaml files, please use `ruamel.yaml` instead of `pyyaml` library.
 
+**`NOTE:`** Since Openutau doesn't have a built-in dictionary editor yet. Use [Openutau Dictionary Editor](https://github.com/Cadlaxa/OpenUtau-Dictionary-Editor) for edit the YAML dictionary. This tool can be used as external plugin for Openutau by placing it to the `plugins` folder
+
 ## Appendix: Phoneme set of builtin G2Ps
 ### ArpabetG2p (English)
 - vowels: `aa, ae, ah, ao, aw, ay, eh, er, ey, ih, iy, ow, oy, uh, uw`
