@@ -8,7 +8,6 @@ If the starting position of a part isn't in the current page, when dragging the 
 If the gender factor default value is set to a negative value, such as -15, the synthesized audio will get heavily distorted. This bug does not occur when the gender factor value is set to 0
 ![image](https://github.com/stakira/OpenUtau/assets/54425948/356f157a-cc3a-454a-bebd-6c2efb4a3ec7)
 
-
 Related issue: [#756](https://github.com/stakira/OpenUtau/issues/756)
 
 ### __MACOSX folder causes issues when installing
@@ -22,6 +21,10 @@ In classic UTAU, when your overlap is half of the pre-utterance or more, the pre
 In OpenUTAU, when your overlap is half of your pre-utterance or more, the pre-utterance of the next note will go nearly all the way into the previous note
 ![image](https://github.com/stakira/OpenUtau/assets/87346264/c01d5d34-2689-4274-b47d-f3d0bbe2f9f1)
 
+### Error when pressing Ctrl+Z in "Edit Lyrics" dialog
+![image](https://github.com/user-attachments/assets/f91846e3-a5bf-4017-a762-f788a1fae87f)
+
+Clicking "Apply" will make OpenUtau crash
 
 ## Known bugs in stable version
 These bugs are already solved in the latest beta version. If you encountered one of these bugs, you can solve it by upgrading to the latest beta version.
