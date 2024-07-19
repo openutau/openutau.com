@@ -49,7 +49,7 @@ Let's look at an example oto.ini line from [Kasane Teto](https://kasaneteto.jp/u
 ![image](https://github.com/stakira/OpenUtau/assets/37761120/5c85409d-6edc-43af-9ebf-42a46aa28ef3)
 
 1. **Yellow line:** Left blank. The start of the phoneme.
-2. **Green line:** Overlap. Everything between the left blank and overlap will be blended together.
+2. **Green line:** Overlap. Everything between the left blank and overlap will be blended with the previous note.
 3. **Red line:** Preutterance. The start of the note.
 4. **Blue line:** Consonant. Everything before this line will not be looped.
 5. **White line:** Right blank. The end of the phoneme. Everything between the consonant and right blank will be looped.
