@@ -63,9 +63,10 @@ The following are currently supported.
  Changes the voice quality of each singer (per phrase).
 * VOL (Volume)
  Adjustment of voice synthesizer input volume (per phrase)
+* PITD (pitch curve)
+  Adjusts the text-to-speech input pitch (in frames).
 
 To be supported in the future
-* PITD (pitch curve)
 * SHFC (tone shift curve)
 * VOLC(volume curve)
 * BSNG (bass singer)
