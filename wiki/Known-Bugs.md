@@ -26,6 +26,8 @@ In OpenUTAU, when your overlap is half of your pre-utterance or more, the pre-ut
 
 Clicking "Apply" will make OpenUtau crash
 
+This bug will be solved in PR [#1220](https://github.com/stakira/OpenUtau/pull/1220)
+
 ## Known bugs in stable version
 These bugs are already solved in the latest beta version. If you encountered one of these bugs, you can solve it by upgrading to the latest beta version.
 
