@@ -53,38 +53,39 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 
 ## Windows
 
-|  Resampler |  Author  |  Additional Notes |
-| ------------ | ------------ | ------------ |
-|  worldline  | StAkira  |   Built into OpenUtau. Works on all platforms. |
+|  Resampler |  Author  |  Resample Manifest  |  Additional Notes |
+| ------------ | ------------ | ------------ | ------------ |
+|  worldline  | StAkira |    |   Built into OpenUtau. Works on all platforms. |
 |  [bkh01.exe](http://z-server.game.coocan.jp/utau/utautop.html#bkh01) |  Zteer |   |
-|  [doppeltler32.exe](http://utau2008.xrea.jp/2020/engine/) | Ameya  |   |
-|  [doppeltler64.exe](http://utau2008.xrea.jp/2020/engine/) | Ameya |   |
+|  [doppeltler32.exe](http://utau2008.xrea.jp/2020/engine/) | Ameya  | [doppeltler32.yaml](https://github.com/Cadlaxa/Resampler-Manifests/blob/main/Resampler%20Manifests/doppeltler32.yaml)  |
+|  [doppeltler64.exe](http://utau2008.xrea.jp/2020/engine/) | Ameya | [doppeltler64.yaml](https://github.com/Cadlaxa/Resampler-Manifests/blob/main/Resampler%20Manifests/doppeltler64.yaml)  |
 | [EFB-GT.exe](http://custom-made.seesaa.net/article/312529786.html) | Custom.Maid | |
-| EFB-PB.exe | Custom.maid | |
-|  [f2resamp32.exe](http://utau2008.xrea.jp/2020/engine/f2resamp004.zip) | Ameya |   |
-|  [f2resamp64.exe](http://utau2008.xrea.jp/2020/engine/f2resamp004.zip) | Ameya  |   |
-|  [fresamp11.exe](http://utau2008.xrea.jp/downloads/fresamp011.zip) | Ameya  |   |
+| EFB-PB.exe | Custom.maid ||
+|  [f2resamp32.exe](http://utau2008.xrea.jp/2020/engine/f2resamp004.zip) | Ameya | [f2resamp32.yaml](https://github.com/oxygen-dioxide/openutau-manifests/blob/main/f2resamp.yaml)  |
+|  [f2resamp64.exe](http://utau2008.xrea.jp/2020/engine/f2resamp004.zip) | Ameya  | [f2resamp64.yaml](https://github.com/oxygen-dioxide/openutau-manifests/blob/main/f2resamp.yaml)  |
+|  [fresamp11.exe](http://utau2008.xrea.jp/downloads/fresamp011.zip) | Ameya  ||
 |  fresamp12.exe | Ameya |   |
-|  [fresamp14.exe](http://utau2008.xrea.jp/downloads/fresamp014.zip) | Ameya   |   |
-| [fresamp14omp.exe](http://utau2008.xrea.jp/downloads/fresamp014omp.zip)  | Ameya | Ported to OpenMP with faster rendering speed than fresamp14.exe. |
-| [lessampler.exe](https://github.com/YuzukiTsuru/lessampler/releases/) | YuzukiTsuru | [See additonal notes.](https://github.com/stakira/OpenUtau/wiki/Resamplers-and-Wavtools#compatible-with-adjustments) |
-| [macres.exe](https://github.com/titinko/macres/releases)   | titinko   |   |
+|  [fresamp14.exe](http://utau2008.xrea.jp/downloads/fresamp014.zip) | Ameya   | |
+| [fresamp14omp.exe](http://utau2008.xrea.jp/downloads/fresamp014omp.zip)  | Ameya |  | Ported to OpenMP with faster rendering speed than fresamp14.exe. |
+| [lessampler.exe](https://github.com/YuzukiTsuru/lessampler/releases/) | YuzukiTsuru | | [See additonal notes.](https://github.com/stakira/OpenUtau/wiki/Resamplers-and-Wavtools#compatible-with-adjustments) |
+| [macres.exe](https://github.com/titinko/macres/releases)   | titinko   |  |
 | model4.exe  | Ameya  |   |
-| [moresampler.exe](https://bowlroll.net/file/139123) |  Kanru Hua |  [See adjustments for compatibility.](https://github.com/stakira/OpenUtau/wiki/Resamplers-and-Wavtools#compatible-with-adjustments) |
-| [phavoco.exe](http://utau2008.xrea.jp/downloads/phavoco010.zip) | Ameya   |   |
+| [moresampler.exe](https://bowlroll.net/file/139123) |  Kanru Hua | [moresampler.yaml](https://github.com/Cadlaxa/Resampler-Manifests/blob/main/Resampler%20Manifests/moresampler.yaml) | [See adjustments for compatibility.](https://github.com/stakira/OpenUtau/wiki/Resamplers-and-Wavtools#compatible-with-adjustments) |
+| [phavoco.exe](http://utau2008.xrea.jp/downloads/phavoco010.zip) | Ameya   |  |
 | [phaavoco.exe](http://utau2008.xrea.jp/2020/engine/phaavoco001.zip) | Ameya |   |
-| resampler.exe  | Ameya  | UTAU built-in resampler.  |
-| [SpaceWorld_win64.exe](https://github.com/LovelyA72/SpaceWorld/releases) | LovelyA72 | [See adjustments for compatibility.](https://github.com/stakira/OpenUtau/wiki/Resamplers-and-Wavtools#compatible-with-adjustments) |
-|[StrayCatRunner.exe](https://github.com/Astel123457/straycat-server) | Astel123457 |   |
-|[StrayCat.py](https://github.com/UtaUtaUtau/straycat) | UtaUtaUtau |   |
-| [TIPS.exe](http://scientistb.web.fc2.com/program/)  | ScientistB |   |
-| [tn_fnds.exe](http://z-server.game.coocan.jp/utau/utautop.html#tn_fnds) | Zteer |  |
-| [UDB](https://github.com/YuzukiTsuru/UDB/releases/tag/0.0.3.1) | YuzukiTsuru | UDB means UTAU Debug Engine.|
+| resampler.exe  | Ameya  |  | UTAU built-in resampler.  |
+| [SpaceWorld_win64.exe](https://github.com/LovelyA72/SpaceWorld/releases) | LovelyA72 |  | [See adjustments for compatibility.](https://github.com/stakira/OpenUtau/wiki/Resamplers-and-Wavtools#compatible-with-adjustments) |
+|[StrayCatRunner.exe](https://github.com/Astel123457/straycat-server) | Astel123457 |  [StrayCatRunner.yaml](https://github.com/Cadlaxa/Resampler-Manifests/blob/main/Resampler%20Manifests/StrayCatRunner.yaml)|
+|[straycat-rs.exe](https://github.com/UtaUtaUtau/straycat) | UtaUtaUtau | [straycat-rs.yaml](https://github.com/Cadlaxa/Resampler-Manifests/blob/main/Resampler%20Manifests/straycat-rs.yaml)  |
+|[StrayCat.py](https://github.com/UtaUtaUtau/straycat) | UtaUtaUtau | [StrayCat.yaml](https://github.com/Cadlaxa/Resampler-Manifests/blob/main/Resampler%20Manifests/straycat.yaml)  |
+| [TIPS.exe](http://scientistb.web.fc2.com/program/)  | ScientistB |  |
+| [tn_fnds.exe](http://z-server.game.coocan.jp/utau/utautop.html#tn_fnds) | Zteer | [tn_fnds.yaml](https://github.com/oxygen-dioxide/openutau-manifests/blob/main/tn_fnds.yaml) |
+| [UDB](https://github.com/YuzukiTsuru/UDB/releases/tag/0.0.3.1) | YuzukiTsuru | | UDB means UTAU Debug Engine.|
 | [vs4u.exe](http://ackiesound.ifdef.jp/download.html#vs4u) | AckieSound |  |
-| [w4u.exe](http://utau2008.xrea.jp/downloads/w4u001.zip) | Zany |   |
-| [WARP.exe](http://custom-made.seesaa.net/article/312530509.html) | Custom.Maid | |
-| [wn4u.exe](https://utaforum.net/threads/world4utau-update.20035/) | Zany | [See adjustments for compatibility.](https://github.com/stakira/OpenUtau/wiki/Resamplers-and-Wavtools#compatible-with-adjustments) |
-| [young3.exe](https://bowlroll.net/file/203018) | Zany |   |
+| [w4u.exe](http://utau2008.xrea.jp/downloads/w4u001.zip) | Zany |  [w4u.yaml](https://github.com/oxygen-dioxide/openutau-manifests/blob/main/world4utau.yaml) |
+| [WARP.exe](http://custom-made.seesaa.net/article/312530509.html) | Custom.Maid |  
+| [wn4u.exe](https://utaforum.net/threads/world4utau-update.20035/) | Zany | | [See adjustments for compatibility.](https://github.com/stakira/OpenUtau/wiki/Resamplers-and-Wavtools#compatible-with-adjustments) |
+| [young3.exe](https://bowlroll.net/file/203018) | Zany | |
 
 ### Compatible with adjustments
 
@@ -99,16 +100,16 @@ This is a list of all UTAU resamplers tested with OpenUtau.
     - Oversized Audio Model Attention
 
 ## MacOS
-|  Resampler |  Author  |  Additional Notes |
-| ------------ | ------------ | ------------ |
-|  worldline  | StAkira  |   Built into OpenUtau. Works on all platforms. |
-| [macres](https://github.com/titinko/macres/releases)   | titinko   |   |
+|  Resampler |  Author  |  Resample Manifest  |  Additional Notes |
+| ------------ | ------------ | ------------ | ------------ |
+|  worldline  | StAkira  |   | Built into OpenUtau. Works on all platforms. |
+| [macres](https://github.com/titinko/macres/releases)   | titinko   | [macres.yaml]()  |
 
 ## Linux
-|  Resampler |  Author  |  Additional Notes |
-| ------------ | ------------ | ------------ |
-|  worldline  | StAkira  |   Built into OpenUtau. Works on all platforms. |
-| [macres](https://github.com/titinko/macres/releases)   | titinko   |   |
+|  Resampler |  Author  |  Resample Manifest  |  Additional Notes |
+| ------------ | ------------ | ------------ | ------------ |
+|  worldline  | StAkira  |   | Built into OpenUtau. Works on all platforms. |
+| [macres](https://github.com/titinko/macres/releases)   | titinko   | [macres.yaml]()  |
 
 # Resampler Manifest
 A resampler manifest is a YAML file used to store the expressions supported by a resampler. With resampler manifests, users can add all of a resampler's supported flags at once using the `Add all expressions suggested by renderers` button in the `Expressions` editor.
