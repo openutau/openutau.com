@@ -19,7 +19,7 @@ OpenUtauのバージョン0.1.119以降では、`.exe`ファイルをOpenUtauの
 <img src="https://github.com/stakira/OpenUtau/assets/18076904/1a13d37d-b472-451d-b24a-e984b095bd4a" height="250">
 
 
-## macOS
+## MacOS
 [Macres](https://github.com/titinko/macres/releases)がmacOS版を提供しています。これをOpenUTAUのResamplersフォルダーに入れます。
 
 Wineを使用してWindows用のresamplerを使うこともできます。(macOS 11.6でテスト済み)
@@ -31,14 +31,14 @@ brew tap gcenx/wine
 brew install --cask --no-quarantine wine-crossover
 ```
 3. [release page](https://github.com/stakira/OpenUtau/releases/tag/OpenUtau-Latest)から"mac_additional.zip"をダウンロードします。
-4. `mac_additional.zip`内の`moresampler.sh`スクリプトを使用してresamplerをラップします。これによって`moresampler-0.8.4/moresampler.exe`をresamplerのファイル名に置き換わります。
+4. `mac_additional.zip`内の`moresampler.sh`スクリプトを使用して、resamplerを使えるようにします。これによってresamplerのファイル名が`moresampler-0.8.4/moresampler.exe`に置き換わります。
 
-このスクリプトは`Resamplers`に追加する必要があり、`.exe`形式のresamplerを追加するたびに編集する必要があります。
+このスクリプトは`Resamplers`フォルダーに追加する必要があり、`.exe`形式のresamplerを追加するたびに編集する必要があります。
 
 ## Linux
 [Macres](https://github.com/titinko/macres/releases)がLinux版を提供しています。これをOpenUTAUのResamplersフォルダーに入れます。
 
-WindowsのresamplerをLinuxにラップするには、この方法を使用します。
+WindowsのresamplerをLinuxで使えるようにするには、以下の方法を使用します。
 
 1. [Wine](https://www.winehq.org/)をインストールします。
 2. `Resamplers`フォルダーを開きます。(`/home/your_username/OpenUtau/Resamplers/`にあるはずです)
@@ -46,9 +46,9 @@ WindowsのresamplerをLinuxにラップするには、この方法を使用し�
 4. テキストファイルを開き、次のスクリプトを追加します。
 ```
 #!/bin/bash
-LANG="ja_JP.UTF8" wine "/absolute/path/to/your/resampler.exe" "${@,-1}"
+LANG="ja_JP.UTF8" wine "/[resamplerのあるフォルダーまでの絶対パス]/resampler.exe" "${@,-1}"
 ```
-5. `"/absolute/path/to/your/resampler.exe"`をresamplerのファイル名に変更してください。
+5. `"[resamplerのあるフォルダーまでの絶対パス]/resampler.exe"`をresamplerのファイル名に変更してください。
 6. OpenUtauを再起動します。
 
 # テスト済みresamplerとその情報
