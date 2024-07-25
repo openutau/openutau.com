@@ -28,6 +28,14 @@ Clicking "Apply" will make OpenUtau crash
 
 This bug will be solved in PR [#1220](https://github.com/stakira/OpenUtau/pull/1220)
 
+### Changing the expression set will make the "Expressions" part of the "Note Properties" panel blank
+1. Create a new project. Add a new track. Add a new part. Open piano roll, and open the "Note Properties" panel
+2. In piano roll window, click the ⚙ icon at the button-left corner of the window, and add a new expression
+
+The "Expressions" part of the "Note Properties" panel will become blank. You need to close the piano roll window and reopen it.
+![image](https://github.com/user-attachments/assets/338b2fa9-ddff-4e84-901a-5e287b1d3382)
+
+
 ## Known bugs in stable version
 These bugs are already solved in the latest beta version. If you encountered one of these bugs, you can solve it by upgrading to the latest beta version.
 
