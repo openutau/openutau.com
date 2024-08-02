@@ -10,23 +10,23 @@ If the gender factor default value is set to a negative value, such as -15, the 
 
 Related issue: [#756](https://github.com/stakira/OpenUtau/issues/756)
 
-### __MACOSX folder causes issues when installing
-When a ZIP is made on a Mac, it creates a "__MACOSX" folder in the ZIP; this folder stores additional Metadata. Trying to install this ZIP with this folder will cause OpenUTAU to fail installing the Singer. MacOS automatically hides this folder from the user, making it impossible to delete, which means a user using OpenUTAU on a Mac can't install a singer from a ZIP file if it was made on another Mac.
+### CVVC phonemizers apply VCs erratically and/or cease to apply VCs when using voice colors/the CLR expression
+![image](https://i.imgur.com/ogwXCKJ.png)
+
+Related issue: [#1226](https://github.com/stakira/OpenUtau/issues/1226)
 
 ### OpenUTAU not crossfading correctly compared to UTAU
 
 In classic UTAU, when your overlap is half of the pre-utterance or more, the pre-utterance of the next note will go all the way into the previous note.
 ![utau](https://github.com/stakira/OpenUtau/assets/87346264/16cc7f1f-566e-463c-915e-793ba2b0c3ec)
 
-In OpenUTAU, when your overlap is half of your pre-utterance or more, the pre-utterance of the next note will go nearly all the way into the previous note
+Comparatively, in OpenUTAU, when your overlap is half of your pre-utterance or more, the pre-utterance of the next note will only go part of the way into the previous note
 ![image](https://github.com/stakira/OpenUtau/assets/87346264/c01d5d34-2689-4274-b47d-f3d0bbe2f9f1)
+>`Note` This is less a bug and more a parity/compatibility issue. 
 
-### Error when pressing Ctrl+Z in "Edit Lyrics" dialog
-![image](https://github.com/user-attachments/assets/f91846e3-a5bf-4017-a762-f788a1fae87f)
+>`Blocker` It's easy to fix the math, however solving the math alone causes UX issues regarding being able to differentiate between adjusting the timing bar and adjusting the crossfade. 
 
-Clicking "Apply" will make OpenUtau crash
-
-This bug will be solved in PR [#1220](https://github.com/stakira/OpenUtau/pull/1220)
+>`Suggested solution` Adding the ability to hold a modifier key (ctrl/alt/shift) in order to isolate interaction to either the crossfade or timing adjustment area.
 
 ### Changing the expression set will make the "Expressions" part of the "Note Properties" panel blank
 1. Create a new project. Add a new track. Add a new part. Open piano roll, and open the "Note Properties" panel
@@ -39,5 +39,19 @@ The "Expressions" part of the "Note Properties" panel will become blank. You nee
 ## Known bugs in stable version
 These bugs are already solved in the latest beta version. If you encountered one of these bugs, you can solve it by upgrading to the latest beta version.
 
+### Error when pressing Ctrl+Z in "Edit Lyrics" dialog
+![image](https://github.com/user-attachments/assets/f91846e3-a5bf-4017-a762-f788a1fae87f)
+
+Clicking "Apply" will make OpenUtau crash
+
+This bug will be solved in PR [#1220](https://github.com/stakira/OpenUtau/pull/1220)
+
 ### After installing a diffsinger voicebank, all my singers are gone
 Solved in PR [#1061](https://github.com/stakira/OpenUtau/pull/1061)
+
+
+## Potential bugs that need investigation
+
+### __MACOSX folder causes issues when installing
+When a ZIP is made on a Mac, it creates a "__MACOSX" folder in the ZIP; this folder stores additional Metadata. Trying to install this ZIP with this folder will cause OpenUTAU to fail installing the Singer. MacOS automatically hides this folder from the user, making it impossible to delete, which means a user using OpenUTAU on a Mac can't install a singer from a ZIP file if it was made on another Mac.
+
