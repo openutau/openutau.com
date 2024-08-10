@@ -31,6 +31,7 @@ after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https:
 ## Misc
 - [#1227](https://github.com/stakira/OpenUtau/pull/1227) - Fix import tracks - ([@rokujyushi](https://github.com/rokujyushi))
 - [#1230](https://github.com/stakira/OpenUtau/pull/1230) - Adds github action for release - ([@stakira](https://github.com/stakira))
+- [69d7ecd](https://github.com/stakira/OpenUtau/commit/69d7ecd4305d3524d2a5a0c0571fdfc8d42190a0) - build worldline for old macos versions - ([@stakira](https://github.com/stakira))
 
 ***
 # ~[0.1.532 Beta](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.532) (07-27-2024)
