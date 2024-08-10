@@ -13,6 +13,8 @@ after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https:
 ## Translation
 ## Misc
 -->
+
+***
 # ~[0.1.542 Beta](https://github.com/stakira/OpenUtau/releases/tag/0.1.542) (08-04-2024)
 ## Features
 - [#1223](https://github.com/stakira/OpenUtau/pull/1223) - Add a 'reset all' editing macro - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
@@ -30,12 +32,12 @@ after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https:
 - [#1227](https://github.com/stakira/OpenUtau/pull/1227) - Fix import tracks - ([@rokujyushi](https://github.com/rokujyushi))
 - [#1230](https://github.com/stakira/OpenUtau/pull/1230) - Adds github action for release - ([@stakira](https://github.com/stakira))
 
-
+***
 # ~[0.1.532 Beta](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.532) (07-27-2024)
 ## Misc
 - [#1225](https://github.com/stakira/OpenUtau/pull/1225) - Consolidates to a single audio backend - ([@stakira](https://github.com/stakira))
 
-
+***
 # ~[0.1.529](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.529) (07-24-2024)
 ## Features
 - [#1216](https://github.com/stakira/OpenUtau/pull/1216) - VOICEVOX F0 editing support and folder structure modification - ([@rokujyushi](https://github.com/rokujyushi))
@@ -66,7 +68,7 @@ after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https:
 - [#1213](https://github.com/stakira/OpenUtau/pull/1213) - Update System.Text.Json to 8.0.4 because of vulnerability - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
 - [#1217](https://github.com/stakira/OpenUtau/pull/1217) - Add .ustx file association on Windows and MacOS - ([@RedBlackAka](https://github.com/RedBlackAka))
 
-
+***
 # ~[0.1.501 Beta](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.501) (06-09-2024)
 ```Diff
 ! Caution !
@@ -121,7 +123,7 @@ after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https:
 - [#1160](https://github.com/stakira/OpenUtau/pull/1160) - Add support for straycat's cache files - ([@Astel123457](https://github.com/Astel123457))
 - [#1170](https://github.com/stakira/OpenUtau/pull/1170) - Show InputGesture on notes context menu - ([@maiko3tattun](https://github.com/maiko3tattun))
 
-
+***
 # ~[0.1.463 Beta](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.463) (05-10-2024)
 ## Features
 - [#1126](https://github.com/stakira/OpenUtau/pull/1126) - Add option to move only the cursor and not scroll back when pausing playback - ([@maiko3tattun](https://github.com/maiko3tattun))
@@ -147,7 +149,7 @@ after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https:
 - [#1111](https://github.com/stakira/OpenUtau/pull/1111) - [DiffSinger] Fix error message on `mel_scale` - ([@yqzhishen](https://github.com/yqzhishen))
 - [#1127](https://github.com/stakira/OpenUtau/pull/1127) - Fix github action tests failing on MacOS - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
 
-
+***
 # ~[0.1.443 Beta](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.443) (04-20-2024)
 ## Features
 - [#1104](https://github.com/stakira/OpenUtau/pull/1104) - [DiffSinger] Migrate to continuous acceleration profiles - ([@yqzhishen](https://github.com/yqzhishen))
@@ -173,7 +175,7 @@ after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https:
 - [#1107](https://github.com/stakira/OpenUtau/pull/1107) - Improved translation of error messages for more flexibility - ([@maiko3tattun](https://github.com/maiko3tattun))
 - [#1102](https://github.com/stakira/OpenUtau/pull/1102) - Fixed icons - ([@rokujyushi](https://github.com/rokujyushi))
 
-
+***
 # ~[0.1.421 Beta](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.421) (03-28-2024)
 ## Features
 - [#1043](https://github.com/stakira/OpenUtau/pull/1043) - Add a feature to only render and play selected region - ([@liuycsd](https://github.com/liuycsd))
@@ -215,7 +217,7 @@ after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https:
 - [#1079](https://github.com/stakira/OpenUtau/pull/1079) - Move save status(*) to the top of window title - ([@maiko3tattun](https://github.com/maiko3tattun))
 - [#1052](https://github.com/stakira/OpenUtau/pull/1052) - Add phonemizer expression - ([@maiko3tattun](https://github.com/maiko3tattun))
 
-
+***
 # ~[0.1.397 Beta](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.397) (02-25-2024)
 ## Features
 - [#1047](https://github.com/stakira/OpenUtau/pull/1047) - Add a singer publish tool to pack a singer into a zip file - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
@@ -236,7 +238,7 @@ after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https:
 - [#1048](https://github.com/stakira/OpenUtau/pull/1048) - Add "no value" to expression - ([@maiko3tattun](https://github.com/maiko3tattun))
 - [#1044](https://github.com/stakira/OpenUtau/pull/1044) - Clear solo flag on copied tracks - ([@liuycsd](https://github.com/liuycsd))
 
-
+***
 # ~[0.1.384 Beta](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.384) (02-06-2024)
 ## Features
 - [#1025](https://github.com/stakira/OpenUtau/pull/1025) - Add batch edit "Add breath" - ([@maiko3tattun](https://github.com/maiko3tattun))
@@ -252,7 +254,7 @@ after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https:
 ## Misc
 - [#1017](https://github.com/stakira/OpenUtau/pull/1017) - Add track expression logic - ([@maiko3tattun](https://github.com/maiko3tattun))
 
-
+***
 # ~[0.1.374 Beta](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.374) (02-02-2024)
 ## Features
 - [#1011](https://github.com/stakira/OpenUtau/pull/1011) - Add singer favorite function - ([@maiko3tattun](https://github.com/maiko3tattun))
@@ -266,7 +268,7 @@ after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https:
 - [#1007](https://github.com/stakira/OpenUtau/pull/1007) - language name localization - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
 - [#1024](https://github.com/stakira/OpenUtau/pull/1024) - Save recent open singer/project directory - ([@maiko3tattun](https://github.com/maiko3tattun))
 
-
+***
 # ~[0.1.367 Beta](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.367) (01-25-2024)
 ## Features
 - [#1012](https://github.com/stakira/OpenUtau/pull/1012) - Add option to load only top directories of singers - ([@maiko3tattun](https://github.com/maiko3tattun))
@@ -297,7 +299,7 @@ after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https:
 - [#983](https://github.com/stakira/OpenUtau/pull/983) - DiffSinger: Free memory for singers no longer in use - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
 - [#986](https://github.com/stakira/OpenUtau/pull/986) - Add a github action to run unit tests for each PR - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
 
-
+***
 # ~[0.1.338 Beta](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.338) (12-16-2023)
 ## Features
 - [#981](https://github.com/stakira/OpenUtau/pull/981) - Support using worldline resampler together with external wavtool - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
@@ -313,7 +315,7 @@ after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https:
 ## Misc
 - [#978](https://github.com/stakira/OpenUtau/pull/978) - Refactor affix assignment as protected virtual method - ([@The-UTAU-Black-Supermarket](https://github.com/The-UTAU-Black-Supermarket))
 
-
+***
 # ~[0.1.327](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.327) (12-02-2023)
 There are too many changes to keep track of!
 ### December
@@ -474,6 +476,7 @@ There are too many changes to keep track of!
 - [#761](https://github.com/stakira/OpenUtau/pull/761) - Fix wordline-R stop on pitch snaps - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
 - [#751](https://github.com/stakira/OpenUtau/pull/751) - [WIP] Add Note Params panel - ([@maiko3tattun](https://github.com/maiko3tattun))
 
+***
 # [0.1.158](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.158)~[0.1.157b](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.157) (06-19-2023)
 
 ## Major Changes
