@@ -1,7 +1,7 @@
-> The latest stable version is [0.1.327](#01327-12-02-2023).
+> The latest stable version is [0.1.529](#01529-07-24-2024).
 
 <!-- To get a list of pull requests, use the following git command
-git log --merges --since="2024-02-26" --first-parent --pretty=format:"%s pr %b"
+git log --merges --after="2024-06-10" --before="today" --first-parent --pretty=format:"%s pr %b"
 
 Next, replace with a regular expression.
 before: Merge pull request #([0-9]+) from (.*?)\/.* pr (.*)
@@ -13,6 +13,59 @@ after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https:
 ## Translation
 ## Misc
 -->
+# ~[0.1.542 Beta](https://github.com/stakira/OpenUtau/releases/tag/0.1.542) (08-04-2024)
+## Features
+- [#1223](https://github.com/stakira/OpenUtau/pull/1223) - Add a 'reset all' editing macro - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+
+## Phonemizer Changes
+- [#1202](https://github.com/stakira/OpenUtau/pull/1202) - `New!` Thai VCCV Phonemizer - ([@printto](https://github.com/printto))
+- [#1207](https://github.com/stakira/OpenUtau/pull/1207) - `Chinese and Cantonese` update chinese/cantonese g2p - ([@wolfgitpr](https://github.com/wolfgitpr))
+- [#1212](https://github.com/stakira/OpenUtau/pull/1212) - `Korean` Apply Korean sandhi rules to Classic phonemizers - ([@lottev1991](https://github.com/lottev1991))
+- [#1208](https://github.com/stakira/OpenUtau/pull/1208) - `DIFFS JA` [Bug fix; important] [JA Monophone G2P] Small phoneme fix - ([@lottev1991](https://github.com/lottev1991))
+- [#1196](https://github.com/stakira/OpenUtau/pull/1196) - `EN X-SAMPA` [Bug fix] [EN X-SAMPA Phonemizer] Fix several bugs + Add dark L vowels - ([@lottev1991](https://github.com/lottev1991))
+- [#1191](https://github.com/stakira/OpenUtau/pull/1191) - `EN ARPA+` Fix [CV] validation on ARPA+ Phonemizer - ([@Cadlaxa](https://github.com/Cadlaxa))
+- [#1190](https://github.com/stakira/OpenUtau/pull/1190) - `JA VCV & CVVC` [Bug fix; important] [JA Presamp Phonemizer] Bugfix for empty [PRIORITY] and [REPLACE] newlines + update MsToTickAt() code - ([@lottev1991](https://github.com/lottev1991))
+
+## Misc
+- [#1227](https://github.com/stakira/OpenUtau/pull/1227) - Fix import tracks - ([@rokujyushi](https://github.com/rokujyushi))
+- [#1230](https://github.com/stakira/OpenUtau/pull/1230) - Adds github action for release - ([@stakira](https://github.com/stakira))
+
+
+# ~[0.1.532 Beta](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.532) (07-27-2024)
+## Misc
+- [#1225](https://github.com/stakira/OpenUtau/pull/1225) - Consolidates to a single audio backend - ([@stakira](https://github.com/stakira))
+
+
+# ~[0.1.529](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.529) (07-24-2024)
+## Features
+- [#1216](https://github.com/stakira/OpenUtau/pull/1216) - VOICEVOX F0 editing support and folder structure modification - ([@rokujyushi](https://github.com/rokujyushi))
+- [#1182](https://github.com/stakira/OpenUtau/pull/1182) - Add 'Install singer' to singer menu in track header - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1194](https://github.com/stakira/OpenUtau/pull/1194) - Added Shebang to Generated Shell File. - ([@ochakochatblanc](https://github.com/ochakochatblanc))  
+  - To run resampler on macOS wine
+
+## Bug Fixes
+- [#1176](https://github.com/stakira/OpenUtau/pull/1176) - Fix pitch misplaced when using overwrite pitch tool - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1177](https://github.com/stakira/OpenUtau/pull/1177) - Clear vibrato and MOD+ after pitch baking - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1178](https://github.com/stakira/OpenUtau/pull/1178) - Show progress dialog when loading rendered pitch (and potentially other time-consuming batch edits) - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1195](https://github.com/stakira/OpenUtau/pull/1195) - Fix pitch curve 'add point' misplaced - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1197](https://github.com/stakira/OpenUtau/pull/1197) - Fix very long note produced by knife tool - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1198](https://github.com/stakira/OpenUtau/pull/1198) - Fix issue when using exe wavtools on Linux - ([@parallelepiped2718](https://github.com/parallelepiped2718))
+- [#1220](https://github.com/stakira/OpenUtau/pull/1220) - Fix several bugs on pressing Ctrl+Z in TextBoxes - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+
+## Translation
+- [#1173](https://github.com/stakira/OpenUtau/pull/1173) - Update Strings.pl-PL.axaml - ([@KluelessKisa](https://github.com/KluelessKisa))
+- [#1180](https://github.com/stakira/OpenUtau/pull/1180) - Updated Korean strings - ([@EX3exp](https://github.com/EX3exp))
+- [#1210](https://github.com/stakira/OpenUtau/pull/1210) - Updated zh-CN strings - ([@ssmzhn](https://github.com/ssmzhn))
+- [#1218](https://github.com/stakira/OpenUtau/pull/1218) - Update Strings.pl-PL.axaml - ([@KluelessKisa](https://github.com/KluelessKisa))
+
+## Misc
+- [#1162](https://github.com/stakira/OpenUtau/pull/1162) - Include frq files when publishing voice banks - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1174](https://github.com/stakira/OpenUtau/pull/1174) - Remove NAudio midi importer - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1175](https://github.com/stakira/OpenUtau/pull/1175) - Show error message to install Visual C++ - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1181](https://github.com/stakira/OpenUtau/pull/1181) - GitHub actions test won't be canceled if it fails on one OS - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1213](https://github.com/stakira/OpenUtau/pull/1213) - Update System.Text.Json to 8.0.4 because of vulnerability - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1217](https://github.com/stakira/OpenUtau/pull/1217) - Add .ustx file association on Windows and MacOS - ([@RedBlackAka](https://github.com/RedBlackAka))
+
 
 # ~[0.1.501 Beta](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.501) (06-09-2024)
 ```Diff
