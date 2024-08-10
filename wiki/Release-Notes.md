@@ -1,4 +1,5 @@
-> The latest stable version is [0.1.529](#01529-07-24-2024).
+> The latest stable version is [0.1.529](#01529-07-24-2024).  
+> See also [Known Bugs](https://github.com/stakira/OpenUtau/wiki/Known-Bugs).
 
 <!-- To get a list of pull requests, use the following git command
 git log --merges --after="2024-06-10" --before="today" --first-parent --pretty=format:"%s pr %b"
