@@ -45,7 +45,7 @@ For wrapping Windows resamplers into Linux, use this method:
 #!/bin/bash
 LANG="ja_JP.UTF8" wine "/absolute/path/to/your/resampler.exe" "${@,-1}"
 ```
-5. Change `"/absolute/path/to/your/resampler.exe"` to the filename of the resampler.
+5. Change `"/absolute/path/to/your/resampler.exe"` to the path of the resampler.
 6. Restart OpenUtau.
 
 # Tested Resamplers and Directories
