@@ -32,7 +32,13 @@ By default, OpenUtau will use the same language as your computer, or English if 
 ## Install a resampler
 OpenUtau provides an internal wavtool along with a resampler, **Worldline**. 
 
-To install an external resampler, place a resampler .exe or .dll into the "Resamplers" folder where OpenUtau is installed. If you already use UTAU, you can copy + paste resamplers that you already have. Check [Resamplers](Resamplers-and-Wavtools) for a list of compatible resamplers.
+
+To install an external resampler, place a resampler .exe or .dll into the "Resamplers" folder where OpenUtau is installed. 
+
+> [!TIP]
+> On linux, the `Resamplers` folder is located at `~/.local/share/OpenUtau/Resamplers`.
+
+If you already use UTAU, you can copy + paste resamplers that you already have. Check [Resamplers](Resamplers-and-Wavtools) for a list of compatible resamplers.
 
 After adding a track, you can select the resampler and wavtool by pressing the settings cog on the lower right of the track header. Please note that only wavtools that are compatible with the currently selected resampler will be shown; for instance only "simple" and "convergence" will be available to choose when Worldline is selected.
 
