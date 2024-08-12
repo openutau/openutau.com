@@ -38,7 +38,7 @@ This script will need to be added to the `Resamplers` folder and edited for ever
 For wrapping Windows resamplers into Linux, use this method:
 
 1. Install [Wine](https://www.winehq.org/)
-2. Open the `Resamplers` folder (should be on /home/your_username/OpenUtau/Resamplers/)
+2. Open the `Resamplers` folder (should be on `~/.local/share/OpenUtau/Resamplers`)
 3. Create a new text file with the name of your resampler (no file extension required). 
 4. Open the text file and add this script.
 ```
