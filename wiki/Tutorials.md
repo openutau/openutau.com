@@ -38,6 +38,10 @@ Custom expressions of various formats can be created.
 - The "Singers" folder does not have to follow a rigid structure. Any folder inside the Singers folder containing a `character.txt` will be recognized by OpenUtau as a voicebank, whereas UTAU will only recognize voicebanks in the first layer of its "Singers" folder.  
 - Bank settings such as voice colors, default phonemizer, and other unique settings are saved inside the voicebank in the [`character.yaml`](tech-note:-character.yaml) file. Voicebanks used in OpenUtau can be shared with other OpenUtau users without requiring a complicated setup.
 
+## Voicebank Creation and Development
+This is a vast topic to cover, and many resources and methods were established far before OpenUtau existed. Many great resources for developing UTAU voicebanks can be found across the internet! But to get started, as well as get a quick touch point for OpenUtau-specific information, visit the page below:
+- https://github.com/stakira/OpenUtau/wiki/Voicebank-development
+
 # Advanced features
 ### ENUNU & SimpleENUNU
 ENUNU is a new technology that allows users to render vocals with the open-source AI voice synthesis software, NNSVS.  
