@@ -70,6 +70,8 @@ If your voicebank contains multiple subbanks, you'll need to set them up in Open
 #### Default phonemizer
 Launch OpenUtau. In `Tools → Singers`, click `⚙ → Default Phonemizer` and select the phonemizer that your voicebank supports. After the user chooses your voicebank, the phonemizer will be autometically chosen.
 
+Subbanks and default phonemizer infomation are stored in `character.yaml` inside the voicebank. See [tech note ‐ character.yaml](https://github.com/stakira/OpenUtau/wiki/tech-note-%E2%80%90-character.yaml)
+
 ### Packing UTAU voicebank
 In `Tools → Singers`, click `⚙ → Publish Singer`. You'll get a zip file of your singer for distributing.
 
