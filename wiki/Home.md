@@ -22,8 +22,9 @@ Welcome to the OpenUtau wiki!
 * [Legacy Plugins](https://github.com/stakira/OpenUtau/wiki/Legacy-Plugins)
 
 ### Advanced
-* [[tech note ‐ character.yaml]]
-* [Status of ENUNU NNSVS Support](https://github.com/stakira/OpenUtau/wiki/ENUNU-NNSVS-Support)
+* [[Voicebank Development]]
+  * [[tech note ‐ character.yaml]] - Make your existing UTAU voicebank support OpenUtau's specific features better
+* [ENUNU NNSVS Support](https://github.com/stakira/OpenUtau/wiki/ENUNU-NNSVS-Support)
 * [DiffSinger support](https://github.com/stakira/OpenUtau/wiki/DiffSinger-support)
 * [Status of VOICEVOX support](https://github.com/stakira/OpenUtau/wiki/VOICEVOX-support)
 * [Release Notes](https://github.com/stakira/OpenUtau/wiki/Release-Notes)
