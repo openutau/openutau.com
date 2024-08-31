@@ -335,3 +335,10 @@ Drag the bottom left corner to adjust the starting point of the envelope. Right 
 Drag the top left corner to adjust the overlap amount. Right click on the circle to reset.
 
 ![overlap](https://i.imgur.com/reLOTps.gif)
+
+## Beta version
+OpenUtau provides two release channels: stable and beta. Sometimes you may want to use the beta version to try out new features, or because you encountered a bug in stable version. 
+
+To switch to the beta version, go to "Tools → Preferences", turn on "Beta", and check for update.
+
+If the method above doesn't work, you can also manually download the latest beta version from https://github.com/stakira/OpenUtau/releases
