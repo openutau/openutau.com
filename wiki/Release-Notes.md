@@ -16,6 +16,34 @@ after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https:
 -->
 
 ***
+# ~[0.1.543 Beta](https://github.com/stakira/OpenUtau/releases/tag/0.1.543) (09-02-2024)
+## Features
+- [#1241](https://github.com/stakira/OpenUtau/pull/1241) - VOICEVOX Volume operation F0 read support - ([@rokujyushi](https://github.com/rokujyushi))
+- [#1248](https://github.com/stakira/OpenUtau/pull/1248) - Support Diffsinger multi-dictionary - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1256](https://github.com/stakira/OpenUtau/pull/1256) - Add checks for phoneme definitions in dsdict.yaml - ([@yqzhishen](https://github.com/yqzhishen))
+
+## Bug Fixes
+- [#1260](https://github.com/stakira/OpenUtau/pull/1260) - Fix openutau crash when exporting midi file with a note above 127 - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1234](https://github.com/stakira/OpenUtau/pull/1234) - Message box maximum height and scroll bars in place - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1255](https://github.com/stakira/OpenUtau/pull/1255) - Avoid repeated dictionary and model loading in DiffSingerBasePhonemizer - ([@yqzhishen](https://github.com/yqzhishen))
+- [#1257](https://github.com/stakira/OpenUtau/pull/1257) - Improve error message when parameter is missing for DiffSinger acoustic models - ([@yqzhishen](https://github.com/yqzhishen))
+- [#1232](https://github.com/stakira/OpenUtau/pull/1232) - use the first available audio device - ([@krn1pnc](https://github.com/krn1pnc))
+
+## Phonemizer Changes
+- [#1242](https://github.com/stakira/OpenUtau/pull/1242) - `New!` Add SimpleVOICEVOX ENtoJA Phonemizer - ([@rokujyushi](https://github.com/rokujyushi))
+- [#1189](https://github.com/stakira/OpenUtau/pull/1189) - `EN ARPA+` Update ARPA+ G2p Dictionary (preparing for model retrain) - ([@Cadlaxa](https://github.com/Cadlaxa))
+- [#1243](https://github.com/stakira/OpenUtau/pull/1243) - `EN ARPA+` [ARPA+ Phonemizer] Re-adjusted consonant lengths - ([@Cadlaxa](https://github.com/Cadlaxa))
+- [#1235](https://github.com/stakira/OpenUtau/pull/1235) - `ZH` fix g2p input bug - ([@wolfgitpr](https://github.com/wolfgitpr))
+
+## Translation
+- [#1249](https://github.com/stakira/OpenUtau/pull/1249) - Update Strings.ru-RU.axaml - ([@KagamineP](https://github.com/KagamineP))
+- [#1253](https://github.com/stakira/OpenUtau/pull/1253) - Update translations in Strings.de-DE.axaml - ([@RedBlackAka](https://github.com/RedBlackAka))
+- [#1254](https://github.com/stakira/OpenUtau/pull/1254) - Updated Vietnamese translation - ([@Huangphoux](https://github.com/Huangphoux))
+
+## Misc
+- [#1263](https://github.com/stakira/OpenUtau/pull/1263) - Update README.md - ([@stakira](https://github.com/stakira))
+
+***
 # ~[0.1.542 Beta](https://github.com/stakira/OpenUtau/releases/tag/0.1.542) (08-04-2024)
 ## Features
 - [#1223](https://github.com/stakira/OpenUtau/pull/1223) - Add a 'reset all' editing macro - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
