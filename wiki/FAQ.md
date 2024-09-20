@@ -83,6 +83,12 @@ Use "Help > Open Logs Location" to find your OpenUtau log file.
 ![image](https://github.com/stakira/OpenUtau/assets/54425948/c4c19dc1-aed4-4fa3-a047-5d82fd3dbf20)
 
 ## Design and history
+### How to remove a voicebank?
+To remove (or to delete, to uninstall) a voicebank:
+- In "Tools → Singers", select the voicebank you want to remove
+- Click the "Location" button to open the voicebank folder in file manager
+- Delete the folder.
+
 ### How does VCV/CVVC/VCCV/etc. work?
 - VCV and CVVC voicebanks, also known as "continuous sound" or 連続音 (*renzokuon*), use natural transitions between notes to smoothly blend sounds together during rendering. The standard method to organize these sounds is to directly type sound aliases from the `oto.ini` file into notes. Effectively, this is like hand-picking samples from the voicebank and connecting them together manually.  
 If this style is preferred, it can be utilized via the "Default" phonemizer in OpenUtau.
