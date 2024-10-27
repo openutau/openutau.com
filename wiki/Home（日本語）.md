@@ -22,9 +22,10 @@ OpenUtau wikiへようこそ！
   * [従来のプラグイン（日本語）](https://github.com/stakira/OpenUtau/wiki/%E5%BE%93%E6%9D%A5%E3%81%AE%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%EF%BC%89)
 
 ### 上級編
-* [[tech note ‐ character.yaml]]　技術メモ - character.yaml
-  * [技術メモ - character.yaml](https://github.com/stakira/OpenUtau/wiki/%E6%8A%80%E8%A1%93%E3%83%A1%E3%83%A2-%E2%80%90-character.yaml)
-* [Status of ENUNU NNSVS Support](https://github.com/stakira/OpenUtau/wiki/Status-of-ENUNU-NNSVS-Support)　ENUNU・NNSVSの対応状況
+* [[Voicebank Development]]　音源制作
+  * [[tech note ‐ character.yaml]] - 既存のUTAU音源をOpenUtau独自の機能に対応させる
+    * [技術メモ - character.yaml](https://github.com/stakira/OpenUtau/wiki/%E6%8A%80%E8%A1%93%E3%83%A1%E3%83%A2-%E2%80%90-character.yaml)
+* [ENUNU NNSVS Support](https://github.com/stakira/OpenUtau/wiki/ENUNU-NNSVS-Support)　ENUNU・NNSVSのサポート
 * [DiffSinger support](https://github.com/stakira/OpenUtau/wiki/DiffSinger-support)　DiffSingerのサポート
 * [VOICEVOX support](https://github.com/stakira/OpenUtau/wiki/VOICEVOX-support)　VOICEVOXのサポート
 * [Release Notes](https://github.com/stakira/OpenUtau/wiki/Release-Notes)　リリースノート
@@ -32,6 +33,7 @@ OpenUtau wikiへようこそ！
 ### 開発者向け
 * [Compiling from source](https://github.com/stakira/OpenUtau/wiki/Compiling-from-source)　ソースからコンパイル
 * [Developing new phonemizers](https://github.com/stakira/OpenUtau/wiki/Developing-new-phonemizers)　新たなphonemizerの開発
+* [Compiling G2p Models](https://github.com/stakira/OpenUtau/wiki/Compiling-G2p-Models)　G2pモデルのコンパイル
 * [[Adding support for a new synthesis engine]]　OpenUTAUを新たな合成エンジンに対応させる
 * [[ [PROPOSAL] svs.json ‐ singing voice synthesis backend API]]　[提案] svs.json - 歌声合成バックエンドAPI
 * [[tech note ‐ music is music, phonetics is phonetics (also why you don't need legacy plugins)]]　技術メモ - 音楽は音楽、音声学は音声学（レガシープラグインが不要な理由）
