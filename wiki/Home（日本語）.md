@@ -23,6 +23,7 @@ OpenUtau wikiへようこそ！
 
 ### 上級編
 * [[tech note ‐ character.yaml]]　技術メモ - character.yaml
+  * [技術メモ - character.yaml](https://github.com/stakira/OpenUtau/wiki/%E6%8A%80%E8%A1%93%E3%83%A1%E3%83%A2-%E2%80%90-character.yaml)
 * [Status of ENUNU NNSVS Support](https://github.com/stakira/OpenUtau/wiki/Status-of-ENUNU-NNSVS-Support)　ENUNU・NNSVSの対応状況
 * [DiffSinger support](https://github.com/stakira/OpenUtau/wiki/DiffSinger-support)　DiffSingerのサポート
 * [VOICEVOX support](https://github.com/stakira/OpenUtau/wiki/VOICEVOX-support)　VOICEVOXのサポート
