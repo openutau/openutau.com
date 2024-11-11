@@ -237,9 +237,11 @@ By default, notes and lengths will snap to the nearest 16th note. To toggle snap
 
 #### Slur notes
 To input slur note (a syllable that sings across multiple musical notes), input the word in the first note and input `+` in following notes.
+
 ![image](https://github.com/user-attachments/assets/609e5487-6dfc-4ff9-9c5a-b22a67d5140f)
 
 For multisyllable languages such as English, use `+` to distribute a new syllable and use `+~` to extend the current syllable.
+
 ![image](https://github.com/user-attachments/assets/7537b521-66e6-4be7-a111-9c90e9d6bb99)
 
 ### Batch Edits, Transformers and Legacy Plugins
