@@ -16,6 +16,42 @@ after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https:
 -->
 
 ***
+# ~[0.1.546 Beta](https://github.com/stakira/OpenUtau/releases/tag/0.1.546) (11-13-2024)
+## Features
+- [#1268](https://github.com/stakira/OpenUtau/pull/1268) - Add DrawLine Pitch Tool - ([@rokujyushi](https://github.com/rokujyushi))
+- [#1295](https://github.com/stakira/OpenUtau/pull/1295) - Support SimpleENUNUServer0.5.0 - ([@rokujyushi](https://github.com/rokujyushi))
+- [#1287](https://github.com/stakira/OpenUtau/pull/1287) - VOICEVOXRenderer Tempo change support - ([@rokujyushi](https://github.com/rokujyushi))
+- [#1285](https://github.com/stakira/OpenUtau/pull/1285) - When resetting expressions, only reset curve expressions where the note is selected; Remove duplicate editing macros - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+
+## Bug Fixes
+- [#1179](https://github.com/stakira/OpenUtau/pull/1179) - [KoreanPhonemizerUtil] Fixed crashing when reading ini from non-utf-8 singers - ([@EX3exp](https://github.com/EX3exp))
+- [#1290](https://github.com/stakira/OpenUtau/pull/1290) - Fix openutau failing to import midi if it contains two lyric events at the same time - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1319](https://github.com/stakira/OpenUtau/pull/1319) - fix diffsinger pitch: pre&tail SP pitch - ([@wolfgitpr](https://github.com/wolfgitpr))
+- [#1311](https://github.com/stakira/OpenUtau/pull/1311) - Fix openutau crashing when trying to edit the preutterence of an invalid phoneme - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1284](https://github.com/stakira/OpenUtau/pull/1284) - Fix openutau crashing after pressing Ctrl+Z in lyric box twice and enter - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1286](https://github.com/stakira/OpenUtau/pull/1286) - Fix LyricBox UI - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1324](https://github.com/stakira/OpenUtau/pull/1324) - Fix LyricBox - ([@rokujyushi](https://github.com/rokujyushi))
+- [#1323](https://github.com/stakira/OpenUtau/pull/1323) - Fix ExpEdit - ([@rokujyushi](https://github.com/rokujyushi))
+
+## Phonemizer Changes
+- [#1303](https://github.com/stakira/OpenUtau/pull/1303) - `New!` Add "Chinese CVV Plus Phonemizer" - ([@2xxbin](https://github.com/2xxbin))
+- [#1276](https://github.com/stakira/OpenUtau/pull/1276) - `ZH` update chinese g2p - ([@wolfgitpr](https://github.com/wolfgitpr))
+- [#1321](https://github.com/stakira/OpenUtau/pull/1321) - `EN VCCV` Missed exception for "skt" - ([@BagelHero](https://github.com/BagelHero))
+- [#1320](https://github.com/stakira/OpenUtau/pull/1320) - `EN VCCV` Starlight Fix - ([@AnAndroNerd](https://github.com/AnAndroNerd))
+- [#1280](https://github.com/stakira/OpenUtau/pull/1280) - `DIFFS` Diffsinger phonemizers: G2p results add langcode by default; Check if phoneme is supported by duration model - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1278](https://github.com/stakira/OpenUtau/pull/1278) - `DIFFS` diffsinger phonemizers: error in one sentence won't affect the following sentences - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1289](https://github.com/stakira/OpenUtau/pull/1289) - `EN ARPA+` Fix [CCV] lastC and removed some redundant CCV splitter - ([@Cadlaxa](https://github.com/Cadlaxa))
+- [#1316](https://github.com/stakira/OpenUtau/pull/1316) - `Based` Update SyllableBasedPhonemizer.cs - ([@lonelyapple011](https://github.com/lonelyapple011))
+- [#1314](https://github.com/stakira/OpenUtau/pull/1314) - `KO CV` Modify KoreanCVPhonemizer.cs - ([@2xxbin](https://github.com/2xxbin))
+- [#1297](https://github.com/stakira/OpenUtau/pull/1297) - `TH VCCV` Fix phoneme parser for Thai VCCV - ([@printto](https://github.com/printto))
+- [#1305](https://github.com/stakira/OpenUtau/pull/1305) - `KO` Add Romanized lyrics support to all Korean phonemizers - ([@2xxbin](https://github.com/2xxbin))
+
+## Misc
+- [#1308](https://github.com/stakira/OpenUtau/pull/1308) - [High priority] Bump JSON package version version to 8.0.5 - ([@lottev1991](https://github.com/lottev1991))
+- [#1317](https://github.com/stakira/OpenUtau/pull/1317) - Rename 'OpenUtau Wiki' in the 'help' section on the toolbar to 'OpenUtau Documentation' - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1262](https://github.com/stakira/OpenUtau/pull/1262) - Remove restart notes from preferences where it doesn't apply and installer improvements - ([@RedBlackAka](https://github.com/RedBlackAka))
+
+***
 # ~[0.1.543 Beta](https://github.com/stakira/OpenUtau/releases/tag/0.1.543) (09-02-2024)
 ## Features
 - [#1241](https://github.com/stakira/OpenUtau/pull/1241) - VOICEVOX Volume operation F0 read support - ([@rokujyushi](https://github.com/rokujyushi))
@@ -50,8 +86,8 @@ after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https:
 
 ## Phonemizer Changes
 - [#1202](https://github.com/stakira/OpenUtau/pull/1202) - `New!` Thai VCCV Phonemizer - ([@printto](https://github.com/printto))
-- [#1207](https://github.com/stakira/OpenUtau/pull/1207) - `Chinese and Cantonese` update chinese/cantonese g2p - ([@wolfgitpr](https://github.com/wolfgitpr))
-- [#1212](https://github.com/stakira/OpenUtau/pull/1212) - `Korean` Apply Korean sandhi rules to Classic phonemizers - ([@lottev1991](https://github.com/lottev1991))
+- [#1207](https://github.com/stakira/OpenUtau/pull/1207) - `ZH` `ZH-YUE` update chinese/cantonese g2p - ([@wolfgitpr](https://github.com/wolfgitpr))
+- [#1212](https://github.com/stakira/OpenUtau/pull/1212) - `KO` Apply Korean sandhi rules to Classic phonemizers - ([@lottev1991](https://github.com/lottev1991))
 - [#1208](https://github.com/stakira/OpenUtau/pull/1208) - `DIFFS JA` [Bug fix; important] [JA Monophone G2P] Small phoneme fix - ([@lottev1991](https://github.com/lottev1991))
 - [#1196](https://github.com/stakira/OpenUtau/pull/1196) - `EN X-SAMPA` [Bug fix] [EN X-SAMPA Phonemizer] Fix several bugs + Add dark L vowels - ([@lottev1991](https://github.com/lottev1991))
 - [#1191](https://github.com/stakira/OpenUtau/pull/1191) - `EN ARPA+` Fix [CV] validation on ARPA+ Phonemizer - ([@Cadlaxa](https://github.com/Cadlaxa))
