@@ -4,7 +4,7 @@
 - Version list of ENUNU for OpenUtau (Click here to download)
   - Official [ENUNU for OpenUtau](https://github.com/stakira/ENUNU/releases) (ENUNU-0.4.0)
   - Unofficial [ENUNUServer](https://github.com/rokujyushi/ENUNU/releases) (ENUNU-0.6.0 ...)
-  - Unofficial [SimpleENUNUServer](https://github.com/rokujyushi/SimpleEnunu/releases) (SimpleEnunuServer-0.2.0+0.local.9.1 ...)
+  - Unofficial [SimpleENUNUServer](https://github.com/rokujyushi/SimpleEnunu/releases) (SimpleEnunuServer-0.5.0 ...)
 
 ## How to use
 Download the suitable ENUNU server version according to the voicebank you want to use. Unzip it.
@@ -16,6 +16,8 @@ To use NNSVS generated pitch, finish rendering first, then execute "Notes -> Loa
 If there is a problem with the operation, please put the following in **config.yaml**.  
 If you do not want to perform timing correction, delete the timing_editor line.  
 If you turn off the wav_synthesizer setting, you can edit the Pitch, but the quality is very low.  
+
+ENUNU-0.4.0,SimpleEnunuServer-0.2.0+0.local.9.1
 ```
 extensions:
     timing_editor: "%v/timing_auto_correct/enunu_timing_auto_correct.py"
@@ -24,6 +26,11 @@ extensions:
     timing_calculator: nnsvs
     ust_converter: built-in
 
+```
+SimpleEnunuServer-0.5.0
+```
+extensions:
+    timing_editor_2: "%v/timing_auto_correct/enunu_timing_auto_correct.py"
 ```
 
 ## Notes for voicebank developers
