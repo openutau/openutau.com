@@ -13,10 +13,12 @@ If you're going to use diffsinger voicebanks, download the latest beta version f
 
 ### Windows
 - OpenUtau only supports Windows 10 and above.
-- After unzipping to a new folder, you can start the application by double-clicking `OpenUtau.exe`. Every time you start OU, it will check for updates first.
+- For the portable version, after unzipping to a new folder, you can start the application by double-clicking `OpenUtau.exe`. Every time you start OU, it will check for updates first.
+- For the installer, double-click the downloaded .exe and follow the installation instructions.
 ### macOS
+- OpenUtau supports macOS 10.14 Mojave and above (macOS 11 Big Sur is required for ML synths, like Diffsinger).
 - Double click the dmg file downloaded. Drag the app icon to the folder icon.
-- See [FAQ](https://github.com/stakira/OpenUtau/wiki/FAQ#macos-error-this-app-is-damaged-) if macOS reports "app is damaged".
+- See [FAQ](https://github.com/stakira/OpenUtau/wiki/FAQ#on-macos-when-i-try-to-run-openutau-it-says-this-app-is-damaged) if macOS reports "app is damaged".
 ### Linux
 #### Arch or similar (Eg. Manjaro)
 - Install [openutau-bin](https://aur.archlinux.org/packages/openutau-bin) from AUR (Eg. using [yay](https://github.com/Jguer/yay) `yay -S openutau-bin`).
