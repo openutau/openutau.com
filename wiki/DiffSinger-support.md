@@ -3,11 +3,13 @@ OpenUtau supports [DiffSinger (maintained by OpenVPI)](https://github.com/openvp
 ## Setup
 Before using DiffSinger on OpenUtau, please download [nsf_hifigan vocoder](https://github.com/xunmengshe/OpenUtau/releases/download/0.0.0.0/nsf_hifigan.oudep) . Drag and drop to import it into OpenUtau.
 
-Turn on "beta" in perferences and upgrade your OpenUtau, because some new voicebanks use features not yet supported by the current stable build.
+Turn on "beta" in preferences and upgrade your OpenUtau, because some new voicebanks might use features not yet supported by the current stable build.
+
+macOS 11 Big Sur or higher is required to use Diffsinger on macOS.
 
 ## Preferences
 - Diffsinger Rendering speedup is 50 times by default. A smaller speedup may improve the quality of audio, but slow down the rendering.
-- OpenUtau uses CPU to render by default. If you use Windows and have a discrete graphics card, you can use DirectML to make rendering faster. Please set "Machine Learning Runner" to "directml", choose your discrete graphics card in "GPU" menu, and **restart your OpenUtau**.
+- OpenUtau uses CPU to render by default. If you use Windows and have a discrete graphics card, you can use DirectML to make rendering faster. Please set "Machine Learning Runner" to "directml" (or "coreml" on macOS), choose your discrete graphics card in "GPU" menu, and **restart your OpenUtau**.
 <img src="https://user-images.githubusercontent.com/54425948/212444421-ad399723-d2ba-4e0e-9341-3aa40f502304.png" width="400"/>
 
 ## Expressions
