@@ -4,20 +4,21 @@ Please see [Tutorials](Tutorials) for an overview of OpenUtau and how it differs
 ## Install OpenUtau
 Stable version:
 
-[![Download](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=windows-x64&labelColor=FF347C&color=4ea6ea)](https://github.com/stakira/OpenUtau/releases/latest/download/OpenUtau-win-x64.zip)</br>
-[![Download](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=windows-x86&labelColor=FF347C&color=4ea6ea)](https://github.com/stakira/OpenUtau/releases/latest/download/OpenUtau-win-x86.zip)</br>
+[![Download](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=windows-x64-installer&labelColor=FF347C&color=4ea6ea)](https://github.com/stakira/OpenUtau/releases/latest/download/OpenUtau-win-x64.exe)</br>
+[![Download](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=windows-x64-portable&labelColor=FF347C&color=4ea6ea)](https://github.com/stakira/OpenUtau/releases/latest/download/OpenUtau-win-x64.zip)</br>
+[![Download](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=windows-x86-portable&labelColor=FF347C&color=4ea6ea)](https://github.com/stakira/OpenUtau/releases/latest/download/OpenUtau-win-x86.zip)</br>
 [![Download](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=macos-x64&labelColor=FF347C&color=4ea6ea)](https://github.com/stakira/OpenUtau/releases/latest/download/OpenUtau-osx-x64.dmg)</br>
 [![Download](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=linux-x64&labelColor=FF347C&color=4ea6ea)](https://github.com/stakira/OpenUtau/releases/latest/download/OpenUtau-linux-x64.tar.gz)
 
-If you're going to use diffsinger voicebanks, download the latest beta version from [Here](https://github.com/stakira/OpenUtau/releases)
+If you're going to use Diffsinger voicebanks, download the latest beta version from [Here](https://github.com/stakira/OpenUtau/releases)
 
 ### Windows
 - OpenUtau only supports Windows 10 and above.
-- For the portable version, after unzipping to a new folder, you can start the application by double-clicking `OpenUtau.exe`. Every time you start OU, it will check for updates first.
 - For the installer, double-click the downloaded .exe and follow the installation instructions.
+- For the portable version, after unzipping to a new folder, you can start the application by double-clicking `OpenUtau.exe`.
 ### macOS
-- OpenUtau supports macOS 10.14 Mojave and above (macOS 11 Big Sur is required for ML synths, like Diffsinger).
-- Double click the dmg file downloaded. Drag the app icon to the folder icon.
+- OpenUtau supports macOS 10.14 Mojave and above (macOS 11 Big Sur is required for Diffsinger).
+- Double-click the downloaded .dmg file. Drag the app icon to the folder icon.
 - See [FAQ](https://github.com/stakira/OpenUtau/wiki/FAQ#on-macos-when-i-try-to-run-openutau-it-says-this-app-is-damaged) if macOS reports "app is damaged".
 ### Linux
 #### Arch or similar (Eg. Manjaro)
