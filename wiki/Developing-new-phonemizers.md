@@ -27,7 +27,7 @@ The API is implemented in [OpenUtau.Core/Api/Phonemizer.cs](https://github.com/s
 
 ## Phonemizer Development Guidelines
 ### Naming rule
-Usually a phonemizer's name is `<language> <type>` for classic phonemizers, and `<renderer> <language>` for machine-learning phonemizers.
+Usually a phonemizer's name is `<language> <type>` for classic phonemizers, or `<renderer> <language>` for machine-learning phonemizers.
 - Renderer is "vogen", "nnsvs" or "diffsinger".
 - Language is the spoken language that the phonemizer sings in, such as "English", "Japanese". 
 - Type is the vb type supported by the phonemizer, such as "CVVC", "VCV".
