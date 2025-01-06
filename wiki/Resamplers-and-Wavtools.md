@@ -113,7 +113,7 @@ It should look like this!
 
 ![MacOS_Install_Samp6](https://64.media.tumblr.com/188ae1248d9dc27fbc1c1c2dd471c566/a1e3bf701d537d70-7e/s1280x1920/0ad2b8566b8ddb2d357abd97619d7496a9c91e61.png)
 
-If this is your first time running the instance, Wine will ask permission to install the Wine/Homebrew crossover. This may take awhile.
+The first render may take awhile if this is your first time running the instance.
 
 You can repeat this process and download as many resamplers as you like. 
 
