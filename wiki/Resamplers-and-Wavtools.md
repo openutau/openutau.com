@@ -53,7 +53,7 @@ After performing these two steps, we will then prepare the environment for the r
 ```
 After running these two commands your environment is set!
 
-###Section 3, “How to run resamplers on MacOS.”
+### Section 3, “How to run resamplers on MacOS.”
 
 Now that you have installed both Wine and Homebrew onto your computer, we will now begin the process for installing the resamplers into MacOS. Before we get started, I will like to clarify that for this step we will be converting the executables (<code>.exe</code>) into <code>.sh</code> files. That will be the result we want in order to run resamplers. Here is how.
 
