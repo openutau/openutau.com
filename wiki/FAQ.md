@@ -74,6 +74,8 @@ Apple requires developers to "sign" their apps in order to be trusted software. 
 To run OpenUtau on macOS, the app must be "trusted" to run on your Mac.  
 Open a terminal and run `xattr -rc /Applications/OpenUtau.app`. Try opening OpenUtau again.
 
+Note: Similarly, if the dmg cannot be opened (""OpenUtau-osx-x64.dmg" Not Opened"), you can use the same command: `xattr -rc ~/Downloads/OpenUtau-osx-x64.dmg`.
+
 ### I still can't solve my problem
 You can send a feedback through [Discord](https://discord.gg/UfpMnqMmEM) or [GitHub Issue](https://github.com/stakira/OpenUtau/issues/new/choose). When sending feedbacks, please explain how to reproduce your bug, and provide your `.ustx` project, OpenUtau log file and full screenshots of your OpenUtau window.
 
