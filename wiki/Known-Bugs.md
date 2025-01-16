@@ -54,7 +54,7 @@ at OpenUtau.Core.PlaybackManager.<>c__DisplayClass24_0.b__0() in C:\projects\ope
 
 Changing the output devices, such as plugging a headphone in, might temporarily fix this bug.
 
-Related issue: [#1382](https://github.com/stakira/OpenUtau/issues/1382)
+Related issue: [#1133](https://github.com/stakira/OpenUtau/issues/1133) [#1382](https://github.com/stakira/OpenUtau/issues/1382)
 
 ## Known bugs in stable version
 These bugs are already solved in the latest beta version. If you encountered one of these bugs, you can solve it by upgrading to the latest beta version.
