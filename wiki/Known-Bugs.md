@@ -35,6 +35,26 @@ Comparatively, in OpenUTAU, when your overlap is half of your pre-utterance or m
 The "Expressions" part of the "Note Properties" panel will become blank. You need to close the piano roll window and reopen it.
 ![image](https://github.com/user-attachments/assets/338b2fa9-ddff-4e84-901a-5e287b1d3382)
 
+### When trying to play a project, OpenUtau says "BadDeviceId calling waveOutOpen"
+
+```
+Failed to render
+BadDeviceId calling waveOutOpen
+
+NAudio.MmException: BadDeviceId calling waveOutOpen
+at NAudio.MmException.Try(MmResult result, String function)
+at NAudio.Wave.WaveOutEvent.Init(IWaveProvider waveProvider)
+at NAudio.Wave.WaveExtensionMethods.Init(IWavePlayer wavePlayer, ISampleProvider sampleProvider, Boolean convertTo16Bit)
+at OpenUtau.Audio.NAudioOutput.Init(ISampleProvider sampleProvider) in C:\projects\openutau\OpenUtau.Core\Audio\NAudioOutput.cs:line 52
+at OpenUtau.Core.PlaybackManager.StartPlayback(Double startMs, MasterAdapter masterAdapter) in C:\projects\openutau\OpenUtau.Core\PlaybackManager.cs:line 118
+at OpenUtau.Core.PlaybackManager.<>c__DisplayClass24_0.b__0() in C:\projects\openutau\OpenUtau.Core\PlaybackManager.cs:line 131
+
+0.1.529.0
+```
+
+Changing the output devices, such as plugging a headphone in, might temporarily fix this bug.
+
+Related issue: [#1382](https://github.com/stakira/OpenUtau/issues/1382)
 
 ## Known bugs in stable version
 These bugs are already solved in the latest beta version. If you encountered one of these bugs, you can solve it by upgrading to the latest beta version.
