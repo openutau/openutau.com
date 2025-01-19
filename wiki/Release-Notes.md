@@ -37,7 +37,6 @@ after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https:
 - [#1356](https://github.com/stakira/OpenUtau/pull/1356) - When inputting invalid number, textbox won't show yellow error message - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
 - [#1353](https://github.com/stakira/OpenUtau/pull/1353) - Upgrade OnnxRuntime and DirectML - ([@RedBlackAka](https://github.com/RedBlackAka))
 - [#1337](https://github.com/stakira/OpenUtau/pull/1337) - Resolve a warning - ([@RedBlackAka](https://github.com/RedBlackAka))
-- [#1331](https://github.com/stakira/OpenUtau/pull/1331) - upgrade packages - ([@stakira](https://github.com/stakira))
 - [#1358](https://github.com/stakira/OpenUtau/pull/1358) - sync strings - ([@stakira](https://github.com/stakira))
 - [#1328](https://github.com/stakira/OpenUtau/pull/1328) - When "saving as", or exporting wav, use the filename of the current file by default - ([@Cadlaxa](https://github.com/Cadlaxa))
 
