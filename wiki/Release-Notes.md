@@ -16,7 +16,41 @@ after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https:
 -->
 
 ***
-# ~[0.1.547 Beta](https://github.com/stakira/OpenUtau/releases/tag/0.1.546) (12-20-2024)
+# ~[0.1.549 Beta](https://github.com/stakira/OpenUtau/releases/tag/0.1.549) (02-24-2025)
+> **This version is upgraded from .NET 6 to .NET 8, where in theory 10.14 support is dropped.**
+## Features
+- [#1424](https://github.com/stakira/OpenUtau/pull/1424) - DiffSinger: support SHFC (pitch shift curve) - ([@yqzhishen](https://github.com/yqzhishen))
+- [#1408](https://github.com/stakira/OpenUtau/pull/1408) - Move to the next track part with PageUp/PageDown keys - ([@maiko3tattun](https://github.com/maiko3tattun))
+
+https://private-user-images.githubusercontent.com/130257355/411304902-d9c39628-ada3-40e7-b7d1-cc0115a8c361.mp4
+- [#1419](https://github.com/stakira/OpenUtau/pull/1419) - Change batch edit quantize to grid size - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1204](https://github.com/stakira/OpenUtau/pull/1204) - Add hover tooltip to music key menu and snap div menu - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1386](https://github.com/stakira/OpenUtau/pull/1386) - show singer default phonemizer in track phonemizer menu - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+![image](https://private-user-images.githubusercontent.com/54425948/404719848-d487a0fe-1b09-47e6-82d0-0ff2a70ee11d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDA3NTYwNzgsIm5iZiI6MTc0MDc1NTc3OCwicGF0aCI6Ii81NDQyNTk0OC80MDQ3MTk4NDgtZDQ4N2EwZmUtMWIwOS00N2U2LTgyZDAtMGZmMmE3MGVlMTFkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMjglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjI4VDE1MTYxOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTljYmI3ZDNjY2Q0MjhkYzhmNTNlZmM3NmEzYzQ2ZmU4ZGNkMjI2NjkyNzA4YjdkZjg1OTNiN2U4ODk3YWZkMDUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.G69ja2Ijk8oDe8YSxWxeo4bXHJYSUjHEZpCHcjOjeuw)
+
+## Bug Fixes
+- [#1375](https://github.com/stakira/OpenUtau/pull/1375) - Musicxml: fix crash after importing a musicxml without tempo - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1376](https://github.com/stakira/OpenUtau/pull/1376) - Remove conditions on phoneme definition checks of dspitch - ([@yqzhishen](https://github.com/yqzhishen))
+- [#1389](https://github.com/stakira/OpenUtau/pull/1389) - fix slice tool extending the part too much - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1394](https://github.com/stakira/OpenUtau/pull/1394) - Centering the Splash Window - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1395](https://github.com/stakira/OpenUtau/pull/1395) - Fix Note Properties Panel not working after auto reloading oto - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1406](https://github.com/stakira/OpenUtau/pull/1406) - Faster expression commands - ([@maiko3tattun](https://github.com/maiko3tattun))
+
+## Phonemizer Changes
+- [#1329](https://github.com/stakira/OpenUtau/pull/1329) - `New!` Add Arpabet C+V Phonemizer - ([@Cadlaxa](https://github.com/Cadlaxa))
+- [#1425](https://github.com/stakira/OpenUtau/pull/1425) - `ZH CVVC` length of VC should be based on the whole length of the syllable, including slur notes - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1275](https://github.com/stakira/OpenUtau/pull/1275) - `DIFFS EN+` fixes to phoneme replacements with LangCode - ([@Cadlaxa](https://github.com/Cadlaxa))
+- [#1371](https://github.com/stakira/OpenUtau/pull/1371) - `EN ARPA+` Add dynamic variations for 'dynMid_vv' - ([@Cadlaxa](https://github.com/Cadlaxa))
+- [#1399](https://github.com/stakira/OpenUtau/pull/1399) - `KO` [KO Classic Phonemizers + BaseKoreanPhonemizer] Improve KO romanization + phonetic hint fix + typo fix - ([@lottev1991](https://github.com/lottev1991))
+- [#1380](https://github.com/stakira/OpenUtau/pull/1380) - `JA` Add "legacy" to the names of JA VCV and JA CVVC phonemizers - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+
+## Misc
+- [#1388](https://github.com/stakira/OpenUtau/pull/1388) - Fix github actions not working on linux - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1374](https://github.com/stakira/OpenUtau/pull/1374) - Add links to FAQ, and instructions for solving 'This app is damaged' on macOS into release page - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1390](https://github.com/stakira/OpenUtau/pull/1390) - Add GitHub issue template for feature requests - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+
+***
+# ~[0.1.547 Beta](https://github.com/stakira/OpenUtau/releases/tag/0.1.547) (12-20-2024)
 ## Features
 - [#1327](https://github.com/stakira/OpenUtau/pull/1327) - Adds a splash window - ([@stakira](https://github.com/stakira))
 - [#1152](https://github.com/stakira/OpenUtau/pull/1152) - Add MusicXML Import - ([@porime42](https://github.com/porime42))
