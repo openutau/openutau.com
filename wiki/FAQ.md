@@ -1,5 +1,5 @@
-## Troubleshooting
 You can search within this webpage with hotkey `Ctrl + F` on Windows or `⌘ + F` on Mac.
+## Troubleshooting
 
 ### My voicebank doesn't show up in OpenUtau, even though it's in the Singers folder!
 Make sure the voicebank folder includes a `character.txt` file. Inside the file, write `name=(voicebank's name)`.
