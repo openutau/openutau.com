@@ -146,5 +146,5 @@ For python developers, please use `ruamel.yaml` when working with .ustx files, b
 ## References
 The reading and writing of USTX files is officially implemented in [OpenUtau.Core/Ustx](https://github.com/stakira/OpenUtau/tree/master/OpenUtau.Core/Ustx)
 
-Below are third-party implementation of USTX reading and writing:
+Below are third-party implementations of USTX reading and writing:
 - [Libresvip](https://github.com/SoulMelody/LibreSVIP/tree/main/libresvip/plugins/ustx), in python
