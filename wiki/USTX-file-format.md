@@ -20,7 +20,7 @@ A USTX file is a YAML-based (YAML 1.2) text format in UTF-8 encoding, with the f
 | `voice_parts`    | list   | List of voice parts (part containing notes for synthesis)                                |
 | `wave_parts`     | list   | List of wave parts (external audio file, usually instrumental of the song)               |
 
-`bpm`, `beat_per_bar` and `beat_unit` are deprecated. To get the tempo and time signatures, please 
+`bpm`, `beat_per_bar` and `beat_unit` under the project root are deprecated. To get the tempo and time signatures, please use `tempos` and `time_signature`.
 
 ### Expressions
 Defines vocal parameters (e.g., dynamics, vibrato) as curves or numerical values.  
