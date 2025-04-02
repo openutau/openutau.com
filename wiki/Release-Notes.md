@@ -79,7 +79,7 @@ https://private-user-images.githubusercontent.com/130257355/411304902-d9c39628-a
 ## Features
 - [#1268](https://github.com/stakira/OpenUtau/pull/1268) - Add DrawLine Pitch Tool - ([@rokujyushi](https://github.com/rokujyushi))  
 ![image](https://github.com/user-attachments/assets/a3fa6073-0990-45a1-ac38-b41bb86e2d0d)
-  - This is only available on the piano roll and is not supported on the expression panel.
+  - This corresponds to the Line tool only in the Piano Roll and to the Line tool (Shift+Left click) and Horizontal Line tool (Shift+Ctrl+Left click) in the Expression panel.
 - [#1295](https://github.com/stakira/OpenUtau/pull/1295) - Support SimpleENUNUServer0.5.0 - ([@rokujyushi](https://github.com/rokujyushi))
 - [#1287](https://github.com/stakira/OpenUtau/pull/1287) - VOICEVOXRenderer Tempo change support - ([@rokujyushi](https://github.com/rokujyushi))
 - [#1285](https://github.com/stakira/OpenUtau/pull/1285) - When resetting expressions, only reset curve expressions where the note is selected; Remove duplicate editing macros - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
