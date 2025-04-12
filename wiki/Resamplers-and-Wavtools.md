@@ -59,6 +59,8 @@ Now that you have installed both Wine and Homebrew onto your computer, we will n
 
 1. From the OpenUTAU github release page, download the <code>“Mac_Additional.zip.”</code> This will be the package we use to convert the resamplers into <code>.sh</code> files.
 
+[Mac_Additional.zip](https://github.com/stakira/OpenUtau/releases/tag/OpenUtau-Latest)
+
 2. Before we get started, let’s find the version of wine that you have installed.
 
 _For Intel MacOS …_
@@ -87,7 +89,7 @@ Now we will edit the <code>.sh</code> file with resampler’s information.
 
 ![MacOS_Install_Samp2](https://64.media.tumblr.com/a2b2428b58b151a9e3355813e32b4c89/a1e3bf701d537d70-0d/s1280x1920/a5224effb8c5ad3a834283748a483b1f5fce8804.png)
 
-7. Locate the, <code>moresampler-0.8.4/moresampler.exe</code> delete it, and replace with only the resampler name, eg. <code>“TIPS.exe.</code>
+7. Locate the, <code>“moresampler-0.8.4/moresampler.exe”</code> in the relative path and delete it. Replace with only the resampler name, eg. <code>“TIPS.exe.”</code>
 
 ![MacOS_Install_Samp3](https://64.media.tumblr.com/5195fff9a3b0f008664e378db43ab682/a1e3bf701d537d70-6d/s1280x1920/518c570fd9110c803080c80b8f788e4400917d5c.png)
 
