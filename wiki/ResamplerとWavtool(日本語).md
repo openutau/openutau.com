@@ -93,7 +93,7 @@ OpenUtauでテストしたすべてのresamplerのリストです。
 
 - [moresampler.exe](https://bowlroll.net/file/139123)
   - `moresampler.exe`とデフォルト状態の`moreconfig.txt`を`Resamplers`フォルダーに追加します。
-  - `moresampler.exe`のみを`wavtools`フォルダーに追加します（`moresampler.txt`は無し）。
+  - `moresampler.exe`のみを`wavtools`フォルダーに追加します（`moreconfig.txt`は必要なし）。
   - moresamplerがresamplerとして、またはwavtoolとresamplerの両方として動作するようになります。
 - [[SpaceWorld_win64.exe|https://github.com/LovelyA72/SpaceWorld/releases]] and [[wn4u.exe|https://utaforum.net/threads/world4utau-update.20035/]]
     - 音源にfrqファイルがない場合、問題が発生する可能性があります。SpaceWorldバージョン1.0.1では、frqファイルが見つからない場合でもクラッシュしません。
