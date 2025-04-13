@@ -34,6 +34,7 @@ Welcome to the OpenUtau wiki!
 * [Developing new phonemizers](https://github.com/stakira/OpenUtau/wiki/Developing-new-phonemizers)
 * [Compiling G2p Models](https://github.com/stakira/OpenUtau/wiki/Compiling-G2p-Models)
 * [[Adding support for a new synthesis engine]]
+* [[Contribute to OpenUtau's localization]]
 * [USTX file format](https://github.com/stakira/OpenUtau/wiki/USTX-file-format)
 * [[ [PROPOSAL] svs.json ‐ singing voice synthesis backend API]]
 * [[tech note ‐ music is music, phonetics is phonetics (also why you don't need legacy plugins)]]
