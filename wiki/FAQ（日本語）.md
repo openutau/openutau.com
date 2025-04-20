@@ -69,6 +69,12 @@ OpenUtauがインストールされているフォルダーで`prefs.json`ファ
 ### （安定版のみ）プロジェクトの途中でworldlineに切り替えようとすると、worldline.dllのエラー「There is no application set to open the document [...]」が発生します
 現在の安定版では、wavtoolに「convergence」または「simple」が選択されているときのみworldlineが使用できます。 プロジェクトの途中でresamplerを切り替える場合も同様です。 wavtoolを「convergence」または「simple」に変更すれば、エラーは発生しないはずです。
 
+### macOSでOpenUtau-osx-⚪︎⚪︎64.dmgを開くと「OpenUtau-osx-⚪︎⚪︎64.dmgは開いてません」と表示される。
+OpenUtau-osx-⚪︎⚪︎64.dmgを開いたあと完了ボタンを押すと  
+システム設定のプライバシーとセキュリティタブのセキュリティ項目に「OpenUtau-osx-⚪︎⚪︎64.dmgはブロックされました」と表示されます。  
+このまま開くボタンを押すと管理者権限が要求されます。許可をすsることでアプリケーションをインストールすることができます。
+
+
 ### macOSでOpenUtauを起動すると、「このアプリは破損しています」と表示されます。
 Appleに信頼できるソフトウェアとして扱ってもらうには、開発者が「署名」する必要があります。 それにはお金がかかりますし、このプロジェクトにその必要性はありません。 その結果、AppleとmacOSはOpenUtauを「安全ではない」ものとして扱っています。  
 macOS上でOpenUtauを実行するには、アプリがMacで実行できるように「信頼」する必要があります。  
