@@ -148,3 +148,4 @@ The reading and writing of USTX files is officially implemented in [OpenUtau.Cor
 
 Below are third-party implementations of USTX reading and writing:
 - [Libresvip](https://github.com/SoulMelody/LibreSVIP/tree/main/libresvip/plugins/ustx), in python
+- [Utaformatix](https://github.com/sdercolin/utaformatix3/blob/master/core/src/main/kotlin/core/io/Ustx.kt), in kotlin
