@@ -18,8 +18,15 @@ Here are the expressions supported by DiffSinger:
   - DYN (volume curve)
   - GENC (gender curve, need voicebank's support. See [here](https://github.com/openvpi/DiffSinger/releases/tag/v1.6.0#Overview) for details. The default range -100\~+100 equals to shifting the formant by +12\~-12 semitones.)
   - VELC (velocity curve, need voicebank's support. See [here](https://github.com/openvpi/DiffSinger/releases/tag/v1.6.0#Overview) for details. This expression will affect the speed of the head and tail of the vowels. Every increase of 100 in this expression will multiply the speed by 2.)
+  - ENE (energy curve, need voicebank's support. See [here](https://github.com/openvpi/DiffSinger/releases/tag/v2.0.0) for details. This expression will manipulate the voice's energy, including manipulating the voicing amount.)
+  - BREC (breathiness curve, need voicebank's support. See [here](https://github.com/openvpi/DiffSinger/releases/tag/v2.0.0) for details. This expression will manipulate the voice's breathiness; a higher curve increases it, while a lower curve decreases it.)
+  - TENC (tension curve, need voicebank's support. See [here](https://github.com/openvpi/DiffSinger/releases/tag/v2.3.0) for details. This expression will affect the tenseness of the voice, e.g. manipulates power and nasality.)
+  - VOIC (voicing curve, need voicebank's support. See [here](https://github.com/openvpi/DiffSinger/releases/tag/v2.3.0) for details. This expression will affect the amount of voicing, e.g. manipulates how much voicing is present on the voice. Similar to energy curve and is considered a "successor".)
+  - PEXP (pitch expressiveness curve, voicebank needs to have a pitch model for this to work. See [here](https://github.com/openvpi/DiffSinger/releases/tag/v2.1.0) for details. This expression manipulates how expressive the rendered pitch will be. The default value is 100 (max).)
+  - SHFC (tone shift curve, need vocoder's support See [here](https://github.com/openvpi/vocoders/releases/tag/pc-nsf-hifigan-44.1k-hop512-128bin-2025.02) for more details. This parameter can assign tones of voice from other vocal ranges to a different vocal range (e.g. whistle register to a lower note) to manipulate how the voice will sound. It can also be used to manually increase the vocal range of the voice.)
+  - Voice color curves (no abbreviation; voicebank needs to contain vocal modes (voice colors). This allows for gradual transitions between different voice colors, akin to vocal modes in Synthesizer V or XSY in VOCALOID4.)
 
-VELC is a custom expression defined by DiffSinger and isn't included in new projects. To add this expression into your project, click “Expreeions → Add all expressions suggested by renderers”
+VELC, ENE, PEXP and voice color curves are custom expressions defined by DiffSinger and aren't included in new projects. To add these expressions into your project, click “Expressions → Add all expressions suggested by renderer”
 
 You can also adjust the range of each expression in this menu.
 
