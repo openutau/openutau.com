@@ -22,7 +22,7 @@ Before each OpenUtau release, a pull request will be made from oxygen-dioxide/Op
 
 ## Notes for power users
 - To keep track of what's going on in Crowdin, see https://crowdin.com/project/oxygen-dioxideopenutau/activity-stream
-- For a list of what has been changed on crowdin since the last OpenUtau release (syncs from crowdin every day), or what we will see in the next update, see https://github.com/stakira/OpenUtau/compare/master...oxygen-dioxide:OpenUtau:crowdin-translated 
+- For a list of what has been changed on crowdin since the last OpenUtau release (syncs from crowdin every day), in other words, what we will see in the next update, see https://github.com/stakira/OpenUtau/compare/master...oxygen-dioxide:OpenUtau:crowdin-translated 
 
 ## FAQ
 ### I'm a code contributor. I want to introduce a new feature with new strings. What should I do?
