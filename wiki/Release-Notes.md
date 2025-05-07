@@ -17,12 +17,15 @@ after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https:
 # ~[0.1.550 Beta](https://github.com/stakira/OpenUtau/releases/tag/0.1.550) (05-07-2025)
 ## Features
 - [#1432](https://github.com/stakira/OpenUtau/pull/1432) - Classic renderer: support direct - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
-- [#1483](https://github.com/stakira/OpenUtau/pull/1483) - Clear caches for each phrase - ([@maiko3tattun](https://github.com/maiko3tattun))
-- [#1499](https://github.com/stakira/OpenUtau/pull/1499) - Added ability to draw a dash line for the default value of the curve. - ([@rokujyushi](https://github.com/rokujyushi))
+- [#1483](https://github.com/stakira/OpenUtau/pull/1483) - Clear caches for each phrase - ([@maiko3tattun](https://github.com/maiko3tattun))  
+![image](https://github.com/user-attachments/assets/45734db5-c205-4c25-a165-6c2eb2b83509)
+- [#1499](https://github.com/stakira/OpenUtau/pull/1499) - Added ability to draw a dash line for the default value of the curve. - ([@rokujyushi](https://github.com/rokujyushi))  
+![image](https://private-user-images.githubusercontent.com/93469977/435095724-58db034f-c4c9-4cfc-bbcc-616a8d8877d3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDY2MzMxMDgsIm5iZiI6MTc0NjYzMjgwOCwicGF0aCI6Ii85MzQ2OTk3Ny80MzUwOTU3MjQtNThkYjAzNGYtYzRjOS00Y2ZjLWJiY2MtNjE2YThkODg3N2QzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA1MDclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNTA3VDE1NDY0OFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTM0NjNjMjU4YWVlNTA2NDAwNWJlNzBiODQzYzUxYzVmNGZlMjczZmM2Zjg3YjA0OThhNjQxMTgxZTVkOTE4YzImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.EQe2pbnV8D5PjIYqsswE7qN5ZSCeVOZTbcbVy3_t2ig)
 - [#1400](https://github.com/stakira/OpenUtau/pull/1400) - Improvement of Knife Tool and bug fixes for Tool+Ctrl key - ([@maiko3tattun](https://github.com/maiko3tattun))
 - [#1496](https://github.com/stakira/OpenUtau/pull/1496) - Reduced load wait times for VOICEVOX. - ([@rokujyushi](https://github.com/rokujyushi))
 - [#1487](https://github.com/stakira/OpenUtau/pull/1487) - Seperated steps for DiffSinger - ([@lunaiproject](https://github.com/lunaiproject))
-- [#1166](https://github.com/stakira/OpenUtau/pull/1166) - Add recovery project function - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1166](https://github.com/stakira/OpenUtau/pull/1166) - Add recovery project function - ([@maiko3tattun](https://github.com/maiko3tattun))  
+![image](https://github.com/stakira/OpenUtau/assets/130257355/f9573d9a-b145-446b-86a3-97aa741e8f5a)
 - [#1409](https://github.com/stakira/OpenUtau/pull/1409) - More ExpSelector. - ([@rokujyushi](https://github.com/rokujyushi))
 
 ## Bug Fixes
@@ -37,18 +40,17 @@ after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https:
 - [#1478](https://github.com/stakira/OpenUtau/pull/1478) - TrackHeader changes. - ([@rokujyushi](https://github.com/rokujyushi))
 
 ## Phonemizer Changes
-- [#1436](https://github.com/stakira/OpenUtau/pull/1436) - [EN C+V] Code fixes and Dictionary updates - ([@Cadlaxa](https://github.com/Cadlaxa))
-- [#1445](https://github.com/stakira/OpenUtau/pull/1445) - [JA VCV & CVVC] Enhanced test code and Bug fixes - ([@maiko3tattun](https://github.com/maiko3tattun))
-- [#1426](https://github.com/stakira/OpenUtau/pull/1426) - [EN ARPA+] Fixes vanila Arpabet phonemes conflicts to Romaji VV - ([@Cadlaxa](https://github.com/Cadlaxa))
-- [#1501](https://github.com/stakira/OpenUtau/pull/1501) - Update Starlight fix - ([@AnAndroNerd](https://github.com/AnAndroNerd))
-- [#1505](https://github.com/stakira/OpenUtau/pull/1505) - Update ARPA+, EN C+V, and EN-XSAMPA Phonemizers - ([@Cadlaxa](https://github.com/Cadlaxa))
+- [#1436](https://github.com/stakira/OpenUtau/pull/1436) - `EN C+V` Code fixes and Dictionary updates - ([@Cadlaxa](https://github.com/Cadlaxa))
+- [#1445](https://github.com/stakira/OpenUtau/pull/1445) - `JA VCV & CVVC` Enhanced test code and Bug fixes - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1426](https://github.com/stakira/OpenUtau/pull/1426) - `EN ARPA+` Fixes vanila Arpabet phonemes conflicts to Romaji VV - ([@Cadlaxa](https://github.com/Cadlaxa))
+- [#1501](https://github.com/stakira/OpenUtau/pull/1501) - `EN VCCV` Update Starlight fix - ([@AnAndroNerd](https://github.com/AnAndroNerd))
+- [#1505](https://github.com/stakira/OpenUtau/pull/1505) - `EN` Update ARPA+, EN C+V, and EN-XSAMPA Phonemizers - ([@Cadlaxa](https://github.com/Cadlaxa))
 
 ## Misc
 - [#1457](https://github.com/stakira/OpenUtau/pull/1457) - Show window title in macOS - ([@maiko3tattun](https://github.com/maiko3tattun))
 - [#1523](https://github.com/stakira/OpenUtau/pull/1523) - More friendly error message for renderer that doesn't support autopitch - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
 - [#1492](https://github.com/stakira/OpenUtau/pull/1492) - When saving oto.ini, always include alias in oto lines even if the filename and alias are same - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
 - [#1403](https://github.com/stakira/OpenUtau/pull/1403) - Show Note Properties Panel by default - ([@maiko3tattun](https://github.com/maiko3tattun))
-- [#1494](https://github.com/stakira/OpenUtau/pull/1494) - add automatic feature request label to feature-request.yml - ([@nagotown](https://github.com/nagotown))
 
 ***
 # ~[0.1.549 Beta](https://github.com/stakira/OpenUtau/releases/tag/0.1.549) (02-24-2025)
