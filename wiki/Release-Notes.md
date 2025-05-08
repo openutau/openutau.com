@@ -30,6 +30,11 @@ after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https:
 
 ## Bug Fixes
 - [#1462](https://github.com/stakira/OpenUtau/pull/1462) - Fixed many expression issues and improved the properties panel - ([@maiko3tattun](https://github.com/maiko3tattun))
+  - Remove expression when right-clicking combo box in properties panel
+  - Changed to remove instead of set the value when the same value as the default value of track expression is selected in the properties panel
+  - Fixed Phonemizer not running immediately after selecting voice color in properties panel
+  - Fixed a case where the expression of the first phoneme of the selected note should be displayed, but the one of the second or later phonemes was displayed
+  - When right-clicking on the UI to delete an expression, modified to delete unwanted expressions with the same abbr in the same note
 - [#1449](https://github.com/stakira/OpenUtau/pull/1449) - Fix part always snapping to measure line if the starting position of a part isn't in the current view - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
 - [#1433](https://github.com/stakira/OpenUtau/pull/1433) - Fix Command Injection Vulnerability in Classic Renderer - ([@Cadlaxa](https://github.com/Cadlaxa))
 - [#1526](https://github.com/stakira/OpenUtau/pull/1526) - Fix textbox caret behavior - ([@IsE333](https://github.com/IsE333))
