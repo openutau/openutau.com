@@ -15,18 +15,20 @@ after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https:
 -->
 ***
 # ~[0.1.550 Beta](https://github.com/stakira/OpenUtau/releases/tag/0.1.550) (05-07-2025)
+> **The ustx version is up. It cannot be opened with the previous OpenUtau.**
 ## Features
 - [#1432](https://github.com/stakira/OpenUtau/pull/1432) - Classic renderer: support direct - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
 - [#1483](https://github.com/stakira/OpenUtau/pull/1483) - Clear caches for each phrase - ([@maiko3tattun](https://github.com/maiko3tattun))  
 ![image](https://github.com/user-attachments/assets/45734db5-c205-4c25-a165-6c2eb2b83509)
 - [#1499](https://github.com/stakira/OpenUtau/pull/1499) - Added ability to draw a dash line for the default value of the curve. - ([@rokujyushi](https://github.com/rokujyushi))  
-![image](https://private-user-images.githubusercontent.com/93469977/435095724-58db034f-c4c9-4cfc-bbcc-616a8d8877d3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDY2MzMxMDgsIm5iZiI6MTc0NjYzMjgwOCwicGF0aCI6Ii85MzQ2OTk3Ny80MzUwOTU3MjQtNThkYjAzNGYtYzRjOS00Y2ZjLWJiY2MtNjE2YThkODg3N2QzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA1MDclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNTA3VDE1NDY0OFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTM0NjNjMjU4YWVlNTA2NDAwNWJlNzBiODQzYzUxYzVmNGZlMjczZmM2Zjg3YjA0OThhNjQxMTgxZTVkOTE4YzImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.EQe2pbnV8D5PjIYqsswE7qN5ZSCeVOZTbcbVy3_t2ig)
+![image](https://github.com/user-attachments/assets/bdd9f2e2-4a86-4c27-a87a-fdeae3dab4ae)
 - [#1400](https://github.com/stakira/OpenUtau/pull/1400) - Improvement of Knife Tool and bug fixes for Tool+Ctrl key - ([@maiko3tattun](https://github.com/maiko3tattun))
 - [#1496](https://github.com/stakira/OpenUtau/pull/1496) - Reduced load wait times for VOICEVOX. - ([@rokujyushi](https://github.com/rokujyushi))
 - [#1487](https://github.com/stakira/OpenUtau/pull/1487) - Seperated steps for DiffSinger - ([@lunaiproject](https://github.com/lunaiproject))
 - [#1166](https://github.com/stakira/OpenUtau/pull/1166) - Add recovery project function - ([@maiko3tattun](https://github.com/maiko3tattun))  
 ![image](https://github.com/stakira/OpenUtau/assets/130257355/f9573d9a-b145-446b-86a3-97aa741e8f5a)
 - [#1409](https://github.com/stakira/OpenUtau/pull/1409) - More ExpSelector. - ([@rokujyushi](https://github.com/rokujyushi))
+![image](https://github.com/user-attachments/assets/e56a4078-60ab-4ce7-ba19-00a6f058e3e5)
 
 ## Bug Fixes
 - [#1462](https://github.com/stakira/OpenUtau/pull/1462) - Fixed many expression issues and improved the properties panel - ([@maiko3tattun](https://github.com/maiko3tattun))
@@ -68,7 +70,7 @@ https://private-user-images.githubusercontent.com/130257355/411304902-d9c39628-a
 - [#1419](https://github.com/stakira/OpenUtau/pull/1419) - Change batch edit quantize to grid size - ([@maiko3tattun](https://github.com/maiko3tattun))
 - [#1204](https://github.com/stakira/OpenUtau/pull/1204) - Add hover tooltip to music key menu and snap div menu - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
 - [#1386](https://github.com/stakira/OpenUtau/pull/1386) - show singer default phonemizer in track phonemizer menu - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
-![image](https://private-user-images.githubusercontent.com/54425948/404719848-d487a0fe-1b09-47e6-82d0-0ff2a70ee11d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDA3NTYwNzgsIm5iZiI6MTc0MDc1NTc3OCwicGF0aCI6Ii81NDQyNTk0OC80MDQ3MTk4NDgtZDQ4N2EwZmUtMWIwOS00N2U2LTgyZDAtMGZmMmE3MGVlMTFkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMjglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjI4VDE1MTYxOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTljYmI3ZDNjY2Q0MjhkYzhmNTNlZmM3NmEzYzQ2ZmU4ZGNkMjI2NjkyNzA4YjdkZjg1OTNiN2U4ODk3YWZkMDUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.G69ja2Ijk8oDe8YSxWxeo4bXHJYSUjHEZpCHcjOjeuw)
+![image](https://github.com/user-attachments/assets/6fabe7a6-4023-490d-8a23-2119ec82c27f)
 
 ## Bug Fixes
 - [#1375](https://github.com/stakira/OpenUtau/pull/1375) - Musicxml: fix crash after importing a musicxml without tempo - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
