@@ -2,6 +2,8 @@
 
 Anyone can make a voicebank with their voice and use it in OpenUtau. There are basically two types of voicebanks: UTAU concatenative voicebanks and Machine learning voicebanks. 
 
+Before making a new voicebank, it's recommended to use existing voicebanks in OpenUtau. This will help you understand the concepts in voicebank development, and help you to make a good voicebank.
+
 ## UTAU voicebank development
 To make a UTAU voicebank, you need to record all the syllables in a language and label them.
 
