@@ -121,6 +121,11 @@ OpenUtau includes a default resampler and two wavtools by default. The included 
 In addition, the WORLDLINE-R renderer acts as its own resampler and wavtool, and allows for use of exclusive, special features that do not work with classic resamplers.  
 OpenUtau intends to maintain compatibility with standard UTAU resamplers and wavtools. However, compatibility cannot be guaranteed.
 
+### Does OpenUtau support switching phonemizer inside a track
+In OpenUtau, we can only use one phonemizer in a track. We don't support switching phonemizer in the middle of a track because the phonemes of a note depend on not only the note's lyric itself, but also its neighbors. Phonemizers aren't designed to work together with other phonemizers. If we have to make them work together, developing a phonemizer will be much harder because different voicebank types work differently. If we have `n` phonemizers, we'll have to consider `n(n-1)/2`  relationships between phonemizers.
+
+Some commercial singing voice synthesis softwares support switching language inside a track, because all their voicebanks are developed by their official development team under the same standard, so they can unify how their phoentic system work. However, in UTAU ecosystem, voicebanks in different types are developed differently, so we can't simply merge them into one logic.
+
 ## Future plans
 ### Is there a default voicebank/mascot? Can I provide one?
 OpenUtau does not offer a default voicebank or mascot, and we do not have any intention of creating a voicebank or mascot for our project.  
