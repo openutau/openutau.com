@@ -64,6 +64,10 @@ Another way to install singers is to set the **Additional Singer Path** to an ex
 
 You can then see your installed voicebanks in the **Tools > Singers...** menu.
 
+If you're using MacOS, before you download a voicebank, navigate to `Settings > General` and uncheck `Open "safe" files after downloading`.
+
+![image](https://github.com/user-attachments/assets/662debe9-8c67-459f-916a-8f9b05f81bae)
+
 ## Projects
 ### Creating projects
 When you start OpenUtau, you have a new, blank project.  
