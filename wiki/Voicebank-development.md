@@ -14,15 +14,15 @@ To make a UTAU voicebank, you need to record all the syllables in a language and
 - The **wavtool** joins all the audio slices produced by resampler together and output the final audio.
 
 ### Recording
-Firstly, find a reclist suitable for your language. A reclist is a text file that has all syllables or phonemes and their combinations in a language. Here are some publically available reclists:
+Firstly, find a reclist suitable for your language. A reclist is a text file that has all syllables or phonemes and their combinations in a language. Here are some publicly available reclists:
 
-|Phonemizer|Reclist|
+| Phonemizer | Reclist |
 |-|-|
-|EN VCCV|[Core American English VCCV](https://www.mediafire.com/download/wef9lg11dmccxqx/CORE_American_English_VCCV.zip) by PaintedCz|
-|EN ARPA|[ARPAsing resource website](https://arpasing.neocities.org/)
-|EN XSAMPA|[Delta-style English reclists](https://tl.tubs.wtf/2020/11/09/delta-eng)
-|JA VCV & CVVC|[Japanese reclists](https://wastelandutau.neocities.org/jp/overview)|
-|ZH CVVC|[Hr.J Chinese CVVC](https://utaujc.jimdofree.com/hr-j-cvvc/) by haru|
+| JA VCV & CVVC | [Japanese reclists](https://wastelandutau.neocities.org/jp/overview) |
+| ZH CVVC | [Hr.J Chinese CVVC](https://utaujc.jimdofree.com/hr-j-cvvc/) by haru |
+| EN ARPA | [ARPAsing Reclist Directory](https://arpasing.tubs.wtf/en/directories/reclists) |
+| EN XSAMPA | [Delta-style English reclists](https://tl.tubs.wtf/2020/11/09/delta-eng)<br>[Salem-Style English CVVC](https://wastelandutau.neocities.org/en/overview)<br>[GrayGlish](https://assbackwardsp.wixsite.com/utaubackwards/reclists) |
+| EN VCCV | [Core American English VCCV](https://www.mediafire.com/download/wef9lg11dmccxqx/CORE_American_English_VCCV.zip) by PaintedCz |
 
 * English recorded with any of these methods have various pros and cons. You may want to try recording a language with a smaller set of vowels first, or recording and training [an AI voicebank](#machine-learning-voicebank-development) for DiffSinger.
 
@@ -50,11 +50,11 @@ Let's look at an example oto.ini line from [Kasane Teto](https://kasaneteto.jp/u
 
 ![image](https://github.com/stakira/OpenUtau/assets/37761120/5c85409d-6edc-43af-9ebf-42a46aa28ef3)
 
-1. **Yellow line:** Left blank. The start of the phoneme.
+1. **Yellow line:** Offset, or left blank. The start of the phoneme.
 2. **Green line:** Overlap. Everything between the left blank and overlap will be blended with the previous note.
-3. **Red line:** Preutterance. The start of the note.
-4. **Blue line:** Consonant. Everything before this line will not be looped.
-5. **White line:** Right blank. The end of the phoneme. Everything between the consonant and right blank will be looped.
+3. **Red line:** Preutterance. The start of the musical note.
+4. **Blue line:** Fixed region. Everything before this line will not be looped/stretched.
+5. **White line:** Ctoff, or right blank. The end of the phoneme. Everything between the fixed region and cutoff will be looped/stretched.
 
 See also: [Anatomy of the OTO](https://utaforum.net/resources/anatomy-of-the-oto.321/) on UtaForum.
 
