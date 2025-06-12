@@ -1,6 +1,6 @@
 [Discussion Here](https://github.com/stakira/OpenUtau/discussions/433)
 
-This proposal describes a json-based API for SVS backends.
+This proposal describes a json-based (actually mspack, since SVS needs a lot of binary data) API for SVS backends.
 
 ML based SVS often has **different data flows**. Some intakes notes and outputs audio samples, end to end. Some have intermediate steps, such as phonemes and f0 curve. To accommodate such needs, this API is designed to be flexible. It defines some data structs and a single API `ops`, and allows the backend to **document its own API graph**. Then the frontend finds out the order to call these APIs from the graph.
 
