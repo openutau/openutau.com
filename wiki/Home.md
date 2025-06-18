@@ -36,6 +36,6 @@ Welcome to the OpenUtau wiki!
 * [[Adding support for a new synthesis engine]]
 * [[Contributing to OpenUtau's localization]]
 * [USTX file format](https://github.com/stakira/OpenUtau/wiki/USTX-file-format)
-* [[ [PROPOSAL] svs.json ‐ singing voice synthesis backend API]]
+* [[ [PROPOSAL] svs.io ‐ singing voice synthesis backend API]]
 * [[tech note ‐ music is music, phonetics is phonetics (also why you don't need legacy plugins)]]
 * [[Known Bugs]]
