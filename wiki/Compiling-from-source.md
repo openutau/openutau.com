@@ -115,3 +115,13 @@ Notes:
 3. In visual studio, open OpenUtau.sln, right click on the OpenUtau project -> properties -> Debug -> Open debug launch profiles UI -> enable native code debugging
 4. In visual studio, debug -> options -> debugging -> symbols, add `<path to your openutau repo>\cpp\bazel-out\x64_windows-dbg\bin\worldline`
 5. run
+
+## Testing pull requests from other developer
+1. navigate to your openutau development folder
+2. `git stash` to save any uncommitted changes
+3. `git fetch https://github.com/{author}/OpenUtau {branch}; git checkout FETCH_HEAD`, replacing {author} and {branch} with the author and branch you want to test(e.g. git fetch https://github.com/lennyservant/OpenUtau improve-classic-pitch-timing; git checkout FETCH_HEAD)
+4. open visual studio, build and run
+
+You can find the author and branch name in the pull request on github, which usually have a line with the format author:branch just below the pull request title
+
+After testing, you can switch back to your branch and pop/apply your stashed changes through visual studio (menu -> view -> git changes), or you can type `git checkout {branch}` to switch branches and `git stash pop` to pop stashed changes
