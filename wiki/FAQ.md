@@ -30,7 +30,7 @@ OpenUtau will fall back to reading filenames if an alias is missing, but by defa
 ### My Singer still doesn't play or sounds strange, but no troubleshooting steps so far have helped.
 In cases like this, it's good to run a Singer Error Report check to rule out the voicebank configuration or formatting being the source of the problem. To do this:
 1. Select `Tools` on the main window navigation bar, and choose `Singers...` from the drop-down.
-2. Be sure the problematic Singer is selected, then navigate to the "cog" icon and select "Generate Singer Error Report".
+2. Be sure the problematic Singer is selected, then navigate to the ⚙ icon and select "Generate Singer Error Report".
 
 ![Image: Visual example of cog location](https://i.imgur.com/zEXGR53.png)
 
