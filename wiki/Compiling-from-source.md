@@ -94,3 +94,24 @@ dotnet build OpenUtau
 ```
 
 The executable files will be in the directory `OpenUtau/OpenUtau/bin/Debug/net6.0`
+
+## Building worldline
+Worldline is the c++ part of OpenUtau.
+1. Install Bazelisk
+2. cd to cpp folder
+3. Run bazelisk build //worldline to build dll on Windows, dylib on macOS or so on Linux.
+- You can also run bazelisk build //worldline:main to build a executable version, though curve expressions won't be available.
+
+Notes:
+- On Windows omits // in commands.
+- Recommends Visual Studio Code to leverage IntelliSense.
+- If Bazel ever freezes on Windows, open up Task Manager and kill the Java process.
+- bazelisk clean cleans up build cache.
+- bazelisk clean --expunge cleans up build cache and dependencies.
+
+### Debugging worldline in visual studio
+1. Build worldline with `bazelisk build worldline -c dbg`
+2. Copy the compiled dll and pdb (in `<path to your openutau repo>\cpp\bazel-out\x64_windows-dbg\bin\worldline`) into `runtimes\win-x64\native`
+3. In visual studio, open OpenUtau.sln, right click on the OpenUtau project -> properties -> Debug -> Open debug launch profiles UI -> enable native code debugging
+4. In visual studio, debug -> options -> debugging -> symbols, add `<path to your openutau repo>\cpp\bazel-out\x64_windows-dbg\bin\worldline`
+5. run
