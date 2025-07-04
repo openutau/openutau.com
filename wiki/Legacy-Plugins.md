@@ -21,4 +21,5 @@ Note that some plugins themselves may have problem running on non-Japanese syste
 # Incompatible
 * [envedit/拡張エンベロープエディタ](http://z-server.game.coocan.jp/utau/utautop.html) - Works, but OU can't keep complex envelope changes intact (anything beyond what attack/decay can emulate), so basically useless
 * [flagedit/拡張フラグエディタ](http://z-server.game.coocan.jp/utau/utautop.html) - Opens, but changes don't go through
+* [HANASHITAI](https://www.nicovideo.jp/watch/sm20488427) - Doesn't open in OU, but works as a standalone tool
 * [PrintMOV Style Tuning](https://utaforum.net/resources/printmov-tuning-helper-plugin.497/) - Opens, but doesn't change any pitchbends
