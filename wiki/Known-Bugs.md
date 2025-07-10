@@ -37,7 +37,7 @@ Changing the output devices, such as plugging a headphone in, might temporarily 
 Related issue: [#1133](https://github.com/stakira/OpenUtau/issues/1133) [#1382](https://github.com/stakira/OpenUtau/issues/1382)
 
 # Known bugs in stable version
-These bugs are already solved in the latest beta version. If you encountered one of these bugs, you can solve it by upgrading to the latest beta version.
+`These bugs are already solved in the latest beta version. If you encountered one of these bugs, you can solve it by upgrading to the latest beta version.`
 
 ### CVVC phonemizers apply VCs erratically and/or cease to apply VCs when using voice colors/the CLR expression
 ![image](https://i.imgur.com/ogwXCKJ.png)
