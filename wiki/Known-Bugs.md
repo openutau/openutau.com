@@ -1,23 +1,19 @@
 # Known bugs
+### `WORLDLINE-R`: Crashes OpenUtau instance without error when invalid oto.ini entry or audio file encountered
+Other resamplers will throw an error dialog if unable to parse a note for these reasons, which should also happen for Worldline. 
+>`Common case examples` 
+> - Unsupported file-type. _Supported types are WAV, FLAC, OGG. WAV files *must* be 16-bit, mono, 44100hz sample rate_
+> - Any oto.ini value outside of file length or with other validity errors such as formatting
+> - No space between `consonant` and  `cutoff`. _Note: Some resamplers will automatically amend this by forcibly reading the `consonant` value as -10ms or so of the `cutoff` when the values are detected as the same position_ 
 
-### WORLDLINE-R audio distortion when changing gender factor curve's default value
+### `WORLDLINE-R`: Audio distortion when changing gender factor curve's default value
 If the gender factor default value is set to a negative value, such as -15, the synthesized audio will get heavily distorted. This bug does not occur when the gender factor value is set to 0
 ![image](https://github.com/stakira/OpenUtau/assets/54425948/356f157a-cc3a-454a-bebd-6c2efb4a3ec7)
 
 Related issue: [#756](https://github.com/stakira/OpenUtau/issues/756)
 
-### OpenUTAU not crossfading correctly compared to UTAU
-
-In classic UTAU, when your overlap is half of the pre-utterance or more, the pre-utterance of the next note will go all the way into the previous note.
-![utau](https://github.com/stakira/OpenUtau/assets/87346264/16cc7f1f-566e-463c-915e-793ba2b0c3ec)
-
-Comparatively, in OpenUTAU, when your overlap is half of your pre-utterance or more, the pre-utterance of the next note will only go part of the way into the previous note
-![image](https://github.com/stakira/OpenUtau/assets/87346264/c01d5d34-2689-4274-b47d-f3d0bbe2f9f1)
->`Note` This is less a bug and more a parity/compatibility issue. 
-
->`Blocker` It's easy to fix the math, however solving the math alone causes UX issues regarding being able to differentiate between adjusting the timing bar and adjusting the crossfade. 
-
->`Suggested solution` Adding the ability to hold a modifier key (ctrl/alt/shift) in order to isolate interaction to either the crossfade or timing adjustment area.
+### `Mac OS`: Piano Roll window requires resizing before it will display
+![image](https://github.com/user-attachments/assets/0616279c-a632-4bc6-b099-4a6d2edf7f85)
 
 ### When trying to play a project, OpenUtau says "BadDeviceId calling waveOutOpen"
 
@@ -71,6 +67,19 @@ Solved in PR [#1220](https://github.com/stakira/OpenUtau/pull/1220)
 
 ### After installing a diffsinger voicebank, all my singers are gone
 Solved in PR [#1061](https://github.com/stakira/OpenUtau/pull/1061)
+
+### OpenUTAU not crossfading correctly compared to UTAU
+
+In classic UTAU, when your overlap is half of the pre-utterance or more, the pre-utterance of the next note will go all the way into the previous note.
+![utau](https://github.com/stakira/OpenUtau/assets/87346264/16cc7f1f-566e-463c-915e-793ba2b0c3ec)
+
+Comparatively, in OpenUTAU, when your overlap is half of your pre-utterance or more, the pre-utterance of the next note will only go part of the way into the previous note
+![image](https://github.com/stakira/OpenUtau/assets/87346264/c01d5d34-2689-4274-b47d-f3d0bbe2f9f1)
+>`Note` This is less a bug and more a parity/compatibility issue. 
+
+>`Blocker` It's easy to fix the math, however solving the math alone causes UX issues regarding being able to differentiate between adjusting the timing bar and adjusting the crossfade. 
+
+>`Suggested solution` Adding the ability to hold a modifier key (ctrl/alt/shift) in order to isolate interaction to either the crossfade or timing adjustment area.
 
 
 ## Potential bugs that need investigation
