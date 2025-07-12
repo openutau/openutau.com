@@ -14,6 +14,8 @@ You can input `+` to extend the previous lyric over multiple notes.
 ![+ extension](https://i.imgur.com/JlHc6bq.png)
 
 ## EN ARPA (English ARPAsing)
+[Reclist](https://arpasing.tubs.wtf/en/directories/reclists)
+
 You may input lyrics in three different ways.
 - Plain English words (eg. `live`)  
 ![plain english words](https://i.imgur.com/PZJe73G.png)
@@ -598,6 +600,12 @@ breath : take a breath
 ![](https://drive.google.com/u/0/uc?id=1JT4aPsaaeIPKnXP2P2dVKRdj3Xps38YN&export=download)
 
 ## EN X-SAMPA (English X-SAMPA phonemizer)
+Compatible reclists
+- [Delta-style English Lists](https://tl.tubs.wtf/2020/11/09/delta-eng)
+- [Salem-Style English CVVC](https://wastelandutau.neocities.org/en/overview)
+- [GrayGlish](https://assbackwardsp.wixsite.com/utaubackwards/reclists)
+- More to be added
+
 **NOTE:** This phonemizer used to be called the "English Delta Phonemizer", but as the scope of the phonemizer has increased, it has been renamed to the more general "English X-SAMPA phonemizer".
 ### Setup
 This phonemizer is pretty similar to the Teto English phonemizer. However, there are a few important differences:
