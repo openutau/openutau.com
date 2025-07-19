@@ -1,18 +1,92 @@
 > The latest stable version is [0.1.529](#01529-07-24-2024).  
 > See also [Known Bugs](https://github.com/stakira/OpenUtau/wiki/Known-Bugs).
 
-<!-- To get a list of pull requests, use the following git command
-git log --merges --after="2024-06-10" --before="today" --first-parent --pretty=format:"%s pr %b"
-
-Next, replace with a regular expression.
-before: Merge pull request #([0-9]+) from (.*?)\/.* pr (.*)
-after: - [#$1](https://github.com/stakira/OpenUtau/pull/$1) - $3 - ([@$2](https://github.com/$2))
+<!-- Use the following GitHub CLI command to get a list of pull requests:
+gh pr list --state merged --repo stakira/OpenUtau --limit 1000 --json number,title,author,url,mergedAt --jq ".[] | select(.mergedAt >= \"2025-05-08T00:00:00Z\") | \"- [#\(.number)](\(.url)) - \(.title) - ([@\(.author.login)](https://github.com/\(.author.login)))\""
 
 ## Features
 ## Bug Fixes
 ## Phonemizer Changes
 ## Misc
 -->
+
+***
+# ~[0.1.560 Beta](https://github.com/stakira/OpenUtau/releases/tag/0.1.560) (07-19-2025)
+```Diff
+! Caution !
+There is a bug that prevents the use of MOD+.
+```
+## Features
+### New Features
+- [#1509](https://github.com/stakira/OpenUtau/pull/1509) - Add welcome page - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+  - [#1550](https://github.com/stakira/OpenUtau/pull/1550) - Fixed unexpected behavior of welcome page - ([@maiko3tattun](https://github.com/maiko3tattun))  
+  <img width="700" alt="image" src="https://github.com/user-attachments/assets/bbb5bcba-ce56-4312-b122-1f49351cd8dc" />
+- [#1488](https://github.com/stakira/OpenUtau/pull/1488) - [DiffSinger]Ctrl+R for Load rendered pitch - ([@lunaiproject](https://github.com/lunaiproject))
+- [#1506](https://github.com/stakira/OpenUtau/pull/1506) - Enunu style support - ([@rokujyushi](https://github.com/rokujyushi))
+- [#1531](https://github.com/stakira/OpenUtau/pull/1531) - Search notes by alias - ([@maiko3tattun](https://github.com/maiko3tattun))  
+  <img alt="image" src="https://github.com/user-attachments/assets/78579056-ad46-4118-81c4-3079f9794a55" />
+- [#1539](https://github.com/stakira/OpenUtau/pull/1539) - Support displaying real curves from DiffSinger variance predictor - ([@yqzhishen](https://github.com/yqzhishen))  
+  <img width="700" alt="image" src="https://github.com/user-attachments/assets/09eb6a91-0cba-4a2e-ba6b-02a21bc6ac06" />
+- [#1560](https://github.com/stakira/OpenUtau/pull/1560) - Add "Install Wavtool/Resampler (.exe)" in menu - ([@atouu](https://github.com/atouu))
+  - [#1599](https://github.com/stakira/OpenUtau/pull/1599) - Translate Exe Setup Dialog - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1596](https://github.com/stakira/OpenUtau/pull/1596) - Voicebank Merger - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))  
+  <img width="700" alt="image" src="https://github.com/user-attachments/assets/cb6139c5-6d34-437a-af80-422e66c1b676" />
+### Feature Enhancements
+- [#1447](https://github.com/stakira/OpenUtau/pull/1447) - Removed 0.9f limit of Preutter delta - ([@Cadlaxa](https://github.com/Cadlaxa))
+- [#1456](https://github.com/stakira/OpenUtau/pull/1456) - Resize the beginning of part - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1485](https://github.com/stakira/OpenUtau/pull/1485) - Improved mouse cursor - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1521](https://github.com/stakira/OpenUtau/pull/1521) - Hide DiffSinger Language Code in Phoneme Canvas - ([@mrtigermeat](https://github.com/mrtigermeat))
+- [#1527](https://github.com/stakira/OpenUtau/pull/1527) - Voicevox refactoring and additional functionality. - ([@rokujyushi](https://github.com/rokujyushi))
+- [#1533](https://github.com/stakira/OpenUtau/pull/1533) - Lyric box: add back "enter to apply" feature - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1548](https://github.com/stakira/OpenUtau/pull/1548) - Allow scrolling main view when hovering over Singer List - ([@Kabinet0](https://github.com/Kabinet0))
+- [#1554](https://github.com/stakira/OpenUtau/pull/1554) - Improved pitch hit test for overlapping pitches - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1567](https://github.com/stakira/OpenUtau/pull/1567) - Added play file button to singers dialog - ([@Kabinet0](https://github.com/Kabinet0))
+- [#1568](https://github.com/stakira/OpenUtau/pull/1568) - Simplifies tempo importing - ([@stakira](https://github.com/stakira))
+- [#1571](https://github.com/stakira/OpenUtau/pull/1571) - Use Wine directly instead of wrappers on Mac and Linux - ([@atouu](https://github.com/atouu))
+
+## Bug Fixes
+### Major Changes
+- [#1558](https://github.com/stakira/OpenUtau/pull/1558) - Fix Up/Down keys not working - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1604](https://github.com/stakira/OpenUtau/pull/1604) - Oto validation before worldline rendering - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+  - Many crashes at worldline can now be prevented!
+- [#1480](https://github.com/stakira/OpenUtau/pull/1480) - Fixed issue with voice bank loading due to differences in spec between OS - ([@maiko3tattun](https://github.com/maiko3tattun))
+### Others
+- [#1401](https://github.com/stakira/OpenUtau/pull/1401) - Fixed a bug in Singer's error report - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1460](https://github.com/stakira/OpenUtau/pull/1460) - Fix OpenUtau's data folders appearing in the wrong place on macOS - ([@Nyaacinth](https://github.com/Nyaacinth))
+- [#1503](https://github.com/stakira/OpenUtau/pull/1503) - Fixed Vibrato VolLink was not copied - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1541](https://github.com/stakira/OpenUtau/pull/1541) - Fix "#Charset:" - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1555](https://github.com/stakira/OpenUtau/pull/1555) - Fixes OpenUtau's data folders appearing in the wrong place on Linux - ([@Seele-Vollerei32](https://github.com/Seele-Vollerei32))
+- [#1562](https://github.com/stakira/OpenUtau/pull/1562) - Fixed OpenUtau getting stuck in the background when closing on Linux (and maybe Mac). - ([@atouu](https://github.com/atouu))
+- [#1576](https://github.com/stakira/OpenUtau/pull/1576) - Fix manifest loading - ([@rokujyushi](https://github.com/rokujyushi))
+- [#1577](https://github.com/stakira/OpenUtau/pull/1577) - fix legacy plugin output - ([@takunnma5286](https://github.com/takunnma5286))
+- [#1586](https://github.com/stakira/OpenUtau/pull/1586) - Check if plugin is exe or bat before using wine - ([@atouu](https://github.com/atouu))
+- [#1594](https://github.com/stakira/OpenUtau/pull/1594) - Fix unable to load empty ust - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1603](https://github.com/stakira/OpenUtau/pull/1603) - Fix OpenUtau crashing when oto.ini contains two `#Charset:` lines - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+
+## Phonemizer Changes
+- [#1530](https://github.com/stakira/OpenUtau/pull/1530) - `New!` Add Turkish CVVC Phonemizer  - ([@IsE333](https://github.com/IsE333))
+- [#1597](https://github.com/stakira/OpenUtau/pull/1597) - `New!` Add [FIL VCV & CVVC] and [FIL to JA] phonemizers - ([@Cadlaxa](https://github.com/Cadlaxa))
+
+## Misc
+- [#1360](https://github.com/stakira/OpenUtau/pull/1360) - Capitalize machine learning runner names in UI - ([@RedBlackAka](https://github.com/RedBlackAka))
+- [#1362](https://github.com/stakira/OpenUtau/pull/1362) - Update all macOS build targets to conform .NET 8 - ([@RedBlackAka](https://github.com/RedBlackAka))
+- [#1439](https://github.com/stakira/OpenUtau/pull/1439) - Log on Singer and Phonemizer change - ([@Astel123457](https://github.com/Astel123457))
+- [#1479](https://github.com/stakira/OpenUtau/pull/1479) - Updated operating instructions. - ([@rokujyushi](https://github.com/rokujyushi))
+  - [#1547](https://github.com/stakira/OpenUtau/pull/1547) - Corrected description - ([@rokujyushi](https://github.com/rokujyushi))
+- [#1524](https://github.com/stakira/OpenUtau/pull/1524) - More flexible translation of error messages - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1528](https://github.com/stakira/OpenUtau/pull/1528) - Add GitHub action tests on arm devices for windows, mac and linux - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1529](https://github.com/stakira/OpenUtau/pull/1529) - update csharp-kana to 1.0.2 - ([@wolfgitpr](https://github.com/wolfgitpr))
+- [#1536](https://github.com/stakira/OpenUtau/pull/1536) - Sync translations from crowdin to official repo - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1564](https://github.com/stakira/OpenUtau/pull/1564) - Fix drag and drop area in main window - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1565](https://github.com/stakira/OpenUtau/pull/1565) - Fixed translated error messages being overwritten by upper level abstract messages - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1572](https://github.com/stakira/OpenUtau/pull/1572) - [DiffSinger] Fix weired error message - ([@yqzhishen](https://github.com/yqzhishen))
+- [#1575](https://github.com/stakira/OpenUtau/pull/1575) - fix typo - ([@shuntia](https://github.com/shuntia))
+- [#1591](https://github.com/stakira/OpenUtau/pull/1591) - fix osx upload-artifact action - ([@odeinjul](https://github.com/odeinjul))
+- [#1593](https://github.com/stakira/OpenUtau/pull/1593) - Log system encoding - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1598](https://github.com/stakira/OpenUtau/pull/1598) - Fix batch edit order - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1606](https://github.com/stakira/OpenUtau/pull/1606) - Update Resampler Metafiles - ([@Cadlaxa](https://github.com/Cadlaxa))
+- [#1607](https://github.com/stakira/OpenUtau/pull/1607) - Installer: High DPI support, MUI2, desktop shortcut, cleanups - ([@RedBlackAka](https://github.com/RedBlackAka))
+
 ***
 # ~[0.1.550 Beta](https://github.com/stakira/OpenUtau/releases/tag/0.1.550) (05-07-2025)
 > **The ustx version is up. It cannot be opened with the previous OpenUtau.**
