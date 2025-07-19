@@ -81,6 +81,7 @@ Comparatively, in OpenUTAU, when your overlap is half of your pre-utterance or m
 
 >`Suggested solution` Adding the ability to hold a modifier key (ctrl/alt/shift) in order to isolate interaction to either the crossfade or timing adjustment area.
 
+Solved in PR [#1447](https://github.com/stakira/OpenUtau/pull/1447)
 
 ## Potential bugs that need investigation
 
