@@ -9,6 +9,16 @@ gh pr list --state merged --repo stakira/OpenUtau --limit 1000 --json number,tit
 ## Phonemizer Changes
 ## Misc
 -->
+***
+# ~[0.1.562 Beta](https://github.com/stakira/OpenUtau/releases/tag/0.1.562) (07-21-2025)
+## Bug Fixes
+- [#1610](https://github.com/stakira/OpenUtau/pull/1610) - (Re) MOD+ related bug fixes - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1614](https://github.com/stakira/OpenUtau/pull/1614) - Fix crash when playing test sound on an unavailable audio device - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1616](https://github.com/stakira/OpenUtau/pull/1616) - Fix list items could not be controlled by keyboard - ([@maiko3tattun](https://github.com/maiko3tattun))
+
+## Phonemizer Changes
+- [#1609](https://github.com/stakira/OpenUtau/pull/1609) - `FILtoJA` Fixes to `ng` note.lyric bug - ([@Cadlaxa](https://github.com/Cadlaxa))
+- [#1612](https://github.com/stakira/OpenUtau/pull/1612) - `S-VOICEVOX JA` Fixed a processing branch for phrases containing slur - ([@rokujyushi](https://github.com/rokujyushi))
 
 ***
 # ~[0.1.560 Beta](https://github.com/stakira/OpenUtau/releases/tag/0.1.560) (07-19-2025)
