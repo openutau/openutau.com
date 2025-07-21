@@ -37,8 +37,6 @@ There is a bug that prevents the use of MOD+.
   <img alt="image" src="https://github.com/user-attachments/assets/78579056-ad46-4118-81c4-3079f9794a55" />
 - [#1539](https://github.com/stakira/OpenUtau/pull/1539) - Support displaying real curves from DiffSinger variance predictor - ([@yqzhishen](https://github.com/yqzhishen))  
   <img width="700" alt="image" src="https://github.com/user-attachments/assets/09eb6a91-0cba-4a2e-ba6b-02a21bc6ac06" />
-- [#1560](https://github.com/stakira/OpenUtau/pull/1560) - Add "Install Wavtool/Resampler (.exe)" in menu - ([@atouu](https://github.com/atouu))
-  - [#1599](https://github.com/stakira/OpenUtau/pull/1599) - Translate Exe Setup Dialog - ([@maiko3tattun](https://github.com/maiko3tattun))
 - [#1596](https://github.com/stakira/OpenUtau/pull/1596) - Voicebank Merger - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))  
   <img width="700" alt="image" src="https://github.com/user-attachments/assets/cb6139c5-6d34-437a-af80-422e66c1b676" />
 ### Feature Enhancements
@@ -50,6 +48,8 @@ There is a bug that prevents the use of MOD+.
 - [#1533](https://github.com/stakira/OpenUtau/pull/1533) - Lyric box: add back "enter to apply" feature - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
 - [#1548](https://github.com/stakira/OpenUtau/pull/1548) - Allow scrolling main view when hovering over Singer List - ([@Kabinet0](https://github.com/Kabinet0))
 - [#1554](https://github.com/stakira/OpenUtau/pull/1554) - Improved pitch hit test for overlapping pitches - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1560](https://github.com/stakira/OpenUtau/pull/1560) - Add "Install Wavtool/Resampler (.exe)" in menu - ([@atouu](https://github.com/atouu))
+  - [#1599](https://github.com/stakira/OpenUtau/pull/1599) - Translate Exe Setup Dialog - ([@maiko3tattun](https://github.com/maiko3tattun))
 - [#1567](https://github.com/stakira/OpenUtau/pull/1567) - Added play file button to singers dialog - ([@Kabinet0](https://github.com/Kabinet0))
 - [#1568](https://github.com/stakira/OpenUtau/pull/1568) - Simplifies tempo importing - ([@stakira](https://github.com/stakira))
 - [#1571](https://github.com/stakira/OpenUtau/pull/1571) - Use Wine directly instead of wrappers on Mac and Linux - ([@atouu](https://github.com/atouu))
