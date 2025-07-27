@@ -36,6 +36,63 @@ If the syllables are misaligned, add numbers after `+` to force alignment to the
 - A copy of `arpasing.yaml` file can be added to singer folder for a specific singer. You can even distribute an `arpasing.yaml` file with your voicebank.
 - The lookup order is `plugin dictionary` -> `singer dictionary` -> `default dictionary`.
 
+## EN ARPA+ (English ARPAsing+)
+[Reclist](https://arpasing.tubs.wtf/en/directories/reclists)
+
+- Same mechanics for lyric input 
+- Supports more alias formats such as: `cv`, `c v`, `ccv`, `cc v`, `v v`, `splitted vv`, `v c`, `v cc`, `c c`, `c cc` and so on
+### Auxiliary dictionary files:
+
+- #### Symbols
+    - Add a new symbol and define its symbol type for the phonemizer to recognize.
+    - encapsulate the whole symbol with `' '` if it starts with a special symbol
+```
+symbols:
+    - {symbol: ea, type: vowel}
+    - {symbol: ix, type: vowel}
+    - {symbol: dd, type: tap}
+    - {symbol: j, type: fricative}
+    - {symbol: '@r', type: vowel}
+```
+- #### Replacements
+    - Replaces certain symbol or sequence of symbols defined in the replacements entry
+    - supports `1:1`, `1:M`, `M:1`, `M:M` phoneme replacements
+```
+replacements:
+# 1:1 (one-to-one mappings)
+  - {from: ax, to: ah}
+  - {from: cl, to: q}
+# 1:M (one-to-many mappings) (splitting)
+  - {from: dr, to: [d, r]}
+  - {from: tr, to: [t, sh, r]}
+  - {from: aw, to: [aa, w]}
+# M:1 (many-to-one mappings) (merging)
+  - {from: [ih, ng], to: ing}
+  - {from: [eh, ax, m], to: eam}
+# M:M (many-to-many mappings)
+  - {from: [ih, ng], to: [ix, ng]}
+  - {from: [ay, l], to: [ay, ax, el]}
+
+# format can be like this
+    - from: [ae, n]
+      to: [eh, ax, n]
+    - from: b
+      to: bh
+```
+- #### Entries
+    - Add a new dictionary entry to override certain word pronunciations
+    - no limit to characters as long as it covered by unicode so you can add kana, hangul, hieroglyphics grapheme etc entries to `arpasing.yaml`
+```
+entries:
+    - {grapheme: hello, phonemes: [hh, ax, l, ow]}
+    - {grapheme: 안녕하세요, phonemes: [aa, n, y, ao, ng, hh, ah, s, eh, y ao]}
+# format can be like this
+    - grapheme: stars
+      phonemes: s, t, aa, r, z
+    - grapheme: drops
+      phonemes: dr, aa, p, s
+```
+
 ## ZH CVV (Chinese CVV)
 Lyrics should be written in pinyin. The phonemizer will insert endings for syllables that need them.  
 ![zh cvv](https://i.imgur.com/TJfiNit.png)
@@ -454,6 +511,58 @@ Similarly, ``h`` is a substitute for ``x``, while ``sh`` and ``L`` are substitut
 
 Note that Latin-American-style aspirated endings (where ``h`` is used in place of ``s`` at the end of syllables) can only be achieved through phonetic input, since it's technically an informal style of pronunciation.
 
+### Auxiliary dictionary files (uses njokis.yaml):
+
+- #### Symbols
+    - Add a new symbol and define its symbol type for the phonemizer to recognize.
+    - encapsulate the whole symbol with `' '` if it starts with a special symbol
+```
+symbols:
+    - {symbol: ea, type: vowel}
+    - {symbol: ix, type: vowel}
+    - {symbol: dd, type: tap}
+    - {symbol: j, type: fricative}
+    - {symbol: '@r', type: vowel}
+```
+- #### Replacements
+    - Replaces certain symbol or sequence of symbols defined in the replacements entry
+    - supports `1:1`, `1:M`, `M:1`, `M:M` phoneme replacements
+```
+replacements:
+# 1:1 (one-to-one mappings)
+  - {from: ax, to: ah}
+  - {from: cl, to: q}
+# 1:M (one-to-many mappings) (splitting)
+  - {from: dr, to: [d, r]}
+  - {from: tr, to: [t, sh, r]}
+  - {from: aw, to: [aa, w]}
+# M:1 (many-to-one mappings) (merging)
+  - {from: [ih, ng], to: ing}
+  - {from: [eh, ax, m], to: eam}
+# M:M (many-to-many mappings)
+  - {from: [ih, ng], to: [ix, ng]}
+  - {from: [ay, l], to: [ay, ax, el]}
+
+# format can be like this
+    - from: [ae, n]
+      to: [eh, ax, n]
+    - from: b
+      to: bh
+```
+- #### Entries
+    - Add a new dictionary entry to override certain word pronunciations
+    - no limit to characters as long as it covered by unicode so you can add kana, hangul, hieroglyphics grapheme etc entries to `arpasing.yaml`
+```
+entries:
+    - {grapheme: hello, phonemes: [hh, ax, l, ow]}
+    - {grapheme: 안녕하세요, phonemes: [aa, n, y, ao, ng, hh, ah, s, eh, y ao]}
+# format can be like this
+    - grapheme: stars
+      phonemes: s, t, aa, r, z
+    - grapheme: drops
+      phonemes: dr, aa, p, s
+```
+
 ## ES MAKKU (Spanish Makkusan-style Phonemizer)
 ### Setup
 This phonemizer was created to be used with Italian voicebanks using Makkusan's reclist, as long as it contains extra sounds for Spanish. It works similarly to the Italian Syllable-Based phonemizer.
@@ -516,6 +625,58 @@ Use the pink line to stretch or shorten a sound so that the pronunciation is goo
 Since the phonemizer uses an arpabet dictionary there may be conflicts with some sounds. If there are missing sounds, you can double click on the box below to change the sound used. However, you can now download a converted version of snowphones' Lyric Parser dictionary [here](https://github.com/mmemim/OU-EN-VCCV-Custom-Dictionary) and put it in `OpenUtau/Plugins`.
 
 If there are any other issue, don't hesitate to share them on the Discord.
+
+### Auxiliary dictionary files (uses envccv.yaml):
+
+- #### Symbols
+    - Add a new symbol and define its symbol type for the phonemizer to recognize.
+    - encapsulate the whole symbol with `' '` if it starts with a special symbol
+```
+symbols:
+    - {symbol: ea, type: vowel}
+    - {symbol: ix, type: vowel}
+    - {symbol: dd, type: tap}
+    - {symbol: j, type: fricative}
+    - {symbol: '@r', type: vowel}
+```
+- #### Replacements
+    - Replaces certain symbol or sequence of symbols defined in the replacements entry
+    - supports `1:1`, `1:M`, `M:1`, `M:M` phoneme replacements
+```
+replacements:
+# 1:1 (one-to-one mappings)
+  - {from: ax, to: ah}
+  - {from: cl, to: q}
+# 1:M (one-to-many mappings) (splitting)
+  - {from: dr, to: [d, r]}
+  - {from: tr, to: [t, sh, r]}
+  - {from: aw, to: [aa, w]}
+# M:1 (many-to-one mappings) (merging)
+  - {from: [ih, ng], to: ing}
+  - {from: [eh, ax, m], to: eam}
+# M:M (many-to-many mappings)
+  - {from: [ih, ng], to: [ix, ng]}
+  - {from: [ay, l], to: [ay, ax, el]}
+
+# format can be like this
+    - from: [ae, n]
+      to: [eh, ax, n]
+    - from: b
+      to: bh
+```
+- #### Entries
+    - Add a new dictionary entry to override certain word pronunciations
+    - no limit to characters as long as it covered by unicode so you can add kana, hangul, hieroglyphics grapheme etc entries to `arpasing.yaml`
+```
+entries:
+    - {grapheme: hello, phonemes: [hh, ax, l, ow]}
+    - {grapheme: 안녕하세요, phonemes: [aa, n, y, ao, ng, hh, ah, s, eh, y ao]}
+# format can be like this
+    - grapheme: stars
+      phonemes: s, t, aa, r, z
+    - grapheme: drops
+      phonemes: dr, aa, p, s
+```
 
 ## ES to JA (Spanish to Japanese Phonemizer)
 ### Setup
@@ -678,6 +839,58 @@ This phonemizer now has support for custom dictionaries. The dictionary should b
 * Some other, non-English/non-default X-SAMPA symbols might also be affected. It is highly recommended to test which specific ones beforehand.
 
 Note that the Arpabet symbols included by default in the CMU Pronouncing Dictionary can also be used to note down custom words, though for any symbols that aren't included, X-SAMPA notation is required.
+
+### Auxiliary dictionary files (uses xsampa.yaml or en-xsampa.yaml):
+
+- #### Symbols
+    - Add a new symbol and define its symbol type for the phonemizer to get recognize.
+    - encapsulate the whole symbol with `' '` if it starts with a special symbol
+```
+symbols:
+    - {symbol: ea, type: vowel}
+    - {symbol: ix, type: vowel}
+    - {symbol: dd, type: tap}
+    - {symbol: j, type: fricative}
+    - {symbol: '@r', type: vowel}
+```
+- #### Replacements
+    - Replaces certain symbol or sequence of symbols defined in the replacements entry
+    - supports `1:1`, `1:M`, `M:1`, `M:M` phoneme replacements
+```
+replacements:
+# 1:1 (one-to-one mappings)
+  - {from: ax, to: ah}
+  - {from: cl, to: q}
+# 1:M (one-to-many mappings) (splitting)
+  - {from: dr, to: [d, r]}
+  - {from: tr, to: [t, sh, r]}
+  - {from: aw, to: [aa, w]}
+# M:1 (many-to-one mappings) (merging)
+  - {from: [ih, ng], to: ing}
+  - {from: [eh, ax, m], to: eam}
+# M:M (many-to-many mappings)
+  - {from: [ih, ng], to: [ix, ng]}
+  - {from: [ay, l], to: [ay, ax, el]}
+
+# format can be like this
+    - from: [ae, n]
+      to: [eh, ax, n]
+    - from: b
+      to: bh
+```
+- #### Entries
+    - Add a new dictionary entry to override certain word pronunciations
+    - no limit to characters as long as it covered by unicode so you can add kana, hangul, hieroglyphics grapheme etc entries to `arpasing.yaml`
+```
+entries:
+    - {grapheme: hello, phonemes: [hh, ax, l, ow]}
+    - {grapheme: 안녕하세요, phonemes: [aa, n, y, ao, ng, hh, ah, s, eh, y ao]}
+# format can be like this
+    - grapheme: stars
+      phonemes: s, t, aa, r, z
+    - grapheme: drops
+      phonemes: dr, aa, p, s
+```
 
 ## Italian Syllable-Based Phonemizer (IT SYL)
 ### Setup
