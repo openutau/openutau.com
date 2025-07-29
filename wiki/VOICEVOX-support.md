@@ -40,7 +40,8 @@ An engine-only dependency package will be created in the future. (This is just a
 The following are currently supported.  
 * S-VOICEVOX JA (Simple Voicevox Japanese Phonemizer)  
 * S-VOICEVOX EN to JA (Simple Voicevox ENtoJA Phonemizer)
-* VOICEVOX JA (Voicevox Japanese Phonemizer)
+* VOICEVOX JA (Voicevox Japanese Phonemizer)  
+ Supports editing of phoneme length.
 
 To be supported in the future (This is just a plan)
 * VOICEVOX EN to JA
