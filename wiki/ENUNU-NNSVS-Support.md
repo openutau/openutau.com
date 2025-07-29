@@ -23,7 +23,7 @@ If you do not want to perform timing correction, delete the timing_editor line.
 If you turn off the wav_synthesizer setting, you can edit the Pitch, but the quality is very low.  
 
 ENUNU-0.4.0,SimpleEnunuServer-0.2.0+0.local.9.1
-```
+```yaml
 extensions:
     timing_editor: "%v/timing_auto_correct/enunu_timing_auto_correct.py"
     wav_synthesizer: synthe
@@ -33,16 +33,102 @@ extensions:
 
 ```
 SimpleEnunuServer-0.5.0
-```
+```yaml
 extensions:
     timing_editor_2: "%v/timing_auto_correct/enunu_timing_auto_correct.py"
 ```
 
 ## Notes for voicebank developers
-For SimpleENUNU compatible models, please add the following to character.yaml.
+For ENUNU or SimpleENUNU compatible models, please add the following to character.yaml.
 
-```
+```yaml
 singer_type: Enunu
+```
+
+To control expressions other than voice colour, define style_format and styles as follows.  
+reference:[NNSVS/ENUNU　波音リツ CRISSCROSS　5スタイル #4130](https://www.canon-voice.com/voicebanks/#enunu)
+```yaml
+extensions:
+# Other settings....
+  style_format:
+    p9: #Flag key to write to UST
+      format: "{0}{1}{2}{3}" #Flag format Please enclose in "
+      index: [ldst, loud, nrml, soft] #Key Set for Expression
+    p16: 
+      format: "s{0}s{1}r{2}b{3}p{4}"
+      index: [Std, swt, rock, brth, pop]
+  styles:
+    ldst: #Key to Expression
+      name: Loudest #Expression name
+      type: Numerical #Expression control type: Currently, only numeric values are supported.
+      min: 0
+      max: 3
+      default_value: 0
+      flag: p9 #Flag key to write to UST
+      
+    loud:
+      name: Loud 
+      type: Numerical 
+      min: 0
+      max: 3
+      default_value: 0
+      flag: p9 
+      
+    nrml:
+      name: Normal 
+      type: Numerical 
+      min: 0
+      max: 3
+      default_value: 0
+      flag: p9 
+      
+    soft:
+      name: Soft 
+      type: Numerical 
+      min: 0
+      max: 3
+      default_value: 0
+      flag: p9 
+      
+    Std:
+      name: Standard 
+      type: Numerical 
+      min: 0
+      max: 3
+      default_value: 0
+      flag: p16 
+      
+    swt:
+      name: Sweet 
+      type: Numerical 
+      min: 0
+      max: 3
+      default_value: 0
+      flag: p16 
+      
+    rock:
+      name: Rock 
+      type: Numerical 
+      min: 0
+      max: 3
+      default_value: 0
+      flag: p16 
+      
+    brth:
+      name: Breathy 
+      type: Numerical 
+      min: 0
+      max: 6
+      default_value: 0
+      flag: p16 
+      
+    pop:
+      name: Pop 
+      type: Numerical 
+      min: 0
+      max: 3
+      default_value: 0
+      flag: p16 
 ```
 
 ## FAQ
