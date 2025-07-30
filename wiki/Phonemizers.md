@@ -42,7 +42,7 @@ If the syllables are misaligned, add numbers after `+` to force alignment to the
 - Same mechanics for lyric input 
 - Supports more alias formats such as: `cv`, `c v`, `ccv`, `cc v`, `v v`, `splitted vv`, `v c`, `v cc`, `c c`, `c cc` and so on
 ### Auxiliary dictionary files:
-
+**`Note: only 1:1 replacements are supported for now and multiple phoneme replacements are still pending in `**[**pr 1534**](https://github.com/stakira/OpenUtau/pull/1534)
 - #### Symbols
     - Add a new symbol and define its symbol type for the phonemizer to recognize.
     - encapsulate the whole symbol with `' '` if it starts with a special symbol
@@ -512,6 +512,7 @@ Similarly, ``h`` is a substitute for ``x``, while ``sh`` and ``L`` are substitut
 Note that Latin-American-style aspirated endings (where ``h`` is used in place of ``s`` at the end of syllables) can only be achieved through phonetic input, since it's technically an informal style of pronunciation.
 
 ### Auxiliary dictionary files (uses njokis.yaml):
+**`Note: only 1:1 replacements are supported for now and multiple phoneme replacements are still pending in `**[**pr 1534**](https://github.com/stakira/OpenUtau/pull/1534)
 
 - #### Symbols
     - Add a new symbol and define its symbol type for the phonemizer to recognize.
@@ -627,6 +628,7 @@ Since the phonemizer uses an arpabet dictionary there may be conflicts with some
 If there are any other issue, don't hesitate to share them on the Discord.
 
 ### Auxiliary dictionary files (uses envccv.yaml):
+**`Note: only 1:1 replacements are supported for now and multiple phoneme replacements are still pending in `**[**pr 1534**](https://github.com/stakira/OpenUtau/pull/1534)
 
 - #### Symbols
     - Add a new symbol and define its symbol type for the phonemizer to recognize.
@@ -841,6 +843,7 @@ This phonemizer now has support for custom dictionaries. The dictionary should b
 Note that the Arpabet symbols included by default in the CMU Pronouncing Dictionary can also be used to note down custom words, though for any symbols that aren't included, X-SAMPA notation is required.
 
 ### Auxiliary dictionary files (uses xsampa.yaml or en-xsampa.yaml):
+**`Note: only 1:1 replacements are supported for now and multiple phoneme replacements are still pending in `**[**pr 1534**](https://github.com/stakira/OpenUtau/pull/1534)
 
 - #### Symbols
     - Add a new symbol and define its symbol type for the phonemizer to get recognize.
