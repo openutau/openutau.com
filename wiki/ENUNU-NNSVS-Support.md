@@ -47,6 +47,7 @@ singer_type: Enunu
 
 To control expressions other than voice colour, define style_format and styles as follows.  
 reference:[NNSVS/ENUNU　波音リツ CRISSCROSS　5スタイル #4130](https://www.canon-voice.com/voicebanks/#enunu)
+#### Please write the following content in **config.yaml**.
 ```yaml
 extensions:
 # Other settings....
