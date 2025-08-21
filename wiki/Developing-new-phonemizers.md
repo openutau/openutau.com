@@ -5,9 +5,9 @@
 - For languages with multi-syllable words, read [SyllableBasedPhonemizer API](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Plugin.Builtin/SyllableBasedPhonemizer.cs)
 
 Heavily commented example implementations, from simplest to most complex:
-- [DefaultPhonemizer.cs](../DefaultPhonemizer.cs)
-- [JapaneseVCVPhonemizer.cs](../../OpenUtau.Plugin.Builtin/JapaneseVCVPhonemizer.cs)
-- [ArpasingPhonemizer.cs](../../OpenUtau.Plugin.Builtin/ArpasingPhonemizer.cs)
+- [DefaultPhonemizer.cs](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/DefaultPhonemizer.cs)
+- [JapaneseVCVPhonemizer.cs](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Plugin.Builtin/JapaneseVCVPhonemizer.cs)
+- [ArpasingPhonemizer.cs](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Plugin.Builtin/ArpasingPhonemizer.cs)
 
 ## Phonemizer API
 
