@@ -83,6 +83,27 @@ Comparatively, in OpenUTAU, when your overlap is half of your pre-utterance or m
 
 Solved in PR [#1447](https://github.com/stakira/OpenUtau/pull/1447)
 
+### Missing characters when typing in the lyrics editor or phoneme editor when using third-party IMEs (UniKey, EVKey, GoTiengViet, …)
+
+This is a bug in the UI framework that OpenUTAU uses — Avalonia. Since this issue comes from the UI framework itself, we currently cannot fully fix it, and there is no indication that Avalonia has addressed it yet.
+
+There are a few available workarounds:
+
+* If your IME supports a buffer mode (for example, iBus-Bamboo with **mode 1 (with underline while typing)**), please use that mode.
+* If not, configure your IME to use Clipboard mode (most popular IMEs still keep this mode as a fallback).
+
+  * **UniKey**: chọn **Mở rộng (Expand)** → tick chọn **Luôn sử dụng clipboard cho unicode (Always use clipboard for unicode)**.
+  * **EVKey**: tab **Cơ bản (General)** → chọn **Sử dụng Clipboard để gửi phím (Use Clipboard for send key)**.
+  * **GoTiengViet**: tab **Hệ thống (System)** → chọn **Luôn dùng clipboard để gửi ký tự (Always use clipboard to send characters)**.
+    For other IMEs, please refer to their documentation for instructions.
+
+:warning: **Warning**: Using Clipboard mode may interfere with your clipboard history if you rely on it. Please make sure to save/pin important items to avoid potential data loss!
+
+If none of the above workarounds help, please use Microsoft IME:
+Go to **Settings > Time & Language > Language & Region > Add a language**, search for **Vietnamese (Tiếng Việt)**, and install it. Then press **Windows + Space** to switch to Vietnamese. **Note:** remember to disable other IMEs to avoid conflicts.
+
+Related issue: [AvaloniaUI/Avalonia#12446](https://github.com/AvaloniaUI/Avalonia/issues/12446)
+
 ## Potential bugs that need investigation
 
 ### __MACOSX folder causes issues when installing
