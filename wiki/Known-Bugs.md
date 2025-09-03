@@ -83,7 +83,7 @@ Comparatively, in OpenUTAU, when your overlap is half of your pre-utterance or m
 
 Solved in PR [#1447](https://github.com/stakira/OpenUtau/pull/1447)
 
-### Missing characters when typing in the lyrics editor or phoneme editor when using third-party IMEs (UniKey, EVKey, GoTiengViet, …)
+### Missing characters when typing in the lyrics editor or phoneme editor when using third-party Vietnamese IMEs (UniKey, EVKey, GoTiengViet, …)
 
 This is a bug in the UI framework that OpenUTAU uses — Avalonia. Since this issue comes from the UI framework itself, we currently cannot fully fix it, and there is no indication that Avalonia has addressed it yet.
 
