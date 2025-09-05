@@ -5,9 +5,11 @@
 
 | Action | Keys |
 | - | - |
+| Delete Selected Part(s) | <kbd>Delete</kbd> |
 | Play / Pause | <kbd>Space</kbd> |
 | Go to Start | <kbd>Home</kbd> |
 | Go to End | <kbd>End</kbd> |
+| Full Screen | <kbd>F11</kbd> |
 | Undo | <kbd>Ctrl</kbd> + <kbd>Z</kbd> |
 | Redo | <kbd>Ctrl</kbd> + <kbd>Y</kbd> / <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>Z</kbd> |
 | Cut | <kbd>Ctrl</kbd> + <kbd>X</kbd> |
@@ -15,9 +17,13 @@
 | Paste | <kbd>Ctrl</kbd> + <kbd>V</kbd> |
 | Select All | <kbd>Ctrl</kbd> + <kbd>A</kbd> |
 | Select None | <kbd>Ctrl</kbd> + <kbd>D</kbd> |
-| Delete Selected Part(s) | <kbd>Delete</kbd> |
+| Create New Project | <kbd>Ctrl</kbd> + <kbd>N</kbd> |
+| Open | <kbd>Ctrl</kbd> + <kbd>O</kbd> |
 | Save | <kbd>Ctrl</kbd> + <kbd>S</kbd> |
+| Save As | <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>S</kbd> |
 | Exit | <kbd>Alt</kbd> + <kbd>F4</kbd> |
+| Solo Selected Track(s) | <kbd>Shift</kbd> + <kbd>S</kbd> |
+| Mute Selected Track(s) | <kbd>Shift</kbd> + <kbd>M</kbd> |
 
 # Piano Roll
 
@@ -25,6 +31,7 @@
 
 | Action | Keys |
 | - | - |
+| Full Screen | <kbd>F11</kbd> |
 | Undo | <kbd>Ctrl</kbd> + <kbd>Z</kbd> |
 | Redo | <kbd>Ctrl</kbd> + <kbd>Y</kbd> / <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>Z</kbd> |
 | Cut | <kbd>Ctrl</kbd> + <kbd>X</kbd> |
@@ -48,6 +55,8 @@
 | Move Note(s) Right | <kbd>Ctrl</kbd> + <kbd>→</kbd> |
 | Resize Note(s) Shorter | <kbd>Alt</kbd> + <kbd>←</kbd> / <kbd>Plus</kbd> |
 | Resize Note(s) Longer | <kbd>Alt</kbd> + <kbd>→</kbd> / <kbd>Minus</kbd> |
+| Search Note| <kbd>Ctrl</kbd> + <kbd>F</kbd> |
+| Open Plugin Menu| <kbd>N</kbd> |
 
 ### Selection Actions
 
@@ -62,20 +71,25 @@
 | Extend Selection Right | <kbd>Shift</kbd> + <kbd>→</kbd> |
 | Extend Selection to Start of Part | <kbd>Shift</kbd> + <kbd>Home</kbd> |
 | Extend Selection to End of Part | <kbd>Shift</kbd> + <kbd>End</kbd> |
+| Next Part | <kbd>PageUp</kbd> |
+| Previous Part | <kbd>PageDown</kbd> |
 
 ### Playback
 
 | Action | Keys |
 | - | - |
 | Play/Pause | <kbd>Space</kbd> |
+| Play/Pause From Selected Note(s) | <kbd>Alt</kbd> + <kbd>Space</kbd> |
 | Go to Start of Part | <kbd>Home</kbd> |
 | Go to End of Part | <kbd>End</kbd> |
 | Move Playhead Left | <kbd>[</kbd> |
 | Move Playhead Right | <kbd>]</kbd> |
-| Move Playhead to Start of Selection | <kbd>Ctrl</kbd> + <kbd>F</kbd> / <kbd>Ctrl</kbd> + <kbd>[</kbd> |
+| Move Playhead to Start of Selection | <kbd>Alt</kbd> + <kbd>F</kbd> / <kbd>Ctrl</kbd> + <kbd>[</kbd> |
 | Move Playhead to End of Selection | <kbd>Ctrl</kbd> + <kbd>]</kbd> |
 | Move Playhead to Start of View | <kbd>Shift</kbd> + <kbd>[</kbd> |
 | Move Playhead to End of View | <kbd>Shift</kbd> + <kbd>]</kbd> |
+| Solo Selected Track(s) | <kbd>Shift</kbd> + <kbd>S</kbd> |
+| Mute Selected Track(s) | <kbd>Shift</kbd> + <kbd>M</kbd> |
 
 ### Scroll View
 
@@ -102,6 +116,7 @@
 | Show Phoneme | <kbd>O</kbd> |
 | Enable Snapping | <kbd>P</kbd> |
 | Open Snap Division Menu | <kbd>Alt</kbd> + <kbd>P</kbd>
+| Show Note Property | EN: <kbd>/</kbd> / JA: <kbd>\\</kbd>
 
 ### Tool Selection Keys
 
@@ -112,6 +127,8 @@
 | Pen Plus | <kbd>Ctrl</kbd> + <kbd>2</kbd> |
 | Eraser | <kbd>3</kbd> |
 | Draw Pitch | <kbd>4</kbd> |
+| Overwrite Pitch | <kbd>Ctrl</kbd> + <kbd>4</kbd> |
+| Draw Line Pitch | <kbd>Shift</kbd> + <kbd>4</kbd> |
 | Knife | <kbd>5</kbd> |
 
 ### Expression Selection Keys
@@ -123,6 +140,11 @@
 | View Expression Parameter #3 | <kbd>Alt</kbd> + <kbd>3</kbd> |
 | View Expression Parameter #4 | <kbd>Alt</kbd> + <kbd>4</kbd> |
 | View Expression Parameter #5 | <kbd>Alt</kbd> + <kbd>5</kbd> |
+| View Expression Parameter #6 | <kbd>Alt</kbd> + <kbd>6</kbd> |
+| View Expression Parameter #7 | <kbd>Alt</kbd> + <kbd>7</kbd> |
+| View Expression Parameter #8 | <kbd>Alt</kbd> + <kbd>8</kbd> |
+| View Expression Parameter #9 | <kbd>Alt</kbd> + <kbd>9</kbd> |
+| View Expression Parameter #10 | <kbd>Alt</kbd> + <kbd>0</kbd> |
 
 # Lyric Box *(inline popup)*
 
