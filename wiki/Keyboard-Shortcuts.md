@@ -146,6 +146,22 @@
 | View Expression Parameter #9 | <kbd>Alt</kbd> + <kbd>9</kbd> |
 | View Expression Parameter #10 | <kbd>Alt</kbd> + <kbd>0</kbd> |
 
+# Expression Control *(Inline control)*
+### Numerical(Options) 
+| Action | Keys |
+| - | - |
+| Set Expression | <kbd>Left click</kbd> |
+| Constant Set Expression | <kbd>Shift</kbd> + <kbd>Left click</kbd> |
+| Reset Expression | <kbd>Right click</kbd> |
+
+### Curve 
+| Action | Keys |
+| - | - |
+| Draw line | <kbd>Left click</kbd> |
+| Draw Straight Line | <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>Left click</kbd> |
+| Draw Horizon Line | <kbd>Shift</kbd> + <kbd>Left click</kbd> |
+| Reset line | <kbd>Right click</kbd> |
+
 # Lyric Box *(inline popup)*
 
 | Action | Keys |
