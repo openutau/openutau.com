@@ -2,15 +2,12 @@
 Compiling OpenUtau can be done easily.
 
 ## Prerequisites
-You will need the .NET 6.0 (or .NET 8.0 if you're compiling the "Master" branch) SDK.
+You will need the .NET 8.0 SDK.
 
 For Windows and Mac you can get either [here](https://dotnet.microsoft.com/en-us/download/dotnet)
 
 On Ubuntu, Debian, or any derivatives (e.g. Linux Mint):
-```
-sudo apt install dotnet-sdk-6.0
-```
-or
+
 ```
 sudo apt install dotnet-sdk-8.0
 ```
