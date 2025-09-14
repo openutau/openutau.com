@@ -313,7 +313,7 @@ In OpenUtau 0.1.560 or higher, external Windows wavtools are now supported on ma
 3. Install Windows wavtools (e.g. `wavtool.exe`) by using `Tools > Install Wavtool/Resampler (.exe)`. You can drag and drop the .exe into OpenUtau window on macOS. Choose `Install as wavtool`.
 4. You can now use Windows wavtools in OpenUtau
 
-Do note that only Windows resamplers are supported, no support for external native wavtools at the moment.
+Do note that only Windows wavtools are supported, no support for external native wavtools at the moment.
 
 # Tested Wavtools and Directories
 Below is a list of all UTAU wavtools tested with OpenUtau.
