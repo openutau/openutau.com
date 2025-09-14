@@ -55,86 +55,21 @@ After running these two commands your environment is set!
 
 ### Section 3, “How to run resamplers on MacOS.”
 
-Now that you have installed both Wine and Homebrew onto your computer, we will now begin the process for installing the resamplers into MacOS. Before we get started, I will like to clarify that for this step we will be converting the executables (<code>.exe</code>) into <code>.sh</code> files. That will be the result we want in order to run resamplers. Here is how.
+Now that you have installed both Wine and Homebrew onto your computer, we will now begin the process for installing the resamplers into MacOS. 
 
-1. From the OpenUTAU github release page, download the <code>“Mac_Additional.zip.”</code> This will be the package we use to convert the resamplers into <code>.sh</code> files.
-
-[Mac_Additional.zip](https://github.com/stakira/OpenUtau/releases/tag/OpenUtau-Latest)
-
-2. Before we get started, let’s find the version of wine that you have installed.
-
-_For Intel MacOS …_
-
-Perform CMND+SHIFT+G, to locate the directory. Now input the following path, /usr/local/bin/. What you will be looking for is either Wine32 or Wine64. Depending on what you have will be important information for a future step. Remember this!
-
-_For Silicon MacOS …_
-
-Open Terminal and run the following command.
-```
-    which wine
-```
-After running this prompt you will receive the location of your Wine installation. *( eg. <code>/opt/homebrew/bin/wine</code> )
-Please copy this location as it is very important for the following steps.
-
-3. Download the resampler of your choice, for this tutorial, I will be installing TIPS. Extract the resampler, and run OpenUTAU.
-
-4. Drag the <code>resampler.exe</code> into the OpenUTAU window. It will then ask you if you want to install as a resampler or wavtool, select the resampler option since that is what we are working with today.
-
-![MacOS_Install_Samp1](https://64.media.tumblr.com/7752e2e8853648a467c91fd0c00fd269/a1e3bf701d537d70-ee/s1280x1920/9625a363c1306cb11fc72361c5a7da62349104d9.png)
-
-5. Extract the <code>Mac_Additional.zip</code>, by extracting it, it will generate a, <code>moresampler.sh</code> file. Rename the file after the resampler you will be working with, *(eg. <code>TIPS.sh</code> ).
-
-6. Open this file with textedit by double-clicking, or right-clicking. Select, _“Open with textedit.”_
-Now we will edit the <code>.sh</code> file with resampler’s information. 
-
-![MacOS_Install_Samp2](https://64.media.tumblr.com/a2b2428b58b151a9e3355813e32b4c89/a1e3bf701d537d70-0d/s1280x1920/a5224effb8c5ad3a834283748a483b1f5fce8804.png)
-
-7. Locate the, <code>“moresampler-0.8.4/moresampler.exe”</code> in the relative path and delete it. Replace with only the resampler name, eg. <code>“TIPS.exe.”</code>
-
-![MacOS_Install_Samp3](https://64.media.tumblr.com/5195fff9a3b0f008664e378db43ab682/a1e3bf701d537d70-6d/s1280x1920/518c570fd9110c803080c80b8f788e4400917d5c.png)
-
-_For MacOS Intel …_
-
-In the field for, <code>exec /usr/local/bin/wine32on64</code> replace the Wine extension with your version of Wine. This will look like, <code>exec /usr/local/bin/wine64</code> since my computer is running Wine64.
-
-![MacOS_Install_Samp4](https://64.media.tumblr.com/d7d8b0a032bb3ffd70758a8e74a8d03f/a1e3bf701d537d70-ec/s1280x1920/3c28e6700e06aea3535898a7075c8dbd3cd0900b.png)
-
-_For MacOS Silicon …_
-
-In the field for, <code>exec /usr/local/bin/wine32on64</code> replace this field with the location of your wine installation. This will may like, <code>/opt/homebrew/bin/wine.</code>
-
-It should look like this!
-
-![MacOS_Install_Samp5](https://64.media.tumblr.com/9e44935d17ce7ff785cfe0bde561a134/a1e3bf701d537d70-6c/s1280x1920/726ad7f83ad54b2b65983cb75618ed352d5733c7.png)
-
-9. In OpenUTAU, to quickly access to resampler folder, select the, “help,” tag, and, "Open Logs Location.” We will not be working with the logs, from here you will open the resampler folder.
-
-10. OpenUTAU will have already generated a <code>.sh</code> file for <code>TIPS.exe</code> in this scenario. With the edited <code>TIPS.sh</code> on your desktop, drag and drop it in the resampler folder, and replace.
-
-11. Return to OpenUTAU, and select, “CLASSIC,” in the resampler field, and to the right there will be a cog icon. From here you will be able to select your downloaded resamplers.
-
-![MacOS_Install_Samp6](https://64.media.tumblr.com/188ae1248d9dc27fbc1c1c2dd471c566/a1e3bf701d537d70-7e/s1280x1920/0ad2b8566b8ddb2d357abd97619d7496a9c91e61.png)
-
-The first render may take awhile if this is your first time running the instance.
-
-You can repeat this process and download as many resamplers as you like. 
-
+1. To install Windows resamplers (e.g. `resampler.exe`), drag the .exe into the OpenUtau window and choose `Install as resampler`.
+2. Enable wine compatibility by setting wine path in `Tools > Preferences > Advanced > Wine Path...`. Clicking `Detect` should automatically pick wine from your `$PATH`, otherwise click `Select` to pick it yourself.
+3. You can now use Windows resamplers in OpenUtau.
 
 ## Linux
 [Macres](https://github.com/titinko/macres/releases) provides a native Linux version. Put it into the resamplers folder of OpenUtau.
 
-For wrapping Windows resamplers into Linux, use this method:
+To use Windows resamplers into Linux, follow this method:
 
 1. Install [Wine](https://www.winehq.org/)
-2. Open the `Resamplers` folder (should be on `~/.local/share/OpenUtau/Resamplers`)
-3. Create a new text file with the name of your resampler (no file extension required). 
-4. Open the text file and add this script.
-```
-#!/bin/bash
-LANG="ja_JP.UTF8" wine "/absolute/path/to/your/resampler.exe" "${@,-1}"
-```
-5. Change `"/absolute/path/to/your/resampler.exe"` to the path of the resampler.
-6. Restart OpenUtau.
+2. Put any Windows resampler to `Resamplers` folder (should be on `~/.local/share/OpenUtau/Resamplers`). You can also install it by using `Tools > Install Wavtool/Resampler (.exe)` in OpenUtau. Choose `Install as resampler`.
+3. In OpenUtau, enable wine compatibility by setting wine path in `Tools > Preferences > Advanced > Wine Path...`. Clicking `Detect` should automatically pick wine from your `$PATH`, otherwise click `Select` to pick it yourself.
+4. You can now use Windows resamplers in OpenUtau.
 
 # Tested Resamplers and Directories
 This is a list of all UTAU resamplers tested with OpenUtau.
@@ -181,6 +116,7 @@ This is a list of all UTAU resamplers tested with OpenUtau.
   - Add `moresampler.exe` and the default `moreconfig.txt` to the `Resamplers` folder.
   - Add `moresampler.exe` to `Wavtools` folder without `moreconfig.txt`.
   - Moresampler should now function as either resampler only, or as both wavtool and resampler.
+  - If you're using simple/convergence wavtool and encounter slow rendering times on macOS (possibly other OS too), modify `moreconfig.txt` and switch `multithread-synthesis` to `off`.
 - [[SpaceWorld_win64.exe|https://github.com/LovelyA72/SpaceWorld/releases]] and [[wn4u.exe|https://utaforum.net/threads/world4utau-update.20035/]]
     - May experience issues if the voicebank is missing any frq files. SpaceWorld version 1.0.1 will not crash in the event of a missing frq file.
 - [[lessampler|https://github.com/YuzukiTsuru/lessampler/releases/]]
@@ -370,7 +306,14 @@ In OpenUtau version 0.1.119 or higher, wavtools can be installed by dragging and
 
 ## macOS / Linux
 
-External wavtools are not supported on macOS or Linux at this time.  
+In OpenUtau 0.1.560 or higher, external Windows wavtools are now supported on macOS and Linux.
+
+1. Install Wine (follow the previous guide under macOS/Linux resamplers)
+2. In OpenUtau, enable wine compatibility by setting wine path in `Tools > Preferences > Advanced > Wine Path...`. Clicking `Detect` should automatically pick wine from your `$PATH`, otherwise click `Select` to pick it yourself. (skip if you already did this)
+3. Install Windows wavtools (e.g. `wavtool.exe`) by using `Tools > Install Wavtool/Resampler (.exe)`. You can drag and drop the .exe into OpenUtau window on macOS. Choose `Install as wavtool`.
+4. You can now use Windows wavtools in OpenUtau
+
+Do note that only Windows resamplers are supported, no support for external native wavtools at the moment.
 
 # Tested Wavtools and Directories
 Below is a list of all UTAU wavtools tested with OpenUtau.
