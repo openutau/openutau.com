@@ -35,6 +35,6 @@ OpenUtau wikiへようこそ！
 * [Developing new phonemizers](https://github.com/stakira/OpenUtau/wiki/Developing-new-phonemizers)　新たなphonemizerの開発
 * [Compiling G2p Models](https://github.com/stakira/OpenUtau/wiki/Compiling-G2p-Models)　G2pモデルのコンパイル
 * [[Adding support for a new synthesis engine]]　OpenUTAUを新たな合成エンジンに対応させる
-* [[ [PROPOSAL] svs.json ‐ singing voice synthesis backend API]]　[提案] svs.json - 歌声合成バックエンドAPI
+* [[ [PROPOSAL] svs.io ‐ singing voice synthesis backend API]]　[提案] svs.json - 歌声合成バックエンドAPI
 * [[tech note ‐ music is music, phonetics is phonetics (also why you don't need legacy plugins)]]　技術メモ - 音楽は音楽、音声学は音声学（レガシープラグインが不要な理由）
 * [[Known Bugs]]　既知のバグ
