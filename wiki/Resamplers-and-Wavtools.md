@@ -51,9 +51,13 @@ In order to install Wine, head to the WineHQ website.
 [https://github.com/Gcenx/macOS_Wine_builds/releases](https://github.com/Gcenx/macOS_Wine_builds/releases)
 
 1. Download Wine Staging from the Github releases page.
-2.Drag the Wine Staging .zip to your desktop and extract.
-3.After extracting the zip, run the Wine Staging application.
+
+2. Drag the Wine Staging .zip to your desktop and extract.
+
+3. After extracting the zip, run the Wine Staging application.
+
 4. The Wine installer will run into an error since it is an external application downloaded from the internet. Head to <code>System Preferences > Security and Privacy,</code> and allow Wine access to run. After this, Wine will be installed to your computer.
+
 
 After performing these two steps, we will then prepare the environment for the resamplers. Inside of Terminal we will want to begin a new session and run the installation for Wine Crossover.
 
