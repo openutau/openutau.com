@@ -39,7 +39,8 @@ From here, you will want to copy the installation command, and open Terminal. If
 
 1. In the Terminal control panel, you will want to paste the installation command into the console. It will begin running the installation.
 2. The installation will pause and ask for your computer’s passkey. Input the passkey and the installation will continue.
-3. If you are on Intel, after it installs the, “X code command line tools,” it may run into a fatal error when updating the Homebrew install. 4. Do not worry, head over to, <code>System Preferences > Security and Privacy</code>, and scroll down until you see, <code>“allow install–sh.”</code> Select OK to continue.
+3. If you are on Intel, after it installs the, “X code command line tools,” it may run into a fatal error when updating the Homebrew install.
+4. Do not worry, head over to, <code>System Preferences > Security and Privacy</code>, and scroll down until you see, <code>“allow install–sh.”</code> Select OK to continue.
 
     Now it will run the rest of the install and you have successfully Homebrewed your Mac.
 
