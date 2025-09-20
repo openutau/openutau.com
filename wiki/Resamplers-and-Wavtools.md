@@ -18,48 +18,79 @@ In OpenUtau version 0.1.119 or higher, resamplers can be installed by dragging a
 
 ## MacOS
 
-Before we get into this process, I need to clarify that it is only possible on MacOS 13.7.1 (Ventura) or later, as Homebrew has discontinued its service for any older versions of MacOS. For older versions of MacOS, Macres provides a native macOS version. Put it into the resamplers folder of OpenUtau.
+As of writing this, [OpenUtau v0.1.565.0](https://github.com/stakira/OpenUtau/releases/tag/0.1.565) has released with a new feature that allows you to directly run the Wine path without creating wrappers for each individual resampler.
 
-You can also use Windows resamplers with Wine: (tested on macOS 11.6)
+[Tutorial](https://keitaiware.com/post/795232450394587136/resamplers-on-openutau-v015650-for-macos)
 
-### Section 1, “Installing Homebrew.”
+[Legacy tutorial](https://keitaiware.com/post/766063532617973761/resamplers-on-macos)
+
+[Original Pull Request](https://github.com/stakira/OpenUtau/pull/1571)
+
+Before we begin installing resamplers, let’s prepare the environment.
+
+
+**Section 1, “Installing Homebrew.”**
 
 To install Homebrew you will need to head over to the Homebrew website.
 
 [https://brew.sh/](https://brew.sh/)
 
-From here, you will want to copy the installation command, and open Terminal. If you are not familiar with Terminal, here is the path. <code>Applications > Utilities > Terminal.</code>
+From here, you will want to copy the installation command, and open Terminal. If you are not familiar with Terminal, it is in your <code>Applications > Utilities > Terminal.</code>
 
 1. In the Terminal control panel, you will want to paste the installation command into the console. It will begin running the installation.
 2. The installation will pause and ask for your computer’s passkey. Input the passkey and the installation will continue.
-3. After it installs the, _“X code command line tools,”_ it may run into a fatal error when updating the Homebrew install. Do not worry, head over to, System Preferences > Security and Privacy, and scroll down until you see, _“allow install–sh.”_ Select OK to continue.
+3. If you are on Intel, after it installs the, “X code command line tools,” it may run into a fatal error when updating the Homebrew install. 4. Do not worry, head over to, <code>System Preferences > Security and Privacy</code>, and scroll down until you see, <code>“allow install–sh.”</code> Select OK to continue.
+
     Now it will run the rest of the install and you have successfully Homebrewed your Mac.
 
-### Section 2, "Installing Wine.”
+
+**Section 2, “Installing Wine.”**
 
 In order to install Wine, head to the WineHQ website.
 
 [https://github.com/Gcenx/macOS_Wine_builds/releases](https://github.com/Gcenx/macOS_Wine_builds/releases)
 
 1. Download Wine Staging from the Github releases page.
-2. Drag the Wine Staging .zip to your desktop and extract.
-3. After extracting the zip, run the Wine Staging application.
-4. The Wine installer will run into an error since it is an external application downloaded from the internet. Head to <code>System Preferences > Security and Privacy</code>, and allow Wine access to run. After this, Wine will be installed to your computer.
+2.Drag the Wine Staging .zip to your desktop and extract.
+3.After extracting the zip, run the Wine Staging application.
+4. The Wine installer will run into an error since it is an external application downloaded from the internet. Head to <code>System Preferences > Security and Privacy,</code> and allow Wine access to run. After this, Wine will be installed to your computer.
 
 After performing these two steps, we will then prepare the environment for the resamplers. Inside of Terminal we will want to begin a new session and run the installation for Wine Crossover.
+
+If brew command is not found, please refer to this stackoverflow thread.
+
+[zsh command not found](https://stackoverflow.com/questions/36657321/after-installing-homebrew-i-get-zsh-command-not-found-brew?__cf_chl_tk=.6wS9HkMioqCJf.di8CXEP0K2TKwciAzq3ODvA_CU3w-1750637980-1.0.1.1-pQaU2.nsx7ketSxJpjiJsNezc8ZDdwWJoEBn4If8gVg)
 ```
     brew tap gcenx/wine
     brew install –cask –no-quarantine wine-crossover
 ```
 After running these two commands your environment is set!
 
-### Section 3, “How to run resamplers on MacOS.”
 
-Now that you have installed both Wine and Homebrew onto your computer, we will now begin the process for installing the resamplers into MacOS. 
+**Section 3, “Finding your Wine path.”**
 
-1. To install Windows resamplers (e.g. `resampler.exe`), drag the .exe into the OpenUtau window and choose `Install as resampler`.
-2. Enable wine compatibility by setting wine path in `Tools > Preferences > Advanced > Wine Path...`. Clicking `Detect` should automatically pick wine from your `$PATH`, otherwise click `Select` to pick it yourself.
-3. You can now use Windows resamplers in OpenUtau.
+Before we install anything, we must find our Wine path. The install location of your Wine will differ between Intel and Silicon. To find your Wine path, open Terminal and run …
+
+    which wine
+
+For Intel users, your wine path will either contain 32 or 64.
+
+    /usr/local/bin/wine32on64
+
+For Silicon users, your Wine path will be inside homebrew.
+
+    /opt/homebrew/bin/wine
+
+
+**Section 4, “Installing Resamplers.“**
+
+To install resamplers, you can head into to the Tested Resamplers and Directories section of this page.
+
+After installing the resampler of your choice, there are two ways to install. You can drag and drop the .exe into the UI, or, you can head over to tools. From there, you can Install Wavtool/Resampler (.exe)…
+
+To set the Wine path, do, <code>Command + Shift + G</code>, and paste in your Wine path by right-clicking the text field. 
+
+Return to OpenUTAU, and select, “CLASSIC,” in the resampler field. To the right there will be a cog icon. From here, you will be able to select your downloaded resamplers and wavtools. 
 
 ## Linux
 [Macres](https://github.com/titinko/macres/releases) provides a native Linux version. Put it into the resamplers folder of OpenUtau.
