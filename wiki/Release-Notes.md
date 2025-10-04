@@ -1,14 +1,59 @@
-> The latest stable version is [0.1.529](#01529-07-24-2024).  
+> The latest stable version is [0.1.565](#01529-09-14-2025).  
 > See also [Known Bugs](https://github.com/stakira/OpenUtau/wiki/Known-Bugs).
 
 <!-- Use the following GitHub CLI command to get a list of pull requests:
-gh pr list --state merged --repo stakira/OpenUtau --limit 1000 --json number,title,author,url,mergedAt --jq ".[] | select(.mergedAt >= \"2025-05-08T00:00:00Z\") | \"- [#\(.number)](\(.url)) - \(.title) - ([@\(.author.login)](https://github.com/\(.author.login)))\""
+gh pr list --state merged --repo stakira/OpenUtau --limit 1000 --json number,title,author,url,mergedAt --jq ".[] | select(.mergedAt >= \"2025-07-22T00:00:00Z\") | \"- [#\(.number)](\(.url)) - \(.title) - ([@\(.author.login)](https://github.com/\(.author.login)))\""
 
 ## Features
 ## Bug Fixes
 ## Phonemizer Changes
 ## Misc
 -->
+<!--
+# ~[0.1.566 Beta](https://github.com/stakira/OpenUtau/releases/tag/0.1.566) (??)
+## Features
+- [#1645](https://github.com/stakira/OpenUtau/pull/1645) - Add feature to merge vocal parts - ([@arx-ein](https://github.com/arx-ein))
+- [#1628](https://github.com/stakira/OpenUtau/pull/1628) - Add Linux Appimage package - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1635](https://github.com/stakira/OpenUtau/pull/1635) - Togglable expressions view - ([@atouu](https://github.com/atouu))
+- [#1638](https://github.com/stakira/OpenUtau/pull/1638) - Auto focus to the text field in dialogs - ([@arx-ein](https://github.com/arx-ein))
+- [#1654](https://github.com/stakira/OpenUtau/pull/1654) - Improve and translate the error report - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1678](https://github.com/stakira/OpenUtau/pull/1678) - Add new batch edit "Replace '-' with '+~'". - ([@AnAndroNerd](https://github.com/AnAndroNerd))
+- [#1685](https://github.com/stakira/OpenUtau/pull/1685) - Always uses CPU for vogen rendering - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+
+## Bug Fixes
+- [#1613](https://github.com/stakira/OpenUtau/pull/1613) - Reload when singer's avatar is changed - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1626](https://github.com/stakira/OpenUtau/pull/1626) - Fix playhead moving when playing samples - ([@atouu](https://github.com/atouu))
+- [#1627](https://github.com/stakira/OpenUtau/pull/1627) - Fixes related to VOICEVOXRenderer. - ([@rokujyushi](https://github.com/rokujyushi))
+- [#1641](https://github.com/stakira/OpenUtau/pull/1641) - Fix tone generator crackling - ([@Kabinet0](https://github.com/Kabinet0))
+- [#1646](https://github.com/stakira/OpenUtau/pull/1646) - Fix note editing tool toggle button behavior - ([@arx-ein](https://github.com/arx-ein))
+- [#1667](https://github.com/stakira/OpenUtau/pull/1667) - escape dollar sign in default gitignore used in publishing singer - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1690](https://github.com/stakira/OpenUtau/pull/1690) - Fix VoiceColorRemapping Crash - ([@maiko3tattun](https://github.com/maiko3tattun))
+
+## Phonemizer Changes
+- [#1666](https://github.com/stakira/OpenUtau/pull/1666) - `KO CV` Improved behavior, Changed setting file to yaml - ([@EX3exp](https://github.com/EX3exp))
+- [#1671](https://github.com/stakira/OpenUtau/pull/1671) - Add Millefeuille and Marzipan Phonemizers - Take 2 - ([@imsupposedto](https://github.com/imsupposedto))
+
+## Misc
+- [#1472](https://github.com/stakira/OpenUtau/pull/1472) - Improvements preferences and related to singers folder - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1630](https://github.com/stakira/OpenUtau/pull/1630) - Make a tar.gz Linux artifact instead of zip - ([@atouu](https://github.com/atouu))
+- [#1673](https://github.com/stakira/OpenUtau/pull/1673) - Fix broken link to ENUNU wiki page in README.md - ([@cedkim](https://github.com/cedkim))
+- [#1684](https://github.com/stakira/OpenUtau/pull/1684) - Install NSIS in github acitons - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1689](https://github.com/stakira/OpenUtau/pull/1689) - Add text to the Singer Setup Dialog - ([@maiko3tattun](https://github.com/maiko3tattun))
+-->
+
+***
+# ~[0.1.565](https://github.com/stakira/OpenUtau/releases/tag/0.1.565) (09-14-2025)
+## Bug Fixes
+- [#1692](https://github.com/stakira/OpenUtau/pull/1692) - Revert "fix legacy plugin output" - ([@stakira](https://github.com/stakira))
+
+***
+# ~[0.1.564 Beta](https://github.com/stakira/OpenUtau/releases/tag/0.1.564) (08-31-2025)
+## Bug Fixes
+- [#1623](https://github.com/stakira/OpenUtau/pull/1623) - Added font settings for macOS - ([@rokujyushi](https://github.com/rokujyushi))
+- [#1a6924a](https://github.com/stakira/OpenUtau/commit/1a6924a0932eaf48c73dd52717b7e2eae386e807) - voicebank error checker nullness fixes ([@stakira](https://github.com/stakira))
+## Misc
+- [#1622](https://github.com/stakira/OpenUtau/pull/1622) - Sync translated strings from crowdin to official repo - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+
 ***
 # ~[0.1.562 Beta](https://github.com/stakira/OpenUtau/releases/tag/0.1.562) (07-21-2025)
 ## Bug Fixes
