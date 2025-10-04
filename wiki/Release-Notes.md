@@ -1,4 +1,4 @@
-> The latest stable version is [0.1.565](#01529-09-14-2025).  
+> The latest stable version is [0.1.565](#01565-09-14-2025).  
 > See also [Known Bugs](https://github.com/stakira/OpenUtau/wiki/Known-Bugs).
 
 <!-- Use the following GitHub CLI command to get a list of pull requests:
@@ -45,6 +45,27 @@ gh pr list --state merged --repo stakira/OpenUtau --limit 1000 --json number,tit
 # ~[0.1.565](https://github.com/stakira/OpenUtau/releases/tag/0.1.565) (09-14-2025)
 ## Bug Fixes
 - [#1692](https://github.com/stakira/OpenUtau/pull/1692) - Revert "fix legacy plugin output" - ([@stakira](https://github.com/stakira))
+
+### Summary of new features since the last stable release!
+#### Main Windows
+- Splash window
+- Welcome page
+#### Piano roll
+- Search notes by alias
+- Clear caches for each phrase
+- Add DrawLine Pitch Tool and improvement Tools
+- Support displaying real curves from DiffSinger variance predictor
+- 'reset all' editing macro
+- Move to the next track part with PageUp/PageDown keys
+#### Render
+- Classic renderer: support direct
+- Support SimpleENUNUServer0.5.0
+- Support Diffsinger multi-dictionary
+#### Misc
+- Refactor preferences page to using a navigation sidebar, rearrange preference items
+- Voicebank Merger
+- Recovery project function
+- MusicXML Import
 
 ***
 # ~[0.1.564 Beta](https://github.com/stakira/OpenUtau/releases/tag/0.1.564) (08-31-2025)
