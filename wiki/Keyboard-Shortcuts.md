@@ -102,6 +102,8 @@
 | Scroll Selection Into View | <kbd>F</kbd> |
 | Zoom In | <kbd>E</kbd> |
 | Zoom Out | <kbd>Q</kbd> |
+| Move to Previous Track | <kbd>Page Up</kbd> |
+| Move to Next Track | <kbd>Page Down</kbd> |
 
 ### Toggles
 
