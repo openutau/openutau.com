@@ -21,6 +21,8 @@ OpenUtau wikiへようこそ！
   * [Phonemizers（日本語）](Phonemizers（日本語）)　日本語向けPhonemizer部分のみ翻訳済み
 * [Resamplers and Wavtools](https://github.com/stakira/OpenUtau/wiki/Resamplers-and-Wavtools)　ResamplerとWavtoolの対応状況
   * [レンダラーとエンジン](https://w.atwiki.jp/openutau_ja/pages/15.html)
+* [Expressions (Flags)](Expressions-(Flags))
+  * [表情（フラグ）](https://w.atwiki.jp/openutau_ja/pages/17.html)
 * [Legacy Plugins](https://github.com/stakira/OpenUtau/wiki/Legacy-Plugins)　レガシープラグイン（従来のUTAU用のプラグイン）の互換性
   * [UTAUプラグイン](https://w.atwiki.jp/openutau_ja/pages/16.html)
 
