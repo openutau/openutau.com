@@ -6,7 +6,8 @@ OpenUtau wikiへようこそ！
 ## 目次
 ### 初心者向け
 * [Tutorials](https://github.com/stakira/OpenUtau/wiki/Tutorials)　OpenUtauについて、従来のUTAUとの差異
-  * [チュートリアル (日本語)](https://github.com/stakira/OpenUtau/wiki/%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB-(%E6%97%A5%E6%9C%AC%E8%AA%9E))
+  * [OpenUtauとは](https://w.atwiki.jp/openutau_ja/pages/11.html)
+  * [従来のUTAUとの違い](https://w.atwiki.jp/openutau_ja/pages/10.html)
   * [教程汇总 (中文)](https://github.com/stakira/OpenUtau/wiki/%E6%95%99%E7%A8%8B%E6%B1%87%E6%80%BB-(%E4%B8%AD%E6%96%87))
 * [インストール](https://w.atwiki.jp/openutau_ja/pages/14.html)
 * [Getting Started](Getting-Started)　インストールから基本的な使い方まで
