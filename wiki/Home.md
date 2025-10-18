@@ -20,6 +20,7 @@ Welcome to the OpenUtau wiki!
   * [Phonemizers (日本語)](https://github.com/stakira/OpenUtau/wiki/Phonemizers%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%EF%BC%89)
 * [Resamplers and Wavtools](https://github.com/stakira/OpenUtau/wiki/Resamplers-and-Wavtools)
   * [ResamplerとWavtool (日本語)](https://github.com/stakira/OpenUtau/wiki/Resampler%E3%81%A8Wavtool(%E6%97%A5%E6%9C%AC%E8%AA%9E))
+* [Expressions (Flags)](Expressions-(Flags))
 * [Legacy Plugins](https://github.com/stakira/OpenUtau/wiki/Legacy-Plugins)
 
 ### Advanced
