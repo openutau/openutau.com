@@ -62,3 +62,38 @@ OpenUtau supports macOS 10.14 Mojave and above (macOS 11 Big Sur is required for
 #### Other
 - Extract the tar.gz file yourself, and run `OpenUtau` from a terminal.
 - Or check the community-created [installer scripts](https://hitcoder.tubs.wtf/Posts/openutau/).
+
+## Select UI language
+By default, OpenUtau will use the same language as your computer, or English if a translation is unavailable. To manually change the language, go to **Tools > Preferences**.
+
+![language](https://i.imgur.com/WDgg4Z6.gif)
+
+# Install a resampler
+OpenUtau provides an internal wavtool along with a resampler, **Worldline**.   
+To install an external resampler, place a resampler .exe or .dll into the "Resamplers" folder where OpenUtau is installed. 
+
+> [!TIP]
+> On linux, the `Resamplers` folder is located at `~/.local/share/OpenUtau/Resamplers`.
+
+If you already use UTAU, you can copy + paste resamplers that you already have. Check [Resamplers](Resamplers-and-Wavtools) for a list of compatible resamplers.
+
+After adding a track, you can select the resampler and wavtool by pressing the settings cog on the lower right of the track header. Please note that only wavtools that are compatible with the currently selected resampler will be shown; for instance only "simple" and "convergence" will be available to choose when Worldline is selected.
+
+# Install a voicebank
+Voicebanks can be installed through **Tools > Install Singer...**
+
+![install voicebank](https://i.imgur.com/FpIZ21J.png)
+
+On non-Japanese systems, unzipping a zip file created on a Japanese system often leads to mojibake file names. The **Install Singer** tool helps convert file names correctly. You could also **unzip yourself** if the file names can be correctly unzipped.
+
+When installing a voicebank, a window will pop up with a file encoding option. Use this option if you're not sure about how the voicebank is encoded (for example, a Japanese voicebank created by a Chinese user). You will know when the encoding is right.
+
+![select file encoding](https://i.imgur.com/sSpDhPc.png)  
+
+Another way to install singers is to set the **Additional Singer Path** to an existing folder with singers, such as the UTAU voice folder.
+
+You can then see your installed voicebanks in the **Tools > Singers...** menu.
+
+If you're using MacOS, before you download a voicebank, navigate to `Settings > General` and uncheck `Open "safe" files after downloading`.
+
+![image](https://github.com/user-attachments/assets/662debe9-8c67-459f-916a-8f9b05f81bae)
