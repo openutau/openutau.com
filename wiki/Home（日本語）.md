@@ -19,9 +19,9 @@ OpenUtau wikiへようこそ！
 * [Phonemizers](https://github.com/stakira/OpenUtau/wiki/Phonemizers)　Phonemizerの詳細と一覧
   * [Phonemizers（日本語）](Phonemizers（日本語）)　日本語向けPhonemizer部分のみ翻訳済み
 * [Resamplers and Wavtools](https://github.com/stakira/OpenUtau/wiki/Resamplers-and-Wavtools)　ResamplerとWavtoolの対応状況
-  * [ResamplerとWavtool (日本語)](https://github.com/stakira/OpenUtau/wiki/Resampler%E3%81%A8Wavtool(%E6%97%A5%E6%9C%AC%E8%AA%9E))
+  * [レンダラーとエンジン](https://w.atwiki.jp/openutau_ja/pages/15.html)
 * [Legacy Plugins](https://github.com/stakira/OpenUtau/wiki/Legacy-Plugins)　レガシープラグイン（従来のUTAU用のプラグイン）の互換性
-  * [従来のプラグイン（日本語）](https://github.com/stakira/OpenUtau/wiki/%E5%BE%93%E6%9D%A5%E3%81%AE%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%EF%BC%89)
+  * [UTAUプラグイン](https://w.atwiki.jp/openutau_ja/pages/16.html)
 
 ### 上級編
 * [[Voicebank Development]]　音源制作
