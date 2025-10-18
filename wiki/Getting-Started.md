@@ -1,72 +1,8 @@
 ## About OpenUtau
 Please see [Tutorials](Tutorials) for an overview of OpenUtau and how it differs from conventional UTAU.
 
-## Install OpenUtau
-Stable version:
-
-[![Download](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=windows-x64-installer&labelColor=FF347C&color=4ea6ea)](https://github.com/stakira/OpenUtau/releases/latest/download/OpenUtau-win-x64.exe)</br>
-[![Download](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=windows-x64-portable&labelColor=FF347C&color=4ea6ea)](https://github.com/stakira/OpenUtau/releases/latest/download/OpenUtau-win-x64.zip)</br>
-[![Download](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=windows-x86-portable&labelColor=FF347C&color=4ea6ea)](https://github.com/stakira/OpenUtau/releases/latest/download/OpenUtau-win-x86.zip)</br>
-[![Download](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=macos-x64&labelColor=FF347C&color=4ea6ea)](https://github.com/stakira/OpenUtau/releases/latest/download/OpenUtau-osx-x64.dmg)</br>
-[![Download](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=linux-x64&labelColor=FF347C&color=4ea6ea)](https://github.com/stakira/OpenUtau/releases/latest/download/OpenUtau-linux-x64.zip)
-
-If you're going to use DiffSinger voicebanks, download the latest beta version from [Here](https://github.com/stakira/OpenUtau/releases)
-
-### Windows
-- OpenUtau supports Windows 8.1 and above (Windows 10 is required for DiffSinger).
-- For the installer, double-click the downloaded .exe and follow the installation instructions.
-- For the portable version, after unzipping to a new folder, you can start the application by double-clicking `OpenUtau.exe`.
-### macOS
-- OpenUtau supports macOS 10.14 Mojave and above (macOS 11 Big Sur is required for DiffSinger).
-- Double-click the downloaded .dmg file. Drag the app icon to the folder icon.
-- See [FAQ](https://github.com/stakira/OpenUtau/wiki/FAQ#on-macos-when-i-try-to-run-openutau-it-says-this-app-is-damaged) if macOS reports "app is damaged".
-### Linux
-#### Arch or similar (Eg. Manjaro)
-- Install [openutau-bin](https://aur.archlinux.org/packages/openutau-bin) from AUR (Eg. using [yay](https://github.com/Jguer/yay) `yay -S openutau-bin`).
-#### Gentoo
-- Install `app-eselect/eselect-repository` in order to enable the guru overlay.
-- Run `eselect repository enable guru` and `emaint sync -r guru` to enable and sync the overlay (`dev-vcs/git` may be needed to be installed).
-- Run `emerge openutau` to install OpenUtau.
-#### Other
-- Extract the tar.gz file yourself, and run `OpenUtau` from a terminal.
-- Or check the community-created [installer scripts](https://hitcoder.tubs.wtf/Posts/openutau/).
-
-## Select UI language
-By default, OpenUtau will use the same language as your computer, or English if a translation is unavailable. To manually change the language, go to **Tools > Preferences**.
-
-![language](https://i.imgur.com/WDgg4Z6.gif)
-
-## Install a resampler
-OpenUtau provides an internal wavtool along with a resampler, **Worldline**. 
-
-
-To install an external resampler, place a resampler .exe or .dll into the "Resamplers" folder where OpenUtau is installed. 
-
-> [!TIP]
-> On linux, the `Resamplers` folder is located at `~/.local/share/OpenUtau/Resamplers`.
-
-If you already use UTAU, you can copy + paste resamplers that you already have. Check [Resamplers](Resamplers-and-Wavtools) for a list of compatible resamplers.
-
-After adding a track, you can select the resampler and wavtool by pressing the settings cog on the lower right of the track header. Please note that only wavtools that are compatible with the currently selected resampler will be shown; for instance only "simple" and "convergence" will be available to choose when Worldline is selected.
-
-## Install a voicebank
-Voicebanks can be installed through **Tools > Install Singer...**
-
-![install voicebank](https://i.imgur.com/FpIZ21J.png)
-
-On non-Japanese systems, unzipping a zip file created on a Japanese system often leads to mojibake file names. The **Install Singer** tool helps convert file names correctly. You could also **unzip yourself** if the file names can be correctly unzipped.
-
-When installing a voicebank, a window will pop up with a file encoding option. Use this option if you're not sure about how the voicebank is encoded (for example, a Japanese voicebank created by a Chinese user). You will know when the encoding is right.
-
-![select file encoding](https://i.imgur.com/sSpDhPc.png)  
-
-Another way to install singers is to set the **Additional Singer Path** to an existing folder with singers, such as the UTAU voice folder.
-
-You can then see your installed voicebanks in the **Tools > Singers...** menu.
-
-If you're using MacOS, before you download a voicebank, navigate to `Settings > General` and uncheck `Open "safe" files after downloading`.
-
-![image](https://github.com/user-attachments/assets/662debe9-8c67-459f-916a-8f9b05f81bae)
+## Install
+For installing the OpenUtau Editor, voicebanks, and resampler, please see the [Install](Install) page.
 
 ## Projects
 ### Creating projects
