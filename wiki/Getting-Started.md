@@ -23,38 +23,6 @@ You can also change the tempo and time signature by right-clicking the bar/measu
 
 ![tempo and timesig change](https://i.imgur.com/jxjnW1O.gif)
 
-#### Expressions
-Expressions allow you to change parameters note-by-note, similar to flags in UTAU. Expressions are saved per-project. To edit expression settings, go to **Tools > Expressions**.
-
-![expressions](https://i.imgur.com/XxXvpLj.gif)
-
-##### Default expressions
-| Name     | Abbreviation | Purpose                                           | Range      | Default |
-| -------- | ------------ | ------------------------------------------------- | ---------- | ------- |
-| Velocity | VEL          | Consonant velocity (stretch/shorten preutterance) | 0 - 200    | 100     |
-| Volume   | VOL          | Note volume                                       | 0 - 200    | 100     |
-| Attack   | ATK          | Envelope starting volume                          | 0 - 200    | 100     |
-| Decay    | DEC          | Envelope ending volume                            | 0 - 100    | 0       |
-| Voice color    | CLR          | Utilizes voicebank appends/colors           | No range, options    | Blank       |
-| Resampler engine    | ENG          | Change resamplers on the fly           | No range, options    | , worldline64.exe |
-| Gender   | GEN          | g flag (formant shift)                            | -100 - 100 | 0       |
-| Breath   | BRE          | B flag (breathiness)                              | 0 - 100    | 0       |
-| Lowpass  | LPF          | H flag (low pass filter)                          | 0 - 100    | 0       |
-| Modulation | MOD        | Note modulation from original pitch               | 0 - 100    | 0       |
-| Alternate | ALT         | Alternate aliasing for duplicates in oto.ini      | 0 - 16     | 0       |
-| Tone shift | SHFT       | Allows for selecting pitch alias                  | -36 - 36   | 0       |
-
-##### Adding expressions
-Use the + and - buttons in the lower left corner to add and remove expressions. Some expressions cannot be removed. There are two types of expressions, numerical expressions and fixed options.
-
-For numerical expressions fill out the name, abbreviation, resampler flag, minimum, maximum, and default value. The resampler flag must be a single flag by itself without any numbers. If you want the whole project to have a certain value (eg. Mt+20) please put the number in the Default box.
-
-![add expression](https://i.imgur.com/kzKnSgf.gif)
-
-For options, fill out the name, abbreviation, checkbox, and option values. This is for flags that don't take any numbers, like for toggling between stretching and looping.
-
-![add options](https://i.imgur.com/FyQ6XMd.gif)
-
 ### Opening projects
 Open projects using **File > Open**, or `Ctrl+O`.  
 You can open `.ustx`, `.ust`, or `.vsqx` files.
@@ -200,52 +168,8 @@ Legacy Plugins provide limited support for UTAU plugins. To add a plugin, copy t
 ![legacy](https://i.imgur.com/70eNNC9.gif)
 
 ### Edit expressions
-Use the arrow by the expressions to select which one you want to edit. 
+Please see [Expressions (Flags)](Expressions-(Flags)).
 
-![select expression](https://i.imgur.com/5gzG0ch.gif)
-
-The gear icon will allow you to view the expression settings for the whole project.
-
-![project expressions](https://i.imgur.com/ACjYqcS.gif)
-
-Click to set a value, and right click to reset it to the project default.
-
-![edit expression](https://i.imgur.com/2PKCb2p.gif)
-#### VEL (velocity)
-This corresponds to UTAU's Consonant Velocity. This affects the length of the fixed region of the OTO, which is the beginning of the note/phoneme.
-
-![vel](https://i.imgur.com/ls2ECcq.gif)
-#### VOL (volume)
-This raises or lowers the overall volume of the note/phoneme.
-
-![vol](https://i.imgur.com/11QKExP.gif)
-#### ATK (attack)
-This raises or lowers the volume of the beginning of the note/phoneme.
-
-![atk](https://i.imgur.com/lw5wg26.gif)
-#### DEC (decay)
-This lowers the volume of the rest of the note/phoneme.
-
-![dec](https://i.imgur.com/MNU1Bws.gif)
-
-#### ENG (Resampler Engine)
-Selects resampler engine used to render this phoneme. If value is "", the engine selected in Preferences is used.
-
-![eng-setting](https://i.imgur.com/Fm2fZZ2.png)
-![eng](https://i.imgur.com/BtgIg3u.gif)
-
-#### MOD (modulation)
-This determines how much the pitch is flattened from the original recording. By default this is 0, or completely flat.
-
-#### Options Flags (Non-Numerical Flags)
-Add a flag. Change its type to "Options" and set "Option Values" to ",e".
-You will be able to use an expression to add nothing or "e" to resampler flags.
-
-![flage-setting](https://i.imgur.com/7DEflzM.png)
-![flage](https://i.imgur.com/Q6NUw93.gif)
-
-#### Other expressions
-All other expressions are like flags in UTAU.
 ### Edit pitchbends
 You can show/hide pitchbends using the pitchbend icon in the top left, or by pressing `I` on your keyboard. Hidden pitchbends will still be applied to the notes.
 
