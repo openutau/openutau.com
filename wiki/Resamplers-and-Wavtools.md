@@ -172,10 +172,14 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 | [macres](https://github.com/titinko/macres/releases)   | titinko   | [macres.yaml]()  |
 
 # Resampler Manifest
-A resampler manifest is a YAML file used to store the expressions supported by a resampler. With resampler manifests, users can add all of a resampler's supported flags at once using the `Add all expressions suggested by renderers` button in the `Expressions` editor.
-
+A Resampler Manifest is a YAML file that manages expressions supported or unsupported by each resampler.  
+The Resampler Manifest primarily serves two purposes:
+- Enables batch addition of supported flags to a project using the `Add all expressions suggested by renderers` button in the `Expressions` editor.
 <img width="453" alt="image" src="https://user-images.githubusercontent.com/54425948/227085816-4cced732-98dd-4c76-bc40-9a94f971a066.png">
 
+- Disable expressions not listed in this file to account for cases where each resampler has flags with different default values, maximum/minimum values, or effects.
+
+## Create Resampler Manifest
 Resampler manifests should have the same name as the resampler executable, stored in the same folder. The manifest must have a `.yaml` file extension. For example, the resampler manifest for `moresampler.exe` should be `moresampler.yaml` located in the same folder with `moresampler.exe`.
 
 Below is a full example of a resampler manifest for Moresampler. To create a resampler manifest with OpenUtau, add the resampler's expressions to any `.ustx` project file. Open the project file in a text editor and copy the `expressions:` section into a blank manifest file.
@@ -329,6 +333,7 @@ expressions:
     is_flag: true
     flag: Mm
 ```
+To disable flags not listed, add a line `expression_filter: true` at the beginning or end of the file.
 
 # Installing Wavtools
 
