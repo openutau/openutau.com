@@ -40,6 +40,14 @@ Save the project as a new file using **File > Save As**.
 
 After saving the project, you can also export all tracks as separate `.ust` files using **File > Export Project > Export Ust Files**. The files will be saved in an Export folder next to the original `.ustx` file. 
 
+#### Autosave Backups
+
+OpenUtau automatically saves project backups every 30 seconds. It also automatically saves backups when it detects a crash.
+For saved projects, backups are saved next to the file with the name “filename-autosave.ustx”.
+For unsaved projects, backups are saved in the “Backups” folder within the data folder (located in places like the Singers or Resamplers folders).
+
+If the program crashed or was force-closed previously, a project recovery dialog will appear upon the next startup, allowing you to restore the previous state.
+
 ### Exporting audio
 After saving the project, use **File > Export Audio > Export wav Files** to render all tracks as separate `.wav` files. The files will be saved in an Export folder next to the original `.ustx` file. 
 
