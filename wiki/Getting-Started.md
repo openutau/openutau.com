@@ -25,7 +25,13 @@ You can also change the tempo and time signature by right-clicking the bar/measu
 
 ### Opening projects
 Open projects using **File > Open**, or `Ctrl+O`.  
-You can open `.ustx`, `.ust`, or `.vsqx` files.
+You can open the following formats.
+- .ustx: OpenUtau project file
+- .ust: UTAU project file
+- .vsqx: VOCALOID3/4 project file
+- .mid/.midi: General music score file
+- [.ufdata](https://github.com/sdercolin/utaformatix-data): [UtaFormatix](https://sdercolin.github.io/utaformatix3/)'s internal data format. Compatible with most vocal synthesis project files.
+- .musicxml: A universal music score file format for handling Western music staff notation as data.
 
 ### Saving projects
 OpenUtau projects are saved as `.ustx` files.  
