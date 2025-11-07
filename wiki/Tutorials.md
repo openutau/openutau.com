@@ -69,5 +69,5 @@ singer_type: Enunu
 # Quick Tips
 Got any tips for editing with OpenUtau? Feel free to share them here, or link them from social media!
 
-### [VCCV English tutorial](https://docs.google.com/document/d/e/2PACX-1vRZ6ttcFIn56hgyYjxNwrP40KMfZbgoTlipaYKTyv6q2Sa9H4m3kc9uaQYUXe40uPTdXyDwtJQz-ATl/pub) by AnAndroNerd
-This is a small VCCV English tutorial. If anything is confusing please feel free to ping @AnAndroNerd in the OU Discord Server, I will try to respond as soon as I can. 
+### [VCCV English tutorial](https://docs.google.com/document/d/e/2PACX-1vRZ6ttcFIn56hgyYjxNwrP40KMfZbgoTlipaYKTyv6q2Sa9H4m3kc9uaQYUXe40uPTdXyDwtJQz-ATl/pub) by Anjo
+This is a small VCCV English tutorial. If anything is confusing please feel free to ping @Anjo_39 in the OU Discord Server, I will try to respond as soon as I can. 
