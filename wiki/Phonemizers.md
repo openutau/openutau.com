@@ -42,56 +42,270 @@ If the syllables are misaligned, add numbers after `+` to force alignment to the
 - Same mechanics for lyric input 
 - Supports more alias formats such as: `cv`, `c v`, `ccv`, `cc v`, `v v`, `splitted vv`, `v c`, `v cc`, `c c`, `c cc` and so on
 ### Auxiliary dictionary files:
-**`Note: only 1:1 replacements are supported for now and multiple phoneme replacements are still pending in `**[**pr 1534**](https://github.com/stakira/OpenUtau/pull/1534)
 - #### Symbols
-    - Add a new symbol and define its symbol type for the phonemizer to recognize.
-    - encapsulate the whole symbol with `' '` if it starts with a special symbol
-```
-symbols:
-    - {symbol: ea, type: vowel}
-    - {symbol: ix, type: vowel}
-    - {symbol: dd, type: tap}
-    - {symbol: j, type: fricative}
-    - {symbol: '@r', type: vowel}
-```
-- #### Replacements
-    - Replaces certain symbol or sequence of symbols defined in the replacements entry
-    - supports `1:1`, `1:M`, `M:1`, `M:M` phoneme replacements
-```
-replacements:
-# 1:1 (one-to-one mappings)
-  - {from: ax, to: ah}
-  - {from: cl, to: q}
-# 1:M (one-to-many mappings) (splitting)
-  - {from: dr, to: [d, r]}
-  - {from: tr, to: [t, sh, r]}
-  - {from: aw, to: [aa, w]}
-# M:1 (many-to-one mappings) (merging)
-  - {from: [ih, ng], to: ing}
-  - {from: [eh, ax, m], to: eam}
-# M:M (many-to-many mappings)
-  - {from: [ih, ng], to: [ix, ng]}
-  - {from: [ay, l], to: [ay, ax, el]}
+    - Add a new symbol and define its symbol type for the phonemizer to recognize (`vowel`, `stop`, `affricate`, `fricative`, `aspirate`, `liquid`, `nasal`, `semivowel`, `tail`).
+    - `affricate`'s are prioritized because they produce a sound.
+    - indicate the phoneme as `tail` to use them as a trailing tail note.
+    - encapsulate the whole symbol with `' '` if it starts with a special symbol.
+    ```
+    symbols:
+      - {symbol: ea, type: vowel}
+      - {symbol: ix, type: vowel}
+      - {symbol: dd, type: tap}
+      - {symbol: j, type: fricative}
+      - {symbol: '@r', type: vowel}
+    ```
+- #### Fallbacks
+    - Fallbacks missing phoneme/alias to the mapped phoneme/alias.
+    - supports `1:1` phoneme mappings only.
+    ```
+    fallbacks:
+    # 1:1 (one-to-one mappings)
+      - {from: ax, to: ah}
+      - {from: ch oy, to: ch ow}
 
-# format can be like this
-    - from: [ae, n]
-      to: [eh, ax, n]
-    - from: b
-      to: bh
-```
+    # format can be like this
+        - from: b@
+        to: bV
+        - from: b
+        to: bh
+    ```
+- #### Replacements
+    - Replaces certain phoneme or sequence of phonemes defined in the replacements entry.
+    - supports `1:1`, `1:M`, `M:1`, `M:M` phoneme replacements.
+    ```
+    replacements:
+    # 1:1 (one-to-one mappings)
+      - {from: ax, to: ah}
+      - {from: cl, to: q}
+    # 1:M (one-to-many mappings) (splitting)
+      - {from: dr, to: [d, r]}
+      - {from: tr, to: [t, sh, r]}
+      - {from: aw, to: [aa, w]}
+    # M:1 (many-to-one mappings) (merging)
+      - {from: [ih, ng], to: ing}
+      - {from: [eh, ax, m], to: eam}
+    # M:M (many-to-many mappings)
+      - {from: [ih, ng], to: [ix, ng]}
+      - {from: [ay, l], to: [ay, ax, el]}
+
+    # format can be like this
+        - from: [ae, n]
+        to: [eh, ax, n]
+        - from: b
+        to: bh
+    ```
+- #### Timings
+    - Defines the certain phoneme to be in this phoneme group's phoneme length.
+    - Overrides specific alias to be in that length (in seconds).
+    ```
+    timings:
+      - {symbol: dh, value: 1.2}
+      - {symbol: vf, value: 2.8}
+      - {symbol: st, value: 3.5}
+      - {symbol: a r, value: 0.5}
+      - {symbol: e r, value: 0.5}
+      - {symbol: i r, value: 0.5}
+    ```
 - #### Entries
-    - Add a new dictionary entry to override certain word pronunciations
-    - no limit to characters as long as it covered by unicode so you can add kana, hangul, hieroglyphics grapheme etc entries to `arpasing.yaml`
-```
-entries:
-    - {grapheme: hello, phonemes: [hh, ax, l, ow]}
-    - {grapheme: 안녕하세요, phonemes: [aa, n, y, ao, ng, hh, ah, s, eh, y ao]}
-# format can be like this
-    - grapheme: stars
-      phonemes: s, t, aa, r, z
-    - grapheme: drops
-      phonemes: dr, aa, p, s
-```
+    - Add a new dictionary entry to override certain word pronunciations.
+    - no limit to characters as long as it covered by unicode so you can add kana, hangul, hieroglyphics grapheme etc entries to `arpasing.yaml`.
+    ```
+    entries:
+      - {grapheme: hello, phonemes: [hh, ax, l, ow]}
+      - {grapheme: 안녕하세요, phonemes: [aa, n, y, ao, ng, hh, ah, s, eh, y ao]}
+    # format can be like this
+      - grapheme: stars
+        phonemes: s, t, aa, r, z
+      - grapheme: drops
+        phonemes: dr, aa, p, s
+    ```
+## EN C+V
+
+- Same mechanics for lyric input 
+- Supports more alias formats such as: `v`, `c`, `cc`, `v c` and so on
+- Supported alias varieties `spaced`, `no-space`
+- `Note that the new version of the [en-cPv.yaml] will be created in OU version 0.1.566, the old yaml file will be renamed as [en-cPv_backup.yaml]`
+
+### Auxiliary dictionary files:
+- #### Symbols
+    - Add a new symbol and define its symbol type for the phonemizer to recognize (`vowel`, `stop`, `affricate`, `fricative`, `aspirate`, `liquid`, `nasal`, `semivowel`, `tail`, `diphthong`).
+    - `affricate`'s are prioritized because they produce a sound.
+    - indicate the phoneme as `tail` to use them as a trailing tail note.
+    - encapsulate the whole symbol with `' '` if it starts with a special symbol.
+    ```
+    symbols:
+      - {symbol: ea, type: vowel}
+      - {symbol: ix, type: vowel}
+      - {symbol: dd, type: tap}
+      - {symbol: j, type: fricative}
+      - {symbol: '@r', type: vowel}
+    ```
+- #### Fallbacks
+    - Fallbacks missing phoneme/alias to the mapped phoneme/alias.
+    - supports `1:1` phoneme mappings only.
+    ```
+    fallbacks:
+    # 1:1 (one-to-one mappings)
+      - {from: ax, to: ah}
+      - {from: ch oy, to: ch ow}
+
+    # format can be like this
+        - from: b@
+        to: bV
+        - from: b
+        to: bh
+    ```
+- #### Replacements
+    - If the vb you're using in not in arpabet, you can remap them to the desired phoneme system with this method.
+    - Replaces certain phoneme or sequence of phonemes defined in the replacements entry.
+    - supports `1:1`, `1:M`, `M:1`, `M:M` phoneme replacements.
+    ```
+    replacements:
+    # 1:1 (one-to-one mappings)
+      - {from: ax, to: ah}
+      - {from: cl, to: q}
+    # 1:M (one-to-many mappings) (splitting)
+      - {from: dr, to: [d, r]}
+      - {from: tr, to: [t, sh, r]}
+      - {from: aw, to: [aa, w]}
+    # M:1 (many-to-one mappings) (merging)
+      - {from: [ih, ng], to: ing}
+      - {from: [eh, ax, m], to: eam}
+    # M:M (many-to-many mappings)
+      - {from: [ih, ng], to: [ix, ng]}
+      - {from: [ay, l], to: [ay, ax, el]}
+
+    # format can be like this
+        - from: [ae, n]
+        to: [eh, ax, n]
+        - from: b
+        to: bh
+    ```
+- #### Timings
+    - Defines the certain phoneme to be in this phoneme group's phoneme length.
+    - Overrides specific alias to be in that length (in seconds).
+    ```
+    timings:
+      - {symbol: dh, value: 1.2}
+      - {symbol: vf, value: 2.8}
+      - {symbol: st, value: 3.5}
+      - {symbol: a r, value: 0.5}
+      - {symbol: e r, value: 0.5}
+      - {symbol: i r, value: 0.5}
+    ```
+- #### Diphthongs
+    - Defines the certain phoneme as a diphthong in the symbols list so it splits the phoneme into 2.
+      ```
+      symbols:
+        - {symbol: aU, type: dihpthong}
+        - {symbol: A, type: dihpthong}
+      ```
+    - Default dipthong splitting will be `V-`.
+    - Can furthre customize the diphthong phoneme splitting with these parameter
+
+    ```
+    diphthong:
+      - {from: aw, to: _aw}
+      - {from: EI, to: EI--}
+    ```
+- #### Entries
+    - Add a new dictionary entry to override certain word pronunciations.
+    - no limit to characters as long as it covered by unicode so you can add kana, hangul, hieroglyphics grapheme etc entries to `en-cPv.yaml`.
+    ```
+    entries:
+      - {grapheme: hello, phonemes: [hh, ax, l, ow]}
+      - {grapheme: 안녕하세요, phonemes: [aa, n, y, ao, ng, hh, ah, s, eh, y ao]}
+    # format can be like this
+      - grapheme: stars
+        phonemes: s, t, aa, r, z
+      - grapheme: drops
+        phonemes: dr, aa, p, s
+    ```
+## FIL VCV & CVVC
+- Same mechanics for lyric input 
+- Takes the notes and splits them into phonemes depending in the phonemes listed in the yaml file
+- Supports more alias formats such as: `cv`, `c v`, `ccv`, `cc v`, `v v`, `splitted vv`, `v c`, `v cc`, `c c`, `c cc` and so on
+- Supports separate starting C's or starting CV's
+### Auxiliary dictionary files:
+- #### Symbols
+    - Add a new symbol and define its symbol type for the phonemizer to recognize (`vowel`, `stop`, `affricate`, `fricative`, `aspirate`, `liquid`, `nasal`, `semivowel`, `tail`).
+    - `affricate`'s are prioritized because they produce a sound.
+    - indicate the phoneme as `tail` to use them as a trailing tail note.
+    - encapsulate the whole symbol with `' '` if it starts with a special symbol.
+    ```
+    symbols:
+      - {symbol: ea, type: vowel}
+      - {symbol: ix, type: vowel}
+      - {symbol: dd, type: tap}
+      - {symbol: j, type: fricative}
+      - {symbol: '@r', type: vowel}
+    ```
+- #### Fallbacks
+    - Fallbacks missing phoneme/alias to the mapped phoneme/alias.
+    - supports `1:1` phoneme mappings only.
+    ```
+    fallbacks:
+    # 1:1 (one-to-one mappings)
+      - {from: a, to: A}
+      - {from: ts, to: ch}
+
+    # format can be like this
+        - from: b@
+        to: bV
+        - from: b
+        to: bh
+    ```
+- #### Replacements
+    - Replaces certain phoneme or sequence of phonemes defined in the replacements entry.
+    - supports `1:1`, `1:M`, `M:1`, `M:M` phoneme replacements.
+    ```
+    replacements:
+    # 1:1 (one-to-one mappings)
+      - {from: ax, to: ah}
+      - {from: cl, to: q}
+    # 1:M (one-to-many mappings) (splitting)
+      - {from: dr, to: [d, r]}
+      - {from: tr, to: [t, sh, r]}
+      - {from: aw, to: [aa, w]}
+    # M:1 (many-to-one mappings) (merging)
+      - {from: [ih, ng], to: ing}
+      - {from: [eh, ax, m], to: eam}
+    # M:M (many-to-many mappings)
+      - {from: [ih, ng], to: [ix, ng]}
+      - {from: [ay, l], to: [ay, ax, el]}
+
+    # format can be like this
+        - from: [ae, n]
+        to: [eh, ax, n]
+        - from: b
+        to: bh
+    ```
+- #### Timings
+    - Defines the certain phoneme to be in this phoneme group's phoneme length.
+    - Overrides specific alias to be in that length (in seconds).
+    ```
+    timings:
+      - {symbol: dh, value: 1.2}
+      - {symbol: vf, value: 2.8}
+      - {symbol: st, value: 3.5}
+      - {symbol: a r, value: 0.5}
+      - {symbol: e r, value: 0.5}
+      - {symbol: i r, value: 0.5}
+    ```
+- #### Entries
+    - Add a new dictionary entry to override certain word pronunciations.
+    - no limit to characters as long as it covered by unicode so you can add kana, hangul, hieroglyphics grapheme etc entries to `filipino.yaml`.
+    ```
+    entries:
+      - {grapheme: hello, phonemes: [hh, ax, l, ow]}
+      - {grapheme: 안녕하세요, phonemes: [aa, n, y, ao, ng, hh, ah, s, eh, y ao]}
+    # format can be like this
+      - grapheme: stars
+        phonemes: s, t, aa, r, z
+      - grapheme: drops
+        phonemes: dr, aa, p, s
+    ```
 
 ## ZH CVV (Chinese CVV)
 Lyrics should be written in pinyin. The phonemizer will insert endings for syllables that need them.  
@@ -611,6 +825,8 @@ Another example occurs between voiced stops and their intervocalic fricative cou
 
 This is a temporary solution of a phonemizer for [Cz's VCCV method](http://utaulanguageresources.weebly.com/czs-vccv.html), it is right now not a plug and play solution. If you wish for one, please use [Lyric Parser 2.1](https://snowphones.weebly.com/lyric-parser-20.html) which is fully compatible with Open Utau.
 
+- `Note that the new version of the [envccv.yaml] will be created in OU version 0.1.566, the old yaml file will be renamed as [envccv_backup.yaml]`
+
 ### Lyric input
 You can input lyrics in plain English `love`, plain English + phonetic hint `love [l u v]` or phonetic hint only `[l u v]`. 
 
@@ -842,58 +1058,85 @@ This phonemizer now has support for custom dictionaries. The dictionary should b
 
 Note that the Arpabet symbols included by default in the CMU Pronouncing Dictionary can also be used to note down custom words, though for any symbols that aren't included, X-SAMPA notation is required.
 
-### Auxiliary dictionary files (uses xsampa.yaml or en-xsampa.yaml):
-**`Note: only 1:1 replacements are supported for now and multiple phoneme replacements are still pending in `**[**pr 1534**](https://github.com/stakira/OpenUtau/pull/1534)
-
+### Auxiliary dictionary files:
 - #### Symbols
-    - Add a new symbol and define its symbol type for the phonemizer to get recognize.
-    - encapsulate the whole symbol with `' '` if it starts with a special symbol
-```
-symbols:
-    - {symbol: ea, type: vowel}
-    - {symbol: ix, type: vowel}
-    - {symbol: dd, type: tap}
-    - {symbol: j, type: fricative}
-    - {symbol: '@r', type: vowel}
-```
-- #### Replacements
-    - Replaces certain symbol or sequence of symbols defined in the replacements entry
-    - supports `1:1`, `1:M`, `M:1`, `M:M` phoneme replacements
-```
-replacements:
-# 1:1 (one-to-one mappings)
-  - {from: ax, to: ah}
-  - {from: cl, to: q}
-# 1:M (one-to-many mappings) (splitting)
-  - {from: dr, to: [d, r]}
-  - {from: tr, to: [t, sh, r]}
-  - {from: aw, to: [aa, w]}
-# M:1 (many-to-one mappings) (merging)
-  - {from: [ih, ng], to: ing}
-  - {from: [eh, ax, m], to: eam}
-# M:M (many-to-many mappings)
-  - {from: [ih, ng], to: [ix, ng]}
-  - {from: [ay, l], to: [ay, ax, el]}
+    - Add a new symbol and define its symbol type for the phonemizer to recognize (`vowel`, `stop`, `affricate`, `fricative`, `aspirate`, `liquid`, `nasal`, `semivowel`, `tail`).
+    - `affricate`'s are prioritized because they produce a sound.
+    - indicate the phoneme as `tail` to use them as a trailing tail note.
+    - encapsulate the whole symbol with `' '` if it starts with a special symbol.
+    ```
+    symbols:
+      - {symbol: ea, type: vowel}
+      - {symbol: ix, type: vowel}
+      - {symbol: dd, type: tap}
+      - {symbol: j, type: fricative}
+      - {symbol: '@r', type: vowel}
+    ```
+- #### Fallbacks
+    - Fallbacks missing phoneme/alias to the mapped phoneme/alias.
+    - supports `1:1` phoneme mappings only.
+    ```
+    fallbacks:
+    # 1:1 (one-to-one mappings)
+      - {from: a, to: A}
+      - {from: ts, to: ch}
 
-# format can be like this
-    - from: [ae, n]
-      to: [eh, ax, n]
-    - from: b
-      to: bh
-```
+    # format can be like this
+        - from: b@
+        to: bV
+        - from: b
+        to: bh
+    ```
+- #### Replacements
+    - Replaces certain phoneme or sequence of phonemes defined in the replacements entry.
+    - supports `1:1`, `1:M`, `M:1`, `M:M` phoneme replacements.
+    ```
+    replacements:
+    # 1:1 (one-to-one mappings)
+      - {from: ax, to: ah}
+      - {from: cl, to: q}
+    # 1:M (one-to-many mappings) (splitting)
+      - {from: dr, to: [d, r]}
+      - {from: tr, to: [t, sh, r]}
+      - {from: aw, to: [aa, w]}
+    # M:1 (many-to-one mappings) (merging)
+      - {from: [ih, ng], to: ing}
+      - {from: [eh, ax, m], to: eam}
+    # M:M (many-to-many mappings)
+      - {from: [ih, ng], to: [ix, ng]}
+      - {from: [ay, l], to: [ay, ax, el]}
+
+    # format can be like this
+        - from: [ae, n]
+        to: [eh, ax, n]
+        - from: b
+        to: bh
+    ```
+- #### Timings
+    - Defines the certain phoneme to be in this phoneme group's phoneme length.
+    - Overrides specific alias to be in that length (in seconds).
+    ```
+    timings:
+      - {symbol: dh, value: 1.2}
+      - {symbol: vf, value: 2.8}
+      - {symbol: st, value: 3.5}
+      - {symbol: a r, value: 0.5}
+      - {symbol: e r, value: 0.5}
+      - {symbol: i r, value: 0.5}
+    ```
 - #### Entries
-    - Add a new dictionary entry to override certain word pronunciations
-    - no limit to characters as long as it covered by unicode so you can add kana, hangul, hieroglyphics grapheme etc entries to `arpasing.yaml`
-```
-entries:
-    - {grapheme: hello, phonemes: [hh, ax, l, ow]}
-    - {grapheme: 안녕하세요, phonemes: [aa, n, y, ao, ng, hh, ah, s, eh, y ao]}
-# format can be like this
-    - grapheme: stars
-      phonemes: s, t, aa, r, z
-    - grapheme: drops
-      phonemes: dr, aa, p, s
-```
+    - Add a new dictionary entry to override certain word pronunciations.
+    - no limit to characters as long as it covered by unicode so you can add kana, hangul, hieroglyphics grapheme etc entries to `xsampa.yaml` or `en-xsampa.yaml`.
+    ```
+    entries:
+      - {grapheme: hello, phonemes: [hh, ax, l, ow]}
+      - {grapheme: 안녕하세요, phonemes: [aa, n, y, ao, ng, hh, ah, s, eh, y ao]}
+    # format can be like this
+      - grapheme: stars
+        phonemes: s, t, aa, r, z
+      - grapheme: drops
+        phonemes: dr, aa, p, s
+    ```
 
 ## Italian Syllable-Based Phonemizer (IT SYL)
 ### Setup
