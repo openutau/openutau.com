@@ -9,16 +9,37 @@ gh pr list --state merged --repo stakira/OpenUtau --limit 1000 --json number,tit
 ## Phonemizer Changes
 ## Misc
 -->
-<!--
-# ~[0.1.566 Beta](https://github.com/stakira/OpenUtau/releases/tag/0.1.566) (??)
+
+# ~[0.1.566 Beta](https://github.com/stakira/OpenUtau/releases/tag/0.1.566) (11-28-2025)
+> **The ustx version is up. It cannot be opened with the previous OpenUtau.**
 ## Features
+### New Features
+- [#1428](https://github.com/stakira/OpenUtau/pull/1428) - Microtonal tuning function and batch editing of randomization - ([@maiko3tattun](https://github.com/maiko3tattun))
 - [#1645](https://github.com/stakira/OpenUtau/pull/1645) - Add feature to merge vocal parts - ([@arx-ein](https://github.com/arx-ein))
-- [#1628](https://github.com/stakira/OpenUtau/pull/1628) - Add Linux Appimage package - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1674](https://github.com/stakira/OpenUtau/pull/1674) - Add Commonnote Batch Edits - ([@AnAndroNerd](https://github.com/AnAndroNerd))
+- [#1678](https://github.com/stakira/OpenUtau/pull/1678) - Add new batch edit "Replace '-' with '+~'". - ([@AnAndroNerd](https://github.com/AnAndroNerd))
+- [#1778](https://github.com/stakira/OpenUtau/pull/1778) - Add OverwriteLinePitchTool  - ([@rokujyushi](https://github.com/rokujyushi))
+- [#1804](https://github.com/stakira/OpenUtau/pull/1804) - Ctrl+Shift+V to paste as plain notes - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+
+### Feature Enhancements
+- [#1468](https://github.com/stakira/OpenUtau/pull/1468) - Allow assignment of an oto set to multiple colors - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1540](https://github.com/stakira/OpenUtau/pull/1540) - Fix "Lyrics Replacement" and Improved "Edit Lyrics" - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1625](https://github.com/stakira/OpenUtau/pull/1625) - Fix playhead resets to its initial position when using 'Do nothing' on pause. - ([@atouu](https://github.com/atouu))
+  - [#1806](https://github.com/stakira/OpenUtau/pull/1806) - Check if miniaudio is not paused before resetting currentTimeMs. - ([@atouu](https://github.com/atouu))
 - [#1635](https://github.com/stakira/OpenUtau/pull/1635) - Togglable expressions view - ([@atouu](https://github.com/atouu))
 - [#1638](https://github.com/stakira/OpenUtau/pull/1638) - Auto focus to the text field in dialogs - ([@arx-ein](https://github.com/arx-ein))
+  - [#1748](https://github.com/stakira/OpenUtau/pull/1748) - Fix auto focused text field in dialogs not accepting keyboard inputs - ([@arx-ein](https://github.com/arx-ein))
 - [#1654](https://github.com/stakira/OpenUtau/pull/1654) - Improve and translate the error report - ([@maiko3tattun](https://github.com/maiko3tattun))
-- [#1678](https://github.com/stakira/OpenUtau/pull/1678) - Add new batch edit "Replace '-' with '+~'". - ([@AnAndroNerd](https://github.com/AnAndroNerd))
+  - [#1744](https://github.com/stakira/OpenUtau/pull/1744) - Fix bug in voicebank error checker - ([@maiko3tattun](https://github.com/maiko3tattun))
+  - [#1807](https://github.com/stakira/OpenUtau/pull/1807) - Fix VoicebankErrorChecker could not correctly detect bit depth - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1668](https://github.com/stakira/OpenUtau/pull/1668) - Add Legacy Plugins and Reset Batch Edits to right click menu on Piano Roll - ([@AnAndroNerd](https://github.com/AnAndroNerd))
 - [#1685](https://github.com/stakira/OpenUtau/pull/1685) - Always uses CPU for vogen rendering - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1730](https://github.com/stakira/OpenUtau/pull/1730) - convert `-` to `+~` instead of `+` when importing other formats - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1742](https://github.com/stakira/OpenUtau/pull/1742) - Support import multiple audios at once; remove 'import midi' menu item - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1753](https://github.com/stakira/OpenUtau/pull/1753) - Musicxml import: support `<backup>` and `<chord>`, support slurs, ties and multisyllabic words - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1797](https://github.com/stakira/OpenUtau/pull/1797) - Allow wavtool/resampler picker to open native UNIX executables - ([@atayeem](https://github.com/atayeem))
+- [#1802](https://github.com/stakira/OpenUtau/pull/1802) - Support .mrq file when .frq isn't present [MOD+] - ([@Astel123457](https://github.com/Astel123457))
+- [#1829](https://github.com/stakira/OpenUtau/pull/1829) - Store MainWindow and PianorollWindow Size - ([@maiko3tattun](https://github.com/maiko3tattun))
 
 ## Bug Fixes
 - [#1613](https://github.com/stakira/OpenUtau/pull/1613) - Reload when singer's avatar is changed - ([@maiko3tattun](https://github.com/maiko3tattun))
@@ -28,18 +49,45 @@ gh pr list --state merged --repo stakira/OpenUtau --limit 1000 --json number,tit
 - [#1646](https://github.com/stakira/OpenUtau/pull/1646) - Fix note editing tool toggle button behavior - ([@arx-ein](https://github.com/arx-ein))
 - [#1667](https://github.com/stakira/OpenUtau/pull/1667) - escape dollar sign in default gitignore used in publishing singer - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
 - [#1690](https://github.com/stakira/OpenUtau/pull/1690) - Fix VoiceColorRemapping Crash - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1702](https://github.com/stakira/OpenUtau/pull/1702) - Add save dialog when opening file with Open Recent menu - ([@arx-ein](https://github.com/arx-ein))
+- [#1724](https://github.com/stakira/OpenUtau/pull/1724) - Fix Windows legacy plugins on macOS and Linux - ([@atouu](https://github.com/atouu))
+- [#1743](https://github.com/stakira/OpenUtau/pull/1743) - [SBP update] Instance-based Dictionary - ([@Cadlaxa](https://github.com/Cadlaxa))
+- [#1766](https://github.com/stakira/OpenUtau/pull/1766) - Fixed issue where parts didn't extend when adding notes - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1771](https://github.com/stakira/OpenUtau/pull/1771) - Fix DIR was displayed as unsupported expression in the Classic Renderer - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1774](https://github.com/stakira/OpenUtau/pull/1774) - feat(onnx): drop Vortice.DXGI & update dml to 1.23.0 - ([@fumiama](https://github.com/fumiama))
+- [#1798](https://github.com/stakira/OpenUtau/pull/1798) - worldline memory leak fix - ([@AnAndroNerd](https://github.com/AnAndroNerd))
+- [#1809](https://github.com/stakira/OpenUtau/pull/1809) - Fix the pianoroll progress bar - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1810](https://github.com/stakira/OpenUtau/pull/1810) - Fix the left-aligned track number - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1819](https://github.com/stakira/OpenUtau/pull/1819) - Fix voicebank merger error message - ([@maiko3tattun](https://github.com/maiko3tattun))
 
 ## Phonemizer Changes
+- [#1719](https://github.com/stakira/OpenUtau/pull/1719) - `New!` Add Diffsinger Filipino Phonemizer (DIFFS FIL) - ([@julieraptor](https://github.com/julieraptor))
+- [#1671](https://github.com/stakira/OpenUtau/pull/1671) - `New!` Add Millefeuille and Marzipan Phonemizers - Take 2 - ([@imsupposedto](https://github.com/imsupposedto))
+- [#1534](https://github.com/stakira/OpenUtau/pull/1534) - `Syllable Based Phonemizers` Replacement update - ([@Cadlaxa](https://github.com/Cadlaxa))
+- [#1619](https://github.com/stakira/OpenUtau/pull/1619) - `FIL VCV & CVVC` Add ConsException to CC transitions - ([@Cadlaxa](https://github.com/Cadlaxa))
+- [#1651](https://github.com/stakira/OpenUtau/pull/1651) - `JA VCV & CVVC` Adds Normalization to [- C]s in Japanese Presamp Phonemizer based on CFLAGS - ([@AnAndroNerd](https://github.com/AnAndroNerd))
 - [#1666](https://github.com/stakira/OpenUtau/pull/1666) - `KO CV` Improved behavior, Changed setting file to yaml - ([@EX3exp](https://github.com/EX3exp))
-- [#1671](https://github.com/stakira/OpenUtau/pull/1671) - Add Millefeuille and Marzipan Phonemizers - Take 2 - ([@imsupposedto](https://github.com/imsupposedto))
+- [#1712](https://github.com/stakira/OpenUtau/pull/1712) - `ZH CVV+` Bugfix Chinese CVV Plus Phonemizer - ([@AnAndroNerd](https://github.com/AnAndroNerd))
+- [#1738](https://github.com/stakira/OpenUtau/pull/1738) - `IT G2P + Phonemizers` Replace Italian G2p with improved version + adjust phonemizers - ([@lottev1991](https://github.com/lottev1991))
+- [#1796](https://github.com/stakira/OpenUtau/pull/1796) - `ZH CVVC` Add [REPLACE] support for Chinese CVVC Phonemizer - ([@Slidingwall](https://github.com/Slidingwall))
 
 ## Misc
 - [#1472](https://github.com/stakira/OpenUtau/pull/1472) - Improvements preferences and related to singers folder - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1551](https://github.com/stakira/OpenUtau/pull/1551) - Improve loading popup consistency and visuals - ([@Kabinet0](https://github.com/Kabinet0))
+  - [#1808](https://github.com/stakira/OpenUtau/pull/1808) - Fix bugs in loading screen changes - ([@Kabinet0](https://github.com/Kabinet0))
+- [#1592](https://github.com/stakira/OpenUtau/pull/1592) - Beta won't ask for downgrading to stable - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1628](https://github.com/stakira/OpenUtau/pull/1628) - Add Linux Appimage package - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
 - [#1630](https://github.com/stakira/OpenUtau/pull/1630) - Make a tar.gz Linux artifact instead of zip - ([@atouu](https://github.com/atouu))
+- [#1683](https://github.com/stakira/OpenUtau/pull/1683) - Move recovery project notification to welcome page - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1689](https://github.com/stakira/OpenUtau/pull/1689) - Add text to the Singer Setup Dialog - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1726](https://github.com/stakira/OpenUtau/pull/1726) - Update error message for encrypted singer - ([@adlez27](https://github.com/adlez27))
+- [#1755](https://github.com/stakira/OpenUtau/pull/1755) - Stop rendering on project load - ([@atouu](https://github.com/atouu))
+- [#1782](https://github.com/stakira/OpenUtau/pull/1782) - Enlarge the “Waiting Rendering” - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1843](https://github.com/stakira/OpenUtau/pull/1843) - Update DML to 1.15.4 - ([@KakaruHayate](https://github.com/KakaruHayate))
 - [#1673](https://github.com/stakira/OpenUtau/pull/1673) - Fix broken link to ENUNU wiki page in README.md - ([@cedkim](https://github.com/cedkim))
 - [#1684](https://github.com/stakira/OpenUtau/pull/1684) - Install NSIS in github acitons - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
-- [#1689](https://github.com/stakira/OpenUtau/pull/1689) - Add text to the Singer Setup Dialog - ([@maiko3tattun](https://github.com/maiko3tattun))
--->
+- [#1705](https://github.com/stakira/OpenUtau/pull/1705) - Add a mention of .NET 8 to bug-report.yml - ([@AnAndroNerd](https://github.com/AnAndroNerd))
+- [#1812](https://github.com/stakira/OpenUtau/pull/1812) - support NNAPI for downstream(mobile) - ([@KakaruHayate](https://github.com/KakaruHayate))
 
 ***
 # ~[0.1.565](https://github.com/stakira/OpenUtau/releases/tag/0.1.565) (09-14-2025)
