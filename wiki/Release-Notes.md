@@ -24,8 +24,6 @@ gh pr list --state merged --repo stakira/OpenUtau --limit 1000 --json number,tit
 ### Feature Enhancements
 - [#1468](https://github.com/stakira/OpenUtau/pull/1468) - Allow assignment of an oto set to multiple colors - ([@maiko3tattun](https://github.com/maiko3tattun))
 - [#1540](https://github.com/stakira/OpenUtau/pull/1540) - Fix "Lyrics Replacement" and Improved "Edit Lyrics" - ([@maiko3tattun](https://github.com/maiko3tattun))
-- [#1625](https://github.com/stakira/OpenUtau/pull/1625) - Fix playhead resets to its initial position when using 'Do nothing' on pause. - ([@atouu](https://github.com/atouu))
-  - [#1806](https://github.com/stakira/OpenUtau/pull/1806) - Check if miniaudio is not paused before resetting currentTimeMs. - ([@atouu](https://github.com/atouu))
 - [#1635](https://github.com/stakira/OpenUtau/pull/1635) - Togglable expressions view - ([@atouu](https://github.com/atouu))
 - [#1638](https://github.com/stakira/OpenUtau/pull/1638) - Auto focus to the text field in dialogs - ([@arx-ein](https://github.com/arx-ein))
   - [#1748](https://github.com/stakira/OpenUtau/pull/1748) - Fix auto focused text field in dialogs not accepting keyboard inputs - ([@arx-ein](https://github.com/arx-ein))
@@ -43,6 +41,8 @@ gh pr list --state merged --repo stakira/OpenUtau --limit 1000 --json number,tit
 
 ## Bug Fixes
 - [#1613](https://github.com/stakira/OpenUtau/pull/1613) - Reload when singer's avatar is changed - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1625](https://github.com/stakira/OpenUtau/pull/1625) - Fix playhead resets to its initial position when using 'Do nothing' on pause. - ([@atouu](https://github.com/atouu))
+  - [#1806](https://github.com/stakira/OpenUtau/pull/1806) - Check if miniaudio is not paused before resetting currentTimeMs. - ([@atouu](https://github.com/atouu))
 - [#1626](https://github.com/stakira/OpenUtau/pull/1626) - Fix playhead moving when playing samples - ([@atouu](https://github.com/atouu))
 - [#1627](https://github.com/stakira/OpenUtau/pull/1627) - Fixes related to VOICEVOXRenderer. - ([@rokujyushi](https://github.com/rokujyushi))
 - [#1641](https://github.com/stakira/OpenUtau/pull/1641) - Fix tone generator crackling - ([@Kabinet0](https://github.com/Kabinet0))
