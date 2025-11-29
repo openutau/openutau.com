@@ -31,8 +31,8 @@ Please refer to the README.txt file for each character for credit information!
 ## How to install
 DL [VOICEVOX](https://voicevox.hiroshiba.jp/) with the whole editor.  
 DL the [VOICEVOX_Singer.zip](https://github.com/rokujyushi/OpenUtau/releases/tag/0.0.0.0) and 
-D&D it into the main window of OpemUtau.  
-Start OpemUtau while running VOICEVOX.
+D&D it into the main window of OpenUtau.  
+Start OpenUtau while running VOICEVOX.
 
 An engine-only dependency package will be created in the future. (This is just a plan)
 
