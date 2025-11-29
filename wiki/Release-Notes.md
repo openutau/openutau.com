@@ -14,7 +14,7 @@ gh pr list --state merged --repo stakira/OpenUtau --limit 1000 --json number,tit
 > **The ustx version is up. It cannot be opened with the previous OpenUtau.**
 ## Features
 ### New Features
-- Worldline-R2 renderer experimental version. Select it from the renderer dropdown menu in header tracker.
+- Worldline-R2 renderer test version 1. Select it from the renderer dropdown menu in header tracker.
 - [#1428](https://github.com/stakira/OpenUtau/pull/1428) - Microtonal tuning function and batch editing of randomization - ([@maiko3tattun](https://github.com/maiko3tattun))
 - [#1645](https://github.com/stakira/OpenUtau/pull/1645) - Add feature to merge vocal parts - ([@arx-ein](https://github.com/arx-ein))
 - [#1674](https://github.com/stakira/OpenUtau/pull/1674) - Add Commonnote Batch Edits - ([@AnAndroNerd](https://github.com/AnAndroNerd))
