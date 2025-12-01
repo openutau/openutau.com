@@ -10,17 +10,42 @@ gh pr list --state merged --repo stakira/OpenUtau --limit 1000 --json number,tit
 ## Misc
 -->
 
+# ~[0.1.567 Beta](https://github.com/stakira/OpenUtau/releases/tag/0.1.567) (11-29-2025)
+> **The ustx version is up. It cannot be opened with the previous OpenUtau.**
+## Features
+- [#1396](https://github.com/stakira/OpenUtau/pull/1396) - Add RandomizeTiming function to batch edit - ([@maiko3tattun](https://github.com/maiko3tattun))
+  - By combining it with tuning randomization, you can create doubling.
+- [#1805](https://github.com/stakira/OpenUtau/pull/1805) - Supprt Track Expressions, Import entire flags and Skip flag output when the value is default - ([@maiko3tattun](https://github.com/maiko3tattun))
+
+https://github.com/user-attachments/assets/b34de0f8-b4c4-4ff3-98d8-79409bbb7903
+- [#1815](https://github.com/stakira/OpenUtau/pull/1815) - Support dropping multiple files at once - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1821](https://github.com/stakira/OpenUtau/pull/1821) - Custom Theme Support - ([@AnAndroNerd](https://github.com/AnAndroNerd)) <img width="967" height="677" alt="image" src="https://github.com/user-attachments/assets/490c33f0-faa6-4fc5-aafb-3609fb17893d" />
+
+- [#1839](https://github.com/stakira/OpenUtau/pull/1839) - Support for ignoring auto-VCV during ust import - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#c71fdb6](https://github.com/stakira/OpenUtau/commit/c71fdb65a1d25521fcbdfbb108e51fb276c9159e) - Removes worldline-r2 for now ([@stakira](https://github.com/stakira))
+
+## Bug Fixes
+- [#1745](https://github.com/stakira/OpenUtau/pull/1745) - Translate the message displayed when SOME is not installed - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1834](https://github.com/stakira/OpenUtau/pull/1834) - Fix Rider errors - ([@AnAndroNerd](https://github.com/AnAndroNerd))
+- [#1845](https://github.com/stakira/OpenUtau/pull/1845) - Fix yaml timing entry overrides with new instance of the phonemizer - ([@Cadlaxa](https://github.com/Cadlaxa))
+- [#1846](https://github.com/stakira/OpenUtau/pull/1846) - Set PlayingMaster to false on PlayTestSound - ([@atouu](https://github.com/atouu))
+- [#1848](https://github.com/stakira/OpenUtau/pull/1848) - Fix Voice Color Remapping Bug - ([@maiko3tattun](https://github.com/maiko3tattun))
+
+
 # ~[0.1.566 Beta](https://github.com/stakira/OpenUtau/releases/tag/0.1.566) (11-28-2025)
 > **The ustx version is up. It cannot be opened with the previous OpenUtau.**
 ## Features
 ### New Features
-- Worldline-R2 renderer test version 1. Select it from the renderer dropdown menu in header tracker.
+- [#fb9e157](https://github.com/stakira/OpenUtau/commit/fb9e157d57327fe801eff7a044032379940ee895) - Worldline-R2 renderer test version 1. Select it from the renderer dropdown menu in header tracker. ([@stakira](https://github.com/stakira))
 - [#1428](https://github.com/stakira/OpenUtau/pull/1428) - Microtonal tuning function and batch editing of randomization - ([@maiko3tattun](https://github.com/maiko3tattun))
+
+https://github.com/user-attachments/assets/c21c6356-2350-4f74-8760-67cac776e728
 - [#1645](https://github.com/stakira/OpenUtau/pull/1645) - Add feature to merge vocal parts - ([@arx-ein](https://github.com/arx-ein))
 - [#1674](https://github.com/stakira/OpenUtau/pull/1674) - Add Commonnote Batch Edits - ([@AnAndroNerd](https://github.com/AnAndroNerd))
 - [#1678](https://github.com/stakira/OpenUtau/pull/1678) - Add new batch edit "Replace '-' with '+~'". - ([@AnAndroNerd](https://github.com/AnAndroNerd))
 - [#1778](https://github.com/stakira/OpenUtau/pull/1778) - Add OverwriteLinePitchTool  - ([@rokujyushi](https://github.com/rokujyushi))
 - [#1804](https://github.com/stakira/OpenUtau/pull/1804) - Ctrl+Shift+V to paste as plain notes - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+<img alt="image" src="https://github.com/user-attachments/assets/9e9225bc-c7d1-4ae6-8541-c6549920fa7a" />
 
 ### Feature Enhancements
 - [#1468](https://github.com/stakira/OpenUtau/pull/1468) - Allow assignment of an oto set to multiple colors - ([@maiko3tattun](https://github.com/maiko3tattun))
