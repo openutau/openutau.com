@@ -29,6 +29,9 @@ Please enjoy using VOICEVOX and abide by the Terms of Use!
 Please refer to the README.txt file for each character for credit information!
 
 ## How to install
+<img width="45%" height="45%" alt="image" src="https://github.com/user-attachments/assets/377f368d-fda8-45ef-9678-88479da8adea" />  
+
+Enable Install to Additional Singer Path.  
 DL [VOICEVOX](https://voicevox.hiroshiba.jp/) with the whole editor.  
 DL the [VOICEVOX_Singer.zip](https://github.com/rokujyushi/OpenUtau/releases/tag/0.0.0.0) and 
 D&D it into the main window of OpenUtau.  
