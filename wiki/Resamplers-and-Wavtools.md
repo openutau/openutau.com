@@ -67,7 +67,7 @@ If brew command is not found, please refer to this stackoverflow thread.
 [zsh command not found](https://stackoverflow.com/questions/36657321/after-installing-homebrew-i-get-zsh-command-not-found-brew?__cf_chl_tk=.6wS9HkMioqCJf.di8CXEP0K2TKwciAzq3ODvA_CU3w-1750637980-1.0.1.1-pQaU2.nsx7ketSxJpjiJsNezc8ZDdwWJoEBn4If8gVg)
 ```
     brew tap gcenx/wine
-    brew install –cask –no-quarantine wine-crossover
+    brew install --cask --no-quarantine wine-crossover
 ```
 After running these two commands your environment is set!
 
