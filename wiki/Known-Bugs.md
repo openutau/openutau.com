@@ -1,11 +1,4 @@
 # Known bugs
-### `WORLDLINE-R`: Crashes OpenUtau instance without error when invalid oto.ini entry or audio file encountered
-Other resamplers will throw an error dialog if unable to parse a note for these reasons, which should also happen for Worldline. 
->`Common case examples` 
-> - Unsupported file-type. _Supported types are WAV, FLAC, OGG. WAV files *must* be 16-bit, mono, 44100hz sample rate_
-> - Any oto.ini value outside of file length or with other validity errors such as formatting
-> - No space between `consonant` and  `cutoff`. _Note: Some resamplers will automatically amend this by forcibly reading the `consonant` value as -10ms or so of the `cutoff` when the values are detected as the same position_ 
-
 ### `WORLDLINE-R`: Audio distortion when changing gender factor curve's default value
 If the gender factor default value is set to a negative value, such as -15, the synthesized audio will get heavily distorted. This bug does not occur when the gender factor value is set to 0
 ![image](https://github.com/stakira/OpenUtau/assets/54425948/356f157a-cc3a-454a-bebd-6c2efb4a3ec7)
@@ -15,43 +8,8 @@ Related issue: [#756](https://github.com/stakira/OpenUtau/issues/756)
 ### `Mac OS`: Piano Roll window requires resizing before it will display
 ![image](https://github.com/user-attachments/assets/0616279c-a632-4bc6-b099-4a6d2edf7f85)
 
-### When trying to play a project, OpenUtau says "BadDeviceId calling waveOutOpen"
-
-```
-Failed to render
-BadDeviceId calling waveOutOpen
-
-NAudio.MmException: BadDeviceId calling waveOutOpen
-at NAudio.MmException.Try(MmResult result, String function)
-at NAudio.Wave.WaveOutEvent.Init(IWaveProvider waveProvider)
-at NAudio.Wave.WaveExtensionMethods.Init(IWavePlayer wavePlayer, ISampleProvider sampleProvider, Boolean convertTo16Bit)
-at OpenUtau.Audio.NAudioOutput.Init(ISampleProvider sampleProvider) in C:\projects\openutau\OpenUtau.Core\Audio\NAudioOutput.cs:line 52
-at OpenUtau.Core.PlaybackManager.StartPlayback(Double startMs, MasterAdapter masterAdapter) in C:\projects\openutau\OpenUtau.Core\PlaybackManager.cs:line 118
-at OpenUtau.Core.PlaybackManager.<>c__DisplayClass24_0.b__0() in C:\projects\openutau\OpenUtau.Core\PlaybackManager.cs:line 131
-
-0.1.529.0
-```
-
-Changing the output devices, such as plugging a headphone in, might temporarily fix this bug.
-
-Related issue: [#1133](https://github.com/stakira/OpenUtau/issues/1133) [#1382](https://github.com/stakira/OpenUtau/issues/1382)
-
 # Known bugs in stable version
 `These bugs are already solved in the latest beta version. If you encountered one of these bugs, you can solve it by upgrading to the latest beta version.`
-
-### CVVC phonemizers apply VCs erratically and/or cease to apply VCs when using voice colors/the CLR expression
-![image](https://i.imgur.com/ogwXCKJ.png)
-
-Related issue: [#1226](https://github.com/stakira/OpenUtau/issues/1226)  
-This bug will be solved in PR [#1468](https://github.com/stakira/OpenUtau/pull/1468) and [#1462](https://github.com/stakira/OpenUtau/pull/1462)
-
-### Changing the expression set will make the "Expressions" part of the "Note Properties" panel blank
-1. Create a new project. Add a new track. Add a new part. Open piano roll, and open the "Note Properties" panel
-2. In piano roll window, click the ⚙ icon at the button-left corner of the window, and add a new expression
-
-The "Expressions" part of the "Note Properties" panel will become blank. You need to close the piano roll window and reopen it.
-![image](https://github.com/user-attachments/assets/338b2fa9-ddff-4e84-901a-5e287b1d3382)
-Solved in PR [#1395](https://github.com/stakira/OpenUtau/pull/1395)
 
 ### Missing characters when typing in the lyrics editor or phoneme editor when using third-party Vietnamese IMEs (UniKey, EVKey, GoTiengViet, …)
 
@@ -79,3 +37,43 @@ Related issue: [AvaloniaUI/Avalonia#12446](https://github.com/AvaloniaUI/Avaloni
 ### __MACOSX folder causes issues when installing
 When a ZIP is made on a Mac, it creates a "__MACOSX" folder in the ZIP; this folder stores additional Metadata. Trying to install this ZIP with this folder will cause OpenUTAU to fail installing the Singer. MacOS automatically hides this folder from the user, making it impossible to delete, which means a user using OpenUTAU on a Mac can't install a singer from a ZIP file if it was made on another Mac.
 
+### When trying to play a project, OpenUtau says "BadDeviceId calling waveOutOpen"
+
+```
+Failed to render
+BadDeviceId calling waveOutOpen
+
+NAudio.MmException: BadDeviceId calling waveOutOpen
+at NAudio.MmException.Try(MmResult result, String function)
+at NAudio.Wave.WaveOutEvent.Init(IWaveProvider waveProvider)
+at NAudio.Wave.WaveExtensionMethods.Init(IWavePlayer wavePlayer, ISampleProvider sampleProvider, Boolean convertTo16Bit)
+at OpenUtau.Audio.NAudioOutput.Init(ISampleProvider sampleProvider) in C:\projects\openutau\OpenUtau.Core\Audio\NAudioOutput.cs:line 52
+at OpenUtau.Core.PlaybackManager.StartPlayback(Double startMs, MasterAdapter masterAdapter) in C:\projects\openutau\OpenUtau.Core\PlaybackManager.cs:line 118
+at OpenUtau.Core.PlaybackManager.<>c__DisplayClass24_0.b__0() in C:\projects\openutau\OpenUtau.Core\PlaybackManager.cs:line 131
+
+0.1.529.0
+```
+
+Changing the output devices, such as plugging a headphone in, might temporarily fix this bug.
+
+Related issue: [#1133](https://github.com/stakira/OpenUtau/issues/1133) [#1382](https://github.com/stakira/OpenUtau/issues/1382)
+
+***
+## Addressed Bugs
+
+> ### `WORLDLINE-R`: Crashes OpenUtau instance without error when invalid oto.ini entry or audio file encountered
+> Other resamplers will throw an error dialog if unable to parse a note for these reasons, which should also happen for Worldline. 
+
+Solved in PR [#1604](https://github.com/stakira/OpenUtau/pull/1604)
+
+> ### CVVC phonemizers apply VCs erratically and/or cease to apply VCs when using voice colors/the CLR expression
+
+Solved in PR [#1468](https://github.com/stakira/OpenUtau/pull/1468) and [#1462](https://github.com/stakira/OpenUtau/pull/1462)
+
+> ### Changing the expression set will make the "Expressions" part of the "Note Properties" panel blank
+> 1. Create a new project. Add a new track. Add a new part. Open piano roll, and open the "Note Properties" panel
+> 2. In piano roll window, click the ⚙ icon at the button-left corner of the window, and add a new expression
+
+> The "Expressions" part of the "Note Properties" panel will become blank. You need to close the piano roll window and reopen it.
+
+Solved in PR [#1395](https://github.com/stakira/OpenUtau/pull/1395)
