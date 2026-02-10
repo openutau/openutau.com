@@ -164,12 +164,14 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 | ------------ | ------------ | ------------ | ------------ |
 |  worldline  | StAkira  |   | Built into OpenUtau. Works on all platforms. |
 | [macres](https://github.com/titinko/macres/releases)   | titinko   | [macres.yaml]()  |
+|[straycat-rs.exe](https://github.com/UtaUtaUtau/straycat-rs/) | UtaUtaUtau | [straycat-rs.yaml](https://github.com/Cadlaxa/Resampler-Manifests/blob/main/Resampler%20Manifests/straycat-rs.yaml)  |
 
 ## Linux
 |  Resampler |  Author  |  Resample Manifest  |  Additional Notes |
 | ------------ | ------------ | ------------ | ------------ |
 |  worldline  | StAkira  |   | Built into OpenUtau. Works on all platforms. |
 | [macres](https://github.com/titinko/macres/releases)   | titinko   | [macres.yaml]()  |
+|[straycat-rs.exe](https://github.com/UtaUtaUtau/straycat-rs/) | UtaUtaUtau | [straycat-rs.yaml](https://github.com/Cadlaxa/Resampler-Manifests/blob/main/Resampler%20Manifests/straycat-rs.yaml)  |
 
 # Resampler Manifest
 A Resampler Manifest is a YAML file that manages expressions supported or unsupported by each resampler.  
