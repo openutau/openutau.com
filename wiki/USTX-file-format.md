@@ -111,7 +111,7 @@ Example:
       - {x: -158.65384, y: -32.46212, shape: io}
       - {x: 40, y: 0, shape: io}
       snap_first: true
-    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0, variance: 0, pitch_variance: 1, variance_freq: 1.4, variance_seed: 1234}
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions:
     - {index: 0, abbr: clr, value: 1}
     - {index: 1, abbr: clr, value: 2}
