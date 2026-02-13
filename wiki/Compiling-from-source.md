@@ -17,7 +17,7 @@ sudo pacman -S dotnet-sdk
 ```
 For other instructions see the link above.
 
-You will also neet Git.
+You will also need Git.
 [Windows](https://git-scm.com/download/win) | [Mac](https://git-scm.com/download/mac) | [Linux](https://git-scm.com/download/linux)
 
 ## Download source code
@@ -97,9 +97,9 @@ dotnet build OpenUtau
 The executable files will be in the directory `OpenUtau/OpenUtau/bin/Debug/net6.0`
 
 ## Building worldline
-Worldline is the c++ part of OpenUtau.
+Worldline is the C++ part of OpenUtau.
 1. Install Bazelisk
-2. In commond line, cd to cpp folder
+2. In the command line, `cd` to the `cpp` folder
 3. Run `bazelisk build //worldline` to build .dll on Windows, .dylib on macOS or .so on Linux.
 You can also run `bazelisk build //worldline:main` to build a executable version, though curve expressions won't be available.
 
@@ -107,8 +107,8 @@ Notes:
 - On Windows omits // in commands.
 - Recommends Visual Studio Code to leverage IntelliSense.
 - If Bazel ever freezes on Windows, open up Task Manager and kill the Java process.
-- bazelisk clean cleans up build cache.
-- bazelisk clean --expunge cleans up build cache and dependencies.
+- `bazelisk clean` cleans up build cache.
+- `bazelisk clean --expunge` cleans up build cache and dependencies.
 
 ### Debugging worldline in visual studio
 1. Build worldline with `bazelisk build worldline -c dbg`
