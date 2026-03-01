@@ -52,7 +52,7 @@ Let's look at an example oto.ini line from [Kasane Teto](https://kasaneteto.jp/u
 1. **Yellow line:** Offset, or left blank. The start of the phoneme.
 2. **Green line:** Overlap. Everything between the left blank and overlap will be blended with the previous note.
 3. **Red line:** Preutterance. The start of the musical note.
-4. **Blue line:** Fixed region. Everything before this line will not be looped/stretched.
+4. **Blue line:** Fixed region, or consonant. Everything before this line will not be looped/stretched.
 5. **White line:** Cutoff, or right blank. The end of the phoneme. Everything between the fixed region and cutoff will be looped/stretched.
 
 See also: [Anatomy of the OTO](https://utaforum.net/resources/anatomy-of-the-oto.321/) on UtaForum.
@@ -107,4 +107,4 @@ While both are viable options, DiffSinger is recommended as it's higher quality 
 - [ENUNU training kit](https://github.com/oatsu-gh/enunu_training_kit)
 
 ## Additional resources
-- [wastelandutau's "Creating Your First Voicebank" written walkthrough](https://wastelandutau.neocities.org/ref/resources#tut)
+- [wastelandutau's "Creating Your First Voicebank" written walkthrough](https://utau.felinewasteland.com/ref/resources#tut)
