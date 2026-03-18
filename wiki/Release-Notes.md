@@ -10,6 +10,47 @@ gh pr list --state merged --repo stakira/OpenUtau --limit 1000 --json number,tit
 ## Misc
 -->
 
+# ~[0.1.568 Beta](https://github.com/stakira/OpenUtau/releases/tag/0.1.568) (03-16-2026)
+> **The ustx version is up. It cannot be opened with the previous OpenUtau.**
+## Features
+- [#1870](https://github.com/stakira/OpenUtau/pull/1870) - Add feature to split vocal part at playhead cursor - ([@arx-ein](https://github.com/arx-ein))
+- [#1888](https://github.com/stakira/OpenUtau/pull/1888) - Add Theme Editor - ([@atouu](https://github.com/atouu))
+- [#1905](https://github.com/stakira/OpenUtau/pull/1905) - Add Curve Tools and Curve Selection/Copy/Paste - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1910](https://github.com/stakira/OpenUtau/pull/1910) - Make Piano Roll Attachable to MainWindow - ([@atouu](https://github.com/atouu))
+  - [#1941](https://github.com/stakira/OpenUtau/pull/1941) - PianoRoll Enhancements - ([@atouu](https://github.com/atouu))
+- [#1968](https://github.com/stakira/OpenUtau/pull/1968) - Trim and fade for the wave part - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1987](https://github.com/stakira/OpenUtau/pull/1987) - Smooth Pitch Shape - ([@maiko3tattun](https://github.com/maiko3tattun))
+
+### Feature Enhancements
+- [#1902](https://github.com/stakira/OpenUtau/pull/1902) - Resposive Track Header - ([@atouu](https://github.com/atouu))
+- [#1940](https://github.com/stakira/OpenUtau/pull/1940) - Disable the menu when undo is not possible / Display the command name (take2) - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1944](https://github.com/stakira/OpenUtau/pull/1944) - Loading external batch edits - ([@AnAndroNerd](https://github.com/AnAndroNerd))
+- [#1993](https://github.com/stakira/OpenUtau/pull/1993) - Enhanced Pitch Line Drawing Tool (Supports Sine Waves/S-Curves) - ([@rokujyushi](https://github.com/rokujyushi))
+- [#2000](https://github.com/stakira/OpenUtau/pull/2000) - [Transcribe] Refactor and unify APIs, add GAME algorithm and long chunk detection - ([@yqzhishen](https://github.com/yqzhishen))
+- [#2004](https://github.com/stakira/OpenUtau/pull/2004) - [Transcribe] RMVPE support - ([@emeraldsingers](https://github.com/emeraldsingers))
+- [#1947](https://github.com/stakira/OpenUtau/pull/1947) - simple package manager - ([@stakira](https://github.com/stakira))
+
+## Bug Fixes
+- [#1855](https://github.com/stakira/OpenUtau/pull/1855) - Fix: load consonants from YAML file - ([@Cadlaxa](https://github.com/Cadlaxa))
+- [#1864](https://github.com/stakira/OpenUtau/pull/1864) - Ust Import Enhancement - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1914](https://github.com/stakira/OpenUtau/pull/1914) - Replace backslash with slash in archive entry keys when installing singer. - ([@atouu](https://github.com/atouu))
+- [#1919](https://github.com/stakira/OpenUtau/pull/1919) - Fix error phoneme pitch - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1920](https://github.com/stakira/OpenUtau/pull/1920) - Fix key event issues - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1929](https://github.com/stakira/OpenUtau/pull/1929) - Make plugin async and fix plugin when shell is use - ([@atouu](https://github.com/atouu))
+- [#1930](https://github.com/stakira/OpenUtau/pull/1930) - Fix Worldline crashes for some Windows machines - ([@atouu](https://github.com/atouu))
+- [#1935](https://github.com/stakira/OpenUtau/pull/1935) - Fix track expsressions duplicate bug - ([@maiko3tattun](https://github.com/maiko3tattun))
+- [#1872](https://github.com/stakira/OpenUtau/pull/1872) - fix(coreml): w/a fallback to EnableOnSubgraphs=0 on exception - ([@fumiama](https://github.com/fumiama))
+- [#2009](https://github.com/stakira/OpenUtau/pull/2009) - CoreML fixes - ([@AnAndroNerd](https://github.com/AnAndroNerd))
+
+## Misc
+- [#1861](https://github.com/stakira/OpenUtau/pull/1861) - feat(onnx): only show gpu selection on dml runner - ([@fumiama](https://github.com/fumiama))
+- [#1876](https://github.com/stakira/OpenUtau/pull/1876) - Update macOS x64 runner version in github actions workflow - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
+- [#1928](https://github.com/stakira/OpenUtau/pull/1928) - Set InvokeAsync priority to background in ProgressBarNotification - ([@atouu](https://github.com/atouu))
+- [#1937](https://github.com/stakira/OpenUtau/pull/1937) - Add Worldline Build Workflow - ([@atouu](https://github.com/atouu))
+- [#1938](https://github.com/stakira/OpenUtau/pull/1938) - Rebuild Worldline - ([@app/github-actions](https://github.com/app/github-actions))
+- [#1942](https://github.com/stakira/OpenUtau/pull/1942) - Exempt Feature Requests - ([@BagelHero](https://github.com/BagelHero))
+
+
 # ~[0.1.567 Beta](https://github.com/stakira/OpenUtau/releases/tag/0.1.567) (11-29-2025)
 > **The ustx version is up. It cannot be opened with the previous OpenUtau.**
 ## Features
