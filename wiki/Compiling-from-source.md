@@ -126,3 +126,9 @@ Notes:
 You can find the author and branch name in the pull request on github, which usually have a line with the format author:branch just below the pull request title
 
 After testing, you can switch back to your branch and pop/apply your stashed changes through visual studio (menu -> view -> git changes), or you can type `git checkout {branch}` to switch branches and `git stash pop` to pop stashed changes
+
+## Developer Documentation
+[DeepWiki](https://deepwiki.com/stakira/OpenUtau/1-overview)  
+
+**DeepWiki is not automatically updated, so please update it yourself as needed.**
+
