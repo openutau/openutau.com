@@ -20,7 +20,10 @@ Click on the tempo or time signature in the top left corner to edit it.
 Time signatures can have any positive whole number on top, and any power of 2 on the bottom.  
 Tempos can be any number, including decimals.  
 
-You can also change the tempo and time signature by right-clicking the bar/measure labels.
+You can also add a tempo and time signature change by right-clicking the bar/measure labels.  
+
+Unlike changing at the Top Left, which will change the tempo/time sign for the entire project,  
+This method changes only the tempo/time sign from the point you have right-clicked. 
 
 ![tempo and timesig change](https://i.imgur.com/jxjnW1O.gif)
 
