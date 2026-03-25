@@ -6,10 +6,11 @@ For installing the OpenUtau Editor, voicebanks, and resampler, please see the [I
 
 ## Projects
 ### Creating projects
-When you start OpenUtau, you have a new, blank project.  
-You can also start a new project from **File > New**.
+When you start OpenUtau, you will see a blank start screen.
 
-![new project](https://i.imgur.com/td8Imgw.png)
+You can start by clicking the "New" on the Top Left and creating a blank project.
+
+![new project](https://i.imgur.com/CO1whEG.png)
 
 #### Tempo and Time Signature
 Click on the tempo or time signature in the top left corner to edit it.
