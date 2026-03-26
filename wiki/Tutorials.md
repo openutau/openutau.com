@@ -2,7 +2,8 @@ This page is open to edit by anyone in the community. Feel free to add your tuto
 
 # Basics
 ### Installation and basic usage
-See our [Getting Started](Getting-Started) page for instructions to download, install, and start using OpenUtau.
+See our [Install](Install) page for instructions to download and install OpenUtau.  
+See our [Getting Started](Getting-Started) page for basic usage and control guides.
 
 ### Introduction
 
