@@ -53,7 +53,10 @@ For unsaved projects, backups are saved in the “Backups” folder within the d
 If the program crashed or was force-closed previously, a project recovery dialog will appear upon the next startup, allowing you to restore the previous state.
 
 ### Exporting audio
-After saving the project, use **File > Export Audio > Export wav Files** to render all tracks as separate `.wav` files. The files will be saved in an Export folder next to the original `.ustx` file. 
+After saving the project, use **File > Export Audio > Export wav Files** to render all tracks as separate `.wav` files.  
+You can also save all of the tracks mixed to a single `.wav` file via **Mixdown To Wav File**.  
+
+The files will be saved in an Export folder next to the original `.ustx` file. 
 
 ## Tracks
 ### Creating tracks
