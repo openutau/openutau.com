@@ -111,7 +111,8 @@ To scroll horizontally, you can hold shift and scroll, or hover your cursor over
 
 ![hori scroll](https://i.imgur.com/3UH3Kt6.gif)
 
-To zoom horizontally, hover your cursor over the bar/measure labels and scroll.
+To zoom horizontally, hover your cursor over the bar/measure labels and scroll.  
+You can also use 'Ctrl + scroll' instead.
 
 ![hori zoom](https://i.imgur.com/yOTVNEi.gif)
 
