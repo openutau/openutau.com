@@ -14,15 +14,30 @@ gh pr list --state merged --repo stakira/OpenUtau --limit 1000 --json number,tit
 > **The ustx version is up. It cannot be opened with the previous OpenUtau.**
 ## Features
 - [#1870](https://github.com/stakira/OpenUtau/pull/1870) - Add feature to split vocal part at playhead cursor - ([@arx-ein](https://github.com/arx-ein))
+
+  https://private-user-images.githubusercontent.com/29670169/523278795-73b5ffc8-40ea-4393-b16a-279cd997dd44.mp4?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzQ2ODc2NzEsIm5iZiI6MTc3NDY4NzM3MSwicGF0aCI6Ii8yOTY3MDE2OS81MjMyNzg3OTUtNzNiNWZmYzgtNDBlYS00MzkzLWIxNmEtMjc5Y2Q5OTdkZDQ0Lm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjAzMjglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwMzI4VDA4NDI1MVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWZiMWUwYmZmOGQ3ODNhYjVhNzhhMzRiY2IyY2NjN2NlOGY1NDg4MGYzNWM4NTU0YTg3ZTEyODgzZmU4N2YwZTgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.LaCDOQYqfqbrDn8qWXFsdfgPzwFQFRi8tT6LWcerd08
+
 - [#1888](https://github.com/stakira/OpenUtau/pull/1888) - Add Theme Editor - ([@atouu](https://github.com/atouu))
-- [#1905](https://github.com/stakira/OpenUtau/pull/1905) - Add Curve Tools and Curve Selection/Copy/Paste - ([@maiko3tattun](https://github.com/maiko3tattun))
+
+  https://private-user-images.githubusercontent.com/67765922/529491503-ad67c9e5-43c7-446e-b9b6-2ed3f305fef2.mp4?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzQ2ODc3MTksIm5iZiI6MTc3NDY4NzQxOSwicGF0aCI6Ii82Nzc2NTkyMi81Mjk0OTE1MDMtYWQ2N2M5ZTUtNDNjNy00NDZlLWI5YjYtMmVkM2YzMDVmZWYyLm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjAzMjglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwMzI4VDA4NDMzOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWE1M2MzYzY2MGIxMzM4Yjg5ODhjNjY0NmIyNmJhNjJhMmQ3YTlhZjRlYWUyNDVkOGU0NTJhZDA4MWI5MWM1ODUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.Op3qGo50ZXW7loaXMNAQ9_egvI1v9BxdU5RltQOpyWs
+
+- [#1905](https://github.com/stakira/OpenUtau/pull/1905) - Add Curve Tools and Curve Selection/Copy/Paste - ([@maiko3tattun](https://github.com/maiko3tattun))  
+  <img width="584" height="162" alt="image" src="https://github.com/user-attachments/assets/9ff2f94e-f68d-4a87-864b-9478c2fd5c3d" />
+
 - [#1910](https://github.com/stakira/OpenUtau/pull/1910) - Make Piano Roll Attachable to MainWindow - ([@atouu](https://github.com/atouu))
   - [#1941](https://github.com/stakira/OpenUtau/pull/1941) - PianoRoll Enhancements - ([@atouu](https://github.com/atouu))
-- [#1968](https://github.com/stakira/OpenUtau/pull/1968) - Trim and fade for the wave part - ([@maiko3tattun](https://github.com/maiko3tattun))
+
+  https://private-user-images.githubusercontent.com/67765922/532454721-72e31930-841d-4420-a327-665f1ef2e73d.mp4?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzQ2ODc3MjAsIm5iZiI6MTc3NDY4NzQyMCwicGF0aCI6Ii82Nzc2NTkyMi81MzI0NTQ3MjEtNzJlMzE5MzAtODQxZC00NDIwLWEzMjctNjY1ZjFlZjJlNzNkLm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjAzMjglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwMzI4VDA4NDM0MFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTI0YWNjNTI0MjViYmM5OWIxMzU4MDAxMmNiNWFhMTNkYTI5MzJjYzdjMWY4NGFiNjdiNDQ2ZjAzMGUwMmI0OGMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.A1AwGR4I9zk2omtpBhYr3p4q-Go_lcjE4AERrWxGw6c
+
+- [#1968](https://github.com/stakira/OpenUtau/pull/1968) - Trim and fade for the wave part - ([@maiko3tattun](https://github.com/maiko3tattun))  
+  <img width="854" height="314" alt="image" src="https://github.com/user-attachments/assets/c269d234-6bdd-47cf-b198-282c037e7a32" />
+
 - [#1987](https://github.com/stakira/OpenUtau/pull/1987) - Smooth Pitch Shape - ([@maiko3tattun](https://github.com/maiko3tattun))
 
+  https://private-user-images.githubusercontent.com/130257355/556271138-f4d08a88-f3f8-42b2-a97f-8a32fbc41fca.mp4?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzQ2ODc3MjEsIm5iZiI6MTc3NDY4NzQyMSwicGF0aCI6Ii8xMzAyNTczNTUvNTU2MjcxMTM4LWY0ZDA4YTg4LWYzZjgtNDJiMi1hOTdmLThhMzJmYmM0MWZjYS5tcDQ_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMzI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDMyOFQwODQzNDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jMzdmZDA3NDJjMzY5OGU2NjI4ZjkyODMyMjFiYTY5Y2UyN2VkMzZlMjA2OWM4NzE3NTg0OGFlYzQ3MzEyNGMwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.fyw6jOYIBM-iAb78wEfJ5Wr1R66z810u3i-wENxGC5Y
+
 ### Feature Enhancements
-- [#1902](https://github.com/stakira/OpenUtau/pull/1902) - Resposive Track Header - ([@atouu](https://github.com/atouu))
+- [#1902](https://github.com/stakira/OpenUtau/pull/1902) - Responsive Track Header - ([@atouu](https://github.com/atouu))
 - [#1940](https://github.com/stakira/OpenUtau/pull/1940) - Disable the menu when undo is not possible / Display the command name (take2) - ([@maiko3tattun](https://github.com/maiko3tattun))
 - [#1944](https://github.com/stakira/OpenUtau/pull/1944) - Loading external batch edits - ([@AnAndroNerd](https://github.com/AnAndroNerd))
 - [#1993](https://github.com/stakira/OpenUtau/pull/1993) - Enhanced Pitch Line Drawing Tool (Supports Sine Waves/S-Curves) - ([@rokujyushi](https://github.com/rokujyushi))
