@@ -3,7 +3,7 @@
 
 - Version list of ENUNU for OpenUtau (Click here to download)
   - Official [ENUNU for OpenUtau](https://github.com/stakira/ENUNU/releases) (ENUNU-0.4.0)
-  - Unofficial [ENUNUServer](https://github.com/rokujyushi/ENUNU/releases) (ENUNU-0.6.0 ...)
+  - Unofficial [ENUNUServer](https://github.com/rokujyushi/ENUNU/releases) (ENUNU-1.0.0 ...)
   - Unofficial [SimpleENUNUServer](https://github.com/rokujyushi/SimpleEnunu/releases) (SimpleEnunuServer-0.5.0 ...)
 
 ## What is ENUNU/NNSVS?
