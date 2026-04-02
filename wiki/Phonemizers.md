@@ -6,6 +6,15 @@ In order to change the phonemizer, click DEFAULT on the vocal track and choose t
 
 ![phonemizer](https://i.imgur.com/mBf2VOY.png)
 
+## *How does VCV/CVVC/VCCV/etc. work?
+- VCV and CVVC voicebanks, also known as "continuous sound" or 連続音 (*renzokuon*), use natural transitions between notes to smoothly blend sounds together during rendering. The standard method to organize these sounds is to directly type sound aliases from the `oto.ini` file into notes. Effectively, this is like hand-picking samples from the voicebank and connecting them together manually.  
+If this style is preferred, it can be utilized via the "Default" phonemizer in OpenUtau.
+- OpenUtau offers special phonemizers for many languages to handle aliases from VCV or CVVC banks automatically. Phonemizers emulate old UTAU plugins, such as presamp or AutoCVVC, with different advantages:  
+    1. Phonemizers operate in realtime while editing lyrics.
+    2. Results from phonemizers are displayed intuitively in the envelope editor below the notes.  
+    3. In the envelope editor, the timing of the sound can be easily adjusted.  
+- Not all voicebanks will play nicely with OpenUtau. Some banks have specific quirks that the phonemizer cannot use, and OpenUtau does not support every type of voicebank in every language.
+
 ## DEFAULT
 No phonemization is applied.
 You can input `+` to extend the previous lyric over multiple notes.  
