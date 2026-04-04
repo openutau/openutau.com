@@ -173,6 +173,9 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 | [macres](https://github.com/titinko/macres/releases)   | titinko   | [macres.yaml]()  |
 |[straycat-rs.exe](https://github.com/UtaUtaUtau/straycat-rs/) | UtaUtaUtau | [straycat-rs.yaml](https://github.com/Cadlaxa/Resampler-Manifests/blob/main/Resampler%20Manifests/straycat-rs.yaml)  |
 
+## Using multiple resamplers:
+Move to [the flags section of this wiki](https://github.com/stakira/OpenUtau/wiki/Expressions-(Flags)#eng-resampler-engine) for more information.
+
 # Resampler Manifest
 A Resampler Manifest is a YAML file that manages expressions supported or unsupported by each resampler.  
 The Resampler Manifest primarily serves two purposes:
