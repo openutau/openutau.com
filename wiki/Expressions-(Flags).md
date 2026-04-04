@@ -50,17 +50,19 @@ This lowers the volume of the rest of the note/phoneme.
 ![dec](https://i.imgur.com/MNU1Bws.gif)
 
 #### ENG (Resampler Engine)
-Selects resampler engine used to render this phoneme. If value is "", the engine selected in either project or track Preferences is used.  
+Selects the resampler engine used to render a phoneme. When set to "", it falls back to the choice set in the project's default settings, unless individual track preferences are used.  
 ![eng-setting](https://i.imgur.com/Fm2fZZ2.png)  
 You can have multiple resamplers loaded into your project properties as shown, selectable by a toggle menu.
 
 ![resampler-select](https://github.com/user-attachments/assets/7b6a345e-be5d-400c-85d3-e1e8509a4efe)  
 
-To add more resamplers, write the filename after the first comma.  
+To add more resamplers, write the filename into the options field after the first comma.  
 Use the filename exactly as written: typing `moresampler, resampler` etc. will not work.
 
 The example above is written like this:  
-`,moresampler.exe,doppeltler64.exe,resampler.exe,straycat-rs.exe,TIPS.exe,tn_fnds.exe`
+`,moresampler.exe,doppeltler64.exe,resampler.exe,straycat-rs.exe,TIPS.exe,tn_fnds.exe`  
+If a resampler is in a subfolder, it needs to be called with the subfolder path:  
+`,subfolder\resampler.exe`
 
 #### MOD (modulation)
 This determines how much the pitch is flattened from the original recording. By default this is 0, or completely flat.  
