@@ -1,6 +1,7 @@
 # Overview
 Dependencies for extending features such as Transcribe and the DiffSinger vocoder available in OpenUtau  
-### **Please review the terms of use for each dependency before using it.**
+### **Please review the terms of use for each dependency before using it.**  
+Please install the dependency files either through the Packages window or by downloading the files from each release and installing them.
 
 # Transcribe
 * [SOME](https://github.com/xunmengshe/OpenUtau/releases/tag/0.0.0.0)
@@ -15,3 +16,10 @@ Dependencies for extending features such as Transcribe and the DiffSinger vocode
 * [kouon_nsf-hifigan_1031](https://github.com/Kouon-Project/Kouon_Vocoder/releases/tag/V2.0.0)
 * [HiFiPLN v1](https://utau.pl/vocoders/hifipln-v1/)
 * [HiFiPLN v2](https://utau.pl/vocoders/hifipln-v2/)
+
+# External batch
+* [convel-batch-edit.dll](https://github.com/AnAndroNerd/Small-VCCV-Changes/releases/tag/dll)
+
+# For Developers
+When creating dependency files, please register the package information in [svs-index](https://openutau.github.io/svs-index/).  
+You can install external dependency files using the package manager included in OpenUtau.
