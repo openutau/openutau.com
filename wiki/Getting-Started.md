@@ -1,4 +1,44 @@
-## About OpenUtau
+「月の下で (Under the Moon)」
+(Aメロ / Verso 1)
+君を見た瞬間　時間が止まった
+何も言わなくても　心が分かった
+あの日からずっと　変わってしまった
+この世界全部が　君で染まった
+(Bメロ / Pre-coro)
+眠れない夜に　君を思い出す
+Even when you're not here, I feel you close to me
+(サビ / Coro)
+月の下で　君を描いてる
+I just can't forget your smile
+ねえ君も　同じ気持ち？
+Without you, everything feels so empty
+夢の中で　また会えるなら
+I'll find you again, no matter where you are
+(Aメロ / Verso 2)
+静かな街に　言えない想い
+君の名前が　頭から離れない
+忘れようとしても　また戻る
+こんな気持ち　君だけなんだ
+(Bメロ / Pre-coro)
+眠れない夜に　君を思い出す
+I keep calling your name into the night
+(サビ / Coro)
+月の下で　君を描いてる
+I just can't forget your smile
+ねえ君も　同じ気持ち？
+Without you, everything feels so empty
+夢の中で　また会えるなら
+I'll find you again, no matter where you are
+(ブリッジ / Puente)
+Maybe someday I will be alright
+でも今はまだ　君が消えない
+If I see you again
+I won't let you go
+(ラストサビ / Coro final)
+月の下で　君を呼んでる
+Can you hear me in the dark?
+もし君が　気づいてくれたら
+Come back to me… don’t say goodbye## About OpenUtau
 Please see [Tutorials](Tutorials) for an overview of OpenUtau and how it differs from conventional UTAU.
 
 ## Install
