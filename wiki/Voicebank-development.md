@@ -21,7 +21,7 @@ Firstly, find a reclist suitable for your language. A reclist is a text file tha
 | JA VCV & CVVC | [Japanese reclists](https://wastelandutau.neocities.org/jp/overview) |
 | ZH CVVC | [Hr.J Chinese CVVC](https://utaujc.jimdofree.com/hr-j-cvvc/) by haru |
 | EN ARPA | [ARPAsing Reclist Directory](https://arpasing.tubs.wtf/en/directories/reclists) |
-| EN XSAMPA | [Delta-style English reclists](https://tl.tubs.wtf/2020/11/09/delta-eng)<br>[Salem-Style English CVVC](https://wastelandutau.neocities.org/en/overview)<br>[GrayGlish](https://assbackwardsp.wixsite.com/utaubackwards/reclists) |
+| EN XSAMPA | [Delta-style English reclists](https://tl.tubs.wtf/2020/11/09/delta-eng)<br>[Salem-Style English CVVC](https://utau.felinewasteland.com/en/overview)<br>[GrayGlish](https://assbackwardsp.wixsite.com/utaubackwards/reclists) |
 | EN VCCV | [Core American English VCCV](https://www.mediafire.com/download/wef9lg11dmccxqx/CORE_American_English_VCCV.zip) by PaintedCz |
 * English recorded with any of these methods have various pros and cons. You may want to try recording a language with a smaller set of vowels first, or recording and training [an AI voicebank](#machine-learning-voicebank-development) for DiffSinger.
 
