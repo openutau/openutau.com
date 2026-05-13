@@ -9,7 +9,7 @@
 ## What is ENUNU/NNSVS?
 NNSVS (Neural Network-based Singing Voice Synthesis) is an open source AI singing voice synthesis engine which allows users to make their own voicebank with their singing voice.
 
-ENUNU is the mostly-used distro of NNSVS. In current community dissucions, "ENUNU" can be considered a synonym for "NNSVS".
+ENUNU is the mostly-used distro of NNSVS. In current community discussions, "ENUNU" can be considered a synonym for "NNSVS".
 
 ## How to use
 Download the suitable ENUNU server version according to the voicebank you want to use. Unzip it.
