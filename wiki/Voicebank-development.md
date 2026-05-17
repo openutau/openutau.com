@@ -13,8 +13,13 @@ To make a UTAU voicebank, you need to record all the syllables in a language and
 - For each concatenate unit, the **resampler** loads the corresponding sample from the voicebank, change the duration and pitch of the sample, and apply flags to them.
 - The **wavtool** joins all the audio slices produced by resampler together and output the final audio.
 
+### First time making UTAU voicebank
+If you've never made any utau voicebanks before, it's highly recommended to follow this step by step tutorial to understand the basic process.
+
+[wastelandutau's "Creating Your First Voicebank" written walkthrough](https://utau.felinewasteland.com/ref/firstvb)
+
 ### Recording
-Firstly, find a reclist suitable for your language. A reclist is a text file that has all syllables or phonemes and their combinations in a language. Here are some publicly available reclists:
+Find a recording list suitable for your language. A reclist is a text file that has all syllables or phonemes and their combinations in a language. Here are some publicly available reclists:
 
 | Phonemizer | Reclist |
 |-|-|
@@ -105,6 +110,3 @@ While both are viable options, DiffSinger is recommended as it's higher quality 
 
 [ENUNU](https://github.com/oatsu-gh/Enunu)
 - [ENUNU training kit](https://github.com/oatsu-gh/enunu_training_kit)
-
-## Additional resources
-- [wastelandutau's "Creating Your First Voicebank" written walkthrough](https://utau.felinewasteland.com/ref/resources#tut)
