@@ -33,7 +33,7 @@ Please refer to the README.txt file for each character for credit information!
 
 Enable Install to Additional Singer Path.  
 DL [VOICEVOX](https://voicevox.hiroshiba.jp/) with the whole editor.  
-DL the [VOICEVOX_Singer.zip](https://github.com/rokujyushi/OpenUtau/releases/tag/0.0.0.0) and 
+DL the [VOICEVOX_Singer.zip](https://github.com/rokujyushi/OpenUtau/releases/tag/999.999.999.999.999) and 
 D&D it into the main window of OpenUtau.  
 Start OpenUtau while running VOICEVOX.
 
