@@ -42,3 +42,4 @@ Welcome to the OpenUtau wiki!
 * [[ [PROPOSAL] svs.io ‐ singing voice synthesis backend API]]
 * [[tech note ‐ music is music, phonetics is phonetics (also why you don't need legacy plugins)]]
 * [[Known Bugs]]
+* [Fork OpenUtau and develop a new editor](https://github.com/openutau/OpenUtau/wiki/Fork-OpenUtau-and-develop-a-new-editor.)
