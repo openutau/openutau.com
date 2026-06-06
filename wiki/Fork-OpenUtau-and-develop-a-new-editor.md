@@ -4,11 +4,11 @@ This page describes the minimum set of changes required when forking OpenUtau an
 
 Several OpenUtau-based editors have recently been released without modifying application identifiers, installer settings, update sources, or configuration storage locations. As a result, users have encountered issues such as:
 
-OpenUtau settings being overwritten by a forked editor
-OpenUtau becoming unable to start due to incompatible configuration files
-Installation and uninstallation information being overwritten
-File associations being unexpectedly changed
-Forked editors updating from the official OpenUtau release channel
+* OpenUtau settings being overwritten by a forked editor
+* OpenUtau becoming unable to start due to incompatible configuration files
+* Installation and uninstallation information being overwritten
+* File associations being unexpectedly changed
+* Forked editors updating from the official OpenUtau release channel
 
 The purpose of this document is to help developers avoid these conflicts and ensure that forked editors can coexist safely with the official OpenUtau installation.
 
@@ -16,9 +16,9 @@ This page focuses on identifying the locations that should be reviewed and modif
 
 This document assumes the following coexistence model:
 
-Voicebanks may be shared with OpenUtau.
-External tools and dependencies may be shared with OpenUtau.
-User preferences, application settings, installer identifiers, and update channels must not be shared with OpenUtau.
+* Voicebanks may be shared with OpenUtau.
+* External tools and dependencies may be shared with OpenUtau.
+* User preferences, application settings, installer identifiers, and update channels must not be shared with OpenUtau.
 
 Following the recommendations in this document helps prevent user environment corruption and reduces support issues caused by conflicts between OpenUtau and forked editors.
 
