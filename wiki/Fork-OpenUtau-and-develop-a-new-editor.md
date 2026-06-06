@@ -25,21 +25,20 @@ Following the recommendations in this document helps prevent user environment co
 # Modification Procedures
 
 ## Modification List
-Category | Modification Target | Priority | Reason
--- | -- | -- | --
-Settings Storage | PrefsFilePath in PathManager.cs | Mandatory | To prevent corruption and startup failure caused by sharing configuration files
-Installer Product Name | PRODUCT_NAME in OpenUtau.nsi | Mandatory | To prevent overwriting uninstallation information
-Uninstall Key | PRODUCT_UNINST_KEY | Mandatory | To prevent Windows Registry conflicts
-Installation Directory | InstallDir "$PROGRAMFILES64\OpenUtau" | Mandatory | To prevent overwriting the original application's installation directory
-Shortcut Name | OpenUtau.lnk | Mandatory | To prevent overwriting Start Menu / Desktop shortcuts
-Executable Reference | OpenUtau.exe | Mandatory | To prevent launching the wrong application
-Updater | UpdaterViewModel.cs | Mandatory | To prevent risks of updating to the original version by referencing original GitHub Releases
-.ustx Association | HKCR ".ustx" / OpenUtauFile | Recommended | If not changed, it will hijack the original's file association. Not mandatory as users can change it later
-USTX Version | kUstxVersion in USTx.cs | Conditionally Recommended | Only needs modification if the USTX format itself is customized
-File Picker Filter | Patterns in FilePicker.cs | Conditionally Recommended | Only needs modification if handling unique extensions or formats
-GitHub / Web Links | Wiki / WebSite URL | Recommended | To avoid misleading users to the original project's information
-Crowdin workflow | .github/workflows/crowdin.yml | Recommended | To prevent malfunctions in translation synchronization and bot settings
-Translation Sync Script | Misc/sync_strings.py | Recommended | Change if managing translation assets independently
-Splash Window | Logos and icons in SplashWindow.axaml | Recommended | For visual distinction from the original version
-Icon | open-utau.ico | Recommended | For visual distinction from the original version
-App Display Name | Assembly Name in OpenUtau.csproj etc. | Recommended | To ensure users do not mistake it for the original version
+Category | Target for Change | Main Files to Change | Priority | Reason
+-- | -- | -- | -- | --
+Settings Save Location | PrefsFilePath | OpenUtau.Core/Util/PathManager.cs | Required | To prevent corruption and startup failure caused by sharing the same settings file.
+Installer Product Name | PRODUCT_NAME | OpenUtau.nsi | Required | To prevent overwriting uninstallation information.
+Uninstall Key | PRODUCT_UNINST_KEY | OpenUtau.nsi | Required | To prevent Windows Registry conflicts.
+Installation Path | InstallDir "$PROGRAMFILES64\OpenUtau" | OpenUtau.nsi | Required | To prevent overwriting the original version's installation directory.
+Shortcut Name | OpenUtau.lnk | OpenUtau.nsi | Required | To prevent overwriting the Start Menu and Desktop shortcuts.
+Executable Name | OpenUtau.exe | OpenUtau.nsi, OpenUtau/OpenUtau.csproj | Required | To prevent the installer and shortcuts from referencing the wrong executable file. To ensure users do not mistake it for the original version.
+Updater | GitHub Release Repository | OpenUtau/ViewModels/UpdaterViewModel.cs | Required | To avoid the risk of users updating to the original version by referencing the original GitHub Releases.
+.ustx Association | HKCR ".ustx" / OpenUtauFile | OpenUtau.nsi | Recommended | If not changed, it will take over the original version's file association. However, this is not mandatory as users can change it later.
+USTX Version | kUstxVersion | OpenUtau.Core/Format/USTx.cs | Recommended (Conditional) | Targeted for change only if the USTX format is uniquely modified.
+File Selection Filter | Patterns | OpenUtau/FilePicker.cs | Recommended (Conditional) | Targeted for change only if handling unique extensions or formats.
+GitHub / Web Links | Wiki / Website URL | OpenUtau/Views/MainWindow.axaml.cs | Recommended | To avoid misleading users to the original version's information.
+Crowdin workflow | Crowdin Project / Token | .github/workflows/crowdin.yml | Recommended | To prevent synchronization errors with the original translation and malfunction of bot settings.
+Translation Sync Script | Crowdin Project Identifier | Misc/sync_strings.py | Recommended | Change if you intend to manage translation assets independently.
+Splash Window | Logos and icons in SplashWindow.axaml | OpenUtau/Assets/*, OpenUtau/Views/SplashWindow.axaml | Recommended | For visual distinction from the original version
+Icon | open-utau.ico | OpenUtau/Assets/* | Recommended | For visual distinction from the original version
