@@ -43,4 +43,4 @@ OpenUtau wikiへようこそ！
 * [[ [PROPOSAL] svs.io ‐ singing voice synthesis backend API]]　[提案] svs.json - 歌声合成バックエンドAPI
 * [[tech note ‐ music is music, phonetics is phonetics (also why you don't need legacy plugins)]]　技術メモ - 音楽は音楽、音声学は音声学（レガシープラグインが不要な理由）
 * [[Known Bugs]]　既知のバグ
-* [Fork OpenUtau and develop a new editor](https://github.com/openutau/OpenUtau/wiki/Fork-OpenUtau-and-develop-a-new-editor.) OpenUtauをフォークして新しいエディタを開発する
+* [Fork OpenUtau and develop a new editor](https://github.com/openutau/OpenUtau/wiki/Fork-OpenUtau-and-develop-a-new-editor) OpenUtauをフォークして新しいエディタを開発する
