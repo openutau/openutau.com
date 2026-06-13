@@ -1,24 +1,24 @@
 [English](https://github.com/stakira/OpenUtau/wiki) | **日本語**
 
 OpenUtau wikiへようこそ！  
-※このページは[OpenUtau Wiki 日本語版](https://w.atwiki.jp/openutau_ja/pages/1.html)に移植中です。
+**※このページは[OpenUtau Wiki 日本語版](https://w.atwiki.jp/openutau_ja/pages/1.html)に移植中です。**
 
 ## 目次
 ### 初心者向け
-* [Tutorials](https://github.com/stakira/OpenUtau/wiki/Tutorials)　OpenUtauについて、従来のUTAUとの差異
+* [Tutorials](Tutorials)　OpenUtauについて、従来のUTAUとの差異
   * [OpenUtauとは](https://w.atwiki.jp/openutau_ja/pages/11.html)
   * [従来のUTAUとの違い](https://w.atwiki.jp/openutau_ja/pages/10.html)
-  * [教程汇总 (中文)](https://github.com/stakira/OpenUtau/wiki/%E6%95%99%E7%A8%8B%E6%B1%87%E6%80%BB-(%E4%B8%AD%E6%96%87))
-* [インストール](https://w.atwiki.jp/openutau_ja/pages/14.html)
+* [Install](Install)
+  * [インストール](https://w.atwiki.jp/openutau_ja/pages/14.html)
 * [Getting Started](Getting-Started)　インストールから基本的な使い方まで
-  * [スターターガイド (日本語)](https://github.com/stakira/OpenUtau/wiki/%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BF%E3%83%BC%E3%82%AC%E3%82%A4%E3%83%89-(%E6%97%A5%E6%9C%AC%E8%AA%9E))
-* [FAQ](https://github.com/stakira/OpenUtau/wiki/FAQ)　よくある質問
+  * [基本的な使い方](https://w.atwiki.jp/openutau_ja/pages/1.html)
+* [FAQ](FAQ)　よくある質問
   * [FAQ（日本語）](https://github.com/stakira/OpenUtau/wiki/FAQ%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%EF%BC%89)
 * [Keyboard Shortcuts](https://github.com/stakira/OpenUtau/wiki/Keyboard-Shortcuts)　キーボードショートカット
 
 ### 基本編
 * [Phonemizers](https://github.com/stakira/OpenUtau/wiki/Phonemizers)　Phonemizerの詳細と一覧
-  * [Phonemizers（日本語）](Phonemizers（日本語）)　日本語向けPhonemizer部分のみ翻訳済み
+  * [Phonemizerによる自動連続音化](https://w.atwiki.jp/openutau_ja/pages/19.html)　日本語向けPhonemizer部分のみ翻訳済み
 * [Resamplers and Wavtools](https://github.com/stakira/OpenUtau/wiki/Resamplers-and-Wavtools)　ResamplerとWavtoolの対応状況
   * [レンダラーとエンジン](https://w.atwiki.jp/openutau_ja/pages/15.html)
 * [Expressions (Flags)](Expressions-(Flags))
