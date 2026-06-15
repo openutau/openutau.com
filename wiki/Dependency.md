@@ -21,5 +21,21 @@ Please install the dependency files either through the Packages window or by dow
 * [convel-batch-edit.dll](https://github.com/AnAndroNerd/Small-VCCV-Changes/releases/tag/dll)
 
 # For Developers
+## Favor
 When creating dependency files, please register the package information in [svs-index](https://openutau.github.io/svs-index/).  
 You can install external dependency files using the package manager included in OpenUtau.
+## oudep file specifications
+A file created by changing the extension of a zip archive containing oudep.yaml.
+Dependency files will be stored in the Dependencies folder.
+
+### Structure of oudep.yaml
+```yaml
+# ID (only lowercase alphanumeric characters, "-", and "." are allowed). Must be unique across all software.
+id: g2p-cmudict-07b
+# Version notation (e.g., 1.0 or 1.0.0.0). build and revision can be omitted.
+version: '1.0'
+# Summary of the package
+description: G2P based on CMU Pronouncing Dictionary 0.7b
+# Class designation (optional)
+class: G2pPackV2
+```
