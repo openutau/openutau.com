@@ -17,20 +17,22 @@ Click to set a value, and right click to reset it to the project default.
 ![edit expression](https://i.imgur.com/2PKCb2p.gif)
 
 # Default expressions
-| Name     | Abbreviation | Purpose                                           | Range      | Default |
-| -------- | ------------ | ------------------------------------------------- | ---------- | ------- |
-| Velocity | VEL          | Consonant velocity (stretch/shorten preutterance) | 0 - 200    | 100     |
-| Volume   | VOL          | Note volume                                       | 0 - 200    | 100     |
-| Attack   | ATK          | Envelope starting volume                          | 0 - 200    | 100     |
-| Decay    | DEC          | Envelope ending volume                            | 0 - 100    | 0       |
-| Voice color    | CLR          | Utilizes voicebank appends/colors           | No range, options    | Blank       |
-| Resampler engine    | ENG          | Change resamplers on the fly           | No range, options    | , worldline64.exe |
-| Gender   | GEN          | g flag (formant shift)                            | -100 - 100 | 0       |
-| Breath   | BRE          | B flag (breathiness)                              | 0 - 100    | 0       |
-| Lowpass  | LPF          | H flag (low pass filter)                          | 0 - 100    | 0       |
-| Modulation | MOD        | Note modulation from original pitch               | 0 - 100    | 0       |
-| Alternate | ALT         | Alternate aliasing for duplicates in oto.ini      | 0 - 16     | 0       |
-| Tone shift | SHFT       | Allows for selecting pitch alias                  | -36 - 36   | 0       |
+| Name     | Abbreviation | Purpose                                           | Range      | Default | Note |
+| -------- | ------------ | ------------------------------------------------- | ---------- | ------- | ----- |
+| Velocity | VEL          | Consonant velocity (stretch/shorten preutterance) | 0 - 200    | 100     | |
+| Volume   | VOL          | Note volume                                       | 0 - 200    | 100     | |
+| Attack   | ATK          | Envelope starting volume                          | 0 - 200    | 100     | |
+| Decay    | DEC          | Envelope ending volume                            | 0 - 100    | 0       | |
+| Voice color    | CLR          | Utilizes voicebank appends/colors           | No range, options    | Blank       | |
+| Resampler engine    | ENG          | Change resamplers on the fly           | No range, options    | , worldline64.exe | |
+| Gender   | GEN          | g flag (formant shift)                            | -100 - 100 | 0       | Currently unsupported in the default OpenUTAU renderers; You can use **GENC** instead |
+| Gender(Curve)   | GENC          | g flag (formant shift) - Same with GEN, but uses curve                            | -100 - 100 | 0       | |
+| Breath   | BRE          | B flag (breathiness)                              | 0 - 100    | 0       | Currently unsupported in the default OpenUTAU renderers; You can use **BREC** instead |
+| Breath(Curve)   | BREC          | B flag (breathiness) - Same with BRE, but  uses curve                             | 0 - 100    | 0       | |
+| Lowpass  | LPF          | H flag (low pass filter)                          | 0 - 100    | 0       | |
+| Modulation | MOD        | Note modulation from original pitch               | 0 - 100    | 0       | |
+| Alternate | ALT         | Alternate aliasing for duplicates in oto.ini      | 0 - 16     | 0       | |
+| Tone shift | SHFT       | Allows for selecting pitch alias                  | -36 - 36   | 0       | |
 
 #### VEL (velocity)
 This corresponds to UTAU's Consonant Velocity. This affects the length of the fixed region of the OTO, which is the beginning of the note/phoneme.
