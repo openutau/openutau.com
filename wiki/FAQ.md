@@ -1,4 +1,4 @@
-You can search within this webpage with hotkey `Ctrl + F` on Windows or `⌘ + F` on Mac.
+You can search within this webpage with hotkey <kbd>Ctrl</kbd> + <kbd>F</kbd> on Windows or <kbd>⌘</kbd> + <kbd>F</kbd> on Mac.
 ## Troubleshooting
 
 ### My voicebank doesn't show up in OpenUtau, even though it's in the Singers folder!
@@ -58,7 +58,7 @@ Set the project BPM to the correct value in the main editor window.
 In the folder where OpenUtau is installed, find the `prefs.json` file.  
 Open the file in a text editor. Find and remove the line `"language": "axaml"`. Save the file.  
 
-This is a known bug when updating OpenUtau from version 0.1.90. See the [Release Notes](https://github.com/stakira/OpenUtau/wiki/Release-Notes#0191-05-15-2023) page for more details.
+This is a known bug when updating OpenUtau from version 0.1.90. See the [Release Notes](../Release-Notes#0191-05-15-2023) page for more details.
 
 ### Blank window when launching OpenUtau or opening piano roll
 Resize the window and it will display normally.
@@ -132,4 +132,4 @@ OpenUtau does not offer a default voicebank or mascot, and we do not have any in
 Fans may feel free to make voicebanks or mascots inspired by OpenUtau, but we will not accept any offers for a default voicebank/mascot.
 
 ## NNSVS / ENUNU related FAQ
-See the [Status of ENUNU NNSVS Support](https://github.com/stakira/OpenUtau/wiki/Status-of-ENUNU-NNSVS-Support#faq) page for more info on using NNSVS/ENUNU in OpenUtau.
+See the [Status of ENUNU NNSVS Support](../ENUNU-NNSVS-Support#faq) page for more info on using NNSVS/ENUNU in OpenUtau.
