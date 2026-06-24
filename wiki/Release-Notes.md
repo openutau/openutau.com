@@ -218,10 +218,10 @@ https://github.com/user-attachments/assets/c21c6356-2350-4f74-8760-67cac776e728
 
 ***
 # ~[0.1.560 Beta](https://github.com/stakira/OpenUtau/releases/tag/0.1.560) (07-19-2025)
-```Diff
-! Caution !
-There is a bug that prevents the use of MOD+.
-```
+
+> [!CAUTION]
+> There is a bug that prevents the use of MOD+.
+
 ## Features
 ### New Features
 - [#1509](https://github.com/stakira/OpenUtau/pull/1509) - Add welcome page - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
@@ -521,10 +521,10 @@ https://private-user-images.githubusercontent.com/130257355/411304902-d9c39628-a
 
 ***
 # ~[0.1.501 Beta](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.501) (06-09-2024)
-```Diff
-! Caution !
-0.1.497Beta has known bugs! Please use 0.1.501Beta.
-```
+
+> [!CAUTION]
+> 0.1.497Beta has known bugs! Please use 0.1.501Beta.
+
 ## Features
 - [#1134](https://github.com/stakira/OpenUtau/pull/1134) - Organising the reset menu , add reset all parameter menu - ([@LitMus9](https://github.com/LitMus9))
 ![image](https://github.com/stakira/OpenUtau/assets/130257355/cf71f900-768f-428b-88b3-40eba3a6fe96)
@@ -1042,10 +1042,10 @@ From this point on, OpenUtau has a [Stable](https://github.com/stakira/OpenUtau/
 
 ***
 # ~[0.1.90](https://github.com/stakira/OpenUtau/releases/tag/build/0.1.90) (05-15-2023)
-```Diff
-! Caution !
-This build has known bugs !
-```
+
+> [!CAUTION]
+> This build has known bugs!
+
 - Selecting `preferences` currently causes OpenUtau to crash. Fix incoming at [#689](https://github.com/stakira/OpenUtau/pull/689). 
 
 Fix note: If you at any point updated to this version and ran it, and have been experiencing persistent issues even after updating to new versions -- you may need to remove the "languages" line from your prefs.JSON, or simply delete the prefs.JSON wholly (warning: this will reset any customization OpenUtau stores in preferences to the default).
