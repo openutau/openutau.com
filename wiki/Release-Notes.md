@@ -11,7 +11,10 @@ gh pr list --state merged --repo stakira/OpenUtau --limit 1000 --json number,tit
 -->
 
 # ~[0.1.568 Beta](https://github.com/stakira/OpenUtau/releases/tag/0.1.568) (03-16-2026)
-> **The ustx version is up. It cannot be opened with the previous OpenUtau.**
+
+> [!WARNING]
+> **The .ustx version has been updated to 0.9. It cannot be opened with previous versions of OpenUtau.**
+
 ## Features
 - [#1870](https://github.com/stakira/OpenUtau/pull/1870) - Add feature to split vocal part at playhead cursor - ([@arx-ein](https://github.com/arx-ein))
 
@@ -67,7 +70,10 @@ gh pr list --state merged --repo stakira/OpenUtau --limit 1000 --json number,tit
 
 
 # ~[0.1.567 Beta](https://github.com/stakira/OpenUtau/releases/tag/0.1.567) (11-29-2025)
-> **The ustx version is up. It cannot be opened with the previous OpenUtau.**
+
+> [!WARNING]
+> **The .ustx version has been updated. It cannot be opened with previous versions of OpenUtau.**
+
 ## Features
 - [#1396](https://github.com/stakira/OpenUtau/pull/1396) - Add RandomizeTiming function to batch edit - ([@maiko3tattun](https://github.com/maiko3tattun))
   - By combining it with tuning randomization, you can create doubling.
@@ -89,7 +95,10 @@ https://github.com/user-attachments/assets/b34de0f8-b4c4-4ff3-98d8-79409bbb7903
 
 
 # ~[0.1.566 Beta](https://github.com/stakira/OpenUtau/releases/tag/0.1.566) (11-28-2025)
-> **The ustx version is up. It cannot be opened with the previous OpenUtau.**
+
+> [!WARNING]
+> **The .ustx version has been updated. It cannot be opened with previous versions of OpenUtau.**
+
 ## Features
 ### New Features
 - [#fb9e157](https://github.com/stakira/OpenUtau/commit/fb9e157d57327fe801eff7a044032379940ee895) - Worldline-R2 renderer test version 1. Select it from the renderer dropdown menu in header tracker. ([@stakira](https://github.com/stakira))
@@ -295,7 +304,10 @@ https://github.com/user-attachments/assets/c21c6356-2350-4f74-8760-67cac776e728
 
 ***
 # ~[0.1.550 Beta](https://github.com/stakira/OpenUtau/releases/tag/0.1.550) (05-07-2025)
-> **The ustx version is up. It cannot be opened with the previous OpenUtau.**
+
+> [!WARNING]
+> **The .ustx version has been updated. It cannot be opened with previous versions of OpenUtau.**
+
 ## Features
 - [#1432](https://github.com/stakira/OpenUtau/pull/1432) - Classic renderer: support direct - ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
 - [#1483](https://github.com/stakira/OpenUtau/pull/1483) - Clear caches for each phrase - ([@maiko3tattun](https://github.com/maiko3tattun))  
