@@ -105,7 +105,7 @@ After labelling your dataset, you can either train a DiffSinger voicebank or an 
 While both are viable options, DiffSinger is recommended as it's higher quality and has more resources available.
 
 [DiffSinger](https://github.com/openvpi/diffsinger)
-- [DiffSinger Colab Notebook MLo7](https://github.com/MLo7Ghinsan/DiffSinger_colab_notebook_MLo7)
+- [DiffSinger4Colab](https://github.com/usamireko/DiffSinger4Colab)
 - [DiffTrainer local training kit](https://github.com/agentasteriski/DiffTrainer)
 
 [ENUNU](https://github.com/oatsu-gh/Enunu)
