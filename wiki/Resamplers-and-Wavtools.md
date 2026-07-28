@@ -133,7 +133,7 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 | [phavoco.exe](http://utau2008.xrea.jp/downloads/phavoco010.zip) | Ameya   |  |
 | [phaavoco.exe](http://utau2008.xrea.jp/2020/engine/phaavoco001.zip) | Ameya |   |
 | resampler.exe  | Ameya  |  | UTAU built-in resampler.  |
-| [SpaceWorld_win64.exe](https://github.com/LovelyA72/SpaceWorld/releases) | LovelyA72 |  | [See adjustments for compatibility.](https://github.com/stakira/OpenUtau/wiki/Resamplers-and-Wavtools#compatible-with-adjustments) |
+| [SpaceWorld_win64.exe](https://github.com/LovelyA72/SpaceWorld/releases) | LovelyA72 |  | Versions before 1.1.0: [See adjustments for compatibility.](https://github.com/stakira/OpenUtau/wiki/Resamplers-and-Wavtools#compatible-with-adjustments) |
 |[StrayCatRunner.exe](https://github.com/Astel123457/straycat-server) | Astel123457 |  [StrayCatRunner.yaml](https://github.com/Cadlaxa/Resampler-Manifests/blob/main/Resampler%20Manifests/StrayCatRunner.yaml)|
 |[straycat-rs.exe](https://github.com/UtaUtaUtau/straycat-rs/) | UtaUtaUtau | [straycat-rs.yaml](https://github.com/Cadlaxa/Resampler-Manifests/blob/main/Resampler%20Manifests/straycat-rs.yaml)  |
 |[StrayCat.py](https://github.com/UtaUtaUtau/straycat) | UtaUtaUtau | [StrayCat.yaml](https://github.com/Cadlaxa/Resampler-Manifests/blob/main/Resampler%20Manifests/straycat.yaml)  | Deprecated in place of straycat-rs (above)
@@ -153,8 +153,10 @@ This is a list of all UTAU resamplers tested with OpenUtau.
   - Add `moresampler.exe` to `Wavtools` folder without `moreconfig.txt`.
   - Moresampler should now function as either resampler only, or as both wavtool and resampler.
   - If you're using simple/convergence wavtool and encounter slow rendering times on macOS (possibly other OS too), modify `moreconfig.txt` and switch `multithread-synthesis` to `off`.
+- [[SpaceWorld_win64.exe|https://github.com/LovelyA72/SpaceWorld/releases]] (pre 1.1.0)
+    - Pre 1.1.0 releases experience issues if the voicebank is missing any frq files. Version 1.0.1 will not crash in the event of a missing frq file. Version 1.1 onward will generate missing frq properly.
 - [[SpaceWorld_win64.exe|https://github.com/LovelyA72/SpaceWorld/releases]] and [[wn4u.exe|https://utaforum.net/threads/world4utau-update.20035/]]
-    - May experience issues if the voicebank is missing any frq files. SpaceWorld version 1.0.1 will not crash in the event of a missing frq file.
+    - May experience issues if the voicebank is missing any frq files.
 - [[lessampler|https://github.com/YuzukiTsuru/lessampler/releases/]]
     - In development, lack of flag support
     - Oversized Audio Model Attention
