@@ -155,7 +155,7 @@ This is a list of all UTAU resamplers tested with OpenUtau.
   - If you're using simple/convergence wavtool and encounter slow rendering times on macOS (possibly other OS too), modify `moreconfig.txt` and switch `multithread-synthesis` to `off`.
 - [[SpaceWorld_win64.exe|https://github.com/LovelyA72/SpaceWorld/releases]] (pre 1.1.0)
     - Pre 1.1.0 releases experience issues if the voicebank is missing any frq files. Version 1.0.1 will not crash in the event of a missing frq file. Version 1.1 onward will generate missing frq properly.
-- [[SpaceWorld_win64.exe|https://github.com/LovelyA72/SpaceWorld/releases]] and [[wn4u.exe|https://utaforum.net/threads/world4utau-update.20035/]]
+- [[wn4u.exe|https://utaforum.net/threads/world4utau-update.20035/]]
     - May experience issues if the voicebank is missing any frq files.
 - [[lessampler|https://github.com/YuzukiTsuru/lessampler/releases/]]
     - In development, lack of flag support
