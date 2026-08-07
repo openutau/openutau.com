@@ -116,34 +116,48 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 | ------------ | ------------ | ------------ | ------------ |
 |  worldline  | StAkira |    |   Built into OpenUtau. Works on all platforms. |
 |  [bkh01.exe](http://z-server.game.coocan.jp/utau/utautop.html#bkh01) |  Zteer |   |
+| [ChopSampler](https://github.com/MLo7Ghinsan/ChopSampler) | MLo7Ghinsan | | Uses a custom TD-PSOLA implementation. |
 |  [doppeltler32.exe](http://utau2008.xrea.jp/2020/engine/) | Ameya  | [doppeltler32.yaml](https://github.com/Cadlaxa/Resampler-Manifests/blob/main/Resampler%20Manifests/doppeltler32.yaml)  |
 |  [doppeltler64.exe](http://utau2008.xrea.jp/2020/engine/) | Ameya | [doppeltler64.yaml](https://github.com/Cadlaxa/Resampler-Manifests/blob/main/Resampler%20Manifests/doppeltler64.yaml)  |
 | [EFB-GT.exe](http://custom-made.seesaa.net/article/312529786.html) | Custom.Maid | |
-| EFB-PB.exe | Custom.maid ||
+| [EFB-PB.exe](http://custom-made.seesaa.net/article/284788132.html) | Custom.maid ||
+| [WARP.exe](http://custom-made.seesaa.net/article/312530509.html) | Zany | | Edit of WARP/EFB-GT. |
+| [ESPER-Utau](https://github.com/CdrSonan/ESPER-Utau/releases/latest) | CdrSonan | | Uses the ESPER vocal synthesis framework. Builds are also available for macOS/Linux; rename the executable to remove the platform-specific suffix so OpenUtau recognizes its supported expressions. |
 |  [f2resamp32.exe](http://utau2008.xrea.jp/2020/engine/f2resamp004.zip) | Ameya | [f2resamp32.yaml](https://github.com/oxygen-dioxide/openutau-manifests/blob/main/f2resamp.yaml)  |
 |  [f2resamp64.exe](http://utau2008.xrea.jp/2020/engine/f2resamp004.zip) | Ameya  | [f2resamp64.yaml](https://github.com/oxygen-dioxide/openutau-manifests/blob/main/f2resamp.yaml)  |
 |  [fresamp11.exe](http://utau2008.xrea.jp/downloads/fresamp011.zip) | Ameya  ||
-|  fresamp12.exe | Ameya |   |
 |  [fresamp14.exe](http://utau2008.xrea.jp/downloads/fresamp014.zip) | Ameya   | |
 | [fresamp14omp.exe](http://utau2008.xrea.jp/downloads/fresamp014omp.zip)  | Ameya |  | Ported to OpenMP with faster rendering speed than fresamp14.exe. |
+| [hachimisampler](https://github.com/openhachimi/hachimisampler) | OpenHachimi | | Based on straycat, using pc-nsf-hifigan instead of WORLD. Geared toward "jinriki" human-voice models; for standard UTAU voicebanks see hifisampler below. |
+| [hifisampler](https://github.com/openhachimi/hifisampler/releases/latest) | OpenHachimi | | Based on straycat, using pc-nsf-hifigan instead of WORLD for improved audio quality. Requires running a separate Python rendering server alongside OpenUtau. |
+| [kuresampler](https://github.com/oatsu-gh/kuresampler) | oatsu-gh | | Combines WORLD with a neural vocoder, aiming for natural crossfades and higher-quality output. |
 | [lessampler.exe](https://github.com/YuzukiTsuru/lessampler/releases/) | YuzukiTsuru | | [See additonal notes.](https://github.com/stakira/OpenUtau/wiki/Resamplers-and-Wavtools#compatible-with-adjustments) |
 | [macres.exe](https://github.com/titinko/macres/releases)   | titinko   |  |
-| model4.exe  | Ameya  |   |
+| [model4.exe](https://utau2008.xrea.jp/downloads/m4.zip) | Ameya | | |
 | [moresampler.exe](https://bowlroll.net/file/139123) |  Kanru Hua | [moresampler.yaml](https://github.com/Cadlaxa/Resampler-Manifests/blob/main/Resampler%20Manifests/moresampler.yaml) | [See adjustments for compatibility.](https://github.com/stakira/OpenUtau/wiki/Resamplers-and-Wavtools#compatible-with-adjustments) |
+| [moresampler2](https://github.com/Astel123457/moresampler2/releases/latest) | Astel123457 | | In development, Linux and MacOS versions available, see below |
+| [NeoWorld](https://github.com/LovelyA72/NeoWorld/releases/latest) | LovelyA72 | | Experimental cross-platform fork of Zany's w4u; superseded for most users by SpaceWorld below. |
 | [phavoco.exe](http://utau2008.xrea.jp/downloads/phavoco010.zip) | Ameya   |  |
 | [phaavoco.exe](http://utau2008.xrea.jp/2020/engine/phaavoco001.zip) | Ameya |   |
-| resampler.exe  | Ameya  |  | UTAU built-in resampler.  |
+| [PyRwu](https://github.com/delta-kimigatame/PyRwu/releases/latest) | Delta | | "Py Resampler by World for UTAU"; Python-based, WORLD-powered resampler. 
+| [resampler.exe](http://utau2008.xrea.jp/utau0418e-inst.zip)  | Ameya  |  | UTAU built-in resampler.  |
+| [RUCE](https://github.com/Rocaloid/RUCE) | Kanru Hua | | Rocaloid UTAU Compatible Engine. |
+| [SillySampler](https://github.com/MLo7Ghinsan/GOOFER) | MLo7Ghinsan | | Speech source-filter based resampler; the repo is published under the name "GOOFER". |
 | [SpaceWorld_win64.exe](https://github.com/LovelyA72/SpaceWorld/releases) | LovelyA72 | [SpaceWorld_win64.yaml](https://github.com/LovelyA72/SpaceWorld/blob/master/SpaceWorld_win64.yaml) | Versions before 1.1.0: [See adjustments for compatibility.](https://github.com/stakira/OpenUtau/wiki/Resamplers-and-Wavtools#compatible-with-adjustments) |
 |[StrayCatRunner.exe](https://github.com/Astel123457/straycat-server) | Astel123457 |  [StrayCatRunner.yaml](https://github.com/Cadlaxa/Resampler-Manifests/blob/main/Resampler%20Manifests/StrayCatRunner.yaml)|
 |[straycat-rs.exe](https://github.com/UtaUtaUtau/straycat-rs/) | UtaUtaUtau | [straycat-rs.yaml](https://github.com/Cadlaxa/Resampler-Manifests/blob/main/Resampler%20Manifests/straycat-rs.yaml)  |
 |[StrayCat.py](https://github.com/UtaUtaUtau/straycat) | UtaUtaUtau | [StrayCat.yaml](https://github.com/Cadlaxa/Resampler-Manifests/blob/main/Resampler%20Manifests/straycat.yaml)  | Deprecated in place of straycat-rs (above)
+| [straycrab](https://github.com/layetri/straycrab) | layetri | | Rust rewrite inspired by straycat. No public release currently available. |
 | [TIPS.exe](http://scientistb.web.fc2.com/program/)  | ScientistB |  |
 | [tn_fnds.exe](http://z-server.game.coocan.jp/utau/utautop.html#tn_fnds) | Zteer | [tn_fnds.yaml](https://github.com/oxygen-dioxide/openutau-manifests/blob/main/tn_fnds.yaml) |
+| [tn_fndsX.exe](https://utaforum.net/threads/tn_fndsx-resampler-download.19373/) | Zany | |
+| [tn_fnds_PB.exe](https://utaforum.net/threads/tn_fndsx-resampler-download.19373/#post-138309) | Zany | |
 | [UDB](https://github.com/YuzukiTsuru/UDB/releases/tag/0.0.3.1) | YuzukiTsuru | | UDB means UTAU Debug Engine.|
 | [vs4u.exe](http://ackiesound.ifdef.jp/download.html#vs4u) | AckieSound |  |
 | [w4u.exe](http://utau2008.xrea.jp/downloads/w4u001.zip) | Zany |  [w4u.yaml](https://github.com/oxygen-dioxide/openutau-manifests/blob/main/world4utau.yaml) |
 | [WARP.exe](http://custom-made.seesaa.net/article/312530509.html) | Custom.Maid |  
 | [wn4u.exe](https://utaforum.net/threads/world4utau-update.20035/) | Zany | | [See adjustments for compatibility.](https://github.com/stakira/OpenUtau/wiki/Resamplers-and-Wavtools#compatible-with-adjustments) |
+| [world4utau.exe](http://utau2008.xrea.jp/mp3/engine_hikaku.html) | Ameya | | The original WORLD-based resampler (distinct from Zany's w4u/wn4u above). Requires the FFTW DLLs. A [cross-platform Mac/Linux port](https://github.com/xrdavies/world4utau) exists — see those sections below. |
 | [young3.exe](https://bowlroll.net/file/203018) | Zany | |
 
 ### Compatible with adjustments
@@ -165,15 +179,21 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 |  Resampler |  Author  |  Resample Manifest  |  Additional Notes |
 | ------------ | ------------ | ------------ | ------------ |
 |  worldline  | StAkira  |   | Built into OpenUtau. Works on all platforms. |
+| [ESPER-Utau](https://github.com/CdrSonan/ESPER-Utau/releases/latest) | CdrSonan | | Rename the executable to remove the platform-specific suffix so OpenUtau recognizes its supported expressions. |
+| [moresampler2](https://github.com/Astel123457/moresampler2/releases/latest) | Astel123457 | | In development, MacOS Version available in the releases tab, support Intel (x64) and M-series (arm64) macs. |
 | [macres](https://github.com/titinko/macres/releases)   | titinko   | [macres.yaml]()  |
 |[straycat-rs.exe](https://github.com/UtaUtaUtau/straycat-rs/) | UtaUtaUtau | [straycat-rs.yaml](https://github.com/Cadlaxa/Resampler-Manifests/blob/main/Resampler%20Manifests/straycat-rs.yaml)  |
+| [world4utau](https://github.com/xrdavies/world4utau) | Ameya (port by xrdavies) | | Cross-platform port of world4utau; requires building fftw. |
 
 ## Linux
 |  Resampler |  Author  |  Resample Manifest  |  Additional Notes |
 | ------------ | ------------ | ------------ | ------------ |
 |  worldline  | StAkira  |   | Built into OpenUtau. Works on all platforms. |
+| [ESPER-Utau](https://github.com/CdrSonan/ESPER-Utau/releases/latest) | CdrSonan | | Rename the executable to remove the platform-specific suffix so OpenUtau recognizes its supported expressions. |
 | [macres](https://github.com/titinko/macres/releases)   | titinko   | [macres.yaml]()  |
+| [moresampler2](https://github.com/Astel123457/moresampler2/releases/latest) | Astel123457 | | In development, compiled with CMake for x64 and arm64 debian |
 |[straycat-rs.exe](https://github.com/UtaUtaUtau/straycat-rs/) | UtaUtaUtau | [straycat-rs.yaml](https://github.com/Cadlaxa/Resampler-Manifests/blob/main/Resampler%20Manifests/straycat-rs.yaml)  |
+| [world4utau](https://github.com/xrdavies/world4utau) | Ameya (port by xrdavies) | | Cross-platform port of world4utau; requires building fftw. |
 
 ## Using multiple resamplers:
 Move to [the flags section of this wiki](https://github.com/stakira/OpenUtau/wiki/Expressions-(Flags)#eng-resampler-engine) for more information.
