@@ -3,7 +3,7 @@ In UTAU, resampler is the core engine that does the major works of synthesis: ch
 Wavtool is the program that concatenates the audio slices from resampler into the final audio. OpenUtau ships with two wavtools, `simple` and `convergence`. There are also many third-party wavtools.
 
 # Installing Resamplers
-After you install resampler, please switch to "CLASSIC" renderer to use the resampler you installed.
+After you install resampler, please switch to "CLASSIC" renderer and set your desired resampler via the gear icon (⚙).
 
 ##  Windows
 
