@@ -42,7 +42,9 @@ Set the project BPM to the correct value in the main editor window.
 
 ## Load Voicebanks
 ### My voicebank doesn't show up in OpenUtau, even though it's in the Singers folder!
-Make sure the voicebank folder includes a `character.txt` file. Inside the file, write `name=(voicebank's name)`.
+- Make sure the voicebank is in the correct folder.
+- For UTAU Singer and DiffSinger, make sure the files are unzipped, not in a ZIP file.
+- Make sure the voicebank folder includes a `character.txt` file. Inside the file, write `name=(voicebank's name)`.
 
 ### Why is there no sound when I play a project?
 1. Open the Preferences menu from Tools > Preferences. Press the "Test" button below the "Playback Device" dropdown list.  
