@@ -27,7 +27,7 @@ This is a bug occurring on Intel-based macOS systems. Resize the window and it w
 Install the [latest Visual C++ Redistributable](https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170).
 
 ### (Stable only)I get the worldline.dll error "There is no application set to open the document [...]" when trying to switch to the worldline resampler mid-project.
-In the current stable build, the worldline resampler only works when either "convergence or "simple" are selected as the wavtool. This is also the case when switching resamplers mid-project. Change the wavtool to either of these options and the error should go away.
+In the version 0.1.565, the worldline resampler only works when either "convergence or "simple" are selected as the wavtool. This is also the case when switching resamplers mid-project. Change the wavtool to either of these options and the error should go away.
 
 ### How do I select an external resampler? [Moresampler, macres, TIPS, etc.] is not in the renderer list.
 Resamplers are selected in the Engine menu of the track. WORLDLINE-R is a special renderer, and it cannot use external resamplers.  
@@ -65,9 +65,10 @@ If the "M" button is highlighted on a track, it is muted. Press the "M" button t
 ### My CV Japanese voicebank doesn't work!
 1. Make sure that the `oto.ini` file has an alias for every sound file in the bank.
 2. Make sure all lyrics match an alias in the `oto.ini` file. If necessary, use the built-in Hiragana/Romaji converters to correct the lyrics.
-3. Make sure the phonemizer is set to "Default".
+3. Make sure the phonemizer is set to "Default" or "JA VCV & CVVC".
 4. If an alias exists for a sound file in the voicebank, OpenUtau will only use the alias.
 OpenUtau will fall back to reading filenames if an alias is missing, but by default, it will only select the aliases in the `oto.ini`.  
+In the Singers settings, click the gear icon and enable “Use filename as alias.”
 
 ### My Singer still doesn't play or sounds strange, but no troubleshooting steps so far have helped.
 In cases like this, it's good to run a Singer Error Report check to rule out the voicebank configuration or formatting being the source of the problem. To do this:
