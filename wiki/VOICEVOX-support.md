@@ -2,8 +2,8 @@
 layout: default
 title: "VOICEVOX Support"
 permalink: /VOICEVOX-support/
-parent: "Home"
-nav_order: 12
+parent: "Synthesis Engines"
+nav_order: 3
 ---
 OpenUtau supports VOICEVOX (humming function).  
 It is provided by the following [License](https://github.com/VOICEVOX/voicevox_engine/blob/master/LGPL_LICENSE)

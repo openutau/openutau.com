@@ -4,8 +4,8 @@ title: "FAQ (日本語)"
 permalink: /FAQ（日本語）/
 nav_exclude: true
 ---
+{% include lang-switcher.html %}
 
-> 🌐 English: [FAQ](/FAQ%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%EF%BC%89/) · [Documentation Home](/Home%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%EF%BC%89/)
 
 ## トラブルシューティング
 Windowsでは`Ctrl + F`、Macでは`⌘ + F`でこのページ内を検索できます。

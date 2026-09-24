@@ -1,3 +1,35 @@
 .btn-pink {
     @include btn-color($white, #ff679d);
 }
+// Language switcher pills
+.lang-switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+  margin: 0.25rem 0 1.25rem;
+
+  &::before {
+    content: "🌐";
+    margin-right: 0.15rem;
+  }
+
+  .lang-pill {
+    display: inline-block;
+    padding: 0.1rem 0.6rem;
+    border: 1px solid;
+    border-color: $border-color;
+    border-radius: 1rem;
+    font-size: 0.75em;
+    line-height: 1.6;
+    text-decoration: none;
+
+    &:hover { text-decoration: underline; }
+
+    &.active {
+      background-color: $base-button-color;
+      border-color: $border-color;
+      font-weight: 600;
+    }
+  }
+}

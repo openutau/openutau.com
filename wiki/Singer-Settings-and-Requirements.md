@@ -2,7 +2,7 @@
 layout: default
 title: "Singer Settings and Requirements"
 permalink: /Singer-Settings-and-Requirements/
-parent: "Home"
+parent: "User Guide"
 nav_order: 8
 ---
 # What Is a Singer?

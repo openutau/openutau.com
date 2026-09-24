@@ -2,8 +2,8 @@
 layout: default
 title: "Known Bugs"
 permalink: /Known-Bugs/
-parent: "Home"
-nav_order: 14
+parent: "Reference"
+nav_order: 2
 ---
 # Known bugs
 ### `WORLDLINE-R`: Audio distortion when changing gender factor curve's default value

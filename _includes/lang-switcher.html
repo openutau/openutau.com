@@ -1,0 +1,27 @@
+{%- assign codes = "en,zh,ja,ko" | split: "," -%}
+{%- for group in site.data.i18n -%}
+  {%- assign matched = false -%}
+  {%- for c in codes -%}
+    {%- assign u = group[c] -%}
+    {%- if u and u == page.url -%}{%- assign matched = true -%}{%- endif -%}
+  {%- endfor -%}
+  {%- if matched -%}
+<nav class="lang-switcher" aria-label="Language">
+    {%- for c in codes -%}
+      {%- assign u = group[c] -%}
+      {%- if u -%}
+        {%- case c -%}
+          {%- when "en" -%}
+            <a class="lang-pill{% if u == page.url %} active{% endif %}" href="{{ u | relative_url }}" lang="en">English</a>
+          {%- when "zh" -%}
+            <a class="lang-pill{% if u == page.url %} active{% endif %}" href="{{ u | relative_url }}" lang="zh">中文</a>
+          {%- when "ja" -%}
+            <a class="lang-pill{% if u == page.url %} active{% endif %}" href="{{ u | relative_url }}" lang="ja">日本語</a>
+          {%- when "ko" -%}
+            <a class="lang-pill{% if u == page.url %} active{% endif %}" href="{{ u | relative_url }}" lang="ko">한국어</a>
+        {%- endcase -%}
+      {%- endif -%}
+    {%- endfor -%}
+</nav>
+  {%- endif -%}
+{%- endfor -%}

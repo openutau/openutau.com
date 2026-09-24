@@ -2,7 +2,7 @@
 layout: default
 title: "Expressions (Flags)"
 permalink: /Expressions-(Flags)/
-parent: "Home"
+parent: "User Guide"
 nav_order: 5
 ---
 # About expressions

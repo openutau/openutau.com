@@ -2,9 +2,10 @@
 layout: default
 title: "Tutorials"
 permalink: /Tutorials/
-parent: "Home"
+parent: "User Guide"
 nav_order: 9
 ---
+{% include lang-switcher.html %}
 This page is open to edit by anyone in the community. Feel free to add your tutorials, guides, notes, or any tip tweets in "Quick Tips" below!
 
 # Basics

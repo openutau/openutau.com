@@ -4,8 +4,8 @@ title: "Phonemizers (日本語)"
 permalink: /Phonemizers（日本語）/
 nav_exclude: true
 ---
+{% include lang-switcher.html %}
 
-> 🌐 English: [Phonemizers](/Phonemizers%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%EF%BC%89/) · [Documentation Home](/Home%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%EF%BC%89/)
 
 ***このページは翻訳中です。このページに無いPhonemizerの情報を見たい場合は、[Phonemizers](/Phonemizers%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%EF%BC%89/)を参照してください。***
 

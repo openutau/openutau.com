@@ -2,8 +2,8 @@
 layout: default
 title: "DiffSinger Support"
 permalink: /DiffSinger-support/
-parent: "Home"
-nav_order: 10
+parent: "Synthesis Engines"
+nav_order: 1
 ---
 OpenUtau supports [DiffSinger (maintained by OpenVPI)](https://github.com/openvpi/diffsinger), a machine learning based singing synthesizer.
 

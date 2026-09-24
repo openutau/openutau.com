@@ -1,0 +1,20 @@
+# Language groups for the page-level language switcher (_includes/lang-switcher.html).
+# Each entry maps language codes to permalinks. Add a translation = add a key here.
+- en: /Home/
+  ja: /Home（日本語）/
+- en: /FAQ/
+  ja: /FAQ（日本語）/
+- en: /Phonemizers/
+  ja: /Phonemizers（日本語）/
+- en: /Resamplers-and-Wavtools/
+  ja: /ResamplerとWavtool(日本語)/
+- en: /Getting-Started/
+  ja: /スターターガイド-(日本語)/
+  ko: /한국어-시작-가이드/
+- en: /Tutorials/
+  zh: /教程汇总-(中文)/
+  ja: /チュートリアル-(日本語)/
+- en: /Legacy-Plugins/
+  ja: /従来のプラグイン（日本語）/
+- en: /tech-note-‐-character.yaml/
+  ja: /技術メモ-‐-character.yaml/

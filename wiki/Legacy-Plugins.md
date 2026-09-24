@@ -2,9 +2,10 @@
 layout: default
 title: "Legacy Plugins"
 permalink: /Legacy-Plugins/
-parent: "Home"
-nav_order: 13
+parent: "Reference"
+nav_order: 3
 ---
+{% include lang-switcher.html %}
 # UTAU Plugin
 UTAU plugins are software distributed by the user community to extend the functionality of the original UTAU.
 

@@ -2,9 +2,10 @@
 layout: default
 title: "Phonemizers"
 permalink: /Phonemizers/
-parent: "Home"
+parent: "User Guide"
 nav_order: 6
 ---
+{% include lang-switcher.html %}
 This page is written for end users. Developers interested in working on new phonemizers should refer to the [API Doc](/Developing-new-phonemizers/).
 
 When phonemizers break notes into multiple phonemes, you can adjust the envelopes and parameters for each of these independently.

@@ -2,9 +2,10 @@
 layout: default
 title: "Getting Started"
 permalink: /Getting-Started/
-parent: "Home"
+parent: "User Guide"
 nav_order: 2
 ---
+{% include lang-switcher.html %}
 ## About OpenUtau
 Please see [Tutorials](/Tutorials/) for an overview of OpenUtau and how it differs from conventional UTAU.
 

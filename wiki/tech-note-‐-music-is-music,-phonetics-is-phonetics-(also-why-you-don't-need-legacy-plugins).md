@@ -4,6 +4,7 @@ title: "Tech Note: Music is Music, Phonetics is Phonetics"
 permalink: /tech-note-‐-music-is-music,-phonetics-is-phonetics-(also-why-you-don't-need-legacy-plugins)/
 parent: "Developer Guide"
 nav_order: 11
+nav_exclude: true
 ---
 Traditionally, music, lyrics, and phonetics are in the same layer in UTAU. In order to get better results, users have to split notes to convert notes from hiragana lyrics to diphone or n-phone (such as CV, VC, VCV) aliases. This destroys the original lyric or the musical meaning: quarter notes, eighth notes, etc. And often users need to convert diphone notes back to musical notes, then convert to diphone notes again based on another set of rules. A swarm of plugins, and maybe half of the most used ones, are made for this. Besides, some technical challenges are entirely caused by this conversion step, such as splitting pitch curves, splitting envelopes, or even merging them, which sometimes are missions impossible.
 

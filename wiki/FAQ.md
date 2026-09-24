@@ -2,9 +2,10 @@
 layout: default
 title: "FAQ"
 permalink: /FAQ/
-parent: "Home"
+parent: "User Guide"
 nav_order: 4
 ---
+{% include lang-switcher.html %}
 You can search within this webpage with hotkey <kbd>Ctrl</kbd> + <kbd>F</kbd> on Windows or <kbd>⌘</kbd> + <kbd>F</kbd> on Mac.
 # Troubleshooting
 ## Install and Launch

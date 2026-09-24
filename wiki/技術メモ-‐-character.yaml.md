@@ -4,8 +4,8 @@ title: "技術メモ: character.yaml"
 permalink: /技術メモ-‐-character.yaml/
 nav_exclude: true
 ---
+{% include lang-switcher.html %}
 
-> 🌐 English: [Tech Note: character.yaml](/tech-note-%E2%80%90-character.yaml/) · [Documentation Home](/Home%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%EF%BC%89/)
 
 これは現バージョンでの`character.yaml`のサンプルです。開発中のため変更する可能性があります。
 

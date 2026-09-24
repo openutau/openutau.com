@@ -2,7 +2,7 @@
 layout: default
 title: "Install"
 permalink: /Install/
-parent: "Home"
+parent: "User Guide"
 nav_order: 1
 ---
 [Japanese / 日本語版ページ](https://w.atwiki.jp/openutau_ja/pages/14.html)

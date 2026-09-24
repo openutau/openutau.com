@@ -4,6 +4,7 @@ title: "ResamplerとWavtool (日本語)"
 permalink: /ResamplerとWavtool(日本語)/
 nav_exclude: true
 ---
+{% include lang-switcher.html %}
 resamplerは音声合成の主要な作業を行う合成エンジンで、音声サンプルのピッチと長さを変更しフラグの音質の変更を適用します。
 OpenUtauには`worldline`というresamplerが同梱されています。また、外部のresamplerも多数存在します。
 resamplerを変更すると、合成された音声の音質が変わります。また、resamplerによって使えるフラグも異なります。
@@ -12,7 +13,6 @@ wavtoolは、resamplerから渡された音声を繋ぎ合わせて一つの音�
 wavtoolを変更すると、音声の繋ぎ合わせかたが変わります。
 
 # resamplerのインストール
-> 🌐 English: [Resamplers and Wavtools](/Resamplers-and-Wavtools/) · [Documentation Home](/Home%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%EF%BC%89/)
 
 resamplerをインストールして、使えるようにするために"CLASSIC"レンダラーに切り替えてください。
 

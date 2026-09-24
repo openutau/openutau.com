@@ -2,8 +2,8 @@
 layout: default
 title: "Release Notes"
 permalink: /Release-Notes/
-parent: "Home"
-nav_order: 15
+parent: "Reference"
+nav_order: 1
 ---
 > The latest stable version is [0.1.565](/%ED%95%9C%EA%B5%AD%EC%96%B4-%EC%8B%9C%EC%9E%91-%EA%B0%80%EC%9D%B4%EB%93%9C/#01565-09-14-2025).  
 > See also [Known Bugs](/Known-Bugs/).

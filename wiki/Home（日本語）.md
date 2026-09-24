@@ -4,8 +4,8 @@ title: "Home (日本語)"
 permalink: /Home（日本語）/
 nav_exclude: true
 ---
+{% include lang-switcher.html %}
 
-> 🌐 English: [Home](/Home%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%EF%BC%89/) · [Documentation Home](/Home%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%EF%BC%89/)
 
 [English](https://github.com/openutau/OpenUtau/wiki) | **日本語**
 

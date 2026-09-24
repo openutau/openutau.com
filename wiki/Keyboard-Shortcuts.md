@@ -2,7 +2,7 @@
 layout: default
 title: "Keyboard Shortcuts"
 permalink: /Keyboard-Shortcuts/
-parent: "Home"
+parent: "User Guide"
 nav_order: 3
 ---
 
