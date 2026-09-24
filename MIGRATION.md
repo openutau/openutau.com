@@ -38,3 +38,5 @@ jekyll serve   # http://127.0.0.1:4000
 `tools/convert_wiki.py` + `tools/pages_config.py` were the one-shot conversion scripts (front
 matter injection and link rewriting). Kept for reference; re-running them on already-converted
 files is not supported.
+
+Cutover completed: site live at https://www.openutau.com.
