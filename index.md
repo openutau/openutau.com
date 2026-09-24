@@ -1,7 +1,6 @@
 ---
 layout: default
-title: Home
-nav_title: Download
+title: Download
 nav_order: 1
 description: "OpenUtau: Open singing synthesis platform / Open source UTAU successor"
 permalink: /

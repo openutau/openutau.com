@@ -68,6 +68,6 @@ An example is [DiffSingerRenderer](https://github.com/openutau/OpenUtau/blob/mas
 ## Add phonemizers for your synthesis engine
 OpenUtau's phonemizer is independent from renderer. If existing phonemizers already meet your needs, you won't need to write your own phonemizers.
 
-If you're going to write a phonemizer, see [[Developing new phonemizers]]
+If you're going to write a phonemizer, see [Developing new phonemizers](/Developing-new-phonemizers/)
 
 If your phonemizer is based on machine learning models, you can inherite [MachineLearningPhonemizer](https://github.com/openutau/OpenUtau/blob/master/OpenUtau.Core/MachineLearningPhonemizer.cs) where you need to implement the `ProcessPart` function that takes phrases and write the timing results into `partResult`. [DiffSingerBasePhonemizer](https://github.com/openutau/OpenUtau/blob/master/OpenUtau.Core/DiffSinger/DiffSingerBasePhonemizer.cs) is an example.

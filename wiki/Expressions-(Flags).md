@@ -90,7 +90,7 @@ You will be able to use an expression to add nothing or "e" to resampler flags.
 
 #### Other expressions
 All other expressions are like flags in UTAU.  
-For the expressions and flags not described here, you can check the [[(English) UTAU Wiki's page|https://utau.fandom.com/wiki/Help:UTAU_User_Manual_-_7]], or [[(Japanese) UTAU Users' Mutual Aid Wiki's Page|https://w.atwiki.jp/utaou/pages/41.html]].
+For the expressions and flags not described here, you can check the [(English) UTAU Wiki's page](https://utau.fandom.com/wiki/Help:UTAU_User_Manual_-_7), or [(Japanese) UTAU Users' Mutual Aid Wiki's Page](https://w.atwiki.jp/utaou/pages/41.html).
 
 # Edit expressions lineup
 Expressions are saved per-project. To edit expression settings, go to **Tools > Expressions**.
