@@ -1,3 +1,9 @@
+---
+title: "Tech Note: Music is Music, Phonetics is Phonetics"
+permalink: /tech-note-‐-music-is-music,-phonetics-is-phonetics-(also-why-you-don't-need-legacy-plugins)/
+parent: "Developer Guide"
+nav_order: 11
+---
 Traditionally, music, lyrics, and phonetics are in the same layer in UTAU. In order to get better results, users have to split notes to convert notes from hiragana lyrics to diphone or n-phone (such as CV, VC, VCV) aliases. This destroys the original lyric or the musical meaning: quarter notes, eighth notes, etc. And often users need to convert diphone notes back to musical notes, then convert to diphone notes again based on another set of rules. A swarm of plugins, and maybe half of the most used ones, are made for this. Besides, some technical challenges are entirely caused by this conversion step, such as splitting pitch curves, splitting envelopes, or even merging them, which sometimes are missions impossible.
 
 So let's face it: music is music, phonetics is phonetics. A central concept of editing in OpenUtau is phonemizing. It separates the music & lyric layer from the phonetics layer. Notes are kept in the original form, with proper note length and actual lyrics, carrying the pitch curves, vibratos, etc. Users can pretty much reuse the notes when switching between phonetic systems or voicebanks. The splitting merging problem doesn't exist anymore. Phonemizer works in real-time, making editing interactive and easy. 

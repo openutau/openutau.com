@@ -4,3 +4,7 @@ _posts
 .jekyll-cache
 .jekyll-metadata
 vendor
+_site/
+.jekyll-cache/
+.jekyll-metadata
+vendor/

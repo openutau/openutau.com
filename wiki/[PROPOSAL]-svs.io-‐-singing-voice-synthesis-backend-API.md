@@ -1,4 +1,10 @@
-[Discussion Here](https://github.com/stakira/OpenUtau/discussions/433)
+---
+title: "[PROPOSAL] svs.io Backend API"
+permalink: /[PROPOSAL]-svs.io-‐-singing-voice-synthesis-backend-API/
+parent: "Developer Guide"
+nav_order: 12
+---
+[Discussion Here](https://github.com/openutau/OpenUtau/discussions/433)
 
 This proposal describes a msgpack-based API for SVS backends.
 

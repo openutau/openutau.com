@@ -1,4 +1,10 @@
-This page is written for end users. Developers interested in working on new phonemizers should refer to the [API Doc](https://github.com/stakira/OpenUtau/wiki/Developing-new-phonemizers).
+---
+title: "Phonemizers"
+permalink: /Phonemizers/
+parent: "Home"
+nav_order: 6
+---
+This page is written for end users. Developers interested in working on new phonemizers should refer to the [API Doc](/Developing-new-phonemizers/).
 
 When phonemizers break notes into multiple phonemes, you can adjust the envelopes and parameters for each of these independently.
 
@@ -427,11 +433,11 @@ Phonemizer for Korean CV, [Korean CBNN](https://github.com/EX3exp/UTAU-Korean-CB
 ###  Common Features (공통 가이드)
 1. Supports almost all Korean phoneme variations, except `palatalization` and `ㄴ addition`. <br>
 `구개음화`와 `ㄴ첨가` 이외의 거의 모든 음운변동을 반영합니다. 
-![image](https://github.com/stakira/OpenUtau/assets/100339835/c13dfb89-6f5b-4cd9-bcd6-55559fa4ecdf) <br>
+![image](https://github.com/openutau/OpenUtau/assets/100339835/c13dfb89-6f5b-4cd9-bcd6-55559fa4ecdf) <br>
 
 2. Can extend phonemes by `+`. <br>
 `+`로 음소를 연장합니다. 
-![image](https://github.com/stakira/OpenUtau/assets/100339835/1c4d4c9a-2f8c-49e8-9861-07749f8cec85) <br>
+![image](https://github.com/openutau/OpenUtau/assets/100339835/1c4d4c9a-2f8c-49e8-9861-07749f8cec85) <br>
 
 3. Can insert phonemes by `[` `]`. 
 - Supports flexible VV phoneme input.
@@ -439,7 +445,7 @@ Phonemizer for Korean CV, [Korean CBNN](https://github.com/EX3exp/UTAU-Korean-CB
 `[`와 `]`를 사용해 발음 기호를 넣습니다.
 - 유연한 VV 음소 입력을 지원합니다.
 - (발음 기호에 `a i`가 포함되어 있지만 노래중인 음원에겐 `a i`가 없을 때, 음소화기가 자동으로 `a i`대신 `i`를 붙여줍니다. 반대도 성립합니다.)
-![image](https://github.com/stakira/OpenUtau/assets/100339835/8fae60c4-f677-4d36-b0b0-729cfa2b510d) <br>
+![image](https://github.com/openutau/OpenUtau/assets/100339835/8fae60c4-f677-4d36-b0b0-729cfa2b510d) <br>
 
 4. Supports two special phoneme symbols about phoneme variation, `!` and `.`. <br>
 음운변동을 조정하는 고유 발음기호 `!`와 `.`를 지원합니다. <br>
@@ -447,15 +453,15 @@ Phonemizer for Korean CV, [Korean CBNN](https://github.com/EX3exp/UTAU-Korean-CB
 - `!`(Ex: !가) : Ignores all phoneme variation regarding current note. Previour and next note will be not affected by current note which starts with `!`.
 - `!`(Ex: !가) : 현 노트와 연관된 모든 음운변동을 무시합니다. 현 노트는 이웃 노트들의 음운변동에서도 배제됩니다.
 
-![image](https://github.com/stakira/OpenUtau/assets/100339835/ed42c984-5a9d-40fc-a951-304d11d75b73) <br>
+![image](https://github.com/openutau/OpenUtau/assets/100339835/ed42c984-5a9d-40fc-a951-304d11d75b73) <br>
 
 - `.`(Ex: 가.) : Regard current note as *end of word*, and applies different phoneme variation rule.
 - `.`(Ex: 가.) : 현 노트에서 *단어가 끝난 것*으로 간주하고, 음운 변동을 알맞게 바꾸어 적용합니다.
 
-![image](https://github.com/stakira/OpenUtau/assets/100339835/2cce0c35-ff0e-4f86-8a16-4453ccd73514) <br>
+![image](https://github.com/openutau/OpenUtau/assets/100339835/2cce0c35-ff0e-4f86-8a16-4453ccd73514) <br>
 
 ### KO CV (Korean CV)
-![image](https://github.com/stakira/OpenUtau/assets/100339835/8e94a40f-1287-4736-83f0-b1c435944e65)
+![image](https://github.com/openutau/OpenUtau/assets/100339835/8e94a40f-1287-4736-83f0-b1c435944e65)
 
 #### Ko-CV.ini
 ```
@@ -496,7 +502,7 @@ Use 'aX' instead of 'a X'=False
 - **Use 'aX' instead of 'a X'** : 
 > *True*이면 받침 음소에 `<모음><받침>`(예: ang) 사용, *False*면 받침 음소에 `<vowel> <batchim>`(example: a ng)사용
 ### KO CBNN (Korean CBNN)
-![image](https://github.com/stakira/OpenUtau/assets/100339835/86a9b181-7e59-4be4-8da7-45f9bc7c0238)
+![image](https://github.com/openutau/OpenUtau/assets/100339835/86a9b181-7e59-4be4-8da7-45f9bc7c0238)
 
 
 ## PT-BR CVC (Brazilian Portuguese CVC)
@@ -735,7 +741,7 @@ Similarly, ``h`` is a substitute for ``x``, while ``sh`` and ``L`` are substitut
 Note that Latin-American-style aspirated endings (where ``h`` is used in place of ``s`` at the end of syllables) can only be achieved through phonetic input, since it's technically an informal style of pronunciation.
 
 ### Auxiliary dictionary files (uses njokis.yaml):
-**`Note: only 1:1 replacements are supported for now and multiple phoneme replacements are still pending in `**[**pr 1534**](https://github.com/stakira/OpenUtau/pull/1534)
+**`Note: only 1:1 replacements are supported for now and multiple phoneme replacements are still pending in `**[**pr 1534**](https://github.com/openutau/OpenUtau/pull/1534)
 
 - #### Symbols
     - Add a new symbol and define its symbol type for the phonemizer to recognize.
@@ -853,7 +859,7 @@ Since the phonemizer uses an arpabet dictionary there may be conflicts with some
 If there are any other issue, don't hesitate to share them on the Discord.
 
 ### Auxiliary dictionary files (uses envccv.yaml):
-**`Note: only 1:1 replacements are supported for now and multiple phoneme replacements are still pending in `**[**pr 1534**](https://github.com/stakira/OpenUtau/pull/1534)
+**`Note: only 1:1 replacements are supported for now and multiple phoneme replacements are still pending in `**[**pr 1534**](https://github.com/openutau/OpenUtau/pull/1534)
 
 - #### Symbols
     - Add a new symbol and define its symbol type for the phonemizer to recognize.

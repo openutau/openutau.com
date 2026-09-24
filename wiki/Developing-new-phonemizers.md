@@ -1,13 +1,19 @@
+---
+title: "Developing New Phonemizers"
+permalink: /Developing-new-phonemizers/
+parent: "Developer Guide"
+nav_order: 4
+---
 - Set up IDE (Recommended: [Visual Studio](https://visualstudio.microsoft.com/) or [VS Code](https://code.visualstudio.com/))
-- [Compile OpenUtau from source](./Compiling-from-source)
+- [Compile OpenUtau from source](/Compiling-from-source/)
 - Begin learning C# from [official Microsoft tutorials](https://dotnet.microsoft.com/en-us/learn/csharp)
-- Read [Phonemizer API](https://github.com/stakira/OpenUtau/tree/master/OpenUtau.Core/Api)
-- For languages with multi-syllable words, read [SyllableBasedPhonemizer API](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Plugin.Builtin/SyllableBasedPhonemizer.cs)
+- Read [Phonemizer API](https://github.com/openutau/OpenUtau/tree/master/OpenUtau.Core/Api)
+- For languages with multi-syllable words, read [SyllableBasedPhonemizer API](https://github.com/openutau/OpenUtau/blob/master/OpenUtau.Plugin.Builtin/SyllableBasedPhonemizer.cs)
 
 Heavily commented example implementations, from simplest to most complex:
-- [DefaultPhonemizer.cs](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/DefaultPhonemizer.cs)
-- [JapaneseVCVPhonemizer.cs](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Plugin.Builtin/JapaneseVCVPhonemizer.cs)
-- [ArpasingPhonemizer.cs](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Plugin.Builtin/ArpasingPhonemizer.cs)
+- [DefaultPhonemizer.cs](https://github.com/openutau/OpenUtau/blob/master/OpenUtau.Core/DefaultPhonemizer.cs)
+- [JapaneseVCVPhonemizer.cs](https://github.com/openutau/OpenUtau/blob/master/OpenUtau.Plugin.Builtin/JapaneseVCVPhonemizer.cs)
+- [ArpasingPhonemizer.cs](https://github.com/openutau/OpenUtau/blob/master/OpenUtau.Plugin.Builtin/ArpasingPhonemizer.cs)
 
 ## Phonemizer API
 
@@ -23,7 +29,7 @@ Tips:
 - To load singer specific resouce, Implement resouce loading in SetSinger() and use singer.Location to look for files.
 - If uses expensive resource, load it lazily when the phonemizer is created the first time. Use your best adjudgement to decide its lifetime.
 
-The API is implemented in [OpenUtau.Core/Api/Phonemizer.cs](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/Api/Phonemizer.cs)
+The API is implemented in [OpenUtau.Core/Api/Phonemizer.cs](https://github.com/openutau/OpenUtau/blob/master/OpenUtau.Core/Api/Phonemizer.cs)
 
 ## Phonemizer Development Guidelines
 ### Naming rule
@@ -44,19 +50,19 @@ A complete Phonemizer should:
 ### Optional Features
 Considering the characteristics of different languages, the phonemizer doesn't necessarily have to implement all the following features. However, implementing these features can maintain a consistent user experience across various phonemizers. 
 
-These features can be quickly implemented by inheriting a phonemizer template, such as [SyllableBasedPhonemizer](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Plugin.Builtin/SyllableBasedPhonemizer.cs).
+These features can be quickly implemented by inheriting a phonemizer template, such as [SyllableBasedPhonemizer](https://github.com/openutau/OpenUtau/blob/master/OpenUtau.Plugin.Builtin/SyllableBasedPhonemizer.cs).
 
 **polysyllabic word support**
 
 For polysyllabic languages ​​such as English, it should be supported to input lyrics on the first syllable, use `+~` or `+*` in the following notes to extend the current syllable, and use `+` to distribute the next syllable.
 
-![image](https://github.com/stakira/OpenUtau/assets/54425948/507016e4-0c97-4468-9370-7700ef18f2bb)
+![image](https://github.com/openutau/OpenUtau/assets/54425948/507016e4-0c97-4468-9370-7700ef18f2bb)
 
 **Phonetic hint**
 
 Users can manually enter space-separated phoneme sequences (aka. Phonetic hint) in square brackets, such as `read` , `read[r iy d]` and `[r iy d]`. When both phonetic hint and word exist, the phonetic hint takes precedence.
 
-![image](https://github.com/stakira/OpenUtau/assets/54425948/5da4e790-bab9-447c-88f0-24c82a3ff687)
+![image](https://github.com/openutau/OpenUtau/assets/54425948/5da4e790-bab9-447c-88f0-24c82a3ff687)
 
 **G2p**
 
@@ -65,17 +71,17 @@ G2p (Grapheme to phoneme) can convert lyrics in natural languages to phoneme seq
 For languages ​​with a large number of words, and words cannot be converted into phoneme sequences through simple logic, such as English, French, and Russian, please use OpenUTAU's built-in G2p.
 
 The following G2ps are included in OpenUTAU:
-* English: [ArpabetG2P](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/G2p/ArpabetG2p.cs)
-* French: [FrenchG2p](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/G2p/FrenchG2p.cs)
-* German: [GermanG2p](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/G2p/GermanG2p.cs)
-* Italian: [ItalianG2p](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/G2p/ItalianG2p.cs)
-* Portuguese: [PortugueseG2p](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/G2p/PortugueseG2p.cs)
-* Russian: [RussianG2p](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/G2p/RussianG2p.cs)
-* Spanish: [SpanishG2p](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/G2p/SpanishG2p.cs)
+* English: [ArpabetG2P](https://github.com/openutau/OpenUtau/blob/master/OpenUtau.Core/G2p/ArpabetG2p.cs)
+* French: [FrenchG2p](https://github.com/openutau/OpenUtau/blob/master/OpenUtau.Core/G2p/FrenchG2p.cs)
+* German: [GermanG2p](https://github.com/openutau/OpenUtau/blob/master/OpenUtau.Core/G2p/GermanG2p.cs)
+* Italian: [ItalianG2p](https://github.com/openutau/OpenUtau/blob/master/OpenUtau.Core/G2p/ItalianG2p.cs)
+* Portuguese: [PortugueseG2p](https://github.com/openutau/OpenUtau/blob/master/OpenUtau.Core/G2p/PortugueseG2p.cs)
+* Russian: [RussianG2p](https://github.com/openutau/OpenUtau/blob/master/OpenUtau.Core/G2p/RussianG2p.cs)
+* Spanish: [SpanishG2p](https://github.com/openutau/OpenUtau/blob/master/OpenUtau.Core/G2p/SpanishG2p.cs)
 
 **Custom pronunciation dictionary**
 
-On the basis of G2p, considering that some voicebanks have custom phonemes, a phonemizer should support custom dictionaries. Custom dictionaries can be loaded using [G2pDictionary](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/Api/G2pDictionary.cs).
+On the basis of G2p, considering that some voicebanks have custom phonemes, a phonemizer should support custom dictionaries. Custom dictionaries can be loaded using [G2pDictionary](https://github.com/openutau/OpenUtau/blob/master/OpenUtau.Core/Api/G2pDictionary.cs).
 
 No matter which encoding the voicebank uses, yaml dictionaries should always use UTF-8 encoding.
 

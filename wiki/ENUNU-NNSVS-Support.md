@@ -1,8 +1,14 @@
+---
+title: "ENUNU & NNSVS Support"
+permalink: /ENUNU-NNSVS-Support/
+parent: "Home"
+nav_order: 11
+---
 - Note: ENUNU/NNSVS support is **experimental**. There will be quirks. Be **patient**. Be **ready to troubleshoot**.
 - Note: **This page will change regularly**.
 
 - Version list of ENUNU for OpenUtau (Click here to download)
-  - Official [ENUNU for OpenUtau](https://github.com/stakira/ENUNU/releases) (ENUNU-0.4.0)
+  - Official [ENUNU for OpenUtau](https://github.com/openutau/ENUNU/releases) (ENUNU-0.4.0)
   - Unofficial [ENUNUServer](https://github.com/rokujyushi/ENUNU/releases) (ENUNU-1.0.0 ...)
   - Unofficial [SimpleENUNUServer](https://github.com/rokujyushi/SimpleEnunu/releases) (SimpleEnunuServer-0.5.0 ...)
 

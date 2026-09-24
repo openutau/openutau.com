@@ -1,3 +1,9 @@
+---
+title: "FAQ"
+permalink: /FAQ/
+parent: "Home"
+nav_order: 4
+---
 You can search within this webpage with hotkey <kbd>Ctrl</kbd> + <kbd>F</kbd> on Windows or <kbd>⌘</kbd> + <kbd>F</kbd> on Mac.
 # Troubleshooting
 ## Install and Launch
@@ -87,12 +93,12 @@ Common critical errors include, but are not limited to:
 > You can safely ignore warnings about duplicates, as well as warnings about incorrect `oto.ini` entries regarding "sample.wav" files and/or other extra samples intended for external use in DAWs or as demos.
 
 ### I still can't solve my problem
-You can send a feedback through [Discord](https://discord.gg/UfpMnqMmEM) or [GitHub Issue](https://github.com/stakira/OpenUtau/issues/new/choose). When sending feedbacks, please explain how to reproduce your bug, and provide your `.ustx` project, OpenUtau log file and full screenshots of your OpenUtau window.
+You can send a feedback through [Discord](https://discord.gg/UfpMnqMmEM) or [GitHub Issue](https://github.com/openutau/OpenUtau/issues/new/choose). When sending feedbacks, please explain how to reproduce your bug, and provide your `.ustx` project, OpenUtau log file and full screenshots of your OpenUtau window.
 
 Use `Win+Shift+S` to take a screenshot on Windows. Use `Shift+Command+3` to take a screenshot on MacOS
 
 Use "Help > Open Logs Location" to find your OpenUtau log file.
-![image](https://github.com/stakira/OpenUtau/assets/54425948/c4c19dc1-aed4-4fa3-a047-5d82fd3dbf20)
+![image](https://github.com/openutau/OpenUtau/assets/54425948/c4c19dc1-aed4-4fa3-a047-5d82fd3dbf20)
 
 # Design and history
 ### How to remove a voicebank?
@@ -110,7 +116,7 @@ If this style is preferred, it can be utilized via the "Default" phonemizer in O
     3. In the envelope editor, the timing of the sound can be easily adjusted.  
 - Not all voicebanks will play nicely with OpenUtau. Some banks have specific quirks that the phonemizer cannot use, and OpenUtau does not support every type of voicebank in every language.
 - OpenUtau relies on the plugin developer community to create phonemizers for unsupported voicebanks.  
-If you wish to help make a new phonemizer, take a look at the [OpenUtau plugin API documentation](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/Api/README.md).
+If you wish to help make a new phonemizer, take a look at the [OpenUtau plugin API documentation](https://github.com/openutau/OpenUtau/blob/master/OpenUtau.Core/Api/README.md).
 
 ### Singer installation / Sharing voicebanks with UTAU
 OpenUtau aims to work on systems of all languages. Traditionally, this is very difficult. Japanese text can become unreadable mojibake (gibberish Unicode) on non-Japanese systems.  
@@ -143,4 +149,4 @@ This will be supported in a future version.
 Some commercial singing voice synthesis softwares support switching language inside a track, because all their voicebanks are developed by their official development team under the same standard, so they can unify how their phoentic system work. However, in UTAU ecosystem, voicebanks in different types are developed differently, so we can't simply merge them into one logic.-->
 
 # NNSVS / ENUNU related FAQ
-See the [Status of ENUNU NNSVS Support](../ENUNU-NNSVS-Support#faq) page for more info on using NNSVS/ENUNU in OpenUtau.
+See the [Status of ENUNU NNSVS Support](/ENUNU-NNSVS-Support/#faq) page for more info on using NNSVS/ENUNU in OpenUtau.

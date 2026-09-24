@@ -1,8 +1,16 @@
-***このページは翻訳中です。このページに無いPhonemizerの情報を見たい場合は、[Phonemizers](https://github.com/stakira/OpenUtau/wiki/Phonemizers)を参照してください。***
+---
+title: "Phonemizers (日本語)"
+permalink: /Phonemizers（日本語）/
+nav_exclude: true
+---
+
+> 🌐 English: [Phonemizers](/Phonemizers%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%EF%BC%89/) · [Documentation Home](/Home%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%EF%BC%89/)
+
+***このページは翻訳中です。このページに無いPhonemizerの情報を見たい場合は、[Phonemizers](/Phonemizers%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%EF%BC%89/)を参照してください。***
 
 ***
 
-このページはエンドユーザー向けです。新たなPhonemizer制作に興味のある開発者の方は、[API Doc](https://github.com/stakira/OpenUtau/wiki/Developing-new-phonemizers)を参照してください。
+このページはエンドユーザー向けです。新たなPhonemizer制作に興味のある開発者の方は、[API Doc](/Developing-new-phonemizers/)を参照してください。
 
 Phonemizerはノートの歌詞を音素に変換する
 システムです。

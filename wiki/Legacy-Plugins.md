@@ -1,3 +1,9 @@
+---
+title: "Legacy Plugins"
+permalink: /Legacy-Plugins/
+parent: "Home"
+nav_order: 13
+---
 # UTAU Plugin
 UTAU plugins are software distributed by the user community to extend the functionality of the original UTAU.
 

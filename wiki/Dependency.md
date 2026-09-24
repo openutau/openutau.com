@@ -1,3 +1,9 @@
+---
+title: "Dependency"
+permalink: /Dependency/
+parent: "Developer Guide"
+nav_order: 3
+---
 # Overview
 Dependencies for extending features such as Transcribe and the DiffSinger vocoder available in OpenUtau  
 ### **Please review the terms of use for each dependency before using it.**  

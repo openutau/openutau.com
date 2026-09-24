@@ -1,3 +1,11 @@
+---
+title: "FAQ (日本語)"
+permalink: /FAQ（日本語）/
+nav_exclude: true
+---
+
+> 🌐 English: [FAQ](/FAQ%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%EF%BC%89/) · [Documentation Home](/Home%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%EF%BC%89/)
+
 ## トラブルシューティング
 Windowsでは`Ctrl + F`、Macでは`⌘ + F`でこのページ内を検索できます。
 
@@ -58,7 +66,7 @@ Resamplersフォルダー内の`moreconfig.txt`ファイルを編集して、`re
 OpenUtauがインストールされているフォルダーで`prefs.json`ファイルを探します。  
 ファイルをテキストエディターで開き、`"language": "axaml"`の行を削除して上書き保存してください。  
 
-これはOpenUtauをバージョン0.1.90からアップデートしたときに起こる既知のバグです。 詳しくは[Release Notes](https://github.com/stakira/OpenUtau/wiki/Release-Notes#0191-05-15-2023)をご覧ください。
+これはOpenUtauをバージョン0.1.90からアップデートしたときに起こる既知のバグです。 詳しくは[Release Notes](/Release-Notes/#0191-05-15-2023)をご覧ください。
 
 ### OpenUtauを起動したりピアノロールを開いたりすると、ウィンドウが真っ白になります。
 ウィンドウサイズを変更すると正常に表示されます。
@@ -81,12 +89,12 @@ macOS上でOpenUtauを実行するには、アプリがMacで実行できるよ�
 ターミナルを開き、`xattr -rc /Applications/OpenUtau.app`を実行した後、 OpenUtauを開き直してください。
 
 ### まだ問題が解決しません
-[Discord](https://discord.gg/UfpMnqMmEM)か[GitHub Issue](https://github.com/stakira/OpenUtau/issues/new/choose)へフィードバックを送ってください。 フィードバックを送る際は、バグを再現する方法を説明して、`.ustx`プロジェクトファイル、OpenUtauのログファイル、OpenUtauのウィンドウのスクリーンショットを添付してください。
+[Discord](https://discord.gg/UfpMnqMmEM)か[GitHub Issue](https://github.com/openutau/OpenUtau/issues/new/choose)へフィードバックを送ってください。 フィードバックを送る際は、バグを再現する方法を説明して、`.ustx`プロジェクトファイル、OpenUtauのログファイル、OpenUtauのウィンドウのスクリーンショットを添付してください。
 
 Windowsでは`Win+Shift+S`、 MacOSでは`Shift+Command+3`スクリーンショットが撮れます。
 
 「ヘルプ」 > 「ログの場所を開く」から、OpenUtauのログファイルを探してください。
-![image](https://github.com/stakira/OpenUtau/assets/54425948/c4c19dc1-aed4-4fa3-a047-5d82fd3dbf20)
+![image](https://github.com/openutau/OpenUtau/assets/54425948/c4c19dc1-aed4-4fa3-a047-5d82fd3dbf20)
 
 ## 設計と歴史
 ### 連続音/CVVC/VCCV/etc. はどうやって動作しますか？
@@ -98,7 +106,7 @@ Windowsでは`Win+Shift+S`、 MacOSでは`Shift+Command+3`スクリーンショ�
     3. エンベロープエディターでは、音のタイミングを簡単に調整できます。  
 - 全ての音源がOpenUtauで正常に動作するとは限りません。 また、全ての言語の全ての形式の音源をサポートしているわけではありません。
 - OpenUtauは、まだサポートしてない音源用のPhonemizer制作をプラグイン開発者コミュニティに頼っています。  
-新しいPhonemizerの製作にご協力していただける方は、[OpenUtau plugin API documentation](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/Api/README.md)をご覧ください。
+新しいPhonemizerの製作にご協力していただける方は、[OpenUtau plugin API documentation](https://github.com/openutau/OpenUtau/blob/master/OpenUtau.Core/Api/README.md)をご覧ください。
 
 ### シンガーのインストール / UTAUと音源を共有する
 OpenUtauはあらゆる言語のシステムで動作することを目指しています。 従来、これは非常に困難でした。 日本語のテキストは、日本語以外のシステムでは文字化けして読み込めないことがあります。  
@@ -125,4 +133,4 @@ OpenUtauはデフォルト音源やマスコットを募集していませんし
 OpenUtauにインスパイアされた音源やマスコットを作るのは自由ですが、デフォルト音源やマスコットの提供はお断りします。
 
 ## NNSVS / ENUNU 関連のFAQ
-OpenUtauでのNNSVS/ENUNUの利用については、[Status of ENUNU NNSVS Support](https://github.com/stakira/OpenUtau/wiki/ENUNU-NNSVS-Support#faq)をご覧ください。
+OpenUtauでのNNSVS/ENUNUの利用については、[Status of ENUNU NNSVS Support](/ENUNU-NNSVS-Support/#faq)をご覧ください。

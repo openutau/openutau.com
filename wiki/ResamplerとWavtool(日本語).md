@@ -1,3 +1,8 @@
+---
+title: "ResamplerとWavtool (日本語)"
+permalink: /ResamplerとWavtool(日本語)/
+nav_exclude: true
+---
 resamplerは音声合成の主要な作業を行う合成エンジンで、音声サンプルのピッチと長さを変更しフラグの音質の変更を適用します。
 OpenUtauには`worldline`というresamplerが同梱されています。また、外部のresamplerも多数存在します。
 resamplerを変更すると、合成された音声の音質が変わります。また、resamplerによって使えるフラグも異なります。
@@ -6,6 +11,8 @@ wavtoolは、resamplerから渡された音声を繋ぎ合わせて一つの音�
 wavtoolを変更すると、音声の繋ぎ合わせかたが変わります。
 
 # resamplerのインストール
+> 🌐 English: [Resamplers and Wavtools](/Resamplers-and-Wavtools/) · [Documentation Home](/Home%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%EF%BC%89/)
+
 resamplerをインストールして、使えるようにするために"CLASSIC"レンダラーに切り替えてください。
 
 ##  Windows
@@ -16,7 +23,7 @@ resamplerは実行ファイル(`.exe`)である必要があります。resampler
 
 OpenUtauのバージョン0.1.119以降では、`.exe`ファイルをOpenUtauのメインウィンドウにドラッグ＆ドロップして、「Install as resampler」を選択すると、resamplerをインストールできます。
 
-<img src="https://github.com/stakira/OpenUtau/assets/18076904/1a13d37d-b472-451d-b24a-e984b095bd4a" height="250">
+<img src="https://github.com/openutau/OpenUtau/assets/18076904/1a13d37d-b472-451d-b24a-e984b095bd4a" height="250">
 
 
 ## MacOS
@@ -30,7 +37,7 @@ Wineを使用してWindows用のresamplerを使うこともできます。(macOS
 brew tap gcenx/wine
 brew install --cask --no-quarantine wine-crossover
 ```
-3. [release page](https://github.com/stakira/OpenUtau/releases/tag/OpenUtau-Latest)から"mac_additional.zip"をダウンロードします。
+3. [release page](https://github.com/openutau/OpenUtau/releases/tag/OpenUtau-Latest)から"mac_additional.zip"をダウンロードします。
 4. `mac_additional.zip`内の`moresampler.sh`スクリプトを使用して、resamplerを使えるようにします。これによってresamplerのファイル名が`moresampler-0.8.4/moresampler.exe`に置き換わります。
 
 このスクリプトは`Resamplers`フォルダーに追加する必要があり、`.exe`形式のresamplerを追加するたびに編集する必要があります。
@@ -70,14 +77,14 @@ OpenUtauでテストしたすべてのresamplerのリストです。
 |  fresamp12.exe | 飴屋/菖蒲 |   |
 |  [fresamp14.exe](http://utau2008.xrea.jp/downloads/fresamp014.zip) | 飴屋/菖蒲   |   |
 | [fresamp14omp.exe](http://utau2008.xrea.jp/downloads/fresamp014omp.zip)  | 飴屋/菖蒲 | fresamp14.exeより描画速度が速いOpenMPに移植|
-| [lessampler.exe](https://github.com/YuzukiTsuru/lessampler/releases/) | YuzukiTsuru | [互換性のための調整を参照](https://github.com/stakira/OpenUtau/wiki/ResamplerとWavtool(日本語)#互換性のための調整) |
+| [lessampler.exe](https://github.com/YuzukiTsuru/lessampler/releases/) | YuzukiTsuru | [互換性のための調整を参照](/Resampler%E3%81%A8Wavtool%28%E6%97%A5%E6%9C%AC%E8%AA%9E%29/#互換性のための調整) |
 | [macres.exe](https://github.com/titinko/macres/releases)   | titinko   |   |
 | model4.exe  | 飴屋/菖蒲  |   |
-| [moresampler.exe](https://bowlroll.net/file/139123) |  Kanru Hua |  [互換性のための調整を参照](https://github.com/stakira/OpenUtau/wiki/ResamplerとWavtool(日本語)#互換性のための調整) |
+| [moresampler.exe](https://bowlroll.net/file/139123) |  Kanru Hua |  [互換性のための調整を参照](/Resampler%E3%81%A8Wavtool%28%E6%97%A5%E6%9C%AC%E8%AA%9E%29/#互換性のための調整) |
 | [phavoco.exe](http://utau2008.xrea.jp/downloads/phavoco010.zip) | 飴屋/菖蒲   |   |
 | [phaavoco.exe](http://utau2008.xrea.jp/2020/engine/phaavoco001.zip) | 飴屋/菖蒲 |   |
 | resampler.exe  | 飴屋/菖蒲  | UTAU同梱のresampler|
-| [SpaceWorld_win64.exe](https://github.com/LovelyA72/SpaceWorld/releases) | LovelyA72 | [互換性のための調整を参照](https://github.com/stakira/OpenUtau/wiki/ResamplerとWavtool(日本語)#互換性のための調整) |
+| [SpaceWorld_win64.exe](https://github.com/LovelyA72/SpaceWorld/releases) | LovelyA72 | [互換性のための調整を参照](/Resampler%E3%81%A8Wavtool%28%E6%97%A5%E6%9C%AC%E8%AA%9E%29/#互換性のための調整) |
 |[StrayCatRunner.exe](https://github.com/Astel123457/straycat-server) | Astel123457 |   |
 |[StrayCat.py](https://github.com/UtaUtaUtau/straycat) | UtaUtaUtau |   |
 | [TIPS.exe](http://scientistb.web.fc2.com/program/)  | ScientistB |   |
@@ -86,7 +93,7 @@ OpenUtauでテストしたすべてのresamplerのリストです。
 | [vs4u.exe](http://ackiesound.ifdef.jp/download.html#vs4u) | あっきー |  |
 | [w4u.exe](http://utau2008.xrea.jp/downloads/w4u001.zip) | Zany |   |
 | [WARP.exe](http://custom-made.seesaa.net/article/312530509.html) | Custom.Maid | |
-| [wn4u.exe](https://utaforum.net/threads/world4utau-update.20035/) | Zany | [互換性のための調整を参照](https://github.com/stakira/OpenUtau/wiki/ResamplerとWavtool(日本語)#互換性のための調整) |
+| [wn4u.exe](https://utaforum.net/threads/world4utau-update.20035/) | Zany | [互換性のための調整を参照](/Resampler%E3%81%A8Wavtool%28%E6%97%A5%E6%9C%AC%E8%AA%9E%29/#互換性のための調整) |
 | [young3.exe](https://bowlroll.net/file/203018) | Zany |   |
 
 ### 互換性のための調整
@@ -280,7 +287,7 @@ expressions:
 
 OpenUtau バージョン 0.1.119以降でwavtoolをインストールするには、`.exe`ファイルをOpenUtauのメインウィンドウにドラッグ＆ドロップして、「Install as wavtool」を選択します。
 
-<img src="https://github.com/stakira/OpenUtau/assets/18076904/1a13d37d-b472-451d-b24a-e984b095bd4a" height="250">
+<img src="https://github.com/openutau/OpenUtau/assets/18076904/1a13d37d-b472-451d-b24a-e984b095bd4a" height="250">
 
 ## macOS / Linux
 
@@ -293,6 +300,6 @@ OpenUtau バージョン 0.1.119以降でwavtoolをインストールするに�
 | --------- | -------- | ------------------ |
 | simple | StAkira | OpenUtauに同梱。すべてのプラットフォームで動作します。|
 | convergence | StAkira | OpenUtauに同梱。位相補正を使用|
-| [moresampler.exe](https://bowlroll.net/file/139123) | Kanru Hua | [互換性のための調整を参照](https://github.com/stakira/OpenUtau/wiki/ResamplerとWavtool(日本語)#互換性のための調整) |
+| [moresampler.exe](https://bowlroll.net/file/139123) | Kanru Hua | [互換性のための調整を参照](/Resampler%E3%81%A8Wavtool%28%E6%97%A5%E6%9C%AC%E8%AA%9E%29/#互換性のための調整) |
 | [wavtool64](http://utau2008.xrea.jp/2020/engine/wavtool64.zip) | 飴屋/菖蒲 | |
 | [wavtool4vcv](https://www.mediafire.com/file/1iwrak88c6xzb87/wavtool4vcv20141202.zip/file) | nmasao | |

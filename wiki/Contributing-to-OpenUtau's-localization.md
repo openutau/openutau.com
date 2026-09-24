@@ -1,3 +1,9 @@
+---
+title: "Contributing to Localization"
+permalink: /Contributing-to-OpenUtau's-localization/
+parent: "Developer Guide"
+nav_order: 9
+---
 OpenUtau uses crowdin for localization, which provides a friendly UI for users. Even if you don't know how to code, you can contribute to OpenUtau's localization.
 
 ## Usage
@@ -22,7 +28,7 @@ Before each OpenUtau release, a pull request will be made from oxygen-dioxide/Op
 
 ## Notes for power users
 - To keep track of what's going on in Crowdin, see https://crowdin.com/project/oxygen-dioxideopenutau/activity-stream
-- For a list of what has been changed on crowdin since the last OpenUtau release (syncs from crowdin every day), in other words, what we will see in the next update, see https://github.com/stakira/OpenUtau/compare/master...oxygen-dioxide:OpenUtau:crowdin-translated 
+- For a list of what has been changed on crowdin since the last OpenUtau release (syncs from crowdin every day), in other words, what we will see in the next update, see https://github.com/openutau/OpenUtau/compare/master...oxygen-dioxide:OpenUtau:crowdin-translated 
 
 ## FAQ
 ### I'm a code contributor. I want to introduce a new feature with new strings. What should I do?
@@ -33,4 +39,4 @@ If you want to add this string to another language that you speak, after your pu
 Note: Never use machine translation to localize strings. For languages you don't understand, leave it blank and wait until a native contributor picks it up. Falling back to English string is still better than a confusing localized string.
 
 ### I've posted my contributions to Crowdin. When will it be applied to OpenUtau?
-Crowdin updates won't be applied to your OpenUtau installation immediately. It will be applied on each OpenUtau release. You can [switch to beta version](https://github.com/stakira/OpenUtau/wiki/Getting-Started#beta-version) which is more updated, but you still need to wait until next beta release (Usually once a month) to see latest string updates.
+Crowdin updates won't be applied to your OpenUtau installation immediately. It will be applied on each OpenUtau release. You can [switch to beta version](/Getting-Started/#beta-version) which is more updated, but you still need to wait until next beta release (Usually once a month) to see latest string updates.

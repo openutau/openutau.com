@@ -1,3 +1,9 @@
+---
+title: "USTX File Format"
+permalink: /USTX-file-format/
+parent: "Developer Guide"
+nav_order: 7
+---
 USTX is the project file format for OpenUtau. This document outlines the structure and semantics of the USTX format for developers building tools that process USTX files.
 
 ## Basic concepts
@@ -144,7 +150,7 @@ External audio files imported to the project, under `wave_parts`
 For python developers, please use `ruamel.yaml` when working with .ustx files, because it supports yaml 1.2 . Don't use `pyyaml`.
 
 ## References
-The reading and writing of USTX files is officially implemented in [OpenUtau.Core/Ustx](https://github.com/stakira/OpenUtau/tree/master/OpenUtau.Core/Ustx)
+The reading and writing of USTX files is officially implemented in [OpenUtau.Core/Ustx](https://github.com/openutau/OpenUtau/tree/master/OpenUtau.Core/Ustx)
 
 Below are third-party implementations of USTX reading and writing:
 - [Libresvip](https://github.com/SoulMelody/LibreSVIP/tree/main/libresvip/plugins/ustx), in python

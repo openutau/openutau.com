@@ -1,3 +1,9 @@
+---
+title: "Compiling from Source"
+permalink: /Compiling-from-source/
+parent: "Developer Guide"
+nav_order: 1
+---
 # Compiling OpenUtau from source
 Compiling OpenUtau can be done easily.
 
@@ -24,7 +30,7 @@ You will also need Git.
 Once you have the prerequisites set up, run the following command to clone the repository
 
 ```
-git clone https://github.com/stakira/OpenUtau.git
+git clone https://github.com/openutau/OpenUtau.git
 ```
 
 ## Building in Visual Studio
@@ -43,15 +49,15 @@ Download and install VSCode from [VSCode official website](http://code.visualstu
 
 Launch VSCode, search and install the C# extension.
 
-![image](https://github.com/stakira/OpenUtau/assets/54425948/354dd290-68c5-4d14-91a0-bd89bb76e71d)
+![image](https://github.com/openutau/OpenUtau/assets/54425948/354dd290-68c5-4d14-91a0-bd89bb76e71d)
 
 Open the directory where you've downloaded the source code of OpenUtau and open any .cs file. A notification saying "Required assets to build and debug are missing from 'OpenUtau'. Add them?" will pop up. Click "Yes".
 
-![image](https://github.com/stakira/OpenUtau/assets/54425948/dc2dd305-4d87-482c-8a3f-9d4056751fad)
+![image](https://github.com/openutau/OpenUtau/assets/54425948/dc2dd305-4d87-482c-8a3f-9d4056751fad)
 
 Open `.vscode/launch.json`, change the "OpenUtau.dll" to the executable file name on your OS, like "OpenUtau.exe" on windows.
 
-![image](https://github.com/stakira/OpenUtau/assets/54425948/8d3b4ba1-c4ea-4a1c-8f7a-918e05c9afaf)
+![image](https://github.com/openutau/OpenUtau/assets/54425948/8d3b4ba1-c4ea-4a1c-8f7a-918e05c9afaf)
 
 Click "Run → Start Debugging"
 
@@ -60,23 +66,23 @@ GitHub Codespaces is an online linux environment provided by GitHub with a vscod
 
 On OpenUtau's repo page, click "Code → Codespaces → +"
 
-![image](https://github.com/stakira/OpenUtau/assets/54425948/6063718d-a77b-47a7-b2d2-4cd0a043eef2)
+![image](https://github.com/openutau/OpenUtau/assets/54425948/6063718d-a77b-47a7-b2d2-4cd0a043eef2)
 
 Open any .cs file under the `OpenUtau` folder, and click the Debug button
 
-![image](https://github.com/stakira/OpenUtau/assets/54425948/330c8926-a425-40e8-bd14-5354ed1c1766)
+![image](https://github.com/openutau/OpenUtau/assets/54425948/330c8926-a425-40e8-bd14-5354ed1c1766)
 
 Ports → Add Port → input `6080` → Open In Browser
 
-![image](https://github.com/stakira/OpenUtau/assets/54425948/136aad0a-affe-45aa-bde8-cf37325e3696)
+![image](https://github.com/openutau/OpenUtau/assets/54425948/136aad0a-affe-45aa-bde8-cf37325e3696)
 
 In the noVNC page poped up, connect → input `vscode`
 
-![image](https://github.com/stakira/OpenUtau/assets/54425948/b6510a2f-7e4b-4742-b6bc-d3629283dcc7)
+![image](https://github.com/openutau/OpenUtau/assets/54425948/b6510a2f-7e4b-4742-b6bc-d3629283dcc7)
 
 Successfully connected to the remote desktop of GitHub Codespaces.
 
-![image](https://github.com/stakira/OpenUtau/assets/54425948/3a0569da-bf01-4203-9af7-b7a7220ec7e8)
+![image](https://github.com/openutau/OpenUtau/assets/54425948/3a0569da-bf01-4203-9af7-b7a7220ec7e8)
 
 ## Building from command line
 

@@ -1,3 +1,9 @@
+---
+title: "Keyboard Shortcuts"
+permalink: /Keyboard-Shortcuts/
+parent: "Home"
+nav_order: 3
+---
 
 **NOTE:** <kbd>Ctrl</kbd> is mapped to the <kbd>⌘ Command</kbd> key on Macs
 

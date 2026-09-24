@@ -1,20 +1,26 @@
-- G2p Resources: [OpenUtau/py](https://github.com/stakira/OpenUtau/tree/master/py)
+---
+title: "Compiling G2p Models"
+permalink: /Compiling-G2p-Models/
+parent: "Developer Guide"
+nav_order: 2
+---
+- G2p Resources: [OpenUtau/py](https://github.com/openutau/OpenUtau/tree/master/py)
 - Set up IDE (Recommended: [Visual Studio](https://visualstudio.microsoft.com/))
-- [Compile OpenUtau from source](./Compiling-from-source)
+- [Compile OpenUtau from source](/Compiling-from-source/)
 - Begin learning C# from [official Microsoft tutorials](https://dotnet.microsoft.com/en-us/learn/csharp)
 
 **Examples of G2p Models that are included in OpenUTAU:**
-* English: [ArpabetG2P](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/G2p/ArpabetG2p.cs)
-* French: [FrenchG2p](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/G2p/FrenchG2p.cs)
-* German: [GermanG2p](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/G2p/GermanG2p.cs)
-* Italian: [ItalianG2p](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/G2p/ItalianG2p.cs)
-* Portuguese: [PortugueseG2p](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/G2p/PortugueseG2p.cs)
-* Russian: [RussianG2p](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/G2p/RussianG2p.cs)
-* Spanish: [SpanishG2p](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/G2p/SpanishG2p.cs)
+* English: [ArpabetG2P](https://github.com/openutau/OpenUtau/blob/master/OpenUtau.Core/G2p/ArpabetG2p.cs)
+* French: [FrenchG2p](https://github.com/openutau/OpenUtau/blob/master/OpenUtau.Core/G2p/FrenchG2p.cs)
+* German: [GermanG2p](https://github.com/openutau/OpenUtau/blob/master/OpenUtau.Core/G2p/GermanG2p.cs)
+* Italian: [ItalianG2p](https://github.com/openutau/OpenUtau/blob/master/OpenUtau.Core/G2p/ItalianG2p.cs)
+* Portuguese: [PortugueseG2p](https://github.com/openutau/OpenUtau/blob/master/OpenUtau.Core/G2p/PortugueseG2p.cs)
+* Russian: [RussianG2p](https://github.com/openutau/OpenUtau/blob/master/OpenUtau.Core/G2p/RussianG2p.cs)
+* Spanish: [SpanishG2p](https://github.com/openutau/OpenUtau/blob/master/OpenUtau.Core/G2p/SpanishG2p.cs)
 ---
 ## Compiling the G2p Model (Internal Model)
 ### Adding The Data Source
-  - After [packing](https://github.com/stakira/OpenUtau/tree/master/py#packing) the G2p model into a zip file, place the zip file on [`\OpenUtau\OpenUtau.Core\G2p\Data`](https://github.com/stakira/OpenUtau/tree/master/OpenUtau.Core/G2p/Data)
+  - After [packing](https://github.com/openutau/OpenUtau/tree/master/py#packing) the G2p model into a zip file, place the zip file on [`\OpenUtau\OpenUtau.Core\G2p\Data`](https://github.com/openutau/OpenUtau/tree/master/OpenUtau.Core/G2p/Data)
   - open the `Resources.resx` and drag and drop the g2p zip file on the window then save. This will automatically update the `Resources.Designer.cs` to add the zip file as a data resource.
     - ***`note:`** the `Resources.Designer.cs` has a bug that redirects the resources to `G2p.Data.Resouces` instead of the root directory `OpenUtau.Core.G2p.Data.Resources`. Please rename the line 42 in order to make the G2p's work properly.*
     - Replace `G2p.Data.Resouces` to `OpenUtau.Core.G2p.Data.Resources`.
@@ -32,24 +38,24 @@
                       resourceMan = temp;
                   }
   ```
-  - Create the `.cs` file on [`\OpenUtau\OpenUtau.Core\G2p`](https://github.com/stakira/OpenUtau/tree/master/OpenUtau.Core/G2p).
+  - Create the `.cs` file on [`\OpenUtau\OpenUtau.Core\G2p`](https://github.com/openutau/OpenUtau/tree/master/OpenUtau.Core/G2p).
   - Set up the `graphemes` and `phonemes` that matches the G2p model.
   - Edit the `LoadPack` code and link the G2p zip file.
 ### Adding the model to `Phonetic Assistant`
-  - Add the G2p to `PhoneticAssistantViewModel.cs` on [`\OpenUtau\OpenUtau\ViewModels`](https://github.com/stakira/OpenUtau/blob/master/OpenUtau/ViewModels/PhoneticAssistantViewModel.cs). The G2p name must match the name of the `.cs` file.
+  - Add the G2p to `PhoneticAssistantViewModel.cs` on [`\OpenUtau\OpenUtau\ViewModels`](https://github.com/openutau/OpenUtau/blob/master/OpenUtau/ViewModels/PhoneticAssistantViewModel.cs). The G2p name must match the name of the `.cs` file.
 ### Adding the model to `Lyrics Helper`
-  - Add the G2p to `LyricsHelper.cs` on [`\OpenUtau\OpenUtau.Core\Util`](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/Util/LyricsHelper.cs). The G2p name must match the name of the `.cs` file.
+  - Add the G2p to `LyricsHelper.cs` on [`\OpenUtau\OpenUtau.Core\Util`](https://github.com/openutau/OpenUtau/blob/master/OpenUtau.Core/Util/LyricsHelper.cs). The G2p name must match the name of the `.cs` file.
 ---
 ## Compiling the G2p Model (External Model)
 ### Adding The Data Source
-  - After [packing](https://github.com/stakira/OpenUtau/tree/master/py#packing) the G2p model into a zip file and created the initial external phonemizer, place the zip file on a folder called `Resources`.
+  - After [packing](https://github.com/openutau/OpenUtau/tree/master/py#packing) the G2p model into a zip file and created the initial external phonemizer, place the zip file on a folder called `Resources`.
   - Create the `Resources.resx` and drag and drop the G2p zip file on the window then save. Rename the `Custom Tool Namespace` same as the name of the project. `Custom Tool Namespace` are found on the properties panel or `Alt + Enter`.
   - `Resources.Designer.cs` will update as well and make sure the resources directory are correct. It should be `(project-name.Resources)`
   - Create the `.cs` file.
   - Set up the `graphemes` and `phonemes` that matches the G2p model.
   - Edit the `LoadPack` code and link the G2p zip file.
     - Example tree view:
-    - ![image](https://github.com/stakira/OpenUtau/assets/92255161/f63476bc-61f4-4fa1-9f2a-bc4852963cdd)
+    - ![image](https://github.com/openutau/OpenUtau/assets/92255161/f63476bc-61f4-4fa1-9f2a-bc4852963cdd)
 
 ## Prioritizing the `dict.text` over the `g2p.onnx` 
 ### Adding The Data Source
@@ -97,7 +103,7 @@ For languages ​​with a large number of words, and words cannot be converted 
 
 **Custom pronunciation dictionary**
 
-On the basis of G2p, considering that some voicebanks have custom phonemes, a phonemizer should support custom dictionaries. Custom dictionaries can be loaded using [G2pDictionary](https://github.com/stakira/OpenUtau/blob/master/OpenUtau.Core/Api/G2pDictionary.cs).
+On the basis of G2p, considering that some voicebanks have custom phonemes, a phonemizer should support custom dictionaries. Custom dictionaries can be loaded using [G2pDictionary](https://github.com/openutau/OpenUtau/blob/master/OpenUtau.Core/Api/G2pDictionary.cs).
 
 No matter which encoding the voicebank uses, yaml dictionaries should always use UTF-8 encoding.
 

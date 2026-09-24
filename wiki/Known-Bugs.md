@@ -1,9 +1,15 @@
+---
+title: "Known Bugs"
+permalink: /Known-Bugs/
+parent: "Home"
+nav_order: 14
+---
 # Known bugs
 ### `WORLDLINE-R`: Audio distortion when changing gender factor curve's default value
 If the gender factor default value is set to a negative value, such as -15, the synthesized audio will get heavily distorted. This bug does not occur when the gender factor value is set to 0
-![image](https://github.com/stakira/OpenUtau/assets/54425948/356f157a-cc3a-454a-bebd-6c2efb4a3ec7)
+![image](https://github.com/openutau/OpenUtau/assets/54425948/356f157a-cc3a-454a-bebd-6c2efb4a3ec7)
 
-Related issue: [#756](https://github.com/stakira/OpenUtau/issues/756)
+Related issue: [#756](https://github.com/openutau/OpenUtau/issues/756)
 
 ### `Mac OS`: Piano Roll window requires resizing before it will display
 ![image](https://github.com/user-attachments/assets/0616279c-a632-4bc6-b099-4a6d2edf7f85)
@@ -56,7 +62,7 @@ at OpenUtau.Core.PlaybackManager.<>c__DisplayClass24_0.b__0() in C:\projects\ope
 
 Changing the output devices, such as plugging a headphone in, might temporarily fix this bug.
 
-Related issue: [#1133](https://github.com/stakira/OpenUtau/issues/1133) [#1382](https://github.com/stakira/OpenUtau/issues/1382)
+Related issue: [#1133](https://github.com/openutau/OpenUtau/issues/1133) [#1382](https://github.com/openutau/OpenUtau/issues/1382)
 
 ***
 ## Addressed Bugs
@@ -64,11 +70,11 @@ Related issue: [#1133](https://github.com/stakira/OpenUtau/issues/1133) [#1382](
 > ### `WORLDLINE-R`: Crashes OpenUtau instance without error when invalid oto.ini entry or audio file encountered
 > Other resamplers will throw an error dialog if unable to parse a note for these reasons, which should also happen for Worldline. 
 
-Solved in PR [#1604](https://github.com/stakira/OpenUtau/pull/1604)
+Solved in PR [#1604](https://github.com/openutau/OpenUtau/pull/1604)
 
 > ### CVVC phonemizers apply VCs erratically and/or cease to apply VCs when using voice colors/the CLR expression
 
-Solved in PR [#1468](https://github.com/stakira/OpenUtau/pull/1468) and [#1462](https://github.com/stakira/OpenUtau/pull/1462)
+Solved in PR [#1468](https://github.com/openutau/OpenUtau/pull/1468) and [#1462](https://github.com/openutau/OpenUtau/pull/1462)
 
 > ### Changing the expression set will make the "Expressions" part of the "Note Properties" panel blank
 > 1. Create a new project. Add a new track. Add a new part. Open piano roll, and open the "Note Properties" panel
@@ -76,4 +82,4 @@ Solved in PR [#1468](https://github.com/stakira/OpenUtau/pull/1468) and [#1462](
 
 > The "Expressions" part of the "Note Properties" panel will become blank. You need to close the piano roll window and reopen it.
 
-Solved in PR [#1395](https://github.com/stakira/OpenUtau/pull/1395)
+Solved in PR [#1395](https://github.com/openutau/OpenUtau/pull/1395)

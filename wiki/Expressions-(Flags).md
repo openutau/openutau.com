@@ -1,3 +1,9 @@
+---
+title: "Expressions (Flags)"
+permalink: /Expressions-(Flags)/
+parent: "Home"
+nav_order: 5
+---
 # About expressions
 In OpenUtau, parameters such as volume, velocity, Voice Color (append subbanks), modulation, and UTAU flags are collectively referred to as “expressions.”  
 Additionally, there are expression types that allow drawing curves rather than applying them to individual notes.  

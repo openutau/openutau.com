@@ -1,3 +1,9 @@
+---
+title: "Tech Note: character.yaml"
+permalink: /tech-note-‐-character.yaml/
+parent: "Developer Guide"
+nav_order: 10
+---
 This is a sample of the current version of `character.yaml` format. Note that it is still a work in progress and may change.
 
 The example is based on `闇音レンリ・連続音Ver1.5`.

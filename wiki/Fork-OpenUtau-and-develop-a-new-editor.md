@@ -1,3 +1,9 @@
+---
+title: "Fork OpenUtau for a New Editor"
+permalink: /Fork-OpenUtau-and-develop-a-new-editor/
+parent: "Developer Guide"
+nav_order: 8
+---
 # Overview
 
 This page describes the minimum set of changes required when forking OpenUtau and distributing a new editor.

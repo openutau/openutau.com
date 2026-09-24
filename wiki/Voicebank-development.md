@@ -1,3 +1,9 @@
+---
+title: "Voicebank Development"
+permalink: /Voicebank-development/
+parent: "Developer Guide"
+nav_order: 6
+---
 **This page is a work in progress. Contributions are welcomed**
 
 Anyone can make a voicebank with their voice and use it in OpenUtau. There are basically two types of voicebanks: UTAU (concatenative) voicebanks and machine learning voicebanks. 
@@ -28,7 +34,7 @@ Find a recording list suitable for your language. A reclist is a text file that 
 | EN ARPA | [ARPAsing Reclist Directory](https://arpasing.tubs.wtf/en/directories/reclists) |
 | EN XSAMPA | [Delta-style English reclists](https://tl.tubs.wtf/2020/11/09/delta-eng)<br>[Salem-Style English CVVC](https://utau.felinewasteland.com/en/overview)<br>[GrayGlish](https://assbackwardsp.wixsite.com/utaubackwards/reclists) |
 | EN VCCV | [Core American English VCCV](https://www.mediafire.com/download/wef9lg11dmccxqx/CORE_American_English_VCCV.zip) by PaintedCz |
-* English recorded with any of these methods have various pros and cons. You may want to try recording a language with a smaller set of vowels first, or recording and training [an AI voicebank](#machine-learning-voicebank-development) for DiffSinger.
+* English recorded with any of these methods have various pros and cons. You may want to try recording a language with a smaller set of vowels first, or recording and training [an AI voicebank](/%ED%95%9C%EA%B5%AD%EC%96%B4-%EC%8B%9C%EC%9E%91-%EA%B0%80%EC%9D%B4%EB%93%9C/#machine-learning-voicebank-development) for DiffSinger.
 
 Theoretically you can record a voicebank with any software you like. However, a dedicated reclist recorder application can automatically prompt you to record line by line and save them using the text of the line as file names. The recommended software is [recstar](https://github.com/sdercolin/recstar) 
 
@@ -52,7 +58,7 @@ If you want a tutorial that covers how to oto most styles of voicebank, [Yin's t
 
 Let's look at an example oto.ini line from [Kasane Teto](https://kasaneteto.jp/utau/) in vLabeler and dissect it.
 
-![image](https://github.com/stakira/OpenUtau/assets/37761120/5c85409d-6edc-43af-9ebf-42a46aa28ef3)
+![image](https://github.com/openutau/OpenUtau/assets/37761120/5c85409d-6edc-43af-9ebf-42a46aa28ef3)
 
 1. **Yellow line:** Offset, or left blank. The start of the phoneme.
 2. **Green line:** Overlap. Everything between the left blank and overlap will be blended with the previous note.
@@ -78,7 +84,7 @@ If your voicebank contains multiple subbanks, you'll need to set them up in Open
 #### Default phonemizer
 Launch OpenUtau. In `Tools → Singers`, click `⚙ → Default Phonemizer` and select the phonemizer that your voicebank supports. After the user selects your voicebank, the phonemizer will be chosen automatically.
 
-Subbanks and default phonemizer infomation are stored in `character.yaml` inside the voicebank. See [tech note ‐ character.yaml](https://github.com/stakira/OpenUtau/wiki/tech-note-%E2%80%90-character.yaml)
+Subbanks and default phonemizer infomation are stored in `character.yaml` inside the voicebank. See [tech note ‐ character.yaml](/tech-note-%E2%80%90-character.yaml/)
 
 ### Packing UTAU voicebank
 In `Tools → Singers`, click `⚙ → Publish Singer`. You'll get a zip file of your singer for distributing.

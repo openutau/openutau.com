@@ -1,3 +1,8 @@
+---
+title: "Home"
+permalink: /Home/
+nav_order: 1
+---
 **English** | [日本語](https://w.atwiki.jp/openutau_ja/pages/1.html)
 
 Welcome to the OpenUtau wiki!
@@ -8,7 +13,7 @@ Welcome to the OpenUtau wiki!
   * [[教程汇总 (中文)]]
 * [[Install]]
 * [[Getting Started]] From installation to basic usage
-  * [한국어 시작 가이드 (한국어)](한국어-시작-가이드)
+  * [한국어 시작 가이드 (한국어)](/%ED%95%9C%EA%B5%AD%EC%96%B4-%EC%8B%9C%EC%9E%91-%EA%B0%80%EC%9D%B4%EB%93%9C/)
 * [[FAQ]]
 * [[Keyboard Shortcuts]]
 

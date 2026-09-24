@@ -1,3 +1,9 @@
+---
+title: "Singer Settings and Requirements"
+permalink: /Singer-Settings-and-Requirements/
+parent: "Home"
+nav_order: 8
+---
 # What Is a Singer?
 Since OpenUtau supports not only UTAU voice banks but also machine learning models such as DiffSinger, we collectively refer to these voicebanks as "Singers."
 

@@ -1,8 +1,14 @@
+---
+title: "Getting Started"
+permalink: /Getting-Started/
+parent: "Home"
+nav_order: 2
+---
 ## About OpenUtau
-Please see [Tutorials](Tutorials) for an overview of OpenUtau and how it differs from conventional UTAU.
+Please see [Tutorials](/Tutorials/) for an overview of OpenUtau and how it differs from conventional UTAU.
 
 ## Install
-For installing the OpenUtau Editor, voicebanks, and resampler, please see the [Install](Install) page.
+For installing the OpenUtau Editor, voicebanks, and resampler, please see the [Install](/Install/) page.
 
 ## Projects
 ### Creating projects
@@ -76,7 +82,7 @@ Select a singer from the menu in the track header.
 
 ![select singer](https://i.imgur.com/PIzAx6s.gif)
 
-You can optionally select a phonemizer, which will automatically convert note lyrics into a form the voicebank can play. For more details, please check [Phonemizers](Phonemizers).
+You can optionally select a phonemizer, which will automatically convert note lyrics into a form the voicebank can play. For more details, please check [Phonemizers](/Phonemizers%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%EF%BC%89/).
 
 ![phonemizer](https://i.imgur.com/wcMNzKy.gif)
 
@@ -190,7 +196,7 @@ Legacy Plugins provide limited support for UTAU plugins. To add a plugin, copy t
 ![legacy](https://i.imgur.com/70eNNC9.gif)
 
 ### Edit expressions
-Please see [Expressions (Flags)](Expressions-(Flags)).
+Please see [Expressions (Flags)](/Expressions-%28Flags%29/).
 
 ### Edit pitchbends
 You can show/hide pitchbends using the pitchbend icon in the top left, or by pressing `I` on your keyboard. Hidden pitchbends will still be applied to the notes.
@@ -243,4 +249,4 @@ OpenUtau provides two release channels: stable and beta. Sometimes you may want 
 
 To switch to the beta version, go to "Tools → Preferences", turn on "Beta", and check for update.
 
-If the method above doesn't work, you can also manually download the latest beta version from https://github.com/stakira/OpenUtau/releases
+If the method above doesn't work, you can also manually download the latest beta version from https://github.com/openutau/OpenUtau/releases

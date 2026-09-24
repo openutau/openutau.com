@@ -1,3 +1,9 @@
+---
+title: "VOICEVOX Support"
+permalink: /VOICEVOX-support/
+parent: "Home"
+nav_order: 12
+---
 OpenUtau supports VOICEVOX (humming function).  
 It is provided by the following [License](https://github.com/VOICEVOX/voicevox_engine/blob/master/LGPL_LICENSE)
 
@@ -56,7 +62,7 @@ To be supported in the future (This is just a plan)
 #### phoneme only
 * VOICEVOX JA
 
-![image](https://github.com/stakira/OpenUtau/assets/93469977/230dbd33-e7c8-4494-95f6-418d644f3257)
+![image](https://github.com/openutau/OpenUtau/assets/93469977/230dbd33-e7c8-4494-95f6-418d644f3257)
 
 
 ## Expressions

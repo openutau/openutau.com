@@ -1,24 +1,30 @@
+---
+title: "Install"
+permalink: /Install/
+parent: "Home"
+nav_order: 1
+---
 [Japanese / 日本語版ページ](https://w.atwiki.jp/openutau_ja/pages/14.html)
 # Install OpenUtau
 ## Download
 ### Stable Version:
-[![Download OpenUtau-win-x64.exe](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=windows-x64-installer&labelColor=FF347C&color=4ea6ea)](https://github.com/stakira/OpenUtau/releases/latest/download/OpenUtau-win-x64.exe)
-[![Download OpenUtau-win-x64.zip](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=windows-x64-portable&labelColor=FF347C&color=4ea6ea)](https://github.com/stakira/OpenUtau/releases/latest/download/OpenUtau-win-x64.zip)
-[![Download OpenUtau-win-x86.zip](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=windows-x86-portable&labelColor=FF347C&color=4ea6ea)](https://github.com/stakira/OpenUtau/releases/latest/download/OpenUtau-win-x86.zip)  
-[![Download OpenUtau-osx-x64.dmg](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=macos-x64&labelColor=FF347C&color=4ea6ea)](https://github.com/stakira/OpenUtau/releases/latest/download/OpenUtau-osx-x64.dmg)
-[![Download OpenUtau-osx-arm64.dmg](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=macos-arm64&labelColor=FF347C&color=4ea6ea)](https://github.com/stakira/OpenUtau/releases/latest/download/OpenUtau-osx-arm64.dmg)  
-[![Download OpenUtau-linux-x64.zip](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=linux-x64&labelColor=FF347C&color=4ea6ea)](https://github.com/stakira/OpenUtau/releases/latest/download/OpenUtau-linux-x64.zip)
+[![Download OpenUtau-win-x64.exe](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=windows-x64-installer&labelColor=FF347C&color=4ea6ea)](https://github.com/openutau/OpenUtau/releases/latest/download/OpenUtau-win-x64.exe)
+[![Download OpenUtau-win-x64.zip](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=windows-x64-portable&labelColor=FF347C&color=4ea6ea)](https://github.com/openutau/OpenUtau/releases/latest/download/OpenUtau-win-x64.zip)
+[![Download OpenUtau-win-x86.zip](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=windows-x86-portable&labelColor=FF347C&color=4ea6ea)](https://github.com/openutau/OpenUtau/releases/latest/download/OpenUtau-win-x86.zip)  
+[![Download OpenUtau-osx-x64.dmg](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=macos-x64&labelColor=FF347C&color=4ea6ea)](https://github.com/openutau/OpenUtau/releases/latest/download/OpenUtau-osx-x64.dmg)
+[![Download OpenUtau-osx-arm64.dmg](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=macos-arm64&labelColor=FF347C&color=4ea6ea)](https://github.com/openutau/OpenUtau/releases/latest/download/OpenUtau-osx-arm64.dmg)  
+[![Download OpenUtau-linux-x64.zip](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=linux-x64&labelColor=FF347C&color=4ea6ea)](https://github.com/openutau/OpenUtau/releases/latest/download/OpenUtau-linux-x64.zip)
 
 > [!CAUTION]
 > From version 0.1.549 onwards, the application will not start if the [.NET 8 runtime](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) is not installed.
 
 ### Beta Version:
-The beta version can be downloaded from the GitHub [Release Page](https://github.com/stakira/OpenUtau/releases).  
+The beta version can be downloaded from the GitHub [Release Page](https://github.com/openutau/OpenUtau/releases).  
 
 If you install the beta version from the start, you may be prompted to install the stable version during the initial launch update notification (because the default setting in Preferences is to use the stable version).  
 First, enable “Beta” in Preferences.
 
-#### How to Download from GitHub's [Release Page](https://github.com/stakira/OpenUtau/releases)
+#### How to Download from GitHub's [Release Page](https://github.com/openutau/OpenUtau/releases)
 The latest stable version is marked with green text `Latest` next to the version number. The beta version is marked with brown text `Pre-release`.
 
 First, click “Show all assets” to display all versions.
@@ -78,7 +84,7 @@ To install an external resampler, place a resampler .exe or .dll into the "Resam
 > [!TIP]
 > On linux, the `Resamplers` folder is located at `~/.local/share/OpenUtau/Resamplers`.
 
-If you already use UTAU, you can copy + paste resamplers that you already have. Check [Resamplers](Resamplers-and-Wavtools) for a list of compatible resamplers.
+If you already use UTAU, you can copy + paste resamplers that you already have. Check [Resamplers](/Resamplers-and-Wavtools/) for a list of compatible resamplers.
 
 After adding a track, you can select the resampler and wavtool by pressing the settings cog on the lower right of the track header. Please note that only wavtools that are compatible with the currently selected resampler will be shown; for instance only "simple" and "convergence" will be available to choose when Worldline is selected.
 
