@@ -40,7 +40,6 @@ Welcome to the OpenUtau wiki!
 * [Adding support for a new synthesis engine](/Adding-support-for-a-new-synthesis-engine/)
 * [Contributing to OpenUtau's localization](/Contributing-to-OpenUtau%27s-localization/)
 * [USTX file format](/USTX-file-format/)
-* [[PROPOSAL] svs.io ‐ singing voice synthesis backend API](/%5BPROPOSAL%5D-svs.io-%E2%80%90-singing-voice-synthesis-backend-API/)
 * [tech note ‐ music is music, phonetics is phonetics (also why you don't need legacy plugins)](/tech-note-%E2%80%90-music-is-music%2C-phonetics-is-phonetics-%28also-why-you-don%27t-need-legacy-plugins%29/)
 * [Known Bugs](/Known-Bugs/)
 * [Fork OpenUtau and develop a new editor](/Fork-OpenUtau-and-develop-a-new-editor/)

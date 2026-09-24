@@ -35,6 +35,7 @@ Find a recording list suitable for your language. A reclist is a text file that 
 | EN ARPA | [ARPAsing Reclist Directory](https://arpasing.tubs.wtf/en/directories/reclists) |
 | EN XSAMPA | [Delta-style English reclists](https://tl.tubs.wtf/2020/11/09/delta-eng)<br>[Salem-Style English CVVC](https://utau.felinewasteland.com/en/overview)<br>[GrayGlish](https://assbackwardsp.wixsite.com/utaubackwards/reclists) |
 | EN VCCV | [Core American English VCCV](https://www.mediafire.com/download/wef9lg11dmccxqx/CORE_American_English_VCCV.zip) by PaintedCz |
+
 * English recorded with any of these methods have various pros and cons. You may want to try recording a language with a smaller set of vowels first, or recording and training [an AI voicebank](/%ED%95%9C%EA%B5%AD%EC%96%B4-%EC%8B%9C%EC%9E%91-%EA%B0%80%EC%9D%B4%EB%93%9C/#machine-learning-voicebank-development) for DiffSinger.
 
 Theoretically you can record a voicebank with any software you like. However, a dedicated reclist recorder application can automatically prompt you to record line by line and save them using the text of the line as file names. The recommended software is [recstar](https://github.com/sdercolin/recstar) 

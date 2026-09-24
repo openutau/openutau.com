@@ -15,6 +15,7 @@ USTX is the project file format for OpenUtau. This document outlines the structu
 A USTX file is a YAML-based (YAML 1.2) text format in UTF-8 encoding, with the following top-level sections:
 
 ### UProject
+
 | Field            | Type   | Description                                                                              |
 |:-----------------|:-------|:-----------------------------------------------------------------------------------------|
 | `name`           | string | Project name                                                                             |
@@ -32,6 +33,7 @@ A USTX file is a YAML-based (YAML 1.2) text format in UTF-8 encoding, with the f
 ### Expressions
 Defines vocal parameters (e.g., dynamics, vibrato) as curves or numerical values.  
 Located under `expressions` as key-value pairs. Each expression has:
+
 | Field           | Type   | Description                                                         |
 |:----------------|:-------|:--------------------------------------------------------------------|
 | `name`          | string | Human-readable name (e.g., `"dynamics (curve)"`)                    |
@@ -70,6 +72,7 @@ dyn:
 
 ### Tracks
 Defines audio tracks under `tracks`. Each track includes:
+
 | Field               | Type   | Description                                     |
 |:--------------------|:-------|:------------------------------------------------|
 | `singer`            | string | Voicebank identifier                            |
@@ -83,6 +86,7 @@ Defines audio tracks under `tracks`. Each track includes:
 
 ### Voice Parts
 Contains musical notes and phrases under `voice_parts`. Each part includes:
+
 | Field      | Type   | Description                                    |
 |:-----------|:-------|:-----------------------------------------------|
 | `duration` | int    | Total duration in ticks                        |
@@ -94,6 +98,7 @@ Contains musical notes and phrases under `voice_parts`. Each part includes:
 
 #### Note
 Each note under `notes` has:
+
 | Field                 | Type   | Description                                                                                           |
 |:----------------------|:-------|:------------------------------------------------------------------------------------------------------|
 | `position`            | int    | Start tick relative to the starting position voice part                                               |
@@ -131,6 +136,7 @@ Example:
 
 #### Curves
 Defines automation curves (e.g., pitch, dynamics) under `curves`. 
+
 | Field  | Type      | Description                                     |
 |:-------|:----------|:------------------------------------------------|
 | `xs`   | List<int> | Tick position of each sample point in the curve |
@@ -139,6 +145,7 @@ Defines automation curves (e.g., pitch, dynamics) under `curves`.
 
 ### Wave Parts
 External audio files imported to the project, under `wave_parts`
+
 | Field              | Type   | Description                                                                          |
 |:-------------------|:-------|:-------------------------------------------------------------------------------------|
 | `name`             | string | Name of the part                                                                     |

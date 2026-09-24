@@ -24,6 +24,7 @@ Click to set a value, and right click to reset it to the project default.
 ![edit expression](https://i.imgur.com/2PKCb2p.gif)
 
 # Default expressions
+
 | Name     | Abbreviation | Purpose                                           | Range      | Default | Note |
 | -------- | ------------ | ------------------------------------------------- | ---------- | ------- | ----- |
 | Velocity | VEL          | Consonant velocity (stretch/shorten preutterance) | 0 - 200    | 100     | |

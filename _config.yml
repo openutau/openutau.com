@@ -17,15 +17,6 @@ nav_external_links:
   - title: Report Bugs / 问题汇报 / 不具合報告
     url: https://github.com/openutau/OpenUtau/issues
     hide_icon: false
-  - title: 教程汇总 (中文)
-    url: /教程汇总-(中文)/
-    hide_icon: false
-  - title: チュートリアル (日本語)
-    url: /チュートリアル-(日本語)/
-    hide_icon: false
-  - title: 한국어 시작 가이드
-    url: /한국어-시작-가이드/
-    hide_icon: false
   - title: Discord
     url: https://discord.gg/UfpMnqMmEM
     hide_icon: false

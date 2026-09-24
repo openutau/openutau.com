@@ -110,12 +110,14 @@ OpenUtauでテストしたすべてのresamplerのリストです。
     - 過大な音声モデルに注意
 
 ## MacOS
+
 |  Resampler |  作者  |  備考 |
 | ------------ | ------------ | ------------ |
 |  worldline  | StAkira  |   OpenUtauに同梱。すべてのプラットフォームで動作します。|
 | [macres](https://github.com/titinko/macres/releases)   | titinko   |   |
 
 ## Linux
+
 |  Resampler |  作者  |  備考 |
 | ------------ | ------------ | ------------ |
 |  worldline  | StAkira  |   OpenUTAUに同梱。すべてのプラットフォームで動作します。|

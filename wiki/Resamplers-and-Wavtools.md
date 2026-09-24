@@ -183,6 +183,7 @@ This is a list of all UTAU resamplers tested with OpenUtau.
     - Oversized Audio Model Attention
 
 ## MacOS
+
 |  Resampler |  Author  |  Resample Manifest  |  Additional Notes |
 | ------------ | ------------ | ------------ | ------------ |
 |  worldline  | StAkira  |   | Built into OpenUtau. Works on all platforms. |
@@ -193,6 +194,7 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 | [world4utau](https://github.com/xrdavies/world4utau) | Ameya (port by xrdavies) | | Cross-platform port of world4utau; requires building fftw. |
 
 ## Linux
+
 |  Resampler |  Author  |  Resample Manifest  |  Additional Notes |
 | ------------ | ------------ | ------------ | ------------ |
 |  worldline  | StAkira  |   | Built into OpenUtau. Works on all platforms. |

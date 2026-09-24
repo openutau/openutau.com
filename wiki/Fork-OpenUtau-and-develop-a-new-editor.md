@@ -32,6 +32,7 @@ Following the recommendations in this document helps prevent user environment co
 # Modification Procedures
 
 ## Modification List
+
 Category | Target for Change | Main Files to Change | Priority | Reason
 -- | -- | -- | -- | --
 Settings Save Location | PrefsFilePath | OpenUtau.Core/Util/PathManager.cs | Required | To prevent corruption and startup failure caused by sharing the same settings file.

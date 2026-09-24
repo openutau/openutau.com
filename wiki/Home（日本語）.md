@@ -49,7 +49,6 @@ OpenUtau wikiへようこそ！
 * [Developing new phonemizers](/Developing-new-phonemizers/)　新たなphonemizerの開発
 * [Compiling G2p Models](/Compiling-G2p-Models/)　G2pモデルのコンパイル
 * [Adding support for a new synthesis engine](/Adding-support-for-a-new-synthesis-engine/)　OpenUTAUを新たな合成エンジンに対応させる
-* [[PROPOSAL] svs.io ‐ singing voice synthesis backend API](/%5BPROPOSAL%5D-svs.io-%E2%80%90-singing-voice-synthesis-backend-API/)　[提案] svs.json - 歌声合成バックエンドAPI
 * [tech note ‐ music is music, phonetics is phonetics (also why you don't need legacy plugins)](/tech-note-%E2%80%90-music-is-music%2C-phonetics-is-phonetics-%28also-why-you-don%27t-need-legacy-plugins%29/)　技術メモ - 音楽は音楽、音声学は音声学（レガシープラグインが不要な理由）
 * [Known Bugs](/Known-Bugs/)　既知のバグ
 * [Fork OpenUtau and develop a new editor](/Fork-OpenUtau-and-develop-a-new-editor/) OpenUtauをフォークして新しいエディタを開発する

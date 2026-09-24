@@ -157,6 +157,7 @@ nav_order: 3
 
 # Expression Control *(Inline control)*
 ### Numerical(Options) 
+
 | Action | Keys |
 | - | - |
 | Set Expression | <kbd>Left click</kbd> |
@@ -164,6 +165,7 @@ nav_order: 3
 | Reset Expression | <kbd>Right click</kbd> |
 
 ### Curve 
+
 | Action | Keys |
 | - | - |
 | Draw line | <kbd>Left click</kbd> |
