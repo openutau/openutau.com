@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "VOICEVOX Support"
 permalink: /VOICEVOX-support/
 parent: "Home"

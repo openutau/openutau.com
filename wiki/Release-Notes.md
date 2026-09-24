@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Release Notes"
 permalink: /Release-Notes/
 parent: "Home"

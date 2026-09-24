@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Compiling from Source"
 permalink: /Compiling-from-source/
 parent: "Developer Guide"

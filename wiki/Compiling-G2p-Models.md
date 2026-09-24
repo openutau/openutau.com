@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Compiling G2p Models"
 permalink: /Compiling-G2p-Models/
 parent: "Developer Guide"

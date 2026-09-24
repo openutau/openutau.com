@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Keyboard Shortcuts"
 permalink: /Keyboard-Shortcuts/
 parent: "Home"

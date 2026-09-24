@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "USTX File Format"
 permalink: /USTX-file-format/
 parent: "Developer Guide"

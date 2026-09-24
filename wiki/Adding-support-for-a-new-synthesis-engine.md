@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Adding a Synthesis Engine"
 permalink: /Adding-support-for-a-new-synthesis-engine/
 parent: "Developer Guide"

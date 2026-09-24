@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "FAQ (日本語)"
 permalink: /FAQ（日本語）/
 nav_exclude: true

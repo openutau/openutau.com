@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "技術メモ: character.yaml"
 permalink: /技術メモ-‐-character.yaml/
 nav_exclude: true

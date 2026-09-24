@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "DiffSinger Support"
 permalink: /DiffSinger-support/
 parent: "Home"

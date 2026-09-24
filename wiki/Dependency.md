@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Dependency"
 permalink: /Dependency/
 parent: "Developer Guide"

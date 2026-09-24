@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "FAQ"
 permalink: /FAQ/
 parent: "Home"

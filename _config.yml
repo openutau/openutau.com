@@ -1,4 +1,8 @@
 remote_theme: just-the-docs/just-the-docs
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-feed
 domain: www.openutau.com
 url: https://www.openutau.com
 color_scheme: openutau

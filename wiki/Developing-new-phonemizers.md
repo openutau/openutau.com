@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Developing New Phonemizers"
 permalink: /Developing-new-phonemizers/
 parent: "Developer Guide"

@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Contributing to Localization"
 permalink: /Contributing-to-OpenUtau's-localization/
 parent: "Developer Guide"

@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Tutorials"
 permalink: /Tutorials/
 parent: "Home"

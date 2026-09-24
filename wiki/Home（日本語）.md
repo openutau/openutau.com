@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Home (日本語)"
 permalink: /Home（日本語）/
 nav_exclude: true

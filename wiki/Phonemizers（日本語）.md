@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Phonemizers (日本語)"
 permalink: /Phonemizers（日本語）/
 nav_exclude: true

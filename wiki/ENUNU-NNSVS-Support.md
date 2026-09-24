@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "ENUNU & NNSVS Support"
 permalink: /ENUNU-NNSVS-Support/
 parent: "Home"

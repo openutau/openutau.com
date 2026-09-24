@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Getting Started"
 permalink: /Getting-Started/
 parent: "Home"

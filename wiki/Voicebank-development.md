@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Voicebank Development"
 permalink: /Voicebank-development/
 parent: "Developer Guide"

@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Tech Note: Music is Music, Phonetics is Phonetics"
 permalink: /tech-note-‐-music-is-music,-phonetics-is-phonetics-(also-why-you-don't-need-legacy-plugins)/
 parent: "Developer Guide"

@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Legacy Plugins"
 permalink: /Legacy-Plugins/
 parent: "Home"

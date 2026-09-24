@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "[PROPOSAL] svs.io Backend API"
 permalink: /[PROPOSAL]-svs.io-‐-singing-voice-synthesis-backend-API/
 parent: "Developer Guide"

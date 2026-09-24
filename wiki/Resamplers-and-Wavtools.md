@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Resamplers and Wavtools"
 permalink: /Resamplers-and-Wavtools/
 parent: "Home"

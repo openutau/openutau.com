@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Tech Note: character.yaml"
 permalink: /tech-note-‐-character.yaml/
 parent: "Developer Guide"

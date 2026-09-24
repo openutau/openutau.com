@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Singer Settings and Requirements"
 permalink: /Singer-Settings-and-Requirements/
 parent: "Home"

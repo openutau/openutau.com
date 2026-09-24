@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Known Bugs"
 permalink: /Known-Bugs/
 parent: "Home"

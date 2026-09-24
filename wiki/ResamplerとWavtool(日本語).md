@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "ResamplerとWavtool (日本語)"
 permalink: /ResamplerとWavtool(日本語)/
 nav_exclude: true

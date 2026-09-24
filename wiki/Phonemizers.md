@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Phonemizers"
 permalink: /Phonemizers/
 parent: "Home"

@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Install"
 permalink: /Install/
 parent: "Home"

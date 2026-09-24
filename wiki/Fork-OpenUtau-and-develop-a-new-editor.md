@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Fork OpenUtau for a New Editor"
 permalink: /Fork-OpenUtau-and-develop-a-new-editor/
 parent: "Developer Guide"

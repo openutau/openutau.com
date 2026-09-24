@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Developer Guide"
 permalink: /Developer-Guide/
 nav_order: 2
