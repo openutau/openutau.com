@@ -22,17 +22,19 @@ Open singing synthesis platform / Open source UTAU successor
 
 # Download
 [Windows x64 installer](https://github.com/openutau/OpenUtau/releases/latest/download/OpenUtau-win-x64.exe){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[Windows x64 portable](https://github.com/openutau/OpenUtau/releases/latest/download/OpenUtau-win-x64.zip){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[Windows x86 portable](https://github.com/openutau/OpenUtau/releases/latest/download/OpenUtau-win-x86.zip){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Windows x64 portable](https://github.com/openutau/OpenUtau/releases/latest/download/OpenUtau-win-x64.zip){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } <br>
+[Windows arm64 installer](https://github.com/openutau/OpenUtau/releases/latest/download/OpenUtau-win-arm64.exe){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Windows arm64 portable](https://github.com/openutau/OpenUtau/releases/latest/download/OpenUtau-win-arm64.zip){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 [Installation Guide](/Getting-Started/#windows){: .btn .fs-5 .mb-4 .mb-md-0 }
 
-[macOS x64](https://github.com/openutau/OpenUtau/releases/latest/download/OpenUtau-osx-x64.dmg){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[macOS arm64](https://github.com/openutau/OpenUtau/releases/latest/download/OpenUtau-osx-arm64.dmg){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 [Installation Guide](/Getting-Started/#macos){: .btn .fs-5 .mb-4 .mb-md-0 }
 
-[Linux x64](https://github.com/openutau/OpenUtau/releases/latest/download/OpenUtau-linux-x64.zip){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Linux x64 .tar.gz](https://github.com/openutau/OpenUtau/releases/latest/download/OpenUtau-linux-x64.tar.gz){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Linux x64 AppImage](https://github.com/openutau/OpenUtau/releases/latest/download/OpenUtau-linux-x64.AppImage){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } <br>
+[Linux arm64 .tar.gz](https://github.com/openutau/OpenUtau/releases/latest/download/OpenUtau-linux-arm64.tar.gz){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Linux arm64 AppImage](https://github.com/openutau/OpenUtau/releases/latest/download/OpenUtau-linux-arm64.AppImage){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 [Installation Guide](/Getting-Started/#linux){: .btn .fs-5 .mb-4 .mb-md-0 }
-
-If you plan to use DiffSinger or the arm64 version for macOS, please download the latest beta from [here](https://github.com/openutau/OpenUtau/releases).
 
 ---
 
