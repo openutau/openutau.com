@@ -14,7 +14,7 @@ nav_order: 1
 [![Download OpenUtau-win-x86.zip](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=windows-x86-portable&labelColor=FF347C&color=4ea6ea)](https://github.com/openutau/OpenUtau/releases/latest/download/OpenUtau-win-x86.zip)  
 [![Download OpenUtau-osx-x64.dmg](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=macos-x64&labelColor=FF347C&color=4ea6ea)](https://github.com/openutau/OpenUtau/releases/latest/download/OpenUtau-osx-x64.dmg)
 [![Download OpenUtau-osx-arm64.dmg](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=macos-arm64&labelColor=FF347C&color=4ea6ea)](https://github.com/openutau/OpenUtau/releases/latest/download/OpenUtau-osx-arm64.dmg)  
-[![Download OpenUtau-linux-x64.zip](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=linux-x64&labelColor=FF347C&color=4ea6ea)](https://github.com/openutau/OpenUtau/releases/latest/download/OpenUtau-linux-x64.zip)
+[![Download OpenUtau-linux-x64.zip](https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=download&message=linux-x64&labelColor=FF347C&color=4ea6ea)](https://github.com/openutau/OpenUtau/releases/latest/download/OpenUtau-linux-x64.tar.gz)
 
 > [!CAUTION]
 > From version 0.1.549 onwards, the application will not start if the [.NET 8 runtime](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) is not installed.
